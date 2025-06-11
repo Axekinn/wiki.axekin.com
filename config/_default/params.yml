@@ -2,7 +2,7 @@ mainSections: ["post"]
 
 author: Axekin
 email: axekinn@proton.me
-description: "Si seulement vous pouviez voir ce que je vois..."
+description: 
 subtitle: "Welcome !"
 
 internal_theme:
@@ -461,5 +461,5 @@ development:
   error_pages: true
 
 params:
-  customCSS: ["css/custom.css"]
-  customJS: ["js/custom.js"]
+  customCSS: ["/css/custom.css"]
+  customJS: ["/js/custom.js"]
