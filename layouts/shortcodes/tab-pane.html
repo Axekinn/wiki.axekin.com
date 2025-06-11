@@ -1,0 +1,3 @@
+<div class="tab-pane{{ if eq (.Parent.Scratch.Get "tabIndex") 0 }} active{{ end }}" id="tab-{{ .Parent.Scratch.Add "tabIndex" 1 }}{{ .Parent.Scratch.Get "tabIndex" }}">
+  {{ .Inner | markdownify }}
+</div>

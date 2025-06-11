@@ -1,0 +1,18 @@
+{{- define "main" -}}
+  {{- $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections -}}
+  {{- $paginator := .Paginate $pages -}}
+  
+  <div
+    class="archives-outer-wrap"
+    data-aos="{{ .Site.Params.animation.options.archive.whole }}"
+  >
+    {{- if eq .Paginator.PageNumber 1 -}}
+      {{- partial "archives.html" . -}}
+    {{- end -}}
+    
+    {{- $groupedPages := $paginator.Pages.GroupByDate .Site.Params.yearFormat -}}
+    {{- partial "list.html" (dict "paginator" $groupedPages "ctx" .) -}}
+  </div>
+  
+  {{- partial "pagination.html" . -}}
+{{- end -}}

@@ -1,0 +1,465 @@
+mainSections: ["post"]
+
+author: Axekin
+email: axekinn@proton.me
+description: "Si seulement vous pouviez voir ce que je vois..."
+subtitle: "Welcome !"
+
+internal_theme:
+  light:
+    --red-0: '#4a00e0'        # Violet principal
+    --red-1: '#6a1b99'        # Violet moyen
+    --red-2: '#8e44ad'        # Violet clair
+    --red-3: '#a569bd'        # Violet très clair
+    --red-4: '#d2b4de'        # Violet pastel
+    --red-5: '#e8daef'        # Violet très pastel
+    --red-5-5: '#f4f1f8'      # Violet quasi transparent
+    --red-6: '#faf8fc'        # Violet background
+    --color-red-6-shadow: 'rgba(106, 27, 153, 0.6)'
+    --color-red-3-shadow: 'rgba(106, 27, 153, 0.3)'
+    --highlight-nav: '#1a1a1a'
+    --highlight-purple: '#8e44ad'
+    # Variables pour le texte Markdown
+    --text-color: '#ffffff'           # Blanc pour le texte
+    --text-emphasis: '#ffffff'        # Blanc pour les éléments emphasés
+    --tag-text-color: '#ffffff'      # Blanc pour les tags
+    --markdown-strong: '#ffffff'      # Blanc pour le texte en gras
+    --markdown-emphasis: '#ffffff'    # Blanc pour le texte italique
+  dark:
+    --red-4: 'rgba(212, 180, 222, 0.5)'
+    --highlight-purple: '#6a1b99'
+    # Variables pour le mode sombre
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#ffffff'
+
+# Configuration de base améliorée
+banner: "images/banner.webp"
+avatar: "avatar.webp"
+cover: false
+toc: true
+
+# Menu avec icônes étendues
+menu:
+  - name: home
+    url: "/"
+    icon: e609
+  - name: archives
+    url: "archives"
+    icon: e60c
+  - name: about
+    url: "about"
+    icon: e613
+  - name: discord
+    url: "https://discord.gg/axekin"
+    icon: e60d
+
+# Format des dates
+yearFormat: "2006"
+monthFormat: "2006-01"
+dateFormat: "2006-01-02"
+timeFormat: "2006-01-02 15:04:05"
+
+# Mode sombre automatique avec transition
+dark_mode:
+  enable: auto
+  transition: smooth
+  duration: 300
+
+# Widgets dans la sidebar étendus
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - recent_posts
+
+# Limites des widgets
+category_limits: 15
+tag_limits: 15
+recent_posts_limits: 8
+tagcloud_limits: 30
+
+# Curseur personnalisé Reimu
+reimu_cursor:
+  enable: true
+  cursor:
+    default: ../images/cursor/Gawr-Gura-Cursor.png
+    pointer: ../images/cursor/gawr-gura-pointer.png
+    text: ../images/cursor/reimu-cursor-text.png
+
+# Préchargeur avec animation amélioré
+preloader:
+  enable: true
+  text: 
+    fr: Chargement en cours...
+    en: Loading...
+  rotate: true
+  animation: pulse
+  logo: "/images/logo-preloader.png"
+
+# Effet de feu d'artifice sur clic
+firework:
+  enable: true
+  options:
+    excludeElements: ["a", "button"]
+    particles:
+      - shape: circle
+        move: ["emit"]
+        easing: easeOutExpo
+        colors: ["var(--red-1)", "var(--red-2)", "var(--red-3)", "var(--red-4)"]
+        number: 20
+        duration: [1200, 1800]
+        shapeOptions:
+          radius: [16, 32]
+          alpha: [0.3, 0.5]
+
+# Smooth Scrolling
+smooth_scroll:
+  enable: true
+  duration: 500
+
+# Lazy Loading avancé
+lazy_loading:
+  enable: true
+  placeholder: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f5f5f5' width='400' height='300'/%3E%3C/svg%3E"
+  fade_in: true
+
+# Configuration avancée du contenu
+
+# Blocs de code améliorés
+code_block:
+  expand: true
+  copy_button: true
+  line_numbers: true
+  highlight_lines: true
+  theme: "dracula"
+
+# Mathématiques avec KaTeX et MathJax
+math:
+  katex:
+    enable: true
+    auto_render: true
+    options:
+      delimiters:
+        - left: "$$"
+          right: "$$"
+          display: true
+        - left: "$"
+          right: "$"
+          display: false
+  mathjax:
+    enable: true
+    version: "3.2.0"
+
+# Diagrammes avec Mermaid
+mermaid:
+  enable: true
+  theme: "dark"
+  startOnLoad: true
+
+# Charts avec Chart.js
+charts:
+  enable: true
+  theme: "purple"
+
+# Copyright des articles amélioré
+article_copyright:
+  enable: true
+  content:
+    author: true
+    link: true
+    title: true
+    date: true
+    updated: true
+    license: true
+    license_type: by-nc-sa
+  custom_text:
+    fr: "Cet article est protégé par les droits d'auteur. Reproduction autorisée avec attribution."
+    en: "This article is protected by copyright. Reproduction allowed with attribution."
+
+# Configuration du clipboard améliorée
+clipboard:
+  success: 
+    fr: Copie réussie (*^▽^*)
+    en: Copy successfully (*^▽^*)
+  fail: 
+    fr: Échec de la copie (ﾟ⊿ﾟ)ﾂ
+    en: Copy failed (ﾟ⊿ﾟ)ﾂ
+  copyright:
+    enable: true
+    count: 50
+    license_type: by-nc-sa
+  auto_copy_selector: "pre code"
+
+# Bouton retour en haut amélioré
+top:
+  enable: true
+  position: right
+  icon:
+    url: "../images/gura.png"
+    rotate: true
+    mask: false
+  threshold: 100
+  smooth_scroll: true
+
+# Notification article obsolète
+outdate:
+  enable: true
+  daysAgo: 180
+  warning_days: 90
+  message:
+    fr: Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.
+    en: This article was last updated on {time}. Please note that the content may no longer be applicable.
+  warning_message:
+    fr: "⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes."
+    en: "⚠️ This article is over 3 months old. Some information may be outdated."
+
+# Recherche avancée
+algolia:
+  applicationID: "LPWJ5Q6Q0L"           # Depuis le dashboard Algolia
+  apiKey: "7a8c816d9d6a005f280853c142ad76b6"     # Clé de recherche publique
+  indexName: "axekin-wiki"             # Nom de ton index
+  hits:
+    per_page: 10                       # Résultats par page
+  labels:
+    input_placeholder: "Rechercher..."  # Placeholder de la barre
+    hits_empty: "Aucun résultat pour '${query}'"
+    hits_stats: "${hits} résultats trouvés en ${time}ms"
+
+# PWA (Progressive Web App)
+pwa:
+  enable: true
+  name: "Axekin Wiki"
+  short_name: "AxekinWiki"
+  description: "Wiki technique d'Axekin"
+  theme_color: "#6a1b99"
+  background_color: "#1a1a1a"
+  display: "standalone"
+  start_url: "/"
+
+# Service Worker
+service_worker:
+  enable: true
+  cache_version: "v1.0.0"
+  cache_strategy: "cache_first"
+  update_notification:
+    enable: true
+    title:
+      fr: Nouvelle version disponible
+      en: New version available
+    content:
+      fr: Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?
+      en: The website seems to have new content, do you want to update?
+
+# Configuration du footer améliorée
+footer:
+  since: 2020
+  powered: true
+  count: true
+  busuanzi: true
+  icon:
+    url: "../images/gura.png"
+    rotate: true
+    mask: false
+  custom_text:
+    fr: "Fait avec ❤️ par Axekin"
+    en: "Made with ❤️ by Axekin"
+  social_links: true
+  beian: false
+
+# RSS amélioré
+rss:
+  limit: 20
+  showFullContent: true
+  showCopyright: true
+  copyright:
+    fr: "Copyright © 2025 Axekin. Tous droits réservés."
+    en: "Copyright © 2025 Axekin. All rights reserved."
+
+# Réseaux sociaux étendus
+social:
+  email: mailto:axekinn@proton.me
+  discord: https://discord.gg/axekin
+  github: https://github.com/axekinn
+  youtube: https://youtube.com/@axekinn
+
+# Partage sur réseaux sociaux étendu
+share:
+  - facebook
+  - twitter
+  - linkedin
+  - reddit
+  - telegram
+  - whatsapp
+  - pocket
+  - email
+
+# Système de commentaires multi-plateforme
+comment:
+  title:
+    fr: Laissez un commentaire
+    en: Leave a comment
+  default: waline
+  placeholder:
+    fr: "Écrivez votre commentaire ici..."
+    en: "Write your comment here..."
+
+# Configuration Waline améliorée
+waline:
+  enable: false
+  serverURL: # Votre URL de serveur Waline
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.2.0/weibo
+    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+    - https://unpkg.com/@waline/emojis@1.2.0/bmoji
+  meta: ["nick", "mail", "link"]
+  pageSize: 10
+  lang: auto
+  dark: "auto"
+  avatar: "retro"
+
+utterances:
+  enable: false
+  repo: "axekin/wiki-comments"
+  issue_term: "pathname"
+  theme: "github-dark"
+
+# Statistiques Busuanzi améliorées
+busuanzi:
+  enable: true
+  site_pv:
+    enable: true
+    text:
+      fr: "Vues totales: "
+      en: "Total views: "
+  site_uv:
+    enable: true
+    text:
+      fr: "Visiteurs uniques: "
+      en: "Unique visitors: "
+  page_pv:
+    enable: true
+    text:
+      fr: "Vues: "
+      en: "Views: "
+
+# Performance et rapidité
+pace:
+  enable: true
+  color: "var(--red-2)"
+  theme: "minimal"
+
+quicklink:
+  enable: true
+  timeout: 3000
+  priority: true
+  ignores: ["#", "/admin"]
+
+# Compression et optimisation
+compression:
+  enable: true
+  level: 6
+
+# Image optimization
+image_processing:
+  enable: true
+  quality: 85
+  formats: ["webp", "avif"]
+  lazy_loading: true
+
+# Police Google Fonts améliorées
+font:
+  enable: true
+  article:
+    - family: "Mulish"
+      weights: [300, 400, 600, 700]
+    - family: "Noto Serif SC"
+      weights: [400, 500, 700]
+  code:
+    - family: "JetBrains Mono"
+      weights: [400, 500, 700]
+    - family: "Ubuntu Mono"
+      weights: [400, 700]
+  display: "swap"
+
+# Widgets personnalisés
+custom_widgets:
+  - name: "weather"
+    enable: false
+    api_key: "YOUR_WEATHER_API_KEY"
+    city: "Paris"
+  - name: "hitokoto"
+    enable: false
+    api: "https://v1.hitokoto.cn/"
+  - name: "music_player"
+    enable: false
+    playlist: "YOUR_PLAYLIST_ID"
+
+# Notification système
+notification:
+  enable: true
+  position: "top-right"
+  timeout: 5000
+  welcome:
+    enable: true
+    title:
+      fr: "Bienvenue !"
+      en: "Welcome!"
+    message:
+      fr: "Merci de visiter le wiki d'Axekin"
+      en: "Thank you for visiting Axekin's wiki"
+
+# Affichage des catégories en page d'accueil
+home_categories:
+  enable: false
+  content:
+    - categories: "tutorials"        
+      icon: "📚"
+      cover: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=400&fit=crop"
+    - categories: "gaming"
+      icon: "🎮"
+      cover: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=400&fit=crop"
+    - categories: "tech"
+      icon: "⚡"
+      cover: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop"
+
+# Easter Eggs
+easter_eggs:
+  enable: true
+  konami_code: true
+  click_effects: true
+  typing_effects: false
+
+# Accessibilité
+accessibility:
+  enable: true
+  high_contrast: false
+  font_size_adjuster: true
+  screen_reader_improvements: true
+
+# Multi-langue avancée
+i18n:
+  date_format:
+    fr: "02 January 2006"
+    en: "January 02, 2006"
+  reading_time:
+    fr: "min de lecture"
+    en: "min read"
+  
+# Sécurité
+security:
+  content_security_policy: true
+  referrer_policy: "strict-origin-when-cross-origin"
+  permissions_policy: true
+
+# Développement
+development:
+  live_reload: true
+  debug_mode: false
+  error_pages: true
+
+params:
+  customCSS: ["css/custom.css"]
+  customJS: ["js/custom.js"]

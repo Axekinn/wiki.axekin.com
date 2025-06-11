@@ -1,0 +1,6 @@
+<div class="gallery-item">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy" />
+  {{ with .Get "caption" }}
+  <div class="gallery-caption">{{ . }}</div>
+  {{ end }}
+</div>

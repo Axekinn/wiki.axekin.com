@@ -1,0 +1,7 @@
+<div class="chart-container">
+  <canvas id="chart-{{ now.Unix }}"></canvas>
+  <script>
+    // Chart.js code would go here
+    console.log('Chart data:', {{ .Inner | safeJS }});
+  </script>
+</div>

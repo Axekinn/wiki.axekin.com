@@ -1,0 +1,9 @@
+<div class="admonition admonition-{{ .Get 0 }}">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    {{ .Get 1 }}
+  </div>
+  <div class="admonition-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

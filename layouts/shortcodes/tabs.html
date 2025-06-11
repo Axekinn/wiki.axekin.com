@@ -1,0 +1,13 @@
+<div class="tabs-container">
+  <div class="tabs-nav">
+    {{ range $index, $element := split (.Inner | plainify) "{{< tab" }}
+      {{ if gt $index 0 }}
+        {{ $title := (index (split $element `"`) 1) }}
+        <button class="tab-button{{ if eq $index 1 }} active{{ end }}" data-tab="tab-{{ $index }}">{{ $title }}</button>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div class="tabs-content">
+    {{ .Inner }}
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="reimu-language-selector">
+  {{ range .Site.Home.AllTranslations }}
+    <a class="reimu-lang-link{{ if eq .Language.Lang $.Site.Language.Lang }} active{{ end }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+      {{ .Language.LanguageName }}
+    </a>
+  {{ end }}
+</div>
