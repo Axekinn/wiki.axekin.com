@@ -1,0 +1,1576 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Complete Guide: Xenia Installation and Configuration | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for installing, configuring and using the Xenia Xbox 360 emulator"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Complete Guide: Xenia Installation and Configuration | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for installing, configuring and using the Xenia Xbox 360 emulator"
+  />
+  <meta property="og:url" content="https://axekin.com/en/post/xenia/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/xenia.jpg"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="XeniaXbox 360EmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/xenia.jpg" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/xenia\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/xenia.jpg" alt="Complete Guide: Xenia Installation and Configuration"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="slide-up">Complete Guide: Xenia Installation and Configuration</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xenia">🎮 Introduction to Xenia</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration">Optimal Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-xenia">🔧 Step 1: Downloading Xenia</a>
+      <ul>
+        <li><a href="#master-version-stable">Master Version (Stable)</a></li>
+        <li><a href="#canary-version-development">Canary Version (Development)</a></li>
+        <li><a href="#xenia-vfs-tool">Xenia VFS Tool</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-first-launch-and-configuration">⚙️ Step 3: First Launch and Configuration</a>
+      <ul>
+        <li><a href="#installing-prerequisites">Installing Prerequisites</a></li>
+        <li><a href="#first-launch">First Launch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-optimal-cpu-configuration">⚙️ Step 4: Optimal CPU Configuration</a>
+      <ul>
+        <li><a href="#general-cpu-settings">General CPU Settings</a></li>
+        <li><a href="#advanced-cpu-options">Advanced CPU Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-optimal-gpu-configuration">⚙️ Step 5: Optimal GPU Configuration</a>
+      <ul>
+        <li><a href="#basic-graphics-settings">Basic Graphics Settings</a></li>
+        <li><a href="#resolution-and-quality">Resolution and Quality</a></li>
+        <li><a href="#advanced-rendering-options">Advanced Rendering Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-6-audio-and-control-configuration">⚙️ Step 6: Audio and Control Configuration</a>
+      <ul>
+        <li><a href="#audio-settings">Audio Settings</a></li>
+        <li><a href="#controller-configuration">Controller Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-7-game-installation-and-management">🎮 Step 7: Game Installation and Management</a>
+      <ul>
+        <li><a href="#supported-formats">Supported Formats</a></li>
+        <li><a href="#launch-methods">Launch Methods</a></li>
+        <li><a href="#dlc-and-update-installation">DLC and Update Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimization-for-popular-games">🚀 Optimization for Popular Games</a>
+      <ul>
+        <li><a href="#halo-3">Halo 3</a></li>
+        <li><a href="#gears-of-war-series">Gears of War Series</a></li>
+        <li><a href="#forza-motorsport-series">Forza Motorsport Series</a></li>
+        <li><a href="#red-dead-redemption">Red Dead Redemption</a></li>
+        <li><a href="#fable-ii">Fable II</a></li>
+        <li><a href="#crackdown">Crackdown</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🛠️ Advanced Features</a>
+      <ul>
+        <li><a href="#xbox-360-user-profiles">Xbox 360 User Profiles</a></li>
+        <li><a href="#debug-and-development">Debug and Development</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#launch-issues">Launch Issues</a></li>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#graphics-issues">Graphics Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-and-database">📊 Compatibility and Database</a>
+      <ul>
+        <li><a href="#current-statistics-2025">Current Statistics (2025)</a></li>
+        <li><a href="#perfectly-compatible-games">Perfectly Compatible Games</a></li>
+        <li><a href="#performance-benchmarks">Performance Benchmarks</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-sites">Official Sites</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#development-and-contribution">Development and Contribution</a></li>
+        <li><a href="#xbox-360-tools">Xbox 360 Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#common-problems">Common Problems</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-02</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-to-xenia">
+<a class="header-anchor" href="#-introduction-to-xenia"></a>
+🎮 Introduction to Xenia
+</h2><p><strong>Xenia</strong> is the most advanced open-source Xbox 360 emulator available. Developed since 2013, it emulates the Xbox 360&rsquo;s PowerPC Xenon architecture and offers growing compatibility with many iconic games from Microsoft&rsquo;s console.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Note</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) only</li>
+<li><strong>CPU</strong>: Intel Core i5-4690K / AMD FX-8350 (4+ cores, 3.0+ GHz)</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: DirectX 12 / Vulkan 1.1 compatible</li>
+<li><strong>Storage</strong>: 5 GB free space + game space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-8700K / AMD Ryzen 7 2700X (8+ cores, 3.5+ GHz)</li>
+<li><strong>RAM</strong>: 16 GB DDR4</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1070 / AMD RX 580 or higher</li>
+<li><strong>Storage</strong>: SSD with 50+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration">
+<a class="header-anchor" href="#optimal-configuration"></a>
+Optimal Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 4.0+ GHz)</li>
+<li><strong>RAM</strong>: 32 GB DDR4-3200+</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3070 / AMD RX 6700 XT or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 100+ GB free space</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Important Note</strong>: Xenia requires a powerful CPU with good single-thread performance. Recent GPUs with Vulkan support give the best results.</p></blockquote>
+<h2 id="-step-1-downloading-xenia">
+<a class="header-anchor" href="#-step-1-downloading-xenia"></a>
+🔧 Step 1: Downloading Xenia
+</h2><h3 id="master-version-stable">
+<a class="header-anchor" href="#master-version-stable"></a>
+Master Version (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://xenia.jp/download/
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download Master&rdquo;</li>
+<li><strong>Download</strong> <code>xenia_master.zip</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>C:\Xenia</code>)</li>
+</ol>
+<h3 id="canary-version-development">
+<a class="header-anchor" href="#canary-version-development"></a>
+Canary Version (Development)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic builds with latest improvements</span>
+</span></span><span style="display:flex;"><span>https://github.com/xenia-project/xenia/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Advantages:
+</span></span><span style="display:flex;"><span>- New features
+</span></span><span style="display:flex;"><span>- Recent fixes
+</span></span><span style="display:flex;"><span>- Improved compatibility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risks:
+</span></span><span style="display:flex;"><span>- Potentially unstable
+</span></span><span style="display:flex;"><span>- Possible regressions
+</span></span><span style="display:flex;"><span>- Unexpected bugs
+</span></span></code></pre></div><h3 id="xenia-vfs-tool">
+<a class="header-anchor" href="#xenia-vfs-tool"></a>
+Xenia VFS Tool
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Tool for extracting multi-disc games</span>
+</span></span><span style="display:flex;"><span>Included in main package
+</span></span><span style="display:flex;"><span>Usage: Extract complex .iso files
+</span></span></code></pre></div><h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Organize your files with this structure:</p>
+<pre tabindex="0"><code>Xenia/
+├── xenia.exe                # Main executable
+├── xenia_canary.exe         # Development version (optional)
+├── games/                   # Your Xbox 360 games
+│   ├── iso/                # Disc images .iso
+│   ├── xex/                # Executables .xex
+│   ├── xbla/               # Xbox Live Arcade
+│   └── extracted/          # Extracted games
+├── content/                # DLC and updates
+│   └── [Title-ID]/         # Content per game
+├── saves/                  # Save data
+│   └── [Profile-ID]/       # Saves per profile
+├── cache/                  # Shader and texture cache
+│   ├── shaders/           # Shader compilation cache
+│   └── textures/          # Texture cache
+├── licenses/               # Licenses for content
+└── portable.txt            # Portable mode (optional)
+</code></pre><h2 id="-step-3-first-launch-and-configuration">
+<a class="header-anchor" href="#-step-3-first-launch-and-configuration"></a>
+⚙️ Step 3: First Launch and Configuration
+</h2><h3 id="installing-prerequisites">
+<a class="header-anchor" href="#installing-prerequisites"></a>
+Installing Prerequisites
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime (if D3D12)</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vulkan Runtime (recommended)</span>
+</span></span><span style="display:flex;"><span>https://vulkan.lunarg.com/sdk/home
+</span></span></code></pre></div><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First Launch
+</h3><ol>
+<li><strong>Run</strong> <code>xenia.exe</code> as administrator</li>
+<li><strong>Accept</strong> compatibility warnings</li>
+<li><strong>Configure</strong> basic settings</li>
+</ol>
+<h2 id="-step-4-optimal-cpu-configuration">
+<a class="header-anchor" href="#-step-4-optimal-cpu-configuration"></a>
+⚙️ Step 4: Optimal CPU Configuration
+</h2><h3 id="general-cpu-settings">
+<a class="header-anchor" href="#general-cpu-settings"></a>
+General CPU Settings
+</h3><pre tabindex="0"><code>File → Config → CPU
+</code></pre><p><strong>Recommended Configuration:</strong></p>
+<ul>
+<li><strong>Clock frequency</strong>: 100% (standard Xbox 360)</li>
+<li><strong>Thread quantum</strong>: 20ms (default)</li>
+<li><strong>Processor count</strong>: 6 (emulates 6 Xenon cores)</li>
+<li><strong>Enable debugging</strong>: ❌ Disabled (except development)</li>
+</ul>
+<h3 id="advanced-cpu-options">
+<a class="header-anchor" href="#advanced-cpu-options"></a>
+Advanced CPU Options
+</h3><pre tabindex="0"><code>File → Config → CPU → Advanced
+</code></pre><ul>
+<li><strong>Break on instruction access</strong>: ❌ Disabled</li>
+<li><strong>Validate instruction addresses</strong>: ❌ Disabled (performance)</li>
+<li><strong>Ignore kernel debugging</strong>: ✅ Enabled</li>
+<li><strong>Disable kernel driver signing</strong>: ✅ Enabled</li>
+</ul>
+<h2 id="-step-5-optimal-gpu-configuration">
+<a class="header-anchor" href="#-step-5-optimal-gpu-configuration"></a>
+⚙️ Step 5: Optimal GPU Configuration
+</h2><h3 id="basic-graphics-settings">
+<a class="header-anchor" href="#basic-graphics-settings"></a>
+Basic Graphics Settings
+</h3><pre tabindex="0"><code>File → Config → GPU
+</code></pre><p><strong>Recommended Backend:</strong></p>
+<ul>
+<li><strong>Graphics API</strong>: Vulkan (performance) or D3D12 (compatibility)</li>
+<li><strong>Graphics adapter</strong>: Your main GPU</li>
+<li><strong>Fullscreen</strong>: ✅ Enabled (reduces latency)</li>
+<li><strong>VSync</strong>: ✅ Enabled (prevents tearing)</li>
+</ul>
+<h3 id="resolution-and-quality">
+<a class="header-anchor" href="#resolution-and-quality"></a>
+Resolution and Quality
+</h3><pre tabindex="0"><code>File → Config → GPU → Display
+</code></pre><p><strong>Optimal Settings:</strong></p>
+<ul>
+<li><strong>Internal display resolution</strong>: 1280x720 (native) or 1920x1080</li>
+<li><strong>Internal framebuffer resolution</strong>: 1280x720 or upscaled</li>
+<li><strong>Scaling mode</strong>: Bilinear or Lanczos (sharper)</li>
+<li><strong>Pixel shader interlock</strong>: ✅ Enabled (if supported)</li>
+</ul>
+<h3 id="advanced-rendering-options">
+<a class="header-anchor" href="#advanced-rendering-options"></a>
+Advanced Rendering Options
+</h3><pre tabindex="0"><code>File → Config → GPU → Rendering
+</code></pre><p><strong>Performance Configuration:</strong></p>
+<ul>
+<li><strong>Enable 10-bit color</strong>: ❌ Disabled (except 10-bit displays)</li>
+<li><strong>Enable gamma ramp</strong>: ✅ Enabled</li>
+<li><strong>Enable postprocessing</strong>: ❌ Disabled (saves performance)</li>
+<li><strong>Texture filter anisotropic</strong>: ✅ Enabled</li>
+<li><strong>Texture addressing clamp to border</strong>: ✅ Enabled</li>
+</ul>
+<h2 id="-step-6-audio-and-control-configuration">
+<a class="header-anchor" href="#-step-6-audio-and-control-configuration"></a>
+⚙️ Step 6: Audio and Control Configuration
+</h2><h3 id="audio-settings">
+<a class="header-anchor" href="#audio-settings"></a>
+Audio Settings
+</h3><pre tabindex="0"><code>File → Config → Audio
+</code></pre><p><strong>Optimal Configuration:</strong></p>
+<ul>
+<li><strong>Audio system</strong>: XAudio2 (Windows native)</li>
+<li><strong>Audio channels</strong>: Stereo or 5.1 depending on your setup</li>
+<li><strong>Audio sample rate</strong>: 48000 Hz</li>
+<li><strong>Audio buffer size</strong>: 512 samples (adjust if crackling)</li>
+</ul>
+<h3 id="controller-configuration">
+<a class="header-anchor" href="#controller-configuration"></a>
+Controller Configuration
+</h3><pre tabindex="0"><code>File → Config → Input
+</code></pre><p><strong>Xbox 360/One Controller:</strong></p>
+<ul>
+<li><strong>Input system</strong>: XInput (Microsoft native)</li>
+<li><strong>Controller</strong>: Xbox 360 Controller</li>
+<li><strong>Vibration</strong>: ✅ Enabled</li>
+</ul>
+<p><strong>Automatic Mapping:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For Xbox controller (native mapping)</span>
+</span></span><span style="display:flex;"><span>1. Connect your Xbox controller
+</span></span><span style="display:flex;"><span>2. Xenia detects automatically
+</span></span><span style="display:flex;"><span>3. Test in XInput Test menu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For other controllers</span>
+</span></span><span style="display:flex;"><span>1. Input system: DirectInput
+</span></span><span style="display:flex;"><span>2. Manual button configuration
+</span></span><span style="display:flex;"><span>3. DualShock → Xbox mapping:
+</span></span><span style="display:flex;"><span>   X → A, O → B, ▢ → X, △ → Y
+</span></span><span style="display:flex;"><span>   L1 → LB, L2 → LT, R1 → RB, R2 → RT
+</span></span></code></pre></div><h2 id="-step-7-game-installation-and-management">
+<a class="header-anchor" href="#-step-7-game-installation-and-management"></a>
+🎮 Step 7: Game Installation and Management
+</h2><h3 id="supported-formats">
+<a class="header-anchor" href="#supported-formats"></a>
+Supported Formats
+</h3><h4 id="disc-games">
+<a class="header-anchor" href="#disc-games"></a>
+Disc Games
+</h4><ul>
+<li><strong>.iso</strong>: Standard DVD disc image</li>
+<li><strong>.xex</strong>: Xbox Executable (individual game)</li>
+<li><strong>Extracted folder</strong>: Complete game structure</li>
+</ul>
+<h4 id="downloadable-content">
+<a class="header-anchor" href="#downloadable-content"></a>
+Downloadable Content
+</h4><ul>
+<li><strong>STFS</strong>: Secure Transacted File System (DLC, saves)</li>
+<li><strong>LIVE</strong>: Xbox Live Arcade packages</li>
+<li><strong>GOD</strong>: Games on Demand</li>
+</ul>
+<h3 id="launch-methods">
+<a class="header-anchor" href="#launch-methods"></a>
+Launch Methods
+</h3><h4 id="direct-launch">
+<a class="header-anchor" href="#direct-launch"></a>
+Direct Launch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Method 1: ISO File</span>
+</span></span><span style="display:flex;"><span>1. File → Open
+</span></span><span style="display:flex;"><span>2. Select your .iso file
+</span></span><span style="display:flex;"><span>3. Game starts automatically
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Method 2: Drag &amp; Drop</span>
+</span></span><span style="display:flex;"><span>1. Drag .iso file onto Xenia
+</span></span><span style="display:flex;"><span>2. Automatic launch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Method 3: XEX Executable</span>
+</span></span><span style="display:flex;"><span>1. Extract disc contents
+</span></span><span style="display:flex;"><span>2. Launch main default.xex file
+</span></span></code></pre></div><h4 id="multi-disc-game-extraction">
+<a class="header-anchor" href="#multi-disc-game-extraction"></a>
+Multi-Disc Game Extraction
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With Xenia VFS Tool</span>
+</span></span><span style="display:flex;"><span>1. Open command prompt
+</span></span><span style="display:flex;"><span>2. cd C:<span style="color:#ae81ff">\X</span>enia<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>3. xenia-vfs-dump.exe <span style="color:#e6db74">&#34;Game.iso&#34;</span> <span style="color:#e6db74">&#34;ExtractedFolder\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">4. Launch default.xex from extracted folder
+</span></span></span></code></pre></div><h3 id="dlc-and-update-installation">
+<a class="header-anchor" href="#dlc-and-update-installation"></a>
+DLC and Update Installation
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install additional content</span>
+</span></span><span style="display:flex;"><span>1. File → Install Content
+</span></span><span style="display:flex;"><span>2. Select DLC/Update files
+</span></span><span style="display:flex;"><span>3. Automatic installation to content/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>4. Restart game to activate content
+</span></span></code></pre></div><h2 id="-optimization-for-popular-games">
+<a class="header-anchor" href="#-optimization-for-popular-games"></a>
+🚀 Optimization for Popular Games
+</h2><h3 id="halo-3">
+<a class="header-anchor" href="#halo-3"></a>
+Halo 3
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimal configuration</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan
+</span></span><span style="display:flex;"><span>- Resolution: 720p or 1080p
+</span></span><span style="display:flex;"><span>- VSync: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Clock frequency: 100%
+</span></span><span style="display:flex;"><span>- All optimizations enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Excellent, generally stable <span style="color:#ae81ff">60</span> FPS
+</span></span></code></pre></div><h3 id="gears-of-war-series">
+<a class="header-anchor" href="#gears-of-war-series"></a>
+Gears of War Series
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Recommended settings</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: D3D12 <span style="color:#f92672">(</span>better compatibility<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p-1080p
+</span></span><span style="display:flex;"><span>- Pixel shader interlock: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Buffer size: <span style="color:#ae81ff">1024</span> samples <span style="color:#f92672">(</span>prevents crackling<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Notes: Gears 1-3 well supported
+</span></span></code></pre></div><h3 id="forza-motorsport-series">
+<a class="header-anchor" href="#forza-motorsport-series"></a>
+Forza Motorsport Series
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Racing configuration</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan <span style="color:#f92672">(</span>performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Internal resolution: 1080p possible
+</span></span><span style="display:flex;"><span>- VSync: ✅ Mandatory <span style="color:#f92672">(</span>prevents tearing<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Clock frequency: 100% <span style="color:#f92672">(</span>timing important<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Input:
+</span></span><span style="display:flex;"><span>- Controller vibration: ✅ For immersion
+</span></span><span style="display:flex;"><span>- Low latency mode <span style="color:#66d9ef">if</span> available
+</span></span></code></pre></div><h3 id="red-dead-redemption">
+<a class="header-anchor" href="#red-dead-redemption"></a>
+Red Dead Redemption
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Very demanding game</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: Vulkan or D3D12 <span style="color:#f92672">(</span>test both<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p recommended
+</span></span><span style="display:flex;"><span>- Postprocessing: ❌ Disabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- All cores available
+</span></span><span style="display:flex;"><span>- Priority process: High
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Variable, 30-60 FPS depending on area
+</span></span></code></pre></div><h3 id="fable-ii">
+<a class="header-anchor" href="#fable-ii"></a>
+Fable II
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># RPG configuration</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan
+</span></span><span style="display:flex;"><span>- Resolution: 1080p possible
+</span></span><span style="display:flex;"><span>- Texture filtering: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Saves:
+</span></span><span style="display:flex;"><span>- Frequent saving recommended
+</span></span><span style="display:flex;"><span>- Manual save backups
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Compatibility: Excellent from start to finish
+</span></span></code></pre></div><h3 id="crackdown">
+<a class="header-anchor" href="#crackdown"></a>
+Crackdown
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Open-world action</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: D3D12 <span style="color:#f92672">(</span>stability<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p-1080p
+</span></span><span style="display:flex;"><span>- Frame limiting: <span style="color:#ae81ff">30</span> FPS <span style="color:#f92672">(</span>like original<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Performance cores priority
+</span></span><span style="display:flex;"><span>- Close background applications
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Physics: Can be unstable in some areas
+</span></span></code></pre></div><h2 id="-advanced-features">
+<a class="header-anchor" href="#-advanced-features"></a>
+🛠️ Advanced Features
+</h2><h3 id="xbox-360-user-profiles">
+<a class="header-anchor" href="#xbox-360-user-profiles"></a>
+Xbox 360 User Profiles
+</h3><h4 id="profile-creation">
+<a class="header-anchor" href="#profile-creation"></a>
+Profile Creation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Local profile required</span>
+</span></span><span style="display:flex;"><span>1. File → Create Profile
+</span></span><span style="display:flex;"><span>2. Enter username
+</span></span><span style="display:flex;"><span>3. Select avatar <span style="color:#f92672">(</span>optional<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Profile created in saves/<span style="color:#f92672">[</span>ProfileID<span style="color:#f92672">]</span>/
+</span></span></code></pre></div><h4 id="save-management">
+<a class="header-anchor" href="#save-management"></a>
+Save Management
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Save location</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\X</span>enia<span style="color:#ae81ff">\c</span>ontent<span style="color:#ae81ff">\[</span>ProfileID<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>TitleID<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save backup</span>
+</span></span><span style="display:flex;"><span>1. Copy entire ProfileID folder
+</span></span><span style="display:flex;"><span>2. External backup recommended
+</span></span><span style="display:flex;"><span>3. Restore: Replace folder
+</span></span></code></pre></div><h3 id="debug-and-development">
+<a class="header-anchor" href="#debug-and-development"></a>
+Debug and Development
+</h3><h4 id="developer-mode">
+<a class="header-anchor" href="#developer-mode"></a>
+Developer Mode
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For developers/modders</span>
+</span></span><span style="display:flex;"><span>File → Config → General
+</span></span><span style="display:flex;"><span>- Show debug info: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Log level: <span style="color:#ae81ff">2</span> <span style="color:#f92672">(</span>Info<span style="color:#f92672">)</span> or <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>Debug<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Debug console</span>
+</span></span><span style="display:flex;"><span>View → Show Debug Console
+</span></span><span style="display:flex;"><span>- Shows real-time logs
+</span></span><span style="display:flex;"><span>- Useful <span style="color:#66d9ef">for</span> diagnosing issues
+</span></span></code></pre></div><h4 id="content-extraction">
+<a class="header-anchor" href="#content-extraction"></a>
+Content Extraction
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extract game assets</span>
+</span></span><span style="display:flex;"><span>1. Use Xenia VFS Dump
+</span></span><span style="display:flex;"><span>2. Extract textures, models, sounds
+</span></span><span style="display:flex;"><span>3. Community modding tools
+</span></span><span style="display:flex;"><span>4. Copyright compliance mandatory
+</span></span></code></pre></div><h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="launch-issues">
+<a class="header-anchor" href="#launch-issues"></a>
+Launch Issues
+</h3><h4 id="xenia-wont-start">
+<a class="header-anchor" href="#xenia-wont-start"></a>
+Xenia Won&rsquo;t Start
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>System checks:
+</span></span><span style="display:flex;"><span>1. Windows <span style="color:#ae81ff">10</span> 64-bit mandatory
+</span></span><span style="display:flex;"><span>2. Visual C++ <span style="color:#ae81ff">2022</span> installed
+</span></span><span style="display:flex;"><span>3. DirectX/Vulkan runtime updated
+</span></span><span style="display:flex;"><span>4. Antivirus: exception <span style="color:#66d9ef">for</span> Xenia folder
+</span></span><span style="display:flex;"><span>5. Administrator rights granted
+</span></span></code></pre></div><h4 id="game-wont-launch">
+<a class="header-anchor" href="#game-wont-launch"></a>
+Game Won&rsquo;t Launch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Game diagnostics:
+</span></span><span style="display:flex;"><span>1. Check supported format <span style="color:#f92672">(</span>.iso, .xex<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. File integrity <span style="color:#f92672">(</span>MD5/SHA1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Game region <span style="color:#f92672">(</span>PAL/NTSC/JPN<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Sufficient disk space
+</span></span><span style="display:flex;"><span>5. Check official compatibility list
+</span></span></code></pre></div><h3 id="performance-issues">
+<a class="header-anchor" href="#performance-issues"></a>
+Performance Issues
+</h3><h4 id="very-low-fps">
+<a class="header-anchor" href="#very-low-fps"></a>
+Very Low FPS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance optimizations:
+</span></span><span style="display:flex;"><span>1. Graphics API: Test Vulkan vs D3D12
+</span></span><span style="display:flex;"><span>2. Resolution: Reduce to 720p native
+</span></span><span style="display:flex;"><span>3. VSync: Temporarily disable
+</span></span><span style="display:flex;"><span>4. Process priority: High
+</span></span><span style="display:flex;"><span>5. CPU cores: Check usage
+</span></span><span style="display:flex;"><span>6. GPU usage: Monitor with MSI Afterburner
+</span></span></code></pre></div><h4 id="frequent-micro-freezes">
+<a class="header-anchor" href="#frequent-micro-freezes"></a>
+Frequent Micro-Freezes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stuttering solutions:
+</span></span><span style="display:flex;"><span>1. SSD: Move Xenia and games to SSD
+</span></span><span style="display:flex;"><span>2. RAM: 16GB+ recommended
+</span></span><span style="display:flex;"><span>3. Page file: Increase Windows size
+</span></span><span style="display:flex;"><span>4. Background apps: Close all
+</span></span><span style="display:flex;"><span>5. Windows Game Mode: Disable
+</span></span><span style="display:flex;"><span>6. Real-time antivirus: Temporarily disable
+</span></span></code></pre></div><h4 id="high-cpu-usage">
+<a class="header-anchor" href="#high-cpu-usage"></a>
+High CPU Usage
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CPU management:
+</span></span><span style="display:flex;"><span>1. Affinity: Reserve physical cores <span style="color:#66d9ef">for</span> Xenia
+</span></span><span style="display:flex;"><span>2. Hyperthreading: Can cause instability
+</span></span><span style="display:flex;"><span>3. Boost frequencies: Monitor temperatures
+</span></span><span style="display:flex;"><span>4. Power plan: High Performance
+</span></span><span style="display:flex;"><span>5. CPU scheduling: Windows <span style="color:#ae81ff">10</span> optimizations
+</span></span></code></pre></div><h3 id="graphics-issues">
+<a class="header-anchor" href="#graphics-issues"></a>
+Graphics Issues
+</h3><h4 id="black-screencorruption">
+<a class="header-anchor" href="#black-screencorruption"></a>
+Black Screen/Corruption
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Visual corrections:
+</span></span><span style="display:flex;"><span>1. Graphics API: Switch <span style="color:#f92672">(</span>Vulkan ↔ D3D12<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. GPU drivers: Latest stable version
+</span></span><span style="display:flex;"><span>3. Resolution: Test 720p native
+</span></span><span style="display:flex;"><span>4. Pixel shader interlock: Toggle
+</span></span><span style="display:flex;"><span>5. Fullscreen: Test windowed mode
+</span></span></code></pre></div><h4 id="missing-textures">
+<a class="header-anchor" href="#missing-textures"></a>
+Missing Textures
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Texture fixes:
+</span></span><span style="display:flex;"><span>1. Texture addressing: Clamp to border
+</span></span><span style="display:flex;"><span>2. Anisotropic filtering: Test disable
+</span></span><span style="display:flex;"><span>3. Memory: Check available VRAM
+</span></span><span style="display:flex;"><span>4. Cache: Clear texture cache
+</span></span><span style="display:flex;"><span>5. Game-specific: Search <span style="color:#66d9ef">for</span> patches
+</span></span></code></pre></div><h4 id="unstable-framerate">
+<a class="header-anchor" href="#unstable-framerate"></a>
+Unstable Framerate
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>FPS stabilization:
+</span></span><span style="display:flex;"><span>1. VSync: Force via GPU drivers
+</span></span><span style="display:flex;"><span>2. Frame limiting: Enable <span style="color:#66d9ef">if</span> available
+</span></span><span style="display:flex;"><span>3. Adaptive sync: G-Sync/FreeSync
+</span></span><span style="display:flex;"><span>4. Triple buffering: Test enable
+</span></span><span style="display:flex;"><span>5. Exclusive fullscreen: Prefer
+</span></span></code></pre></div><h3 id="audio-issues">
+<a class="header-anchor" href="#audio-issues"></a>
+Audio Issues
+</h3><h4 id="no-sound">
+<a class="header-anchor" href="#no-sound"></a>
+No Sound
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio diagnostics:
+</span></span><span style="display:flex;"><span>1. Audio system: XAudio2 recommended
+</span></span><span style="display:flex;"><span>2. Device: Check default device
+</span></span><span style="display:flex;"><span>3. Sample rate: <span style="color:#ae81ff">48000</span> Hz standard
+</span></span><span style="display:flex;"><span>4. Exclusive mode: Disable Windows
+</span></span><span style="display:flex;"><span>5. Audio services: Restart Windows Audio
+</span></span></code></pre></div><h4 id="cracklingdistortion">
+<a class="header-anchor" href="#cracklingdistortion"></a>
+Crackling/Distortion
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio solutions:
+</span></span><span style="display:flex;"><span>1. Buffer size: Increase <span style="color:#f92672">(</span>1024, 2048<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Audio channels: Reduce to Stereo
+</span></span><span style="display:flex;"><span>3. Sample rate: Test <span style="color:#ae81ff">44100</span> Hz
+</span></span><span style="display:flex;"><span>4. Other audio apps: Close all
+</span></span><span style="display:flex;"><span>5. Audio drivers: Update
+</span></span></code></pre></div><h2 id="-compatibility-and-database">
+<a class="header-anchor" href="#-compatibility-and-database"></a>
+📊 Compatibility and Database
+</h2><h3 id="current-statistics-2025">
+<a class="header-anchor" href="#current-statistics-2025"></a>
+Current Statistics (2025)
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~40%</td>
+          <td>Playable from start to finish</td>
+      </tr>
+      <tr>
+          <td><strong>Menus</strong></td>
+          <td>~25%</td>
+          <td>Starts, gameplay issues</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~20%</td>
+          <td>Enters game, major bugs</td>
+      </tr>
+      <tr>
+          <td><strong>Intro</strong></td>
+          <td>~10%</td>
+          <td>Logo/intro only</td>
+      </tr>
+      <tr>
+          <td><strong>Nothing</strong></td>
+          <td>~5%</td>
+          <td>Won&rsquo;t start</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>📈 <strong>Note</strong>: Compatibility improves rapidly with Canary versions</p></blockquote>
+<h3 id="perfectly-compatible-games">
+<a class="header-anchor" href="#perfectly-compatible-games"></a>
+Perfectly Compatible Games
+</h3><h4 id="microsoft-exclusives">
+<a class="header-anchor" href="#microsoft-exclusives"></a>
+Microsoft Exclusives
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Halo 3, 4, ODST, Reach
+</span></span><span style="display:flex;"><span>✅ Gears of War 1, 2, <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>✅ Forza Motorsport 2, 3, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>✅ Fable II, III
+</span></span><span style="display:flex;"><span>✅ Crackdown 1, <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Alan Wake
+</span></span><span style="display:flex;"><span>✅ Lost Odyssey <span style="color:#f92672">(</span>with patience<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="xbox-live-arcade">
+<a class="header-anchor" href="#xbox-live-arcade"></a>
+Xbox Live Arcade
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Castle Crashers
+</span></span><span style="display:flex;"><span>✅ Geometry Wars series
+</span></span><span style="display:flex;"><span>✅ Limbo
+</span></span><span style="display:flex;"><span>✅ Braid
+</span></span><span style="display:flex;"><span>✅ Shadow Complex
+</span></span><span style="display:flex;"><span>✅ Trials HD/Evolution
+</span></span><span style="display:flex;"><span>✅ Pac-Man Championship Edition
+</span></span></code></pre></div><h4 id="well-supported-multiplatform">
+<a class="header-anchor" href="#well-supported-multiplatform"></a>
+Well-Supported Multiplatform
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Red Dead Redemption <span style="color:#f92672">(</span>variable<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ GTA IV + DLC
+</span></span><span style="display:flex;"><span>✅ Assassin<span style="color:#960050;background-color:#1e0010">&#39;</span>s Creed series
+</span></span><span style="display:flex;"><span>✅ Call of Duty series <span style="color:#f92672">(</span>most<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ FIFA series
+</span></span><span style="display:flex;"><span>✅ Burnout Paradise
+</span></span></code></pre></div><h3 id="performance-benchmarks">
+<a class="header-anchor" href="#performance-benchmarks"></a>
+Performance Benchmarks
+</h3><h4 id="test-configuration-i7-10700k-rtx-3060-16gb-ram">
+<a class="header-anchor" href="#test-configuration-i7-10700k-rtx-3060-16gb-ram"></a>
+Test Configuration: i7-10700K, RTX 3060, 16GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Game</th>
+          <th>Resolution</th>
+          <th>Avg FPS</th>
+          <th>CPU Usage</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Halo 3</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>60%</td>
+          <td>Perfect</td>
+      </tr>
+      <tr>
+          <td><strong>Gears of War</strong></td>
+          <td>1080p</td>
+          <td>55-60</td>
+          <td>70%</td>
+          <td>Excellent</td>
+      </tr>
+      <tr>
+          <td><strong>Fable II</strong></td>
+          <td>1080p</td>
+          <td>50-60</td>
+          <td>65%</td>
+          <td>Very good</td>
+      </tr>
+      <tr>
+          <td><strong>RDR</strong></td>
+          <td>720p</td>
+          <td>30-45</td>
+          <td>85%</td>
+          <td>Playable</td>
+      </tr>
+      <tr>
+          <td><strong>Forza 3</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>55%</td>
+          <td>Perfect</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-resources-and-community">
+<a class="header-anchor" href="#-resources-and-community"></a>
+🌐 Resources and Community
+</h2><h3 id="official-sites">
+<a class="header-anchor" href="#official-sites"></a>
+Official Sites
+</h3><ul>
+<li><a href="https://xenia.jp/">🏠 Official Xenia Site</a></li>
+<li><a href="https://github.com/xenia-project/game-compatibility/issues">📊 Compatibility List</a></li>
+<li><a href="https://github.com/xenia-project/xenia/wiki">📚 Xenia Wiki</a></li>
+<li><a href="https://xenia.jp/docs/">🔧 Developer Documentation</a></li>
+</ul>
+<h3 id="active-communities">
+<a class="header-anchor" href="#active-communities"></a>
+Active Communities
+</h3><ul>
+<li><a href="https://discord.gg/Q9mxZf9">💬 Xenia Discord</a></li>
+<li><a href="https://www.reddit.com/r/xenia/">🗨️ Reddit r/xenia</a></li>
+<li><a href="https://www.emugen.com/forums/xenia.27/">🌐 Emugen Forums</a></li>
+<li><a href="https://www.youtube.com/results?search_query=xenia&#43;emulator&#43;guide">📺 YouTube Guides</a></li>
+</ul>
+<h3 id="development-and-contribution">
+<a class="header-anchor" href="#development-and-contribution"></a>
+Development and Contribution
+</h3><ul>
+<li><a href="https://github.com/xenia-project/xenia">💻 Xenia GitHub</a></li>
+<li><a href="https://github.com/xenia-project/xenia/issues">🐛 Bug Reports</a></li>
+<li><a href="https://www.patreon.com/xeniaproject">💰 Donations</a></li>
+<li><a href="https://github.com/xenia-project/xenia/blob/master/docs/building.md">🔧 Build Instructions</a></li>
+</ul>
+<h3 id="xbox-360-tools">
+<a class="header-anchor" href="#xbox-360-tools"></a>
+Xbox 360 Tools
+</h3><ul>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=3074">🔧 Xbox 360 Neighborhood</a> - Developer tools</li>
+<li><a href="https://www.wemod.com/horizon">📁 Horizon</a> - Xbox 360 save editor</li>
+<li><a href="http://team-xecuter.com/forums/freestyle-dash/">🎮 FreeStyle Dash</a> - Alternative dashboard</li>
+<li><a href="https://www.djtmnth.com/">🔍 Xbox 360 ISO Extract</a> - ISO extraction</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Does Xenia work on Linux/Mac?</strong>
+<strong>A:</strong> No, Xenia is exclusively Windows 10/11 64-bit. No official port planned.</p>
+<p><strong>Q: Can I play online with Xenia?</strong>
+<strong>A:</strong> No, Xbox Live is not supported and likely never will be.</p>
+<p><strong>Q: Can Xenia play original Xbox games?</strong>
+<strong>A:</strong> No, Xenia only emulates Xbox 360. Use xemu for original Xbox.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Vulkan or D3D12?</strong>
+<strong>A:</strong> Vulkan generally more performant, D3D12 sometimes more stable. Test per game.</p>
+<p><strong>Q: How much RAM minimum?</strong>
+<strong>A:</strong> 8GB absolute minimum, 16GB strongly recommended, 32GB for large games.</p>
+<p><strong>Q: Is my GPU sufficient?</strong>
+<strong>A:</strong> DirectX 12 or Vulkan 1.1 minimum required. GTX 1060/RX 580 for decent performance.</p>
+<h3 id="common-problems">
+<a class="header-anchor" href="#common-problems"></a>
+Common Problems
+</h3><p><strong>Q: Game crashes on launch?</strong>
+<strong>A:</strong> Check official compatibility, test different APIs, verify file integrity.</p>
+<p><strong>Q: Very poor performance?</strong>
+<strong>A:</strong> CPU is main limiting factor. Close apps, use SSD, check temperatures.</p>
+<p><strong>Q: Audio out of sync?</strong>
+<strong>A:</strong> Increase audio buffer, change sample rate, close other audio apps.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Xenia is a promising Xbox 360 emulator that offers:</p>
+<ul>
+<li>✅ <strong>Access to Xbox 360 exclusives</strong> impossible to play elsewhere</li>
+<li>✅ <strong>Graphics improvements</strong> with higher resolutions</li>
+<li>✅ <strong>Active development</strong> with constant improvements</li>
+<li>✅ <strong>Microsoft exclusives support</strong> (Halo, Gears, Forza)</li>
+<li>✅ <strong>Xbox 360 preservation</strong> heritage</li>
+<li>✅ <strong>Decent performance</strong> on modern hardware</li>
+<li>⚠️ <strong>Progressing compatibility</strong> (40% playable currently)</li>
+</ul>
+<p>With this complete guide, you now know how to:</p>
+<ul>
+<li><strong>Install</strong> and configure Xenia optimally</li>
+<li><strong>Optimize</strong> according to your configuration</li>
+<li><strong>Solve</strong> common problems</li>
+<li><strong>Access</strong> legendary Xbox 360 games</li>
+<li><strong>Understand</strong> current limitations</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Legal Reminder</strong>: Only use games you legally own. Xenia provides no games - you must create your own backups from your Xbox 360 discs.</p></blockquote>
+<p><strong>Rediscover Xbox 360 exclusives with Xenia! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://axekin.com/en/post/xenia/">https://axekin.com/en/post/xenia/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Complete Guide: Xenia Installation and Configuration</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-02 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/en/post/xenia/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/en/post/xenia/&amp;text=Complete%20Guide:%20Xenia%20Installation%20and%20Configuration&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/en/post/xenia/&amp;title=Complete%20Guide:%20Xenia%20Installation%20and%20Configuration&amp;summary=Detailed%20tutorial%20for%20installing,%20configuring%20and%20using%20the%20Xenia%20Xbox%20360%20emulator&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/en/post/xenia/&amp;title=Complete%20Guide:%20Xenia%20Installation%20and%20Configuration" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Xenia Installation and Configuration">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/xenia"
+        rel="tag"
+        >XENIA</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/xbox-360"
+        rel="tag"
+        >XBOX 360</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/yuzu.jpg"
+            data-sizes="auto"
+            alt="Complete Guide: Yuzu Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/yuzu/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">Complete Guide: Yuzu Installation and Configuration</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/ryujinx.png"
+            data-sizes="auto"
+            alt="Complete Guide: Ryujinx Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/ryujinx/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Complete Guide: Ryujinx Installation and Configuration</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;27.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:15</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Made with ❤️ by Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xenia">🎮 Introduction to Xenia</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration">Optimal Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-xenia">🔧 Step 1: Downloading Xenia</a>
+      <ul>
+        <li><a href="#master-version-stable">Master Version (Stable)</a></li>
+        <li><a href="#canary-version-development">Canary Version (Development)</a></li>
+        <li><a href="#xenia-vfs-tool">Xenia VFS Tool</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-first-launch-and-configuration">⚙️ Step 3: First Launch and Configuration</a>
+      <ul>
+        <li><a href="#installing-prerequisites">Installing Prerequisites</a></li>
+        <li><a href="#first-launch">First Launch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-optimal-cpu-configuration">⚙️ Step 4: Optimal CPU Configuration</a>
+      <ul>
+        <li><a href="#general-cpu-settings">General CPU Settings</a></li>
+        <li><a href="#advanced-cpu-options">Advanced CPU Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-optimal-gpu-configuration">⚙️ Step 5: Optimal GPU Configuration</a>
+      <ul>
+        <li><a href="#basic-graphics-settings">Basic Graphics Settings</a></li>
+        <li><a href="#resolution-and-quality">Resolution and Quality</a></li>
+        <li><a href="#advanced-rendering-options">Advanced Rendering Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-6-audio-and-control-configuration">⚙️ Step 6: Audio and Control Configuration</a>
+      <ul>
+        <li><a href="#audio-settings">Audio Settings</a></li>
+        <li><a href="#controller-configuration">Controller Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-7-game-installation-and-management">🎮 Step 7: Game Installation and Management</a>
+      <ul>
+        <li><a href="#supported-formats">Supported Formats</a></li>
+        <li><a href="#launch-methods">Launch Methods</a></li>
+        <li><a href="#dlc-and-update-installation">DLC and Update Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimization-for-popular-games">🚀 Optimization for Popular Games</a>
+      <ul>
+        <li><a href="#halo-3">Halo 3</a></li>
+        <li><a href="#gears-of-war-series">Gears of War Series</a></li>
+        <li><a href="#forza-motorsport-series">Forza Motorsport Series</a></li>
+        <li><a href="#red-dead-redemption">Red Dead Redemption</a></li>
+        <li><a href="#fable-ii">Fable II</a></li>
+        <li><a href="#crackdown">Crackdown</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🛠️ Advanced Features</a>
+      <ul>
+        <li><a href="#xbox-360-user-profiles">Xbox 360 User Profiles</a></li>
+        <li><a href="#debug-and-development">Debug and Development</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#launch-issues">Launch Issues</a></li>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#graphics-issues">Graphics Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-and-database">📊 Compatibility and Database</a>
+      <ul>
+        <li><a href="#current-statistics-2025">Current Statistics (2025)</a></li>
+        <li><a href="#perfectly-compatible-games">Perfectly Compatible Games</a></li>
+        <li><a href="#performance-benchmarks">Performance Benchmarks</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-sites">Official Sites</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#development-and-contribution">Development and Contribution</a></li>
+        <li><a href="#xbox-360-tools">Xbox 360 Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#common-problems">Common Problems</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Complete Guide: Xenia Installation and Configuration",
+          url: "https:\/\/axekin.com\/en\/post\/xenia\/",
+          description: "Detailed tutorial for installing, configuring and using the Xenia Xbox 360 emulator",
+          cover: "https:\/\/axekin.com\/images\/covers\/xenia.jpg",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

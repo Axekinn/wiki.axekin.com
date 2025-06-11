@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PS3 on Wiki of Axekin</title>
+    <link>https://axekin.com/en/tags/ps3/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/en/tags/ps3/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Complete Guide: RPCS3 Installation and Configuration</title>
+      <link>https://axekin.com/en/post/rpcs3/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/en/post/rpcs3/</guid>
+      <description>
+        <![CDATA[<h1>Complete Guide: RPCS3 Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-rpcs3">
+<a class="header-anchor" href="#-introduction-to-rpcs3"></a>
+🎮 Introduction to RPCS3
+</h2><p><strong>RPCS3</strong> is the world&rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to emulate the PS3&rsquo;s Cell architecture. After years of development, it now offers impressive compatibility with over 60% of PS3 games.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / FreeBSD</li>
+<li><strong>CPU</strong>: Intel Core i5-4430 / AMD FX-6300 (4 cores, 3.0 GHz)</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: DirectX 12 compatible / Vulkan 1.1 compatible</li>
+<li><strong>Storage</strong>: 10 GB free space + game space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-8700 / AMD Ryzen 7 2700 (8 cores, 3.2+ GHz)</li>
+<li><strong>RAM</strong>: 16 GB</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1060 / AMD RX 580 or higher</li>
+<li><strong>Storage</strong>: SSD with 50+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration">
+<a class="header-anchor" href="#optimal-configuration"></a>
+Optimal Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 3.5+ GHz)</li>
+<li><strong>RAM</strong>: 32 GB DDR4-3200+</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3070 / AMD RX 6700 XT or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 100+ GB free space</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Important Note</strong>: RPCS3 is extremely CPU demanding. A powerful processor with many cores is essential.</p></blockquote>
+<h2 id="-step-1-downloading-rpcs3">
+<a class="header-anchor" href="#-step-1-downloading-rpcs3"></a>
+🔧 Step 1: Downloading RPCS3
+</h2><h3 id="official-version-recommended">
+<a class="header-anchor" href="#official-version-recommended"></a>
+Official Version (Recommended)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://rpcs3.net/download
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Download</strong> <code>rpcs3-v0.0.XX-windows_x64.7z</code></li>
+<li><strong>Extract</strong> with 7-Zip to a dedicated folder (e.g., <code>C:\RPCS3</code>)</li>
+</ol>
+<h3 id="development-builds">
+<a class="header-anchor" href="#development-builds"></a>
+Development Builds
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Versions with latest improvements</span>
+</span></span><span style="display:flex;"><span>https://github.com/RPCS3/rpcs3-binaries-win/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Advantages:
+</span></span><span style="display:flex;"><span>- Recent bug fixes
+</span></span><span style="display:flex;"><span>- New optimizations
+</span></span><span style="display:flex;"><span>- Improved compatibility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risks:
+</span></span><span style="display:flex;"><span>- Potentially unstable
+</span></span><span style="display:flex;"><span>- Possible regressions
+</span></span></code></pre></div><h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Organize your files with this structure:</p>
+<pre tabindex="0"><code>RPCS3/
+├── rpcs3.exe                # Main executable
+├── firmware/                # PS3 firmware (required)
+│   └── PS3UPDAT.PUP        # Official firmware file
+├── games/                   # Your PS3 games
+│   ├── disc/               # Disc games .iso/.bin/.img
+│   ├── psn/                # PSN games .pkg/.rap
+│   └── homebrew/           # Homebrew applications
+├── dev_hdd0/               # PS3 virtual hard drive
+│   ├── game/               # Installed games
+│   ├── savedata/           # Save data
+│   ├── trophy/             # PlayStation trophies
+│   └── home/               # User profiles
+├── saves/                  # Exported saves
+├── screenshots/            # Screenshots
+├── cache/                  # PPU/SPU cache
+│   ├── ppu/               # PPU module cache
+│   └── spu/               # SPU shader cache
+└── patches/                # Game patches
+    └── [Title-ID]/         # Patches per game
+</code></pre><h2 id="-step-3-installing-ps3-firmware">
+<a class="header-anchor" href="#-step-3-installing-ps3-firmware"></a>
+⚙️ Step 3: Installing PS3 Firmware
+</h2><h3 id="downloading-official-firmware">
+<a class="header-anchor" href="#downloading-official-firmware"></a>
+Downloading Official Firmware
+</h3><blockquote>
+<p>⚠️ <strong>Mandatory</strong>: Official Sony PS3 firmware is required to run RPCS3.</p></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official Sony site</span>
+</span></span><span style="display:flex;"><span>https://www.playstation.com/en-us/support/hardware/ps3/system-software/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>1. Download the latest version <span style="color:#f92672">(</span>PS3UPDAT.PUP<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Place in: RPCS3/firmware/
+</span></span></code></pre></div><h3 id="installing-in-rpcs3">
+<a class="header-anchor" href="#installing-in-rpcs3"></a>
+Installing in RPCS3
+</h3><ol>
+<li><strong>Launch</strong> <code>rpcs3.exe</code></li>
+<li><strong>Accept</strong> terms of use on first launch</li>
+<li><code>File → Install Firmware</code></li>
+<li><strong>Select</strong> the <code>PS3UPDAT.PUP</code> file</li>
+<li><strong>Wait</strong> for complete installation (5-10 minutes)</li>
+<li><strong>Restart</strong> RPCS3</li>
+</ol>
+<p><strong>Installation verification:</strong></p>
+<ul>
+<li><code>Help → About</code> should display firmware version</li>
+<li>XMB (PS3 menu) should be accessible</li>
+</ul>
+<h2 id="-step-4-optimal-cpu-configuration">
+<a class="header-anchor" href="#-step-4-optimal-cpu-configuration"></a>
+⚙️ Step 4: Optimal CPU Configuration
+</h2><h3 id="ppu-powerpc-processing-unit-settings">
+<a class="header-anchor" href="#ppu-powerpc-processing-unit-settings"></a>
+PPU (PowerPC Processing Unit) Settings
+</h3><pre tabindex="0"><code>Configuration → CPU → PPU
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>PPU Decoder</strong>: Recompiler (LLVM) [fastest]</li>
+<li><strong>PPU Threads</strong>: 2 (optimal for most games)</li>
+<li><strong>Enable thread scheduler</strong>: ✅ Enabled</li>
+<li><strong>Enable SPU loop detection</strong>: ✅ Enabled</li>
+</ul>
+<h3 id="spu-synergistic-processing-unit-settings">
+<a class="header-anchor" href="#spu-synergistic-processing-unit-settings"></a>
+SPU (Synergistic Processing Unit) Settings
+</h3><pre tabindex="0"><code>Configuration → CPU → SPU
+</code></pre><p><strong>Optimal configuration:</strong></p>
+<ul>
+<li><strong>SPU Decoder</strong>: Recompiler (LLVM) [maximum performance]</li>
+<li><strong>SPU Block Size</strong>: Safe (recommended)</li>
+<li><strong>Preferred SPU Threads</strong>: Auto (let RPCS3 decide)</li>
+<li><strong>SPU delay penalty</strong>: 3µs (default)</li>
+<li><strong>Enable SPU cache</strong>: ✅ Enabled</li>
+<li><strong>Enable SPU verification</strong>: ✅ Enabled</li>
+</ul>
+<h3 id="advanced-cpu-options">
+<a class="header-anchor" href="#advanced-cpu-options"></a>
+Advanced CPU Options
+</h3><pre tabindex="0"><code>Configuration → CPU → Additional Settings
+</code></pre><ul>
+<li><strong>Enable accurate LLVM dfma</strong>: ✅ Enabled (improved accuracy)</li>
+<li><strong>SPU LLVM precompilation</strong>: ✅ Enabled (reduces stuttering)</li>
+<li><strong>TSX instructions</strong>: Auto (if supported by your Intel CPU)</li>
+</ul>
+<h2 id="-step-5-optimal-gpu-configuration">
+<a class="header-anchor" href="#-step-5-optimal-gpu-configuration"></a>
+⚙️ Step 5: Optimal GPU Configuration
+</h2><h3 id="general-graphics-settings">
+<a class="header-anchor" href="#general-graphics-settings"></a>
+General Graphics Settings
+</h3><pre tabindex="0"><code>Configuration → GPU → Renderer
+</code></pre><p><strong>Recommended backend:</strong></p>
+<ul>
+<li><strong>Renderer</strong>: Vulkan (performance + compatibility) or D3D12</li>
+<li><strong>Graphics Device</strong>: Your main GPU</li>
+<li><strong>Aspect Ratio</strong>: 16:9 (or Auto)</li>
+<li><strong>Frame limit</strong>: Auto (60 FPS for most games)</li>
+</ul>
+<h3 id="resolution-and-quality">
+<a class="header-anchor" href="#resolution-and-quality"></a>
+Resolution and Quality
+</h3><pre tabindex="0"><code>Configuration → GPU → Resolution
+</code></pre><p><strong>Optimal settings:</strong></p>
+<ul>
+<li><strong>Resolution</strong>: 1280x720 (native 720p) or 1920x1080 (upscale)</li>
+<li><strong>Resolution Scale</strong>: 100% (or 150%-200% if powerful GPU)</li>
+<li><strong>Anisotropic Filter</strong>: Auto or 16x</li>
+<li><strong>Anti-Aliasing</strong>: Auto (or MSAA if sufficient performance)</li>
+</ul>
+<h3 id="advanced-gpu-options">
+<a class="header-anchor" href="#advanced-gpu-options"></a>
+Advanced GPU Options
+</h3><pre tabindex="0"><code>Configuration → GPU → Advanced
+</code></pre><p><strong>Performance configuration:</strong></p>
+<ul>
+<li><strong>Write Color Buffers</strong>: ✅ Enabled</li>
+<li><strong>Write Depth Buffer</strong>: ✅ Enabled</li>
+<li><strong>Read Color Buffers</strong>: ✅ Enabled</li>
+<li><strong>Read Depth Buffer</strong>: ✅ Enabled</li>
+<li><strong>VSync</strong>: ✅ Enabled (reduces screen tearing)</li>
+<li><strong>GPU texture scaling</strong>: ✅ Enabled</li>
+<li><strong>Strict Rendering Mode</strong>: ✅ Enabled (better compatibility)</li>
+</ul>
+<h2 id="-step-6-audio-and-control-configuration">
+<a class="header-anchor" href="#-step-6-audio-and-control-configuration"></a>
+⚙️ Step 6: Audio and Control Configuration
+</h2><h3 id="audio-settings">
+<a class="header-anchor" href="#audio-settings"></a>
+Audio Settings
+</h3><pre tabindex="0"><code>Configuration → Audio
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>Audio Out</strong>: XAudio2 (Windows) / PulseAudio (Linux)</li>
+<li><strong>Audio Format</strong>: Linear PCM 48 kHz</li>
+<li><strong>Audio Device</strong>: Default</li>
+<li><strong>Master Volume</strong>: 100%</li>
+<li><strong>Enable Buffering</strong>: ✅ Enabled</li>
+<li><strong>Audio Buffer Duration</strong>: 100ms (adjust if issues)</li>
+</ul>
+<h3 id="controller-configuration">
+<a class="header-anchor" href="#controller-configuration"></a>
+Controller Configuration
+</h3><pre tabindex="0"><code>Configuration → Input/Output
+</code></pre><p><strong>Recommended controller:</strong></p>
+<ul>
+<li><strong>Handler</strong>: XInput (Xbox controllers) / MMJoystick (others)</li>
+<li><strong>Device</strong>: Your connected controller</li>
+</ul>
+<p><strong>DualShock 3 Mapping:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic configuration</span>
+</span></span><span style="display:flex;"><span>1. Connect your controller
+</span></span><span style="display:flex;"><span>2. Select type: <span style="color:#e6db74">&#34;DualShock 3&#34;</span>
+</span></span><span style="display:flex;"><span>3. Click <span style="color:#e6db74">&#34;Auto Configure&#34;</span>
+</span></span><span style="display:flex;"><span>4. Test all buttons
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Manual mapping if necessary</span>
+</span></span><span style="display:flex;"><span>Left Stick → Left Stick
+</span></span><span style="display:flex;"><span>Right Stick → Right Stick
+</span></span><span style="display:flex;"><span>D-Pad → D-Pad
+</span></span><span style="display:flex;"><span>X, O, ▢, △ → A, B, X, Y <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>L1/R1 → LB/RB
+</span></span><span style="display:flex;"><span>L2/R2 → LT/RT
+</span></span></code></pre></div><h2 id="-step-7-game-installation-and-management">
+<a class="header-anchor" href="#-step-7-game-installation-and-management"></a>
+🎮 Step 7: Game Installation and Management
+</h2><h3 id="supported-game-formats">
+<a class="header-anchor" href="#supported-game-formats"></a>
+Supported Game Formats
+</h3><h4 id="physical-disc-games">
+<a class="header-anchor" href="#physical-disc-games"></a>
+Physical Disc Games
+</h4><ul>
+<li><strong>.iso</strong>: Blu-ray disc image (most common)</li>
+<li><strong>.bin/.img</strong>: Alternative disc images</li>
+<li><strong>JB Folder</strong>: Extracted file structure</li>
+</ul>
+<h4 id="psn-playstation-network-games">
+<a class="header-anchor" href="#psn-playstation-network-games"></a>
+PSN (PlayStation Network) Games
+</h4><ul>
+<li><strong>.pkg</strong>: PlayStation package (game + DLC)</li>
+<li><strong>.rap</strong>: License file (required for .pkg)</li>
+<li><strong>.edat/.sdat</strong>: Encrypted game data</li>
+</ul>
+<h3 id="installing-disc-games">
+<a class="header-anchor" href="#installing-disc-games"></a>
+Installing Disc Games
+</h3><h4 id="method-1-iso-file">
+<a class="header-anchor" href="#method-1-iso-file"></a>
+Method 1: ISO File
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. File → Boot Game
+</span></span><span style="display:flex;"><span>2. Navigate to your .iso file
+</span></span><span style="display:flex;"><span>3. Select and open
+</span></span><span style="display:flex;"><span>4. Game starts directly
+</span></span></code></pre></div><h4 id="method-2-installation-to-virtual-hdd">
+<a class="header-anchor" href="#method-2-installation-to-virtual-hdd"></a>
+Method 2: Installation to Virtual HDD
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. File → Install Packages/Raps/Edats
+</span></span><span style="display:flex;"><span>2. Select your .iso file
+</span></span><span style="display:flex;"><span>3. Installation to dev_hdd0/game/
+</span></span><span style="display:flex;"><span>4. Launch from XMB <span style="color:#f92672">(</span>Game → Game Data Utility<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="installing-psn-games-pkg">
+<a class="header-anchor" href="#installing-psn-games-pkg"></a>
+Installing PSN Games (.pkg)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installing PSN packages</span>
+</span></span><span style="display:flex;"><span>1. File → Install Packages/Raps/Edats
+</span></span><span style="display:flex;"><span>2. Select both .pkg AND corresponding .rap files
+</span></span><span style="display:flex;"><span>3. Wait <span style="color:#66d9ef">for</span> installation
+</span></span><span style="display:flex;"><span>4. Games appear in Game → Game Data Utility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: .rap files are essential for .pkg files</span>
+</span></span></code></pre></div><h3 id="dumping-your-own-games">
+<a class="header-anchor" href="#dumping-your-own-games"></a>
+Dumping Your Own Games
+</h3><h4 id="from-ps3-with-cfw-custom-firmware">
+<a class="header-anchor" href="#from-ps3-with-cfw-custom-firmware"></a>
+From PS3 with CFW (Custom Firmware)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With multiMAN or webMAN</span>
+</span></span><span style="display:flex;"><span>1. Install CFW <span style="color:#f92672">(</span>HEN/CFW<span style="color:#f92672">)</span> on your PS3
+</span></span><span style="display:flex;"><span>2. Use multiMAN to create backups:
+</span></span><span style="display:flex;"><span>   - Insert disc
+</span></span><span style="display:flex;"><span>   - File Manager → Copy Game
+</span></span><span style="display:flex;"><span>   - Select destination <span style="color:#f92672">(</span>USB/HDD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Transfer files to PC
+</span></span></code></pre></div><h4 id="jb-structure-extraction">
+<a class="header-anchor" href="#jb-structure-extraction"></a>
+JB Structure Extraction
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For games requiring complete installation</span>
+</span></span><span style="display:flex;"><span>1. Copy PS3 disc content
+</span></span><span style="display:flex;"><span>2. Structure: PS3_GAME/, PS3_UPDATE/, etc.
+</span></span><span style="display:flex;"><span>3. Place in dev_hdd0/game/<span style="color:#f92672">[</span>GAMEID<span style="color:#f92672">]</span>/
+</span></span></code></pre></div><h2 id="-optimization-by-popular-games">
+<a class="header-anchor" href="#-optimization-by-popular-games"></a>
+🚀 Optimization by Popular Games
+</h2><h3 id="the-last-of-us">
+<a class="header-anchor" href="#the-last-of-us"></a>
+The Last of Us
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Special configuration required</span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- PPU Decoder: Recompiler <span style="color:#f92672">(</span>LLVM<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SPU Decoder: Recompiler <span style="color:#f92672">(</span>LLVM<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Preferred SPU Threads: Auto
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Renderer: Vulkan
+</span></span><span style="display:flex;"><span>- Resolution Scale: 100% <span style="color:#f92672">(</span>very demanding game<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Write Color/Depth Buffers: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Required patches:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS patch <span style="color:#f92672">(</span>optional<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Performance improvements
+</span></span></code></pre></div><h3 id="persona-5">
+<a class="header-anchor" href="#persona-5"></a>
+Persona 5
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Excellent RPCS3 support</span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Standard configuration
+</span></span><span style="display:flex;"><span>- SPU cache: ✅ Essential <span style="color:#66d9ef">for</span> this game
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 150%-200% possible
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: MSAA 2x-4x
+</span></span><span style="display:flex;"><span>- Anisotropic Filtering: 16x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Generally stable <span style="color:#ae81ff">60</span> FPS
+</span></span></code></pre></div><h3 id="metal-gear-solid-4">
+<a class="header-anchor" href="#metal-gear-solid-4"></a>
+Metal Gear Solid 4
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimized configuration</span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- PPU/SPU: Recompiler <span style="color:#f92672">(</span>LLVM<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SPU Block Size: Safe
+</span></span><span style="display:flex;"><span>- Thread Scheduler: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Renderer: Vulkan recommended
+</span></span><span style="display:flex;"><span>- Resolution: 720p <span style="color:#f92672">(</span>native<span style="color:#f92672">)</span> <span style="color:#66d9ef">for</span> stability
+</span></span><span style="display:flex;"><span>- Strict Rendering: ✅ Mandatory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Notes: Very demanding game, may have slowdowns
+</span></span></code></pre></div><h3 id="demons-souls">
+<a class="header-anchor" href="#demons-souls"></a>
+Demon&rsquo;s Souls
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Stable configuration</span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Standard LLVM configuration
+</span></span><span style="display:flex;"><span>- SPU Threads: Auto
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 150% possible
+</span></span><span style="display:flex;"><span>- Write Buffers: All enabled
+</span></span><span style="display:flex;"><span>- VSync: ✅ Recommended
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Available mods:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS unlock
+</span></span><span style="display:flex;"><span>- Texture improvements
+</span></span></code></pre></div><h3 id="gran-turismo-6">
+<a class="header-anchor" href="#gran-turismo-6"></a>
+Gran Turismo 6
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Racing game settings</span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- SPU Decoder: Recompiler <span style="color:#f92672">(</span>LLVM<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SPU cache: ✅ Critical <span style="color:#66d9ef">for</span> this game
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Renderer: Vulkan or D3D12
+</span></span><span style="display:flex;"><span>- Resolution Scale: 100%-150%
+</span></span><span style="display:flex;"><span>- Frame Limit: <span style="color:#ae81ff">60</span> FPS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Buffer: 100ms <span style="color:#f92672">(</span>prevents desynchronization<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="god-of-war-collection">
+<a class="header-anchor" href="#god-of-war-collection"></a>
+God of War Collection
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Special hacks required</span>
+</span></span><span style="display:flex;"><span>Configuration:
+</span></span><span style="display:flex;"><span>- Write Color Buffers: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Read Color Buffers: ✅ Enabled
+</span></span><span style="display:flex;"><span>- GPU texture scaling: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Patches:
+</span></span><span style="display:flex;"><span>- Search <span style="color:#66d9ef">for</span> specific GoW patches
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS mods available
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Variable depending on scenes
+</span></span></code></pre></div><h2 id="-patches-and-mods">
+<a class="header-anchor" href="#-patches-and-mods"></a>
+🛠️ Patches and Mods
+</h2><h3 id="available-patch-types">
+<a class="header-anchor" href="#available-patch-types"></a>
+Available Patch Types
+</h3><h4 id="official-rpcs3-patches">
+<a class="header-anchor" href="#official-rpcs3-patches"></a>
+Official RPCS3 Patches
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Auto-application</span>
+</span></span><span style="display:flex;"><span>1. Configuration → Patches
+</span></span><span style="display:flex;"><span>2. Check patches <span style="color:#66d9ef">for</span> your game
+</span></span><span style="display:flex;"><span>3. Common types:
+</span></span><span style="display:flex;"><span>   - <span style="color:#ae81ff">60</span> FPS unlock
+</span></span><span style="display:flex;"><span>   - Performance improvements
+</span></span><span style="display:flex;"><span>   - Bug fixes
+</span></span><span style="display:flex;"><span>   - Resolution scaling fixes
+</span></span></code></pre></div><h4 id="community-patches">
+<a class="header-anchor" href="#community-patches"></a>
+Community Patches
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Manual installation</span>
+</span></span><span style="display:flex;"><span>1. Download from RPCS3 patches GitHub
+</span></span><span style="display:flex;"><span>2. Place in: patches/<span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Format: .yml <span style="color:#f92672">(</span>YAML configuration<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Example <span style="color:#ae81ff">60</span> FPS patch:
+</span></span><span style="display:flex;"><span>PPU-xxxxxxxxxxxx: <span style="color:#75715e"># Title ID</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;60 FPS&#34;</span>:
+</span></span><span style="display:flex;"><span>    Games:
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Game Name [Region]&#34;</span>:
+</span></span><span style="display:flex;"><span>        xxxxxxxx: <span style="color:#75715e"># Version hash</span>
+</span></span><span style="display:flex;"><span>    Author: <span style="color:#e6db74">&#34;Community&#34;</span>
+</span></span><span style="display:flex;"><span>    Patch Version: 1.0
+</span></span><span style="display:flex;"><span>    Patch:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">[</span> be32, 0x????????, 0x???????? <span style="color:#f92672">]</span> <span style="color:#75715e"># Memory patches</span>
+</span></span></code></pre></div><h3 id="installing-mods">
+<a class="header-anchor" href="#installing-mods"></a>
+Installing Mods
+</h3><h4 id="texture-mods">
+<a class="header-anchor" href="#texture-mods"></a>
+Texture Mods
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Not yet natively supported</span>
+</span></span><span style="display:flex;"><span>- RPCS3 doesn<span style="color:#960050;background-color:#1e0010">&#39;</span>t yet support texture packs
+</span></span><span style="display:flex;"><span>- Feature in development
+</span></span><span style="display:flex;"><span>- Alternatives: ReShade <span style="color:#66d9ef">for</span> post-processing
+</span></span></code></pre></div><h4 id="gameplay-mods">
+<a class="header-anchor" href="#gameplay-mods"></a>
+Gameplay Mods
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Via memory patches</span>
+</span></span><span style="display:flex;"><span>1. Search <span style="color:#66d9ef">for</span> RPCS3-compatible mods
+</span></span><span style="display:flex;"><span>2. Convert to .yml patch format
+</span></span><span style="display:flex;"><span>3. Apply via patch system
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Popular examples:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS unlocks
+</span></span><span style="display:flex;"><span>- Resolution fixes
+</span></span><span style="display:flex;"><span>- Performance improvements
+</span></span></code></pre></div><h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="performance-issues">
+<a class="header-anchor" href="#performance-issues"></a>
+Performance Issues
+</h3><h4 id="very-low-fps">
+<a class="header-anchor" href="#very-low-fps"></a>
+Very Low FPS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Priority solutions:
+</span></span><span style="display:flex;"><span>1. Verify SPU/PPU are in Recompiler <span style="color:#f92672">(</span>LLVM<span style="color:#f92672">)</span> mode
+</span></span><span style="display:flex;"><span>2. Enable SPU cache and precompilation
+</span></span><span style="display:flex;"><span>3. Reduce resolution scale to 100%
+</span></span><span style="display:flex;"><span>4. Close background applications
+</span></span><span style="display:flex;"><span>5. Check CPU temperatures <span style="color:#f92672">(</span>throttling<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>6. Use SSD <span style="color:#66d9ef">for</span> RPCS3 cache
+</span></span></code></pre></div><h4 id="micro-freezesstuttering">
+<a class="header-anchor" href="#micro-freezesstuttering"></a>
+Micro-freezes/Stuttering
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stuttering optimizations:
+</span></span><span style="display:flex;"><span>1. SPU LLVM precompilation: ✅ Enabled
+</span></span><span style="display:flex;"><span>2. Increase PPU/SPU cache size
+</span></span><span style="display:flex;"><span>3. Disable Windows Game Mode
+</span></span><span style="display:flex;"><span>4. RPCS3 process priority: High
+</span></span><span style="display:flex;"><span>5. Disable real-time antivirus on RPCS3 folder
+</span></span></code></pre></div><h4 id="100-cpu-usage">
+<a class="header-anchor" href="#100-cpu-usage"></a>
+100% CPU Usage
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CPU management:
+</span></span><span style="display:flex;"><span>1. Check Preferred SPU Threads <span style="color:#f92672">(</span>don<span style="color:#960050;background-color:#1e0010">&#39;</span>t exceed physical cores<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Disable hyperthreading <span style="color:#66d9ef">if</span> unstable
+</span></span><span style="display:flex;"><span>3. SPU Thread Scheduler: ✅ Enabled
+</span></span><span style="display:flex;"><span>4. Close browsers and heavy apps
+</span></span><span style="display:flex;"><span>5. Monitoring: use HWiNFO64
+</span></span></code></pre></div><h3 id="graphics-issues">
+<a class="header-anchor" href="#graphics-issues"></a>
+Graphics Issues
+</h3><h4 id="black-screenwont-start">
+<a class="header-anchor" href="#black-screenwont-start"></a>
+Black Screen/Won&rsquo;t Start
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Display diagnostics:
+</span></span><span style="display:flex;"><span>1. Change renderer <span style="color:#f92672">(</span>Vulkan ↔ D3D12 ↔ OpenGL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Disable GPU texture scaling
+</span></span><span style="display:flex;"><span>3. Resolution: 720p native
+</span></span><span style="display:flex;"><span>4. Update GPU drivers
+</span></span><span style="display:flex;"><span>5. Verify Vulkan/D3D12 support
+</span></span></code></pre></div><h4 id="corrupted-graphics">
+<a class="header-anchor" href="#corrupted-graphics"></a>
+Corrupted Graphics
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Visual corrections:
+</span></span><span style="display:flex;"><span>1. Write Color/Depth Buffers: ✅ All enabled
+</span></span><span style="display:flex;"><span>2. Read Color/Depth Buffers: ✅ Enable <span style="color:#66d9ef">if</span> required
+</span></span><span style="display:flex;"><span>3. Strict Rendering Mode: ✅ Enabled
+</span></span><span style="display:flex;"><span>4. GPU texture scaling: ❌ Temporarily disabled
+</span></span><span style="display:flex;"><span>5. Test different renderers
+</span></span></code></pre></div><h4 id="missing-texturestransparency">
+<a class="header-anchor" href="#missing-texturestransparency"></a>
+Missing Textures/Transparency
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Specific fixes:
+</span></span><span style="display:flex;"><span>1. Read Color Buffers: ✅ Mandatory
+</span></span><span style="display:flex;"><span>2. Write Color Buffers: ✅ Mandatory
+</span></span><span style="display:flex;"><span>3. Resolution Scale: Reduce to 100%
+</span></span><span style="display:flex;"><span>4. Anisotropic Filter: Temporarily disabled
+</span></span><span style="display:flex;"><span>5. Search <span style="color:#66d9ef">for</span> game-specific patch
+</span></span></code></pre></div><h3 id="audio-issues">
+<a class="header-anchor" href="#audio-issues"></a>
+Audio Issues
+</h3><h4 id="no-sound">
+<a class="header-anchor" href="#no-sound"></a>
+No Sound
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio diagnostics:
+</span></span><span style="display:flex;"><span>1. Change Audio Out <span style="color:#f92672">(</span>XAudio2, OpenAL, etc.<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Check Device <span style="color:#f92672">(</span>Default or specific<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Audio Format: Linear PCM <span style="color:#ae81ff">48</span> kHz
+</span></span><span style="display:flex;"><span>4. Restart RPCS3 after changes
+</span></span><span style="display:flex;"><span>5. Test with other games
+</span></span></code></pre></div><h4 id="distortedcrackling-audio">
+<a class="header-anchor" href="#distortedcrackling-audio"></a>
+Distorted/Crackling Audio
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio solutions:
+</span></span><span style="display:flex;"><span>1. Increase Audio Buffer: 200ms+
+</span></span><span style="display:flex;"><span>2. Close other audio applications
+</span></span><span style="display:flex;"><span>3. Disable Windows audio effects
+</span></span><span style="display:flex;"><span>4. Change system sample rate <span style="color:#f92672">(</span><span style="color:#ae81ff">48</span> kHz<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>5. Audio Backend: test different options
+</span></span></code></pre></div><h3 id="compatibility-issues">
+<a class="header-anchor" href="#compatibility-issues"></a>
+Compatibility Issues
+</h3><h4 id="game-crashes-on-start">
+<a class="header-anchor" href="#game-crashes-on-start"></a>
+Game Crashes on Start
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Compatibility checks:
+</span></span><span style="display:flex;"><span>1. Consult RPCS3 Compatibility List
+</span></span><span style="display:flex;"><span>2. Firmware: latest version installed
+</span></span><span style="display:flex;"><span>3. Patches: search <span style="color:#66d9ef">for</span> mandatory patches
+</span></span><span style="display:flex;"><span>4. Title ID: verify patch correspondence
+</span></span><span style="display:flex;"><span>5. Game version: some versions problematic
+</span></span></code></pre></div><h4 id="random-crashes">
+<a class="header-anchor" href="#random-crashes"></a>
+Random Crashes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stabilization:
+</span></span><span style="display:flex;"><span>1. SPU verification: ✅ Enabled
+</span></span><span style="display:flex;"><span>2. Accurate LLVM dfma: ✅ Enabled
+</span></span><span style="display:flex;"><span>3. Disable CPU/GPU overclocking
+</span></span><span style="display:flex;"><span>4. RAM: test with MemTest86
+</span></span><span style="display:flex;"><span>5. Logs: analyze rpcs3.log <span style="color:#66d9ef">for</span> errors
+</span></span></code></pre></div><h2 id="-compatibility-database-and-performance">
+<a class="header-anchor" href="#-compatibility-database-and-performance"></a>
+📊 Compatibility Database and Performance
+</h2><h3 id="current-statistics-2025">
+<a class="header-anchor" href="#current-statistics-2025"></a>
+Current Statistics (2025)
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~65%</td>
+          <td>Playable from start to finish</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~25%</td>
+          <td>Starts, major issues</td>
+      </tr>
+      <tr>
+          <td><strong>Intro</strong></td>
+          <td>~7%</td>
+          <td>Menus/intro only</td>
+      </tr>
+      <tr>
+          <td><strong>Loadable</strong></td>
+          <td>~2%</td>
+          <td>Starts but crashes quickly</td>
+      </tr>
+      <tr>
+          <td><strong>Nothing</strong></td>
+          <td>~1%</td>
+          <td>Doesn&rsquo;t start</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="perfectly-compatible-games">
+<a class="header-anchor" href="#perfectly-compatible-games"></a>
+Perfectly Compatible Games
+</h3><h4 id="actionadventure">
+<a class="header-anchor" href="#actionadventure"></a>
+Action/Adventure
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Last of Us <span style="color:#f92672">(</span>with patches<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Uncharted 1, 2, <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>✅ God of War Collection
+</span></span><span style="display:flex;"><span>✅ Metal Gear Solid <span style="color:#ae81ff">4</span> <span style="color:#f92672">(</span>demanding<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Red Dead Redemption <span style="color:#f92672">(</span><span style="color:#ae81ff">60</span> FPS mod<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ GTA IV Complete Edition
+</span></span><span style="display:flex;"><span>✅ Assassin<span style="color:#960050;background-color:#1e0010">&#39;</span>s Creed series
+</span></span></code></pre></div><h4 id="rpgjrpg">
+<a class="header-anchor" href="#rpgjrpg"></a>
+RPG/JRPG
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Persona <span style="color:#ae81ff">5</span> <span style="color:#f92672">(</span>excellent<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Demon<span style="color:#960050;background-color:#1e0010">&#39;</span>s Souls <span style="color:#f92672">(</span>perfect<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Tales of series <span style="color:#f92672">(</span>Vesperia, Xillia<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Ni No Kuni <span style="color:#f92672">(</span>with patches<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Final Fantasy XIII trilogy
+</span></span><span style="display:flex;"><span>✅ Disgaea series
+</span></span></code></pre></div><h4 id="racingsports">
+<a class="header-anchor" href="#racingsports"></a>
+Racing/Sports
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Gran Turismo 5/6 <span style="color:#f92672">(</span>good<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ F1 series
+</span></span><span style="display:flex;"><span>✅ Need <span style="color:#66d9ef">for</span> Speed series
+</span></span><span style="display:flex;"><span>✅ FIFA series <span style="color:#f92672">(</span>most<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ NBA 2K series
+</span></span></code></pre></div><h3 id="performance-benchmarks">
+<a class="header-anchor" href="#performance-benchmarks"></a>
+Performance Benchmarks
+</h3><h4 id="test-configuration-ryzen-7-3700x-rtx-3070-32gb-ram">
+<a class="header-anchor" href="#test-configuration-ryzen-7-3700x-rtx-3070-32gb-ram"></a>
+Test configuration: Ryzen 7 3700X, RTX 3070, 32GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Game</th>
+          <th>Resolution</th>
+          <th>Average FPS</th>
+          <th>CPU Usage</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Persona 5</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>45%</td>
+          <td>Excellent</td>
+      </tr>
+      <tr>
+          <td><strong>Demon&rsquo;s Souls</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>55%</td>
+          <td>Perfect</td>
+      </tr>
+      <tr>
+          <td><strong>The Last of Us</strong></td>
+          <td>720p</td>
+          <td>45-60</td>
+          <td>85%</td>
+          <td>With patches</td>
+      </tr>
+      <tr>
+          <td><strong>MGS4</strong></td>
+          <td>720p</td>
+          <td>30-50</td>
+          <td>90%</td>
+          <td>Variable</td>
+      </tr>
+      <tr>
+          <td><strong>Gran Turismo 6</strong></td>
+          <td>1080p</td>
+          <td>55-60</td>
+          <td>70%</td>
+          <td>Good</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-resources-and-community">
+<a class="header-anchor" href="#-resources-and-community"></a>
+🌐 Resources and Community
+</h2><h3 id="official-sites">
+<a class="header-anchor" href="#official-sites"></a>
+Official Sites
+</h3><ul>
+<li><a href="https://rpcs3.net/">🏠 Official RPCS3 Site</a></li>
+<li><a href="https://rpcs3.net/compatibility">📊 Compatibility List</a></li>
+<li><a href="https://wiki.rpcs3.net/">📚 RPCS3 Wiki</a></li>
+<li><a href="https://wiki.rpcs3.net/index.php?title=Help:Installing_RPCS3">🔧 Configuration Guide</a></li>
+</ul>
+<h3 id="active-communities">
+<a class="header-anchor" href="#active-communities"></a>
+Active Communities
+</h3><ul>
+<li><a href="https://discord.gg/a6zm2T8">💬 RPCS3 Discord</a></li>
+<li><a href="https://www.reddit.com/r/rpcs3/">🗨️ Reddit r/rpcs3</a></li>
+<li><a href="https://forums.rpcs3.net/">🌐 Official Forums</a></li>
+<li><a href="https://www.youtube.com/c/RPCS3Official">📺 YouTube guides</a></li>
+</ul>
+<h3 id="development-and-contribution">
+<a class="header-anchor" href="#development-and-contribution"></a>
+Development and Contribution
+</h3><ul>
+<li><a href="https://github.com/RPCS3/rpcs3">💻 GitHub RPCS3</a></li>
+<li><a href="https://github.com/RPCS3/rpcs3/issues">🐛 Bug reports</a></li>
+<li><a href="https://github.com/RPCS3/rpcs3-patches">🔧 Patches database</a></li>
+<li><a href="https://www.patreon.com/Nekotekina">💰 Patreon support</a></li>
+</ul>
+<h3 id="ps3-tools">
+<a class="header-anchor" href="#ps3-tools"></a>
+PS3 Tools
+</h3><ul>
+<li><a href="https://store.brewology.com/ahomebrew.php?brewid=24">🔧 multiMAN</a> - PS3 manager</li>
+<li><a href="https://github.com/aldostools/webMAN-MOD">📁 webMAN MOD</a> - Advanced manager</li>
+<li><a href="https://www.psx-place.com/">🎮 PSN Patch</a> - PSN patches</li>
+<li><a href="https://www.psx-place.com/resources/param-sfo-editor.632/">🔍 PARAM.SFO Editor</a> - Metadata editing</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Can RPCS3 run all PS3 games?</strong>
+<strong>A:</strong> About 65% of games are playable, 90% start. Compatibility improves constantly.</p>
+<p><strong>Q: Do I need a PS3 to use RPCS3?</strong>
+<strong>A:</strong> No for firmware (legally downloadable). Yes to dump your games legally.</p>
+<p><strong>Q: Why is RPCS3 so demanding?</strong>
+<strong>A:</strong> PS3&rsquo;s Cell architecture is complex to emulate. 1 PPU + 6 SPU require lots of CPU power.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Vulkan or D3D12?</strong>
+<strong>A:</strong> Vulkan generally more performant. D3D12 more stable on some systems. Test both.</p>
+<p><strong>Q: How much RAM minimum?</strong>
+<strong>A:</strong> 8GB minimum, 16GB recommended, 32GB for heaviest games.</p>
+<p><strong>Q: Is my CPU sufficient?</strong>
+<strong>A:</strong> 6 cores minimum recommended. 8+ cores optimal. Single-thread performance important.</p>
+<h3 id="common-issues">
+<a class="header-anchor" href="#common-issues"></a>
+Common Issues
+</h3><p><strong>Q: Game lags despite powerful PC?</strong>
+<strong>A:</strong> Normal for some games. RPCS3 emulates complex architecture. Check available patches.</p>
+<p><strong>Q: How to improve performance?</strong>
+<strong>A:</strong> SPU cache + precompilation, SSD for cache, close background apps, moderate CPU overclock.</p>
+<p><strong>Q: Audio desynchronized?</strong>
+<strong>A:</strong> Increase audio buffer, change audio backend, check frame pacing.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>RPCS3 is a revolutionary PS3 emulator that offers:</p>
+<ul>
+<li>✅ <strong>Impressive compatibility</strong> with 65% of games playable</li>
+<li>✅ <strong>Graphics improvement</strong> up to 4K for some titles</li>
+<li>✅ <strong>Constantly improving performance</strong> through active development</li>
+<li>✅ <strong>PS3 exclusive support</strong> impossible to play elsewhere</li>
+<li>✅ <strong>Modern features</strong> (savestates, patches, mods)</li>
+<li>✅ <strong>PlayStation 3 preservation</strong></li>
+<li>✅ <strong>Passionate community</strong> and open-source development</li>
+</ul>
+<p>With this comprehensive guide, you now master:</p>
+<ul>
+<li><strong>Installation</strong> and optimal configuration</li>
+<li><strong>Optimization</strong> according to your hardware</li>
+<li><strong>Resolving</strong> common issues</li>
+<li><strong>Using</strong> patches and improvements</li>
+<li><strong>Access</strong> to legendary PS3 exclusives</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Legal reminder</strong>: Only use games you legally own. RPCS3 provides no games - you must dump your own PS3 discs.</p></blockquote>
+<p><strong>Rediscover PS3 masterpieces with RPCS3! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-06-02 at <a href='https://axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-02</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>Gaming</category><category>Tutorials</category>
+      
+    </item>
+    
+  </channel>
+</rss>

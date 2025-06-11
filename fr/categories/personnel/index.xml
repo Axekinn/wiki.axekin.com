@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personnel on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/categories/personnel/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate></lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/categories/personnel/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+  </channel>
+</rss>

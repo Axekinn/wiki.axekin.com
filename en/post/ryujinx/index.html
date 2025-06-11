@@ -1,0 +1,1646 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Complete Guide: Ryujinx Installation and Configuration | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for installing, configuring and using the Nintendo Switch emulator Ryujinx"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Complete Guide: Ryujinx Installation and Configuration | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for installing, configuring and using the Nintendo Switch emulator Ryujinx"
+  />
+  <meta property="og:url" content="https://axekin.com/en/post/ryujinx/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/ryujinx.png"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="RyujinxNintendo SwitchEmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/ryujinx.png" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/ryujinx\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/ryujinx.png" alt="Complete Guide: Ryujinx Installation and Configuration"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="slide-up">Complete Guide: Ryujinx Installation and Configuration</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-ryujinx">🎮 Introduction to Ryujinx</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration">Optimal Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-ryujinx">🔧 Step 1: Downloading Ryujinx</a>
+      <ul>
+        <li><a href="#option-1-stable-version-recommended">Option 1: Stable Version (Recommended)</a></li>
+        <li><a href="#option-2-development-version-advanced">Option 2: Development Version (Advanced)</a></li>
+        <li><a href="#option-3-ryujinx-linux">Option 3: Ryujinx Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-initial-configuration">⚙️ Step 3: Initial Configuration</a>
+      <ul>
+        <li><a href="#first-launch">First Launch</a></li>
+        <li><a href="#essential-settings-configuration">Essential Settings Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-installing-firmware-and-keys">🎯 Step 4: Installing Firmware and Keys</a>
+      <ul>
+        <li><a href="#installing-nintendo-switch-firmware">Installing Nintendo Switch Firmware</a></li>
+        <li><a href="#installing-encryption-keys">Installing Encryption Keys</a></li>
+        <li><a href="#extracting-keys-from-your-switch">Extracting Keys from Your Switch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-game-management">🎮 Step 5: Game Management</a>
+      <ul>
+        <li><a href="#supported-game-formats">Supported Game Formats</a></li>
+        <li><a href="#adding-games">Adding Games</a></li>
+        <li><a href="#installing-updates-and-dlc">Installing Updates and DLC</a></li>
+        <li><a href="#dumping-your-own-games">Dumping Your Own Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-performance-optimization">🚀 Performance Optimization</a>
+      <ul>
+        <li><a href="#advanced-settings-for-better-performance">Advanced Settings for Better Performance</a></li>
+        <li><a href="#game-specific-performance-mods">Game-Specific Performance Mods</a></li>
+      </ul>
+    </li>
+    <li><a href="#-game-specific-configurations">🎯 Game-Specific Configurations</a>
+      <ul>
+        <li><a href="#the-legend-of-zelda-breath-of-the-wild">The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#super-mario-odyssey">Super Mario Odyssey</a></li>
+        <li><a href="#pokémon-legends-arceus">Pokémon Legends: Arceus</a></li>
+        <li><a href="#xenoblade-chronicles-3">Xenoblade Chronicles 3</a></li>
+        <li><a href="#super-smash-bros-ultimate">Super Smash Bros. Ultimate</a></li>
+        <li><a href="#animal-crossing-new-horizons">Animal Crossing: New Horizons</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🛠️ Advanced Features</a>
+      <ul>
+        <li><a href="#mods-and-homebrew">Mods and Homebrew</a></li>
+        <li><a href="#save-management">Save Management</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#common-launch-issues">Common Launch Issues</a></li>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-and-performance">📊 Compatibility and Performance</a>
+      <ul>
+        <li><a href="#compatibility-statistics">Compatibility Statistics</a></li>
+        <li><a href="#perfectly-compatible-games">Perfectly Compatible Games</a></li>
+        <li><a href="#performance-benchmarks">Performance Benchmarks</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-resources">Official Resources</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#development-and-contribution">Development and Contribution</a></li>
+        <li><a href="#switch-homebrew-tools">Switch Homebrew Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#legal-questions">Legal Questions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-02</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-to-ryujinx">
+<a class="header-anchor" href="#-introduction-to-ryujinx"></a>
+🎮 Introduction to Ryujinx
+</h2><p><strong>Ryujinx</strong> is an open-source Nintendo Switch emulator written in C#. It allows you to play Nintendo Switch games on PC with excellent performance and constantly improving compatibility.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / macOS</li>
+<li><strong>CPU</strong>: Intel Core i5-8400 / AMD Ryzen 5 2600</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: DirectX 11.1 compatible</li>
+<li><strong>Storage</strong>: 5 GB free space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-9700K / AMD Ryzen 7 3700X</li>
+<li><strong>RAM</strong>: 16 GB or more</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1660 / AMD RX 580 or higher</li>
+<li><strong>Storage</strong>: SSD with 20+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration">
+<a class="header-anchor" href="#optimal-configuration"></a>
+Optimal Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i9-12900K / AMD Ryzen 9 5900X</li>
+<li><strong>RAM</strong>: 32 GB DDR4-3200+</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3060 / AMD RX 6600 or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 50+ GB free space</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Important Note</strong>: Nintendo Switch emulation requires significant CPU and GPU power due to the modern ARM architecture and advanced graphics.</p></blockquote>
+<h2 id="-step-1-downloading-ryujinx">
+<a class="header-anchor" href="#-step-1-downloading-ryujinx"></a>
+🔧 Step 1: Downloading Ryujinx
+</h2><h3 id="option-1-stable-version-recommended">
+<a class="header-anchor" href="#option-1-stable-version-recommended"></a>
+Option 1: Stable Version (Recommended)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://ryujinx.org/download
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Download</strong> the file <code>ryujinx-X.X.X-win_x64.zip</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>C:\Ryujinx</code>)</li>
+</ol>
+<h3 id="option-2-development-version-advanced">
+<a class="header-anchor" href="#option-2-development-version-advanced"></a>
+Option 2: Development Version (Advanced)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For advanced users wanting latest features</span>
+</span></span><span style="display:flex;"><span>https://github.com/Ryujinx/Ryujinx/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Advantages:
+</span></span><span style="display:flex;"><span>- Latest improvements
+</span></span><span style="display:flex;"><span>- Bug fixes
+</span></span><span style="display:flex;"><span>- New features
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risks:
+</span></span><span style="display:flex;"><span>- Potentially unstable
+</span></span><span style="display:flex;"><span>- Possible regressions
+</span></span></code></pre></div><h3 id="option-3-ryujinx-linux">
+<a class="header-anchor" href="#option-3-ryujinx-linux"></a>
+Option 3: Ryujinx Linux
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Flatpak installation</span>
+</span></span><span style="display:flex;"><span>flatpak install flathub org.ryujinx.Ryujinx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># AppImage download</span>
+</span></span><span style="display:flex;"><span>https://ryujinx.org/download
+</span></span></code></pre></div><h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Create this folder structure to organize your files:</p>
+<pre tabindex="0"><code>Ryujinx/
+├── Ryujinx.exe              # Main executable
+├── games/                   # Your .nsp/.xci ROMs
+│   ├── nsp/                 # Digital games .nsp
+│   ├── xci/                 # Cartridge dumps .xci
+│   └── homebrew/            # Homebrew applications
+├── system/                  # System files
+│   ├── firmware/            # Switch firmware
+│   ├── keys/                # prod.keys and title.keys
+│   └── contents/            # System archives
+├── saves/                   # Save data
+├── mods/                    # Game modifications
+│   └── [Title-ID]/          # Mods per game
+├── updates/                 # Game updates
+├── dlc/                     # Downloadable content
+├── screenshots/             # Screenshots
+└── cache/                   # Shader cache
+    ├── gpu/                 # GPU shaders
+    └── cpu/                 # PTC cache
+</code></pre><h2 id="-step-3-initial-configuration">
+<a class="header-anchor" href="#-step-3-initial-configuration"></a>
+⚙️ Step 3: Initial Configuration
+</h2><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First Launch
+</h3><ol>
+<li><strong>Run</strong> <code>Ryujinx.exe</code></li>
+<li><strong>Accept</strong> terms and conditions</li>
+<li><strong>Select</strong> your preferred language</li>
+<li><strong>Configure</strong> initial settings</li>
+</ol>
+<h3 id="essential-settings-configuration">
+<a class="header-anchor" href="#essential-settings-configuration"></a>
+Essential Settings Configuration
+</h3><h4 id="system-settings">
+<a class="header-anchor" href="#system-settings"></a>
+System Settings
+</h4><pre tabindex="0"><code>Options → Settings → System
+</code></pre><ul>
+<li><strong>Region</strong>: Europe (or your region)</li>
+<li><strong>Language</strong>: English</li>
+<li><strong>Time Zone</strong>: Your local timezone</li>
+<li><strong>System Time</strong>: Current time</li>
+<li><strong>Enable VSync</strong>: ✅ Enabled</li>
+<li><strong>Enable Shader Cache</strong>: ✅ Enabled</li>
+<li><strong>Enable PTC (Profiled Translation Cache)</strong>: ✅ Enabled</li>
+</ul>
+<h4 id="graphics-settings">
+<a class="header-anchor" href="#graphics-settings"></a>
+Graphics Settings
+</h4><pre tabindex="0"><code>Options → Settings → Graphics
+</code></pre><ul>
+<li><strong>Graphics Backend</strong>: Vulkan (recommended) or OpenGL</li>
+<li><strong>Resolution Scale</strong>: 1x (default) or 2x if your GPU allows</li>
+<li><strong>Aspect Ratio</strong>: 16:9</li>
+<li><strong>Anti-Aliasing</strong>: FXAA or SMAA</li>
+<li><strong>Scaling Filter</strong>: Bilinear or FSR</li>
+<li><strong>V-Sync</strong>: ✅ Enabled</li>
+</ul>
+<h4 id="audio-settings">
+<a class="header-anchor" href="#audio-settings"></a>
+Audio Settings
+</h4><pre tabindex="0"><code>Options → Settings → Audio
+</code></pre><ul>
+<li><strong>Audio Backend</strong>: SDL2 (recommended) or OpenAL</li>
+<li><strong>Volume</strong>: 100%</li>
+<li><strong>Buffer Size</strong>: 1024 (default)</li>
+</ul>
+<h2 id="-step-4-installing-firmware-and-keys">
+<a class="header-anchor" href="#-step-4-installing-firmware-and-keys"></a>
+🎯 Step 4: Installing Firmware and Keys
+</h2><h3 id="installing-nintendo-switch-firmware">
+<a class="header-anchor" href="#installing-nintendo-switch-firmware"></a>
+Installing Nintendo Switch Firmware
+</h3><blockquote>
+<p>⚠️ <strong>Important</strong>: You must extract firmware from your own Nintendo Switch console.</p></blockquote>
+<h4 id="method-1-official-firmware-installation">
+<a class="header-anchor" href="#method-1-official-firmware-installation"></a>
+Method 1: Official Firmware Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Legal firmware extraction from your Switch</span>
+</span></span><span style="display:flex;"><span>1. Use TegraRcmGUI + Hekate on your Switch
+</span></span><span style="display:flex;"><span>2. Extract firmware with NXDumpTool
+</span></span><span style="display:flex;"><span>3. In Ryujinx: Tools → Install Firmware
+</span></span><span style="display:flex;"><span>4. Select firmware file <span style="color:#f92672">(</span>.zip or .xci<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>5. Wait <span style="color:#66d9ef">for</span> installation completion
+</span></span></code></pre></div><h4 id="method-2-firmware-update">
+<a class="header-anchor" href="#method-2-firmware-update"></a>
+Method 2: Firmware Update
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Updating existing firmware</span>
+</span></span><span style="display:flex;"><span>1. Download latest firmware <span style="color:#f92672">(</span>legally<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Tools → Install Firmware → Update
+</span></span><span style="display:flex;"><span>3. Select new firmware file
+</span></span><span style="display:flex;"><span>4. Restart Ryujinx
+</span></span></code></pre></div><h3 id="installing-encryption-keys">
+<a class="header-anchor" href="#installing-encryption-keys"></a>
+Installing Encryption Keys
+</h3><h4 id="required-key-files">
+<a class="header-anchor" href="#required-key-files"></a>
+Required Key Files
+</h4><ul>
+<li><strong>prod.keys</strong>: Main encryption keys</li>
+<li><strong>title.keys</strong>: Title-specific keys (optional)</li>
+</ul>
+<h4 id="installation-process">
+<a class="header-anchor" href="#installation-process"></a>
+Installation Process
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Key file location</span>
+</span></span><span style="display:flex;"><span>Windows: %APPDATA%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\s</span>ystem<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>Linux: ~/.config/Ryujinx/system/
+</span></span><span style="display:flex;"><span>macOS: ~/Library/Application Support/Ryujinx/system/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation steps</span>
+</span></span><span style="display:flex;"><span>1. Extract prod.keys from your Switch <span style="color:#f92672">(</span>via Lockpick_RCM<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Place prod.keys in system folder
+</span></span><span style="display:flex;"><span>3. Restart Ryujinx
+</span></span><span style="display:flex;"><span>4. Verify in Tools → Manage File Types
+</span></span></code></pre></div><h3 id="extracting-keys-from-your-switch">
+<a class="header-anchor" href="#extracting-keys-from-your-switch"></a>
+Extracting Keys from Your Switch
+</h3><h4 id="using-lockpick_rcm">
+<a class="header-anchor" href="#using-lockpick_rcm"></a>
+Using Lockpick_RCM
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Requirements</span>
+</span></span><span style="display:flex;"><span>- Modded Nintendo Switch <span style="color:#f92672">(</span>CFW<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SD card
+</span></span><span style="display:flex;"><span>- Lockpick_RCM payload
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Process</span>
+</span></span><span style="display:flex;"><span>1. Boot Switch into RCM mode
+</span></span><span style="display:flex;"><span>2. Inject Lockpick_RCM payload
+</span></span><span style="display:flex;"><span>3. Run key extraction
+</span></span><span style="display:flex;"><span>4. Copy prod.keys from SD card
+</span></span><span style="display:flex;"><span>5. Transfer to PC Ryujinx folder
+</span></span></code></pre></div><h2 id="-step-5-game-management">
+<a class="header-anchor" href="#-step-5-game-management"></a>
+🎮 Step 5: Game Management
+</h2><h3 id="supported-game-formats">
+<a class="header-anchor" href="#supported-game-formats"></a>
+Supported Game Formats
+</h3><h4 id="nintendo-switch-games">
+<a class="header-anchor" href="#nintendo-switch-games"></a>
+Nintendo Switch Games
+</h4><ul>
+<li><strong>.NSP</strong>: Nintendo Submission Package (digital games)</li>
+<li><strong>.XCI</strong>: NX Card Image (cartridge dumps)</li>
+<li><strong>.NCA</strong>: Nintendo Content Archive (system files)</li>
+<li><strong>.NSZ/.XCZ</strong>: Compressed formats</li>
+</ul>
+<h4 id="system-content">
+<a class="header-anchor" href="#system-content"></a>
+System Content
+</h4><ul>
+<li><strong>.NAX</strong>: Nintendo Archive eXtended</li>
+<li><strong>.NRO</strong>: Nintendo Relocatable Object (homebrew)</li>
+</ul>
+<h3 id="adding-games">
+<a class="header-anchor" href="#adding-games"></a>
+Adding Games
+</h3><h4 id="method-1-drag--drop">
+<a class="header-anchor" href="#method-1-drag--drop"></a>
+Method 1: Drag &amp; Drop
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Simple method</span>
+</span></span><span style="display:flex;"><span>1. Drag your game file into Ryujinx window
+</span></span><span style="display:flex;"><span>2. Game automatically appears in library
+</span></span><span style="display:flex;"><span>3. Double-click to launch
+</span></span></code></pre></div><h4 id="method-2-file-menu">
+<a class="header-anchor" href="#method-2-file-menu"></a>
+Method 2: File Menu
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Traditional method</span>
+</span></span><span style="display:flex;"><span>1. File → Load Application from File
+</span></span><span style="display:flex;"><span>2. Navigate to your game file
+</span></span><span style="display:flex;"><span>3. Select and open
+</span></span><span style="display:flex;"><span>4. Game loads directly
+</span></span></code></pre></div><h4 id="method-3-game-directory">
+<a class="header-anchor" href="#method-3-game-directory"></a>
+Method 3: Game Directory
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic scanning</span>
+</span></span><span style="display:flex;"><span>1. Options → Settings → UI
+</span></span><span style="display:flex;"><span>2. Add Game Directories
+</span></span><span style="display:flex;"><span>3. Select folder containing games
+</span></span><span style="display:flex;"><span>4. Ryujinx scans and lists automatically
+</span></span></code></pre></div><h3 id="installing-updates-and-dlc">
+<a class="header-anchor" href="#installing-updates-and-dlc"></a>
+Installing Updates and DLC
+</h3><h4 id="game-updates">
+<a class="header-anchor" href="#game-updates"></a>
+Game Updates
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Update installation</span>
+</span></span><span style="display:flex;"><span>File → Install Update from File
+</span></span><span style="display:flex;"><span>1. Select update .nsp file
+</span></span><span style="display:flex;"><span>2. Confirm installation
+</span></span><span style="display:flex;"><span>3. Update applies to base game
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verification</span>
+</span></span><span style="display:flex;"><span>Right-click game → Manage Title Updates
+</span></span></code></pre></div><h4 id="dlc-downloadable-content">
+<a class="header-anchor" href="#dlc-downloadable-content"></a>
+DLC (Downloadable Content)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># DLC installation</span>
+</span></span><span style="display:flex;"><span>File → Install DLC from File
+</span></span><span style="display:flex;"><span>1. Select DLC .nsp file
+</span></span><span style="display:flex;"><span>2. Wait <span style="color:#66d9ef">for</span> installation
+</span></span><span style="display:flex;"><span>3. DLC appears in game properties
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Management</span>
+</span></span><span style="display:flex;"><span>Right-click game → Manage DLC
+</span></span></code></pre></div><h3 id="dumping-your-own-games">
+<a class="header-anchor" href="#dumping-your-own-games"></a>
+Dumping Your Own Games
+</h3><h4 id="from-physical-cartridge">
+<a class="header-anchor" href="#from-physical-cartridge"></a>
+From Physical Cartridge
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using nxdumptool (requires CFW)</span>
+</span></span><span style="display:flex;"><span>1. Install nxdumptool on Switch
+</span></span><span style="display:flex;"><span>2. Insert cartridge
+</span></span><span style="display:flex;"><span>3. Launch nxdumptool
+</span></span><span style="display:flex;"><span>4. Select <span style="color:#e6db74">&#34;Dump gamecard content&#34;</span>
+</span></span><span style="display:flex;"><span>5. Choose XCI or NSP format
+</span></span><span style="display:flex;"><span>6. Transfer to PC
+</span></span></code></pre></div><h4 id="from-digital-games">
+<a class="header-anchor" href="#from-digital-games"></a>
+From Digital Games
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using nxdumptool</span>
+</span></span><span style="display:flex;"><span>1. Launch nxdumptool on Switch
+</span></span><span style="display:flex;"><span>2. Select <span style="color:#e6db74">&#34;Dump installed content&#34;</span>
+</span></span><span style="display:flex;"><span>3. Choose your digital game
+</span></span><span style="display:flex;"><span>4. Select NSP format
+</span></span><span style="display:flex;"><span>5. Wait <span style="color:#66d9ef">for</span> dump completion
+</span></span><span style="display:flex;"><span>6. Transfer to PC
+</span></span></code></pre></div><h2 id="-performance-optimization">
+<a class="header-anchor" href="#-performance-optimization"></a>
+🚀 Performance Optimization
+</h2><h3 id="advanced-settings-for-better-performance">
+<a class="header-anchor" href="#advanced-settings-for-better-performance"></a>
+Advanced Settings for Better Performance
+</h3><h4 id="cpu-configuration">
+<a class="header-anchor" href="#cpu-configuration"></a>
+CPU Configuration
+</h4><pre tabindex="0"><code>Settings → CPU
+- Enable CPU JIT: ✅ Enabled (essential)
+- Enable PTC: ✅ Enabled (reduces stuttering)
+- Memory Manager Mode: Host (faster)
+- Ignore Missing Services: ✅ Enabled (for homebrew)
+</code></pre><h4 id="gpu-configuration">
+<a class="header-anchor" href="#gpu-configuration"></a>
+GPU Configuration
+</h4><pre tabindex="0"><code>Settings → Graphics
+- Shader Cache: ✅ Enabled (essential)
+- Texture Recompression: ✅ Enabled (saves VRAM)
+- Resolution Scale: 1x-2x (depending on GPU)
+- Backend Multithreading: ✅ Enabled
+</code></pre><h4 id="memory-optimization">
+<a class="header-anchor" href="#memory-optimization"></a>
+Memory Optimization
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Windows optimizations</span>
+</span></span><span style="display:flex;"><span>1. Set Windows to High Performance mode
+</span></span><span style="display:flex;"><span>2. Disable Windows Game Mode
+</span></span><span style="display:flex;"><span>3. Close unnecessary background apps
+</span></span><span style="display:flex;"><span>4. Increase virtual memory <span style="color:#f92672">(</span>pagefile<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>5. Use RAM disk <span style="color:#66d9ef">for</span> shader cache <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> 32GB+ RAM<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="game-specific-performance-mods">
+<a class="header-anchor" href="#game-specific-performance-mods"></a>
+Game-Specific Performance Mods
+</h3><h4 id="60-fps-patches">
+<a class="header-anchor" href="#60-fps-patches"></a>
+60 FPS Patches
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Popular 60 FPS mods</span>
+</span></span><span style="display:flex;"><span>- The Legend of Zelda: Breath of the Wild
+</span></span><span style="display:flex;"><span>- Super Mario Odyssey
+</span></span><span style="display:flex;"><span>- Pokémon Legends: Arceus
+</span></span><span style="display:flex;"><span>- Xenoblade Chronicles <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>1. Download mod from GameBanana/NexusMods
+</span></span><span style="display:flex;"><span>2. Extract to mods/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Enable in game properties
+</span></span></code></pre></div><h4 id="resolution-mods">
+<a class="header-anchor" href="#resolution-mods"></a>
+Resolution Mods
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># High-resolution texture packs</span>
+</span></span><span style="display:flex;"><span>- Zelda: Breath of the Wild 4K textures
+</span></span><span style="display:flex;"><span>- Super Mario Odyssey HD pack
+</span></span><span style="display:flex;"><span>- Pokémon Sword/Shield enhanced
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation same as performance mods</span>
+</span></span></code></pre></div><h2 id="-game-specific-configurations">
+<a class="header-anchor" href="#-game-specific-configurations"></a>
+🎯 Game-Specific Configurations
+</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimal settings</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 2x <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> GPU powerful<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Backend: Vulkan
+</span></span><span style="display:flex;"><span>- V-Sync: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Recommended mods:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS unlock
+</span></span><span style="display:flex;"><span>- High resolution shadows
+</span></span><span style="display:flex;"><span>- Enhanced draw distance
+</span></span><span style="display:flex;"><span>- 4K texture pack
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Excellent with modern hardware
+</span></span></code></pre></div><h3 id="super-mario-odyssey">
+<a class="header-anchor" href="#super-mario-odyssey"></a>
+Super Mario Odyssey
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Recommended configuration</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 1x-2x
+</span></span><span style="display:flex;"><span>- Anti-aliasing: SMAA
+</span></span><span style="display:flex;"><span>- V-Sync: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- PTC: ✅ Essential <span style="color:#66d9ef">for</span> smooth gameplay
+</span></span><span style="display:flex;"><span>- JIT: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Generally excellent, stable <span style="color:#ae81ff">60</span> FPS
+</span></span></code></pre></div><h3 id="pokémon-legends-arceus">
+<a class="header-anchor" href="#pok%c3%a9mon-legends-arceus"></a>
+Pokémon Legends: Arceus
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Special optimization needed</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span>recommended<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Backend: Vulkan preferred
+</span></span><span style="display:flex;"><span>- Shader Cache: ✅ Critical
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Mods:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS patch available
+</span></span><span style="display:flex;"><span>- Draw distance improvement
+</span></span><span style="display:flex;"><span>- Texture enhancement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Note: Resource-intensive game
+</span></span></code></pre></div><h3 id="xenoblade-chronicles-3">
+<a class="header-anchor" href="#xenoblade-chronicles-3"></a>
+Xenoblade Chronicles 3
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Demanding game settings</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span>very demanding<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Backend: Vulkan
+</span></span><span style="display:flex;"><span>- Texture Recompression: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- All optimizations enabled
+</span></span><span style="display:flex;"><span>- Close background apps
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Variable, demanding on CPU/GPU
+</span></span></code></pre></div><h3 id="super-smash-bros-ultimate">
+<a class="header-anchor" href="#super-smash-bros-ultimate"></a>
+Super Smash Bros. Ultimate
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Competitive gaming setup</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> consistency<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- V-Sync: ❌ Disabled <span style="color:#f92672">(</span>reduces input lag<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Backend: Vulkan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Maximum performance settings
+</span></span><span style="display:flex;"><span>- High priority process
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Network: Local multiplayer supported
+</span></span></code></pre></div><h3 id="animal-crossing-new-horizons">
+<a class="header-anchor" href="#animal-crossing-new-horizons"></a>
+Animal Crossing: New Horizons
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Casual gaming optimization</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution Scale: 2x-3x possible
+</span></span><span style="display:flex;"><span>- Anti-aliasing: FXAA
+</span></span><span style="display:flex;"><span>- Backend: Vulkan or OpenGL
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Excellent, not demanding
+</span></span><span style="display:flex;"><span>Quality improvements very noticeable
+</span></span></code></pre></div><h2 id="-advanced-features">
+<a class="header-anchor" href="#-advanced-features"></a>
+🛠️ Advanced Features
+</h2><h3 id="mods-and-homebrew">
+<a class="header-anchor" href="#mods-and-homebrew"></a>
+Mods and Homebrew
+</h3><h4 id="installing-game-mods">
+<a class="header-anchor" href="#installing-game-mods"></a>
+Installing Game Mods
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mod installation process</span>
+</span></span><span style="display:flex;"><span>1. Download mod from trusted source
+</span></span><span style="display:flex;"><span>2. Extract to: mods/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Right-click game → Properties → Mods
+</span></span><span style="display:flex;"><span>4. Enable desired mods
+</span></span><span style="display:flex;"><span>5. Launch game
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Popular mod sources</span>
+</span></span><span style="display:flex;"><span>- GameBanana
+</span></span><span style="display:flex;"><span>- NexusMods
+</span></span><span style="display:flex;"><span>- GBAtemp forums
+</span></span><span style="display:flex;"><span>- GitHub repositories
+</span></span></code></pre></div><h4 id="homebrew-applications">
+<a class="header-anchor" href="#homebrew-applications"></a>
+Homebrew Applications
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Running homebrew</span>
+</span></span><span style="display:flex;"><span>1. Download .nro homebrew files
+</span></span><span style="display:flex;"><span>2. File → Load Homebrew
+</span></span><span style="display:flex;"><span>3. Select .nro file
+</span></span><span style="display:flex;"><span>4. Application launches
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Popular homebrew</span>
+</span></span><span style="display:flex;"><span>- Goldleaf <span style="color:#f92672">(</span>file manager<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Tinfoil <span style="color:#f92672">(</span>game installer<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Atmosphere <span style="color:#f92672">(</span>CFW loader<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Checkpoint <span style="color:#f92672">(</span>save manager<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="save-management">
+<a class="header-anchor" href="#save-management"></a>
+Save Management
+</h3><h4 id="save-location">
+<a class="header-anchor" href="#save-location"></a>
+Save Location
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Save data location</span>
+</span></span><span style="display:flex;"><span>Windows: %APPDATA%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\b</span>is<span style="color:#ae81ff">\u</span>ser<span style="color:#ae81ff">\s</span>ave<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>Linux: ~/.config/Ryujinx/bis/user/save/
+</span></span><span style="display:flex;"><span>macOS: ~/Library/Application Support/Ryujinx/bis/user/save/
+</span></span></code></pre></div><h4 id="backup-and-restore">
+<a class="header-anchor" href="#backup-and-restore"></a>
+Backup and Restore
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic backup</span>
+</span></span><span style="display:flex;"><span>1. Settings → System → Auto-save
+</span></span><span style="display:flex;"><span>2. Configure backup interval
+</span></span><span style="display:flex;"><span>3. Choose backup location
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Manual backup</span>
+</span></span><span style="display:flex;"><span>1. File → Export/Import Save Data
+</span></span><span style="display:flex;"><span>2. Select game and save slot
+</span></span><span style="display:flex;"><span>3. Choose export location
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cloud sync (recommended)</span>
+</span></span><span style="display:flex;"><span>- OneDrive, Google Drive, Dropbox
+</span></span><span style="display:flex;"><span>- Sync save folder automatically
+</span></span></code></pre></div><h4 id="save-transfer-from-real-switch">
+<a class="header-anchor" href="#save-transfer-from-real-switch"></a>
+Save Transfer from Real Switch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using Checkpoint (requires CFW)</span>
+</span></span><span style="display:flex;"><span>1. Install Checkpoint on Switch
+</span></span><span style="display:flex;"><span>2. Export saves to SD card
+</span></span><span style="display:flex;"><span>3. Transfer to PC
+</span></span><span style="display:flex;"><span>4. Import via Ryujinx save manager
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compatibility: Most saves transfer perfectly</span>
+</span></span></code></pre></div><h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="common-launch-issues">
+<a class="header-anchor" href="#common-launch-issues"></a>
+Common Launch Issues
+</h3><h4 id="game-wont-start">
+<a class="header-anchor" href="#game-wont-start"></a>
+Game Won&rsquo;t Start
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>System checks:
+</span></span><span style="display:flex;"><span>1. Firmware installed and up to date
+</span></span><span style="display:flex;"><span>2. prod.keys present and valid
+</span></span><span style="display:flex;"><span>3. Game file not corrupted <span style="color:#f92672">(</span>check hash<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Sufficient free disk space
+</span></span><span style="display:flex;"><span>5. Latest Ryujinx version
+</span></span></code></pre></div><h4 id="black-screencrash-on-boot">
+<a class="header-anchor" href="#black-screencrash-on-boot"></a>
+Black Screen/Crash on Boot
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions in order:
+</span></span><span style="display:flex;"><span>1. Change graphics backend <span style="color:#f92672">(</span>Vulkan ↔ OpenGL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Disable mods temporarily
+</span></span><span style="display:flex;"><span>3. Reset game-specific settings
+</span></span><span style="display:flex;"><span>4. Verify game dump integrity
+</span></span><span style="display:flex;"><span>5. Update GPU drivers
+</span></span></code></pre></div><h4 id="shader-compilation-stuttering">
+<a class="header-anchor" href="#shader-compilation-stuttering"></a>
+Shader Compilation Stuttering
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Shader cache optimization:
+</span></span><span style="display:flex;"><span>1. Let shaders compile fully <span style="color:#f92672">(</span>first run<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Enable PTC <span style="color:#66d9ef">for</span> CPU shaders
+</span></span><span style="display:flex;"><span>3. Download pre-compiled shader cache
+</span></span><span style="display:flex;"><span>4. Use SSD <span style="color:#66d9ef">for</span> cache storage
+</span></span><span style="display:flex;"><span>5. Don<span style="color:#960050;background-color:#1e0010">&#39;</span>t delete cache folder
+</span></span></code></pre></div><h3 id="performance-issues">
+<a class="header-anchor" href="#performance-issues"></a>
+Performance Issues
+</h3><h4 id="low-fpsstuttering">
+<a class="header-anchor" href="#low-fpsstuttering"></a>
+Low FPS/Stuttering
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance optimization steps:
+</span></span><span style="display:flex;"><span>1. Enable all CPU optimizations <span style="color:#f92672">(</span>JIT, PTC<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Use Vulkan graphics backend
+</span></span><span style="display:flex;"><span>3. Reduce resolution scale to 1x
+</span></span><span style="display:flex;"><span>4. Close background applications
+</span></span><span style="display:flex;"><span>5. Set Windows to High Performance
+</span></span><span style="display:flex;"><span>6. Update graphics drivers
+</span></span></code></pre></div><h4 id="memory-issues">
+<a class="header-anchor" href="#memory-issues"></a>
+Memory Issues
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>RAM optimization:
+</span></span><span style="display:flex;"><span>1. Close browser tabs and heavy apps
+</span></span><span style="display:flex;"><span>2. Increase Windows virtual memory
+</span></span><span style="display:flex;"><span>3. Use 16GB+ RAM <span style="color:#66d9ef">for</span> demanding games
+</span></span><span style="display:flex;"><span>4. Monitor RAM usage in Task Manager
+</span></span><span style="display:flex;"><span>5. Restart Ryujinx between games
+</span></span></code></pre></div><h4 id="gpu-issues">
+<a class="header-anchor" href="#gpu-issues"></a>
+GPU Issues
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Graphics troubleshooting:
+</span></span><span style="display:flex;"><span>1. Update GPU drivers to latest
+</span></span><span style="display:flex;"><span>2. Test different graphics backends
+</span></span><span style="display:flex;"><span>3. Disable GPU overclocking
+</span></span><span style="display:flex;"><span>4. Monitor GPU temperatures
+</span></span><span style="display:flex;"><span>5. Reduce resolution/effects
+</span></span></code></pre></div><h3 id="audio-issues">
+<a class="header-anchor" href="#audio-issues"></a>
+Audio Issues
+</h3><h4 id="no-audiodistorted-sound">
+<a class="header-anchor" href="#no-audiodistorted-sound"></a>
+No Audio/Distorted Sound
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio solutions:
+</span></span><span style="display:flex;"><span>1. Change audio backend <span style="color:#f92672">(</span>SDL2 ↔ OpenAL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Adjust buffer size <span style="color:#f92672">(</span>512, 1024, 2048<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Update audio drivers
+</span></span><span style="display:flex;"><span>4. Check Windows audio settings
+</span></span><span style="display:flex;"><span>5. Test with different games
+</span></span></code></pre></div><h4 id="audio-lagdesync">
+<a class="header-anchor" href="#audio-lagdesync"></a>
+Audio Lag/Desync
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Synchronization fixes:
+</span></span><span style="display:flex;"><span>1. Enable V-Sync
+</span></span><span style="display:flex;"><span>2. Adjust audio buffer size
+</span></span><span style="display:flex;"><span>3. Close audio applications
+</span></span><span style="display:flex;"><span>4. Check system audio latency
+</span></span><span style="display:flex;"><span>5. Use exclusive audio mode
+</span></span></code></pre></div><h2 id="-compatibility-and-performance">
+<a class="header-anchor" href="#-compatibility-and-performance"></a>
+📊 Compatibility and Performance
+</h2><h3 id="compatibility-statistics">
+<a class="header-anchor" href="#compatibility-statistics"></a>
+Compatibility Statistics
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~70%</td>
+          <td>Works flawlessly</td>
+      </tr>
+      <tr>
+          <td><strong>Great</strong></td>
+          <td>~20%</td>
+          <td>Minor issues</td>
+      </tr>
+      <tr>
+          <td><strong>Good</strong></td>
+          <td>~8%</td>
+          <td>Playable with limitations</td>
+      </tr>
+      <tr>
+          <td><strong>Poor</strong></td>
+          <td>~2%</td>
+          <td>Major problems</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="perfectly-compatible-games">
+<a class="header-anchor" href="#perfectly-compatible-games"></a>
+Perfectly Compatible Games
+</h3><h4 id="first-party-nintendo">
+<a class="header-anchor" href="#first-party-nintendo"></a>
+First-Party Nintendo
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Legend of Zelda: Breath of the Wild
+</span></span><span style="display:flex;"><span>✅ Super Mario Odyssey
+</span></span><span style="display:flex;"><span>✅ Mario Kart <span style="color:#ae81ff">8</span> Deluxe
+</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Ultimate
+</span></span><span style="display:flex;"><span>✅ Animal Crossing: New Horizons
+</span></span><span style="display:flex;"><span>✅ Splatoon 2/3
+</span></span><span style="display:flex;"><span>✅ Pokémon Sword/Shield
+</span></span><span style="display:flex;"><span>✅ Super Mario Party
+</span></span></code></pre></div><h4 id="third-party-highlights">
+<a class="header-anchor" href="#third-party-highlights"></a>
+Third-Party Highlights
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Witcher 3: Wild Hunt
+</span></span><span style="display:flex;"><span>✅ Doom <span style="color:#f92672">(</span>2016<span style="color:#f92672">)</span> / Doom Eternal
+</span></span><span style="display:flex;"><span>✅ Skyrim Anniversary Edition
+</span></span><span style="display:flex;"><span>✅ Diablo III: Eternal Collection
+</span></span><span style="display:flex;"><span>✅ Hades
+</span></span><span style="display:flex;"><span>✅ Celeste
+</span></span><span style="display:flex;"><span>✅ Ori and the Blind Forest
+</span></span></code></pre></div><h3 id="performance-benchmarks">
+<a class="header-anchor" href="#performance-benchmarks"></a>
+Performance Benchmarks
+</h3><h4 id="test-configuration-i7-10700k-rtx-3070-32gb-ram">
+<a class="header-anchor" href="#test-configuration-i7-10700k-rtx-3070-32gb-ram"></a>
+Test Configuration: i7-10700K, RTX 3070, 32GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Game</th>
+          <th>Resolution</th>
+          <th>Average FPS</th>
+          <th>CPU Usage</th>
+          <th>GPU Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zelda: BotW</strong></td>
+          <td>1080p</td>
+          <td>58-60</td>
+          <td>65%</td>
+          <td>70%</td>
+      </tr>
+      <tr>
+          <td><strong>Mario Odyssey</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>45%</td>
+          <td>55%</td>
+      </tr>
+      <tr>
+          <td><strong>Smash Ultimate</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>50%</td>
+          <td>40%</td>
+      </tr>
+      <tr>
+          <td><strong>Pokémon Legends</strong></td>
+          <td>720p</td>
+          <td>45-55</td>
+          <td>80%</td>
+          <td>85%</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade 3</strong></td>
+          <td>720p</td>
+          <td>35-50</td>
+          <td>90%</td>
+          <td>95%</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-resources-and-community">
+<a class="header-anchor" href="#-resources-and-community"></a>
+🌐 Resources and Community
+</h2><h3 id="official-resources">
+<a class="header-anchor" href="#official-resources"></a>
+Official Resources
+</h3><ul>
+<li><a href="https://ryujinx.org/">🏠 Official Ryujinx Site</a></li>
+<li><a href="https://github.com/Ryujinx/Ryujinx-Games-List">📊 Compatibility List</a></li>
+<li><a href="https://github.com/Ryujinx/Ryujinx/wiki">📚 Official Wiki</a></li>
+<li><a href="https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&amp;-Configuration-Guide">🔧 Setup Guide</a></li>
+</ul>
+<h3 id="active-communities">
+<a class="header-anchor" href="#active-communities"></a>
+Active Communities
+</h3><ul>
+<li><a href="https://discord.gg/ryujinx">💬 Ryujinx Discord</a></li>
+<li><a href="https://www.reddit.com/r/Ryujinx/">🗨️ Reddit r/Ryujinx</a></li>
+<li><a href="https://gbatemp.net/categories/nintendo-switch-emulation.283/">🌐 GBAtemp Forums</a></li>
+<li><a href="https://www.youtube.com/results?search_query=ryujinx&#43;guide">📺 YouTube Guides</a></li>
+</ul>
+<h3 id="development-and-contribution">
+<a class="header-anchor" href="#development-and-contribution"></a>
+Development and Contribution
+</h3><ul>
+<li><a href="https://github.com/Ryujinx/Ryujinx">💻 GitHub Ryujinx</a></li>
+<li><a href="https://github.com/Ryujinx/Ryujinx/issues">🐛 Bug Reports</a></li>
+<li><a href="https://www.patreon.com/ryujinx">💰 Patreon Support</a></li>
+<li><a href="https://github.com/Ryujinx/Ryujinx/blob/master/CONTRIBUTING.md">🔧 Contributing Guide</a></li>
+</ul>
+<h3 id="switch-homebrew-tools">
+<a class="header-anchor" href="#switch-homebrew-tools"></a>
+Switch Homebrew Tools
+</h3><ul>
+<li><a href="https://github.com/Atmosphere-NX/Atmosphere">🔧 Atmosphere CFW</a></li>
+<li><a href="https://github.com/XorTroll/Goldleaf">📁 Goldleaf</a> - File manager</li>
+<li><a href="https://github.com/FlagBrew/Checkpoint">💾 Checkpoint</a> - Save manager</li>
+<li><a href="https://github.com/DarkMatterCore/nxdumptool">🔍 nxdumptool</a> - Game dumper</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Is Ryujinx free?</strong>
+<strong>A:</strong> Yes, Ryujinx is completely free and open-source.</p>
+<p><strong>Q: Can I use my real Switch saves?</strong>
+<strong>A:</strong> Yes, with proper tools and CFW, save transfer is possible.</p>
+<p><strong>Q: Do I need a powerful PC?</strong>
+<strong>A:</strong> Modern mid-range hardware recommended. i5-8400 + GTX 1660 minimum.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Vulkan or OpenGL?</strong>
+<strong>A:</strong> Vulkan generally offers better performance. OpenGL for compatibility issues.</p>
+<p><strong>Q: Why do some games stutter initially?</strong>
+<strong>A:</strong> Shader compilation on first run. Enable PTC and be patient.</p>
+<p><strong>Q: Can I play online?</strong>
+<strong>A:</strong> Local wireless works. Online play not supported (Nintendo servers).</p>
+<h3 id="legal-questions">
+<a class="header-anchor" href="#legal-questions"></a>
+Legal Questions
+</h3><p><strong>Q: Is Switch emulation legal?</strong>
+<strong>A:</strong> Yes, emulation is legal. Only use games you legally own.</p>
+<p><strong>Q: Where do I get games?</strong>
+<strong>A:</strong> Dump from your own Switch cartridges/digital purchases only.</p>
+<p><strong>Q: Can I download firmware?</strong>
+<strong>A:</strong> Must extract from your own Switch console legally.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Ryujinx is an outstanding Nintendo Switch emulator that offers:</p>
+<ul>
+<li>✅ <strong>Excellent compatibility</strong> with 90%+ of Switch games</li>
+<li>✅ <strong>Superior performance</strong> with proper hardware</li>
+<li>✅ <strong>Active development</strong> with constant improvements</li>
+<li>✅ <strong>User-friendly interface</strong> and configuration</li>
+<li>✅ <strong>Advanced features</strong> (mods, save management, etc.)</li>
+<li>✅ <strong>Cross-platform support</strong> (Windows, Linux, macOS)</li>
+<li>✅ <strong>Strong community</strong> and regular updates</li>
+</ul>
+<p>With this comprehensive guide, you now know how to:</p>
+<ul>
+<li><strong>Install</strong> and configure Ryujinx optimally</li>
+<li><strong>Extract</strong> firmware and keys legally</li>
+<li><strong>Optimize</strong> performance for your hardware</li>
+<li><strong>Install</strong> and manage games, updates, DLC</li>
+<li><strong>Use</strong> mods and advanced features</li>
+<li><strong>Troubleshoot</strong> common issues</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Important Reminder</strong>: Only use games you legally own. Respect copyrights and support developers by purchasing their games.</p></blockquote>
+<p><strong>Enjoy your Nintendo Switch games in enhanced quality on PC! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://axekin.com/en/post/ryujinx/">https://axekin.com/en/post/ryujinx/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Complete Guide: Ryujinx Installation and Configuration</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-02 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/en/post/ryujinx/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/en/post/ryujinx/&amp;text=Complete%20Guide:%20Ryujinx%20Installation%20and%20Configuration&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/en/post/ryujinx/&amp;title=Complete%20Guide:%20Ryujinx%20Installation%20and%20Configuration&amp;summary=Detailed%20tutorial%20for%20installing,%20configuring%20and%20using%20the%20Nintendo%20Switch%20emulator%20Ryujinx&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/en/post/ryujinx/&amp;title=Complete%20Guide:%20Ryujinx%20Installation%20and%20Configuration" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Ryujinx Installation and Configuration">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/ryujinx"
+        rel="tag"
+        >RYUJINX</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nintendo-switch"
+        rel="tag"
+        >NINTENDO SWITCH</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/xenia.jpg"
+            data-sizes="auto"
+            alt="Complete Guide: Xenia Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/xenia/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">Complete Guide: Xenia Installation and Configuration</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/rpcs3.png"
+            data-sizes="auto"
+            alt="Complete Guide: RPCS3 Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/rpcs3/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Complete Guide: RPCS3 Installation and Configuration</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;27.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:15</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Made with ❤️ by Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-ryujinx">🎮 Introduction to Ryujinx</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration">Optimal Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-ryujinx">🔧 Step 1: Downloading Ryujinx</a>
+      <ul>
+        <li><a href="#option-1-stable-version-recommended">Option 1: Stable Version (Recommended)</a></li>
+        <li><a href="#option-2-development-version-advanced">Option 2: Development Version (Advanced)</a></li>
+        <li><a href="#option-3-ryujinx-linux">Option 3: Ryujinx Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-initial-configuration">⚙️ Step 3: Initial Configuration</a>
+      <ul>
+        <li><a href="#first-launch">First Launch</a></li>
+        <li><a href="#essential-settings-configuration">Essential Settings Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-installing-firmware-and-keys">🎯 Step 4: Installing Firmware and Keys</a>
+      <ul>
+        <li><a href="#installing-nintendo-switch-firmware">Installing Nintendo Switch Firmware</a></li>
+        <li><a href="#installing-encryption-keys">Installing Encryption Keys</a></li>
+        <li><a href="#extracting-keys-from-your-switch">Extracting Keys from Your Switch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-game-management">🎮 Step 5: Game Management</a>
+      <ul>
+        <li><a href="#supported-game-formats">Supported Game Formats</a></li>
+        <li><a href="#adding-games">Adding Games</a></li>
+        <li><a href="#installing-updates-and-dlc">Installing Updates and DLC</a></li>
+        <li><a href="#dumping-your-own-games">Dumping Your Own Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-performance-optimization">🚀 Performance Optimization</a>
+      <ul>
+        <li><a href="#advanced-settings-for-better-performance">Advanced Settings for Better Performance</a></li>
+        <li><a href="#game-specific-performance-mods">Game-Specific Performance Mods</a></li>
+      </ul>
+    </li>
+    <li><a href="#-game-specific-configurations">🎯 Game-Specific Configurations</a>
+      <ul>
+        <li><a href="#the-legend-of-zelda-breath-of-the-wild">The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#super-mario-odyssey">Super Mario Odyssey</a></li>
+        <li><a href="#pokémon-legends-arceus">Pokémon Legends: Arceus</a></li>
+        <li><a href="#xenoblade-chronicles-3">Xenoblade Chronicles 3</a></li>
+        <li><a href="#super-smash-bros-ultimate">Super Smash Bros. Ultimate</a></li>
+        <li><a href="#animal-crossing-new-horizons">Animal Crossing: New Horizons</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🛠️ Advanced Features</a>
+      <ul>
+        <li><a href="#mods-and-homebrew">Mods and Homebrew</a></li>
+        <li><a href="#save-management">Save Management</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#common-launch-issues">Common Launch Issues</a></li>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-and-performance">📊 Compatibility and Performance</a>
+      <ul>
+        <li><a href="#compatibility-statistics">Compatibility Statistics</a></li>
+        <li><a href="#perfectly-compatible-games">Perfectly Compatible Games</a></li>
+        <li><a href="#performance-benchmarks">Performance Benchmarks</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-resources">Official Resources</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#development-and-contribution">Development and Contribution</a></li>
+        <li><a href="#switch-homebrew-tools">Switch Homebrew Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#legal-questions">Legal Questions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Complete Guide: Ryujinx Installation and Configuration",
+          url: "https:\/\/axekin.com\/en\/post\/ryujinx\/",
+          description: "Detailed tutorial for installing, configuring and using the Nintendo Switch emulator Ryujinx",
+          cover: "https:\/\/axekin.com\/images\/covers\/ryujinx.png",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

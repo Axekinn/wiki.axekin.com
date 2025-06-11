@@ -1,0 +1,2154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuzu on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/tags/yuzu/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/tags/yuzu/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
+      <link>https://axekin.com/fr/post/amibo_switch/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/amibo_switch/</guid>
+      <description>
+        <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Avertissement Légal</strong> : Les fichiers amiibo doivent provenir de figurines que vous possédez légalement. Ce guide est à des fins éducatives uniquement.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Les <strong>amiibo</strong> sont des figurines NFC de Nintendo qui débloquent du contenu spécial dans de nombreux jeux Switch. Grâce aux émulateurs <strong>Yuzu</strong> et <strong>Ryujinx</strong>, il est possible d&rsquo;utiliser des <strong>amiibo virtuels</strong> sans posséder les figurines physiques.</p>
+<p>Ce guide vous explique comment configurer et utiliser les amiibo sur les deux émulateurs les plus populaires.</p>
+<h3 id="quest-ce-quun-amiibo-virtuel-">
+<a class="header-anchor" href="#quest-ce-quun-amiibo-virtuel-"></a>
+Qu&rsquo;est-ce qu&rsquo;un amiibo virtuel ?
+</h3><p><strong>Définition :</strong></p>
+<ul>
+<li>Fichier <code>.bin</code> contenant les données NFC d&rsquo;un amiibo</li>
+<li>Simule le scan d&rsquo;une figurine physique</li>
+<li>Compatible avec tous les jeux supportant les amiibo</li>
+</ul>
+<p><strong>Avantages des amiibo virtuels :</strong></p>
+<ul>
+<li>Accès à tous les amiibo sans achat</li>
+<li>Pas de limite de scan par jour</li>
+<li>Facilité de stockage et organisation</li>
+<li>Utilisation instantanée</li>
+</ul>
+<h2 id="prérequis-et-téléchargement">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargement"></a>
+Prérequis et Téléchargement
+</h2><h3 id="fichiers-nécessaires">
+<a class="header-anchor" href="#fichiers-n%c3%a9cessaires"></a>
+Fichiers nécessaires
+</h3><p><strong>Collection amiibo complète :</strong></p>
+<pre tabindex="0"><code>📁 Amiibo_Collection/
+├── 📁 Animal_Crossing/
+├── 📁 Legend_of_Zelda/
+├── 📁 Super_Mario/
+├── 📁 Pokemon/
+└── 📁 Fire_Emblem/
+</code></pre><blockquote>
+<p><strong>📥 Téléchargement</strong> : <a href="https://mega.nz/file/AXolTKwC#UgYFoVPWQs_MPPaZZxVifaJgnvpqMJRr_psW-Q_U7A">Collection Amiibo Complète</a></p></blockquote>
+<h3 id="vérification-des-fichiers">
+<a class="header-anchor" href="#v%c3%a9rification-des-fichiers"></a>
+Vérification des fichiers
+</h3><p><strong>Format attendu :</strong></p>
+<ul>
+<li>Extension : <code>.bin</code></li>
+<li>Taille : 540 bytes (exactement)</li>
+<li>Nommage : <code>Nom_Personnage.bin</code></li>
+</ul>
+<p><strong>Exemple de fichiers :</strong></p>
+<pre tabindex="0"><code>Link_Breath_of_Wild.bin
+Mario_Super_Mario.bin
+Pikachu_Pokemon.bin
+Isabelle_Animal_Crossing.bin
+</code></pre><h2 id="utilisation-sur-yuzu">
+<a class="header-anchor" href="#utilisation-sur-yuzu"></a>
+Utilisation sur Yuzu
+</h2><h3 id="étape-1--préparation-du-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-du-jeu"></a>
+Étape 1 : Préparation du jeu
+</h3><h4 id="lancer-et-positionner-le-jeu">
+<a class="header-anchor" href="#lancer-et-positionner-le-jeu"></a>
+Lancer et positionner le jeu
+</h4><ol>
+<li><strong>Démarrez Yuzu</strong> et lancez votre jeu compatible amiibo</li>
+<li><strong>Naviguez</strong> jusqu&rsquo;à la zone de scan amiibo dans le jeu</li>
+<li><strong>Positionnez-vous</strong> à l&rsquo;endroit où le jeu demande de scanner un amiibo</li>
+</ol>
+<p><img src="/images/yuzu-amiibo-position.png" alt="Position scan amiibo TOTK">
+<em>Position pour scanner un amiibo dans Tears of the Kingdom</em></p>
+<p><strong>Jeux compatibles populaires :</strong></p>
+<ul>
+<li>The Legend of Zelda: Breath of the Wild / Tears of the Kingdom</li>
+<li>Super Mario Odyssey</li>
+<li>Animal Crossing: New Horizons</li>
+<li>Fire Emblem: Three Houses</li>
+<li>Super Smash Bros. Ultimate</li>
+</ul>
+<h3 id="étape-2--charger-lamiibo">
+<a class="header-anchor" href="#%c3%a9tape-2--charger-lamiibo"></a>
+Étape 2 : Charger l&rsquo;amiibo
+</h3><h4 id="accéder-au-menu-amiibo">
+<a class="header-anchor" href="#acc%c3%a9der-au-menu-amiibo"></a>
+Accéder au menu amiibo
+</h4><ol start="4">
+<li><strong>Sans fermer le jeu</strong>, allez dans la barre de menu de Yuzu</li>
+<li>Cliquez sur <strong>&ldquo;Fichier&rdquo;</strong> (File)</li>
+<li>Sélectionnez <strong>&ldquo;Charger un Amiibo&rdquo;</strong> (Load Amiibo)</li>
+</ol>
+<p><img src="/images/yuzu-amiibo-menu.png" alt="Menu amiibo Yuzu">
+<em>Menu de chargement amiibo dans Yuzu</em></p>
+<h4 id="sélectionner-le-fichier">
+<a class="header-anchor" href="#s%c3%a9lectionner-le-fichier"></a>
+Sélectionner le fichier
+</h4><ol start="7">
+<li>Une <strong>fenêtre de sélection</strong> s&rsquo;ouvre</li>
+<li><strong>Naviguez</strong> vers votre dossier d&rsquo;amiibo</li>
+<li><strong>Sélectionnez</strong> le fichier <code>.bin</code> souhaité</li>
+<li>Cliquez sur <strong>&ldquo;Ouvrir&rdquo;</strong></li>
+</ol>
+<h3 id="étape-3--activation-en-jeu">
+<a class="header-anchor" href="#%c3%a9tape-3--activation-en-jeu"></a>
+Étape 3 : Activation en jeu
+</h3><h4 id="scanner-lamiibo-virtuel">
+<a class="header-anchor" href="#scanner-lamiibo-virtuel"></a>
+Scanner l&rsquo;amiibo virtuel
+</h4><ol start="11">
+<li><strong>Retournez</strong> dans le jeu (Alt+Tab)</li>
+<li><strong>Appuyez</strong> sur le bouton de scan amiibo (généralement <strong>joystick droit</strong>)</li>
+<li>L&rsquo;amiibo est <strong>automatiquement détecté</strong> et scanné</li>
+<li><strong>Profitez</strong> du contenu débloqué !</li>
+</ol>
+<p><strong>Indicateurs de réussite :</strong></p>
+<ul>
+<li>Animation de scan dans le jeu</li>
+<li>Contenu amiibo débloqué (objets, costumes, etc.)</li>
+<li>Message de confirmation du jeu</li>
+</ul>
+<h2 id="utilisation-sur-ryujinx">
+<a class="header-anchor" href="#utilisation-sur-ryujinx"></a>
+Utilisation sur Ryujinx
+</h2><h3 id="étape-1--préparation-du-jeu-1">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-du-jeu-1"></a>
+Étape 1 : Préparation du jeu
+</h3><h4 id="lancer-et-positionner">
+<a class="header-anchor" href="#lancer-et-positionner"></a>
+Lancer et positionner
+</h4><ol>
+<li><strong>Démarrez Ryujinx</strong> et lancez votre jeu</li>
+<li><strong>Naviguez</strong> jusqu&rsquo;à la zone de scan amiibo</li>
+<li><strong>Préparez-vous</strong> à scanner (le jeu affiche généralement une icône amiibo)</li>
+</ol>
+<h3 id="étape-2--scanner-lamiibo">
+<a class="header-anchor" href="#%c3%a9tape-2--scanner-lamiibo"></a>
+Étape 2 : Scanner l&rsquo;amiibo
+</h3><h4 id="accéder-au-menu-scan">
+<a class="header-anchor" href="#acc%c3%a9der-au-menu-scan"></a>
+Accéder au menu scan
+</h4><ol start="4">
+<li><strong>Sans fermer le jeu</strong>, allez dans la barre de menu de Ryujinx</li>
+<li>Cliquez sur <strong>&ldquo;Actions&rdquo;</strong></li>
+<li>Sélectionnez <strong>&ldquo;Scan Amiibo&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-amiibo-scan.png" alt="Menu scan Ryujinx">
+<em>Menu de scan amiibo dans Ryujinx</em></p>
+<h4 id="sélectionner-lamiibo">
+<a class="header-anchor" href="#s%c3%a9lectionner-lamiibo"></a>
+Sélectionner l&rsquo;amiibo
+</h4><ol start="7">
+<li>Une <strong>fenêtre de sélection</strong> apparaît</li>
+<li><strong>Choisissez</strong> votre fichier amiibo <code>.bin</code></li>
+<li>Cliquez sur <strong>&ldquo;Ouvrir&rdquo;</strong></li>
+</ol>
+<h3 id="étape-3--confirmation">
+<a class="header-anchor" href="#%c3%a9tape-3--confirmation"></a>
+Étape 3 : Confirmation
+</h3><h4 id="vérification-du-scan">
+<a class="header-anchor" href="#v%c3%a9rification-du-scan"></a>
+Vérification du scan
+</h4><ol start="10">
+<li><strong>L&rsquo;amiibo est immédiatement scanné</strong> dans le jeu</li>
+<li><strong>Vérifiez</strong> que le contenu est débloqué</li>
+<li><strong>Répétez</strong> l&rsquo;opération pour d&rsquo;autres amiibo si nécessaire</li>
+</ol>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des Méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Menu d&rsquo;accès</strong></td>
+          <td>Fichier → Charger Amiibo</td>
+          <td>Actions → Scan Amiibo</td>
+      </tr>
+      <tr>
+          <td><strong>Simplicité</strong></td>
+          <td>2 étapes</td>
+          <td>2 étapes</td>
+      </tr>
+      <tr>
+          <td><strong>Vitesse</strong></td>
+          <td>Rapide</td>
+          <td>Instantané</td>
+      </tr>
+      <tr>
+          <td><strong>Interface</strong></td>
+          <td>Standard</td>
+          <td>Plus intuitive</td>
+      </tr>
+      <tr>
+          <td><strong>Compatibilité</strong></td>
+          <td>Excellente</td>
+          <td>Excellente</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="gestion-de-collection-amiibo">
+<a class="header-anchor" href="#gestion-de-collection-amiibo"></a>
+Gestion de Collection Amiibo
+</h2><h3 id="organisation-recommandée">
+<a class="header-anchor" href="#organisation-recommand%c3%a9e"></a>
+Organisation recommandée
+</h3><p><strong>Structure de dossiers par série :</strong></p>
+<pre tabindex="0"><code>📁 Amiibo_Collection/
+├── 📁 01_Super_Mario/
+│   ├── Mario.bin
+│   ├── Luigi.bin
+│   ├── Peach.bin
+│   └── Bowser.bin
+├── 📁 02_Legend_of_Zelda/
+│   ├── Link_BOTW.bin
+│   ├── Link_TOTK.bin
+│   ├── Zelda.bin
+│   └── Ganondorf.bin
+├── 📁 03_Pokemon/
+│   ├── Pikachu.bin
+│   ├── Lucario.bin
+│   └── Mewtwo.bin
+└── 📁 04_Animal_Crossing/
+    ├── Isabelle.bin
+    ├── Tom_Nook.bin
+    └── K.K._Slider.bin
+</code></pre><h3 id="renommage-pour-faciliter-lusage">
+<a class="header-anchor" href="#renommage-pour-faciliter-lusage"></a>
+Renommage pour faciliter l&rsquo;usage
+</h3><p><strong>Convention de nommage :</strong></p>
+<pre tabindex="0"><code>[Série]_[Personnage]_[Variante].bin
+
+Exemples :
+ZELDA_Link_Breath_of_Wild.bin
+MARIO_Mario_Wedding.bin
+POKEMON_Pikachu_Detective.bin
+</code></pre><h2 id="utilisation-avancée">
+<a class="header-anchor" href="#utilisation-avanc%c3%a9e"></a>
+Utilisation Avancée
+</h2><h3 id="scanner-plusieurs-amiibo-rapidement">
+<a class="header-anchor" href="#scanner-plusieurs-amiibo-rapidement"></a>
+Scanner plusieurs amiibo rapidement
+</h3><p><strong>Méthode Yuzu :</strong></p>
+<ol>
+<li>Gardez le dossier amiibo ouvert</li>
+<li>Utilisez <strong>Ctrl+O</strong> pour un accès rapide</li>
+<li>Double-cliquez sur les fichiers pour charger</li>
+</ol>
+<p><strong>Méthode Ryujinx :</strong></p>
+<ol>
+<li>Créez des <strong>favoris</strong> vers vos amiibo les plus utilisés</li>
+<li>Utilisez <strong>Alt+A</strong> comme raccourci (si configuré)</li>
+</ol>
+<h3 id="amiibo-pour-contenus-spéciaux">
+<a class="header-anchor" href="#amiibo-pour-contenus-sp%c3%a9ciaux"></a>
+Amiibo pour contenus spéciaux
+</h3><h4 id="the-legend-of-zelda-botwtotk">
+<a class="header-anchor" href="#the-legend-of-zelda-botwtotk"></a>
+The Legend of Zelda: BOTW/TOTK
+</h4><p><strong>Amiibo essentiels :</strong></p>
+<ul>
+<li><strong>Link (BOTW)</strong> : Matériaux rares + chance d&rsquo;épée de légende</li>
+<li><strong>Zelda</strong> : Plantes et herbes rares</li>
+<li><strong>Ganondorf</strong> : Armes sombres et matériaux uniques</li>
+<li><strong>Mipha</strong> : Poissons rares</li>
+</ul>
+<h4 id="super-mario-odyssey">
+<a class="header-anchor" href="#super-mario-odyssey"></a>
+Super Mario Odyssey
+</h4><p><strong>Amiibo utiles :</strong></p>
+<ul>
+<li><strong>Mario (Wedding)</strong> : Costume de mariage</li>
+<li><strong>Peach (Wedding)</strong> : Robe de mariée pour Peach</li>
+<li><strong>Bowser (Wedding)</strong> : Costume de Bowser</li>
+</ul>
+<h4 id="animal-crossing-new-horizons">
+<a class="header-anchor" href="#animal-crossing-new-horizons"></a>
+Animal Crossing: New Horizons
+</h4><p><strong>Amiibo populaires :</strong></p>
+<ul>
+<li><strong>Tous les villageois</strong> : Invitation sur votre île</li>
+<li><strong>Isabelle</strong> : Objets spéciaux du bureau</li>
+<li><strong>Tom Nook</strong> : Objets de décoration</li>
+</ul>
+<h2 id="dépannage">
+<a class="header-anchor" href="#d%c3%a9pannage"></a>
+Dépannage
+</h2><h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><h4 id="-amiibo-non-reconnu">
+<a class="header-anchor" href="#-amiibo-non-reconnu"></a>
+🚫 Amiibo non reconnu
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Fichier corrompu</li>
+<li>Mauvais format</li>
+<li>Jeu non compatible</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez la taille du fichier (540 bytes)</li>
+<li>Re-téléchargez le fichier amiibo</li>
+<li>Testez avec un autre amiibo</li>
+<li>Vérifiez la compatibilité du jeu</li>
+</ol>
+<h4 id="-scan-ne-fonctionne-pas">
+<a class="header-anchor" href="#-scan-ne-fonctionne-pas"></a>
+⚠️ Scan ne fonctionne pas
+</h4><p><strong>Vérifications :</strong></p>
+<ol>
+<li>Le jeu est-il en mode &ldquo;scan amiibo&rdquo; ?</li>
+<li>Êtes-vous au bon endroit dans le jeu ?</li>
+<li>L&rsquo;émulateur supporte-t-il les amiibo ?</li>
+</ol>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Relancez l&rsquo;émulateur</li>
+<li>Mettez à jour vers la dernière version</li>
+<li>Vérifiez les logs d&rsquo;erreur</li>
+</ul>
+<h3 id="erreurs-spécifiques">
+<a class="header-anchor" href="#erreurs-sp%c3%a9cifiques"></a>
+Erreurs spécifiques
+</h3><h4 id="fichier-non-valide">
+<a class="header-anchor" href="#fichier-non-valide"></a>
+Fichier non valide
+</h4><pre tabindex="0"><code>Error: Invalid amiibo file format
+</code></pre><p><strong>Solution :</strong> Vérifiez que le fichier fait exactement 540 bytes et a l&rsquo;extension <code>.bin</code></p>
+<h4 id="amiibo-déjà-utilisé">
+<a class="header-anchor" href="#amiibo-d%c3%a9j%c3%a0-utilis%c3%a9"></a>
+Amiibo déjà utilisé
+</h4><pre tabindex="0"><code>This amiibo has already been used today
+</code></pre><p><strong>Solution :</strong> Certains jeux limitent l&rsquo;usage quotidien. Attendez ou changez la date système de l&rsquo;émulateur.</p>
+<h2 id="création-damiibo-personnalisés">
+<a class="header-anchor" href="#cr%c3%a9ation-damiibo-personnalis%c3%a9s"></a>
+Création d&rsquo;Amiibo Personnalisés
+</h2><h3 id="outils-nécessaires">
+<a class="header-anchor" href="#outils-n%c3%a9cessaires"></a>
+Outils nécessaires
+</h3><p><strong>TagMo (Android) :</strong></p>
+<ul>
+<li>Application pour créer des amiibo</li>
+<li>Nécessite des clés NFC</li>
+<li>Interface conviviale</li>
+</ul>
+<p><strong>Amiitool (PC) :</strong></p>
+<ul>
+<li>Outil en ligne de commande</li>
+<li>Plus technique mais puissant</li>
+<li>Compatible Linux/Windows/Mac</li>
+</ul>
+<h3 id="processus-de-création">
+<a class="header-anchor" href="#processus-de-cr%c3%a9ation"></a>
+Processus de création
+</h3><ol>
+<li><strong>Obtenez</strong> les données de base de l&rsquo;amiibo</li>
+<li><strong>Modifiez</strong> les paramètres souhaités</li>
+<li><strong>Générez</strong> le fichier <code>.bin</code></li>
+<li><strong>Testez</strong> sur émulateur</li>
+</ol>
+<blockquote>
+<p><strong>⚠️ Note</strong> : La création d&rsquo;amiibo nécessite des connaissances techniques avancées.</p></blockquote>
+<h2 id="légalité-et-éthique">
+<a class="header-anchor" href="#l%c3%a9galit%c3%a9-et-%c3%a9thique"></a>
+Légalité et Éthique
+</h2><h3 id="utilisation-légale">
+<a class="header-anchor" href="#utilisation-l%c3%a9gale"></a>
+Utilisation légale
+</h3><p><strong>Bonnes pratiques :</strong></p>
+<ul>
+<li>Utilisez uniquement des amiibo que vous possédez physiquement</li>
+<li>Ne partagez pas les fichiers publiquement</li>
+<li>Respectez les droits d&rsquo;auteur de Nintendo</li>
+</ul>
+<p><strong>Zone grise :</strong></p>
+<ul>
+<li>Sauvegarde de vos propres amiibo : Généralement accepté</li>
+<li>Téléchargement d&rsquo;amiibo non possédés : Questionnaire juridique</li>
+<li>Usage commercial : Strictement interdit</li>
+</ul>
+<h2 id="jeux-populaires-et-leurs-amiibo">
+<a class="header-anchor" href="#jeux-populaires-et-leurs-amiibo"></a>
+Jeux Populaires et leurs Amiibo
+</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h3><p><strong>Récompenses par amiibo :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Amiibo</th>
+          <th>Récompenses principales</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Link (BOTW)</strong></td>
+          <td>Épée de légende, matériaux rares</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda</strong></td>
+          <td>Plantes, radis, champignons</td>
+      </tr>
+      <tr>
+          <td><strong>Ganondorf</strong></td>
+          <td>Viandes, minerais sombres</td>
+      </tr>
+      <tr>
+          <td><strong>Guardian</strong></td>
+          <td>Matériaux de gardien</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="super-smash-bros-ultimate">
+<a class="header-anchor" href="#super-smash-bros-ultimate"></a>
+Super Smash Bros. Ultimate
+</h3><p><strong>Système de Fighter :</strong></p>
+<ul>
+<li>Entraînement de combattants IA</li>
+<li>Personnalisation des styles de combat</li>
+<li>Déblocage de récompenses</li>
+</ul>
+<h3 id="animal-crossing-new-horizons-1">
+<a class="header-anchor" href="#animal-crossing-new-horizons-1"></a>
+Animal Crossing: New Horizons
+</h3><p><strong>Fonctionnalités :</strong></p>
+<ul>
+<li>Invitation de villageois spécifiques</li>
+<li>Déblocage de costumes</li>
+<li>Objets de décoration exclusifs</li>
+</ul>
+<h2 id="tutoriel-vidéo">
+<a class="header-anchor" href="#tutoriel-vid%c3%a9o"></a>
+Tutoriel Vidéo
+</h2><p>Pour une démonstration visuelle complète, consultez ce tutoriel :</p>
+<p><strong><a href="https://odysee.com/@696_STS:1/googledocpc:2">Vidéo explicative complète</a></strong></p>
+<p>La vidéo couvre :</p>
+<ul>
+<li>Installation des fichiers amiibo</li>
+<li>Utilisation sur Yuzu et Ryujinx</li>
+<li>Démonstration en jeu</li>
+<li>Dépannage des problèmes courants</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;utilisation d&rsquo;<strong>amiibo virtuels</strong> sur les émulateurs Switch ouvre un monde de possibilités pour enrichir votre expérience de jeu. Que ce soit pour débloquer du contenu exclusif ou simplement pour tester des fonctionnalités, les méthodes présentées sont simples et efficaces.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé des méthodes :</strong></p>
+<p><strong>Yuzu :</strong></p>
+<ul>
+<li>Fichier → Charger Amiibo</li>
+<li>Sélectionner fichier .bin</li>
+<li>Scanner dans le jeu</li>
+</ul>
+<p><strong>Ryujinx :</strong></p>
+<ul>
+<li>Actions → Scan Amiibo</li>
+<li>Choisir fichier .bin</li>
+<li>Activation immédiate</li>
+</ul></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une expérience optimale :</strong></p>
+<ul>
+<li>Organisez votre collection par séries</li>
+<li>Testez les amiibo sur différents jeux</li>
+<li>Sauvegardez vos configurations</li>
+<li>Respectez les aspects légaux</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions Fréquentes
+</h2><p><strong>Q : Puis-je utiliser le même amiibo plusieurs fois par jour ?</strong>
+R : Cela dépend du jeu. Certains limitent l&rsquo;usage quotidien, d&rsquo;autres permettent un usage illimité.</p>
+<p><strong>Q : Les amiibo fonctionnent-ils sur toutes les versions de jeux ?</strong>
+R : Généralement oui, mais vérifiez la compatibilité spécifique de votre version de jeu.</p>
+<p><strong>Q : Puis-je créer mes propres amiibo personnalisés ?</strong>
+R : Oui, avec des outils comme TagMo ou Amiitool, mais cela nécessite des connaissances techniques.</p>
+<p><strong>Q : Les amiibo affectent-ils les performances de l&rsquo;émulateur ?</strong>
+R : Non, l&rsquo;utilisation d&rsquo;amiibo n&rsquo;a aucun impact sur les performances.</p>
+<p><strong>Q : Comment sauvegarder mes données amiibo ?</strong>
+R : Les données sont sauvegardées automatiquement dans les fichiers de sauvegarde du jeu.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos amiibo favoris et leurs utilisations en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-zelda-optimization/">Optimiser Yuzu pour les Jeux Zelda</a></li>
+<li><a href="/fr/post/ryujinx-complete-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/switch-emulation-settings/">Meilleures Configurations pour Émulation Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
+      <link>https://axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Note Importante</strong> : Assurez-vous de posséder légalement les jeux, DLC et mises à jour que vous installez. Ce guide est à des fins éducatives uniquement.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;installation de <strong>DLC</strong> (contenu téléchargeable) et de <strong>mises à jour</strong> sur les émulateurs <strong>Yuzu</strong> et <strong>Ryujinx</strong> est un processus simple mais essentiel pour profiter pleinement de vos jeux Nintendo Switch émulés.</p>
+<p>Ce guide vous explique <strong>étape par étape</strong> comment procéder sur les deux émulateurs les plus populaires.</p>
+<h3 id="formats-de-fichiers-supportés">
+<a class="header-anchor" href="#formats-de-fichiers-support%c3%a9s"></a>
+Formats de fichiers supportés
+</h3><p><strong>Types de fichiers acceptés :</strong></p>
+<ul>
+<li><strong>NSP</strong> - Nintendo Submission Package (format principal)</li>
+<li><strong>XCI</strong> - Nintendo Game Card Image</li>
+<li><strong>NCA</strong> - Nintendo Content Archive</li>
+</ul>
+<p><strong>Différence entre Update et DLC :</strong></p>
+<ul>
+<li><strong>Update</strong> : Mise à jour du jeu de base (corrections, améliorations)</li>
+<li><strong>DLC</strong> : Contenu additionnel payant (nouveaux niveaux, personnages, etc.)</li>
+</ul>
+<h2 id="installation-sur-yuzu">
+<a class="header-anchor" href="#installation-sur-yuzu"></a>
+Installation sur Yuzu
+</h2><h3 id="méthode-universelle-update--dlc">
+<a class="header-anchor" href="#m%c3%a9thode-universelle-update--dlc"></a>
+Méthode universelle (Update + DLC)
+</h3><h4 id="étape-1--accéder-au-menu-dinstallation">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-menu-dinstallation"></a>
+Étape 1 : Accéder au menu d&rsquo;installation
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> et attendez que l&rsquo;interface soit chargée</li>
+<li>Dans la barre de menu, cliquez sur <strong>&ldquo;File&rdquo;</strong> (Fichier)</li>
+<li>Sélectionnez <strong>&ldquo;Install Files to NAND&rdquo;</strong> (Installer des fichiers sur la NAND)</li>
+</ol>
+<p><img src="/images/yuzu-file-menu.png" alt="Menu File Yuzu">
+<em>Menu File avec l&rsquo;option d&rsquo;installation dans Yuzu</em></p>
+<h4 id="étape-2--sélectionner-le-fichier">
+<a class="header-anchor" href="#%c3%a9tape-2--s%c3%a9lectionner-le-fichier"></a>
+Étape 2 : Sélectionner le fichier
+</h4><ol start="4">
+<li>Une <strong>fenêtre de sélection</strong> de fichiers s&rsquo;ouvre</li>
+<li><strong>Naviguez</strong> vers l&rsquo;emplacement de votre fichier DLC/Update</li>
+<li><strong>Sélectionnez</strong> le fichier (.nsp, .xci, ou .nca)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> (Ouvrir)</li>
+</ol>
+<p><img src="/images/yuzu-file-selection.png" alt="Sélection fichier Yuzu">
+<em>Fenêtre de sélection de fichiers dans Yuzu</em></p>
+<h4 id="étape-3--confirmer-linstallation">
+<a class="header-anchor" href="#%c3%a9tape-3--confirmer-linstallation"></a>
+Étape 3 : Confirmer l&rsquo;installation
+</h4><ol start="8">
+<li>Yuzu <strong>analyse le fichier</strong> et affiche les informations</li>
+<li>Une boîte de dialogue apparaît demandant confirmation</li>
+<li>Cliquez sur <strong>&ldquo;Yes&rdquo;</strong> (Oui) pour procéder à l&rsquo;installation</li>
+<li><strong>Attendez</strong> que l&rsquo;installation se termine (barre de progression)</li>
+</ol>
+<h4 id="étape-4--vérification">
+<a class="header-anchor" href="#%c3%a9tape-4--v%c3%a9rification"></a>
+Étape 4 : Vérification
+</h4><ol start="12">
+<li>L&rsquo;installation est <strong>terminée</strong> quand le message de succès apparaît</li>
+<li><strong>Redémarrez</strong> Yuzu pour s&rsquo;assurer que tout est bien pris en compte</li>
+<li>Lancez votre jeu pour vérifier que le DLC/Update est actif</li>
+</ol>
+<p><strong>Indicateurs de réussite :</strong></p>
+<ul>
+<li>Message &ldquo;Installation completed successfully&rdquo;</li>
+<li>Nouveau contenu visible dans le jeu</li>
+<li>Version mise à jour affichée dans les propriétés du jeu</li>
+</ul>
+<h2 id="installation-sur-ryujinx">
+<a class="header-anchor" href="#installation-sur-ryujinx"></a>
+Installation sur Ryujinx
+</h2><h3 id="pour-les-updates-mises-à-jour">
+<a class="header-anchor" href="#pour-les-updates-mises-%c3%a0-jour"></a>
+Pour les Updates (Mises à jour)
+</h3><h4 id="étape-1--accéder-à-la-gestion-des-updates">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-gestion-des-updates"></a>
+Étape 1 : Accéder à la gestion des updates
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong> et localisez votre jeu dans la liste</li>
+<li><strong>Clic droit</strong> sur le jeu que vous souhaitez mettre à jour</li>
+<li>Dans le menu contextuel, sélectionnez <strong>&ldquo;Manage Updates&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-context-menu.png" alt="Menu contextuel Ryujinx">
+<em>Menu clic droit avec l&rsquo;option Manage Updates</em></p>
+<h4 id="étape-2--ajouter-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-2--ajouter-lupdate"></a>
+Étape 2 : Ajouter l&rsquo;update
+</h4><ol start="4">
+<li>La fenêtre <strong>&ldquo;Manage Updates&rdquo;</strong> s&rsquo;ouvre</li>
+<li>Cliquez sur le bouton <strong>&ldquo;Add&rdquo;</strong> ou <strong>&ldquo;Browse&rdquo;</strong></li>
+<li><strong>Sélectionnez</strong> votre fichier d&rsquo;update (.nsp ou .xci)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> pour l&rsquo;ajouter</li>
+</ol>
+<h4 id="étape-3--appliquer-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-3--appliquer-lupdate"></a>
+Étape 3 : Appliquer l&rsquo;update
+</h4><ol start="8">
+<li>Votre update apparaît dans la liste avec <strong>sa version</strong></li>
+<li><strong>Cochez</strong> la case à côté de l&rsquo;update pour l&rsquo;activer</li>
+<li>Cliquez sur <strong>&ldquo;Save&rdquo;</strong> pour appliquer les changements</li>
+</ol>
+<p><img src="/images/ryujinx-update-manager.png" alt="Gestion updates Ryujinx">
+<em>Interface de gestion des updates dans Ryujinx</em></p>
+<h4 id="vérification-de-lupdate">
+<a class="header-anchor" href="#v%c3%a9rification-de-lupdate"></a>
+Vérification de l&rsquo;update
+</h4><ol start="11">
+<li><strong>Fermez</strong> la fenêtre de gestion</li>
+<li>Dans la liste des jeux, vous devriez voir la <strong>nouvelle version</strong> affichée</li>
+<li><strong>Lancez le jeu</strong> pour confirmer que l&rsquo;update est active</li>
+</ol>
+<h3 id="pour-les-dlc">
+<a class="header-anchor" href="#pour-les-dlc"></a>
+Pour les DLC
+</h3><h4 id="procédure-identique-aux-updates">
+<a class="header-anchor" href="#proc%c3%a9dure-identique-aux-updates"></a>
+Procédure identique aux updates
+</h4><p><strong>La méthode est exactement la même :</strong></p>
+<ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Manage DLC&rdquo;</strong> (au lieu de Manage Updates)</li>
+<li><strong>Add/Browse</strong> → Sélectionner le fichier DLC</li>
+<li><strong>Cocher</strong> le DLC pour l&rsquo;activer</li>
+<li><strong>Save</strong> pour appliquer</li>
+</ol>
+<p><img src="/images/ryujinx-dlc-manager.png" alt="Gestion DLC Ryujinx">
+<em>Interface de gestion des DLC dans Ryujinx</em></p>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des Méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Méthode</strong></td>
+          <td>File → Install Files to NAND</td>
+          <td>Clic droit → Manage Updates/DLC</td>
+      </tr>
+      <tr>
+          <td><strong>Simplicité</strong></td>
+          <td>Très simple, une seule méthode</td>
+          <td>Légèrement plus d&rsquo;étapes</td>
+      </tr>
+      <tr>
+          <td><strong>Gestion</strong></td>
+          <td>Installation directe</td>
+          <td>Gestion individuelle par jeu</td>
+      </tr>
+      <tr>
+          <td><strong>Vérification</strong></td>
+          <td>Automatique</td>
+          <td>Visuelle dans la liste</td>
+      </tr>
+      <tr>
+          <td><strong>Flexibilité</strong></td>
+          <td>Moins de contrôle</td>
+          <td>Plus de contrôle granulaire</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="gestion-et-organisation">
+<a class="header-anchor" href="#gestion-et-organisation"></a>
+Gestion et Organisation
+</h2><h3 id="organiser-vos-fichiers-dlcupdates">
+<a class="header-anchor" href="#organiser-vos-fichiers-dlcupdates"></a>
+Organiser vos fichiers DLC/Updates
+</h3><p><strong>Structure de dossiers recommandée :</strong></p>
+<pre tabindex="0"><code>📁 Nintendo_Switch_Content/
+├── 📁 Games/
+│   ├── game1.nsp
+│   ├── game2.xci
+│   └── game3.nsp
+├── 📁 Updates/
+│   ├── 📁 Game1/
+│   │   ├── update_v1.1.0.nsp
+│   │   └── update_v1.2.0.nsp
+│   └── 📁 Game2/
+│       └── update_v2.0.1.nsp
+└── 📁 DLC/
+    ├── 📁 Game1/
+    │   ├── dlc1.nsp
+    │   └── dlc2.nsp
+    └── 📁 Game2/
+        └── season_pass.nsp
+</code></pre><h3 id="vérifier-les-versions-installées">
+<a class="header-anchor" href="#v%c3%a9rifier-les-versions-install%c3%a9es"></a>
+Vérifier les versions installées
+</h3><h4 id="dans-yuzu">
+<a class="header-anchor" href="#dans-yuzu"></a>
+Dans Yuzu
+</h4><ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Properties&rdquo;</strong></li>
+<li>Onglet <strong>&ldquo;General&rdquo;</strong> → Vérifier la version</li>
+<li>Onglet <strong>&ldquo;Installed Content&rdquo;</strong> → Liste des DLC</li>
+</ol>
+<h4 id="dans-ryujinx">
+<a class="header-anchor" href="#dans-ryujinx"></a>
+Dans Ryujinx
+</h4><ol>
+<li><strong>Informations</strong> visibles directement dans la liste des jeux</li>
+<li><strong>Clic droit</strong> → <strong>&ldquo;Manage Updates/DLC&rdquo;</strong> pour les détails</li>
+<li>Version affichée à côté du nom du jeu</li>
+</ol>
+<h2 id="dépannage-des-problèmes-courants">
+<a class="header-anchor" href="#d%c3%a9pannage-des-probl%c3%a8mes-courants"></a>
+Dépannage des Problèmes Courants
+</h2><h3 id="problèmes-dinstallation">
+<a class="header-anchor" href="#probl%c3%a8mes-dinstallation"></a>
+Problèmes d&rsquo;installation
+</h3><h4 id="-fichier-non-reconnu">
+<a class="header-anchor" href="#-fichier-non-reconnu"></a>
+🚫 Fichier non reconnu
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Format de fichier incompatible</li>
+<li>Fichier corrompu</li>
+<li>Clés de déchiffrement manquantes</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez le format du fichier (.nsp, .xci, .nca)</li>
+<li>Re-téléchargez le fichier si corrompu</li>
+<li>Installez les clés prod.keys à jour</li>
+<li>Vérifiez que le firmware est compatible</li>
+</ol>
+<h4 id="-installation-échoue">
+<a class="header-anchor" href="#-installation-%c3%a9choue"></a>
+⚠️ Installation échoue
+</h4><p><strong>Messages d&rsquo;erreur courants :</strong></p>
+<ul>
+<li>&ldquo;Failed to install to NAND&rdquo;</li>
+<li>&ldquo;Invalid signature&rdquo;</li>
+<li>&ldquo;Missing keys&rdquo;</li>
+</ul>
+<p><strong>Solutions étape par étape :</strong></p>
+<ol>
+<li><strong>Vérifiez l&rsquo;espace disque</strong> disponible</li>
+<li><strong>Fermez complètement</strong> l&rsquo;émulateur et relancez</li>
+<li><strong>Exécutez en tant qu&rsquo;administrateur</strong> si nécessaire</li>
+<li><strong>Mettez à jour</strong> l&rsquo;émulateur vers la dernière version</li>
+</ol>
+<h3 id="problèmes-de-compatibilité">
+<a class="header-anchor" href="#probl%c3%a8mes-de-compatibilit%c3%a9"></a>
+Problèmes de compatibilité
+</h3><h4 id="version-de-firmware">
+<a class="header-anchor" href="#version-de-firmware"></a>
+Version de firmware
+</h4><p><strong>Vérification firmware requis :</strong></p>
+<pre tabindex="0"><code>Jeu → Propriétés → Required System Version
+</code></pre><p><strong>Mise à jour firmware :</strong></p>
+<ul>
+<li>Téléchargez le firmware correspondant</li>
+<li>Installez via les outils de l&rsquo;émulateur</li>
+<li>Redémarrez l&rsquo;émulateur</li>
+</ul>
+<h4 id="clés-de-déchiffrement">
+<a class="header-anchor" href="#cl%c3%a9s-de-d%c3%a9chiffrement"></a>
+Clés de déchiffrement
+</h4><p><strong>Emplacement des clés :</strong></p>
+<ul>
+<li><strong>Yuzu</strong> : <code>%appdata%/yuzu/keys/</code></li>
+<li><strong>Ryujinx</strong> : <code>%appdata%/Ryujinx/system/</code></li>
+</ul>
+<p><strong>Fichiers requis :</strong></p>
+<ul>
+<li><code>prod.keys</code> (clés principales)</li>
+<li><code>title.keys</code> (clés des titres)</li>
+</ul>
+<h2 id="bonnes-pratiques">
+<a class="header-anchor" href="#bonnes-pratiques"></a>
+Bonnes Pratiques
+</h2><h3 id="sauvegarde-et-sécurité">
+<a class="header-anchor" href="#sauvegarde-et-s%c3%a9curit%c3%a9"></a>
+Sauvegarde et sécurité
+</h3><p><strong>Avant installation :</strong></p>
+<ul>
+<li>✅ <strong>Sauvegardez</strong> vos saves importantes</li>
+<li>✅ <strong>Notez</strong> les versions actuellement installées</li>
+<li>✅ <strong>Vérifiez</strong> la compatibilité émulateur/firmware</li>
+<li>✅ <strong>Testez</strong> avec un jeu moins important d&rsquo;abord</li>
+</ul>
+<h3 id="organisation-efficace">
+<a class="header-anchor" href="#organisation-efficace"></a>
+Organisation efficace
+</h3><p><strong>Système de nommage :</strong></p>
+<pre tabindex="0"><code>NomDuJeu_Update_v1.2.0.nsp
+NomDuJeu_DLC_SeasonPass.nsp
+NomDuJeu_DLC_Expansion1.nsp
+</code></pre><p><strong>Avantages :</strong></p>
+<ul>
+<li>Identification rapide</li>
+<li>Évite les doublons</li>
+<li>Facilite la gestion</li>
+</ul>
+<h3 id="maintenance-régulière">
+<a class="header-anchor" href="#maintenance-r%c3%a9guli%c3%a8re"></a>
+Maintenance régulière
+</h3><p><strong>Nettoyage périodique :</strong></p>
+<ol>
+<li><strong>Supprimez</strong> les anciennes versions d&rsquo;updates</li>
+<li><strong>Vérifiez</strong> l&rsquo;espace de stockage utilisé</li>
+<li><strong>Sauvegardez</strong> les DLC importants</li>
+<li><strong>Documentez</strong> les combinaisons qui fonctionnent</li>
+</ol>
+<h2 id="cas-dusage-spéciaux">
+<a class="header-anchor" href="#cas-dusage-sp%c3%a9ciaux"></a>
+Cas d&rsquo;Usage Spéciaux
+</h2><h3 id="jeux-avec-multiples-dlc">
+<a class="header-anchor" href="#jeux-avec-multiples-dlc"></a>
+Jeux avec multiples DLC
+</h3><p><strong>Exemple : The Legend of Zelda: Breath of the Wild</strong></p>
+<pre tabindex="0"><code>📁 BOTW_Content/
+├── BOTW_Update_v1.6.0.nsp
+├── BOTW_DLC_Pack1_MasterTrials.nsp
+├── BOTW_DLC_Pack2_ChampionsBallad.nsp
+└── BOTW_SeasonPass_Complete.nsp
+</code></pre><p><strong>Installation recommandée :</strong></p>
+<ol>
+<li><strong>Update</strong> en premier</li>
+<li><strong>DLC</strong> dans l&rsquo;ordre de sortie</li>
+<li><strong>Test</strong> après chaque installation</li>
+</ol>
+<h3 id="migration-entre-émulateurs">
+<a class="header-anchor" href="#migration-entre-%c3%a9mulateurs"></a>
+Migration entre émulateurs
+</h3><p><strong>Yuzu vers Ryujinx :</strong></p>
+<ol>
+<li>Les DLC/Updates installés ne se transfèrent pas automatiquement</li>
+<li><strong>Réinstallez</strong> tout le contenu sur le nouvel émulateur</li>
+<li><strong>Vérifiez</strong> la compatibilité avant migration</li>
+</ol>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;installation de <strong>DLC et mises à jour</strong> sur Yuzu et Ryujinx est un processus simple une fois maîtrisé. La différence principale réside dans l&rsquo;approche : Yuzu utilise une méthode universelle tandis que Ryujinx offre une gestion plus granulaire.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé des procédures :</strong></p>
+<p><strong>Yuzu (Universal) :</strong></p>
+<ul>
+<li>File → Install Files to NAND</li>
+<li>Sélectionner fichier → Confirmer</li>
+<li>Fonctionne pour Update ET DLC</li>
+</ul>
+<p><strong>Ryujinx (Séparé) :</strong></p>
+<ul>
+<li>Clic droit → Manage Updates/DLC</li>
+<li>Add → Select → Save</li>
+<li>Gestion séparée Update/DLC</li>
+</ul></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une expérience optimale :</strong></p>
+<ul>
+<li>Maintenez vos émulateurs à jour</li>
+<li>Organisez vos fichiers clairement</li>
+<li>Sauvegardez régulièrement</li>
+<li>Testez progressivement</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions Fréquentes
+</h2><p><strong>Q : Puis-je installer plusieurs versions d&rsquo;un même DLC ?</strong>
+R : Non, une seule version par DLC. L&rsquo;installation d&rsquo;une nouvelle version remplace automatiquement l&rsquo;ancienne.</p>
+<p><strong>Q : Les DLC fonctionnent-ils entre différentes régions de jeu ?</strong>
+R : Généralement non. Les DLC doivent correspondre à la région du jeu de base (EU, US, JP).</p>
+<p><strong>Q : Que faire si l&rsquo;installation reste bloquée ?</strong>
+R : Fermez l&rsquo;émulateur, redémarrez en tant qu&rsquo;administrateur, et réessayez. Vérifiez aussi l&rsquo;espace disque disponible.</p>
+<p><strong>Q : Les sauvegardes sont-elles affectées par l&rsquo;installation de DLC ?</strong>
+R : Non, les sauvegardes existantes restent intactes. Certains DLC peuvent ajouter du nouveau contenu aux sauvegardes.</p>
+<p><strong>Q : Comment désinstaller un DLC ou une update ?</strong>
+R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous devrez supprimer depuis les paramètres système de l&rsquo;émulateur.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences d&rsquo;installation et vos jeux favoris avec DLC en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-setup/">Configuration Optimale de Yuzu</a></li>
+<li><a href="/fr/post/ryujinx-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/install-switch-mods/">Installer des Mods sur les Émulateurs Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
+      <link>https://axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important</strong> : Toujours sauvegarder vos données avant toute réinstallation ! Ce guide vous montre comment procéder en sécurité.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Il arrive parfois que <strong>Yuzu</strong> ou <strong>Ryujinx</strong> rencontrent des problèmes nécessitant une réinstallation complète. Corruption de fichiers, mises à jour problématiques, ou simplement envie de repartir sur des bases saines&hellip;</p>
+<p>Ce guide vous explique <strong>comment réinstaller proprement</strong> ces émulateurs <strong>sans perdre vos sauvegardes</strong> de jeux Nintendo Switch.</p>
+<h3 id="pourquoi-réinstaller-">
+<a class="header-anchor" href="#pourquoi-r%c3%a9installer-"></a>
+Pourquoi réinstaller ?
+</h3><p><strong>Problèmes courants nécessitant une réinstallation :</strong></p>
+<ul>
+<li>Émulateur qui refuse de démarrer</li>
+<li>Performances dégradées après une mise à jour</li>
+<li>Fichiers de configuration corrompus</li>
+<li>Problèmes graphiques persistants</li>
+<li>Messages d&rsquo;erreur récurrents</li>
+</ul>
+<h2 id="méthode-pour-yuzu">
+<a class="header-anchor" href="#m%c3%a9thode-pour-yuzu"></a>
+Méthode pour Yuzu
+</h2><h3 id="étape-1--sauvegarder-les-données-de-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-de-jeu"></a>
+Étape 1 : Sauvegarder les données de jeu
+</h3><h4 id="localiser-les-sauvegardes">
+<a class="header-anchor" href="#localiser-les-sauvegardes"></a>
+Localiser les sauvegardes
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> (si possible)</li>
+<li><strong>Clic droit</strong> sur le jeu souhaité dans la liste</li>
+<li>Sélectionnez <strong>&ldquo;Open Save Data Location&rdquo;</strong> (ou &ldquo;Ouvrir l&rsquo;emplacement des données de sauvegarde&rdquo;)</li>
+</ol>
+<p><img src="/images/yuzu-right-click-menu.png" alt="Menu contextuel Yuzu">
+<em>Menu clic droit sur un jeu dans Yuzu</em></p>
+<h4 id="sauvegarder-le-contenu">
+<a class="header-anchor" href="#sauvegarder-le-contenu"></a>
+Sauvegarder le contenu
+</h4><ol start="4">
+<li><strong>Sélectionnez tout le contenu</strong> du dossier qui s&rsquo;ouvre (Ctrl+A)</li>
+<li><strong>Copiez</strong> les fichiers (Ctrl+C)</li>
+<li><strong>Créez un dossier</strong> de sauvegarde sur votre bureau ou disque dur</li>
+<li><strong>Collez</strong> le contenu dans ce dossier (Ctrl+V)</li>
+</ol>
+<p><strong>Structure recommandée pour l&rsquo;organisation :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Yuzu_2025-06-04/
+├── 📁 The_Legend_of_Zelda_BOTW/
+│   ├── save_data.bin
+│   └── other_files...
+├── 📁 Super_Mario_Odyssey/
+│   ├── save_data.bin
+│   └── other_files...
+└── 📁 Pokemon_Legends_Arceus/
+    ├── save_data.bin
+    └── other_files...
+</code></pre><h4 id="répéter-pour-tous-les-jeux">
+<a class="header-anchor" href="#r%c3%a9p%c3%a9ter-pour-tous-les-jeux"></a>
+Répéter pour tous les jeux
+</h4><ol start="8">
+<li><strong>Répétez cette opération</strong> pour chaque jeu dont vous voulez conserver la sauvegarde</li>
+<li><strong>Notez le nom</strong> de chaque dossier pour faciliter la restauration</li>
+</ol>
+<h3 id="étape-2--supprimer-les-données-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-les-donn%c3%a9es-yuzu"></a>
+Étape 2 : Supprimer les données Yuzu
+</h3><h4 id="accéder-au-dossier-de-configuration">
+<a class="header-anchor" href="#acc%c3%a9der-au-dossier-de-configuration"></a>
+Accéder au dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et appuyez sur <strong>Entrée</strong></li>
+</ol>
+<p><img src="/images/windows-run-appdata.png" alt="Boîte de dialogue Exécuter">
+<em>Accès au dossier AppData via Windows + R</em></p>
+<h4 id="supprimer-le-dossier-yuzu">
+<a class="header-anchor" href="#supprimer-le-dossier-yuzu"></a>
+Supprimer le dossier Yuzu
+</h4><ol start="3">
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;yuzu&rdquo;</strong></li>
+<li><strong>Supprimez complètement</strong> ce dossier</li>
+<li><strong>Videz la corbeille</strong> pour libérer l&rsquo;espace</li>
+</ol>
+<blockquote>
+<p><strong>💡 Conseil</strong> : Si le dossier est en cours d&rsquo;utilisation, fermez complètement Yuzu via le gestionnaire des tâches.</p></blockquote>
+<h3 id="étape-3--réinstaller-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installer-yuzu"></a>
+Étape 3 : Réinstaller Yuzu
+</h3><h4 id="installation-propre">
+<a class="header-anchor" href="#installation-propre"></a>
+Installation propre
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Yuzu depuis le site officiel</li>
+<li><strong>Désinstallez</strong> l&rsquo;ancienne version si elle est encore présente</li>
+<li><strong>Installez</strong> la nouvelle version avec les paramètres par défaut</li>
+<li><strong>Lancez</strong> Yuzu pour la configuration initiale</li>
+</ol>
+<h4 id="configuration-de-base">
+<a class="header-anchor" href="#configuration-de-base"></a>
+Configuration de base
+</h4><ol start="5">
+<li><strong>Configurez</strong> les paramètres graphiques selon votre matériel</li>
+<li><strong>Ajoutez</strong> vos dossiers de jeux</li>
+<li><strong>Installez</strong> les firmware et clés si nécessaire</li>
+</ol>
+<h3 id="étape-4--restaurer-les-sauvegardes">
+<a class="header-anchor" href="#%c3%a9tape-4--restaurer-les-sauvegardes"></a>
+Étape 4 : Restaurer les sauvegardes
+</h3><h4 id="remettre-les-fichiers-de-sauvegarde">
+<a class="header-anchor" href="#remettre-les-fichiers-de-sauvegarde"></a>
+Remettre les fichiers de sauvegarde
+</h4><ol>
+<li><strong>Lancez</strong> vos jeux une première fois pour créer les dossiers de sauvegarde</li>
+<li><strong>Fermez</strong> Yuzu complètement</li>
+<li><strong>Clic droit</strong> sur chaque jeu → &ldquo;Open Save Data Location&rdquo;</li>
+<li><strong>Remplacez</strong> le contenu par vos fichiers sauvegardés</li>
+</ol>
+<p><strong>Vérification :</strong></p>
+<ul>
+<li>Lancez le jeu pour vérifier que la sauvegarde est bien chargée</li>
+<li>Vérifiez la progression, les statistiques, etc.</li>
+</ul>
+<h2 id="méthode-pour-ryujinx">
+<a class="header-anchor" href="#m%c3%a9thode-pour-ryujinx"></a>
+Méthode pour Ryujinx
+</h2><h3 id="étape-1--sauvegarder-les-données-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-ryujinx"></a>
+Étape 1 : Sauvegarder les données Ryujinx
+</h3><h4 id="localiser-les-sauvegardes-utilisateur">
+<a class="header-anchor" href="#localiser-les-sauvegardes-utilisateur"></a>
+Localiser les sauvegardes utilisateur
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur le jeu souhaité</li>
+<li>Sélectionnez <strong>&ldquo;Open User Save Directory&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-save-menu.png" alt="Menu Ryujinx">
+<em>Options de sauvegarde dans Ryujinx</em></p>
+<h4 id="sauvegarder-les-données-additionnelles">
+<a class="header-anchor" href="#sauvegarder-les-donn%c3%a9es-additionnelles"></a>
+Sauvegarder les données additionnelles
+</h4><ol start="4">
+<li>Si disponible, cliquez aussi sur <strong>&ldquo;Open Mod Data Directory&rdquo;</strong> ou données additionnelles</li>
+<li><strong>Copiez</strong> tout le contenu dans vos dossiers de sauvegarde</li>
+<li><strong>Organisez</strong> par nom de jeu comme pour Yuzu</li>
+</ol>
+<h3 id="étape-2--supprimer-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-ryujinx"></a>
+Étape 2 : Supprimer Ryujinx
+</h3><h4 id="localiser-le-dossier-de-configuration">
+<a class="header-anchor" href="#localiser-le-dossier-de-configuration"></a>
+Localiser le dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et validez</li>
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;Ryujinx&rdquo;</strong></li>
+<li><strong>Supprimez</strong> complètement ce dossier</li>
+</ol>
+<h3 id="étape-3--réinstallation-et-restauration">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installation-et-restauration"></a>
+Étape 3 : Réinstallation et restauration
+</h3><h4 id="réinstaller-ryujinx">
+<a class="header-anchor" href="#r%c3%a9installer-ryujinx"></a>
+Réinstaller Ryujinx
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Ryujinx</li>
+<li><strong>Installez</strong> proprement l&rsquo;émulateur</li>
+<li><strong>Configurez</strong> les paramètres de base</li>
+</ol>
+<h4 id="restaurer-les-sauvegardes">
+<a class="header-anchor" href="#restaurer-les-sauvegardes"></a>
+Restaurer les sauvegardes
+</h4><ol start="4">
+<li><strong>Lancez chaque jeu</strong> une première fois</li>
+<li><strong>Fermez</strong> Ryujinx</li>
+<li><strong>Remplacez</strong> les fichiers de sauvegarde par vos backups</li>
+<li><strong>Testez</strong> que tout fonctionne correctement</li>
+</ol>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Accès aux saves</strong></td>
+          <td>Clic droit → Open Save Data Location</td>
+          <td>Clic droit → Open User Save Directory</td>
+      </tr>
+      <tr>
+          <td><strong>Dossier config</strong></td>
+          <td><code>%appdata%\yuzu</code></td>
+          <td><code>%appdata%\Ryujinx</code></td>
+      </tr>
+      <tr>
+          <td><strong>Données supplémentaires</strong></td>
+          <td>Automatique</td>
+          <td>Mod Data Directory séparé</td>
+      </tr>
+      <tr>
+          <td><strong>Complexité</strong></td>
+          <td>Simple</td>
+          <td>Simple</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="conseils-et-bonnes-pratiques">
+<a class="header-anchor" href="#conseils-et-bonnes-pratiques"></a>
+Conseils et bonnes pratiques
+</h2><h3 id="sauvegardes-automatiques">
+<a class="header-anchor" href="#sauvegardes-automatiques"></a>
+Sauvegardes automatiques
+</h3><p><strong>Script de sauvegarde automatique (Windows) :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> backup_dir=C:\Backup_Emulateurs\%date:~-4,4%-%date:~-10,2%-%date:~-7,2%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mkdir</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\yuzu\nand\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Yuzu_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\Ryujinx\bis\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Ryujinx_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Sauvegarde terminée dans %backup_dir%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
+</span></span></code></pre></div><h3 id="vérifications-importantes">
+<a class="header-anchor" href="#v%c3%a9rifications-importantes"></a>
+Vérifications importantes
+</h3><p><strong>Avant la réinstallation :</strong></p>
+<ul>
+<li>✅ Sauvegardes complètes créées</li>
+<li>✅ Noms des jeux notés</li>
+<li>✅ Firmware/clés disponibles</li>
+<li>✅ Configuration matérielle notée</li>
+</ul>
+<p><strong>Après la réinstallation :</strong></p>
+<ul>
+<li>✅ Émulateur démarre correctement</li>
+<li>✅ Jeux détectés</li>
+<li>✅ Sauvegardes restaurées</li>
+<li>✅ Performances satisfaisantes</li>
+</ul>
+<h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="-sauvegardes-non-reconnues">
+<a class="header-anchor" href="#-sauvegardes-non-reconnues"></a>
+🚫 Sauvegardes non reconnues
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Mauvais emplacement de fichiers</li>
+<li>Versions d&rsquo;émulateur incompatibles</li>
+<li>Fichiers corrompus</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez l&rsquo;emplacement exact des fichiers</li>
+<li>Essayez avec une version similaire de l&rsquo;émulateur</li>
+<li>Utilisez une sauvegarde plus ancienne</li>
+</ol>
+<h4 id="-fichiers-de-sauvegarde-volumineux">
+<a class="header-anchor" href="#-fichiers-de-sauvegarde-volumineux"></a>
+💾 Fichiers de sauvegarde volumineux
+</h4><p><strong>Optimisation :</strong></p>
+<ul>
+<li>Compressez les dossiers de sauvegarde (.zip, .7z)</li>
+<li>Utilisez un stockage cloud pour la sécurité</li>
+<li>Créez des sauvegardes incrémentielles</li>
+</ul>
+<h4 id="-perte-de-configuration">
+<a class="header-anchor" href="#-perte-de-configuration"></a>
+⚠️ Perte de configuration
+</h4><p><strong>Sauvegarde préventive :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Complet/
+├── 📁 Saves/ (sauvegardes de jeux)
+├── 📁 Config/ (fichiers de configuration)
+├── 📁 Keys/ (clés et firmware)
+└── 📄 settings_backup.txt (paramètres notés)
+</code></pre><h2 id="outils-recommandés">
+<a class="header-anchor" href="#outils-recommand%c3%a9s"></a>
+Outils recommandés
+</h2><h3 id="gestionnaires-de-sauvegarde">
+<a class="header-anchor" href="#gestionnaires-de-sauvegarde"></a>
+Gestionnaires de sauvegarde
+</h3><table>
+  <thead>
+      <tr>
+          <th>Outil</th>
+          <th>Description</th>
+          <th>Avantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>JKSV</strong></td>
+          <td>Gestionnaire Switch homebrew</td>
+          <td>Sauvegardes natives</td>
+      </tr>
+      <tr>
+          <td><strong>Checkpoint</strong></td>
+          <td>Alternative à JKSV</td>
+          <td>Interface conviviale</td>
+      </tr>
+      <tr>
+          <td><strong>Save Manager</strong></td>
+          <td>Outil PC tiers</td>
+          <td>Automatisation</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="synchronisation-cloud">
+<a class="header-anchor" href="#synchronisation-cloud"></a>
+Synchronisation cloud
+</h3><p><strong>Services recommandés :</strong></p>
+<ul>
+<li><strong>Google Drive</strong> - 15 GB gratuits</li>
+<li><strong>OneDrive</strong> - Intégration Windows</li>
+<li><strong>Dropbox</strong> - Synchronisation rapide</li>
+<li><strong>Git</strong> - Versioning pour experts</li>
+</ul>
+<h2 id="dépannage-avancé">
+<a class="header-anchor" href="#d%c3%a9pannage-avanc%c3%a9"></a>
+Dépannage avancé
+</h2><h3 id="récupération-durgence">
+<a class="header-anchor" href="#r%c3%a9cup%c3%a9ration-durgence"></a>
+Récupération d&rsquo;urgence
+</h3><p><strong>Si la réinstallation échoue :</strong></p>
+<ol>
+<li><strong>Mode sans échec</strong> : Démarrez Windows en mode sans échec</li>
+<li><strong>Nettoyage registre</strong> : Utilisez CCleaner ou équivalent</li>
+<li><strong>Installation portable</strong> : Testez avec les versions portables</li>
+<li><strong>Restauration système</strong> : Point de restauration Windows</li>
+</ol>
+<h3 id="migration-vers-un-nouveau-pc">
+<a class="header-anchor" href="#migration-vers-un-nouveau-pc"></a>
+Migration vers un nouveau PC
+</h3><p><strong>Transférer tout l&rsquo;environnement :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dossiers à copier</span>
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\ </span>       → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Jeux<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Backup<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>        → Nouveau PC
+</span></span></code></pre></div><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>La réinstallation de <strong>Yuzu</strong> et <strong>Ryujinx</strong> tout en préservant vos sauvegardes est un processus simple si vous suivez la bonne méthode. L&rsquo;essentiel est de <strong>toujours sauvegarder avant d&rsquo;agir</strong> et de procéder étape par étape.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé de la procédure :</strong></p>
+<ol>
+<li><strong>Sauvegardez</strong> toutes les données de jeu importantes</li>
+<li><strong>Supprimez</strong> proprement les dossiers de configuration</li>
+<li><strong>Réinstallez</strong> l&rsquo;émulateur avec une version récente</li>
+<li><strong>Restaurez</strong> vos sauvegardes et testez</li>
+<li><strong>Configurez</strong> selon vos préférences</li>
+</ol></blockquote>
+<h3 id="maintenance-préventive">
+<a class="header-anchor" href="#maintenance-pr%c3%a9ventive"></a>
+Maintenance préventive
+</h3><p><strong>Pour éviter les réinstallations :</strong></p>
+<ul>
+<li>Mises à jour régulières mais prudentes</li>
+<li>Sauvegardes automatiques hebdomadaires</li>
+<li>Surveillance des performances</li>
+<li>Nettoyage périodique des caches</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Puis-je transférer mes sauvegardes entre Yuzu et Ryujinx ?</strong>
+R : Généralement non directement, les formats de sauvegarde diffèrent. Utilisez des outils de conversion spécialisés si nécessaire.</p>
+<p><strong>Q : Combien de temps faut-il pour la procédure complète ?</strong>
+R : Environ 30-60 minutes selon le nombre de jeux et la vitesse de votre PC.</p>
+<p><strong>Q : Les sauvegardes en ligne (Nintendo Switch Online) sont-elles compatibles ?</strong>
+R : Non, les sauvegardes d&rsquo;émulateur et console officielle ne sont pas interchangeables.</p>
+<p><strong>Q : Que faire si j&rsquo;ai oublié de sauvegarder avant la réinstallation ?</strong>
+R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fichiers, ou restaurez depuis une sauvegarde système.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-setup/">Configuration Optimale de Yuzu</a></li>
+<li><a href="/fr/post/ryujinx-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/switch-emulation-performance/">Meilleures Performances Émulation Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Guide complet : Installation et configuration de Yuzu</title>
+      <link>https://axekin.com/fr/post/yuzu/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Guide complet : Installation et configuration de Yuzu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-yuzu">
+<a class="header-anchor" href="#-introduction-%c3%a0-yuzu"></a>
+🎮 Introduction à Yuzu
+</h2><p><strong>Yuzu</strong> est un émulateur Nintendo Switch open-source développé par l&rsquo;équipe de Citra. Réputé pour ses performances élevées et sa compatibilité croissante, Yuzu est l&rsquo;un des émulateurs Switch les plus populaires au monde.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 10 (64-bit) / Linux / Android</li>
+<li><strong>CPU</strong> : Intel Core i5-4430 / AMD FX-6300</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : Intel HD Graphics 4000 / AMD Radeon R5 M230</li>
+<li><strong>Stockage</strong> : 5 GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i5-10400 / AMD Ryzen 5 3600</li>
+<li><strong>RAM</strong> : 16 GB ou plus</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1060 / AMD RX 580 ou supérieur</li>
+<li><strong>Stockage</strong> : SSD avec 20+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale">
+<a class="header-anchor" href="#configuration-optimale"></a>
+Configuration optimale
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-12700K / AMD Ryzen 7 5800X</li>
+<li><strong>RAM</strong> : 32 GB</li>
+<li><strong>GPU</strong> : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 50+ GB d&rsquo;espace libre</li>
+</ul>
+<h2 id="-étape-1--téléchargement-de-yuzu">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-yuzu"></a>
+🔧 Étape 1 : Téléchargement de Yuzu
+</h2><h3 id="option-1--version-mainline-stable">
+<a class="header-anchor" href="#option-1--version-mainline-stable"></a>
+Option 1 : Version Mainline (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://yuzu-emu.org/downloads/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>yuzu-windows-msvc.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Yuzu</code>)</li>
+</ol>
+<h3 id="option-2--version-early-access-premium">
+<a class="header-anchor" href="#option-2--version-early-access-premium"></a>
+Option 2 : Version Early Access (Premium)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version payante avec fonctionnalités avancées</span>
+</span></span><span style="display:flex;"><span>- Multithreading amélioré
+</span></span><span style="display:flex;"><span>- Optimisations exclusives
+</span></span><span style="display:flex;"><span>- Support prioritaire
+</span></span></code></pre></div><h3 id="option-3--appimage-linux">
+<a class="header-anchor" href="#option-3--appimage-linux"></a>
+Option 3 : AppImage (Linux)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour Linux</span>
+</span></span><span style="display:flex;"><span>wget https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>chmod +x yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>./yuzu-*.AppImage
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>Yuzu/
+├── yuzu.exe                 # Exécutable principal
+├── games/                   # Vos ROMs .nsp/.xci
+│   ├── nsp/                 # Jeux .nsp
+│   ├── xci/                 # Jeux .xci
+│   └── nca/                 # Archives .nca
+├── saves/                   # Sauvegardes exportées
+├── screenshots/             # Captures d&#39;écran
+├── mods/                    # Modifications de jeux
+│   └── [Title-ID]/          # Dossier par jeu
+├── dlc/                     # Contenus téléchargeables
+├── updates/                 # Mises à jour de jeux
+└── shaders/                 # Cache des shaders
+</code></pre><h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="installation-des-prérequis">
+<a class="header-anchor" href="#installation-des-pr%c3%a9requis"></a>
+Installation des prérequis
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022 (Windows)</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .NET Framework 4.8 ou supérieur</span>
+</span></span><span style="display:flex;"><span>https://dotnet.microsoft.com/download/dotnet-framework
+</span></span></code></pre></div><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>yuzu.exe</code> en tant qu&rsquo;administrateur</li>
+<li><strong>Acceptez</strong> la configuration initiale</li>
+<li><strong>Configurez</strong> les dossiers de base</li>
+</ol>
+<h2 id="-étape-4--installation-des-clés-et-firmware">
+<a class="header-anchor" href="#-%c3%a9tape-4--installation-des-cl%c3%a9s-et-firmware"></a>
+🎯 Étape 4 : Installation des clés et firmware
+</h2><h3 id="installation-des-clés-de-chiffrement">
+<a class="header-anchor" href="#installation-des-cl%c3%a9s-de-chiffrement"></a>
+Installation des clés de chiffrement
+</h3><blockquote>
+<p>⚠️ <strong>Légalité</strong> : Vous devez extraire ces clés depuis votre propre Nintendo Switch.</p></blockquote>
+<h4 id="méthode-automatique-homebrew-requis">
+<a class="header-anchor" href="#m%c3%a9thode-automatique-homebrew-requis"></a>
+Méthode automatique (Homebrew requis)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Utiliser Lockpick_RCM sur votre Switch</span>
+</span></span><span style="display:flex;"><span>1. Démarrez votre Switch en mode RCM
+</span></span><span style="display:flex;"><span>2. Injectez Lockpick_RCM.bin
+</span></span><span style="display:flex;"><span>3. Extrayez prod.keys et title.keys
+</span></span><span style="display:flex;"><span>4. Transférez sur PC
+</span></span></code></pre></div><h4 id="installation-dans-yuzu">
+<a class="header-anchor" href="#installation-dans-yuzu"></a>
+Installation dans Yuzu
+</h4><ol>
+<li><strong>Ouvrez</strong> Yuzu</li>
+<li><code>File → Open yuzu Folder</code></li>
+<li><strong>Naviguez</strong> vers le dossier <code>keys/</code></li>
+<li><strong>Copiez</strong> <code>prod.keys</code> et <code>title.keys</code></li>
+<li><strong>Redémarrez</strong> Yuzu</li>
+</ol>
+<h3 id="installation-du-firmware-nintendo-switch">
+<a class="header-anchor" href="#installation-du-firmware-nintendo-switch"></a>
+Installation du firmware Nintendo Switch
+</h3><h4 id="extraction-du-firmware">
+<a class="header-anchor" href="#extraction-du-firmware"></a>
+Extraction du firmware
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis votre Switch avec Homebrew</span>
+</span></span><span style="display:flex;"><span>1. Utilisez TegraRcmGUI + Hekate
+</span></span><span style="display:flex;"><span>2. Créez un dump NAND complet
+</span></span><span style="display:flex;"><span>3. Extrayez le firmware avec HacDiskMount
+</span></span></code></pre></div><h4 id="installation-dans-yuzu-1">
+<a class="header-anchor" href="#installation-dans-yuzu-1"></a>
+Installation dans Yuzu
+</h4><ol>
+<li><code>Tools → Install Firmware</code></li>
+<li><strong>Sélectionnez</strong> le fichier firmware (.zip ou dossier)</li>
+<li><strong>Attendez</strong> l&rsquo;installation complète</li>
+<li><strong>Vérifiez</strong> : <code>Tools → Firmware Version</code></li>
+</ol>
+<h2 id="-étape-5--configuration-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-optimale"></a>
+⚙️ Étape 5 : Configuration optimale
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Limit Speed Percent</strong> : 100% (pour vitesse normale)</li>
+<li><strong>Multicore CPU Emulation</strong> : ✅ Activé</li>
+<li><strong>Extended Memory Layout</strong> : ✅ Activé (si 12GB+ RAM)</li>
+</ul>
+<h3 id="configuration-système">
+<a class="header-anchor" href="#configuration-syst%c3%a8me"></a>
+Configuration système
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong> : Europe</li>
+<li><strong>Language</strong> : Français</li>
+<li><strong>RTC Source</strong> : System Clock</li>
+<li><strong>Time Zone</strong> : Europe/Paris</li>
+<li><strong>Sound Output Mode</strong> : Stereo</li>
+</ul>
+<h3 id="paramètres-graphiques-optimaux">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-optimaux"></a>
+Paramètres graphiques optimaux
+</h3><h4 id="onglet-api">
+<a class="header-anchor" href="#onglet-api"></a>
+Onglet API
+</h4><pre tabindex="0"><code>Graphics → API
+- API: Vulkan (recommandé) ou OpenGL
+- Device: Votre GPU principal
+- Shader Backend: GLSL (Vulkan) / GLASM (OpenGL)
+</code></pre><h4 id="onglet-graphics">
+<a class="header-anchor" href="#onglet-graphics"></a>
+Onglet Graphics
+</h4><pre tabindex="0"><code>Graphics → Graphics
+- Use disk pipeline cache: ✅ Activé
+- Use asynchronous GPU emulation: ✅ Activé
+- Use asynchronous shader building: ✅ Activé
+- Accelerate ASTC texture decoding: ✅ Activé
+- VSync Mode: FIFO (Recommended)
+</code></pre><h4 id="onglet-advanced-graphics">
+<a class="header-anchor" href="#onglet-advanced-graphics"></a>
+Onglet Advanced Graphics
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Accuracy Level: Normal (High pour plus de précision)
+- Use Fast GPU Time: ✅ Activé
+- Use Vulkan pipeline cache: ✅ Activé (si Vulkan)
+- Anisotropic Filtering: 16x
+- Resolution Scaler: 1x (ou plus si GPU puissant)
+- Anti-Aliasing: None ou FXAA
+</code></pre><h3 id="configuration-audio">
+<a class="header-anchor" href="#configuration-audio"></a>
+Configuration audio
+</h3><pre tabindex="0"><code>Audio
+- Output Engine: auto (ou WASAPI sur Windows)
+- Output Device: Default
+- Volume: 100%
+</code></pre><h3 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h3><h4 id="manette-xboxplaystation">
+<a class="header-anchor" href="#manette-xboxplaystation"></a>
+Manette Xbox/PlayStation
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Pro Controller
+2. Configure → Automatically map
+3. Test all buttons
+</code></pre><h4 id="clavier-temporaire">
+<a class="header-anchor" href="#clavier-temporaire"></a>
+Clavier (temporaire)
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Handheld
+2. Configure → Manual mapping
+3. Assign keys to buttons
+</code></pre><h2 id="-étape-6--ajout-et-optimisation-des-jeux">
+<a class="header-anchor" href="#-%c3%a9tape-6--ajout-et-optimisation-des-jeux"></a>
+🎮 Étape 6 : Ajout et optimisation des jeux
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><ul>
+<li><strong>.NSP</strong> : Nintendo Submission Package (eShop games)</li>
+<li><strong>.XCI</strong> : NX Card Image (Physical cards)</li>
+<li><strong>.NCA</strong> : Nintendo Content Archive (Raw content)</li>
+<li><strong>.NSZ</strong> : Compressed NSP (requires tools)</li>
+<li><strong>.XCZ</strong> : Compressed XCI (requires tools)</li>
+</ul>
+<h3 id="ajouter-des-jeux">
+<a class="header-anchor" href="#ajouter-des-jeux"></a>
+Ajouter des jeux
+</h3><h4 id="méthode-drag--drop">
+<a class="header-anchor" href="#m%c3%a9thode-drag--drop"></a>
+Méthode Drag &amp; Drop
+</h4><ol>
+<li><strong>Glissez</strong> le fichier de jeu dans Yuzu</li>
+<li>Le jeu apparaît automatiquement</li>
+</ol>
+<h4 id="méthode-traditionnelle">
+<a class="header-anchor" href="#m%c3%a9thode-traditionnelle"></a>
+Méthode traditionnelle
+</h4><ol>
+<li><code>File → Load File</code></li>
+<li><strong>Naviguez</strong> vers votre jeu</li>
+<li><strong>Double-cliquez</strong> pour lancer</li>
+</ol>
+<h3 id="installation-des-mises-à-jour">
+<a class="header-anchor" href="#installation-des-mises-%c3%a0-jour"></a>
+Installation des mises à jour
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dans Yuzu</span>
+</span></span><span style="display:flex;"><span>File → Install Files to NAND
+</span></span><span style="display:flex;"><span>→ Sélectionnez le fichier .nsp de mise à jour
+</span></span></code></pre></div><h3 id="installation-des-dlc">
+<a class="header-anchor" href="#installation-des-dlc"></a>
+Installation des DLC
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dans Yuzu</span>
+</span></span><span style="display:flex;"><span>File → Install Files to NAND
+</span></span><span style="display:flex;"><span>→ Sélectionnez le fichier .nsp du DLC
+</span></span></code></pre></div><h2 id="-optimisation-avancée">
+<a class="header-anchor" href="#-optimisation-avanc%c3%a9e"></a>
+🚀 Optimisation avancée
+</h2><h3 id="paramètres-par-jeu">
+<a class="header-anchor" href="#param%c3%a8tres-par-jeu"></a>
+Paramètres par jeu
+</h3><p>Pour optimiser chaque titre individuellement :</p>
+<ol>
+<li><strong>Clic droit</strong> sur le jeu</li>
+<li><strong>Properties</strong></li>
+<li><strong>Ajustez</strong> les paramètres spécifiques</li>
+</ol>
+<h4 id="exemple--the-legend-of-zelda-botw">
+<a class="header-anchor" href="#exemple--the-legend-of-zelda-botw"></a>
+Exemple : The Legend of Zelda BOTW
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 2x-4x (selon GPU)
+- Anisotropic Filtering: 16x
+- Accuracy Level: High
+
+System:
+- Extended Memory Layout: ✅ Activé
+- CPU Accuracy: Auto
+
+Mods recommandés:
+- 60 FPS mod
+- High resolution shadows
+- Improved draw distance
+</code></pre><h4 id="exemple--super-mario-odyssey">
+<a class="header-anchor" href="#exemple--super-mario-odyssey"></a>
+Exemple : Super Mario Odyssey
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 2x-3x
+- Anti-Aliasing: FXAA
+- Accuracy Level: Normal
+
+Performance: Généralement excellent
+</code></pre><h4 id="exemple--pokémon-legends-arceus">
+<a class="header-anchor" href="#exemple--pok%c3%a9mon-legends-arceus"></a>
+Exemple : Pokémon Legends Arceus
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 1x-2x (jeu lourd)
+- Accuracy Level: Normal
+- Use Fast GPU Time: ✅ Activé
+
+Mods:
+- 60 FPS patch (optionnel)
+- Quality of life improvements
+</code></pre><h2 id="-installation-et-gestion-des-mods">
+<a class="header-anchor" href="#-installation-et-gestion-des-mods"></a>
+🛠️ Installation et gestion des mods
+</h2><h3 id="structure-des-mods">
+<a class="header-anchor" href="#structure-des-mods"></a>
+Structure des mods
+</h3><pre tabindex="0"><code>%APPDATA%\yuzu\load\[Title-ID]\
+├── romfs/          # Remplacement de fichiers
+├── exefs/          # Patches binaires
+└── cheats/         # Codes de triche
+</code></pre><h3 id="installation-étape-par-étape">
+<a class="header-anchor" href="#installation-%c3%a9tape-par-%c3%a9tape"></a>
+Installation étape par étape
+</h3><h4 id="trouver-le-title-id">
+<a class="header-anchor" href="#trouver-le-title-id"></a>
+Trouver le Title ID
+</h4><ol>
+<li><strong>Clic droit</strong> sur le jeu dans Yuzu</li>
+<li><strong>Properties → Title ID</strong></li>
+<li><strong>Copiez</strong> l&rsquo;ID (ex: 01007EF00011E000)</li>
+</ol>
+<h4 id="installer-un-mod">
+<a class="header-anchor" href="#installer-un-mod"></a>
+Installer un mod
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Téléchargez le mod compatible
+</span></span><span style="display:flex;"><span>2. Extrayez dans: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\l</span>oad<span style="color:#ae81ff">\[</span>Title-ID<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>3. Relancez le jeu
+</span></span><span style="display:flex;"><span>4. Vérifiez que le mod fonctionne
+</span></span></code></pre></div><h3 id="mods-populaires-par-jeu">
+<a class="header-anchor" href="#mods-populaires-par-jeu"></a>
+Mods populaires par jeu
+</h3><h4 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mods essentiels</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS <span style="color:#f92672">(</span>Performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 4K Graphics Pack <span style="color:#f92672">(</span>Visuel<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Improved Shadows <span style="color:#f92672">(</span>Qualité<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- No Heat Distortion <span style="color:#f92672">(</span>Confort<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>Title ID: 01007EF00011E000
+</span></span><span style="display:flex;"><span>Dossier: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\l</span>oad<span style="color:#ae81ff">\0</span>1007EF00011E000<span style="color:#ae81ff">\
+</span></span></span></code></pre></div><h4 id="super-mario-odyssey">
+<a class="header-anchor" href="#super-mario-odyssey"></a>
+Super Mario Odyssey
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mods recommandés</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS <span style="color:#f92672">(</span>Performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Higher Quality Reflections <span style="color:#f92672">(</span>Visuel<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- No Cap Kingdom Fog <span style="color:#f92672">(</span>Clarté<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>Title ID: <span style="color:#ae81ff">0100000000010000</span>
+</span></span></code></pre></div><h2 id="-optimisation-des-performances">
+<a class="header-anchor" href="#-optimisation-des-performances"></a>
+📊 Optimisation des performances
+</h2><h3 id="benchmark-et-monitoring">
+<a class="header-anchor" href="#benchmark-et-monitoring"></a>
+Benchmark et monitoring
+</h3><h4 id="outils-intégrés">
+<a class="header-anchor" href="#outils-int%c3%a9gr%c3%a9s"></a>
+Outils intégrés
+</h4><pre tabindex="0"><code>View → Developer → Statistics
+- FPS actuel
+- Frametime
+- GPU/CPU usage
+</code></pre><h4 id="outils-externes">
+<a class="header-anchor" href="#outils-externes"></a>
+Outils externes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># MSI Afterburner + RivaTuner</span>
+</span></span><span style="display:flex;"><span>- Monitoring GPU/CPU
+</span></span><span style="display:flex;"><span>- Framerate cap
+</span></span><span style="display:flex;"><span>- Overclocking
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># HWiNFO64</span>
+</span></span><span style="display:flex;"><span>- Températures détaillées
+</span></span><span style="display:flex;"><span>- Utilisation mémoire
+</span></span><span style="display:flex;"><span>- Bottlenecks identification
+</span></span></code></pre></div><h3 id="optimisations-système">
+<a class="header-anchor" href="#optimisations-syst%c3%a8me"></a>
+Optimisations système
+</h3><h4 id="windows">
+<a class="header-anchor" href="#windows"></a>
+Windows
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Game Mode</span>
+</span></span><span style="display:flex;"><span>Windows Settings → Gaming → Game Mode → On
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># High Performance Power Plan</span>
+</span></span><span style="display:flex;"><span>Control Panel → Power Options → High Performance
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GPU Scheduling (Windows 10 2004+)</span>
+</span></span><span style="display:flex;"><span>Settings → Display → Graphics → Hardware-accelerated GPU scheduling
+</span></span></code></pre></div><h4 id="nvidia">
+<a class="header-anchor" href="#nvidia"></a>
+NVIDIA
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># NVIDIA Control Panel</span>
+</span></span><span style="display:flex;"><span>- Power Management: Prefer Maximum Performance
+</span></span><span style="display:flex;"><span>- Texture Filtering: High Performance
+</span></span><span style="display:flex;"><span>- Shader Cache: On
+</span></span><span style="display:flex;"><span>- G-Sync: On <span style="color:#f92672">(</span>si compatible<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="amd">
+<a class="header-anchor" href="#amd"></a>
+AMD
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># AMD Software</span>
+</span></span><span style="display:flex;"><span>- Graphics Profile: High Performance
+</span></span><span style="display:flex;"><span>- Anti-Lag: Enhanced
+</span></span><span style="display:flex;"><span>- Radeon Image Sharpening: 80-100%
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="jeu-ne-se-lance-pas">
+<a class="header-anchor" href="#jeu-ne-se-lance-pas"></a>
+Jeu ne se lance pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions par ordre de priorité:
+</span></span><span style="display:flex;"><span>1. Vérifiez l<span style="color:#960050;background-color:#1e0010">&#39;</span>installation du firmware
+</span></span><span style="display:flex;"><span>2. Vérifiez les clés <span style="color:#f92672">(</span>prod.keys/title.keys<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Testez avec les paramètres par défaut
+</span></span><span style="display:flex;"><span>4. Réinstallez les Visual C++ Redistributables
+</span></span><span style="display:flex;"><span>5. Mettez à jour Yuzu vers la dernière version
+</span></span></code></pre></div><h4 id="performances-faibles">
+<a class="header-anchor" href="#performances-faibles"></a>
+Performances faibles
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Optimisations immédiates:
+</span></span><span style="display:flex;"><span>1. Réduisez Resolution Scaler à 1x
+</span></span><span style="display:flex;"><span>2. Activez Multicore CPU Emulation
+</span></span><span style="display:flex;"><span>3. Utilisez Vulkan au lieu d<span style="color:#960050;background-color:#1e0010">&#39;</span>OpenGL
+</span></span><span style="display:flex;"><span>4. Fermez les applications en arrière-plan
+</span></span><span style="display:flex;"><span>5. Vérifiez les températures CPU/GPU
+</span></span></code></pre></div><h4 id="plantages-fréquents">
+<a class="header-anchor" href="#plantages-fr%c3%a9quents"></a>
+Plantages fréquents
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics:
+</span></span><span style="display:flex;"><span>1. Vérifiez l<span style="color:#e6db74">&#39;intégrité du jeu (SHA256)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. Testez sans mods
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. Réduisez l&#39;</span>accuracy level
+</span></span><span style="display:flex;"><span>4. Désactivez l<span style="color:#960050;background-color:#1e0010">&#39;</span>overclocking
+</span></span><span style="display:flex;"><span>5. Testez avec une version antérieure de Yuzu
+</span></span></code></pre></div><h4 id="audio-désynchronisé">
+<a class="header-anchor" href="#audio-d%c3%a9synchronis%c3%a9"></a>
+Audio désynchronisé
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Changez Output Engine <span style="color:#f92672">(</span>auto → WASAPI<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Ajustez le buffer audio
+</span></span><span style="display:flex;"><span>3. Vérifiez les pilotes audio
+</span></span><span style="display:flex;"><span>4. Désactivez les effets audio Windows
+</span></span></code></pre></div><h4 id="graphismes-corrompus">
+<a class="header-anchor" href="#graphismes-corrompus"></a>
+Graphismes corrompus
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections:
+</span></span><span style="display:flex;"><span>1. Supprimez le cache shaders
+</span></span><span style="display:flex;"><span>2. Changez d<span style="color:#960050;background-color:#1e0010">&#39;</span>API graphique <span style="color:#f92672">(</span>Vulkan ↔ OpenGL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Mettez à jour les pilotes GPU
+</span></span><span style="display:flex;"><span>4. Réduisez Accuracy Level
+</span></span><span style="display:flex;"><span>5. Désactivez ASTC decoding temporairement
+</span></span></code></pre></div><h2 id="-yuzu-sur-autres-plateformes">
+<a class="header-anchor" href="#-yuzu-sur-autres-plateformes"></a>
+📱 Yuzu sur autres plateformes
+</h2><h3 id="yuzu-android">
+<a class="header-anchor" href="#yuzu-android"></a>
+Yuzu Android
+</h3><h4 id="prérequis">
+<a class="header-anchor" href="#pr%c3%a9requis"></a>
+Prérequis
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 8.0+ <span style="color:#f92672">(</span>API 26<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 855+ ou Exynos 990+
+</span></span><span style="display:flex;"><span>- 8GB RAM minimum <span style="color:#f92672">(</span>12GB recommandé<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 64GB stockage libre
+</span></span></code></pre></div><h4 id="installation">
+<a class="header-anchor" href="#installation"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Téléchargez depuis Google Play Store
+</span></span><span style="display:flex;"><span>2. Ou APK depuis GitHub <span style="color:#f92672">(</span>versions EA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Configurez les permissions
+</span></span><span style="display:flex;"><span>4. Transférez clés et firmware
+</span></span></code></pre></div><h4 id="optimisations-android">
+<a class="header-anchor" href="#optimisations-android"></a>
+Optimisations Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU Backend: JIT <span style="color:#f92672">(</span>plus rapide<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- GPU Driver: Custom <span style="color:#f92672">(</span>si disponible<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x <span style="color:#f92672">(</span>720p natif<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Skip Presenting Duplicate Frames: ✅
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contrôles:
+</span></span><span style="display:flex;"><span>- Overlay personnalisable
+</span></span><span style="display:flex;"><span>- Support manettes Bluetooth
+</span></span><span style="display:flex;"><span>- Sensibilité gyroscope réglable
+</span></span></code></pre></div><h3 id="yuzu-linux">
+<a class="header-anchor" href="#yuzu-linux"></a>
+Yuzu Linux
+</h3><h4 id="installation-ubuntudebian">
+<a class="header-anchor" href="#installation-ubuntudebian"></a>
+Installation Ubuntu/Debian
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ajout du PPA</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:yuzu-emu/yuzu
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install yuzu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ou AppImage</span>
+</span></span><span style="display:flex;"><span>wget https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>chmod +x yuzu-*.AppImage
+</span></span></code></pre></div><h4 id="installation-arch-linux">
+<a class="header-anchor" href="#installation-arch-linux"></a>
+Installation Arch Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis AUR</span>
+</span></span><span style="display:flex;"><span>yay -S yuzu-mainline-git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ou</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S yuzu
+</span></span></code></pre></div><h4 id="optimisations-linux">
+<a class="header-anchor" href="#optimisations-linux"></a>
+Optimisations Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pilotes propriétaires NVIDIA</span>
+</span></span><span style="display:flex;"><span>sudo apt install nvidia-driver-515 vulkan-utils
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mesa pour AMD (dernière version)</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:kisak/kisak-mesa
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Performance CPU</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;performance&#39;</span> | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+</span></span></code></pre></div><h2 id="-comparatif-détaillé-avec-les-concurrents">
+<a class="header-anchor" href="#-comparatif-d%c3%a9taill%c3%a9-avec-les-concurrents"></a>
+📚 Comparatif détaillé avec les concurrents
+</h2><table>
+  <thead>
+      <tr>
+          <th>Caractéristique</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+          <th>SkyNX</th>
+          <th>Egg NS</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Performance générale</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Compatibilité jeux</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Stabilité</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Facilité d&rsquo;utilisation</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Support mods</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Développement actif</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Support mobile</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="points-forts-de-yuzu">
+<a class="header-anchor" href="#points-forts-de-yuzu"></a>
+Points forts de Yuzu
+</h3><ul>
+<li><strong>Performance</strong> : Généralement plus rapide que Ryujinx</li>
+<li><strong>Support Android</strong> : Excellent émulateur mobile</li>
+<li><strong>Communauté</strong> : Large base d&rsquo;utilisateurs et mods</li>
+<li><strong>Early Access</strong> : Fonctionnalités avancées pour les supporters</li>
+</ul>
+<h3 id="points-faibles-de-yuzu">
+<a class="header-anchor" href="#points-faibles-de-yuzu"></a>
+Points faibles de Yuzu
+</h3><ul>
+<li><strong>Stabilité</strong> : Parfois moins stable que Ryujinx</li>
+<li><strong>Configuration</strong> : Plus complexe à optimiser</li>
+<li><strong>Compatibilité</strong> : Quelques jeux moins bien supportés</li>
+</ul>
+<h2 id="-conseils-avancés-et-astuces">
+<a class="header-anchor" href="#-conseils-avanc%c3%a9s-et-astuces"></a>
+🎯 Conseils avancés et astuces
+</h2><h3 id="gestion-des-sauvegardes">
+<a class="header-anchor" href="#gestion-des-sauvegardes"></a>
+Gestion des sauvegardes
+</h3><h4 id="localisation-des-sauvegardes">
+<a class="header-anchor" href="#localisation-des-sauvegardes"></a>
+Localisation des sauvegardes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Windows</span>
+</span></span><span style="display:flex;"><span>%APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\n</span>and<span style="color:#ae81ff">\u</span>ser<span style="color:#ae81ff">\s</span>ave<span style="color:#ae81ff">\a</span>ccount<span style="color:#ae81ff">\[</span>user-id<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>title-id<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Linux</span>
+</span></span><span style="display:flex;"><span>~/.local/share/yuzu/nand/user/save/account/<span style="color:#f92672">[</span>user-id<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>title-id<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Android</span>
+</span></span><span style="display:flex;"><span>Android/data/org.yuzu.yuzu_emu/files/nand/user/save/
+</span></span></code></pre></div><h4 id="sauvegarde-automatique">
+<a class="header-anchor" href="#sauvegarde-automatique"></a>
+Sauvegarde automatique
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Script Windows (PowerShell)</span>
+</span></span><span style="display:flex;"><span>$source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$env<span style="color:#e6db74">:APPDATA\yuzu\nand\user\save&#34;</span>
+</span></span><span style="display:flex;"><span>$destination <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\Backup\Yuzu\Saves\$(Get-Date -f &#39;yyyy-MM-dd&#39;)&#34;</span>
+</span></span><span style="display:flex;"><span>Copy-Item -Recurse $source $destination
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Script Linux (bash)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>cp -r ~/.local/share/yuzu/nand/user/save/ ~/backup/yuzu/saves/<span style="color:#66d9ef">$(</span>date +%Y-%m-%d<span style="color:#66d9ef">)</span>/
+</span></span></code></pre></div><h3 id="transfert-de-sauvegardes-switch--yuzu">
+<a class="header-anchor" href="#transfert-de-sauvegardes-switch--yuzu"></a>
+Transfert de sauvegardes Switch ↔ Yuzu
+</h3><h4 id="depuis-la-switch">
+<a class="header-anchor" href="#depuis-la-switch"></a>
+Depuis la Switch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec Checkpoint (Homebrew)</span>
+</span></span><span style="display:flex;"><span>1. Dump de la sauvegarde sur Switch
+</span></span><span style="display:flex;"><span>2. Transfert via FTP/USB
+</span></span><span style="display:flex;"><span>3. Placement dans le dossier Yuzu approprié
+</span></span><span style="display:flex;"><span>4. Conversion du format si nécessaire
+</span></span></code></pre></div><h4 id="vers-la-switch">
+<a class="header-anchor" href="#vers-la-switch"></a>
+Vers la Switch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec Checkpoint (Homebrew)</span>
+</span></span><span style="display:flex;"><span>1. Export de la sauvegarde Yuzu
+</span></span><span style="display:flex;"><span>2. Conversion au format Switch
+</span></span><span style="display:flex;"><span>3. Injection via Checkpoint
+</span></span><span style="display:flex;"><span>4. Synchronisation sur la console
+</span></span></code></pre></div><h3 id="optimisation-du-cache-shaders">
+<a class="header-anchor" href="#optimisation-du-cache-shaders"></a>
+Optimisation du cache shaders
+</h3><h4 id="pré-compilation">
+<a class="header-anchor" href="#pr%c3%a9-compilation"></a>
+Pré-compilation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Téléchargement de cache pré-buildés</span>
+</span></span><span style="display:flex;"><span>1. Visitez les communautés Yuzu <span style="color:#f92672">(</span>Reddit, Discord<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Téléchargez les caches pour vos jeux
+</span></span><span style="display:flex;"><span>3. Placez dans: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\s</span>hader<span style="color:#ae81ff">\[</span>API<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>Game<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>4. Relancez le jeu <span style="color:#f92672">(</span>compilation instantanée<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="maintenance-du-cache">
+<a class="header-anchor" href="#maintenance-du-cache"></a>
+Maintenance du cache
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Nettoyage régulier</span>
+</span></span><span style="display:flex;"><span>1. Supprimez les caches des jeux non utilisés
+</span></span><span style="display:flex;"><span>2. Videz le cache en cas de problèmes graphiques
+</span></span><span style="display:flex;"><span>3. Sauvegardez les caches longs à compiler
+</span></span></code></pre></div><h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels">
+<a class="header-anchor" href="#sites-officiels"></a>
+Sites officiels
+</h3><ul>
+<li><a href="https://yuzu-emu.org/">🏠 Site officiel Yuzu</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu">📱 Yuzu Android</a></li>
+<li><a href="https://yuzu-emu.org/help/early-access/">💰 Early Access</a></li>
+</ul>
+<h3 id="ressources-communautaires">
+<a class="header-anchor" href="#ressources-communautaires"></a>
+Ressources communautaires
+</h3><ul>
+<li><a href="https://yuzu-emu.org/game/">📊 Base de compatibilité</a></li>
+<li><a href="https://discord.gg/u77vRWY">💬 Discord officiel</a></li>
+<li><a href="https://www.reddit.com/r/yuzu/">🗨️ Reddit r/yuzu</a></li>
+<li><a href="https://www.youtube.com/results?search_query=yuzu&#43;guide">📹 Guides YouTube</a></li>
+</ul>
+<h3 id="mods-et-ressources">
+<a class="header-anchor" href="#mods-et-ressources"></a>
+Mods et ressources
+</h3><ul>
+<li><a href="https://gamebanana.com/games/6386">🎮 GameBanana Yuzu</a></li>
+<li><a href="https://www.nxmods.com/">🔧 NXMods</a></li>
+<li><a href="https://moddinghaven.com/">📦 ModdingHaven</a></li>
+</ul>
+<h3 id="outils-utiles">
+<a class="header-anchor" href="#outils-utiles"></a>
+Outils utiles
+</h3><ul>
+<li><a href="https://github.com/shchmue/Lockpick_RCM">🔑 Lockpick_RCM</a> - Extraction des clés</li>
+<li><a href="https://github.com/eliboa/TegraRcmGUI">💾 TegraRcmGUI</a> - Homebrew Switch</li>
+<li><a href="https://github.com/aboood40091/BNTX-Editor">🎨 BNTX Editor</a> - Édition textures</li>
+<li><a href="https://github.com/KillzXGaming/Switch-Toolbox">🔧 Switch Toolbox</a> - Multi-outils</li>
+</ul>
+<h2 id="-faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+❓ FAQ - Questions fréquemment posées
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Yuzu est-il légal ?</strong>
+<strong>R :</strong> Oui, l&rsquo;émulation est légale. Cependant, vous devez posséder légalement tous les jeux et firmware que vous utilisez.</p>
+<p><strong>Q : Yuzu Early Access en vaut-il la peine ?</strong>
+<strong>R :</strong> Si vous jouez régulièrement et voulez les dernières optimisations, oui. Pour un usage occasionnel, la version gratuite suffit.</p>
+<p><strong>Q : Puis-je jouer en ligne avec Yuzu ?</strong>
+<strong>R :</strong> Non, les fonctionnalités en ligne ne sont pas supportées et ne le seront probablement jamais.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou OpenGL ?</strong>
+<strong>R :</strong> Vulkan est généralement plus performant sur GPU récents. OpenGL peut être plus stable sur certains systèmes.</p>
+<p><strong>Q : Combien de RAM minimum ?</strong>
+<strong>R :</strong> 8GB minimum, 16GB recommandé, 32GB pour les jeux les plus lourds avec mods.</p>
+<p><strong>Q : Mon GPU est-il compatible ?</strong>
+<strong>R :</strong> Vulkan : GTX 1060/RX 580 minimum. OpenGL : Tout GPU supportant OpenGL 4.6.</p>
+<h3 id="résolution-de-problèmes">
+<a class="header-anchor" href="#r%c3%a9solution-de-probl%c3%a8mes"></a>
+Résolution de problèmes
+</h3><p><strong>Q : Le jeu ne se lance pas du tout</strong>
+<strong>R :</strong> Vérifiez dans cet ordre : firmware installé → clés présentes → format de jeu valide → paramètres par défaut.</p>
+<p><strong>Q : FPS très bas sur un PC puissant</strong>
+<strong>R :</strong> Activez Multicore CPU, utilisez Vulkan, fermez les autres applications, vérifiez les températures.</p>
+<p><strong>Q : Audio crachotant</strong>
+<strong>R :</strong> Changez l&rsquo;engine audio, réduisez la latence, fermez les applications audio en arrière-plan.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Yuzu est un émulateur Nintendo Switch extraordinaire qui offre :</p>
+<ul>
+<li>✅ <strong>Performances excellentes</strong> sur matériel adapté</li>
+<li>✅ <strong>Support mobile</strong> unique dans l&rsquo;écosystème Switch</li>
+<li>✅ <strong>Communauté active</strong> avec mods et optimisations</li>
+<li>✅ <strong>Développement continu</strong> avec mises à jour fréquentes</li>
+<li>✅ <strong>Flexibilité</strong> de configuration avancée</li>
+</ul>
+<p>Avec ce guide complet, vous avez maintenant toutes les clés pour :</p>
+<ul>
+<li><strong>Installer</strong> et configurer Yuzu optimalement</li>
+<li><strong>Optimiser</strong> les performances selon votre matériel</li>
+<li><strong>Résoudre</strong> les problèmes courants</li>
+<li><strong>Profiter</strong> de vos jeux Nintendo Switch avec une qualité supérieure</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Reminder</strong> : Respectez toujours les droits d&rsquo;auteur. N&rsquo;utilisez que des jeux que vous possédez légalement et soutenez les développeurs en achetant leurs créations.</p></blockquote>
+<p><strong>Bon gaming avec Yuzu ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Gaming</category><category>Tutoriels</category>
+      
+    </item>
+    
+  </channel>
+</rss>

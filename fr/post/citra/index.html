@@ -1,0 +1,1548 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Guide complet : Installation et configuration de Citra | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo 3DS Citra"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Guide complet : Installation et configuration de Citra | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo 3DS Citra"
+  />
+  <meta property="og:url" content="https://axekin.com/fr/post/citra/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/citra-cheats-mods.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="CitraNintendo 3DSÉmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/citra-cheats-mods.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/citra\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/citra-cheats-mods.webp" alt="Guide complet : Installation et configuration de Citra"><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="slide-up">Guide complet : Installation et configuration de Citra</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-citra">🎮 Introduction à Citra</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-citra">🔧 Étape 1 : Téléchargement de Citra</a>
+      <ul>
+        <li><a href="#option-1--citra-official-gratuit">Option 1 : Citra Official (Gratuit)</a></li>
+        <li><a href="#option-2--citra-mmj-android-optimisé">Option 2 : Citra MMJ (Android optimisé)</a></li>
+        <li><a href="#option-3--citra-canary-builds-nightlies">Option 3 : Citra Canary (Builds nightlies)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#installation-des-prérequis-windows">Installation des prérequis Windows</a></li>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-système-essentielle">🎯 Étape 4 : Configuration système essentielle</a>
+      <ul>
+        <li><a href="#fichiers-système-requis">Fichiers système requis</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-optimale">⚙️ Étape 5 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-système">Configuration système</a></li>
+        <li><a href="#paramètres-graphiques-optimaux">Paramètres graphiques optimaux</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--ajout-et-gestion-des-jeux">🎮 Étape 6 : Ajout et gestion des jeux</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#méthodes-dajout-de-jeux">Méthodes d&rsquo;ajout de jeux</a></li>
+        <li><a href="#dumping-de-vos-propres-jeux">Dumping de vos propres jeux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-avancée">🚀 Optimisation avancée</a>
+      <ul>
+        <li><a href="#configurations-par-type-de-jeu">Configurations par type de jeu</a></li>
+        <li><a href="#optimisations-spécifiques">Optimisations spécifiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#-mods-et-améliorations">🛠️ Mods et améliorations</a>
+      <ul>
+        <li><a href="#types-de-mods-supportés">Types de mods supportés</a></li>
+        <li><a href="#ressources-pour-mods">Ressources pour mods</a></li>
+      </ul>
+    </li>
+    <li><a href="#-citra-sur-autres-plateformes">📱 Citra sur autres plateformes</a>
+      <ul>
+        <li><a href="#citra-android">Citra Android</a></li>
+        <li><a href="#citra-linux">Citra Linux</a></li>
+        <li><a href="#citra-macos">Citra macOS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-fréquents-et-solutions">Problèmes fréquents et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibilité-et-performances">📊 Compatibilité et performances</a>
+      <ul>
+        <li><a href="#statistiques-de-compatibilité">Statistiques de compatibilité</a></li>
+        <li><a href="#jeux-les-mieux-supportés">Jeux les mieux supportés</a></li>
+        <li><a href="#benchmarks-performance">Benchmarks performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels-et-documentation">Sites officiels et documentation</a></li>
+        <li><a href="#communautés-actives">Communautés actives</a></li>
+        <li><a href="#ressources-développement-et-mods">Ressources développement et mods</a></li>
+        <li><a href="#outils-utiles">Outils utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-02</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/tutoriels"
+      data-aos="zoom-in"
+      >TUTORIELS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-à-citra">
+<a class="header-anchor" href="#-introduction-%c3%a0-citra"></a>
+🎮 Introduction à Citra
+</h2><p><strong>Citra</strong> est l&rsquo;émulateur Nintendo 3DS open-source le plus abouti au monde. Développé depuis 2013, il permet de jouer aux jeux 3DS sur PC avec des améliorations graphiques significatives et une compatibilité quasi-parfaite.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 10 (64-bit) / Linux / macOS / Android</li>
+<li><strong>CPU</strong> : Intel Core i3-4130 / AMD FX-4300</li>
+<li><strong>RAM</strong> : 4 GB</li>
+<li><strong>GPU</strong> : DirectX 11 compatible (Intel HD 4000+)</li>
+<li><strong>Stockage</strong> : 2 GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i5-8400 / AMD Ryzen 5 2600</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1050 / AMD RX 560 ou supérieur</li>
+<li><strong>Stockage</strong> : SSD avec 10+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale">
+<a class="header-anchor" href="#configuration-optimale"></a>
+Configuration optimale
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-10700K / AMD Ryzen 7 3700X</li>
+<li><strong>RAM</strong> : 16 GB</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1660 / AMD RX 6600 ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 20+ GB d&rsquo;espace libre</li>
+</ul>
+<h2 id="-étape-1--téléchargement-de-citra">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-citra"></a>
+🔧 Étape 1 : Téléchargement de Citra
+</h2><h3 id="option-1--citra-official-gratuit">
+<a class="header-anchor" href="#option-1--citra-official-gratuit"></a>
+Option 1 : Citra Official (Gratuit)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://citra-emu.org/download/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>citra-windows-x86_64.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Citra</code>)</li>
+</ol>
+<h3 id="option-2--citra-mmj-android-optimisé">
+<a class="header-anchor" href="#option-2--citra-mmj-android-optimis%c3%a9"></a>
+Option 2 : Citra MMJ (Android optimisé)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version Android performance</span>
+</span></span><span style="display:flex;"><span>https://github.com/weihuoya/citra/releases
+</span></span></code></pre></div><h3 id="option-3--citra-canary-builds-nightlies">
+<a class="header-anchor" href="#option-3--citra-canary-builds-nightlies"></a>
+Option 3 : Citra Canary (Builds nightlies)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Versions de développement</span>
+</span></span><span style="display:flex;"><span>https://github.com/citra-emu/citra-canary/releases
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>Citra/
+├── citra-qt.exe             # Interface graphique
+├── citra.exe                # Version CLI
+├── games/                   # Vos ROMs .3ds/.cia/.cxi
+│   ├── 3ds/                 # Cartouches .3ds
+│   ├── cia/                 # Install files .cia
+│   └── homebrew/            # Applications homebrew
+├── saves/                   # Sauvegardes exportées
+├── screenshots/             # Captures d&#39;écran
+├── system/                  # BIOS et fichiers système
+│   ├── aes_keys.txt         # Clés de chiffrement
+│   └── seeddb.bin           # Base de données seeds
+├── mods/                    # Modifications de jeux
+│   └── [Title-ID]/          # Dossier par jeu
+└── cheats/                  # Codes de triche
+    └── [Title-ID].txt       # Cheats par jeu
+</code></pre><h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="installation-des-prérequis-windows">
+<a class="header-anchor" href="#installation-des-pr%c3%a9requis-windows"></a>
+Installation des prérequis Windows
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/en-us/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span></code></pre></div><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>citra-qt.exe</code></li>
+<li><strong>Acceptez</strong> la configuration par défaut</li>
+<li><strong>Configurez</strong> les dossiers de base</li>
+<li><strong>Définissez</strong> le dossier des jeux</li>
+</ol>
+<h2 id="-étape-4--configuration-système-essentielle">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-syst%c3%a8me-essentielle"></a>
+🎯 Étape 4 : Configuration système essentielle
+</h2><h3 id="fichiers-système-requis">
+<a class="header-anchor" href="#fichiers-syst%c3%a8me-requis"></a>
+Fichiers système requis
+</h3><blockquote>
+<p>⚠️ <strong>Important</strong> : Ces fichiers doivent être extraits de votre propre Nintendo 3DS.</p></blockquote>
+<h4 id="aes-keys-obligatoire">
+<a class="header-anchor" href="#aes-keys-obligatoire"></a>
+AES Keys (Obligatoire)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction depuis votre 3DS avec Homebrew</span>
+</span></span><span style="display:flex;"><span>1. Installez FBI + GodMode9 sur votre 3DS
+</span></span><span style="display:flex;"><span>2. Utilisez GodMode9 pour extraire aes_keys.txt
+</span></span><span style="display:flex;"><span>3. Copiez dans: Citra/system/aes_keys.txt
+</span></span></code></pre></div><p>Contenu type d&rsquo;aes_keys.txt :</p>
+<pre tabindex="0"><code>slot0x2CKeyX=xxx
+slot0x25KeyX=xxx
+slot0x18KeyX=xxx
+slot0x1BKeyX=xxx
+# ... autres clés
+</code></pre><h4 id="seeddb-pour-certains-jeux">
+<a class="header-anchor" href="#seeddb-pour-certains-jeux"></a>
+SeedDB (Pour certains jeux)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction avec Decrypt9WIP</span>
+</span></span><span style="display:flex;"><span>1. Téléchargez seeddb.bin depuis votre 3DS
+</span></span><span style="display:flex;"><span>2. Copiez dans: Citra/system/seeddb.bin
+</span></span></code></pre></div><h4 id="fonts-système-optionnel-mais-recommandé">
+<a class="header-anchor" href="#fonts-syst%c3%a8me-optionnel-mais-recommand%c3%a9"></a>
+Fonts système (Optionnel mais recommandé)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction avec GodMode9</span>
+</span></span><span style="display:flex;"><span>1. Extrayez shared_font.bin de votre 3DS
+</span></span><span style="display:flex;"><span>2. Copiez dans: Citra/system/shared_font.bin
+</span></span></code></pre></div><h2 id="-étape-5--configuration-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-optimale"></a>
+⚙️ Étape 5 : Configuration optimale
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Confirm exit while emulation is running</strong> : ✅ Activé</li>
+<li><strong>Pause emulation when in background</strong> : ✅ Activé (optionnel)</li>
+<li><strong>Enable Discord Presence</strong> : ✅ Activé (optionnel)</li>
+</ul>
+<h3 id="configuration-système">
+<a class="header-anchor" href="#configuration-syst%c3%a8me"></a>
+Configuration système
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong> : Europe (ou votre région)</li>
+<li><strong>Language</strong> : Français</li>
+<li><strong>Play Coin</strong> : 300 (maximum)</li>
+<li><strong>Console ID</strong> : Random (généré automatiquement)</li>
+<li><strong>Enable New 3DS</strong> : ✅ Activé (pour de meilleures performances)</li>
+</ul>
+<h3 id="paramètres-graphiques-optimaux">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-optimaux"></a>
+Paramètres graphiques optimaux
+</h3><h4 id="onglet-general">
+<a class="header-anchor" href="#onglet-general"></a>
+Onglet General
+</h4><pre tabindex="0"><code>Graphics → General
+- Internal Resolution: 2x Native (400x480) ou plus
+- Enable Linear Filtering: ✅ Activé
+- Enable V-Sync: ✅ Activé
+</code></pre><h4 id="onglet-renderer">
+<a class="header-anchor" href="#onglet-renderer"></a>
+Onglet Renderer
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Graphics API: OpenGL (recommandé) ou Vulkan
+- Enable Hardware Renderer: ✅ Activé
+- Enable Hardware Shader: ✅ Activé
+- Enable Accurate Multiplication: ✅ Activé
+- Use Disk Shader Cache: ✅ Activé
+- Enable VSync: ✅ Activé
+</code></pre><h4 id="onglet-stereoscopy-3d">
+<a class="header-anchor" href="#onglet-stereoscopy-3d"></a>
+Onglet Stereoscopy (3D)
+</h4><pre tabindex="0"><code>Graphics → Stereoscopy
+- Stereoscopic 3D Mode: Off (ou Side by Side pour VR)
+- Depth: 100% (si activé)
+- Eye to render: Both (recommandé)
+</code></pre><h3 id="configuration-audio">
+<a class="header-anchor" href="#configuration-audio"></a>
+Configuration audio
+</h3><pre tabindex="0"><code>Audio
+- Enable DSP LLE: ✅ Activé (plus précis)
+- Enable DSP LLE Multithread: ✅ Activé
+- Output Type: Auto
+- Volume: 100%
+</code></pre><h3 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h3><h4 id="méthode-automatique">
+<a class="header-anchor" href="#m%c3%a9thode-automatique"></a>
+Méthode automatique
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Cliquez sur &#34;Auto Map&#34;
+2. Appuyez sur les boutons de votre manette
+3. Testez tous les contrôles
+</code></pre><h4 id="mapping-recommandé-manette-xbox">
+<a class="header-anchor" href="#mapping-recommand%c3%a9-manette-xbox"></a>
+Mapping recommandé (Manette Xbox)
+</h4><pre tabindex="0"><code>A Button → A
+B Button → B
+X Button → Y
+Y Button → X
+L Button → LB
+R Button → RB
+ZL Button → LT
+ZR Button → RT
+D-Pad → D-Pad
+Circle Pad → Left Stick
+C-Stick (New 3DS) → Right Stick
+Start → Menu
+Select → View
+</code></pre><h2 id="-étape-6--ajout-et-gestion-des-jeux">
+<a class="header-anchor" href="#-%c3%a9tape-6--ajout-et-gestion-des-jeux"></a>
+🎮 Étape 6 : Ajout et gestion des jeux
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><ul>
+<li><strong>.3DS</strong> : Cartouches Nintendo 3DS (format standard)</li>
+<li><strong>.CIA</strong> : CTR Importable Archive (installables)</li>
+<li><strong>.CXI</strong> : CTR eXecutable Image (exécutables bruts)</li>
+<li><strong>.APP</strong> : Applications système Nintendo</li>
+</ul>
+<h3 id="méthodes-dajout-de-jeux">
+<a class="header-anchor" href="#m%c3%a9thodes-dajout-de-jeux"></a>
+Méthodes d&rsquo;ajout de jeux
+</h3><h4 id="roms-cartouches-3ds">
+<a class="header-anchor" href="#roms-cartouches-3ds"></a>
+ROMs cartouches (.3DS)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Simple à utiliser</span>
+</span></span><span style="display:flex;"><span>1. Placez vos fichiers .3ds dans le dossier games/3ds/
+</span></span><span style="display:flex;"><span>2. Rafraîchissez la liste dans Citra
+</span></span><span style="display:flex;"><span>3. Double-cliquez pour jouer
+</span></span></code></pre></div><h4 id="installation-de-cia">
+<a class="header-anchor" href="#installation-de-cia"></a>
+Installation de CIA
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour DLC, mises à jour, et homebrew</span>
+</span></span><span style="display:flex;"><span>1. File → Install CIA...
+</span></span><span style="display:flex;"><span>2. Sélectionnez votre fichier .cia
+</span></span><span style="display:flex;"><span>3. Attendez l<span style="color:#960050;background-color:#1e0010">&#39;</span>installation
+</span></span><span style="display:flex;"><span>4. Le jeu/contenu apparaît dans la liste
+</span></span></code></pre></div><h3 id="dumping-de-vos-propres-jeux">
+<a class="header-anchor" href="#dumping-de-vos-propres-jeux"></a>
+Dumping de vos propres jeux
+</h3><h4 id="depuis-cartouche-physique">
+<a class="header-anchor" href="#depuis-cartouche-physique"></a>
+Depuis cartouche physique
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec GodMode9 (3DS avec CFW)</span>
+</span></span><span style="display:flex;"><span>1. Insérez la cartouche dans votre 3DS
+</span></span><span style="display:flex;"><span>2. Lancez GodMode9
+</span></span><span style="display:flex;"><span>3. Naviguez vers <span style="color:#f92672">[</span>C:<span style="color:#f92672">]</span> GAMECART
+</span></span><span style="display:flex;"><span>4. Sélectionnez le fichier .3ds
+</span></span><span style="display:flex;"><span>5. Copy to 0:/gm9/out/
+</span></span><span style="display:flex;"><span>6. Transférez sur PC
+</span></span></code></pre></div><h4 id="depuis-eshop-installé">
+<a class="header-anchor" href="#depuis-eshop-install%c3%a9"></a>
+Depuis eShop (installé)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec GodMode9</span>
+</span></span><span style="display:flex;"><span>1. Naviguez vers <span style="color:#f92672">[</span>A:<span style="color:#f92672">]</span> SYSNAND SD
+</span></span><span style="display:flex;"><span>2. title → <span style="color:#ae81ff">00040000</span> → <span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>3. Dump en .cia
+</span></span><span style="display:flex;"><span>4. Transférez sur PC
+</span></span></code></pre></div><h2 id="-optimisation-avancée">
+<a class="header-anchor" href="#-optimisation-avanc%c3%a9e"></a>
+🚀 Optimisation avancée
+</h2><h3 id="configurations-par-type-de-jeu">
+<a class="header-anchor" href="#configurations-par-type-de-jeu"></a>
+Configurations par type de jeu
+</h3><h4 id="jeux-dactionplatforme">
+<a class="header-anchor" href="#jeux-dactionplatforme"></a>
+Jeux d&rsquo;action/platforme
+</h4><pre tabindex="0"><code>Graphics:
+- Internal Resolution: 3x-4x Native
+- Hardware Renderer: ✅ Activé
+- V-Sync: ✅ Activé
+
+Performance:
+- New 3DS Mode: ✅ Activé
+- DSP LLE: ✅ Activé
+</code></pre><h4 id="jrpgsvisual-novels">
+<a class="header-anchor" href="#jrpgsvisual-novels"></a>
+JRPGs/Visual Novels
+</h4><pre tabindex="0"><code>Graphics:
+- Internal Resolution: 4x-6x Native
+- Linear Filtering: ✅ Activé
+- Anisotropic Filtering: 16x
+
+Quality:
+- Accurate Multiplication: ✅ Activé
+- Hardware Shaders: ✅ Activé
+</code></pre><h4 id="jeux-gourmands-monster-hunter-etc">
+<a class="header-anchor" href="#jeux-gourmands-monster-hunter-etc"></a>
+Jeux gourmands (Monster Hunter, etc.)
+</h4><pre tabindex="0"><code>Performance:
+- Internal Resolution: 2x Native maximum
+- New 3DS Mode: ✅ Obligatoire
+- Frame Limiting: ✅ Activé
+
+Compromis qualité/performance équilibré
+</code></pre><h3 id="optimisations-spécifiques">
+<a class="header-anchor" href="#optimisations-sp%c3%a9cifiques"></a>
+Optimisations spécifiques
+</h3><h4 id="the-legend-of-zelda-ocarina-of-time-3d">
+<a class="header-anchor" href="#the-legend-of-zelda-ocarina-of-time-3d"></a>
+The Legend of Zelda: Ocarina of Time 3D
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration optimale</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 4x Native <span style="color:#f92672">(</span>800x960<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Hardware Renderer: ✅ Activé
+</span></span><span style="display:flex;"><span>- Accurate Multiplication: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Mods recommandés:
+</span></span><span style="display:flex;"><span>- HD Texture Pack
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS patch
+</span></span><span style="display:flex;"><span>- Widescreen mod
+</span></span></code></pre></div><h4 id="pokémon-xyoras">
+<a class="header-anchor" href="#pok%c3%a9mon-xyoras"></a>
+Pokémon X/Y/OR/AS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Réglages performance</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Hardware Shaders: ✅ Activé
+</span></span><span style="display:flex;"><span>- New 3DS Mode: ✅ Obligatoire
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Notes:
+</span></span><span style="display:flex;"><span>- Certaines zones peuvent ralentir
+</span></span><span style="display:flex;"><span>- Utilisez les dernières versions Canary
+</span></span></code></pre></div><h4 id="super-mario-3d-land">
+<a class="header-anchor" href="#super-mario-3d-land"></a>
+Super Mario 3D Land
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration équilibrée</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 3x-4x Native
+</span></span><span style="display:flex;"><span>- Linear Filtering: ✅ Activé
+</span></span><span style="display:flex;"><span>- V-Sync: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance généralement excellente
+</span></span></code></pre></div><h2 id="-mods-et-améliorations">
+<a class="header-anchor" href="#-mods-et-am%c3%a9liorations"></a>
+🛠️ Mods et améliorations
+</h2><h3 id="types-de-mods-supportés">
+<a class="header-anchor" href="#types-de-mods-support%c3%a9s"></a>
+Types de mods supportés
+</h3><h4 id="texture-packs-hd">
+<a class="header-anchor" href="#texture-packs-hd"></a>
+Texture Packs HD
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>1. Téléchargez le texture pack compatible
+</span></span><span style="display:flex;"><span>2. Créez: Citra/load/textures/<span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Extrayez les textures dans ce dossier
+</span></span><span style="display:flex;"><span>4. Activez <span style="color:#e6db74">&#34;Custom Textures&#34;</span> dans les options graphiques
+</span></span></code></pre></div><h4 id="codes-de-triche">
+<a class="header-anchor" href="#codes-de-triche"></a>
+Codes de triche
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Format des cheats</span>
+</span></span><span style="display:flex;"><span>1. Créez: Citra/cheats/<span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>.txt
+</span></span><span style="display:flex;"><span>2. Utilisez le format Gateway/ActionReplay
+</span></span><span style="display:flex;"><span>3. Activez dans System → Cheats
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Exemple pour Pokémon X <span style="color:#f92672">(</span>0004000000055D00<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Max Money<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>08C6A0AC 000F423F
+</span></span></code></pre></div><h4 id="patches-60-fps">
+<a class="header-anchor" href="#patches-60-fps"></a>
+Patches 60 FPS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Application manuelle</span>
+</span></span><span style="display:flex;"><span>1. Téléchargez le patch .ips/.ups
+</span></span><span style="display:flex;"><span>2. Appliquez avec Lunar IPS ou similar
+</span></span><span style="display:flex;"><span>3. Utilisez la ROM patchée dans Citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Jeux compatibles:
+</span></span><span style="display:flex;"><span>- Zelda: Ocarina of Time 3D
+</span></span><span style="display:flex;"><span>- Mario Kart <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>- Super Mario 3D Land
+</span></span></code></pre></div><h3 id="ressources-pour-mods">
+<a class="header-anchor" href="#ressources-pour-mods"></a>
+Ressources pour mods
+</h3><h4 id="sites-recommandés">
+<a class="header-anchor" href="#sites-recommand%c3%a9s"></a>
+Sites recommandés
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Texture Packs</span>
+</span></span><span style="display:flex;"><span>- Citra Community Forum
+</span></span><span style="display:flex;"><span>- GBAtemp Forums
+</span></span><span style="display:flex;"><span>- Reddit r/citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cheats</span>
+</span></span><span style="display:flex;"><span>- GameHacking.org
+</span></span><span style="display:flex;"><span>- Fort42.com cheat database
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Patches</span>
+</span></span><span style="display:flex;"><span>- RomHacking.net
+</span></span><span style="display:flex;"><span>- GitHub repositories
+</span></span></code></pre></div><h2 id="-citra-sur-autres-plateformes">
+<a class="header-anchor" href="#-citra-sur-autres-plateformes"></a>
+📱 Citra sur autres plateformes
+</h2><h3 id="citra-android">
+<a class="header-anchor" href="#citra-android"></a>
+Citra Android
+</h3><h4 id="prérequis-android">
+<a class="header-anchor" href="#pr%c3%a9requis-android"></a>
+Prérequis Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 8.0+ <span style="color:#f92672">(</span>API 26<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 845+ ou Exynos 9810+
+</span></span><span style="display:flex;"><span>- 6GB RAM minimum <span style="color:#f92672">(</span>8GB recommandé<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 32GB stockage libre
+</span></span><span style="display:flex;"><span>- GPU Adreno 630+ ou Mali-G72+
+</span></span></code></pre></div><h4 id="installation">
+<a class="header-anchor" href="#installation"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Google Play Store → Citra MMJ <span style="color:#f92672">(</span>version optimisée<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Ou APK depuis GitHub
+</span></span><span style="display:flex;"><span>3. Configurez les permissions de stockage
+</span></span><span style="display:flex;"><span>4. Transférez ROMs et fichiers système
+</span></span></code></pre></div><h4 id="optimisations-android">
+<a class="header-anchor" href="#optimisations-android"></a>
+Optimisations Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU JIT: ✅ Activé
+</span></span><span style="display:flex;"><span>- Hardware Renderer: ✅ Activé <span style="color:#f92672">(</span>si supporté<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x Native <span style="color:#f92672">(</span>économie batterie<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Frame Skip: Auto <span style="color:#f92672">(</span>si nécessaire<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contrôles:
+</span></span><span style="display:flex;"><span>- Overlay tactile personnalisable
+</span></span><span style="display:flex;"><span>- Support manettes Bluetooth
+</span></span><span style="display:flex;"><span>- Gyroscope pour certains jeux
+</span></span></code></pre></div><h3 id="citra-linux">
+<a class="header-anchor" href="#citra-linux"></a>
+Citra Linux
+</h3><h4 id="installation-ubuntudebian">
+<a class="header-anchor" href="#installation-ubuntudebian"></a>
+Installation Ubuntu/Debian
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Flatpak (recommandé)</span>
+</span></span><span style="display:flex;"><span>flatpak install flathub org.citra_emu.citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ou compilation depuis source</span>
+</span></span><span style="display:flex;"><span>sudo apt install build-essential cmake qt5-default libsdl2-dev
+</span></span><span style="display:flex;"><span>git clone --recursive https://github.com/citra-emu/citra.git
+</span></span><span style="display:flex;"><span>cd citra <span style="color:#f92672">&amp;&amp;</span> mkdir build <span style="color:#f92672">&amp;&amp;</span> cd build
+</span></span><span style="display:flex;"><span>cmake .. -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Release
+</span></span><span style="display:flex;"><span>make -j<span style="color:#66d9ef">$(</span>nproc<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><h4 id="installation-arch-linux">
+<a class="header-anchor" href="#installation-arch-linux"></a>
+Installation Arch Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis AUR</span>
+</span></span><span style="display:flex;"><span>yay -S citra-git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ou</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S citra-qt
+</span></span></code></pre></div><h3 id="citra-macos">
+<a class="header-anchor" href="#citra-macos"></a>
+Citra macOS
+</h3><h4 id="installation-1">
+<a class="header-anchor" href="#installation-1"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Homebrew</span>
+</span></span><span style="display:flex;"><span>brew install --cask citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ou download direct</span>
+</span></span><span style="display:flex;"><span>https://citra-emu.org/download/
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-fréquents-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-fr%c3%a9quents-et-solutions"></a>
+Problèmes fréquents et solutions
+</h3><h4 id="jeu-ne-se-lance-pas">
+<a class="header-anchor" href="#jeu-ne-se-lance-pas"></a>
+Jeu ne se lance pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Vérifications par ordre:
+</span></span><span style="display:flex;"><span>1. AES keys présentes et valides
+</span></span><span style="display:flex;"><span>2. ROM non corrompue <span style="color:#f92672">(</span>vérifiez MD5/SHA1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Seeddb.bin si requis pour le jeu
+</span></span><span style="display:flex;"><span>4. Région correcte dans les paramètres système
+</span></span><span style="display:flex;"><span>5. Version Citra à jour
+</span></span></code></pre></div><h4 id="écran-noir-au-lancement">
+<a class="header-anchor" href="#%c3%a9cran-noir-au-lancement"></a>
+Écran noir au lancement
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Changez Graphics API <span style="color:#f92672">(</span>OpenGL ↔ Vulkan<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Désactivez Hardware Renderer temporairement
+</span></span><span style="display:flex;"><span>3. Réduisez Internal Resolution à 1x
+</span></span><span style="display:flex;"><span>4. Vérifiez les pilotes GPU
+</span></span><span style="display:flex;"><span>5. Testez en mode New 3DS
+</span></span></code></pre></div><h4 id="performance-médiocre">
+<a class="header-anchor" href="#performance-m%c3%a9diocre"></a>
+Performance médiocre
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Optimisations immédiates:
+</span></span><span style="display:flex;"><span>1. Activez New 3DS Mode
+</span></span><span style="display:flex;"><span>2. Activez Hardware Renderer + Shaders
+</span></span><span style="display:flex;"><span>3. Réduisez Internal Resolution
+</span></span><span style="display:flex;"><span>4. Fermez applications en arrière-plan
+</span></span><span style="display:flex;"><span>5. Utilisez un SSD pour les ROMs
+</span></span></code></pre></div><h4 id="audio-distorduabsent">
+<a class="header-anchor" href="#audio-distorduabsent"></a>
+Audio distordu/absent
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections audio:
+</span></span><span style="display:flex;"><span>1. Activez DSP LLE
+</span></span><span style="display:flex;"><span>2. Changez Output Type
+</span></span><span style="display:flex;"><span>3. Vérifiez les pilotes audio
+</span></span><span style="display:flex;"><span>4. Désactivez les effets audio Windows
+</span></span><span style="display:flex;"><span>5. Testez sans DSP LLE Multithread
+</span></span></code></pre></div><h4 id="plantages-fréquents">
+<a class="header-anchor" href="#plantages-fr%c3%a9quents"></a>
+Plantages fréquents
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stabilisation:
+</span></span><span style="display:flex;"><span>1. Désactivez les mods temporairement
+</span></span><span style="display:flex;"><span>2. Utilisez version stable au lieu de Canary
+</span></span><span style="display:flex;"><span>3. Vérifiez l<span style="color:#960050;background-color:#1e0010">&#39;</span>intégrité de la ROM
+</span></span><span style="display:flex;"><span>4. Réinitialisez la configuration
+</span></span><span style="display:flex;"><span>5. Vérifiez la RAM <span style="color:#f92672">(</span>MemTest86<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="-compatibilité-et-performances">
+<a class="header-anchor" href="#-compatibilit%c3%a9-et-performances"></a>
+📊 Compatibilité et performances
+</h2><h3 id="statistiques-de-compatibilité">
+<a class="header-anchor" href="#statistiques-de-compatibilit%c3%a9"></a>
+Statistiques de compatibilité
+</h3><table>
+  <thead>
+      <tr>
+          <th>Statut</th>
+          <th>Pourcentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~75%</td>
+          <td>Fonctionne parfaitement</td>
+      </tr>
+      <tr>
+          <td><strong>Great</strong></td>
+          <td>~15%</td>
+          <td>Quelques bugs mineurs</td>
+      </tr>
+      <tr>
+          <td><strong>Good</strong></td>
+          <td>~7%</td>
+          <td>Jouable avec limitations</td>
+      </tr>
+      <tr>
+          <td><strong>Bad</strong></td>
+          <td>~2%</td>
+          <td>Problèmes majeurs</td>
+      </tr>
+      <tr>
+          <td><strong>Intro/Nothing</strong></td>
+          <td>~1%</td>
+          <td>Non fonctionnel</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-les-mieux-supportés">
+<a class="header-anchor" href="#jeux-les-mieux-support%c3%a9s"></a>
+Jeux les mieux supportés
+</h3><h4 id="parfaitement-compatibles">
+<a class="header-anchor" href="#parfaitement-compatibles"></a>
+Parfaitement compatibles
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Legend of Zelda: Ocarina of Time 3D
+</span></span><span style="display:flex;"><span>✅ Super Mario 3D Land
+</span></span><span style="display:flex;"><span>✅ Mario Kart <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>✅ Animal Crossing: New Leaf
+</span></span><span style="display:flex;"><span>✅ Fire Emblem Awakening
+</span></span><span style="display:flex;"><span>✅ Pokémon X/Y <span style="color:#f92672">(</span>quelques ralentissements<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Luigi<span style="color:#960050;background-color:#1e0010">&#39;</span>s Mansion: Dark Moon
+</span></span><span style="display:flex;"><span>✅ Kid Icarus: Uprising
+</span></span></code></pre></div><h4 id="excellente-compatibilité">
+<a class="header-anchor" href="#excellente-compatibilit%c3%a9"></a>
+Excellente compatibilité
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>⭐ Pokémon Omega Ruby/Alpha Sapphire
+</span></span><span style="display:flex;"><span>⭐ The Legend of Zelda: A Link Between Worlds
+</span></span><span style="display:flex;"><span>⭐ Metroid: Samus Returns
+</span></span><span style="display:flex;"><span>⭐ Monster Hunter <span style="color:#ae81ff">4</span> Ultimate
+</span></span><span style="display:flex;"><span>⭐ Xenoblade Chronicles 3D
+</span></span><span style="display:flex;"><span>⭐ Kirby: Planet Robobot
+</span></span></code></pre></div><h3 id="benchmarks-performance">
+<a class="header-anchor" href="#benchmarks-performance"></a>
+Benchmarks performance
+</h3><h4 id="configuration-test--i5-8400-gtx-1060-16gb-ram">
+<a class="header-anchor" href="#configuration-test--i5-8400-gtx-1060-16gb-ram"></a>
+Configuration test : i5-8400, GTX 1060, 16GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>1x Native</th>
+          <th>2x Native</th>
+          <th>4x Native</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Mario 3D Land</strong></td>
+          <td>60 FPS</td>
+          <td>60 FPS</td>
+          <td>55-60 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda OoT 3D</strong></td>
+          <td>60 FPS</td>
+          <td>60 FPS</td>
+          <td>45-60 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Pokémon X</strong></td>
+          <td>30-60 FPS</td>
+          <td>25-55 FPS</td>
+          <td>20-45 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Monster Hunter 4U</strong></td>
+          <td>30-60 FPS</td>
+          <td>25-50 FPS</td>
+          <td>20-40 FPS</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels-et-documentation">
+<a class="header-anchor" href="#sites-officiels-et-documentation"></a>
+Sites officiels et documentation
+</h3><ul>
+<li><a href="https://citra-emu.org/">🏠 Site officiel Citra</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.citra.citra_emu">📱 Citra Android</a></li>
+<li><a href="https://citra-emu.org/wiki/">📚 Wiki officiel</a></li>
+<li><a href="https://citra-emu.org/wiki/user-directory/">🔧 Guide de configuration</a></li>
+</ul>
+<h3 id="communautés-actives">
+<a class="header-anchor" href="#communaut%c3%a9s-actives"></a>
+Communautés actives
+</h3><ul>
+<li><a href="https://discord.gg/FAXfZV9">💬 Discord Citra</a></li>
+<li><a href="https://www.reddit.com/r/Citra/">🗨️ Reddit r/Citra</a></li>
+<li><a href="https://community.citra-emu.org/">🌐 Forum officiel</a></li>
+<li><a href="https://www.youtube.com/results?search_query=citra&#43;guide">📺 YouTube guides</a></li>
+</ul>
+<h3 id="ressources-développement-et-mods">
+<a class="header-anchor" href="#ressources-d%c3%a9veloppement-et-mods"></a>
+Ressources développement et mods
+</h3><ul>
+<li><a href="https://github.com/citra-emu/citra">💻 GitHub Citra</a></li>
+<li><a href="https://forums.citra-emu.org/c/art-assets">🎨 Texture Packs</a></li>
+<li><a href="https://gamebanana.com/games/4203">🎮 GameBanana 3DS</a></li>
+<li><a href="https://gbatemp.net/categories/nintendo-3ds-emulation.297/">🔓 GBAtemp Forums</a></li>
+</ul>
+<h3 id="outils-utiles">
+<a class="header-anchor" href="#outils-utiles"></a>
+Outils utiles
+</h3><ul>
+<li><a href="https://github.com/d0k3/GodMode9">🔧 GodMode9</a> - Swiss Army Knife 3DS</li>
+<li><a href="https://github.com/Steveice10/FBI">📁 FBI</a> - Gestionnaire de fichiers 3DS</li>
+<li><a href="https://github.com/FlagBrew/Checkpoint">🎯 Checkpoint</a> - Gestionnaire de sauvegardes</li>
+<li><a href="https://github.com/matiffeder/BatchCIA3DSDecryptor">🖼️ Batch CIA 3DS Decryptor</a> - Conversion ROMs</li>
+</ul>
+<h2 id="-faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+❓ FAQ - Questions fréquemment posées
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Citra peut-il faire fonctionner tous les jeux 3DS ?</strong>
+<strong>R :</strong> Environ 90% des jeux 3DS fonctionnent bien à parfaitement. Consultez la base de compatibilité pour votre jeu spécifique.</p>
+<p><strong>Q : La 3D stéréoscopique fonctionne-t-elle ?</strong>
+<strong>R :</strong> Oui, avec des lunettes 3D ou un écran 3D. Mode Side-by-Side également disponible pour VR.</p>
+<p><strong>Q : Puis-je utiliser mes sauvegardes de vraie 3DS ?</strong>
+<strong>R :</strong> Oui, avec Checkpoint ou JKSM vous pouvez transférer vos sauvegardes dans les deux sens.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Pourquoi certains jeux sont-ils lents ?</strong>
+<strong>R :</strong> Les jeux 3DS sont optimisés pour un hardware spécifique. L&rsquo;émulation demande plus de puissance, surtout pour les jeux complexes.</p>
+<p><strong>Q : OpenGL ou Vulkan ?</strong>
+<strong>R :</strong> OpenGL est plus stable et compatible. Vulkan peut offrir de meilleures performances sur GPU récents.</p>
+<p><strong>Q : New 3DS Mode améliore-t-il tous les jeux ?</strong>
+<strong>R :</strong> Principalement les jeux qui l&rsquo;utilisent nativement (Xenoblade, Monster Hunter, etc.) et certains homebrews.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : &ldquo;Could not determine the system region&rdquo; ?</strong>
+<strong>R :</strong> Installez les fichiers système (aes_keys.txt) et configurez la région dans les paramètres.</p>
+<p><strong>Q : Les textures HD ne s&rsquo;affichent pas ?</strong>
+<strong>R :</strong> Vérifiez que &ldquo;Custom Textures&rdquo; est activé et que le Title ID correspond au dossier.</p>
+<p><strong>Q : Comment améliorer les performances sur Android ?</strong>
+<strong>R :</strong> Utilisez Citra MMJ, réduisez la résolution, activez le frame skip si nécessaire.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Citra est un émulateur 3DS exceptionnel qui offre :</p>
+<ul>
+<li>✅ <strong>Compatibilité excellente</strong> avec la majorité des jeux 3DS</li>
+<li>✅ <strong>Amélioration graphique</strong> significative par rapport à la console originale</li>
+<li>✅ <strong>Stabilité</strong> et maturité après des années de développement</li>
+<li>✅ <strong>Support multiplateforme</strong> (Windows, Linux, macOS, Android)</li>
+<li>✅ <strong>Communauté active</strong> avec mods et texture packs HD</li>
+<li>✅ <strong>Performance</strong> excellente sur matériel moderne</li>
+</ul>
+<p>Avec ce guide détaillé, vous êtes maintenant équipé pour :</p>
+<ul>
+<li><strong>Installer</strong> et configurer Citra optimalement</li>
+<li><strong>Extraire</strong> vos propres jeux légalement</li>
+<li><strong>Optimiser</strong> les performances selon votre matériel</li>
+<li><strong>Utiliser</strong> des mods et améliorations</li>
+<li><strong>Résoudre</strong> les problèmes courants</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Rappel important</strong> : Utilisez uniquement des jeux que vous possédez légalement. Respectez les droits d&rsquo;auteur et soutenez les développeurs en achetant leurs créations.</p></blockquote>
+<p><strong>Profitez de vos jeux 3DS en haute définition ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://axekin.com/fr/post/citra/">https://axekin.com/fr/post/citra/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Guide complet : Installation et configuration de Citra</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-02 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/fr/post/citra/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/fr/post/citra/&amp;text=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Citra&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/fr/post/citra/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Citra&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20installer,%20configurer%20et%20utiliser%20l%27%c3%a9mulateur%20Nintendo%203DS%20Citra&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/fr/post/citra/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Citra" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Citra">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/citra"
+        rel="tag"
+        >CITRA</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo-3ds"
+        rel="tag"
+        >NINTENDO 3DS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/%c3%a9mulation"
+        rel="tag"
+        >ÉMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/yuzu-ryujinx-dlc-updates.webp"
+            data-sizes="auto"
+            alt="Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx"
+            class="lazyload"
+          /><a href="/fr/post/dlc_update_ryujinx_yuzu/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/cemu-keyboard-mouse.webp"
+            data-sizes="auto"
+            alt="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu"
+            class="lazyload"
+          /><a href="/fr/post/keyboard_mouse_cemu/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;28.3k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:19</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-citra">🎮 Introduction à Citra</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-citra">🔧 Étape 1 : Téléchargement de Citra</a>
+      <ul>
+        <li><a href="#option-1--citra-official-gratuit">Option 1 : Citra Official (Gratuit)</a></li>
+        <li><a href="#option-2--citra-mmj-android-optimisé">Option 2 : Citra MMJ (Android optimisé)</a></li>
+        <li><a href="#option-3--citra-canary-builds-nightlies">Option 3 : Citra Canary (Builds nightlies)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#installation-des-prérequis-windows">Installation des prérequis Windows</a></li>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-système-essentielle">🎯 Étape 4 : Configuration système essentielle</a>
+      <ul>
+        <li><a href="#fichiers-système-requis">Fichiers système requis</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-optimale">⚙️ Étape 5 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-système">Configuration système</a></li>
+        <li><a href="#paramètres-graphiques-optimaux">Paramètres graphiques optimaux</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--ajout-et-gestion-des-jeux">🎮 Étape 6 : Ajout et gestion des jeux</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#méthodes-dajout-de-jeux">Méthodes d&rsquo;ajout de jeux</a></li>
+        <li><a href="#dumping-de-vos-propres-jeux">Dumping de vos propres jeux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-avancée">🚀 Optimisation avancée</a>
+      <ul>
+        <li><a href="#configurations-par-type-de-jeu">Configurations par type de jeu</a></li>
+        <li><a href="#optimisations-spécifiques">Optimisations spécifiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#-mods-et-améliorations">🛠️ Mods et améliorations</a>
+      <ul>
+        <li><a href="#types-de-mods-supportés">Types de mods supportés</a></li>
+        <li><a href="#ressources-pour-mods">Ressources pour mods</a></li>
+      </ul>
+    </li>
+    <li><a href="#-citra-sur-autres-plateformes">📱 Citra sur autres plateformes</a>
+      <ul>
+        <li><a href="#citra-android">Citra Android</a></li>
+        <li><a href="#citra-linux">Citra Linux</a></li>
+        <li><a href="#citra-macos">Citra macOS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-fréquents-et-solutions">Problèmes fréquents et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibilité-et-performances">📊 Compatibilité et performances</a>
+      <ul>
+        <li><a href="#statistiques-de-compatibilité">Statistiques de compatibilité</a></li>
+        <li><a href="#jeux-les-mieux-supportés">Jeux les mieux supportés</a></li>
+        <li><a href="#benchmarks-performance">Benchmarks performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels-et-documentation">Sites officiels et documentation</a></li>
+        <li><a href="#communautés-actives">Communautés actives</a></li>
+        <li><a href="#ressources-développement-et-mods">Ressources développement et mods</a></li>
+        <li><a href="#outils-utiles">Outils utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Guide complet : Installation et configuration de Citra",
+          url: "https:\/\/axekin.com\/fr\/post\/citra\/",
+          description: "Tutoriel détaillé pour installer, configurer et utiliser l\u0027émulateur Nintendo 3DS Citra",
+          cover: "https:\/\/axekin.com\/images\/covers\/citra-cheats-mods.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

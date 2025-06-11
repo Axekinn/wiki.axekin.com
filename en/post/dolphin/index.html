@@ -1,0 +1,1666 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Complete Guide: Dolphin Installation and Configuration | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for installing, configuring and optimizing the Nintendo Wii/GameCube emulator Dolphin - Best settings and performance tips"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Complete Guide: Dolphin Installation and Configuration | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for installing, configuring and optimizing the Nintendo Wii/GameCube emulator Dolphin - Best settings and performance tips"
+  />
+  <meta property="og:url" content="https://axekin.com/en/post/dolphin/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/dolphin-emulator-guide.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="dolphinnintendo-wiigamecubeemulationinstallationconfigurationoptimization" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/dolphin-emulator-guide.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/dolphin\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/dolphin-emulator-guide.webp" alt="Complete Guide: Dolphin Installation and Configuration"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="slide-up">Complete Guide: Dolphin Installation and Configuration</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-dolphin">🎮 Introduction to Dolphin</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration-4kvr">Optimal Configuration (4K/VR)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-dolphin">🔧 Step 1: Downloading Dolphin</a>
+      <ul>
+        <li><a href="#option-1-stable-version-recommended">Option 1: Stable Version (Recommended)</a></li>
+        <li><a href="#option-2-betadevelopment-versions">Option 2: Beta/Development Versions</a></li>
+        <li><a href="#option-3-dolphin-android">Option 3: Dolphin Android</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-installation-and-first-launch">⚙️ Step 3: Installation and First Launch</a>
+      <ul>
+        <li><a href="#installing-windows-prerequisites">Installing Windows Prerequisites</a></li>
+        <li><a href="#first-launch">First Launch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-basic-system-configuration">🎯 Step 4: Basic System Configuration</a>
+      <ul>
+        <li><a href="#general-settings">General Settings</a></li>
+        <li><a href="#controller-configuration">Controller Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-optimal-graphics-configuration">⚙️ Step 5: Optimal Graphics Configuration</a>
+      <ul>
+        <li><a href="#basic-graphics-settings">Basic Graphics Settings</a></li>
+        <li><a href="#advanced-settings">Advanced Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-6-adding-and-managing-games">🎮 Step 6: Adding and Managing Games</a>
+      <ul>
+        <li><a href="#supported-formats">Supported Formats</a></li>
+        <li><a href="#dumping-your-own-games">Dumping Your Own Games</a></li>
+        <li><a href="#organizing-games-in-dolphin">Organizing Games in Dolphin</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-optimization-by-game-type">🚀 Advanced Optimization by Game Type</a>
+      <ul>
+        <li><a href="#super-mario-galaxy-1--2">Super Mario Galaxy 1 &amp; 2</a></li>
+        <li><a href="#the-legend-of-zelda-twilight-princess">The Legend of Zelda: Twilight Princess</a></li>
+        <li><a href="#metroid-prime-trilogy">Metroid Prime Trilogy</a></li>
+        <li><a href="#super-smash-bros-melee">Super Smash Bros. Melee</a></li>
+        <li><a href="#mario-kart-wii">Mario Kart Wii</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🌐 Advanced Features</a>
+      <ul>
+        <li><a href="#netplay-online-gaming">Netplay (Online Gaming)</a></li>
+        <li><a href="#virtual-reality-gaming">Virtual Reality Gaming</a></li>
+        <li><a href="#hd-texture-packs">HD Texture Packs</a></li>
+      </ul>
+    </li>
+    <li><a href="#-dolphin-on-other-platforms">📱 Dolphin on Other Platforms</a>
+      <ul>
+        <li><a href="#dolphin-android">Dolphin Android</a></li>
+        <li><a href="#dolphin-linux">Dolphin Linux</a></li>
+        <li><a href="#dolphin-macos">Dolphin macOS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#graphics-issues">Graphics Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+        <li><a href="#controller-issues">Controller Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-database">📊 Compatibility Database</a>
+      <ul>
+        <li><a href="#gamecube-statistics">GameCube Statistics</a></li>
+        <li><a href="#wii-statistics">Wii Statistics</a></li>
+        <li><a href="#best-optimized-games">Best Optimized Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-sites">Official Sites</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#mod-and-texture-resources">Mod and Texture Resources</a></li>
+        <li><a href="#tools-and-utilities">Tools and Utilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#common-issues">Common Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/emulation"
+      data-aos="zoom-in"
+      >EMULATION</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-to-dolphin">
+<a class="header-anchor" href="#-introduction-to-dolphin"></a>
+🎮 Introduction to Dolphin
+</h2><p><strong>Dolphin</strong> is the world&rsquo;s most advanced Nintendo GameCube and Wii emulator. Developed since 2003, it offers near-perfect compatibility, spectacular graphical improvements, and unique features like online gaming and virtual reality.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / macOS / Android</li>
+<li><strong>CPU</strong>: Intel Core i5-4690 / AMD Ryzen 3 1200</li>
+<li><strong>RAM</strong>: 4 GB</li>
+<li><strong>GPU</strong>: DirectX 11.1 compatible (Intel HD 4000+)</li>
+<li><strong>Storage</strong>: 4 GB free space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i5-8600K / AMD Ryzen 5 2600X</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1060 / AMD RX 580 or higher</li>
+<li><strong>Storage</strong>: SSD with 20+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration-4kvr">
+<a class="header-anchor" href="#optimal-configuration-4kvr"></a>
+Optimal Configuration (4K/VR)
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-10700K / AMD Ryzen 7 3700X</li>
+<li><strong>RAM</strong>: 16 GB</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3070 / AMD RX 6700 XT or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 50+ GB free space</li>
+</ul>
+<h2 id="-step-1-downloading-dolphin">
+<a class="header-anchor" href="#-step-1-downloading-dolphin"></a>
+🔧 Step 1: Downloading Dolphin
+</h2><h3 id="option-1-stable-version-recommended">
+<a class="header-anchor" href="#option-1-stable-version-recommended"></a>
+Option 1: Stable Version (Recommended)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download Dolphin 5.0&rdquo;</li>
+<li><strong>Download</strong> <code>dolphin-x64-5.0.zip</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>C:\Dolphin</code>)</li>
+</ol>
+<h3 id="option-2-betadevelopment-versions">
+<a class="header-anchor" href="#option-2-betadevelopment-versions"></a>
+Option 2: Beta/Development Versions
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Development builds with new features</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/dev/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Advantages:
+</span></span><span style="display:flex;"><span>- Latest improvements
+</span></span><span style="display:flex;"><span>- New fixes
+</span></span><span style="display:flex;"><span>- Experimental features
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Disadvantages:
+</span></span><span style="display:flex;"><span>- Potentially unstable
+</span></span><span style="display:flex;"><span>- Possible bugs
+</span></span></code></pre></div><h3 id="option-3-dolphin-android">
+<a class="header-anchor" href="#option-3-dolphin-android"></a>
+Option 3: Dolphin Android
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimized mobile version</span>
+</span></span><span style="display:flex;"><span>https://play.google.com/store/apps/details?id<span style="color:#f92672">=</span>org.dolphinemu.dolphinemu
+</span></span></code></pre></div><h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Organize your files with this structure:</p>
+<pre tabindex="0"><code>Dolphin/
+├── Dolphin.exe              # Main executable
+├── games/                   # Your ROMs and ISOs
+│   ├── GameCube/            # Games .iso/.gcm/.gcz
+│   ├── Wii/                 # Games .iso/.wbfs/.wad
+│   └── WiiWare/             # Downloadable games .wad
+├── saves/                   # Exported saves
+│   ├── GC/                  # GameCube memory cards
+│   └── Wii/                 # Wii system data
+├── screenshots/             # Screenshots
+├── textures/                # HD texture packs
+│   └── [Game-ID]/           # Textures per game
+├── maps/                    # Virtual memory cards
+├── wfs/                     # Wii U file system
+└── load/                    # AR codes and mods
+    ├── Riivolution/         # Riivolution mods
+    └── Gecko/               # Gecko codes
+</code></pre><h2 id="-step-3-installation-and-first-launch">
+<a class="header-anchor" href="#-step-3-installation-and-first-launch"></a>
+⚙️ Step 3: Installation and First Launch
+</h2><h3 id="installing-windows-prerequisites">
+<a class="header-anchor" href="#installing-windows-prerequisites"></a>
+Installing Windows Prerequisites
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span></code></pre></div><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First Launch
+</h3><ol>
+<li><strong>Run</strong> <code>Dolphin.exe</code></li>
+<li><strong>Accept</strong> the default configuration</li>
+<li><strong>Configure</strong> game folder: <code>Config → Paths</code></li>
+<li><strong>Add</strong> your ROM folders</li>
+</ol>
+<h2 id="-step-4-basic-system-configuration">
+<a class="header-anchor" href="#-step-4-basic-system-configuration"></a>
+🎯 Step 4: Basic System Configuration
+</h2><h3 id="general-settings">
+<a class="header-anchor" href="#general-settings"></a>
+General Settings
+</h3><pre tabindex="0"><code>Config → General
+</code></pre><h4 id="general-tab">
+<a class="header-anchor" href="#general-tab"></a>
+General Tab
+</h4><ul>
+<li><strong>Enable Dual Core</strong>: ✅ Enabled (greatly improves performance)</li>
+<li><strong>Enable Idle Skipping</strong>: ✅ Enabled</li>
+<li><strong>Enable Cheats</strong>: ✅ Enabled (if you want to use codes)</li>
+<li><strong>CPU Emulator Engine</strong>: JIT Recompiler (64-bit) [fastest]</li>
+</ul>
+<h4 id="interface-tab">
+<a class="header-anchor" href="#interface-tab"></a>
+Interface Tab
+</h4><ul>
+<li><strong>Confirm on Stop</strong>: ✅ Enabled (prevents accidental stops)</li>
+<li><strong>Use Panic Handlers</strong>: ✅ Enabled</li>
+<li><strong>On-Screen Display Messages</strong>: ✅ Enabled</li>
+<li><strong>Show Active Title in Window Title</strong>: ✅ Enabled</li>
+</ul>
+<h3 id="controller-configuration">
+<a class="header-anchor" href="#controller-configuration"></a>
+Controller Configuration
+</h3><h4 id="gamecube-controller">
+<a class="header-anchor" href="#gamecube-controller"></a>
+GameCube Controller
+</h4><pre tabindex="0"><code>Controllers → GameCube Controllers
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>Port 1</strong>: Standard Controller</li>
+<li><strong>Device</strong>: Your controller (Xbox, PlayStation, etc.)</li>
+</ul>
+<p><strong>Automatic mapping:</strong></p>
+<ol>
+<li><strong>Click</strong> &ldquo;Configure&rdquo; for Port 1</li>
+<li><strong>Select</strong> your device</li>
+<li><strong>Click</strong> &ldquo;Auto Configure For:&rdquo;</li>
+<li><strong>Choose</strong> your controller type</li>
+<li><strong>Test</strong> all buttons</li>
+</ol>
+<h4 id="wiimote">
+<a class="header-anchor" href="#wiimote"></a>
+Wiimote
+</h4><pre tabindex="0"><code>Controllers → Wiimote
+</code></pre><p><strong>Available options:</strong></p>
+<ul>
+<li><strong>None</strong>: No Wiimote</li>
+<li><strong>Emulated Wiimote</strong>: Emulation with standard controller</li>
+<li><strong>Real Wiimote</strong>: Real Wiimote via Bluetooth</li>
+</ul>
+<p><strong>Emulated Wiimote Configuration:</strong></p>
+<pre tabindex="0"><code>1. Select &#34;Emulated Wiimote&#34; for Wiimote 1
+2. Configure → Extension: Nunchuk (if required)
+3. Map controls:
+   - A → A (controller)
+   - B → B (controller)
+   - D-Pad → D-Pad
+   - Nunchuk Stick → Analog stick
+   - Motion Controls → Gyroscope (if supported)
+</code></pre><h2 id="-step-5-optimal-graphics-configuration">
+<a class="header-anchor" href="#-step-5-optimal-graphics-configuration"></a>
+⚙️ Step 5: Optimal Graphics Configuration
+</h2><h3 id="basic-graphics-settings">
+<a class="header-anchor" href="#basic-graphics-settings"></a>
+Basic Graphics Settings
+</h3><pre tabindex="0"><code>Graphics → General
+</code></pre><h4 id="graphics-backend">
+<a class="header-anchor" href="#graphics-backend"></a>
+Graphics Backend
+</h4><ul>
+<li><strong>Backend</strong>: Vulkan (recommended) or Direct3D 11/12</li>
+<li><strong>Adapter</strong>: Your main GPU</li>
+<li><strong>Fullscreen Resolution</strong>: Your native resolution</li>
+<li><strong>Aspect Ratio</strong>: Auto or Force 16:9</li>
+</ul>
+<h4 id="visual-enhancements">
+<a class="header-anchor" href="#visual-enhancements"></a>
+Visual Enhancements
+</h4><pre tabindex="0"><code>Graphics → Enhancements
+</code></pre><p><strong>Essential enhancements:</strong></p>
+<ul>
+<li><strong>Internal Resolution</strong>: 2x Native (1056x528) or higher based on your GPU</li>
+<li><strong>Anti-Aliasing</strong>: 4x MSAA or higher</li>
+<li><strong>Anisotropic Filtering</strong>: 16x</li>
+<li><strong>Scaled EFB Copy</strong>: ✅ Enabled</li>
+<li><strong>Per-Pixel Lighting</strong>: ✅ Enabled (improves lighting)</li>
+<li><strong>Force Texture Filtering</strong>: ✅ Enabled</li>
+<li><strong>Widescreen Hack</strong>: ✅ Enabled (for games without native 16:9 support)</li>
+</ul>
+<h3 id="advanced-settings">
+<a class="header-anchor" href="#advanced-settings"></a>
+Advanced Settings
+</h3><pre tabindex="0"><code>Graphics → Advanced
+</code></pre><p><strong>Optimal configuration:</strong></p>
+<ul>
+<li><strong>Show FPS</strong>: ✅ Enabled (performance monitoring)</li>
+<li><strong>Enable Progressive Scan</strong>: ✅ Enabled</li>
+<li><strong>Backend Multithreading</strong>: ✅ Enabled</li>
+<li><strong>Prefer Exclusive Fullscreen</strong>: ✅ Enabled (reduces latency)</li>
+</ul>
+<p><strong>Accuracy settings:</strong></p>
+<ul>
+<li><strong>Accuracy</strong>: Safe (recommended) or Fast (if performance issues)</li>
+<li><strong>GPU Texture Decoding</strong>: ✅ Enabled</li>
+<li><strong>Store EFB Copies to Texture Only</strong>: ✅ Enabled (saves VRAM)</li>
+</ul>
+<h2 id="-step-6-adding-and-managing-games">
+<a class="header-anchor" href="#-step-6-adding-and-managing-games"></a>
+🎮 Step 6: Adding and Managing Games
+</h2><h3 id="supported-formats">
+<a class="header-anchor" href="#supported-formats"></a>
+Supported Formats
+</h3><h4 id="gamecube">
+<a class="header-anchor" href="#gamecube"></a>
+GameCube
+</h4><ul>
+<li><strong>.iso</strong>: Standard disc image (recommended)</li>
+<li><strong>.gcm</strong>: GameCube Master (identical to .iso)</li>
+<li><strong>.gcz</strong>: Compressed GameCube (saves space)</li>
+<li><strong>.ciso</strong>: Compressed ISO</li>
+<li><strong>.wbfs</strong>: Rare for GameCube</li>
+</ul>
+<h4 id="wii">
+<a class="header-anchor" href="#wii"></a>
+Wii
+</h4><ul>
+<li><strong>.iso</strong>: Standard disc image</li>
+<li><strong>.wbfs</strong>: Wii Backup File System (native format)</li>
+<li><strong>.wad</strong>: WiiWare/Virtual Console</li>
+<li><strong>.dol/.elf</strong>: Wii Homebrew</li>
+</ul>
+<h3 id="dumping-your-own-games">
+<a class="header-anchor" href="#dumping-your-own-games"></a>
+Dumping Your Own Games
+</h3><h4 id="gamecube-with-softmodded-wii">
+<a class="header-anchor" href="#gamecube-with-softmodded-wii"></a>
+GameCube (with softmodded Wii)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With CleanRip</span>
+</span></span><span style="display:flex;"><span>1. Install Homebrew Channel on your Wii
+</span></span><span style="display:flex;"><span>2. Download CleanRip
+</span></span><span style="display:flex;"><span>3. Insert GameCube disc
+</span></span><span style="display:flex;"><span>4. Launch CleanRip → Dump to SD/USB
+</span></span><span style="display:flex;"><span>5. Transfer .iso file to PC
+</span></span></code></pre></div><h4 id="wii-with-cfw">
+<a class="header-anchor" href="#wii-with-cfw"></a>
+Wii (with CFW)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With USB Loader GX</span>
+</span></span><span style="display:flex;"><span>1. Install CFW <span style="color:#f92672">(</span>LetterBomb + HackMii<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Install USB Loader GX
+</span></span><span style="display:flex;"><span>3. Connect USB hard drive formatted as WBFS
+</span></span><span style="display:flex;"><span>4. Dump games from USB Loader GX
+</span></span><span style="display:flex;"><span>5. Copy .wbfs files to PC
+</span></span></code></pre></div><h3 id="organizing-games-in-dolphin">
+<a class="header-anchor" href="#organizing-games-in-dolphin"></a>
+Organizing Games in Dolphin
+</h3><h4 id="automatic-addition">
+<a class="header-anchor" href="#automatic-addition"></a>
+Automatic addition
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Config → Paths
+</span></span><span style="display:flex;"><span>2. Add your game folders
+</span></span><span style="display:flex;"><span>3. ✅ Check <span style="color:#e6db74">&#34;Search Subfolders&#34;</span>
+</span></span><span style="display:flex;"><span>4. Dolphin scans and displays automatically
+</span></span></code></pre></div><h4 id="metadata-and-artwork">
+<a class="header-anchor" href="#metadata-and-artwork"></a>
+Metadata and artwork
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic addition via GameTDB</span>
+</span></span><span style="display:flex;"><span>1. Right-click on a game → Properties
+</span></span><span style="display:flex;"><span>2. Info tab → Update...
+</span></span><span style="display:flex;"><span>3. Downloads description, artwork, screenshots
+</span></span></code></pre></div><h2 id="-advanced-optimization-by-game-type">
+<a class="header-anchor" href="#-advanced-optimization-by-game-type"></a>
+🚀 Advanced Optimization by Game Type
+</h2><h3 id="super-mario-galaxy-1--2">
+<a class="header-anchor" href="#super-mario-galaxy-1--2"></a>
+Super Mario Galaxy 1 &amp; 2
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimal configuration</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 3x-4x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 8x MSAA
+</span></span><span style="display:flex;"><span>- Anisotropic Filtering: 16x
+</span></span><span style="display:flex;"><span>- Per-Pixel Lighting: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GameINI tweaks:
+</span></span><span style="display:flex;"><span>- EFBToTextureEnable <span style="color:#f92672">=</span> True
+</span></span><span style="display:flex;"><span>- SafeTextureCacheColorSamples <span style="color:#f92672">=</span> <span style="color:#ae81ff">512</span>
+</span></span></code></pre></div><h3 id="the-legend-of-zelda-twilight-princess">
+<a class="header-anchor" href="#the-legend-of-zelda-twilight-princess"></a>
+The Legend of Zelda: Twilight Princess
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Special settings</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Scaled EFB Copy: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Store EFB Copies to Texture Only: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Specific fixes:
+</span></span><span style="display:flex;"><span>- EFBAccessEnable <span style="color:#f92672">=</span> True <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> correct graphics<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- EFBEmulateFormatChanges <span style="color:#f92672">=</span> True
+</span></span></code></pre></div><h3 id="metroid-prime-trilogy">
+<a class="header-anchor" href="#metroid-prime-trilogy"></a>
+Metroid Prime Trilogy
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Recommended configuration</span>
+</span></span><span style="display:flex;"><span>Controls:
+</span></span><span style="display:flex;"><span>- Wiimote → Emulated
+</span></span><span style="display:flex;"><span>- Extension: None
+</span></span><span style="display:flex;"><span>- Motion Plus: ✅ If MP3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x Native <span style="color:#f92672">(</span>demanding game<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 4x MSAA
+</span></span><span style="display:flex;"><span>- Anisotropic Filtering: 16x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Idle Skipping: ✅ Enabled
+</span></span></code></pre></div><h3 id="super-smash-bros-melee">
+<a class="header-anchor" href="#super-smash-bros-melee"></a>
+Super Smash Bros. Melee
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Competitive configuration</span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ❌ Disabled <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> netplay stability<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Idle Skipping: ❌ Disabled
+</span></span><span style="display:flex;"><span>- CPU Clock Override: 100% <span style="color:#f92672">(</span>no overclock<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: Off <span style="color:#f92672">(</span>reduces latency<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- V-Sync: ❌ Disabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Backend: XAudio2 <span style="color:#f92672">(</span>Windows<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Latency: 2ms <span style="color:#f92672">(</span>minimum<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="mario-kart-wii">
+<a class="header-anchor" href="#mario-kart-wii"></a>
+Mario Kart Wii
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Online racing optimization</span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Enabled
+</span></span><span style="display:flex;"><span>- MMU Speed: Fast <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> Wiimmfi<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 4x MSAA
+</span></span><span style="display:flex;"><span>- Widescreen Hack: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Network:
+</span></span><span style="display:flex;"><span>- Wiimmfi configuration <span style="color:#66d9ef">for</span> online play
+</span></span></code></pre></div><h2 id="-advanced-features">
+<a class="header-anchor" href="#-advanced-features"></a>
+🌐 Advanced Features
+</h2><h3 id="netplay-online-gaming">
+<a class="header-anchor" href="#netplay-online-gaming"></a>
+Netplay (Online Gaming)
+</h3><h4 id="netplay-configuration">
+<a class="header-anchor" href="#netplay-configuration"></a>
+Netplay Configuration
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Host a session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay
+</span></span><span style="display:flex;"><span>2. Host tab → Configure settings:
+</span></span><span style="display:flex;"><span>   - Game: Select your game
+</span></span><span style="display:flex;"><span>   - Players: Number of players
+</span></span><span style="display:flex;"><span>   - Buffer: 4-8 <span style="color:#f92672">(</span>based on ping<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Start → Share session code
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Join a session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay
+</span></span><span style="display:flex;"><span>2. Connect tab → Enter code
+</span></span><span style="display:flex;"><span>3. Connect and wait <span style="color:#66d9ef">for</span> synchronization
+</span></span></code></pre></div><h4 id="optimal-netplay-settings">
+<a class="header-anchor" href="#optimal-netplay-settings"></a>
+Optimal Netplay Settings
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For stable experience</span>
+</span></span><span style="display:flex;"><span>General:
+</span></span><span style="display:flex;"><span>- Dual Core: ❌ Disabled
+</span></span><span style="display:flex;"><span>- Idle Skipping: ❌ Disabled
+</span></span><span style="display:flex;"><span>- Audio: DSP HLE <span style="color:#f92672">(</span>more stable<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Backend: Direct3D <span style="color:#ae81ff">11</span> <span style="color:#f92672">(</span>more stable than Vulkan<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x Native <span style="color:#f92672">(</span>reduces network load<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Enhancements: Minimal
+</span></span></code></pre></div><h3 id="virtual-reality-gaming">
+<a class="header-anchor" href="#virtual-reality-gaming"></a>
+Virtual Reality Gaming
+</h3><h4 id="vr-prerequisites">
+<a class="header-anchor" href="#vr-prerequisites"></a>
+VR Prerequisites
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Required hardware</span>
+</span></span><span style="display:flex;"><span>- OpenVR compatible VR headset <span style="color:#f92672">(</span>Valve Index, HTC Vive, etc.<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- High-end GPU <span style="color:#f92672">(</span>RTX 3070+ recommended<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Powerful CPU <span style="color:#f92672">(</span>i7-8700K+ recommended<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="vr-configuration">
+<a class="header-anchor" href="#vr-configuration"></a>
+VR Configuration
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Enable VR mode</span>
+</span></span><span style="display:flex;"><span>1. Config → General → Enable VR
+</span></span><span style="display:flex;"><span>2. Graphics → Backend: OpenGL <span style="color:#f92672">(</span>required <span style="color:#66d9ef">for</span> VR<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Graphics → Enhancements:
+</span></span><span style="display:flex;"><span>   - Internal Resolution: 2x Native maximum
+</span></span><span style="display:flex;"><span>   - Anti-Aliasing: Disabled <span style="color:#f92672">(</span>saves GPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># VR compatible games</span>
+</span></span><span style="display:flex;"><span>- Metroid Prime 1, 2, <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>excellent<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- F-Zero GX <span style="color:#f92672">(</span>good<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Mario Kart Wii <span style="color:#f92672">(</span>decent<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="hd-texture-packs">
+<a class="header-anchor" href="#hd-texture-packs"></a>
+HD Texture Packs
+</h3><h4 id="installing-texture-packs">
+<a class="header-anchor" href="#installing-texture-packs"></a>
+Installing texture packs
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic method</span>
+</span></span><span style="display:flex;"><span>1. Download pack from Dolphin forums
+</span></span><span style="display:flex;"><span>2. Extract to: Dolphin/Load/Textures/<span style="color:#f92672">[</span>GameID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Graphics → Advanced → Load Custom Textures: ✅
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creating your own textures</span>
+</span></span><span style="display:flex;"><span>1. Graphics → Advanced → Dump Textures: ✅
+</span></span><span style="display:flex;"><span>2. Play the game to extract textures
+</span></span><span style="display:flex;"><span>3. Edit the extracted .png files
+</span></span><span style="display:flex;"><span>4. Place in Load/Textures/ folder
+</span></span></code></pre></div><h4 id="popular-texture-packs">
+<a class="header-anchor" href="#popular-texture-packs"></a>
+Popular texture packs
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Zelda Wind Waker HD</span>
+</span></span><span style="display:flex;"><span>- Resolution: 4x original textures
+</span></span><span style="display:flex;"><span>- Effects: Lighting improvements
+</span></span><span style="display:flex;"><span>- Download: Dolphin community forums
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Super Mario Sunshine HD</span>
+</span></span><span style="display:flex;"><span>- Textures: AI upscale + manual retouching
+</span></span><span style="display:flex;"><span>- UI: High-resolution interface
+</span></span><span style="display:flex;"><span>- Effects: Enhanced shadows
+</span></span></code></pre></div><h2 id="-dolphin-on-other-platforms">
+<a class="header-anchor" href="#-dolphin-on-other-platforms"></a>
+📱 Dolphin on Other Platforms
+</h2><h3 id="dolphin-android">
+<a class="header-anchor" href="#dolphin-android"></a>
+Dolphin Android
+</h3><h4 id="android-prerequisites">
+<a class="header-anchor" href="#android-prerequisites"></a>
+Android Prerequisites
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 9.0+ <span style="color:#f92672">(</span>API 28<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 855+ or Exynos 9820+
+</span></span><span style="display:flex;"><span>- 8GB RAM minimum <span style="color:#f92672">(</span>12GB <span style="color:#66d9ef">for</span> Wii<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- GPU Adreno 640+ or Mali-G76+
+</span></span><span style="display:flex;"><span>- 64GB free storage
+</span></span></code></pre></div><h4 id="android-optimizations">
+<a class="header-anchor" href="#android-optimizations"></a>
+Android Optimizations
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU Core: JIT <span style="color:#f92672">(</span>faster on mobile<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Skip EFB Access: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Backend: Vulkan <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> supported<span style="color:#f92672">)</span> or OpenGL ES
+</span></span><span style="display:flex;"><span>- Internal Resolution: 1x Native
+</span></span><span style="display:flex;"><span>- Enhancements: Minimal to preserve battery
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Controls:
+</span></span><span style="display:flex;"><span>- Customizable touch overlay
+</span></span><span style="display:flex;"><span>- Bluetooth controller support
+</span></span><span style="display:flex;"><span>- Wiimote via phone sensors
+</span></span></code></pre></div><h3 id="dolphin-linux">
+<a class="header-anchor" href="#dolphin-linux"></a>
+Dolphin Linux
+</h3><h4 id="ubuntudebian-installation">
+<a class="header-anchor" href="#ubuntudebian-installation"></a>
+Ubuntu/Debian Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official PPA</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:dolphin-emu/ppa
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Flatpak</span>
+</span></span><span style="display:flex;"><span>flatpak install flathub org.DolphinEmu.dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Source compilation</span>
+</span></span><span style="display:flex;"><span>sudo apt install build-essential cmake qt5-default
+</span></span><span style="display:flex;"><span>git clone https://github.com/dolphin-emu/dolphin.git
+</span></span><span style="display:flex;"><span>cd dolphin <span style="color:#f92672">&amp;&amp;</span> mkdir build <span style="color:#f92672">&amp;&amp;</span> cd build
+</span></span><span style="display:flex;"><span>cmake .. -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Release
+</span></span><span style="display:flex;"><span>make -j<span style="color:#66d9ef">$(</span>nproc<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><h4 id="arch-linux-installation">
+<a class="header-anchor" href="#arch-linux-installation"></a>
+Arch Linux Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># From official repos</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Git version (latest)</span>
+</span></span><span style="display:flex;"><span>yay -S dolphin-emu-git
+</span></span></code></pre></div><h3 id="dolphin-macos">
+<a class="header-anchor" href="#dolphin-macos"></a>
+Dolphin macOS
+</h3><h4 id="macos-installation">
+<a class="header-anchor" href="#macos-installation"></a>
+macOS Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Homebrew</span>
+</span></span><span style="display:flex;"><span>brew install --cask dolphin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Direct download</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compilation (developers)</span>
+</span></span><span style="display:flex;"><span>brew install cmake qt5 pkg-config
+</span></span><span style="display:flex;"><span>git clone https://github.com/dolphin-emu/dolphin.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Follow GitHub instructions</span>
+</span></span></code></pre></div><h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="performance-issues">
+<a class="header-anchor" href="#performance-issues"></a>
+Performance Issues
+</h3><h4 id="lowunstable-fps">
+<a class="header-anchor" href="#lowunstable-fps"></a>
+Low/unstable FPS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions by priority:
+</span></span><span style="display:flex;"><span>1. Enable Dual Core + Idle Skipping
+</span></span><span style="display:flex;"><span>2. Reduce Internal Resolution to 1x-2x
+</span></span><span style="display:flex;"><span>3. Disable Anti-Aliasing temporarily
+</span></span><span style="display:flex;"><span>4. Change backend <span style="color:#f92672">(</span>Vulkan ↔ D3D11<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>5. Close background applications
+</span></span><span style="display:flex;"><span>6. Check CPU/GPU temperatures
+</span></span></code></pre></div><h4 id="stutteringmicro-freezes">
+<a class="header-anchor" href="#stutteringmicro-freezes"></a>
+Stuttering/micro-freezes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections:
+</span></span><span style="display:flex;"><span>1. Enable Backend Multithreading
+</span></span><span style="display:flex;"><span>2. Use SSD <span style="color:#66d9ef">for</span> ROMs
+</span></span><span style="display:flex;"><span>3. Increase Windows virtual RAM
+</span></span><span style="display:flex;"><span>4. Disable Windows Game Mode
+</span></span><span style="display:flex;"><span>5. Test different audio backends
+</span></span></code></pre></div><h3 id="graphics-issues">
+<a class="header-anchor" href="#graphics-issues"></a>
+Graphics Issues
+</h3><h4 id="missingcorrupted-textures">
+<a class="header-anchor" href="#missingcorrupted-textures"></a>
+Missing/corrupted textures
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Graphics fixes:
+</span></span><span style="display:flex;"><span>1. Store EFB Copies to Texture Only: ✅
+</span></span><span style="display:flex;"><span>2. EFB Access: Safe <span style="color:#f92672">(</span>from Advanced<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Change Accuracy Level: Safe
+</span></span><span style="display:flex;"><span>4. Disable custom textures temporarily
+</span></span><span style="display:flex;"><span>5. Clear shader cache
+</span></span></code></pre></div><h4 id="incorrect-watertransparency-effects">
+<a class="header-anchor" href="#incorrect-watertransparency-effects"></a>
+Incorrect water/transparency effects
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Specific solutions:
+</span></span><span style="display:flex;"><span>1. EFB Emulate Format Changes: ✅
+</span></span><span style="display:flex;"><span>2. Force Texture Filtering: ❌ Disabled
+</span></span><span style="display:flex;"><span>3. Backend: OpenGL or Vulkan
+</span></span><span style="display:flex;"><span>4. GPU Texture Decoding: ❌ Disabled
+</span></span></code></pre></div><h3 id="audio-issues">
+<a class="header-anchor" href="#audio-issues"></a>
+Audio Issues
+</h3><h4 id="desynchronized-audio">
+<a class="header-anchor" href="#desynchronized-audio"></a>
+Desynchronized audio
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio corrections:
+</span></span><span style="display:flex;"><span>1. Audio Backend: Change <span style="color:#f92672">(</span>XAudio2, WASAPI, etc.<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Latency: Increase to 20-40ms
+</span></span><span style="display:flex;"><span>3. Audio Stretching: ✅ Enabled
+</span></span><span style="display:flex;"><span>4. DSP Emulation: HLE <span style="color:#f92672">(</span>more stable<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="cracklingdistortion">
+<a class="header-anchor" href="#cracklingdistortion"></a>
+Crackling/distortion
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Close other audio applications
+</span></span><span style="display:flex;"><span>2. Change system audio sample rate
+</span></span><span style="display:flex;"><span>3. Disable Windows audio effects
+</span></span><span style="display:flex;"><span>4. Test DSP LLE backend <span style="color:#f92672">(</span>more accurate<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="controller-issues">
+<a class="header-anchor" href="#controller-issues"></a>
+Controller Issues
+</h3><h4 id="controller-not-detected">
+<a class="header-anchor" href="#controller-not-detected"></a>
+Controller not detected
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Controller diagnostics:
+</span></span><span style="display:flex;"><span>1. Controllers → Refresh <span style="color:#f92672">(</span>rescan devices<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Test with different drivers <span style="color:#f92672">(</span>XInput, DInput<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Check Steam Input <span style="color:#f92672">(</span>may interfere<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Use administrator mode
+</span></span><span style="display:flex;"><span>5. Reinstall controller drivers
+</span></span></code></pre></div><h4 id="problematic-bluetooth-wiimote">
+<a class="header-anchor" href="#problematic-bluetooth-wiimote"></a>
+Problematic Bluetooth Wiimote
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Bluetooth configuration:
+</span></span><span style="display:flex;"><span>1. Use compatible Bluetooth adapter
+</span></span><span style="display:flex;"><span>2. Windows: Disable <span style="color:#e6db74">&#34;Allow computer to turn off&#34;</span>
+</span></span><span style="display:flex;"><span>3. Pair via Dolphin <span style="color:#f92672">(</span>Tools → Connect Wiimote<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Permanent mode: Continuous Scanning
+</span></span></code></pre></div><h2 id="-compatibility-database">
+<a class="header-anchor" href="#-compatibility-database"></a>
+📊 Compatibility Database
+</h2><h3 id="gamecube-statistics">
+<a class="header-anchor" href="#gamecube-statistics"></a>
+GameCube Statistics
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~85%</td>
+          <td>Works perfectly</td>
+      </tr>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~12%</td>
+          <td>Some minor bugs</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~2%</td>
+          <td>Starts but major issues</td>
+      </tr>
+      <tr>
+          <td><strong>Broken</strong></td>
+          <td>~1%</td>
+          <td>Doesn&rsquo;t work</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="wii-statistics">
+<a class="header-anchor" href="#wii-statistics"></a>
+Wii Statistics
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~75%</td>
+          <td>Works perfectly</td>
+      </tr>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~20%</td>
+          <td>Acceptable minor bugs</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~4%</td>
+          <td>Issues but playable</td>
+      </tr>
+      <tr>
+          <td><strong>Broken</strong></td>
+          <td>~1%</td>
+          <td>Non-functional</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="best-optimized-games">
+<a class="header-anchor" href="#best-optimized-games"></a>
+Best Optimized Games
+</h3><h4 id="gamecube---perfect-compatibility">
+<a class="header-anchor" href="#gamecube---perfect-compatibility"></a>
+GameCube - Perfect Compatibility
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Super Mario Sunshine
+</span></span><span style="display:flex;"><span>✅ The Legend of Zelda: Wind Waker
+</span></span><span style="display:flex;"><span>✅ Metroid Prime <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Melee
+</span></span><span style="display:flex;"><span>✅ F-Zero GX
+</span></span><span style="display:flex;"><span>✅ Paper Mario: The Thousand-Year Door
+</span></span><span style="display:flex;"><span>✅ Pikmin <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Animal Crossing
+</span></span><span style="display:flex;"><span>✅ Luigi<span style="color:#960050;background-color:#1e0010">&#39;</span>s Mansion
+</span></span><span style="display:flex;"><span>✅ Mario Kart: Double Dash
+</span></span></code></pre></div><h4 id="wii---excellent-support">
+<a class="header-anchor" href="#wii---excellent-support"></a>
+Wii - Excellent Support
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Super Mario Galaxy <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ The Legend of Zelda: Twilight Princess
+</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Brawl
+</span></span><span style="display:flex;"><span>✅ Mario Kart Wii
+</span></span><span style="display:flex;"><span>✅ Donkey Kong Country Returns
+</span></span><span style="display:flex;"><span>✅ New Super Mario Bros. Wii
+</span></span><span style="display:flex;"><span>✅ Wii Sports/Resort
+</span></span><span style="display:flex;"><span>✅ Metroid Prime 3: Corruption
+</span></span></code></pre></div><h2 id="-resources-and-community">
+<a class="header-anchor" href="#-resources-and-community"></a>
+🌐 Resources and Community
+</h2><h3 id="official-sites">
+<a class="header-anchor" href="#official-sites"></a>
+Official Sites
+</h3><ul>
+<li><a href="https://dolphin-emu.org/">🏠 Official Dolphin Site</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu">📱 Dolphin Android</a></li>
+<li><a href="https://wiki.dolphin-emu.org/">📚 Developer Wiki</a></li>
+<li><a href="https://wiki.dolphin-emu.org/index.php?title=GameCube_Compatibility_List">📊 Compatibility Database</a></li>
+</ul>
+<h3 id="active-communities">
+<a class="header-anchor" href="#active-communities"></a>
+Active Communities
+</h3><ul>
+<li><a href="https://discord.gg/GQMFT7J">💬 Dolphin Discord</a></li>
+<li><a href="https://www.reddit.com/r/DolphinEmulator/">🗨️ Reddit r/DolphinEmulator</a></li>
+<li><a href="https://forums.dolphin-emu.org/">🌐 Official Forums</a></li>
+<li><a href="https://www.youtube.com/results?search_query=dolphin&#43;emulator&#43;guide">📺 YouTube Guides</a></li>
+</ul>
+<h3 id="mod-and-texture-resources">
+<a class="header-anchor" href="#mod-and-texture-resources"></a>
+Mod and Texture Resources
+</h3><ul>
+<li><a href="https://github.com/dolphin-emu/dolphin">💻 GitHub Dolphin</a></li>
+<li><a href="https://forums.dolphin-emu.org/Forum-custom-textures">🎨 Texture packs forum</a></li>
+<li><a href="https://gamebanana.com/games/6293">🔧 GameBanana mods</a></li>
+<li><a href="https://www.romhacking.net/">🎮 Romhacks and mods</a></li>
+</ul>
+<h3 id="tools-and-utilities">
+<a class="header-anchor" href="#tools-and-utilities"></a>
+Tools and Utilities
+</h3><ul>
+<li><a href="https://wiibrew.org/wiki/CleanRip">🔧 CleanRip</a> - GameCube/Wii dump</li>
+<li><a href="https://sourceforge.net/projects/usbloadergx/">📁 USB Loader GX</a> - Wii manager</li>
+<li><a href="https://wiimmfi.de/">🎯 Wiimmfi</a> - Nintendo Wi-Fi replacement servers</li>
+<li><a href="https://www.gametdb.com/">🔍 GameTDB</a> - Metadata database</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Can Dolphin play all GameCube/Wii games?</strong>
+<strong>A:</strong> About 95% of games work perfectly or with minor bugs. Check the compatibility list.</p>
+<p><strong>Q: Can I use my real GameCube controllers?</strong>
+<strong>A:</strong> Yes, with an official Nintendo GameCube-USB adapter or Mayflash compatible.</p>
+<p><strong>Q: Do real console saves work?</strong>
+<strong>A:</strong> Yes, you can import/export your saves with homebrew like GCMM.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Vulkan or Direct3D?</strong>
+<strong>A:</strong> Vulkan generally offers better performance on recent GPUs. D3D11 is more stable on older systems.</p>
+<p><strong>Q: Should I enable Dual Core?</strong>
+<strong>A:</strong> Yes for better performance, except for netplay where it should be disabled.</p>
+<p><strong>Q: What internal resolution to choose?</strong>
+<strong>A:</strong> 2x Native (856x528) is a good compromise. 4x+ for powerful GPUs.</p>
+<h3 id="common-issues">
+<a class="header-anchor" href="#common-issues"></a>
+Common Issues
+</h3><p><strong>Q: Game lags despite powerful PC?</strong>
+<strong>A:</strong> Some games are more demanding. Enable Dual Core, reduce resolution, change backend.</p>
+<p><strong>Q: Crackling audio?</strong>
+<strong>A:</strong> Change audio backend, increase latency, close other audio apps.</p>
+<p><strong>Q: Wiimote won&rsquo;t connect?</strong>
+<strong>A:</strong> Check Bluetooth adapter, use &ldquo;Continuous Scanning&rdquo;, pair via Dolphin.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Dolphin is the reference GameCube/Wii emulator that offers:</p>
+<ul>
+<li>✅ <strong>Exceptional compatibility</strong> with 95%+ of games</li>
+<li>✅ <strong>Massive graphics improvements</strong> (4K, anti-aliasing, etc.)</li>
+<li>✅ <strong>Unique features</strong> (netplay, VR, HD texture packs)</li>
+<li>✅ <strong>Excellent performance</strong> even on modest hardware</li>
+<li>✅ <strong>Complete multiplatform support</strong></li>
+<li>✅ <strong>Huge community</strong> with mods and improvements</li>
+<li>✅ <strong>Active development</strong> for over 20 years</li>
+</ul>
+<p>With this complete guide, you now master:</p>
+<ul>
+<li><strong>Installation</strong> and optimal configuration</li>
+<li><strong>Performance optimization</strong> per game</li>
+<li><strong>Advanced features</strong> (netplay, VR, mods)</li>
+<li><strong>Common problem resolution</strong></li>
+<li><strong>Usage</strong> on all platforms</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Legal reminder</strong>: Only use games you legally own. Respect copyrights and support Nintendo by purchasing their creations.</p></blockquote>
+<p><strong>Rediscover your GameCube/Wii classics in high definition! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://axekin.com/en/post/dolphin/">https://axekin.com/en/post/dolphin/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Complete Guide: Dolphin Installation and Configuration</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/en/post/dolphin/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/en/post/dolphin/&amp;text=Complete%20Guide:%20Dolphin%20Installation%20and%20Configuration&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/en/post/dolphin/&amp;title=Complete%20Guide:%20Dolphin%20Installation%20and%20Configuration&amp;summary=Detailed%20tutorial%20for%20installing,%20configuring%20and%20optimizing%20the%20Nintendo%20Wii/GameCube%20emulator%20Dolphin%20-%20Best%20settings%20and%20performance%20tips&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/en/post/dolphin/&amp;title=Complete%20Guide:%20Dolphin%20Installation%20and%20Configuration" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Dolphin Installation and Configuration">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/dolphin"
+        rel="tag"
+        >DOLPHIN</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nintendo-wii"
+        rel="tag"
+        >NINTENDO-WII</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/gamecube"
+        rel="tag"
+        >GAMECUBE</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/installation"
+        rel="tag"
+        >INSTALLATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/configuration"
+        rel="tag"
+        >CONFIGURATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/optimization"
+        rel="tag"
+        >OPTIMIZATION</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/yuzu-ryujinx-backup.webp"
+            data-sizes="auto"
+            alt="How to Reinstall Yuzu &amp; Ryujinx While Keeping Your Save Files"
+            class="lazyload"
+          /><a href="/en/post/reinstall_yuzu_ryujinx/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">How to Reinstall Yuzu &amp; Ryujinx While Keeping Your Save Files</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/gpu-driver-reinstall.webp"
+            data-sizes="auto"
+            alt="Complete Guide: Clean GPU Driver Reinstallation"
+            class="lazyload"
+          /><a href="/en/post/reinstall_driver_gpu/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Complete Guide: Clean GPU Driver Reinstallation</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;27.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:15</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Made with ❤️ by Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-dolphin">🎮 Introduction to Dolphin</a></li>
+    <li><a href="#-system-requirements">📋 System Requirements</a>
+      <ul>
+        <li><a href="#minimum-configuration">Minimum Configuration</a></li>
+        <li><a href="#recommended-configuration">Recommended Configuration</a></li>
+        <li><a href="#optimal-configuration-4kvr">Optimal Configuration (4K/VR)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-1-downloading-dolphin">🔧 Step 1: Downloading Dolphin</a>
+      <ul>
+        <li><a href="#option-1-stable-version-recommended">Option 1: Stable Version (Recommended)</a></li>
+        <li><a href="#option-2-betadevelopment-versions">Option 2: Beta/Development Versions</a></li>
+        <li><a href="#option-3-dolphin-android">Option 3: Dolphin Android</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a></li>
+    <li><a href="#-step-3-installation-and-first-launch">⚙️ Step 3: Installation and First Launch</a>
+      <ul>
+        <li><a href="#installing-windows-prerequisites">Installing Windows Prerequisites</a></li>
+        <li><a href="#first-launch">First Launch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-4-basic-system-configuration">🎯 Step 4: Basic System Configuration</a>
+      <ul>
+        <li><a href="#general-settings">General Settings</a></li>
+        <li><a href="#controller-configuration">Controller Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-5-optimal-graphics-configuration">⚙️ Step 5: Optimal Graphics Configuration</a>
+      <ul>
+        <li><a href="#basic-graphics-settings">Basic Graphics Settings</a></li>
+        <li><a href="#advanced-settings">Advanced Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-6-adding-and-managing-games">🎮 Step 6: Adding and Managing Games</a>
+      <ul>
+        <li><a href="#supported-formats">Supported Formats</a></li>
+        <li><a href="#dumping-your-own-games">Dumping Your Own Games</a></li>
+        <li><a href="#organizing-games-in-dolphin">Organizing Games in Dolphin</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-optimization-by-game-type">🚀 Advanced Optimization by Game Type</a>
+      <ul>
+        <li><a href="#super-mario-galaxy-1--2">Super Mario Galaxy 1 &amp; 2</a></li>
+        <li><a href="#the-legend-of-zelda-twilight-princess">The Legend of Zelda: Twilight Princess</a></li>
+        <li><a href="#metroid-prime-trilogy">Metroid Prime Trilogy</a></li>
+        <li><a href="#super-smash-bros-melee">Super Smash Bros. Melee</a></li>
+        <li><a href="#mario-kart-wii">Mario Kart Wii</a></li>
+      </ul>
+    </li>
+    <li><a href="#-advanced-features">🌐 Advanced Features</a>
+      <ul>
+        <li><a href="#netplay-online-gaming">Netplay (Online Gaming)</a></li>
+        <li><a href="#virtual-reality-gaming">Virtual Reality Gaming</a></li>
+        <li><a href="#hd-texture-packs">HD Texture Packs</a></li>
+      </ul>
+    </li>
+    <li><a href="#-dolphin-on-other-platforms">📱 Dolphin on Other Platforms</a>
+      <ul>
+        <li><a href="#dolphin-android">Dolphin Android</a></li>
+        <li><a href="#dolphin-linux">Dolphin Linux</a></li>
+        <li><a href="#dolphin-macos">Dolphin macOS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#performance-issues">Performance Issues</a></li>
+        <li><a href="#graphics-issues">Graphics Issues</a></li>
+        <li><a href="#audio-issues">Audio Issues</a></li>
+        <li><a href="#controller-issues">Controller Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibility-database">📊 Compatibility Database</a>
+      <ul>
+        <li><a href="#gamecube-statistics">GameCube Statistics</a></li>
+        <li><a href="#wii-statistics">Wii Statistics</a></li>
+        <li><a href="#best-optimized-games">Best Optimized Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-resources-and-community">🌐 Resources and Community</a>
+      <ul>
+        <li><a href="#official-sites">Official Sites</a></li>
+        <li><a href="#active-communities">Active Communities</a></li>
+        <li><a href="#mod-and-texture-resources">Mod and Texture Resources</a></li>
+        <li><a href="#tools-and-utilities">Tools and Utilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+        <li><a href="#common-issues">Common Issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Complete Guide: Dolphin Installation and Configuration",
+          url: "https:\/\/axekin.com\/en\/post\/dolphin\/",
+          description: "Detailed tutorial for installing, configuring and optimizing the Nintendo Wii\/GameCube emulator Dolphin - Best settings and performance tips",
+          cover: "https:\/\/axekin.com\/images\/covers\/dolphin-emulator-guide.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

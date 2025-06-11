@@ -1,0 +1,1699 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Guide complet : Installation et configuration de melonDS | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo DS melonDS"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Guide complet : Installation et configuration de melonDS | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo DS melonDS"
+  />
+  <meta property="og:url" content="https://axekin.com/fr/post/melonds/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="melonDSNintendo DSÉmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/melonds\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+        <img style="visibility:hidden"></img><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="slide-up">Guide complet : Installation et configuration de melonDS</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-melonds">🎮 Introduction à melonDS</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-melonds">🔧 Étape 1 : Téléchargement de melonDS</a>
+      <ul>
+        <li><a href="#version-stable-recommandée">Version Stable (Recommandée)</a></li>
+        <li><a href="#versions-de-développement">Versions de développement</a></li>
+        <li><a href="#melonds-android">melonDS Android</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-du-bios-nintendo-ds">⚙️ Étape 3 : Installation du BIOS Nintendo DS</a>
+      <ul>
+        <li><a href="#fichiers-bios-requis">Fichiers BIOS requis</a></li>
+        <li><a href="#extraction-depuis-vraie-nintendo-ds">Extraction depuis vraie Nintendo DS</a></li>
+        <li><a href="#configuration-dans-melonds">Configuration dans melonDS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-de-base">⚙️ Étape 4 : Configuration de base</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#paramètres-3d">Paramètres 3D</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-vidéo-et-audio">⚙️ Étape 5 : Configuration vidéo et audio</a>
+      <ul>
+        <li><a href="#paramètres-vidéo">Paramètres vidéo</a></li>
+        <li><a href="#paramètres-audio">Paramètres audio</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--configuration-des-contrôles">⚙️ Étape 6 : Configuration des contrôles</a>
+      <ul>
+        <li><a href="#contrôles-clavier-par-défaut">Contrôles clavier (par défaut)</a></li>
+        <li><a href="#configuration-manette">Configuration manette</a></li>
+        <li><a href="#contrôles-tactiles">Contrôles tactiles</a></li>
+        <li><a href="#hotkeys-utiles">Hotkeys utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-7--gestion-des-jeux-et-roms">🎮 Étape 7 : Gestion des jeux et ROMs</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#lancement-de-jeux">Lancement de jeux</a></li>
+        <li><a href="#dumping-de-vos-propres-jeux">Dumping de vos propres jeux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-par-jeux-populaires">🚀 Optimisation par jeux populaires</a>
+      <ul>
+        <li><a href="#pokémon-diamondpearlplatinum">Pokémon Diamond/Pearl/Platinum</a></li>
+        <li><a href="#mario-kart-ds">Mario Kart DS</a></li>
+        <li><a href="#the-legend-of-zelda-spirit-tracks">The Legend of Zelda: Spirit Tracks</a></li>
+        <li><a href="#professor-layton-series">Professor Layton Series</a></li>
+        <li><a href="#new-super-mario-bros">New Super Mario Bros.</a></li>
+        <li><a href="#phoenix-wright-ace-attorney">Phoenix Wright: Ace Attorney</a></li>
+      </ul>
+    </li>
+    <li><a href="#-fonctionnalités-avancées">🛠️ Fonctionnalités avancées</a>
+      <ul>
+        <li><a href="#wi-fi-et-multijoueur-local">Wi-Fi et multijoueur local</a></li>
+        <li><a href="#savestates-et-backup">Savestates et backup</a></li>
+        <li><a href="#cheats-et-codes-action-replay">Cheats et codes Action Replay</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-de-lancement">Problèmes de lancement</a></li>
+        <li><a href="#problèmes-de-performance">Problèmes de performance</a></li>
+        <li><a href="#problèmes-graphiques">Problèmes graphiques</a></li>
+        <li><a href="#problèmes-audio">Problèmes audio</a></li>
+        <li><a href="#problèmes-de-contrôles">Problèmes de contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibilité-et-performance">📊 Compatibilité et performance</a>
+      <ul>
+        <li><a href="#statistiques-de-compatibilité">Statistiques de compatibilité</a></li>
+        <li><a href="#jeux-parfaitement-compatibles">Jeux parfaitement compatibles</a></li>
+        <li><a href="#benchmarks-performance">Benchmarks performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels">Sites officiels</a></li>
+        <li><a href="#communautés-actives">Communautés actives</a></li>
+        <li><a href="#développement-et-contribution">Développement et contribution</a></li>
+        <li><a href="#ressources-ds">Ressources DS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquentes">❓ FAQ - Questions fréquentes</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-02</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/tutoriels"
+      data-aos="zoom-in"
+      >TUTORIELS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-à-melonds">
+<a class="header-anchor" href="#-introduction-%c3%a0-melonds"></a>
+🎮 Introduction à melonDS
+</h2><p><strong>melonDS</strong> est un émulateur Nintendo DS open-source moderne et précis, développé depuis 2016. Il se distingue par sa compatibilité excellente, sa précision d&rsquo;émulation, et ses fonctionnalités avancées comme le Wi-Fi local, les savestates, et l&rsquo;amélioration graphique. C&rsquo;est l&rsquo;alternative moderne parfaite à DeSmuME.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 7+ (64-bit) / Linux / macOS</li>
+<li><strong>CPU</strong> : Intel Core i3-3220 / AMD FX-4300 (2+ cores, 2.5+ GHz)</li>
+<li><strong>RAM</strong> : 2 GB</li>
+<li><strong>GPU</strong> : OpenGL 3.2 compatible</li>
+<li><strong>Stockage</strong> : 1 GB d&rsquo;espace libre + espace jeux</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i5-4590 / AMD Ryzen 3 1200 (4+ cores, 3.0+ GHz)</li>
+<li><strong>RAM</strong> : 4 GB</li>
+<li><strong>GPU</strong> : OpenGL 4.3 / Vulkan 1.0 compatible</li>
+<li><strong>Stockage</strong> : SSD avec 20+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale">
+<a class="header-anchor" href="#configuration-optimale"></a>
+Configuration optimale
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-8700 / AMD Ryzen 5 2600 (6+ cores, 3.2+ GHz)</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1050 / AMD RX 560 ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 50+ GB d&rsquo;espace libre</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Note importante</strong> : melonDS est moins exigeant que la plupart des émulateurs modernes grâce à l&rsquo;architecture simple de la DS.</p></blockquote>
+<h2 id="-étape-1--téléchargement-de-melonds">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-melonds"></a>
+🔧 Étape 1 : Téléchargement de melonDS
+</h2><h3 id="version-stable-recommandée">
+<a class="header-anchor" href="#version-stable-recommand%c3%a9e"></a>
+Version Stable (Recommandée)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://melonds.kuribo64.net/downloads.php
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download Windows x64&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>melonds-0.9.5-windows-x64.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\melonDS</code>)</li>
+</ol>
+<h3 id="versions-de-développement">
+<a class="header-anchor" href="#versions-de-d%c3%a9veloppement"></a>
+Versions de développement
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Builds automatiques avec dernières fonctionnalités</span>
+</span></span><span style="display:flex;"><span>https://github.com/melonDS-emu/melonDS/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Avantages:
+</span></span><span style="display:flex;"><span>- Nouvelles améliorations
+</span></span><span style="display:flex;"><span>- Corrections récentes
+</span></span><span style="display:flex;"><span>- Fonctionnalités expérimentales
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risques:
+</span></span><span style="display:flex;"><span>- Potentiellement instable
+</span></span><span style="display:flex;"><span>- Régressions possibles
+</span></span></code></pre></div><h3 id="melonds-android">
+<a class="header-anchor" href="#melonds-android"></a>
+melonDS Android
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version mobile officielle</span>
+</span></span><span style="display:flex;"><span>https://play.google.com/store/apps/details?id<span style="color:#f92672">=</span>me.magnum.melonds
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Caractéristiques:
+</span></span><span style="display:flex;"><span>- Interface tactile optimisée
+</span></span><span style="display:flex;"><span>- Support manettes Bluetooth
+</span></span><span style="display:flex;"><span>- Synchronisation sauvegardes
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>melonDS/
+├── melonDS.exe              # Exécutable principal
+├── bios/                    # BIOS Nintendo DS (requis)
+│   ├── bios7.bin           # ARM7 BIOS
+│   ├── bios9.bin           # ARM9 BIOS
+│   └── firmware.bin        # Firmware DS
+├── games/                   # Vos ROMs Nintendo DS
+│   ├── nds/                # Jeux .nds standard
+│   ├── dsi/                # Jeux DSi .nds
+│   └── homebrew/           # Applications homebrew
+├── saves/                   # Données de sauvegarde
+│   ├── sav/                # Sauvegardes .sav
+│   └── states/             # Savestates .mln
+├── cheats/                  # Codes de triche
+│   └── usrcheat.dat        # Base de données AR
+├── screenshots/             # Captures d&#39;écran
+├── firmware/                # Firmwares alternatifs
+└── dldi/                   # Drivers DLDI homebrew
+</code></pre><h2 id="-étape-3--installation-du-bios-nintendo-ds">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-du-bios-nintendo-ds"></a>
+⚙️ Étape 3 : Installation du BIOS Nintendo DS
+</h2><h3 id="fichiers-bios-requis">
+<a class="header-anchor" href="#fichiers-bios-requis"></a>
+Fichiers BIOS requis
+</h3><blockquote>
+<p>⚠️ <strong>Obligatoire</strong> : Les fichiers BIOS Nintendo DS sont requis pour le fonctionnement optimal.</p></blockquote>
+<p><strong>Fichiers nécessaires :</strong></p>
+<ul>
+<li><code>bios7.bin</code> (16 KB) - ARM7 BIOS</li>
+<li><code>bios9.bin</code> (4 KB) - ARM9 BIOS</li>
+<li><code>firmware.bin</code> (256 KB) - Firmware DS</li>
+</ul>
+<h3 id="extraction-depuis-vraie-nintendo-ds">
+<a class="header-anchor" href="#extraction-depuis-vraie-nintendo-ds"></a>
+Extraction depuis vraie Nintendo DS
+</h3><h4 id="méthode-1--avec-flashcart">
+<a class="header-anchor" href="#m%c3%a9thode-1--avec-flashcart"></a>
+Méthode 1 : Avec flashcart
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Utilisation de GodMode9i ou similar</span>
+</span></span><span style="display:flex;"><span>1. Installez homebrew sur votre DS via flashcart
+</span></span><span style="display:flex;"><span>2. Utilisez GodMode9i pour extraire:
+</span></span><span style="display:flex;"><span>   - BIOS ARM7 → bios7.bin
+</span></span><span style="display:flex;"><span>   - BIOS ARM9 → bios9.bin
+</span></span><span style="display:flex;"><span>   - Firmware → firmware.bin
+</span></span><span style="display:flex;"><span>3. Transférez sur PC dans melonDS/bios/
+</span></span></code></pre></div><h4 id="méthode-2--via-dsi-avec-hiyacfw">
+<a class="header-anchor" href="#m%c3%a9thode-2--via-dsi-avec-hiyacfw"></a>
+Méthode 2 : Via DSi avec HiyaCFW
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Si vous avez une DSi moddée</span>
+</span></span><span style="display:flex;"><span>1. Installez HiyaCFW sur votre DSi
+</span></span><span style="display:flex;"><span>2. Utilisez dsidumper pour extraire:
+</span></span><span style="display:flex;"><span>   - BIOS files
+</span></span><span style="display:flex;"><span>   - Firmware complet
+</span></span><span style="display:flex;"><span>3. Copiez dans le dossier bios/
+</span></span></code></pre></div><h3 id="configuration-dans-melonds">
+<a class="header-anchor" href="#configuration-dans-melonds"></a>
+Configuration dans melonDS
+</h3><ol>
+<li><strong>Lancez</strong> <code>melonDS.exe</code></li>
+<li><code>Config → Emu settings → DS-mode</code></li>
+<li><strong>Configurez</strong> les chemins BIOS :
+<ul>
+<li><strong>DS ARM9 BIOS</strong> : <code>bios/bios9.bin</code></li>
+<li><strong>DS ARM7 BIOS</strong> : <code>bios/bios7.bin</code></li>
+<li><strong>DS Firmware</strong> : <code>bios/firmware.bin</code></li>
+</ul>
+</li>
+<li><strong>Redémarrez</strong> melonDS</li>
+</ol>
+<h2 id="-étape-4--configuration-de-base">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-de-base"></a>
+⚙️ Étape 4 : Configuration de base
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Config → Emu settings → General
+</code></pre><p><strong>Configuration recommandée :</strong></p>
+<ul>
+<li><strong>Console type</strong> : DS (ou DSi si jeux DSi)</li>
+<li><strong>Direct boot</strong> : ✅ Activé (démarre directement le jeu)</li>
+<li><strong>JIT enable</strong> : ✅ Activé (améliore grandement les performances)</li>
+<li><strong>JIT max block size</strong> : 32 (optimal)</li>
+<li><strong>JIT literal optimizations</strong> : ✅ Activé</li>
+<li><strong>JIT branch optimizations</strong> : ✅ Activé</li>
+<li><strong>JIT fast memory</strong> : ✅ Activé</li>
+</ul>
+<h3 id="paramètres-3d">
+<a class="header-anchor" href="#param%c3%a8tres-3d"></a>
+Paramètres 3D
+</h3><pre tabindex="0"><code>Config → Emu settings → 3D settings
+</code></pre><p><strong>Configuration optimale :</strong></p>
+<ul>
+<li><strong>3D renderer</strong> : OpenGL (recommandé) ou Software</li>
+<li><strong>Threaded 3D</strong> : ✅ Activé (utilise plusieurs cores)</li>
+<li><strong>GL scale factor</strong> : 1x-4x selon votre GPU</li>
+<li><strong>GL better polygons</strong> : ✅ Activé (améliore qualité)</li>
+<li><strong>GL anti-aliasing</strong> : ✅ Activé si GPU suffisant</li>
+</ul>
+<h2 id="-étape-5--configuration-vidéo-et-audio">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-vid%c3%a9o-et-audio"></a>
+⚙️ Étape 5 : Configuration vidéo et audio
+</h2><h3 id="paramètres-vidéo">
+<a class="header-anchor" href="#param%c3%a8tres-vid%c3%a9o"></a>
+Paramètres vidéo
+</h3><pre tabindex="0"><code>Config → Video settings
+</code></pre><p><strong>Paramètres d&rsquo;affichage :</strong></p>
+<ul>
+<li><strong>DS screen layout</strong> : Natural, Vertical, Horizontal (au choix)</li>
+<li><strong>DS screen sizing</strong> : Even (écrans égaux) ou Emphasize top/bottom</li>
+<li><strong>DS screen gap</strong> : 0-96 pixels (ressenti personnel)</li>
+<li><strong>Screen filtering</strong> : Linear (plus lisse) ou Nearest (pixelart net)</li>
+<li><strong>Show OSD</strong> : ✅ Activé (informations utiles)</li>
+</ul>
+<h3 id="paramètres-audio">
+<a class="header-anchor" href="#param%c3%a8tres-audio"></a>
+Paramètres audio
+</h3><pre tabindex="0"><code>Config → Audio settings
+</code></pre><p><strong>Configuration optimale :</strong></p>
+<ul>
+<li><strong>Audio output</strong> : Automatic (recommandé)</li>
+<li><strong>Audio volume</strong> : 256 (maximum)</li>
+<li><strong>Mic input</strong> : Automatic ou dispositif spécifique</li>
+<li><strong>Mic noise gate</strong> : ✅ Activé (filtre bruits de fond)</li>
+</ul>
+<h2 id="-étape-6--configuration-des-contrôles">
+<a class="header-anchor" href="#-%c3%a9tape-6--configuration-des-contr%c3%b4les"></a>
+⚙️ Étape 6 : Configuration des contrôles
+</h2><h3 id="contrôles-clavier-par-défaut">
+<a class="header-anchor" href="#contr%c3%b4les-clavier-par-d%c3%a9faut"></a>
+Contrôles clavier (par défaut)
+</h3><pre tabindex="0"><code>Config → Input and hotkeys → DS keypad
+</code></pre><p><strong>Mapping par défaut :</strong></p>
+<ul>
+<li><strong>A</strong> : X</li>
+<li><strong>B</strong> : Z</li>
+<li><strong>X</strong> : A</li>
+<li><strong>Y</strong> : S</li>
+<li><strong>L</strong> : Q</li>
+<li><strong>R</strong> : W</li>
+<li><strong>Start</strong> : Return</li>
+<li><strong>Select</strong> : RShift</li>
+<li><strong>D-Pad</strong> : Flèches directionnelles</li>
+</ul>
+<h3 id="configuration-manette">
+<a class="header-anchor" href="#configuration-manette"></a>
+Configuration manette
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Détection automatique</span>
+</span></span><span style="display:flex;"><span>1. Connectez votre manette
+</span></span><span style="display:flex;"><span>2. Config → Input and hotkeys → DS keypad
+</span></span><span style="display:flex;"><span>3. Cliquez sur un bouton à configurer
+</span></span><span style="display:flex;"><span>4. Appuyez sur le bouton correspondant de la manette
+</span></span><span style="display:flex;"><span>5. Répétez pour tous les boutons
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mapping recommandé (manette Xbox)</span>
+</span></span><span style="display:flex;"><span>A → A <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>B → B <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span>  
+</span></span><span style="display:flex;"><span>X → Y <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Y → X <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>L → LB
+</span></span><span style="display:flex;"><span>R → RB
+</span></span><span style="display:flex;"><span>D-Pad → D-Pad
+</span></span><span style="display:flex;"><span>Start → Menu
+</span></span><span style="display:flex;"><span>Select → View
+</span></span></code></pre></div><h3 id="contrôles-tactiles">
+<a class="header-anchor" href="#contr%c3%b4les-tactiles"></a>
+Contrôles tactiles
+</h3><pre tabindex="0"><code>Config → Input and hotkeys → Touch screen
+</code></pre><p><strong>Options disponibles :</strong></p>
+<ul>
+<li><strong>Mouse</strong> : Utilise la souris pour l&rsquo;écran tactile</li>
+<li><strong>Touch</strong> : Écran tactile (sur PC tactile/tablette)</li>
+<li><strong>Joystick</strong> : Stick analogique droit (recommandé manette)</li>
+</ul>
+<h3 id="hotkeys-utiles">
+<a class="header-anchor" href="#hotkeys-utiles"></a>
+Hotkeys utiles
+</h3><pre tabindex="0"><code>Config → Input and hotkeys → Hotkeys
+</code></pre><p><strong>Raccourcis essentiels :</strong></p>
+<ul>
+<li><strong>Fast forward</strong> : Tab (accélération)</li>
+<li><strong>Pause/unpause</strong> : P</li>
+<li><strong>Reset</strong> : Ctrl+R</li>
+<li><strong>Save state</strong> : F1-F8</li>
+<li><strong>Load state</strong> : Shift+F1-F8</li>
+<li><strong>Screenshot</strong> : F12</li>
+</ul>
+<h2 id="-étape-7--gestion-des-jeux-et-roms">
+<a class="header-anchor" href="#-%c3%a9tape-7--gestion-des-jeux-et-roms"></a>
+🎮 Étape 7 : Gestion des jeux et ROMs
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><h4 id="roms-nintendo-ds">
+<a class="header-anchor" href="#roms-nintendo-ds"></a>
+ROMs Nintendo DS
+</h4><ul>
+<li><strong>.nds</strong> : Format standard Nintendo DS</li>
+<li><strong>.srl</strong> : Format développeur (identique à .nds)</li>
+<li><strong>.dsi</strong> : Jeux DSi enhanced</li>
+<li><strong>.ids</strong> : iQue DS (région Chine)</li>
+</ul>
+<h4 id="sauvegardes">
+<a class="header-anchor" href="#sauvegardes"></a>
+Sauvegardes
+</h4><ul>
+<li><strong>.sav</strong> : Sauvegarde standard</li>
+<li><strong>.mln</strong> : Savestate melonDS</li>
+<li><strong>.dsv</strong> : Sauvegarde DeSmuME (compatible)</li>
+</ul>
+<h3 id="lancement-de-jeux">
+<a class="header-anchor" href="#lancement-de-jeux"></a>
+Lancement de jeux
+</h3><h4 id="méthode-directe">
+<a class="header-anchor" href="#m%c3%a9thode-directe"></a>
+Méthode directe
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ouverture simple</span>
+</span></span><span style="display:flex;"><span>1. File → Open ROM
+</span></span><span style="display:flex;"><span>2. Naviguez vers votre fichier .nds
+</span></span><span style="display:flex;"><span>3. Sélectionnez et ouvrez
+</span></span><span style="display:flex;"><span>4. Le jeu démarre automatiquement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Drag &amp; Drop</span>
+</span></span><span style="display:flex;"><span>1. Glissez le fichier .nds sur melonDS
+</span></span><span style="display:flex;"><span>2. Lancement immédiat
+</span></span></code></pre></div><h4 id="gestion-multi-roms">
+<a class="header-anchor" href="#gestion-multi-roms"></a>
+Gestion multi-ROMs
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Liste de jeux récents</span>
+</span></span><span style="display:flex;"><span>File → Recent ROMs
+</span></span><span style="display:flex;"><span>- Accès rapide aux <span style="color:#ae81ff">10</span> derniers jeux
+</span></span><span style="display:flex;"><span>- Persistant entre sessions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Favoris personnalisés</span>
+</span></span><span style="display:flex;"><span>- Créez des raccourcis dans games/
+</span></span><span style="display:flex;"><span>- Organisation par genre/série
+</span></span></code></pre></div><h3 id="dumping-de-vos-propres-jeux">
+<a class="header-anchor" href="#dumping-de-vos-propres-jeux"></a>
+Dumping de vos propres jeux
+</h3><h4 id="avec-flashcart-r4acekard">
+<a class="header-anchor" href="#avec-flashcart-r4acekard"></a>
+Avec flashcart R4/Acekard
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Méthode cartouche physique</span>
+</span></span><span style="display:flex;"><span>1. Insérez cartouche DS dans flashcart dumper
+</span></span><span style="display:flex;"><span>2. Utilisez GodMode9i ou Wood Dumper
+</span></span><span style="display:flex;"><span>3. Dump en format .nds sur SD
+</span></span><span style="display:flex;"><span>4. Transférez sur PC
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Avantages: </span>
+</span></span><span style="display:flex;"><span>- Dump parfait bit-perfect
+</span></span><span style="display:flex;"><span>- Inclut données protection
+</span></span><span style="display:flex;"><span>- Compatible 100% melonDS
+</span></span></code></pre></div><h4 id="avec-nintendo-3ds-cfw">
+<a class="header-anchor" href="#avec-nintendo-3ds-cfw"></a>
+Avec Nintendo 3DS (CFW)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Via GodMode9 sur 3DS</span>
+</span></span><span style="display:flex;"><span>1. Installez CFW sur votre 3DS
+</span></span><span style="display:flex;"><span>2. Insérez cartouche DS dans 3DS
+</span></span><span style="display:flex;"><span>3. GodMode9 → <span style="color:#f92672">[</span>C:<span style="color:#f92672">]</span> GAMECART
+</span></span><span style="display:flex;"><span>4. Dump cartouche en .nds
+</span></span><span style="display:flex;"><span>5. Transférez via SD/FTP
+</span></span></code></pre></div><h2 id="-optimisation-par-jeux-populaires">
+<a class="header-anchor" href="#-optimisation-par-jeux-populaires"></a>
+🚀 Optimisation par jeux populaires
+</h2><h3 id="pokémon-diamondpearlplatinum">
+<a class="header-anchor" href="#pok%c3%a9mon-diamondpearlplatinum"></a>
+Pokémon Diamond/Pearl/Platinum
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration optimale RPG</span>
+</span></span><span style="display:flex;"><span>3D Settings:
+</span></span><span style="display:flex;"><span>- Renderer: OpenGL
+</span></span><span style="display:flex;"><span>- Scale factor: 2x-3x
+</span></span><span style="display:flex;"><span>- Better polygons: ✅ Activé
+</span></span><span style="display:flex;"><span>- Anti-aliasing: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>General:
+</span></span><span style="display:flex;"><span>- JIT: ✅ Tous activés
+</span></span><span style="display:flex;"><span>- Direct boot: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Excellent, <span style="color:#ae81ff">60</span> FPS stable
+</span></span></code></pre></div><h3 id="mario-kart-ds">
+<a class="header-anchor" href="#mario-kart-ds"></a>
+Mario Kart DS
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration course</span>
+</span></span><span style="display:flex;"><span>3D Settings:
+</span></span><span style="display:flex;"><span>- Renderer: OpenGL obligatoire
+</span></span><span style="display:flex;"><span>- Scale factor: 2x-4x possible
+</span></span><span style="display:flex;"><span>- Threaded 3D: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Input:
+</span></span><span style="display:flex;"><span>- Contrôle manette recommandé
+</span></span><span style="display:flex;"><span>- Stick analogique pour direction fine
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Wi-Fi: Support local play melonDS
+</span></span></code></pre></div><h3 id="the-legend-of-zelda-spirit-tracks">
+<a class="header-anchor" href="#the-legend-of-zelda-spirit-tracks"></a>
+The Legend of Zelda: Spirit Tracks
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Jeu utilisant micro</span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Mic input: Configuration obligatoire
+</span></span><span style="display:flex;"><span>- Noise gate: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3D Settings:
+</span></span><span style="display:flex;"><span>- Renderer: OpenGL
+</span></span><span style="display:flex;"><span>- Scale factor: 2x-3x
+</span></span><span style="display:flex;"><span>- Anti-aliasing: ✅ Recommandé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contrôles: Écran tactile essentiel
+</span></span></code></pre></div><h3 id="professor-layton-series">
+<a class="header-anchor" href="#professor-layton-series"></a>
+Professor Layton Series
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Jeux point-and-click</span>
+</span></span><span style="display:flex;"><span>Input:
+</span></span><span style="display:flex;"><span>- Touch screen: Mouse recommandé
+</span></span><span style="display:flex;"><span>- Précision tactile importante
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Video:
+</span></span><span style="display:flex;"><span>- Screen layout: Natural ou Vertical
+</span></span><span style="display:flex;"><span>- Screen gap: Minimal <span style="color:#f92672">(</span>0-8px<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Filtering: Linear <span style="color:#f92672">(</span>texte plus net<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Parfait pour émulation PC
+</span></span></code></pre></div><h3 id="new-super-mario-bros">
+<a class="header-anchor" href="#new-super-mario-bros"></a>
+New Super Mario Bros.
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Platformer classique</span>
+</span></span><span style="display:flex;"><span>3D Settings:
+</span></span><span style="display:flex;"><span>- Renderer: OpenGL
+</span></span><span style="display:flex;"><span>- Scale factor: 3x-4x excellent
+</span></span><span style="display:flex;"><span>- Better polygons: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- JIT: ✅ Tous activés
+</span></span><span style="display:flex;"><span>- Threaded 3D: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Résultat: Amélioration visuelle spectaculaire
+</span></span></code></pre></div><h3 id="phoenix-wright-ace-attorney">
+<a class="header-anchor" href="#phoenix-wright-ace-attorney"></a>
+Phoenix Wright: Ace Attorney
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual novel</span>
+</span></span><span style="display:flex;"><span>Video:
+</span></span><span style="display:flex;"><span>- Screen layout: Vertical optimal
+</span></span><span style="display:flex;"><span>- Filtering: Linear <span style="color:#f92672">(</span>texte net<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Sizing: Emphasize top screen
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Volume: Maximum <span style="color:#f92672">(</span>musiques importantes<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Qualité audio excellente melonDS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Interface: Parfaite pour PC/souris
+</span></span></code></pre></div><h2 id="-fonctionnalités-avancées">
+<a class="header-anchor" href="#-fonctionnalit%c3%a9s-avanc%c3%a9es"></a>
+🛠️ Fonctionnalités avancées
+</h2><h3 id="wi-fi-et-multijoueur-local">
+<a class="header-anchor" href="#wi-fi-et-multijoueur-local"></a>
+Wi-Fi et multijoueur local
+</h3><h4 id="configuration-réseau-local">
+<a class="header-anchor" href="#configuration-r%c3%a9seau-local"></a>
+Configuration réseau local
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Local multiplayer melonDS</span>
+</span></span><span style="display:flex;"><span>1. System → Multiplayer → Local multiplayer
+</span></span><span style="display:flex;"><span>2. Chaque instance melonDS <span style="color:#f92672">=</span> une console
+</span></span><span style="display:flex;"><span>3. Automatic detection des autres instances
+</span></span><span style="display:flex;"><span>4. Compatible: Mario Kart DS, Pokémon, etc.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configuration:</span>
+</span></span><span style="display:flex;"><span>- Même réseau local requis
+</span></span><span style="display:flex;"><span>- Firewall: Autoriser melonDS
+</span></span><span style="display:flex;"><span>- Ports: Automatique
+</span></span></code></pre></div><h4 id="jeu-en-ligne-expérimental">
+<a class="header-anchor" href="#jeu-en-ligne-exp%c3%a9rimental"></a>
+Jeu en ligne (expérimental)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Via Kaeru WFC (serveur tiers)</span>
+</span></span><span style="display:flex;"><span>1. System → Wi-Fi settings
+</span></span><span style="display:flex;"><span>2. Configuration point d<span style="color:#960050;background-color:#1e0010">&#39;</span>accès:
+</span></span><span style="display:flex;"><span>   - SSID: Votre réseau
+</span></span><span style="display:flex;"><span>   - Security: WPA2/WEP selon config
+</span></span><span style="display:flex;"><span>3. DNS: Servers Kaeru WFC
+</span></span><span style="display:flex;"><span>4. Support limité mais fonctionnel
+</span></span></code></pre></div><h3 id="savestates-et-backup">
+<a class="header-anchor" href="#savestates-et-backup"></a>
+Savestates et backup
+</h3><h4 id="utilisation-des-savestates">
+<a class="header-anchor" href="#utilisation-des-savestates"></a>
+Utilisation des savestates
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde rapide</span>
+</span></span><span style="display:flex;"><span>System → Save state → Slot 1-8
+</span></span><span style="display:flex;"><span>- Sauvegarde instantanée état exact
+</span></span><span style="display:flex;"><span>- Inclut position, inventory, timing
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">8</span> slots disponibles par jeu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Restauration</span>
+</span></span><span style="display:flex;"><span>System → Load state → Slot X
+</span></span><span style="display:flex;"><span>- Restauration instantanée
+</span></span><span style="display:flex;"><span>- Compatible entre versions melonDS
+</span></span></code></pre></div><h4 id="gestion-des-sauvegardes">
+<a class="header-anchor" href="#gestion-des-sauvegardes"></a>
+Gestion des sauvegardes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Backup automatique</span>
+</span></span><span style="display:flex;"><span>Config → Emu settings → General
+</span></span><span style="display:flex;"><span>- Save state autosave: ✅ Activé
+</span></span><span style="display:flex;"><span>- Interval: 5-10 minutes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Export/Import</span>
+</span></span><span style="display:flex;"><span>Tools → Save data export/import
+</span></span><span style="display:flex;"><span>- Compatible autres émulateurs
+</span></span><span style="display:flex;"><span>- Backup cloud possible
+</span></span></code></pre></div><h3 id="cheats-et-codes-action-replay">
+<a class="header-anchor" href="#cheats-et-codes-action-replay"></a>
+Cheats et codes Action Replay
+</h3><h4 id="installation-base-de-données">
+<a class="header-anchor" href="#installation-base-de-donn%c3%a9es"></a>
+Installation base de données
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># usrcheat.dat</span>
+</span></span><span style="display:flex;"><span>1. Téléchargez base complète AR codes
+</span></span><span style="display:flex;"><span>2. Placez dans melonDS/cheats/usrcheat.dat
+</span></span><span style="display:flex;"><span>3. System → Cheat setup
+</span></span><span style="display:flex;"><span>4. Enable cheats: ✅ Activé
+</span></span></code></pre></div><h4 id="codes-personnalisés">
+<a class="header-anchor" href="#codes-personnalis%c3%a9s"></a>
+Codes personnalisés
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ajout manuel</span>
+</span></span><span style="display:flex;"><span>1. System → Cheat setup → Add cheat
+</span></span><span style="display:flex;"><span>2. Nom: Description du code
+</span></span><span style="display:flex;"><span>3. Code: Format Action Replay standard
+</span></span><span style="display:flex;"><span>4. Enable: ✅ Cochez pour activer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Exemple Pokémon <span style="color:#f92672">(</span>argent infini<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">94000130</span> FCFF0000
+</span></span><span style="display:flex;"><span>B21C4D28 <span style="color:#ae81ff">00000000</span>
+</span></span><span style="display:flex;"><span>B0000004 <span style="color:#ae81ff">00000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">00000090</span> 000F423F
+</span></span><span style="display:flex;"><span>D2000000 <span style="color:#ae81ff">00000000</span>
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-de-lancement">
+<a class="header-anchor" href="#probl%c3%a8mes-de-lancement"></a>
+Problèmes de lancement
+</h3><h4 id="melonds-ne-démarre-pas">
+<a class="header-anchor" href="#melonds-ne-d%c3%a9marre-pas"></a>
+melonDS ne démarre pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Vérifications système:
+</span></span><span style="display:flex;"><span>1. Visual C++ Redistributable installé
+</span></span><span style="display:flex;"><span>2. OpenGL 3.2+ supporté par GPU
+</span></span><span style="display:flex;"><span>3. Drivers graphiques à jour
+</span></span><span style="display:flex;"><span>4. Antivirus: Exception dossier melonDS
+</span></span><span style="display:flex;"><span>5. Droits administrateur si nécessaire
+</span></span></code></pre></div><h4 id="rom-ne-se-lance-pas">
+<a class="header-anchor" href="#rom-ne-se-lance-pas"></a>
+ROM ne se lance pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics ROM:
+</span></span><span style="display:flex;"><span>1. Format: Vérifiez .nds valide
+</span></span><span style="display:flex;"><span>2. Taille: Fichier non corrompu
+</span></span><span style="display:flex;"><span>3. BIOS: Fichiers présents et valides
+</span></span><span style="display:flex;"><span>4. Region: PAL/NTSC/JPN compatible
+</span></span><span style="display:flex;"><span>5. Protection: Certain dumps nécessitent patches
+</span></span></code></pre></div><h3 id="problèmes-de-performance">
+<a class="header-anchor" href="#probl%c3%a8mes-de-performance"></a>
+Problèmes de performance
+</h3><h4 id="fps-basralentissements">
+<a class="header-anchor" href="#fps-basralentissements"></a>
+FPS bas/ralentissements
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Optimisations performance:
+</span></span><span style="display:flex;"><span>1. JIT: ✅ Tous activés obligatoirement
+</span></span><span style="display:flex;"><span>2. 3D Renderer: OpenGL vs Software
+</span></span><span style="display:flex;"><span>3. Threaded 3D: ✅ Activé
+</span></span><span style="display:flex;"><span>4. Scale factor: Réduisez à 1x-2x
+</span></span><span style="display:flex;"><span>5. Anti-aliasing: Désactivez temporairement
+</span></span><span style="display:flex;"><span>6. Background apps: Fermez applications lourdes
+</span></span></code></pre></div><h4 id="micro-freezes-fréquents">
+<a class="header-anchor" href="#micro-freezes-fr%c3%a9quents"></a>
+Micro-freezes fréquents
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions stuttering:
+</span></span><span style="display:flex;"><span>1. SSD: Déplacez ROMs sur SSD
+</span></span><span style="display:flex;"><span>2. JIT block size: Testez 16-64
+</span></span><span style="display:flex;"><span>3. Fast memory: ✅ Obligatoire
+</span></span><span style="display:flex;"><span>4. Windows Game Mode: Désactivez
+</span></span><span style="display:flex;"><span>5. Real-time protection: Exception antivirus
+</span></span></code></pre></div><h3 id="problèmes-graphiques">
+<a class="header-anchor" href="#probl%c3%a8mes-graphiques"></a>
+Problèmes graphiques
+</h3><h4 id="affichage-3d-incorrect">
+<a class="header-anchor" href="#affichage-3d-incorrect"></a>
+Affichage 3D incorrect
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections 3D:
+</span></span><span style="display:flex;"><span>1. 3D Renderer: Changez OpenGL ↔ Software
+</span></span><span style="display:flex;"><span>2. GL better polygons: Basculez
+</span></span><span style="display:flex;"><span>3. Scale factor: Testez 1x natif
+</span></span><span style="display:flex;"><span>4. Drivers GPU: Mise à jour obligatoire
+</span></span><span style="display:flex;"><span>5. OpenGL version: Vérifiez support 3.2+
+</span></span></code></pre></div><h4 id="écrans-mal-positionnés">
+<a class="header-anchor" href="#%c3%a9crans-mal-positionn%c3%a9s"></a>
+Écrans mal positionnés
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Ajustements affichage:
+</span></span><span style="display:flex;"><span>1. Screen layout: Testez Natural/Vertical/Horizontal
+</span></span><span style="display:flex;"><span>2. Screen sizing: Ajustez Even/Emphasize
+</span></span><span style="display:flex;"><span>3. Screen gap: Modifiez 0-96 pixels
+</span></span><span style="display:flex;"><span>4. Screen swap: Échange haut/bas si nécessaire
+</span></span><span style="display:flex;"><span>5. Zoom: Maintenir aspect ratio
+</span></span></code></pre></div><h4 id="textures-flouespixelisées">
+<a class="header-anchor" href="#textures-flouespixelis%c3%a9es"></a>
+Textures floues/pixelisées
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Améliorations visuelles:
+</span></span><span style="display:flex;"><span>1. GL scale factor: Augmentez 2x-4x
+</span></span><span style="display:flex;"><span>2. Screen filtering: Linear vs Nearest
+</span></span><span style="display:flex;"><span>3. GL anti-aliasing: ✅ Activé
+</span></span><span style="display:flex;"><span>4. Better polygons: ✅ Activé
+</span></span><span style="display:flex;"><span>5. Résolution native: Respectez ratio DS
+</span></span></code></pre></div><h3 id="problèmes-audio">
+<a class="header-anchor" href="#probl%c3%a8mes-audio"></a>
+Problèmes audio
+</h3><h4 id="pas-de-son">
+<a class="header-anchor" href="#pas-de-son"></a>
+Pas de son
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics audio:
+</span></span><span style="display:flex;"><span>1. Audio output: Testez différentes options
+</span></span><span style="display:flex;"><span>2. Volume: Vérifiez niveau <span style="color:#f92672">(</span>max 256<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Device: Audio par défaut Windows correct
+</span></span><span style="display:flex;"><span>4. Exclusive mode: Désactivez Windows
+</span></span><span style="display:flex;"><span>5. Sample rate: 44.1/48 kHz compatible
+</span></span></code></pre></div><h4 id="audio-crachotant">
+<a class="header-anchor" href="#audio-crachotant"></a>
+Audio crachotant
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections audio:
+</span></span><span style="display:flex;"><span>1. Audio buffer: Augmentez si disponible
+</span></span><span style="display:flex;"><span>2. Background apps: Fermez lecteurs audio
+</span></span><span style="display:flex;"><span>3. Audio drivers: Mise à jour pilotes
+</span></span><span style="display:flex;"><span>4. CPU usage: Vérifiez charge processeur
+</span></span><span style="display:flex;"><span>5. Power management: High performance
+</span></span></code></pre></div><h3 id="problèmes-de-contrôles">
+<a class="header-anchor" href="#probl%c3%a8mes-de-contr%c3%b4les"></a>
+Problèmes de contrôles
+</h3><h4 id="manette-non-détectée">
+<a class="header-anchor" href="#manette-non-d%c3%a9tect%c3%a9e"></a>
+Manette non détectée
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Configuration input:
+</span></span><span style="display:flex;"><span>1. Reconnectez manette
+</span></span><span style="display:flex;"><span>2. Input settings: Rescannez devices
+</span></span><span style="display:flex;"><span>3. Driver: XInput vs DirectInput
+</span></span><span style="display:flex;"><span>4. Steam Input: Désactivez si interfère
+</span></span><span style="display:flex;"><span>5. Test: Vérifiez Windows Game Controllers
+</span></span></code></pre></div><h4 id="écran-tactile-non-responsive">
+<a class="header-anchor" href="#%c3%a9cran-tactile-non-responsive"></a>
+Écran tactile non responsive
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions tactile:
+</span></span><span style="display:flex;"><span>1. Touch mode: Mouse/Touch/Joystick
+</span></span><span style="display:flex;"><span>2. Calibration: Windows touch settings
+</span></span><span style="display:flex;"><span>3. Sensitivity: Ajustez si disponible
+</span></span><span style="display:flex;"><span>4. Interference: Fermez autres apps tactiles
+</span></span><span style="display:flex;"><span>5. Hardware: Test autre dispositif
+</span></span></code></pre></div><h2 id="-compatibilité-et-performance">
+<a class="header-anchor" href="#-compatibilit%c3%a9-et-performance"></a>
+📊 Compatibilité et performance
+</h2><h3 id="statistiques-de-compatibilité">
+<a class="header-anchor" href="#statistiques-de-compatibilit%c3%a9"></a>
+Statistiques de compatibilité
+</h3><table>
+  <thead>
+      <tr>
+          <th>Statut</th>
+          <th>Pourcentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~85%</td>
+          <td>Fonctionne parfaitement</td>
+      </tr>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~12%</td>
+          <td>Bugs mineurs acceptables</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~2%</td>
+          <td>Démarre mais problèmes majeurs</td>
+      </tr>
+      <tr>
+          <td><strong>Broken</strong></td>
+          <td>~1%</td>
+          <td>Ne fonctionne pas</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-parfaitement-compatibles">
+<a class="header-anchor" href="#jeux-parfaitement-compatibles"></a>
+Jeux parfaitement compatibles
+</h3><h4 id="rpgadventure">
+<a class="header-anchor" href="#rpgadventure"></a>
+RPG/Adventure
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Pokémon Diamond/Pearl/Platinum/HeartGold/SoulSilver
+</span></span><span style="display:flex;"><span>✅ The Legend of Zelda: Phantom Hourglass/Spirit Tracks
+</span></span><span style="display:flex;"><span>✅ Dragon Quest IX: Sentinels of the Starry Skies
+</span></span><span style="display:flex;"><span>✅ Final Fantasy III/IV/Tactics A2
+</span></span><span style="display:flex;"><span>✅ Chrono Trigger DS
+</span></span><span style="display:flex;"><span>✅ Radiant Historia
+</span></span><span style="display:flex;"><span>✅ Phoenix Wright: Ace Attorney series
+</span></span><span style="display:flex;"><span>✅ Professor Layton series
+</span></span></code></pre></div><h4 id="actionplatform">
+<a class="header-anchor" href="#actionplatform"></a>
+Action/Platform
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ New Super Mario Bros.
+</span></span><span style="display:flex;"><span>✅ Super Mario <span style="color:#ae81ff">64</span> DS
+</span></span><span style="display:flex;"><span>✅ Kirby Super Star Ultra/Canvas Curse
+</span></span><span style="display:flex;"><span>✅ Metroid Prime Hunters
+</span></span><span style="display:flex;"><span>✅ Castlevania: Dawn of Sorrow/Portrait of Ruin/Order of Ecclesia
+</span></span><span style="display:flex;"><span>✅ Mega Man Zero Collection
+</span></span><span style="display:flex;"><span>✅ Sonic Rush/Rush Adventure
+</span></span></code></pre></div><h4 id="racingsports">
+<a class="header-anchor" href="#racingsports"></a>
+Racing/Sports
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Mario Kart DS
+</span></span><span style="display:flex;"><span>✅ Diddy Kong Racing DS
+</span></span><span style="display:flex;"><span>✅ TrackMania DS
+</span></span><span style="display:flex;"><span>✅ Tony Hawk<span style="color:#960050;background-color:#1e0010">&#39;</span>s American Sk8land
+</span></span><span style="display:flex;"><span>✅ FIFA series
+</span></span><span style="display:flex;"><span>✅ Madden NFL series
+</span></span></code></pre></div><h3 id="benchmarks-performance">
+<a class="header-anchor" href="#benchmarks-performance"></a>
+Benchmarks performance
+</h3><h4 id="configuration-test--i5-8400-gtx-1060-8gb-ram">
+<a class="header-anchor" href="#configuration-test--i5-8400-gtx-1060-8gb-ram"></a>
+Configuration test : i5-8400, GTX 1060, 8GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Scale Factor</th>
+          <th>FPS</th>
+          <th>CPU Usage</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Pokémon Platinum</strong></td>
+          <td>3x</td>
+          <td>60</td>
+          <td>35%</td>
+          <td>Perfect</td>
+      </tr>
+      <tr>
+          <td><strong>Mario Kart DS</strong></td>
+          <td>4x</td>
+          <td>60</td>
+          <td>45%</td>
+          <td>Excellent</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda PH</strong></td>
+          <td>3x</td>
+          <td>60</td>
+          <td>40%</td>
+          <td>Perfect</td>
+      </tr>
+      <tr>
+          <td><strong>NSMB</strong></td>
+          <td>4x</td>
+          <td>60</td>
+          <td>30%</td>
+          <td>Excellent</td>
+      </tr>
+      <tr>
+          <td><strong>Ace Attorney</strong></td>
+          <td>2x</td>
+          <td>60</td>
+          <td>25%</td>
+          <td>Perfect</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels">
+<a class="header-anchor" href="#sites-officiels"></a>
+Sites officiels
+</h3><ul>
+<li><a href="https://melonds.kuribo64.net/">🏠 Site officiel melonDS</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=me.magnum.melonds">📱 melonDS Android</a></li>
+<li><a href="https://melonds.kuribo64.net/faq.php">📚 Documentation</a></li>
+<li><a href="https://melonds.kuribo64.net/board/">🔧 Wiki utilisateur</a></li>
+</ul>
+<h3 id="communautés-actives">
+<a class="header-anchor" href="#communaut%c3%a9s-actives"></a>
+Communautés actives
+</h3><ul>
+<li><a href="https://discord.gg/AQAhe5S">💬 Discord melonDS</a></li>
+<li><a href="https://www.reddit.com/r/emulation/">🗨️ Reddit r/emulation</a></li>
+<li><a href="https://melonds.kuribo64.net/board/">🌐 Forums melonDS</a></li>
+<li><a href="https://www.youtube.com/results?search_query=melonds&#43;tutorial">📺 YouTube guides</a></li>
+</ul>
+<h3 id="développement-et-contribution">
+<a class="header-anchor" href="#d%c3%a9veloppement-et-contribution"></a>
+Développement et contribution
+</h3><ul>
+<li><a href="https://github.com/melonDS-emu/melonDS">💻 GitHub melonDS</a></li>
+<li><a href="https://github.com/melonDS-emu/melonDS/issues">🐛 Bug reports</a></li>
+<li><a href="https://www.patreon.com/StapleButter">💰 Donations</a></li>
+<li><a href="https://github.com/melonDS-emu/melonDS/blob/master/README.md">🔧 Compilation guide</a></li>
+</ul>
+<h3 id="ressources-ds">
+<a class="header-anchor" href="#ressources-ds"></a>
+Ressources DS
+</h3><ul>
+<li><a href="https://github.com/DS-Homebrew/GodMode9i">🔧 GodMode9i</a> - File manager DS</li>
+<li><a href="https://github.com/DS-Homebrew/TWiLightMenu">📁 TWiLight Menu++</a> - Menu DS homebrew</li>
+<li><a href="https://github.com/DS-Homebrew/nds-bootstrap">🎮 nds-bootstrap</a> - DS game launcher</li>
+<li><a href="http://www.romhacking.net/utilities/383/">🔍 NDSTokyoTrim</a> - ROM trimming tool</li>
+</ul>
+<h2 id="-faq---questions-fréquentes">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quentes"></a>
+❓ FAQ - Questions fréquentes
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : melonDS peut-il jouer tous les jeux DS ?</strong>
+<strong>R :</strong> Environ 97% des jeux fonctionnent parfaitement. Excellente compatibilité globale.</p>
+<p><strong>Q : Ai-je besoin des fichiers BIOS ?</strong>
+<strong>R :</strong> Oui, obligatoires pour un fonctionnement optimal et une compatibilité maximale.</p>
+<p><strong>Q : melonDS supporte-t-il les jeux DSi ?</strong>
+<strong>R :</strong> Support partiel. Certains jeux DSi fonctionnent, d&rsquo;autres pas encore.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : OpenGL ou Software renderer ?</strong>
+<strong>R :</strong> OpenGL recommandé pour les performances et amélioration visuelle. Software pour compatibilité.</p>
+<p><strong>Q : Quelle résolution choisir ?</strong>
+<strong>R :</strong> 2x-3x pour bon compromis qualité/performance. 4x+ si GPU puissant.</p>
+<p><strong>Q : Le JIT est-il sûr ?</strong>
+<strong>R :</strong> Oui, obligatoire pour de bonnes performances. Aucun risque sécurité.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Lag malgré bon PC ?</strong>
+<strong>R :</strong> Vérifiez JIT activé, utilisez OpenGL, réduisez scale factor si nécessaire.</p>
+<p><strong>Q : Sauvegarde ne fonctionne pas ?</strong>
+<strong>R :</strong> Vérifiez écriture autorisée dossier saves, format ROM correct.</p>
+<p><strong>Q : Wi-Fi ne marche pas ?</strong>
+<strong>R :</strong> Wi-Fi limitée aux jeux supportés, configuration réseau requise.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>melonDS est l&rsquo;émulateur Nintendo DS de référence qui offre :</p>
+<ul>
+<li>✅ <strong>Compatibilité exceptionnelle</strong> avec 97%+ des jeux DS</li>
+<li>✅ <strong>Performance excellente</strong> même sur matériel modeste</li>
+<li>✅ <strong>Amélioration graphique</strong> considérable avec upscaling</li>
+<li>✅ <strong>Fonctionnalités modernes</strong> (savestates, cheats, Wi-Fi)</li>
+<li>✅ <strong>Précision d&rsquo;émulation</strong> supérieure à DeSmuME</li>
+<li>✅ <strong>Support multiplateforme</strong> (Windows, Linux, macOS, Android)</li>
+<li>✅ <strong>Développement actif</strong> avec améliorations constantes</li>
+<li>✅ <strong>Interface intuitive</strong> et configuration simple</li>
+</ul>
+<p>Avec ce guide exhaustif, vous maîtrisez maintenant :</p>
+<ul>
+<li><strong>Installation</strong> et configuration optimales</li>
+<li><strong>Gestion</strong> des BIOS et ROMs</li>
+<li><strong>Optimisation</strong> graphique et performance</li>
+<li><strong>Utilisation</strong> des fonctionnalités avancées</li>
+<li><strong>Résolution</strong> des problèmes courants</li>
+<li><strong>Accès</strong> à toute la bibliothèque Nintendo DS</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Rappel légal</strong> : Utilisez uniquement des jeux que vous possédez légalement. melonDS ne fournit aucun jeu ni BIOS - vous devez les extraire de vos propres consoles Nintendo DS.</p></blockquote>
+<p><strong>Redécouvrez la bibliothèque Nintendo DS en haute définition avec melonDS ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://axekin.com/fr/post/melonds/">https://axekin.com/fr/post/melonds/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Guide complet : Installation et configuration de melonDS</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-02 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/fr/post/melonds/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/fr/post/melonds/&amp;text=Guide%20complet%20:%20Installation%20et%20configuration%20de%20melonDS&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/fr/post/melonds/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20melonDS&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20installer,%20configurer%20et%20utiliser%20l%27%c3%a9mulateur%20Nintendo%20DS%20melonDS&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/fr/post/melonds/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20melonDS" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de melonDS">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/melonds"
+        rel="tag"
+        >MELONDS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo-ds"
+        rel="tag"
+        >NINTENDO DS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/%c3%a9mulation"
+        rel="tag"
+        >ÉMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Guide complet : Installation et configuration de RPCS3"
+              class="lazyload"
+            /><a href="/fr/post/rpcs3/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Guide complet : Installation et configuration de RPCS3</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Guide complet : Unsteam - Jouer en coop avec des jeux crackés"
+              class="lazyload"
+            /><a href="/fr/post/unsteam/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Guide complet : Unsteam - Jouer en coop avec des jeux crackés</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;28.3k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:19</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-melonds">🎮 Introduction à melonDS</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-melonds">🔧 Étape 1 : Téléchargement de melonDS</a>
+      <ul>
+        <li><a href="#version-stable-recommandée">Version Stable (Recommandée)</a></li>
+        <li><a href="#versions-de-développement">Versions de développement</a></li>
+        <li><a href="#melonds-android">melonDS Android</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-du-bios-nintendo-ds">⚙️ Étape 3 : Installation du BIOS Nintendo DS</a>
+      <ul>
+        <li><a href="#fichiers-bios-requis">Fichiers BIOS requis</a></li>
+        <li><a href="#extraction-depuis-vraie-nintendo-ds">Extraction depuis vraie Nintendo DS</a></li>
+        <li><a href="#configuration-dans-melonds">Configuration dans melonDS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-de-base">⚙️ Étape 4 : Configuration de base</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#paramètres-3d">Paramètres 3D</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-vidéo-et-audio">⚙️ Étape 5 : Configuration vidéo et audio</a>
+      <ul>
+        <li><a href="#paramètres-vidéo">Paramètres vidéo</a></li>
+        <li><a href="#paramètres-audio">Paramètres audio</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--configuration-des-contrôles">⚙️ Étape 6 : Configuration des contrôles</a>
+      <ul>
+        <li><a href="#contrôles-clavier-par-défaut">Contrôles clavier (par défaut)</a></li>
+        <li><a href="#configuration-manette">Configuration manette</a></li>
+        <li><a href="#contrôles-tactiles">Contrôles tactiles</a></li>
+        <li><a href="#hotkeys-utiles">Hotkeys utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-7--gestion-des-jeux-et-roms">🎮 Étape 7 : Gestion des jeux et ROMs</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#lancement-de-jeux">Lancement de jeux</a></li>
+        <li><a href="#dumping-de-vos-propres-jeux">Dumping de vos propres jeux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-par-jeux-populaires">🚀 Optimisation par jeux populaires</a>
+      <ul>
+        <li><a href="#pokémon-diamondpearlplatinum">Pokémon Diamond/Pearl/Platinum</a></li>
+        <li><a href="#mario-kart-ds">Mario Kart DS</a></li>
+        <li><a href="#the-legend-of-zelda-spirit-tracks">The Legend of Zelda: Spirit Tracks</a></li>
+        <li><a href="#professor-layton-series">Professor Layton Series</a></li>
+        <li><a href="#new-super-mario-bros">New Super Mario Bros.</a></li>
+        <li><a href="#phoenix-wright-ace-attorney">Phoenix Wright: Ace Attorney</a></li>
+      </ul>
+    </li>
+    <li><a href="#-fonctionnalités-avancées">🛠️ Fonctionnalités avancées</a>
+      <ul>
+        <li><a href="#wi-fi-et-multijoueur-local">Wi-Fi et multijoueur local</a></li>
+        <li><a href="#savestates-et-backup">Savestates et backup</a></li>
+        <li><a href="#cheats-et-codes-action-replay">Cheats et codes Action Replay</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-de-lancement">Problèmes de lancement</a></li>
+        <li><a href="#problèmes-de-performance">Problèmes de performance</a></li>
+        <li><a href="#problèmes-graphiques">Problèmes graphiques</a></li>
+        <li><a href="#problèmes-audio">Problèmes audio</a></li>
+        <li><a href="#problèmes-de-contrôles">Problèmes de contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-compatibilité-et-performance">📊 Compatibilité et performance</a>
+      <ul>
+        <li><a href="#statistiques-de-compatibilité">Statistiques de compatibilité</a></li>
+        <li><a href="#jeux-parfaitement-compatibles">Jeux parfaitement compatibles</a></li>
+        <li><a href="#benchmarks-performance">Benchmarks performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels">Sites officiels</a></li>
+        <li><a href="#communautés-actives">Communautés actives</a></li>
+        <li><a href="#développement-et-contribution">Développement et contribution</a></li>
+        <li><a href="#ressources-ds">Ressources DS</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquentes">❓ FAQ - Questions fréquentes</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Guide complet : Installation et configuration de melonDS",
+          url: "https:\/\/axekin.com\/fr\/post\/melonds\/",
+          description: "Tutoriel détaillé pour installer, configurer et utiliser l\u0027émulateur Nintendo DS melonDS",
+          cover: "https:\/\/axekin.com\/images\/banner.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

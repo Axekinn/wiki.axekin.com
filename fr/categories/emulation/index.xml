@@ -1,0 +1,3101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emulation on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/categories/emulation/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/categories/emulation/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
+      <link>https://axekin.com/fr/post/amibo_switch/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/amibo_switch/</guid>
+      <description>
+        <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Avertissement Légal</strong> : Les fichiers amiibo doivent provenir de figurines que vous possédez légalement. Ce guide est à des fins éducatives uniquement.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Les <strong>amiibo</strong> sont des figurines NFC de Nintendo qui débloquent du contenu spécial dans de nombreux jeux Switch. Grâce aux émulateurs <strong>Yuzu</strong> et <strong>Ryujinx</strong>, il est possible d&rsquo;utiliser des <strong>amiibo virtuels</strong> sans posséder les figurines physiques.</p>
+<p>Ce guide vous explique comment configurer et utiliser les amiibo sur les deux émulateurs les plus populaires.</p>
+<h3 id="quest-ce-quun-amiibo-virtuel-">
+<a class="header-anchor" href="#quest-ce-quun-amiibo-virtuel-"></a>
+Qu&rsquo;est-ce qu&rsquo;un amiibo virtuel ?
+</h3><p><strong>Définition :</strong></p>
+<ul>
+<li>Fichier <code>.bin</code> contenant les données NFC d&rsquo;un amiibo</li>
+<li>Simule le scan d&rsquo;une figurine physique</li>
+<li>Compatible avec tous les jeux supportant les amiibo</li>
+</ul>
+<p><strong>Avantages des amiibo virtuels :</strong></p>
+<ul>
+<li>Accès à tous les amiibo sans achat</li>
+<li>Pas de limite de scan par jour</li>
+<li>Facilité de stockage et organisation</li>
+<li>Utilisation instantanée</li>
+</ul>
+<h2 id="prérequis-et-téléchargement">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargement"></a>
+Prérequis et Téléchargement
+</h2><h3 id="fichiers-nécessaires">
+<a class="header-anchor" href="#fichiers-n%c3%a9cessaires"></a>
+Fichiers nécessaires
+</h3><p><strong>Collection amiibo complète :</strong></p>
+<pre tabindex="0"><code>📁 Amiibo_Collection/
+├── 📁 Animal_Crossing/
+├── 📁 Legend_of_Zelda/
+├── 📁 Super_Mario/
+├── 📁 Pokemon/
+└── 📁 Fire_Emblem/
+</code></pre><blockquote>
+<p><strong>📥 Téléchargement</strong> : <a href="https://mega.nz/file/AXolTKwC#UgYFoVPWQs_MPPaZZxVifaJgnvpqMJRr_psW-Q_U7A">Collection Amiibo Complète</a></p></blockquote>
+<h3 id="vérification-des-fichiers">
+<a class="header-anchor" href="#v%c3%a9rification-des-fichiers"></a>
+Vérification des fichiers
+</h3><p><strong>Format attendu :</strong></p>
+<ul>
+<li>Extension : <code>.bin</code></li>
+<li>Taille : 540 bytes (exactement)</li>
+<li>Nommage : <code>Nom_Personnage.bin</code></li>
+</ul>
+<p><strong>Exemple de fichiers :</strong></p>
+<pre tabindex="0"><code>Link_Breath_of_Wild.bin
+Mario_Super_Mario.bin
+Pikachu_Pokemon.bin
+Isabelle_Animal_Crossing.bin
+</code></pre><h2 id="utilisation-sur-yuzu">
+<a class="header-anchor" href="#utilisation-sur-yuzu"></a>
+Utilisation sur Yuzu
+</h2><h3 id="étape-1--préparation-du-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-du-jeu"></a>
+Étape 1 : Préparation du jeu
+</h3><h4 id="lancer-et-positionner-le-jeu">
+<a class="header-anchor" href="#lancer-et-positionner-le-jeu"></a>
+Lancer et positionner le jeu
+</h4><ol>
+<li><strong>Démarrez Yuzu</strong> et lancez votre jeu compatible amiibo</li>
+<li><strong>Naviguez</strong> jusqu&rsquo;à la zone de scan amiibo dans le jeu</li>
+<li><strong>Positionnez-vous</strong> à l&rsquo;endroit où le jeu demande de scanner un amiibo</li>
+</ol>
+<p><img src="/images/yuzu-amiibo-position.png" alt="Position scan amiibo TOTK">
+<em>Position pour scanner un amiibo dans Tears of the Kingdom</em></p>
+<p><strong>Jeux compatibles populaires :</strong></p>
+<ul>
+<li>The Legend of Zelda: Breath of the Wild / Tears of the Kingdom</li>
+<li>Super Mario Odyssey</li>
+<li>Animal Crossing: New Horizons</li>
+<li>Fire Emblem: Three Houses</li>
+<li>Super Smash Bros. Ultimate</li>
+</ul>
+<h3 id="étape-2--charger-lamiibo">
+<a class="header-anchor" href="#%c3%a9tape-2--charger-lamiibo"></a>
+Étape 2 : Charger l&rsquo;amiibo
+</h3><h4 id="accéder-au-menu-amiibo">
+<a class="header-anchor" href="#acc%c3%a9der-au-menu-amiibo"></a>
+Accéder au menu amiibo
+</h4><ol start="4">
+<li><strong>Sans fermer le jeu</strong>, allez dans la barre de menu de Yuzu</li>
+<li>Cliquez sur <strong>&ldquo;Fichier&rdquo;</strong> (File)</li>
+<li>Sélectionnez <strong>&ldquo;Charger un Amiibo&rdquo;</strong> (Load Amiibo)</li>
+</ol>
+<p><img src="/images/yuzu-amiibo-menu.png" alt="Menu amiibo Yuzu">
+<em>Menu de chargement amiibo dans Yuzu</em></p>
+<h4 id="sélectionner-le-fichier">
+<a class="header-anchor" href="#s%c3%a9lectionner-le-fichier"></a>
+Sélectionner le fichier
+</h4><ol start="7">
+<li>Une <strong>fenêtre de sélection</strong> s&rsquo;ouvre</li>
+<li><strong>Naviguez</strong> vers votre dossier d&rsquo;amiibo</li>
+<li><strong>Sélectionnez</strong> le fichier <code>.bin</code> souhaité</li>
+<li>Cliquez sur <strong>&ldquo;Ouvrir&rdquo;</strong></li>
+</ol>
+<h3 id="étape-3--activation-en-jeu">
+<a class="header-anchor" href="#%c3%a9tape-3--activation-en-jeu"></a>
+Étape 3 : Activation en jeu
+</h3><h4 id="scanner-lamiibo-virtuel">
+<a class="header-anchor" href="#scanner-lamiibo-virtuel"></a>
+Scanner l&rsquo;amiibo virtuel
+</h4><ol start="11">
+<li><strong>Retournez</strong> dans le jeu (Alt+Tab)</li>
+<li><strong>Appuyez</strong> sur le bouton de scan amiibo (généralement <strong>joystick droit</strong>)</li>
+<li>L&rsquo;amiibo est <strong>automatiquement détecté</strong> et scanné</li>
+<li><strong>Profitez</strong> du contenu débloqué !</li>
+</ol>
+<p><strong>Indicateurs de réussite :</strong></p>
+<ul>
+<li>Animation de scan dans le jeu</li>
+<li>Contenu amiibo débloqué (objets, costumes, etc.)</li>
+<li>Message de confirmation du jeu</li>
+</ul>
+<h2 id="utilisation-sur-ryujinx">
+<a class="header-anchor" href="#utilisation-sur-ryujinx"></a>
+Utilisation sur Ryujinx
+</h2><h3 id="étape-1--préparation-du-jeu-1">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-du-jeu-1"></a>
+Étape 1 : Préparation du jeu
+</h3><h4 id="lancer-et-positionner">
+<a class="header-anchor" href="#lancer-et-positionner"></a>
+Lancer et positionner
+</h4><ol>
+<li><strong>Démarrez Ryujinx</strong> et lancez votre jeu</li>
+<li><strong>Naviguez</strong> jusqu&rsquo;à la zone de scan amiibo</li>
+<li><strong>Préparez-vous</strong> à scanner (le jeu affiche généralement une icône amiibo)</li>
+</ol>
+<h3 id="étape-2--scanner-lamiibo">
+<a class="header-anchor" href="#%c3%a9tape-2--scanner-lamiibo"></a>
+Étape 2 : Scanner l&rsquo;amiibo
+</h3><h4 id="accéder-au-menu-scan">
+<a class="header-anchor" href="#acc%c3%a9der-au-menu-scan"></a>
+Accéder au menu scan
+</h4><ol start="4">
+<li><strong>Sans fermer le jeu</strong>, allez dans la barre de menu de Ryujinx</li>
+<li>Cliquez sur <strong>&ldquo;Actions&rdquo;</strong></li>
+<li>Sélectionnez <strong>&ldquo;Scan Amiibo&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-amiibo-scan.png" alt="Menu scan Ryujinx">
+<em>Menu de scan amiibo dans Ryujinx</em></p>
+<h4 id="sélectionner-lamiibo">
+<a class="header-anchor" href="#s%c3%a9lectionner-lamiibo"></a>
+Sélectionner l&rsquo;amiibo
+</h4><ol start="7">
+<li>Une <strong>fenêtre de sélection</strong> apparaît</li>
+<li><strong>Choisissez</strong> votre fichier amiibo <code>.bin</code></li>
+<li>Cliquez sur <strong>&ldquo;Ouvrir&rdquo;</strong></li>
+</ol>
+<h3 id="étape-3--confirmation">
+<a class="header-anchor" href="#%c3%a9tape-3--confirmation"></a>
+Étape 3 : Confirmation
+</h3><h4 id="vérification-du-scan">
+<a class="header-anchor" href="#v%c3%a9rification-du-scan"></a>
+Vérification du scan
+</h4><ol start="10">
+<li><strong>L&rsquo;amiibo est immédiatement scanné</strong> dans le jeu</li>
+<li><strong>Vérifiez</strong> que le contenu est débloqué</li>
+<li><strong>Répétez</strong> l&rsquo;opération pour d&rsquo;autres amiibo si nécessaire</li>
+</ol>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des Méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Menu d&rsquo;accès</strong></td>
+          <td>Fichier → Charger Amiibo</td>
+          <td>Actions → Scan Amiibo</td>
+      </tr>
+      <tr>
+          <td><strong>Simplicité</strong></td>
+          <td>2 étapes</td>
+          <td>2 étapes</td>
+      </tr>
+      <tr>
+          <td><strong>Vitesse</strong></td>
+          <td>Rapide</td>
+          <td>Instantané</td>
+      </tr>
+      <tr>
+          <td><strong>Interface</strong></td>
+          <td>Standard</td>
+          <td>Plus intuitive</td>
+      </tr>
+      <tr>
+          <td><strong>Compatibilité</strong></td>
+          <td>Excellente</td>
+          <td>Excellente</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="gestion-de-collection-amiibo">
+<a class="header-anchor" href="#gestion-de-collection-amiibo"></a>
+Gestion de Collection Amiibo
+</h2><h3 id="organisation-recommandée">
+<a class="header-anchor" href="#organisation-recommand%c3%a9e"></a>
+Organisation recommandée
+</h3><p><strong>Structure de dossiers par série :</strong></p>
+<pre tabindex="0"><code>📁 Amiibo_Collection/
+├── 📁 01_Super_Mario/
+│   ├── Mario.bin
+│   ├── Luigi.bin
+│   ├── Peach.bin
+│   └── Bowser.bin
+├── 📁 02_Legend_of_Zelda/
+│   ├── Link_BOTW.bin
+│   ├── Link_TOTK.bin
+│   ├── Zelda.bin
+│   └── Ganondorf.bin
+├── 📁 03_Pokemon/
+│   ├── Pikachu.bin
+│   ├── Lucario.bin
+│   └── Mewtwo.bin
+└── 📁 04_Animal_Crossing/
+    ├── Isabelle.bin
+    ├── Tom_Nook.bin
+    └── K.K._Slider.bin
+</code></pre><h3 id="renommage-pour-faciliter-lusage">
+<a class="header-anchor" href="#renommage-pour-faciliter-lusage"></a>
+Renommage pour faciliter l&rsquo;usage
+</h3><p><strong>Convention de nommage :</strong></p>
+<pre tabindex="0"><code>[Série]_[Personnage]_[Variante].bin
+
+Exemples :
+ZELDA_Link_Breath_of_Wild.bin
+MARIO_Mario_Wedding.bin
+POKEMON_Pikachu_Detective.bin
+</code></pre><h2 id="utilisation-avancée">
+<a class="header-anchor" href="#utilisation-avanc%c3%a9e"></a>
+Utilisation Avancée
+</h2><h3 id="scanner-plusieurs-amiibo-rapidement">
+<a class="header-anchor" href="#scanner-plusieurs-amiibo-rapidement"></a>
+Scanner plusieurs amiibo rapidement
+</h3><p><strong>Méthode Yuzu :</strong></p>
+<ol>
+<li>Gardez le dossier amiibo ouvert</li>
+<li>Utilisez <strong>Ctrl+O</strong> pour un accès rapide</li>
+<li>Double-cliquez sur les fichiers pour charger</li>
+</ol>
+<p><strong>Méthode Ryujinx :</strong></p>
+<ol>
+<li>Créez des <strong>favoris</strong> vers vos amiibo les plus utilisés</li>
+<li>Utilisez <strong>Alt+A</strong> comme raccourci (si configuré)</li>
+</ol>
+<h3 id="amiibo-pour-contenus-spéciaux">
+<a class="header-anchor" href="#amiibo-pour-contenus-sp%c3%a9ciaux"></a>
+Amiibo pour contenus spéciaux
+</h3><h4 id="the-legend-of-zelda-botwtotk">
+<a class="header-anchor" href="#the-legend-of-zelda-botwtotk"></a>
+The Legend of Zelda: BOTW/TOTK
+</h4><p><strong>Amiibo essentiels :</strong></p>
+<ul>
+<li><strong>Link (BOTW)</strong> : Matériaux rares + chance d&rsquo;épée de légende</li>
+<li><strong>Zelda</strong> : Plantes et herbes rares</li>
+<li><strong>Ganondorf</strong> : Armes sombres et matériaux uniques</li>
+<li><strong>Mipha</strong> : Poissons rares</li>
+</ul>
+<h4 id="super-mario-odyssey">
+<a class="header-anchor" href="#super-mario-odyssey"></a>
+Super Mario Odyssey
+</h4><p><strong>Amiibo utiles :</strong></p>
+<ul>
+<li><strong>Mario (Wedding)</strong> : Costume de mariage</li>
+<li><strong>Peach (Wedding)</strong> : Robe de mariée pour Peach</li>
+<li><strong>Bowser (Wedding)</strong> : Costume de Bowser</li>
+</ul>
+<h4 id="animal-crossing-new-horizons">
+<a class="header-anchor" href="#animal-crossing-new-horizons"></a>
+Animal Crossing: New Horizons
+</h4><p><strong>Amiibo populaires :</strong></p>
+<ul>
+<li><strong>Tous les villageois</strong> : Invitation sur votre île</li>
+<li><strong>Isabelle</strong> : Objets spéciaux du bureau</li>
+<li><strong>Tom Nook</strong> : Objets de décoration</li>
+</ul>
+<h2 id="dépannage">
+<a class="header-anchor" href="#d%c3%a9pannage"></a>
+Dépannage
+</h2><h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><h4 id="-amiibo-non-reconnu">
+<a class="header-anchor" href="#-amiibo-non-reconnu"></a>
+🚫 Amiibo non reconnu
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Fichier corrompu</li>
+<li>Mauvais format</li>
+<li>Jeu non compatible</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez la taille du fichier (540 bytes)</li>
+<li>Re-téléchargez le fichier amiibo</li>
+<li>Testez avec un autre amiibo</li>
+<li>Vérifiez la compatibilité du jeu</li>
+</ol>
+<h4 id="-scan-ne-fonctionne-pas">
+<a class="header-anchor" href="#-scan-ne-fonctionne-pas"></a>
+⚠️ Scan ne fonctionne pas
+</h4><p><strong>Vérifications :</strong></p>
+<ol>
+<li>Le jeu est-il en mode &ldquo;scan amiibo&rdquo; ?</li>
+<li>Êtes-vous au bon endroit dans le jeu ?</li>
+<li>L&rsquo;émulateur supporte-t-il les amiibo ?</li>
+</ol>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Relancez l&rsquo;émulateur</li>
+<li>Mettez à jour vers la dernière version</li>
+<li>Vérifiez les logs d&rsquo;erreur</li>
+</ul>
+<h3 id="erreurs-spécifiques">
+<a class="header-anchor" href="#erreurs-sp%c3%a9cifiques"></a>
+Erreurs spécifiques
+</h3><h4 id="fichier-non-valide">
+<a class="header-anchor" href="#fichier-non-valide"></a>
+Fichier non valide
+</h4><pre tabindex="0"><code>Error: Invalid amiibo file format
+</code></pre><p><strong>Solution :</strong> Vérifiez que le fichier fait exactement 540 bytes et a l&rsquo;extension <code>.bin</code></p>
+<h4 id="amiibo-déjà-utilisé">
+<a class="header-anchor" href="#amiibo-d%c3%a9j%c3%a0-utilis%c3%a9"></a>
+Amiibo déjà utilisé
+</h4><pre tabindex="0"><code>This amiibo has already been used today
+</code></pre><p><strong>Solution :</strong> Certains jeux limitent l&rsquo;usage quotidien. Attendez ou changez la date système de l&rsquo;émulateur.</p>
+<h2 id="création-damiibo-personnalisés">
+<a class="header-anchor" href="#cr%c3%a9ation-damiibo-personnalis%c3%a9s"></a>
+Création d&rsquo;Amiibo Personnalisés
+</h2><h3 id="outils-nécessaires">
+<a class="header-anchor" href="#outils-n%c3%a9cessaires"></a>
+Outils nécessaires
+</h3><p><strong>TagMo (Android) :</strong></p>
+<ul>
+<li>Application pour créer des amiibo</li>
+<li>Nécessite des clés NFC</li>
+<li>Interface conviviale</li>
+</ul>
+<p><strong>Amiitool (PC) :</strong></p>
+<ul>
+<li>Outil en ligne de commande</li>
+<li>Plus technique mais puissant</li>
+<li>Compatible Linux/Windows/Mac</li>
+</ul>
+<h3 id="processus-de-création">
+<a class="header-anchor" href="#processus-de-cr%c3%a9ation"></a>
+Processus de création
+</h3><ol>
+<li><strong>Obtenez</strong> les données de base de l&rsquo;amiibo</li>
+<li><strong>Modifiez</strong> les paramètres souhaités</li>
+<li><strong>Générez</strong> le fichier <code>.bin</code></li>
+<li><strong>Testez</strong> sur émulateur</li>
+</ol>
+<blockquote>
+<p><strong>⚠️ Note</strong> : La création d&rsquo;amiibo nécessite des connaissances techniques avancées.</p></blockquote>
+<h2 id="légalité-et-éthique">
+<a class="header-anchor" href="#l%c3%a9galit%c3%a9-et-%c3%a9thique"></a>
+Légalité et Éthique
+</h2><h3 id="utilisation-légale">
+<a class="header-anchor" href="#utilisation-l%c3%a9gale"></a>
+Utilisation légale
+</h3><p><strong>Bonnes pratiques :</strong></p>
+<ul>
+<li>Utilisez uniquement des amiibo que vous possédez physiquement</li>
+<li>Ne partagez pas les fichiers publiquement</li>
+<li>Respectez les droits d&rsquo;auteur de Nintendo</li>
+</ul>
+<p><strong>Zone grise :</strong></p>
+<ul>
+<li>Sauvegarde de vos propres amiibo : Généralement accepté</li>
+<li>Téléchargement d&rsquo;amiibo non possédés : Questionnaire juridique</li>
+<li>Usage commercial : Strictement interdit</li>
+</ul>
+<h2 id="jeux-populaires-et-leurs-amiibo">
+<a class="header-anchor" href="#jeux-populaires-et-leurs-amiibo"></a>
+Jeux Populaires et leurs Amiibo
+</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h3><p><strong>Récompenses par amiibo :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Amiibo</th>
+          <th>Récompenses principales</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Link (BOTW)</strong></td>
+          <td>Épée de légende, matériaux rares</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda</strong></td>
+          <td>Plantes, radis, champignons</td>
+      </tr>
+      <tr>
+          <td><strong>Ganondorf</strong></td>
+          <td>Viandes, minerais sombres</td>
+      </tr>
+      <tr>
+          <td><strong>Guardian</strong></td>
+          <td>Matériaux de gardien</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="super-smash-bros-ultimate">
+<a class="header-anchor" href="#super-smash-bros-ultimate"></a>
+Super Smash Bros. Ultimate
+</h3><p><strong>Système de Fighter :</strong></p>
+<ul>
+<li>Entraînement de combattants IA</li>
+<li>Personnalisation des styles de combat</li>
+<li>Déblocage de récompenses</li>
+</ul>
+<h3 id="animal-crossing-new-horizons-1">
+<a class="header-anchor" href="#animal-crossing-new-horizons-1"></a>
+Animal Crossing: New Horizons
+</h3><p><strong>Fonctionnalités :</strong></p>
+<ul>
+<li>Invitation de villageois spécifiques</li>
+<li>Déblocage de costumes</li>
+<li>Objets de décoration exclusifs</li>
+</ul>
+<h2 id="tutoriel-vidéo">
+<a class="header-anchor" href="#tutoriel-vid%c3%a9o"></a>
+Tutoriel Vidéo
+</h2><p>Pour une démonstration visuelle complète, consultez ce tutoriel :</p>
+<p><strong><a href="https://odysee.com/@696_STS:1/googledocpc:2">Vidéo explicative complète</a></strong></p>
+<p>La vidéo couvre :</p>
+<ul>
+<li>Installation des fichiers amiibo</li>
+<li>Utilisation sur Yuzu et Ryujinx</li>
+<li>Démonstration en jeu</li>
+<li>Dépannage des problèmes courants</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;utilisation d&rsquo;<strong>amiibo virtuels</strong> sur les émulateurs Switch ouvre un monde de possibilités pour enrichir votre expérience de jeu. Que ce soit pour débloquer du contenu exclusif ou simplement pour tester des fonctionnalités, les méthodes présentées sont simples et efficaces.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé des méthodes :</strong></p>
+<p><strong>Yuzu :</strong></p>
+<ul>
+<li>Fichier → Charger Amiibo</li>
+<li>Sélectionner fichier .bin</li>
+<li>Scanner dans le jeu</li>
+</ul>
+<p><strong>Ryujinx :</strong></p>
+<ul>
+<li>Actions → Scan Amiibo</li>
+<li>Choisir fichier .bin</li>
+<li>Activation immédiate</li>
+</ul></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une expérience optimale :</strong></p>
+<ul>
+<li>Organisez votre collection par séries</li>
+<li>Testez les amiibo sur différents jeux</li>
+<li>Sauvegardez vos configurations</li>
+<li>Respectez les aspects légaux</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions Fréquentes
+</h2><p><strong>Q : Puis-je utiliser le même amiibo plusieurs fois par jour ?</strong>
+R : Cela dépend du jeu. Certains limitent l&rsquo;usage quotidien, d&rsquo;autres permettent un usage illimité.</p>
+<p><strong>Q : Les amiibo fonctionnent-ils sur toutes les versions de jeux ?</strong>
+R : Généralement oui, mais vérifiez la compatibilité spécifique de votre version de jeu.</p>
+<p><strong>Q : Puis-je créer mes propres amiibo personnalisés ?</strong>
+R : Oui, avec des outils comme TagMo ou Amiitool, mais cela nécessite des connaissances techniques.</p>
+<p><strong>Q : Les amiibo affectent-ils les performances de l&rsquo;émulateur ?</strong>
+R : Non, l&rsquo;utilisation d&rsquo;amiibo n&rsquo;a aucun impact sur les performances.</p>
+<p><strong>Q : Comment sauvegarder mes données amiibo ?</strong>
+R : Les données sont sauvegardées automatiquement dans les fichiers de sauvegarde du jeu.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos amiibo favoris et leurs utilisations en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-zelda-optimization/">Optimiser Yuzu pour les Jeux Zelda</a></li>
+<li><a href="/fr/post/ryujinx-complete-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/switch-emulation-settings/">Meilleures Configurations pour Émulation Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Guide Complet : Utiliser des Amiibo sur l&#39;Émulateur Cemu Wii U</title>
+      <link>https://axekin.com/fr/post/amibo_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/amibo_cemu/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet : Utiliser des Amiibo sur l'Émulateur Cemu Wii U</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Avertissement Légal</strong> : Ce guide est à des fins éducatives uniquement. Assurez-vous de posséder les Amiibo physiques avant d&rsquo;utiliser leurs fichiers numériques. Respectez les lois sur le droit d&rsquo;auteur de votre région.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;utilisation d&rsquo;<strong>Amiibo</strong> sur l&rsquo;émulateur <strong>Cemu</strong> Wii U permet d&rsquo;accéder au contenu exclusif et aux fonctionnalités sans avoir besoin des figurines physiques. Ce guide explique comment configurer et utiliser les fichiers Amiibo .bin spécifiquement sur Cemu pour les jeux Wii U.</p>
+<p>La fonctionnalité Amiibo sur Cemu est particulièrement utile pour :</p>
+<ul>
+<li>Débloquer du contenu exclusif dans Zelda: Breath of the Wild</li>
+<li>Obtenir des objets rares et des costumes dans les jeux compatibles</li>
+<li>Tester les fonctionnalités Amiibo sans acheter de figurines</li>
+<li>Accéder aux modes de jeu et défis spéciaux</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> les fichiers de collection Amiibo (format .bin)</li>
+<li><strong>Organiser</strong> les fichiers dans un dossier dédié &ldquo;Amiibo&rdquo;</li>
+<li><strong>Charger</strong> votre jeu Wii U dans Cemu</li>
+<li><strong>Accéder</strong> au menu NFC pendant le jeu</li>
+<li><strong>Scanner</strong> l&rsquo;Amiibo désiré depuis le fichier</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-requis">
+<a class="header-anchor" href="#logiciels-requis"></a>
+Logiciels requis
+</h3><p><strong>Composants essentiels :</strong></p>
+<ul>
+<li><strong>Cemu</strong> : Dernière version stable (1.15.0 ou plus récent)</li>
+<li><strong>Fichiers Amiibo</strong> : Collection complète .bin</li>
+<li><strong>Jeux Wii U compatibles</strong> : Qui supportent la fonctionnalité Amiibo</li>
+</ul>
+<h3 id="collection-de-fichiers-amiibo">
+<a class="header-anchor" href="#collection-de-fichiers-amiibo"></a>
+Collection de fichiers Amiibo
+</h3><h4 id="téléchargement-et-configuration">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-et-configuration"></a>
+Téléchargement et configuration
+</h4><p><strong>🔗 Lien de téléchargement</strong> : <code>aHR0cHM6Ly9tZWdhLm56L2ZpbGUvb2VaaW5BTGEjM1J2d1hVaV9PRzBTLXdldFNENUN6WFVXeG9hZzlFV0EzRUlVVXVUVUZGQQ==</code></p>
+<blockquote>
+<p><strong>Note</strong> : Ceci est un lien encodé en Base64 pour la collection Amiibo. Décodez-le en utilisant n&rsquo;importe quel décodeur Base64.</p></blockquote>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Décodez</strong> le lien Base64 ci-dessus</li>
+<li><strong>Téléchargez</strong> la collection Amiibo complète</li>
+<li><strong>Extrayez</strong> l&rsquo;archive sur votre ordinateur</li>
+<li><strong>Créez</strong> un dossier nommé &ldquo;Amiibo&rdquo; pour l&rsquo;organisation</li>
+</ol>
+<p><img src="/images/amiibo-collection-download.png" alt="Téléchargement Collection Amiibo">
+<em>Téléchargement et extraction de la collection Amiibo</em></p>
+<h4 id="organisation-des-fichiers">
+<a class="header-anchor" href="#organisation-des-fichiers"></a>
+Organisation des fichiers
+</h4><p><strong>Structure de dossier recommandée :</strong></p>
+<pre tabindex="0"><code>Amiibo/
+├── Zelda/
+│   ├── Link_Archer.bin
+│   ├── Link_Rider.bin
+│   ├── Link_SSB.bin
+│   ├── Zelda.bin
+│   ├── Sheik.bin
+│   ├── Ganondorf.bin
+│   ├── Toon_Link.bin
+│   ├── Young_Link.bin
+│   └── Midna.bin
+├── Mario/
+│   ├── Mario.bin
+│   ├── Luigi.bin
+│   ├── Peach.bin
+│   └── Bowser.bin
+├── Autres_Series/
+│   ├── Samus.bin
+│   ├── Captain_Falcon.bin
+│   └── Fox.bin
+└── Animal_Crossing/
+    ├── Isabelle.bin
+    ├── Tom_Nook.bin
+    └── KK_Slider.bin
+</code></pre><p><img src="/images/amiibo-folder-structure.png" alt="Structure Dossier Amiibo">
+<em>Organisation appropriée du dossier Amiibo</em></p>
+<h3 id="comprendre-les-fichiers-bin">
+<a class="header-anchor" href="#comprendre-les-fichiers-bin"></a>
+Comprendre les fichiers .bin
+</h3><h4 id="détails-du-format-de-fichier">
+<a class="header-anchor" href="#d%c3%a9tails-du-format-de-fichier"></a>
+Détails du format de fichier
+</h4><p><strong>Que sont les fichiers .bin :</strong></p>
+<ul>
+<li><strong>Format binaire</strong> : Contient les données Amiibo cryptées</li>
+<li><strong>Taille</strong> : Exactement 540 octets par fichier</li>
+<li><strong>Contenu</strong> : ID du personnage, données de déblocage de jeu, informations de sauvegarde</li>
+<li><strong>Compatibilité</strong> : Fonctionne avec l&rsquo;émulation NFC de Cemu</li>
+</ul>
+<p><strong>Caractéristiques importantes :</strong></p>
+<ul>
+<li>Chaque fichier .bin représente une figurine Amiibo spécifique</li>
+<li>Les fichiers contiennent les mêmes données que les Amiibo physiques</li>
+<li>Certains fichiers peuvent avoir des noms différents mais le même contenu</li>
+</ul>
+<h2 id="configuration-de-cemu">
+<a class="header-anchor" href="#configuration-de-cemu"></a>
+Configuration de Cemu
+</h2><h3 id="activation-du-support-nfc">
+<a class="header-anchor" href="#activation-du-support-nfc"></a>
+Activation du support NFC
+</h3><h4 id="configuration-de-base-de-cemu">
+<a class="header-anchor" href="#configuration-de-base-de-cemu"></a>
+Configuration de base de Cemu
+</h4><p><strong>Vérification des prérequis :</strong></p>
+<ol>
+<li><strong>Version Cemu</strong> : 1.15.0 ou plus récent (support NFC requis)</li>
+<li><strong>Compatibilité jeu</strong> : Vérifiez que votre jeu supporte les Amiibo</li>
+<li><strong>Accès fichier</strong> : Assurez-vous que Cemu peut accéder à votre dossier Amiibo</li>
+</ol>
+<h4 id="paramètres-nfc-dans-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-nfc-dans-cemu"></a>
+Paramètres NFC dans Cemu
+</h4><p><strong>Aucune configuration spéciale nécessaire :</strong></p>
+<ul>
+<li>Cemu a une émulation NFC intégrée</li>
+<li>Aucun plugin ou paramètre supplémentaire requis</li>
+<li>Fonctionne automatiquement avec les jeux compatibles</li>
+</ul>
+<h3 id="chargement-des-jeux-avec-support-amiibo">
+<a class="header-anchor" href="#chargement-des-jeux-avec-support-amiibo"></a>
+Chargement des jeux avec support Amiibo
+</h3><h4 id="jeux-wii-u-compatibles">
+<a class="header-anchor" href="#jeux-wii-u-compatibles"></a>
+Jeux Wii U compatibles
+</h4><p><strong>Titres majeurs supportant les Amiibo :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Fonctions Amiibo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>The Legend of Zelda: Breath of the Wild</strong></td>
+          <td>Objets, armes, équipement exclusif</td>
+      </tr>
+      <tr>
+          <td><strong>Super Smash Bros. for Wii U</strong></td>
+          <td>Entraînement de combattants, personnalisation</td>
+      </tr>
+      <tr>
+          <td><strong>Mario Kart 8</strong></td>
+          <td>Combinaisons de course et costumes</td>
+      </tr>
+      <tr>
+          <td><strong>Super Mario Maker</strong></td>
+          <td>Costumes et niveaux spéciaux</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade Chronicles X</strong></td>
+          <td>Objets et équipement exclusifs</td>
+      </tr>
+      <tr>
+          <td><strong>Yoshi&rsquo;s Woolly World</strong></td>
+          <td>Motifs et designs de Yoshi</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="utilisation-amiibo-étape-par-étape">
+<a class="header-anchor" href="#utilisation-amiibo-%c3%a9tape-par-%c3%a9tape"></a>
+Utilisation Amiibo étape par étape
+</h2><h3 id="exemple--the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#exemple--the-legend-of-zelda-breath-of-the-wild"></a>
+Exemple : The Legend of Zelda: Breath of the Wild
+</h3><h4 id="accès-à-la-rune-amiibo">
+<a class="header-anchor" href="#acc%c3%a8s-%c3%a0-la-rune-amiibo"></a>
+Accès à la rune Amiibo
+</h4><p><strong>Préparation en jeu :</strong></p>
+<ol>
+<li><strong>Progressez</strong> dans le jeu jusqu&rsquo;à obtenir la rune Amiibo</li>
+<li><strong>Équipez</strong> la rune Amiibo sur votre Tablette Sheikah</li>
+<li><strong>Trouvez</strong> une zone ouverte loin des bâtiments et falaises</li>
+<li><strong>Positionnez</strong> Link dans un endroit approprié</li>
+</ol>
+<p><img src="/images/botw-amiibo-rune.png" alt="Rune Amiibo BOTW">
+<em>Rune Amiibo équipée dans Zelda: BOTW</em></p>
+<h4 id="préparation-pour-scanner">
+<a class="header-anchor" href="#pr%c3%a9paration-pour-scanner"></a>
+Préparation pour scanner
+</h4><p><strong>Étapes avant le scan :</strong></p>
+<ol>
+<li><strong>Ouvrez</strong> votre dossier Amiibo sur votre ordinateur</li>
+<li><strong>Naviguez</strong> vers le sous-dossier Zelda</li>
+<li><strong>Identifiez</strong> l&rsquo;Amiibo que vous voulez utiliser</li>
+<li><strong>Gardez</strong> la fenêtre du dossier accessible</li>
+</ol>
+<p><img src="/images/amiibo-folder-ready.png" alt="Dossier Amiibo Prêt">
+<em>Dossier Amiibo préparé pour le scan</em></p>
+<h3 id="processus-de-scan-dans-cemu">
+<a class="header-anchor" href="#processus-de-scan-dans-cemu"></a>
+Processus de scan dans Cemu
+</h3><h4 id="accès-au-menu-nfc">
+<a class="header-anchor" href="#acc%c3%a8s-au-menu-nfc"></a>
+Accès au menu NFC
+</h4><p><strong>Scan étape par étape :</strong></p>
+<ol>
+<li><strong>Activez</strong> la rune Amiibo en jeu (maintenez haut sur le D-pad)</li>
+<li><strong>Basculez</strong> vers la fenêtre Cemu</li>
+<li><strong>Cliquez</strong> sur &ldquo;NFC&rdquo; dans la barre de menu supérieure</li>
+<li><strong>Sélectionnez</strong> &ldquo;Scan NFC Tag from File&hellip;&rdquo;</li>
+</ol>
+<p><img src="/images/cemu-nfc-menu.png" alt="Menu NFC Cemu">
+<em>Accès au menu NFC dans Cemu</em></p>
+<h4 id="sélection-de-votre-amiibo">
+<a class="header-anchor" href="#s%c3%a9lection-de-votre-amiibo"></a>
+Sélection de votre Amiibo
+</h4><p><strong>Processus de sélection de fichier :</strong></p>
+<ol>
+<li><strong>Naviguez</strong> vers votre dossier Amiibo</li>
+<li><strong>Choisissez</strong> le fichier .bin désiré (ex: Link_Archer.bin)</li>
+<li><strong>Cliquez</strong> &ldquo;Ouvrir&rdquo; pour confirmer la sélection</li>
+<li><strong>Retournez</strong> immédiatement à la fenêtre de jeu</li>
+</ol>
+<p><img src="/images/amiibo-file-selection.png" alt="Sélection Fichier Amiibo">
+<em>Sélection du fichier Amiibo .bin</em></p>
+<h4 id="finalisation-du-scan">
+<a class="header-anchor" href="#finalisation-du-scan"></a>
+Finalisation du scan
+</h4><p><strong>Étapes de finalisation :</strong></p>
+<ol>
+<li><strong>Revenez</strong> à la fenêtre de jeu</li>
+<li><strong>Terminez</strong> l&rsquo;activation de la rune Amiibo</li>
+<li><strong>Regardez</strong> les objets apparaître du ciel</li>
+<li><strong>Collectez</strong> vos récompenses !</li>
+</ol>
+<p><img src="/images/amiibo-rewards-spawn.png" alt="Apparition Récompenses Amiibo">
+<em>Objets apparaissant après un scan Amiibo réussi</em></p>
+<p>// &hellip;existing code&hellip;</p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
+      <link>https://axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Note Importante</strong> : Assurez-vous de posséder légalement les jeux, DLC et mises à jour que vous installez. Ce guide est à des fins éducatives uniquement.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;installation de <strong>DLC</strong> (contenu téléchargeable) et de <strong>mises à jour</strong> sur les émulateurs <strong>Yuzu</strong> et <strong>Ryujinx</strong> est un processus simple mais essentiel pour profiter pleinement de vos jeux Nintendo Switch émulés.</p>
+<p>Ce guide vous explique <strong>étape par étape</strong> comment procéder sur les deux émulateurs les plus populaires.</p>
+<h3 id="formats-de-fichiers-supportés">
+<a class="header-anchor" href="#formats-de-fichiers-support%c3%a9s"></a>
+Formats de fichiers supportés
+</h3><p><strong>Types de fichiers acceptés :</strong></p>
+<ul>
+<li><strong>NSP</strong> - Nintendo Submission Package (format principal)</li>
+<li><strong>XCI</strong> - Nintendo Game Card Image</li>
+<li><strong>NCA</strong> - Nintendo Content Archive</li>
+</ul>
+<p><strong>Différence entre Update et DLC :</strong></p>
+<ul>
+<li><strong>Update</strong> : Mise à jour du jeu de base (corrections, améliorations)</li>
+<li><strong>DLC</strong> : Contenu additionnel payant (nouveaux niveaux, personnages, etc.)</li>
+</ul>
+<h2 id="installation-sur-yuzu">
+<a class="header-anchor" href="#installation-sur-yuzu"></a>
+Installation sur Yuzu
+</h2><h3 id="méthode-universelle-update--dlc">
+<a class="header-anchor" href="#m%c3%a9thode-universelle-update--dlc"></a>
+Méthode universelle (Update + DLC)
+</h3><h4 id="étape-1--accéder-au-menu-dinstallation">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-menu-dinstallation"></a>
+Étape 1 : Accéder au menu d&rsquo;installation
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> et attendez que l&rsquo;interface soit chargée</li>
+<li>Dans la barre de menu, cliquez sur <strong>&ldquo;File&rdquo;</strong> (Fichier)</li>
+<li>Sélectionnez <strong>&ldquo;Install Files to NAND&rdquo;</strong> (Installer des fichiers sur la NAND)</li>
+</ol>
+<p><img src="/images/yuzu-file-menu.png" alt="Menu File Yuzu">
+<em>Menu File avec l&rsquo;option d&rsquo;installation dans Yuzu</em></p>
+<h4 id="étape-2--sélectionner-le-fichier">
+<a class="header-anchor" href="#%c3%a9tape-2--s%c3%a9lectionner-le-fichier"></a>
+Étape 2 : Sélectionner le fichier
+</h4><ol start="4">
+<li>Une <strong>fenêtre de sélection</strong> de fichiers s&rsquo;ouvre</li>
+<li><strong>Naviguez</strong> vers l&rsquo;emplacement de votre fichier DLC/Update</li>
+<li><strong>Sélectionnez</strong> le fichier (.nsp, .xci, ou .nca)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> (Ouvrir)</li>
+</ol>
+<p><img src="/images/yuzu-file-selection.png" alt="Sélection fichier Yuzu">
+<em>Fenêtre de sélection de fichiers dans Yuzu</em></p>
+<h4 id="étape-3--confirmer-linstallation">
+<a class="header-anchor" href="#%c3%a9tape-3--confirmer-linstallation"></a>
+Étape 3 : Confirmer l&rsquo;installation
+</h4><ol start="8">
+<li>Yuzu <strong>analyse le fichier</strong> et affiche les informations</li>
+<li>Une boîte de dialogue apparaît demandant confirmation</li>
+<li>Cliquez sur <strong>&ldquo;Yes&rdquo;</strong> (Oui) pour procéder à l&rsquo;installation</li>
+<li><strong>Attendez</strong> que l&rsquo;installation se termine (barre de progression)</li>
+</ol>
+<h4 id="étape-4--vérification">
+<a class="header-anchor" href="#%c3%a9tape-4--v%c3%a9rification"></a>
+Étape 4 : Vérification
+</h4><ol start="12">
+<li>L&rsquo;installation est <strong>terminée</strong> quand le message de succès apparaît</li>
+<li><strong>Redémarrez</strong> Yuzu pour s&rsquo;assurer que tout est bien pris en compte</li>
+<li>Lancez votre jeu pour vérifier que le DLC/Update est actif</li>
+</ol>
+<p><strong>Indicateurs de réussite :</strong></p>
+<ul>
+<li>Message &ldquo;Installation completed successfully&rdquo;</li>
+<li>Nouveau contenu visible dans le jeu</li>
+<li>Version mise à jour affichée dans les propriétés du jeu</li>
+</ul>
+<h2 id="installation-sur-ryujinx">
+<a class="header-anchor" href="#installation-sur-ryujinx"></a>
+Installation sur Ryujinx
+</h2><h3 id="pour-les-updates-mises-à-jour">
+<a class="header-anchor" href="#pour-les-updates-mises-%c3%a0-jour"></a>
+Pour les Updates (Mises à jour)
+</h3><h4 id="étape-1--accéder-à-la-gestion-des-updates">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-gestion-des-updates"></a>
+Étape 1 : Accéder à la gestion des updates
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong> et localisez votre jeu dans la liste</li>
+<li><strong>Clic droit</strong> sur le jeu que vous souhaitez mettre à jour</li>
+<li>Dans le menu contextuel, sélectionnez <strong>&ldquo;Manage Updates&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-context-menu.png" alt="Menu contextuel Ryujinx">
+<em>Menu clic droit avec l&rsquo;option Manage Updates</em></p>
+<h4 id="étape-2--ajouter-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-2--ajouter-lupdate"></a>
+Étape 2 : Ajouter l&rsquo;update
+</h4><ol start="4">
+<li>La fenêtre <strong>&ldquo;Manage Updates&rdquo;</strong> s&rsquo;ouvre</li>
+<li>Cliquez sur le bouton <strong>&ldquo;Add&rdquo;</strong> ou <strong>&ldquo;Browse&rdquo;</strong></li>
+<li><strong>Sélectionnez</strong> votre fichier d&rsquo;update (.nsp ou .xci)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> pour l&rsquo;ajouter</li>
+</ol>
+<h4 id="étape-3--appliquer-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-3--appliquer-lupdate"></a>
+Étape 3 : Appliquer l&rsquo;update
+</h4><ol start="8">
+<li>Votre update apparaît dans la liste avec <strong>sa version</strong></li>
+<li><strong>Cochez</strong> la case à côté de l&rsquo;update pour l&rsquo;activer</li>
+<li>Cliquez sur <strong>&ldquo;Save&rdquo;</strong> pour appliquer les changements</li>
+</ol>
+<p><img src="/images/ryujinx-update-manager.png" alt="Gestion updates Ryujinx">
+<em>Interface de gestion des updates dans Ryujinx</em></p>
+<h4 id="vérification-de-lupdate">
+<a class="header-anchor" href="#v%c3%a9rification-de-lupdate"></a>
+Vérification de l&rsquo;update
+</h4><ol start="11">
+<li><strong>Fermez</strong> la fenêtre de gestion</li>
+<li>Dans la liste des jeux, vous devriez voir la <strong>nouvelle version</strong> affichée</li>
+<li><strong>Lancez le jeu</strong> pour confirmer que l&rsquo;update est active</li>
+</ol>
+<h3 id="pour-les-dlc">
+<a class="header-anchor" href="#pour-les-dlc"></a>
+Pour les DLC
+</h3><h4 id="procédure-identique-aux-updates">
+<a class="header-anchor" href="#proc%c3%a9dure-identique-aux-updates"></a>
+Procédure identique aux updates
+</h4><p><strong>La méthode est exactement la même :</strong></p>
+<ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Manage DLC&rdquo;</strong> (au lieu de Manage Updates)</li>
+<li><strong>Add/Browse</strong> → Sélectionner le fichier DLC</li>
+<li><strong>Cocher</strong> le DLC pour l&rsquo;activer</li>
+<li><strong>Save</strong> pour appliquer</li>
+</ol>
+<p><img src="/images/ryujinx-dlc-manager.png" alt="Gestion DLC Ryujinx">
+<em>Interface de gestion des DLC dans Ryujinx</em></p>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des Méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Méthode</strong></td>
+          <td>File → Install Files to NAND</td>
+          <td>Clic droit → Manage Updates/DLC</td>
+      </tr>
+      <tr>
+          <td><strong>Simplicité</strong></td>
+          <td>Très simple, une seule méthode</td>
+          <td>Légèrement plus d&rsquo;étapes</td>
+      </tr>
+      <tr>
+          <td><strong>Gestion</strong></td>
+          <td>Installation directe</td>
+          <td>Gestion individuelle par jeu</td>
+      </tr>
+      <tr>
+          <td><strong>Vérification</strong></td>
+          <td>Automatique</td>
+          <td>Visuelle dans la liste</td>
+      </tr>
+      <tr>
+          <td><strong>Flexibilité</strong></td>
+          <td>Moins de contrôle</td>
+          <td>Plus de contrôle granulaire</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="gestion-et-organisation">
+<a class="header-anchor" href="#gestion-et-organisation"></a>
+Gestion et Organisation
+</h2><h3 id="organiser-vos-fichiers-dlcupdates">
+<a class="header-anchor" href="#organiser-vos-fichiers-dlcupdates"></a>
+Organiser vos fichiers DLC/Updates
+</h3><p><strong>Structure de dossiers recommandée :</strong></p>
+<pre tabindex="0"><code>📁 Nintendo_Switch_Content/
+├── 📁 Games/
+│   ├── game1.nsp
+│   ├── game2.xci
+│   └── game3.nsp
+├── 📁 Updates/
+│   ├── 📁 Game1/
+│   │   ├── update_v1.1.0.nsp
+│   │   └── update_v1.2.0.nsp
+│   └── 📁 Game2/
+│       └── update_v2.0.1.nsp
+└── 📁 DLC/
+    ├── 📁 Game1/
+    │   ├── dlc1.nsp
+    │   └── dlc2.nsp
+    └── 📁 Game2/
+        └── season_pass.nsp
+</code></pre><h3 id="vérifier-les-versions-installées">
+<a class="header-anchor" href="#v%c3%a9rifier-les-versions-install%c3%a9es"></a>
+Vérifier les versions installées
+</h3><h4 id="dans-yuzu">
+<a class="header-anchor" href="#dans-yuzu"></a>
+Dans Yuzu
+</h4><ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Properties&rdquo;</strong></li>
+<li>Onglet <strong>&ldquo;General&rdquo;</strong> → Vérifier la version</li>
+<li>Onglet <strong>&ldquo;Installed Content&rdquo;</strong> → Liste des DLC</li>
+</ol>
+<h4 id="dans-ryujinx">
+<a class="header-anchor" href="#dans-ryujinx"></a>
+Dans Ryujinx
+</h4><ol>
+<li><strong>Informations</strong> visibles directement dans la liste des jeux</li>
+<li><strong>Clic droit</strong> → <strong>&ldquo;Manage Updates/DLC&rdquo;</strong> pour les détails</li>
+<li>Version affichée à côté du nom du jeu</li>
+</ol>
+<h2 id="dépannage-des-problèmes-courants">
+<a class="header-anchor" href="#d%c3%a9pannage-des-probl%c3%a8mes-courants"></a>
+Dépannage des Problèmes Courants
+</h2><h3 id="problèmes-dinstallation">
+<a class="header-anchor" href="#probl%c3%a8mes-dinstallation"></a>
+Problèmes d&rsquo;installation
+</h3><h4 id="-fichier-non-reconnu">
+<a class="header-anchor" href="#-fichier-non-reconnu"></a>
+🚫 Fichier non reconnu
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Format de fichier incompatible</li>
+<li>Fichier corrompu</li>
+<li>Clés de déchiffrement manquantes</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez le format du fichier (.nsp, .xci, .nca)</li>
+<li>Re-téléchargez le fichier si corrompu</li>
+<li>Installez les clés prod.keys à jour</li>
+<li>Vérifiez que le firmware est compatible</li>
+</ol>
+<h4 id="-installation-échoue">
+<a class="header-anchor" href="#-installation-%c3%a9choue"></a>
+⚠️ Installation échoue
+</h4><p><strong>Messages d&rsquo;erreur courants :</strong></p>
+<ul>
+<li>&ldquo;Failed to install to NAND&rdquo;</li>
+<li>&ldquo;Invalid signature&rdquo;</li>
+<li>&ldquo;Missing keys&rdquo;</li>
+</ul>
+<p><strong>Solutions étape par étape :</strong></p>
+<ol>
+<li><strong>Vérifiez l&rsquo;espace disque</strong> disponible</li>
+<li><strong>Fermez complètement</strong> l&rsquo;émulateur et relancez</li>
+<li><strong>Exécutez en tant qu&rsquo;administrateur</strong> si nécessaire</li>
+<li><strong>Mettez à jour</strong> l&rsquo;émulateur vers la dernière version</li>
+</ol>
+<h3 id="problèmes-de-compatibilité">
+<a class="header-anchor" href="#probl%c3%a8mes-de-compatibilit%c3%a9"></a>
+Problèmes de compatibilité
+</h3><h4 id="version-de-firmware">
+<a class="header-anchor" href="#version-de-firmware"></a>
+Version de firmware
+</h4><p><strong>Vérification firmware requis :</strong></p>
+<pre tabindex="0"><code>Jeu → Propriétés → Required System Version
+</code></pre><p><strong>Mise à jour firmware :</strong></p>
+<ul>
+<li>Téléchargez le firmware correspondant</li>
+<li>Installez via les outils de l&rsquo;émulateur</li>
+<li>Redémarrez l&rsquo;émulateur</li>
+</ul>
+<h4 id="clés-de-déchiffrement">
+<a class="header-anchor" href="#cl%c3%a9s-de-d%c3%a9chiffrement"></a>
+Clés de déchiffrement
+</h4><p><strong>Emplacement des clés :</strong></p>
+<ul>
+<li><strong>Yuzu</strong> : <code>%appdata%/yuzu/keys/</code></li>
+<li><strong>Ryujinx</strong> : <code>%appdata%/Ryujinx/system/</code></li>
+</ul>
+<p><strong>Fichiers requis :</strong></p>
+<ul>
+<li><code>prod.keys</code> (clés principales)</li>
+<li><code>title.keys</code> (clés des titres)</li>
+</ul>
+<h2 id="bonnes-pratiques">
+<a class="header-anchor" href="#bonnes-pratiques"></a>
+Bonnes Pratiques
+</h2><h3 id="sauvegarde-et-sécurité">
+<a class="header-anchor" href="#sauvegarde-et-s%c3%a9curit%c3%a9"></a>
+Sauvegarde et sécurité
+</h3><p><strong>Avant installation :</strong></p>
+<ul>
+<li>✅ <strong>Sauvegardez</strong> vos saves importantes</li>
+<li>✅ <strong>Notez</strong> les versions actuellement installées</li>
+<li>✅ <strong>Vérifiez</strong> la compatibilité émulateur/firmware</li>
+<li>✅ <strong>Testez</strong> avec un jeu moins important d&rsquo;abord</li>
+</ul>
+<h3 id="organisation-efficace">
+<a class="header-anchor" href="#organisation-efficace"></a>
+Organisation efficace
+</h3><p><strong>Système de nommage :</strong></p>
+<pre tabindex="0"><code>NomDuJeu_Update_v1.2.0.nsp
+NomDuJeu_DLC_SeasonPass.nsp
+NomDuJeu_DLC_Expansion1.nsp
+</code></pre><p><strong>Avantages :</strong></p>
+<ul>
+<li>Identification rapide</li>
+<li>Évite les doublons</li>
+<li>Facilite la gestion</li>
+</ul>
+<h3 id="maintenance-régulière">
+<a class="header-anchor" href="#maintenance-r%c3%a9guli%c3%a8re"></a>
+Maintenance régulière
+</h3><p><strong>Nettoyage périodique :</strong></p>
+<ol>
+<li><strong>Supprimez</strong> les anciennes versions d&rsquo;updates</li>
+<li><strong>Vérifiez</strong> l&rsquo;espace de stockage utilisé</li>
+<li><strong>Sauvegardez</strong> les DLC importants</li>
+<li><strong>Documentez</strong> les combinaisons qui fonctionnent</li>
+</ol>
+<h2 id="cas-dusage-spéciaux">
+<a class="header-anchor" href="#cas-dusage-sp%c3%a9ciaux"></a>
+Cas d&rsquo;Usage Spéciaux
+</h2><h3 id="jeux-avec-multiples-dlc">
+<a class="header-anchor" href="#jeux-avec-multiples-dlc"></a>
+Jeux avec multiples DLC
+</h3><p><strong>Exemple : The Legend of Zelda: Breath of the Wild</strong></p>
+<pre tabindex="0"><code>📁 BOTW_Content/
+├── BOTW_Update_v1.6.0.nsp
+├── BOTW_DLC_Pack1_MasterTrials.nsp
+├── BOTW_DLC_Pack2_ChampionsBallad.nsp
+└── BOTW_SeasonPass_Complete.nsp
+</code></pre><p><strong>Installation recommandée :</strong></p>
+<ol>
+<li><strong>Update</strong> en premier</li>
+<li><strong>DLC</strong> dans l&rsquo;ordre de sortie</li>
+<li><strong>Test</strong> après chaque installation</li>
+</ol>
+<h3 id="migration-entre-émulateurs">
+<a class="header-anchor" href="#migration-entre-%c3%a9mulateurs"></a>
+Migration entre émulateurs
+</h3><p><strong>Yuzu vers Ryujinx :</strong></p>
+<ol>
+<li>Les DLC/Updates installés ne se transfèrent pas automatiquement</li>
+<li><strong>Réinstallez</strong> tout le contenu sur le nouvel émulateur</li>
+<li><strong>Vérifiez</strong> la compatibilité avant migration</li>
+</ol>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;installation de <strong>DLC et mises à jour</strong> sur Yuzu et Ryujinx est un processus simple une fois maîtrisé. La différence principale réside dans l&rsquo;approche : Yuzu utilise une méthode universelle tandis que Ryujinx offre une gestion plus granulaire.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé des procédures :</strong></p>
+<p><strong>Yuzu (Universal) :</strong></p>
+<ul>
+<li>File → Install Files to NAND</li>
+<li>Sélectionner fichier → Confirmer</li>
+<li>Fonctionne pour Update ET DLC</li>
+</ul>
+<p><strong>Ryujinx (Séparé) :</strong></p>
+<ul>
+<li>Clic droit → Manage Updates/DLC</li>
+<li>Add → Select → Save</li>
+<li>Gestion séparée Update/DLC</li>
+</ul></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une expérience optimale :</strong></p>
+<ul>
+<li>Maintenez vos émulateurs à jour</li>
+<li>Organisez vos fichiers clairement</li>
+<li>Sauvegardez régulièrement</li>
+<li>Testez progressivement</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions Fréquentes
+</h2><p><strong>Q : Puis-je installer plusieurs versions d&rsquo;un même DLC ?</strong>
+R : Non, une seule version par DLC. L&rsquo;installation d&rsquo;une nouvelle version remplace automatiquement l&rsquo;ancienne.</p>
+<p><strong>Q : Les DLC fonctionnent-ils entre différentes régions de jeu ?</strong>
+R : Généralement non. Les DLC doivent correspondre à la région du jeu de base (EU, US, JP).</p>
+<p><strong>Q : Que faire si l&rsquo;installation reste bloquée ?</strong>
+R : Fermez l&rsquo;émulateur, redémarrez en tant qu&rsquo;administrateur, et réessayez. Vérifiez aussi l&rsquo;espace disque disponible.</p>
+<p><strong>Q : Les sauvegardes sont-elles affectées par l&rsquo;installation de DLC ?</strong>
+R : Non, les sauvegardes existantes restent intactes. Certains DLC peuvent ajouter du nouveau contenu aux sauvegardes.</p>
+<p><strong>Q : Comment désinstaller un DLC ou une update ?</strong>
+R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous devrez supprimer depuis les paramètres système de l&rsquo;émulateur.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences d&rsquo;installation et vos jeux favoris avec DLC en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-setup/">Configuration Optimale de Yuzu</a></li>
+<li><a href="/fr/post/ryujinx-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/install-switch-mods/">Installer des Mods sur les Émulateurs Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu</title>
+      <link>https://axekin.com/fr/post/keyboard_mouse_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/keyboard_mouse_cemu/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet : Jouer Clavier-Souris sur l'Émulateur Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Note Importante</strong> : Bien que possible, l&rsquo;expérience clavier-souris sur Cemu ne sera pas aussi agréable qu&rsquo;avec une manette. Cette solution convient aux joueurs n&rsquo;ayant pas de contrôleur compatible.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur l&rsquo;émulateur <strong>Cemu</strong> avec un <strong>clavier et une souris</strong> nécessite l&rsquo;utilisation d&rsquo;outils tiers pour simuler une manette. Ce guide vous explique comment configurer cette solution avec <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>.</p>
+<p>Cette méthode est particulièrement utile pour :</p>
+<ul>
+<li>Les joueurs n&rsquo;ayant pas de manette compatible</li>
+<li>Tester rapidement des jeux sans investir dans un contrôleur</li>
+<li>Certains genres de jeux adaptés au clavier-souris</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> ViGEmBus et Mouse2Joystick</li>
+<li><strong>Installer</strong> ViGEmBus (pilote de manette virtuelle)</li>
+<li><strong>Configurer</strong> Mouse2Joystick selon vos préférences</li>
+<li><strong>Paramétrer</strong> Cemu pour reconnaître les contrôles</li>
+<li><strong>Tester</strong> et ajuster les paramètres</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-nécessaires">
+<a class="header-anchor" href="#logiciels-n%c3%a9cessaires"></a>
+Logiciels nécessaires
+</h3><p><strong>Applications requises :</strong></p>
+<ul>
+<li><strong>ViGEmBus</strong> : Pilote pour manettes virtuelles</li>
+<li><strong>Mouse2Joystick</strong> : Convertit clavier/souris en signaux manette</li>
+<li><strong>Cemu</strong> : Émulateur Wii U (dernière version stable)</li>
+</ul>
+<h3 id="téléchargements">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargements"></a>
+Téléchargements
+</h3><h4 id="vigembus-pilote-de-manette-virtuelle">
+<a class="header-anchor" href="#vigembus-pilote-de-manette-virtuelle"></a>
+ViGEmBus (Pilote de manette virtuelle)
+</h4><p><strong>🔗 <a href="https://github.com/ViGEm/ViGEmBus/releases">Télécharger ViGEmBus</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Accédez</strong> à la page des releases</li>
+<li><strong>Téléchargez</strong> le fichier <code>.msi</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>ViGEmBus_Setup_1.17.333.msi</code></li>
+</ol>
+<p><img src="/images/vigembus-download.png" alt="ViGEmBus Download">
+<em>Page de téléchargement ViGEmBus</em></p>
+<p><strong>Caractéristiques ViGEmBus :</strong></p>
+<ul>
+<li><strong>Gratuit</strong> et open-source</li>
+<li><strong>Compatible</strong> Windows 10/11</li>
+<li><strong>Stable</strong> et régulièrement mis à jour</li>
+<li><strong>Nécessaire</strong> pour simuler des manettes Xbox</li>
+</ul>
+<h4 id="mouse2joystick-convertisseur-de-contrôles">
+<a class="header-anchor" href="#mouse2joystick-convertisseur-de-contr%c3%b4les"></a>
+Mouse2Joystick (Convertisseur de contrôles)
+</h4><p><strong>🔗 <a href="https://github.com/memethyl/Mouse2Joystick/releases">Télécharger Mouse2Joystick</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Téléchargez</strong> le fichier <code>.zip</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>Mouse2Joystick_v2.3.1.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+</ol>
+<p><img src="/images/mouse2joystick-download.png" alt="Mouse2Joystick Download">
+<em>Page de téléchargement Mouse2Joystick</em></p>
+<p><strong>Caractéristiques Mouse2Joystick :</strong></p>
+<ul>
+<li><strong>Portable</strong> : aucune installation requise</li>
+<li><strong>Personnalisable</strong> : mappage des touches configurable</li>
+<li><strong>Léger</strong> : faible impact sur les performances</li>
+<li><strong>Temps réel</strong> : conversion instantanée des mouvements</li>
+</ul>
+<h2 id="étape-1--installation-de-vigembus">
+<a class="header-anchor" href="#%c3%a9tape-1--installation-de-vigembus"></a>
+Étape 1 : Installation de ViGEmBus
+</h2><h3 id="processus-dinstallation">
+<a class="header-anchor" href="#processus-dinstallation"></a>
+Processus d&rsquo;installation
+</h3><h4 id="lancement-de-linstallateur">
+<a class="header-anchor" href="#lancement-de-linstallateur"></a>
+Lancement de l&rsquo;installateur
+</h4><ol>
+<li><strong>Localisez</strong> le fichier <code>.msi</code> téléchargé</li>
+<li><strong>Double-cliquez</strong> pour lancer l&rsquo;installation</li>
+<li><strong>Acceptez</strong> les permissions administrateur si demandées</li>
+</ol>
+<p><img src="/images/vigembus-installer.png" alt="ViGEmBus Installer">
+<em>Assistant d&rsquo;installation ViGEmBus</em></p>
+<h4 id="configuration-de-linstallation">
+<a class="header-anchor" href="#configuration-de-linstallation"></a>
+Configuration de l&rsquo;installation
+</h4><p><strong>Étapes d&rsquo;installation :</strong></p>
+<ol>
+<li><strong>Welcome</strong> → Cliquez &ldquo;Next&rdquo;</li>
+<li><strong>License Agreement</strong> → Acceptez et cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Destination Folder</strong> → Laissez par défaut, cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Ready to Install</strong> → Cliquez &ldquo;Install&rdquo;</li>
+<li><strong>Completed</strong> → Cliquez &ldquo;Finish&rdquo;</li>
+</ol>
+<p><strong>Composants installés :</strong></p>
+<ul>
+<li>Pilote de bus virtuel</li>
+<li>Bibliothèques système nécessaires</li>
+<li>Interface de gestion des périphériques</li>
+</ul>
+<h3 id="vérification-de-linstallation">
+<a class="header-anchor" href="#v%c3%a9rification-de-linstallation"></a>
+Vérification de l&rsquo;installation
+</h3><h4 id="contrôle-dans-le-gestionnaire-de-périphériques">
+<a class="header-anchor" href="#contr%c3%b4le-dans-le-gestionnaire-de-p%c3%a9riph%c3%a9riques"></a>
+Contrôle dans le Gestionnaire de périphériques
+</h4><ol>
+<li><strong>Clic droit</strong> sur &ldquo;Ce PC&rdquo; → <strong>Gestionnaire de périphériques</strong></li>
+<li><strong>Développez</strong> &ldquo;Périphériques système&rdquo;</li>
+<li><strong>Vérifiez</strong> la présence de &ldquo;ViGEmBus Device&rdquo;</li>
+</ol>
+<p><img src="/images/vigembus-device-manager.png" alt="ViGEmBus Device Manager">
+<em>ViGEmBus dans le Gestionnaire de périphériques</em></p>
+<h2 id="étape-2--configuration-de-mouse2joystick">
+<a class="header-anchor" href="#%c3%a9tape-2--configuration-de-mouse2joystick"></a>
+Étape 2 : Configuration de Mouse2Joystick
+</h2><h3 id="extraction-et-première-utilisation">
+<a class="header-anchor" href="#extraction-et-premi%c3%a8re-utilisation"></a>
+Extraction et première utilisation
+</h3><h4 id="préparation-du-logiciel">
+<a class="header-anchor" href="#pr%c3%a9paration-du-logiciel"></a>
+Préparation du logiciel
+</h4><ol>
+<li><strong>Naviguez</strong> vers le fichier <code>.zip</code> téléchargé</li>
+<li><strong>Clic droit</strong> → <strong>Extraire tout</strong></li>
+<li><strong>Choisissez</strong> un dossier permanent (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+<li><strong>Lancez</strong> <code>Mouse2Joystick.exe</code></li>
+</ol>
+<p><img src="/images/mouse2joystick-extraction.png" alt="Mouse2Joystick Extraction">
+<em>Extraction de Mouse2Joystick</em></p>
+<h3 id="interface-et-configuration-de-base">
+<a class="header-anchor" href="#interface-et-configuration-de-base"></a>
+Interface et configuration de base
+</h3><h4 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h4><p>Une fois lancé, Mouse2Joystick affiche une interface simple :</p>
+<p><img src="/images/mouse2joystick-interface.png" alt="Mouse2Joystick Interface">
+<em>Interface principale de Mouse2Joystick</em></p>
+<h4 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h4><p><strong>Paramètres de base suggérés :</strong></p>
+<p><strong>Section &ldquo;Mouse Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Mouse Sensitivity X: 3.0
+Mouse Sensitivity Y: 3.0
+Mouse Deadzone: 0.1
+Invert Y-axis: Selon préférence
+</code></pre><p><strong>Section &ldquo;Controller Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Controller Type: Xbox 360 Controller
+Vibration: Disabled (pas nécessaire)
+</code></pre><h3 id="mappage-des-touches">
+<a class="header-anchor" href="#mappage-des-touches"></a>
+Mappage des touches
+</h3><h4 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h4><p><strong>Mappage standard recommandé :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Action Wii U</th>
+          <th>Touche Clavier</th>
+          <th>Fonction</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Stick gauche</strong></td>
+          <td>WASD</td>
+          <td>Déplacement</td>
+      </tr>
+      <tr>
+          <td><strong>Stick droit</strong></td>
+          <td>Souris</td>
+          <td>Caméra</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton A</strong></td>
+          <td>Espace</td>
+          <td>Action principale</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton B</strong></td>
+          <td>Ctrl gauche</td>
+          <td>Action secondaire</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton X</strong></td>
+          <td>E</td>
+          <td>Interaction</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton Y</strong></td>
+          <td>Q</td>
+          <td>Menu/Inventaire</td>
+      </tr>
+      <tr>
+          <td><strong>L/R</strong></td>
+          <td>Shift/Tab</td>
+          <td>Gâchettes</td>
+      </tr>
+      <tr>
+          <td><strong>ZL/ZR</strong></td>
+          <td>Clic gauche/droit</td>
+          <td>Gâchettes numériques</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/mouse2joystick-mapping.png" alt="Mouse2Joystick Mapping">
+<em>Configuration du mappage des touches</em></p>
+<h4 id="paramètres-avancés">
+<a class="header-anchor" href="#param%c3%a8tres-avanc%c3%a9s"></a>
+Paramètres avancés
+</h4><p><strong>Sensibilité de la souris :</strong></p>
+<ul>
+<li><strong>Jeux FPS</strong> : Sensibilité élevée (4.0-5.0)</li>
+<li><strong>Jeux d&rsquo;aventure</strong> : Sensibilité moyenne (2.5-3.5)</li>
+<li><strong>Jeux de plateforme</strong> : Sensibilité faible (1.5-2.5)</li>
+</ul>
+<p><strong>Dead zones :</strong></p>
+<ul>
+<li><strong>Souris</strong> : 0.05-0.15 (évite les micro-mouvements)</li>
+<li><strong>Clavier</strong> : 0.0 (réponse instantanée)</li>
+</ul>
+<h2 id="étape-3--configuration-de-cemu">
+<a class="header-anchor" href="#%c3%a9tape-3--configuration-de-cemu"></a>
+Étape 3 : Configuration de Cemu
+</h2><h3 id="accès-aux-paramètres-de-contrôle">
+<a class="header-anchor" href="#acc%c3%a8s-aux-param%c3%a8tres-de-contr%c3%b4le"></a>
+Accès aux paramètres de contrôle
+</h3><h4 id="navigation-dans-cemu">
+<a class="header-anchor" href="#navigation-dans-cemu"></a>
+Navigation dans Cemu
+</h4><ol>
+<li><strong>Lancez</strong> Cemu</li>
+<li><strong>Menu</strong> &ldquo;Options&rdquo; → <strong>&ldquo;Paramètres de la manette&rdquo;</strong> (Input Settings)</li>
+<li><strong>Supprimez</strong> toutes les manettes existantes avec le bouton <strong>&quot;-&quot;</strong></li>
+</ol>
+<p><img src="/images/cemu-input-settings.png" alt="Cemu Input Settings">
+<em>Paramètres de contrôle dans Cemu</em></p>
+<h3 id="suppression-des-contrôleurs-existants">
+<a class="header-anchor" href="#suppression-des-contr%c3%b4leurs-existants"></a>
+Suppression des contrôleurs existants
+</h3><h4 id="nettoyage-des-configurations">
+<a class="header-anchor" href="#nettoyage-des-configurations"></a>
+Nettoyage des configurations
+</h4><p><strong>Étapes de suppression :</strong></p>
+<ol>
+<li><strong>Identifiez</strong> tous les contrôleurs listés</li>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;-&quot;</strong> pour chaque contrôleur</li>
+<li><strong>Confirmez</strong> la suppression si demandé</li>
+<li><strong>Vérifiez</strong> que la liste est vide</li>
+</ol>
+<p><img src="/images/cemu-remove-controllers.png" alt="Cemu Remove Controllers">
+<em>Suppression des contrôleurs existants</em></p>
+<h3 id="ajout-des-nouveaux-contrôleurs">
+<a class="header-anchor" href="#ajout-des-nouveaux-contr%c3%b4leurs"></a>
+Ajout des nouveaux contrôleurs
+</h3><h4 id="configuration-xinput-mouse2joystick">
+<a class="header-anchor" href="#configuration-xinput-mouse2joystick"></a>
+Configuration XInput (Mouse2Joystick)
+</h4><p><strong>Avec Mouse2Joystick ouvert :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;XInput&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo; qui devrait apparaître</li>
+<li><strong>Confirmez</strong> la sélection</li>
+</ol>
+<p><img src="/images/cemu-add-xinput.png" alt="Cemu Add XInput">
+<em>Ajout du contrôleur XInput</em></p>
+<h4 id="configuration-keyboard-touches-supplémentaires">
+<a class="header-anchor" href="#configuration-keyboard-touches-suppl%c3%a9mentaires"></a>
+Configuration Keyboard (Touches supplémentaires)
+</h4><p><strong>Pour les touches non mappées :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> à nouveau sur <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;Keyboard&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo;</li>
+<li><strong>Configurez</strong> les touches spécifiques Wii U</li>
+</ol>
+<p><img src="/images/cemu-add-keyboard.png" alt="Cemu Add Keyboard">
+<em>Ajout du contrôleur clavier</em></p>
+<h3 id="configuration-finale-des-touches">
+<a class="header-anchor" href="#configuration-finale-des-touches"></a>
+Configuration finale des touches
+</h3><h4 id="mappage-dans-cemu">
+<a class="header-anchor" href="#mappage-dans-cemu"></a>
+Mappage dans Cemu
+</h4><p><strong>Configuration recommandée :</strong></p>
+<p><strong>Contrôleur XInput (Mouse2Joystick) :</strong></p>
+<pre tabindex="0"><code>Left Stick: Mouvement du personnage
+Right Stick: Contrôle de la caméra
+A Button: Action principale
+B Button: Retour/Annuler
+X Button: Action secondaire
+Y Button: Menu
+L/R Bumper: Gâchettes rapides
+L/R Trigger: Gâchettes analogiques
+</code></pre><p><strong>Contrôleur Keyboard (touches spéciales) :</strong></p>
+<pre tabindex="0"><code>Plus: Entrée (Menu principal)
+Minus: Échap (Pause)
+Home: Tab (Menu Home)
+Screenshot: F12
+</code></pre><p><img src="/images/cemu-final-config.png" alt="Cemu Final Configuration">
+<em>Configuration finale des contrôles</em></p>
+<h2 id="tests-et-ajustements">
+<a class="header-anchor" href="#tests-et-ajustements"></a>
+Tests et ajustements
+</h2><h3 id="test-de-fonctionnement">
+<a class="header-anchor" href="#test-de-fonctionnement"></a>
+Test de fonctionnement
+</h3><h4 id="vérification-de-base">
+<a class="header-anchor" href="#v%c3%a9rification-de-base"></a>
+Vérification de base
+</h4><p><strong>Checklist de test :</strong></p>
+<pre tabindex="0"><code>☑ Mouse2Joystick fonctionne en arrière-plan
+☑ Mouvements de souris = rotation caméra
+☑ WASD = déplacement du personnage
+☑ Clics souris = gâchettes
+☑ Touches clavier = boutons manette
+</code></pre><h4 id="test-en-jeu">
+<a class="header-anchor" href="#test-en-jeu"></a>
+Test en jeu
+</h4><p><strong>Jeux recommandés pour tester :</strong></p>
+<ul>
+<li><strong>The Legend of Zelda: Breath of the Wild</strong> : Test complet des contrôles</li>
+<li><strong>Super Mario 3D World</strong> : Test de précision</li>
+<li><strong>Mario Kart 8</strong> : Test de réactivité</li>
+</ul>
+<h3 id="optimisations-et-ajustements">
+<a class="header-anchor" href="#optimisations-et-ajustements"></a>
+Optimisations et ajustements
+</h3><h4 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h4><p><strong>🚫 La souris ne contrôle pas la caméra</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> que Mouse2Joystick est ouvert</li>
+<li><strong>Redémarrez</strong> Mouse2Joystick</li>
+<li><strong>Reconfigurez</strong> le stick droit dans Cemu</li>
+</ol>
+<p><strong>⚠️ Mouvements saccadés</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Réduisez</strong> la sensibilité de la souris</li>
+<li><strong>Augmentez</strong> la dead zone</li>
+<li><strong>Fermez</strong> les applications consommatrices de ressources</li>
+</ol>
+<p><strong>💻 Latence importante</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Mode plein écran</strong> dans Cemu</li>
+<li><strong>Désactivez</strong> la synchronisation verticale</li>
+<li><strong>Augmentez</strong> la priorité de processus de Mouse2Joystick</li>
+</ol>
+<h3 id="profils-personnalisés">
+<a class="header-anchor" href="#profils-personnalis%c3%a9s"></a>
+Profils personnalisés
+</h3><h4 id="sauvegarde-des-configurations">
+<a class="header-anchor" href="#sauvegarde-des-configurations"></a>
+Sauvegarde des configurations
+</h4><p><strong>Création de profils par jeu :</strong></p>
+<ol>
+<li><strong>Configurez</strong> les contrôles pour un jeu spécifique</li>
+<li><strong>Sauvegardez</strong> la configuration Mouse2Joystick</li>
+<li><strong>Exportez</strong> les paramètres Cemu</li>
+<li><strong>Nommez</strong> clairement chaque profil</li>
+</ol>
+<p><strong>Exemples de profils :</strong></p>
+<ul>
+<li><code>Zelda_BOTW_KBM.xml</code></li>
+<li><code>Mario3D_KBM.xml</code></li>
+<li><code>MarioKart8_KBM.xml</code></li>
+</ul>
+<h2 id="jeux-recommandés-et-incompatibles">
+<a class="header-anchor" href="#jeux-recommand%c3%a9s-et-incompatibles"></a>
+Jeux recommandés et incompatibles
+</h2><h3 id="jeux-adaptés-au-clavier-souris">
+<a class="header-anchor" href="#jeux-adapt%c3%a9s-au-clavier-souris"></a>
+Jeux adaptés au clavier-souris
+</h3><h4 id="excellente-compatibilité">
+<a class="header-anchor" href="#excellente-compatibilit%c3%a9"></a>
+Excellente compatibilité
+</h4><p><strong>Jeux fonctionnant bien :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Raison</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zelda: Breath of the Wild</strong></td>
+          <td>Contrôle libre de caméra</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade Chronicles X</strong></td>
+          <td>Gameplay lent, RPG</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Assassin&rsquo;s Creed 4</strong></td>
+          <td>Port PC-like</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Call of Duty: Ghosts</strong></td>
+          <td>FPS natif</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="compatibilité-moyenne">
+<a class="header-anchor" href="#compatibilit%c3%a9-moyenne"></a>
+Compatibilité moyenne
+</h4><p><strong>Jeux jouables avec adaptations :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Défis</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Super Mario 3D World</strong></td>
+          <td>Précision requise</td>
+          <td>⭐⭐⭐⭐☆</td>
+      </tr>
+      <tr>
+          <td><strong>Donkey Kong Country</strong></td>
+          <td>Timing important</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+      <tr>
+          <td><strong>New Super Mario Bros. U</strong></td>
+          <td>Contrôles rapides</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-non-recommandés">
+<a class="header-anchor" href="#jeux-non-recommand%c3%a9s"></a>
+Jeux non recommandés
+</h3><h4 id="mauvaise-compatibilité">
+<a class="header-anchor" href="#mauvaise-compatibilit%c3%a9"></a>
+Mauvaise compatibilité
+</h4><p><strong>Jeux difficiles au clavier-souris :</strong></p>
+<ul>
+<li><strong>Mario Kart 8</strong> : Contrôles analogiques cruciaux</li>
+<li><strong>Super Smash Bros.</strong> : Précision et rapidité extrêmes</li>
+<li><strong>Pokken Tournament</strong> : Combats complexes</li>
+<li><strong>Splatoon</strong> : Gyroscope nécessaire</li>
+</ul>
+<h2 id="troubleshooting-avancé">
+<a class="header-anchor" href="#troubleshooting-avanc%c3%a9"></a>
+Troubleshooting avancé
+</h2><h3 id="problèmes-de-détection">
+<a class="header-anchor" href="#probl%c3%a8mes-de-d%c3%a9tection"></a>
+Problèmes de détection
+</h3><h4 id="mouse2joystick-non-reconnu">
+<a class="header-anchor" href="#mouse2joystick-non-reconnu"></a>
+Mouse2Joystick non reconnu
+</h4><p><strong>Diagnostic :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> l&rsquo;installation de ViGEmBus</li>
+<li><strong>Redémarrez</strong> Windows</li>
+<li><strong>Relancez</strong> Mouse2Joystick en administrateur</li>
+<li><strong>Vérifiez</strong> les processus en arrière-plan</li>
+</ol>
+<p><strong>Solutions avancées :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span># Vérifier les services ViGEmBus
+</span></span><span style="display:flex;"><span>sc query ViGEmBus
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Redémarrer le service si nécessaire
+</span></span><span style="display:flex;"><span>sc stop ViGEmBus
+</span></span><span style="display:flex;"><span>sc start ViGEmBus
+</span></span></code></pre></div><h4 id="conflits-avec-dautres-logiciels">
+<a class="header-anchor" href="#conflits-avec-dautres-logiciels"></a>
+Conflits avec d&rsquo;autres logiciels
+</h4><p><strong>Logiciels potentiellement conflictuels :</strong></p>
+<ul>
+<li><strong>Steam Input</strong> : Désactivez pour Cemu</li>
+<li><strong>Xbox Game Bar</strong> : Peut interférer</li>
+<li><strong>Discord Overlay</strong> : Parfois problématique</li>
+<li><strong>GeForce Experience</strong> : Désactivez l&rsquo;overlay</li>
+</ul>
+<h3 id="optimisations-de-performance">
+<a class="header-anchor" href="#optimisations-de-performance"></a>
+Optimisations de performance
+</h3><h4 id="paramètres-windows">
+<a class="header-anchor" href="#param%c3%a8tres-windows"></a>
+Paramètres Windows
+</h4><p><strong>Optimisations système :</strong></p>
+<pre tabindex="0"><code>Mode de jeu Windows: Activé
+Priorité haute pour Cemu: Recommandée
+Fermer applications inutiles: Obligatoire
+Antivirus en mode jeu: Si disponible
+</code></pre><h4 id="paramètres-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-cemu"></a>
+Paramètres Cemu
+</h4><p><strong>Configuration optimale :</strong></p>
+<pre tabindex="0"><code>Async Shader Compilation: Activé
+Precompiled Shaders: Utilisez si disponibles
+GPU Buffer Cache Accuracy: Medium
+CPU Mode: Triple-core recompiler
+</code></pre><h2 id="ressources-et-aide-supplémentaire">
+<a class="header-anchor" href="#ressources-et-aide-suppl%c3%a9mentaire"></a>
+Ressources et aide supplémentaire
+</h2><h3 id="tutoriel-vidéo">
+<a class="header-anchor" href="#tutoriel-vid%c3%a9o"></a>
+Tutoriel vidéo
+</h3><p><strong>🎥 <a href="https://youtu.be/UAtG_UEbESI">Tutoriel complet en vidéo</a></strong></p>
+<p>Le tutoriel vidéo couvre :</p>
+<ul>
+<li>Installation complète étape par étape</li>
+<li>Configuration en temps réel</li>
+<li>Démonstration sur plusieurs jeux</li>
+<li>Résolution des problèmes courants</li>
+</ul>
+<h3 id="communauté-et-support">
+<a class="header-anchor" href="#communaut%c3%a9-et-support"></a>
+Communauté et support
+</h3><h4 id="forums-et-ressources">
+<a class="header-anchor" href="#forums-et-ressources"></a>
+Forums et ressources
+</h4><p><strong>Sites utiles :</strong></p>
+<ul>
+<li><strong>Reddit</strong> : r/cemu pour l&rsquo;aide communautaire</li>
+<li><strong>Discord Cemu</strong> : Support en temps réel</li>
+<li><strong>GitHub</strong> : Rapports de bugs et améliorations</li>
+<li><strong>YouTube</strong> : Tutoriels spécialisés</li>
+</ul>
+<h4 id="documentation-officielle">
+<a class="header-anchor" href="#documentation-officielle"></a>
+Documentation officielle
+</h4><p><strong>Ressources officielles :</strong></p>
+<ul>
+<li><strong>Cemu Wiki</strong> : Guide complet de l&rsquo;émulateur</li>
+<li><strong>ViGEmBus Docs</strong> : Documentation technique</li>
+<li><strong>Mouse2Joystick GitHub</strong> : Issues et mises à jour</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur <strong>Cemu</strong> avec un clavier et une souris est possible grâce à <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>. Bien que l&rsquo;expérience ne soit pas optimale pour tous les jeux, cette solution permet de découvrir l&rsquo;excellent catalogue Wii U sans investir dans une manette.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Configuration essentielle :</strong></p>
+<ol>
+<li><strong>ViGEmBus</strong> installé et fonctionnel</li>
+<li><strong>Mouse2Joystick</strong> configuré et actif</li>
+<li><strong>Cemu</strong> configuré avec XInput + Keyboard</li>
+<li><strong>Tests</strong> et ajustements par jeu</li>
+<li><strong>Patience</strong> pour l&rsquo;adaptation</li>
+</ol></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une meilleure expérience :</strong></p>
+<ul>
+<li>Commencez par des jeux adaptés (Zelda, RPG)</li>
+<li>Prenez le temps d&rsquo;ajuster les sensibilités</li>
+<li>Sauvegardez vos configurations</li>
+<li>Considérez l&rsquo;achat d&rsquo;une manette à terme</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Cette méthode fonctionne-t-elle avec tous les jeux Wii U ?</strong>
+R : Non, certains jeux nécessitent absolument une manette pour une expérience correcte (Mario Kart, Smash Bros, etc.).</p>
+<p><strong>Q : Puis-je utiliser cette configuration pour d&rsquo;autres émulateurs ?</strong>
+R : Oui, Mouse2Joystick fonctionne avec la plupart des émulateurs supportant XInput.</p>
+<p><strong>Q : La latence est-elle importante ?</strong>
+R : La latence est généralement faible, mais peut varier selon votre configuration matérielle.</p>
+<p><strong>Q : Dois-je laisser Mouse2Joystick ouvert en permanence ?</strong>
+R : Oui, Mouse2Joystick doit rester ouvert tant que vous jouez pour maintenir la simulation de manette.</p>
+<p><strong>Q : Cette méthode affecte-t-elle les performances de Cemu ?</strong>
+R : L&rsquo;impact est minimal, Mouse2Joystick étant très léger en ressources.</p>
+<hr>
+<p><strong>Ce guide vous a aidé à configurer vos contrôles ?</strong> Partagez vos configurations optimales et vos retours d&rsquo;expérience en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/cemu-complete-guide/">Guide Complet de l&rsquo;Émulateur Cemu</a></li>
+<li><a href="/fr/post/cemu-performance-optimization/">Optimiser les Performances sur Cemu</a></li>
+<li><a href="/fr/post/best-controllers-emulation/">Meilleures Manettes pour Émulation</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
+      <link>https://axekin.com/fr/post/cheat_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/cheat_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important</strong> : Sauvegardez toujours vos fichiers de sauvegarde avant d&rsquo;installer des cheats ou mods. Certaines modifications peuvent affecter la stabilité du jeu.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p><strong>Ryujinx</strong> prend en charge à la fois les <strong>codes de triche</strong> et les <strong>modifications de jeu (mods)</strong> pour améliorer votre expérience de jeu Nintendo Switch. Que vous souhaitiez une santé infinie, débloquer tous les objets, ou transformer complètement les graphismes d&rsquo;un jeu, ce guide vous montrera exactement comment les installer.</p>
+<h3 id="quelle-est-la-différence-">
+<a class="header-anchor" href="#quelle-est-la-diff%c3%a9rence-"></a>
+Quelle est la différence ?
+</h3><p><strong>Cheats vs Mods :</strong></p>
+<ul>
+<li><strong>Cheats</strong> : Petites modifications de code (argent infini, stats max, etc.)</li>
+<li><strong>Mods</strong> : Modifications complètes du contenu du jeu (nouvelles textures, personnages, niveaux, etc.)</li>
+</ul>
+<p>Les deux utilisent des méthodes d&rsquo;installation et des structures de dossiers différentes dans Ryujinx.</p>
+<h2 id="installation-des-cheats-sur-ryujinx">
+<a class="header-anchor" href="#installation-des-cheats-sur-ryujinx"></a>
+Installation des Cheats sur Ryujinx
+</h2><h3 id="étape-1--accéder-au-répertoire-mod">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-r%c3%a9pertoire-mod"></a>
+Étape 1 : Accéder au répertoire Mod
+</h3><h4 id="ouvrir-ryujinx-et-localiser-votre-jeu">
+<a class="header-anchor" href="#ouvrir-ryujinx-et-localiser-votre-jeu"></a>
+Ouvrir Ryujinx et localiser votre jeu
+</h4><ol>
+<li><strong>Lancez</strong> l&rsquo;émulateur Ryujinx</li>
+<li><strong>Clic droit</strong> sur le jeu auquel vous souhaitez ajouter des cheats</li>
+<li>Sélectionnez <strong>&ldquo;Open Mods Directory&rdquo;</strong> dans le menu contextuel</li>
+</ol>
+<p><img src="/images/ryujinx-mods-menu.png" alt="Menu clic droit Ryujinx">
+<em>Accès au répertoire mods dans Ryujinx</em></p>
+<h3 id="étape-2--comprendre-la-structure-des-dossiers">
+<a class="header-anchor" href="#%c3%a9tape-2--comprendre-la-structure-des-dossiers"></a>
+Étape 2 : Comprendre la structure des dossiers
+</h3><h4 id="structure-du-répertoire">
+<a class="header-anchor" href="#structure-du-r%c3%a9pertoire"></a>
+Structure du répertoire
+</h4><p>Lorsque vous ouvrez le répertoire mods, vous verrez un chemin comme celui-ci :</p>
+<pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
+</code></pre><p>Où <code>XXXXXXXXXXXXXXXX</code> est l&rsquo;<strong>ID unique du jeu</strong> (Title ID) de votre jeu sélectionné.</p>
+<p><strong>Exemples d&rsquo;ID de jeux :</strong></p>
+<ul>
+<li>The Legend of Zelda: Breath of the Wild : <code>01007EF00011E000</code></li>
+<li>Super Mario Odyssey : <code>0100000000010000</code></li>
+<li>Pokémon Épée : <code>0100ABF008968000</code></li>
+</ul>
+<h3 id="étape-3--installer-les-fichiers-de-cheat">
+<a class="header-anchor" href="#%c3%a9tape-3--installer-les-fichiers-de-cheat"></a>
+Étape 3 : Installer les fichiers de cheat
+</h3><h4 id="extraire-et-placer-les-fichiers-de-cheat">
+<a class="header-anchor" href="#extraire-et-placer-les-fichiers-de-cheat"></a>
+Extraire et placer les fichiers de cheat
+</h4><ol>
+<li><strong>Téléchargez</strong> vos fichiers de cheat (généralement au format .zip)</li>
+<li><strong>Extrayez</strong> le contenu de l&rsquo;archive</li>
+<li><strong>Créez la structure de dossier appropriée :</strong></li>
+</ol>
+<pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
+└── Nom_Cheat\
+    └── cheats\
+        ├── cheat1.txt
+        ├── cheat2.txt
+        └── autres_cheats.txt
+</code></pre><h4 id="étapes-dinstallation-détaillées">
+<a class="header-anchor" href="#%c3%a9tapes-dinstallation-d%c3%a9taill%c3%a9es"></a>
+Étapes d&rsquo;installation détaillées
+</h4><ol start="4">
+<li><strong>Naviguez</strong> vers le répertoire mod de votre jeu</li>
+<li><strong>Créez un nouveau dossier</strong> avec le nom du cheat (ex: &ldquo;Argent_Infini&rdquo;)</li>
+<li><strong>À l&rsquo;intérieur de ce dossier</strong>, créez un sous-dossier appelé <strong>&ldquo;cheats&rdquo;</strong></li>
+<li><strong>Placez tous les fichiers .txt de cheat</strong> dans le dossier &ldquo;cheats&rdquo;</li>
+</ol>
+<p><img src="/images/ryujinx-cheat-structure.png" alt="Structure dossier cheat">
+<em>Structure appropriée du dossier cheat dans Ryujinx</em></p>
+<h3 id="étape-4--activer-les-cheats">
+<a class="header-anchor" href="#%c3%a9tape-4--activer-les-cheats"></a>
+Étape 4 : Activer les cheats
+</h3><h4 id="activer-les-cheats-en-jeu">
+<a class="header-anchor" href="#activer-les-cheats-en-jeu"></a>
+Activer les cheats en jeu
+</h4><ol>
+<li><strong>Lancez votre jeu</strong> dans Ryujinx</li>
+<li><strong>Clic droit</strong> sur le titre du jeu à nouveau</li>
+<li>Sélectionnez <strong>&ldquo;Manage Cheats&rdquo;</strong> ou accédez via le menu</li>
+<li><strong>Cochez les cases</strong> à côté des cheats que vous souhaitez activer</li>
+<li><strong>Appliquez</strong> les changements et redémarrez le jeu si nécessaire</li>
+</ol>
+<h2 id="installation-des-mods-sur-ryujinx">
+<a class="header-anchor" href="#installation-des-mods-sur-ryujinx"></a>
+Installation des Mods sur Ryujinx
+</h2><h3 id="étape-1--accéder-au-répertoire-mods">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-r%c3%a9pertoire-mods"></a>
+Étape 1 : Accéder au répertoire Mods
+</h3><h4 id="même-processus-initial-que-pour-les-cheats">
+<a class="header-anchor" href="#m%c3%aame-processus-initial-que-pour-les-cheats"></a>
+Même processus initial que pour les cheats
+</h4><ol>
+<li><strong>Ouvrez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur votre jeu cible</li>
+<li>Cliquez sur <strong>&ldquo;Open Mods Directory&rdquo;</strong></li>
+</ol>
+<p>Cela ouvre : <code>AppData\Roaming\Ryujinx\mods\contents\&lt;ID jeu&gt;\</code></p>
+<h3 id="étape-2--créer-la-structure-de-dossier-mod">
+<a class="header-anchor" href="#%c3%a9tape-2--cr%c3%a9er-la-structure-de-dossier-mod"></a>
+Étape 2 : Créer la structure de dossier mod
+</h3><h4 id="organisez-vos-mods-correctement">
+<a class="header-anchor" href="#organisez-vos-mods-correctement"></a>
+Organisez vos mods correctement
+</h4><ol>
+<li><strong>Créez un nouveau sous-dossier</strong> sous le répertoire ID du jeu</li>
+<li><strong>Nommez-le de manière descriptive</strong> (ex: &ldquo;Vies_Infinies&rdquo;, &ldquo;Textures_HD&rdquo;, &ldquo;Musique_Personnalisée&rdquo;)</li>
+<li>Cela vous aide à <strong>gérer plusieurs mods</strong> facilement</li>
+</ol>
+<p><strong>Exemple de structure :</strong></p>
+<pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+├── Mod_Graphiques_HD\
+│   └── romfs\
+├── Vies_Infinies\
+│   └── exefs\
+└── Bande_Son_Personnalisée\
+    └── romfs\
+</code></pre><h3 id="étape-3--installer-les-fichiers-mod">
+<a class="header-anchor" href="#%c3%a9tape-3--installer-les-fichiers-mod"></a>
+Étape 3 : Installer les fichiers mod
+</h3><h4 id="copier-le-contenu-du-mod">
+<a class="header-anchor" href="#copier-le-contenu-du-mod"></a>
+Copier le contenu du mod
+</h4><ol>
+<li><strong>Extrayez vos fichiers de mod</strong> téléchargés</li>
+<li><strong>Localisez le dossier romfs ou exefs</strong> du mod</li>
+<li><strong>Copiez ces dossiers</strong> dans votre répertoire mod nouvellement créé</li>
+</ol>
+<p><strong>Types de dossiers mod :</strong></p>
+<ul>
+<li><strong>romfs</strong> : Modifications du contenu du jeu (textures, modèles, audio)</li>
+<li><strong>exefs</strong> : Modifications d&rsquo;exécutables (patches de code, changements de gameplay)</li>
+</ul>
+<h4 id="installation-complète">
+<a class="header-anchor" href="#installation-compl%c3%a8te"></a>
+Installation complète
+</h4><ol start="4">
+<li><strong>Naviguez</strong> vers le dossier d&rsquo;extraction de votre mod</li>
+<li><strong>Copiez l&rsquo;intégralité du dossier romfs ou exefs</strong></li>
+<li><strong>Collez</strong> dans votre répertoire mod créé</li>
+</ol>
+<p><img src="/images/ryujinx-mod-installation.png" alt="Processus installation mod">
+<em>Installation d&rsquo;un mod graphique dans Ryujinx</em></p>
+<h3 id="étape-4--activer-les-mods">
+<a class="header-anchor" href="#%c3%a9tape-4--activer-les-mods"></a>
+Étape 4 : Activer les mods
+</h3><h4 id="activer-les-mods-installés">
+<a class="header-anchor" href="#activer-les-mods-install%c3%a9s"></a>
+Activer les mods installés
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur votre jeu</li>
+<li>Sélectionnez <strong>&ldquo;Manage Mods&rdquo;</strong></li>
+<li><strong>Activez/désactivez</strong> les mods selon vos souhaits</li>
+<li><strong>Démarrez le jeu</strong> pour voir les changements</li>
+</ol>
+<h2 id="exemples-de-structure-de-dossiers">
+<a class="header-anchor" href="#exemples-de-structure-de-dossiers"></a>
+Exemples de Structure de Dossiers
+</h2><h3 id="installation-complète-de-cheat">
+<a class="header-anchor" href="#installation-compl%c3%a8te-de-cheat"></a>
+Installation complète de cheat
+</h3><pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+└── BOTW_Cheats\
+    └── cheats\
+        ├── endurance_infinie.txt
+        ├── coeurs_max.txt
+        ├── toutes_armes.txt
+        └── rupees_infinis.txt
+</code></pre><h3 id="installation-complète-de-mod">
+<a class="header-anchor" href="#installation-compl%c3%a8te-de-mod"></a>
+Installation complète de mod
+</h3><pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+├── Pack_Graphiques_HD\
+│   └── romfs\
+│       ├── Model\
+│       ├── Texture\
+│       └── Effect\
+└── Refonte_Gameplay\
+    ├── romfs\
+    │   └── GameData\
+    └── exefs\
+        └── main.npdm
+</code></pre><h2 id="gestion-de-multiples-mods-et-cheats">
+<a class="header-anchor" href="#gestion-de-multiples-mods-et-cheats"></a>
+Gestion de Multiples Mods et Cheats
+</h2><h3 id="bonnes-pratiques-dorganisation">
+<a class="header-anchor" href="#bonnes-pratiques-dorganisation"></a>
+Bonnes pratiques d&rsquo;organisation
+</h3><h4 id="conventions-de-nommage">
+<a class="header-anchor" href="#conventions-de-nommage"></a>
+Conventions de nommage
+</h4><p><strong>Bons noms de dossiers :</strong></p>
+<ul>
+<li><code>Cheat_Argent_Infini</code></li>
+<li><code>Pack_Textures_4K</code></li>
+<li><code>Mod_Audio_Ameliore</code></li>
+<li><code>Reequilibrage_Difficulte</code></li>
+</ul>
+<p><strong>À éviter :</strong></p>
+<ul>
+<li>Caractères spéciaux (<code>!@#$%</code>)</li>
+<li>Espaces au début ou à la fin</li>
+<li>Noms très longs</li>
+</ul>
+<h4 id="compatibilité-des-mods">
+<a class="header-anchor" href="#compatibilit%c3%a9-des-mods"></a>
+Compatibilité des mods
+</h4><p><strong>Test de compatibilité :</strong></p>
+<ol>
+<li><strong>Installez un mod à la fois</strong></li>
+<li><strong>Testez la stabilité du jeu</strong></li>
+<li><strong>Vérifiez les conflits</strong> avant d&rsquo;en ajouter d&rsquo;autres</li>
+<li><strong>Prenez des notes</strong> sur les combinaisons qui fonctionnent</li>
+</ol>
+<h3 id="système-dactivationdésactivation">
+<a class="header-anchor" href="#syst%c3%a8me-dactivationd%c3%a9sactivation"></a>
+Système d&rsquo;activation/désactivation
+</h3><h4 id="gestion-temporaire-des-mods">
+<a class="header-anchor" href="#gestion-temporaire-des-mods"></a>
+Gestion temporaire des mods
+</h4><pre tabindex="0"><code>Ryujinx\mods\contents\ID_JEU\
+├── Mods_Actifs\
+│   ├── Mod_Graphique\    (activé)
+│   └── Mod_Audio\        (activé)
+└── Mods_Desactives\
+    ├── Anciens_Graphiques\    (sauvegarde)
+    └── Experimental\          (test)
+</code></pre><h2 id="dépannage-des-problèmes-courants">
+<a class="header-anchor" href="#d%c3%a9pannage-des-probl%c3%a8mes-courants"></a>
+Dépannage des Problèmes Courants
+</h2><h3 id="cheats-qui-ne-fonctionnent-pas">
+<a class="header-anchor" href="#cheats-qui-ne-fonctionnent-pas"></a>
+Cheats qui ne fonctionnent pas
+</h3><h4 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h4><p><strong>🚫 Fichiers de cheat non détectés :</strong></p>
+<ul>
+<li>Vérifiez la structure du dossier : <code>ID_Jeu\Nom_Cheat\cheats\*.txt</code></li>
+<li>Vérifiez les extensions de fichier (.txt, pas .txt.txt)</li>
+<li>Assurez-vous qu&rsquo;il n&rsquo;y a pas d&rsquo;espaces supplémentaires dans les noms de dossiers</li>
+</ul>
+<p><strong>⚠️ Les cheats causent des plantages :</strong></p>
+<ul>
+<li>Désactivez tous les cheats et testez-les un par un</li>
+<li>Vérifiez la compatibilité du cheat avec la version du jeu</li>
+<li>Utilisez des cheats de sources fiables</li>
+</ul>
+<h3 id="mods-qui-ne-se-chargent-pas">
+<a class="header-anchor" href="#mods-qui-ne-se-chargent-pas"></a>
+Mods qui ne se chargent pas
+</h3><h4 id="débogage-des-problèmes-de-mod">
+<a class="header-anchor" href="#d%c3%a9bogage-des-probl%c3%a8mes-de-mod"></a>
+Débogage des problèmes de mod
+</h4><p><strong>📁 Structure de dossier incorrecte :</strong></p>
+<pre tabindex="0"><code>❌ Incorrect :
+Ryujinx\mods\contents\ID_JEU\romfs\...
+
+✅ Correct :
+Ryujinx\mods\contents\ID_JEU\Nom_Mod\romfs\...
+</code></pre><p><strong>🎮 Problèmes spécifiques au jeu :</strong></p>
+<ul>
+<li>Vérifiez la compatibilité du mod avec votre version de jeu</li>
+<li>Vérifiez si le mod nécessite une version de firmware spécifique</li>
+<li>Testez avec le mod désactivé pour confirmer qu&rsquo;il en est la cause</li>
+</ul>
+<h3 id="problèmes-de-performance">
+<a class="header-anchor" href="#probl%c3%a8mes-de-performance"></a>
+Problèmes de performance
+</h3><h4 id="conseils-doptimisation">
+<a class="header-anchor" href="#conseils-doptimisation"></a>
+Conseils d&rsquo;optimisation
+</h4><p><strong>Performance liée aux mods :</strong></p>
+<ul>
+<li><strong>Désactivez les mods inutilisés</strong> pour réduire l&rsquo;utilisation mémoire</li>
+<li><strong>Utilisez des packs de textures optimisés</strong> pour votre matériel</li>
+<li><strong>Surveillez les ressources système</strong> lors de l&rsquo;exécution de plusieurs mods</li>
+</ul>
+<h2 id="trouver-des-cheats-et-mods">
+<a class="header-anchor" href="#trouver-des-cheats-et-mods"></a>
+Trouver des Cheats et Mods
+</h2><h3 id="sources-recommandées">
+<a class="header-anchor" href="#sources-recommand%c3%a9es"></a>
+Sources recommandées
+</h3><h4 id="sites-web-fiables-pour-les-téléchargements">
+<a class="header-anchor" href="#sites-web-fiables-pour-les-t%c3%a9l%c3%a9chargements"></a>
+Sites web fiables pour les téléchargements
+</h4><table>
+  <thead>
+      <tr>
+          <th>Source</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>GameBanana</strong></td>
+          <td>Mods</td>
+          <td>Plus grande communauté de mods</td>
+      </tr>
+      <tr>
+          <td><strong>NexusMods</strong></td>
+          <td>Mods</td>
+          <td>Hébergement professionnel de mods</td>
+      </tr>
+      <tr>
+          <td><strong>Forums GBAtemp</strong></td>
+          <td>Cheats &amp; Mods</td>
+          <td>Discussions communautaires actives</td>
+      </tr>
+      <tr>
+          <td><strong>Reddit r/Ryujinx</strong></td>
+          <td>Les deux</td>
+          <td>Support communautaire</td>
+      </tr>
+      <tr>
+          <td><strong>GitHub</strong></td>
+          <td>Les deux</td>
+          <td>Projets open-source</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="considérations-de-sécurité">
+<a class="header-anchor" href="#consid%c3%a9rations-de-s%c3%a9curit%c3%a9"></a>
+Considérations de sécurité
+</h4><p><strong>Liste de vérification sécurité téléchargement :</strong></p>
+<ul>
+<li>✅ Utilisez uniquement des sources réputées</li>
+<li>✅ Lisez les commentaires et avis des utilisateurs</li>
+<li>✅ Scannez les fichiers avec un antivirus</li>
+<li>✅ Sauvegardez avant d&rsquo;installer</li>
+<li>✅ Testez d&rsquo;abord sur des jeux moins importants</li>
+</ul>
+<h2 id="gestion-avancée-des-mods">
+<a class="header-anchor" href="#gestion-avanc%c3%a9e-des-mods"></a>
+Gestion Avancée des Mods
+</h2><h3 id="opérations-par-lots">
+<a class="header-anchor" href="#op%c3%a9rations-par-lots"></a>
+Opérations par lots
+</h3><h4 id="gestion-de-plusieurs-jeux">
+<a class="header-anchor" href="#gestion-de-plusieurs-jeux"></a>
+Gestion de plusieurs jeux
+</h4><p><strong>Script PowerShell pour sauvegarde :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarder tous les mods</span>
+</span></span><span style="display:flex;"><span>$source = <span style="color:#e6db74">&#34;</span>$env:APPDATA<span style="color:#e6db74">\Ryujinx\mods&#34;</span>
+</span></span><span style="display:flex;"><span>$backup = <span style="color:#e6db74">&#34;C:\Sauvegarde_Mods_Ryujinx\</span>$(Get-Date -Format <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>Copy-Item -Path $source -Destination $backup -Recurse
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Mods sauvegardés dans : </span>$backup<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h3 id="contrôle-de-version-pour-les-mods">
+<a class="header-anchor" href="#contr%c3%b4le-de-version-pour-les-mods"></a>
+Contrôle de version pour les mods
+</h3><h4 id="suivre-les-changements">
+<a class="header-anchor" href="#suivre-les-changements"></a>
+Suivre les changements
+</h4><pre tabindex="0"><code>📁 Versions_Mod\
+├── 📁 v1.0_Original\
+├── 📁 v2.0_Mise_a_jour\
+└── 📁 v3.0_Derniere\
+    └── changelog.txt
+</code></pre><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Installer des <strong>cheats et mods</strong> sur Ryujinx est simple une fois que vous comprenez la structure des dossiers. La clé est une organisation appropriée et tester une modification à la fois.</p>
+<h3 id="résumé-de-référence-rapide">
+<a class="header-anchor" href="#r%c3%a9sum%c3%a9-de-r%c3%a9f%c3%a9rence-rapide"></a>
+Résumé de référence rapide
+</h3><blockquote>
+<p><strong>🎯 Liste de vérification d&rsquo;installation :</strong></p>
+<p><strong>Pour les Cheats :</strong></p>
+<ol>
+<li>Clic droit jeu → Open Mods Directory</li>
+<li>Créer : <code>Nom_Cheat\cheats\</code></li>
+<li>Placer fichiers .txt dans dossier cheats</li>
+<li>Activer via menu Manage Cheats</li>
+</ol>
+<p><strong>Pour les Mods :</strong></p>
+<ol>
+<li>Clic droit jeu → Open Mods Directory</li>
+<li>Créer dossier mod descriptif</li>
+<li>Copier romfs/exefs dans dossier mod</li>
+<li>Activer via menu Manage Mods</li>
+</ol></blockquote>
+<h3 id="bonnes-pratiques">
+<a class="header-anchor" href="#bonnes-pratiques"></a>
+Bonnes pratiques
+</h3><p><strong>N&rsquo;oubliez pas de :</strong></p>
+<ul>
+<li>Toujours sauvegarder vos saves en premier</li>
+<li>Tester les modifications individuellement</li>
+<li>Utiliser des sources fiables pour les téléchargements</li>
+<li>Garder les fichiers originaux en sauvegarde</li>
+<li>Documenter les combinaisons de mods qui fonctionnent</li>
+</ul>
+<h2 id="faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+FAQ - Questions Fréquemment Posées
+</h2><p><strong>Q : Puis-je utiliser cheats et mods simultanément ?</strong>
+R : Oui, mais testez soigneusement car certaines combinaisons peuvent causer des conflits ou plantages.</p>
+<p><strong>Q : Les mods affectent-ils les performances du jeu ?</strong>
+R : Cela dépend du mod. Les mods graphiques nécessitent généralement plus de ressources, tandis que les cheats simples ont un impact minimal.</p>
+<p><strong>Q : Les mods Ryujinx sont-ils compatibles avec Yuzu ?</strong>
+R : Parfois, mais la structure des dossiers diffère. Vous devrez peut-être réorganiser les fichiers pour la compatibilité croisée.</p>
+<p><strong>Q : Puis-je créer mes propres cheats ?</strong>
+R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu. Des outils comme Cheat Engine peuvent aider à identifier les valeurs à modifier.</p>
+<p><strong>Q : Que faire si un mod casse mon jeu ?</strong>
+R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.</p>
+<hr>
+<p><strong>Ce guide vous a été utile ?</strong> Partagez vos mods et cheats favoris dans les commentaires ci-dessous !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/ryujinx-performance/">Optimisation des Performances Ryujinx</a></li>
+<li><a href="/fr/post/best-switch-mods/">Meilleurs Mods Nintendo Switch</a></li>
+<li><a href="/fr/post/custom-cheat-creation/">Création de Cheats Personnalisés</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
+      <link>https://axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important</strong> : Toujours sauvegarder vos données avant toute réinstallation ! Ce guide vous montre comment procéder en sécurité.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Il arrive parfois que <strong>Yuzu</strong> ou <strong>Ryujinx</strong> rencontrent des problèmes nécessitant une réinstallation complète. Corruption de fichiers, mises à jour problématiques, ou simplement envie de repartir sur des bases saines&hellip;</p>
+<p>Ce guide vous explique <strong>comment réinstaller proprement</strong> ces émulateurs <strong>sans perdre vos sauvegardes</strong> de jeux Nintendo Switch.</p>
+<h3 id="pourquoi-réinstaller-">
+<a class="header-anchor" href="#pourquoi-r%c3%a9installer-"></a>
+Pourquoi réinstaller ?
+</h3><p><strong>Problèmes courants nécessitant une réinstallation :</strong></p>
+<ul>
+<li>Émulateur qui refuse de démarrer</li>
+<li>Performances dégradées après une mise à jour</li>
+<li>Fichiers de configuration corrompus</li>
+<li>Problèmes graphiques persistants</li>
+<li>Messages d&rsquo;erreur récurrents</li>
+</ul>
+<h2 id="méthode-pour-yuzu">
+<a class="header-anchor" href="#m%c3%a9thode-pour-yuzu"></a>
+Méthode pour Yuzu
+</h2><h3 id="étape-1--sauvegarder-les-données-de-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-de-jeu"></a>
+Étape 1 : Sauvegarder les données de jeu
+</h3><h4 id="localiser-les-sauvegardes">
+<a class="header-anchor" href="#localiser-les-sauvegardes"></a>
+Localiser les sauvegardes
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> (si possible)</li>
+<li><strong>Clic droit</strong> sur le jeu souhaité dans la liste</li>
+<li>Sélectionnez <strong>&ldquo;Open Save Data Location&rdquo;</strong> (ou &ldquo;Ouvrir l&rsquo;emplacement des données de sauvegarde&rdquo;)</li>
+</ol>
+<p><img src="/images/yuzu-right-click-menu.png" alt="Menu contextuel Yuzu">
+<em>Menu clic droit sur un jeu dans Yuzu</em></p>
+<h4 id="sauvegarder-le-contenu">
+<a class="header-anchor" href="#sauvegarder-le-contenu"></a>
+Sauvegarder le contenu
+</h4><ol start="4">
+<li><strong>Sélectionnez tout le contenu</strong> du dossier qui s&rsquo;ouvre (Ctrl+A)</li>
+<li><strong>Copiez</strong> les fichiers (Ctrl+C)</li>
+<li><strong>Créez un dossier</strong> de sauvegarde sur votre bureau ou disque dur</li>
+<li><strong>Collez</strong> le contenu dans ce dossier (Ctrl+V)</li>
+</ol>
+<p><strong>Structure recommandée pour l&rsquo;organisation :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Yuzu_2025-06-04/
+├── 📁 The_Legend_of_Zelda_BOTW/
+│   ├── save_data.bin
+│   └── other_files...
+├── 📁 Super_Mario_Odyssey/
+│   ├── save_data.bin
+│   └── other_files...
+└── 📁 Pokemon_Legends_Arceus/
+    ├── save_data.bin
+    └── other_files...
+</code></pre><h4 id="répéter-pour-tous-les-jeux">
+<a class="header-anchor" href="#r%c3%a9p%c3%a9ter-pour-tous-les-jeux"></a>
+Répéter pour tous les jeux
+</h4><ol start="8">
+<li><strong>Répétez cette opération</strong> pour chaque jeu dont vous voulez conserver la sauvegarde</li>
+<li><strong>Notez le nom</strong> de chaque dossier pour faciliter la restauration</li>
+</ol>
+<h3 id="étape-2--supprimer-les-données-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-les-donn%c3%a9es-yuzu"></a>
+Étape 2 : Supprimer les données Yuzu
+</h3><h4 id="accéder-au-dossier-de-configuration">
+<a class="header-anchor" href="#acc%c3%a9der-au-dossier-de-configuration"></a>
+Accéder au dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et appuyez sur <strong>Entrée</strong></li>
+</ol>
+<p><img src="/images/windows-run-appdata.png" alt="Boîte de dialogue Exécuter">
+<em>Accès au dossier AppData via Windows + R</em></p>
+<h4 id="supprimer-le-dossier-yuzu">
+<a class="header-anchor" href="#supprimer-le-dossier-yuzu"></a>
+Supprimer le dossier Yuzu
+</h4><ol start="3">
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;yuzu&rdquo;</strong></li>
+<li><strong>Supprimez complètement</strong> ce dossier</li>
+<li><strong>Videz la corbeille</strong> pour libérer l&rsquo;espace</li>
+</ol>
+<blockquote>
+<p><strong>💡 Conseil</strong> : Si le dossier est en cours d&rsquo;utilisation, fermez complètement Yuzu via le gestionnaire des tâches.</p></blockquote>
+<h3 id="étape-3--réinstaller-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installer-yuzu"></a>
+Étape 3 : Réinstaller Yuzu
+</h3><h4 id="installation-propre">
+<a class="header-anchor" href="#installation-propre"></a>
+Installation propre
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Yuzu depuis le site officiel</li>
+<li><strong>Désinstallez</strong> l&rsquo;ancienne version si elle est encore présente</li>
+<li><strong>Installez</strong> la nouvelle version avec les paramètres par défaut</li>
+<li><strong>Lancez</strong> Yuzu pour la configuration initiale</li>
+</ol>
+<h4 id="configuration-de-base">
+<a class="header-anchor" href="#configuration-de-base"></a>
+Configuration de base
+</h4><ol start="5">
+<li><strong>Configurez</strong> les paramètres graphiques selon votre matériel</li>
+<li><strong>Ajoutez</strong> vos dossiers de jeux</li>
+<li><strong>Installez</strong> les firmware et clés si nécessaire</li>
+</ol>
+<h3 id="étape-4--restaurer-les-sauvegardes">
+<a class="header-anchor" href="#%c3%a9tape-4--restaurer-les-sauvegardes"></a>
+Étape 4 : Restaurer les sauvegardes
+</h3><h4 id="remettre-les-fichiers-de-sauvegarde">
+<a class="header-anchor" href="#remettre-les-fichiers-de-sauvegarde"></a>
+Remettre les fichiers de sauvegarde
+</h4><ol>
+<li><strong>Lancez</strong> vos jeux une première fois pour créer les dossiers de sauvegarde</li>
+<li><strong>Fermez</strong> Yuzu complètement</li>
+<li><strong>Clic droit</strong> sur chaque jeu → &ldquo;Open Save Data Location&rdquo;</li>
+<li><strong>Remplacez</strong> le contenu par vos fichiers sauvegardés</li>
+</ol>
+<p><strong>Vérification :</strong></p>
+<ul>
+<li>Lancez le jeu pour vérifier que la sauvegarde est bien chargée</li>
+<li>Vérifiez la progression, les statistiques, etc.</li>
+</ul>
+<h2 id="méthode-pour-ryujinx">
+<a class="header-anchor" href="#m%c3%a9thode-pour-ryujinx"></a>
+Méthode pour Ryujinx
+</h2><h3 id="étape-1--sauvegarder-les-données-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-ryujinx"></a>
+Étape 1 : Sauvegarder les données Ryujinx
+</h3><h4 id="localiser-les-sauvegardes-utilisateur">
+<a class="header-anchor" href="#localiser-les-sauvegardes-utilisateur"></a>
+Localiser les sauvegardes utilisateur
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur le jeu souhaité</li>
+<li>Sélectionnez <strong>&ldquo;Open User Save Directory&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-save-menu.png" alt="Menu Ryujinx">
+<em>Options de sauvegarde dans Ryujinx</em></p>
+<h4 id="sauvegarder-les-données-additionnelles">
+<a class="header-anchor" href="#sauvegarder-les-donn%c3%a9es-additionnelles"></a>
+Sauvegarder les données additionnelles
+</h4><ol start="4">
+<li>Si disponible, cliquez aussi sur <strong>&ldquo;Open Mod Data Directory&rdquo;</strong> ou données additionnelles</li>
+<li><strong>Copiez</strong> tout le contenu dans vos dossiers de sauvegarde</li>
+<li><strong>Organisez</strong> par nom de jeu comme pour Yuzu</li>
+</ol>
+<h3 id="étape-2--supprimer-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-ryujinx"></a>
+Étape 2 : Supprimer Ryujinx
+</h3><h4 id="localiser-le-dossier-de-configuration">
+<a class="header-anchor" href="#localiser-le-dossier-de-configuration"></a>
+Localiser le dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et validez</li>
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;Ryujinx&rdquo;</strong></li>
+<li><strong>Supprimez</strong> complètement ce dossier</li>
+</ol>
+<h3 id="étape-3--réinstallation-et-restauration">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installation-et-restauration"></a>
+Étape 3 : Réinstallation et restauration
+</h3><h4 id="réinstaller-ryujinx">
+<a class="header-anchor" href="#r%c3%a9installer-ryujinx"></a>
+Réinstaller Ryujinx
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Ryujinx</li>
+<li><strong>Installez</strong> proprement l&rsquo;émulateur</li>
+<li><strong>Configurez</strong> les paramètres de base</li>
+</ol>
+<h4 id="restaurer-les-sauvegardes">
+<a class="header-anchor" href="#restaurer-les-sauvegardes"></a>
+Restaurer les sauvegardes
+</h4><ol start="4">
+<li><strong>Lancez chaque jeu</strong> une première fois</li>
+<li><strong>Fermez</strong> Ryujinx</li>
+<li><strong>Remplacez</strong> les fichiers de sauvegarde par vos backups</li>
+<li><strong>Testez</strong> que tout fonctionne correctement</li>
+</ol>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Accès aux saves</strong></td>
+          <td>Clic droit → Open Save Data Location</td>
+          <td>Clic droit → Open User Save Directory</td>
+      </tr>
+      <tr>
+          <td><strong>Dossier config</strong></td>
+          <td><code>%appdata%\yuzu</code></td>
+          <td><code>%appdata%\Ryujinx</code></td>
+      </tr>
+      <tr>
+          <td><strong>Données supplémentaires</strong></td>
+          <td>Automatique</td>
+          <td>Mod Data Directory séparé</td>
+      </tr>
+      <tr>
+          <td><strong>Complexité</strong></td>
+          <td>Simple</td>
+          <td>Simple</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="conseils-et-bonnes-pratiques">
+<a class="header-anchor" href="#conseils-et-bonnes-pratiques"></a>
+Conseils et bonnes pratiques
+</h2><h3 id="sauvegardes-automatiques">
+<a class="header-anchor" href="#sauvegardes-automatiques"></a>
+Sauvegardes automatiques
+</h3><p><strong>Script de sauvegarde automatique (Windows) :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> backup_dir=C:\Backup_Emulateurs\%date:~-4,4%-%date:~-10,2%-%date:~-7,2%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mkdir</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\yuzu\nand\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Yuzu_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\Ryujinx\bis\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Ryujinx_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Sauvegarde terminée dans %backup_dir%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
+</span></span></code></pre></div><h3 id="vérifications-importantes">
+<a class="header-anchor" href="#v%c3%a9rifications-importantes"></a>
+Vérifications importantes
+</h3><p><strong>Avant la réinstallation :</strong></p>
+<ul>
+<li>✅ Sauvegardes complètes créées</li>
+<li>✅ Noms des jeux notés</li>
+<li>✅ Firmware/clés disponibles</li>
+<li>✅ Configuration matérielle notée</li>
+</ul>
+<p><strong>Après la réinstallation :</strong></p>
+<ul>
+<li>✅ Émulateur démarre correctement</li>
+<li>✅ Jeux détectés</li>
+<li>✅ Sauvegardes restaurées</li>
+<li>✅ Performances satisfaisantes</li>
+</ul>
+<h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="-sauvegardes-non-reconnues">
+<a class="header-anchor" href="#-sauvegardes-non-reconnues"></a>
+🚫 Sauvegardes non reconnues
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Mauvais emplacement de fichiers</li>
+<li>Versions d&rsquo;émulateur incompatibles</li>
+<li>Fichiers corrompus</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez l&rsquo;emplacement exact des fichiers</li>
+<li>Essayez avec une version similaire de l&rsquo;émulateur</li>
+<li>Utilisez une sauvegarde plus ancienne</li>
+</ol>
+<h4 id="-fichiers-de-sauvegarde-volumineux">
+<a class="header-anchor" href="#-fichiers-de-sauvegarde-volumineux"></a>
+💾 Fichiers de sauvegarde volumineux
+</h4><p><strong>Optimisation :</strong></p>
+<ul>
+<li>Compressez les dossiers de sauvegarde (.zip, .7z)</li>
+<li>Utilisez un stockage cloud pour la sécurité</li>
+<li>Créez des sauvegardes incrémentielles</li>
+</ul>
+<h4 id="-perte-de-configuration">
+<a class="header-anchor" href="#-perte-de-configuration"></a>
+⚠️ Perte de configuration
+</h4><p><strong>Sauvegarde préventive :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Complet/
+├── 📁 Saves/ (sauvegardes de jeux)
+├── 📁 Config/ (fichiers de configuration)
+├── 📁 Keys/ (clés et firmware)
+└── 📄 settings_backup.txt (paramètres notés)
+</code></pre><h2 id="outils-recommandés">
+<a class="header-anchor" href="#outils-recommand%c3%a9s"></a>
+Outils recommandés
+</h2><h3 id="gestionnaires-de-sauvegarde">
+<a class="header-anchor" href="#gestionnaires-de-sauvegarde"></a>
+Gestionnaires de sauvegarde
+</h3><table>
+  <thead>
+      <tr>
+          <th>Outil</th>
+          <th>Description</th>
+          <th>Avantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>JKSV</strong></td>
+          <td>Gestionnaire Switch homebrew</td>
+          <td>Sauvegardes natives</td>
+      </tr>
+      <tr>
+          <td><strong>Checkpoint</strong></td>
+          <td>Alternative à JKSV</td>
+          <td>Interface conviviale</td>
+      </tr>
+      <tr>
+          <td><strong>Save Manager</strong></td>
+          <td>Outil PC tiers</td>
+          <td>Automatisation</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="synchronisation-cloud">
+<a class="header-anchor" href="#synchronisation-cloud"></a>
+Synchronisation cloud
+</h3><p><strong>Services recommandés :</strong></p>
+<ul>
+<li><strong>Google Drive</strong> - 15 GB gratuits</li>
+<li><strong>OneDrive</strong> - Intégration Windows</li>
+<li><strong>Dropbox</strong> - Synchronisation rapide</li>
+<li><strong>Git</strong> - Versioning pour experts</li>
+</ul>
+<h2 id="dépannage-avancé">
+<a class="header-anchor" href="#d%c3%a9pannage-avanc%c3%a9"></a>
+Dépannage avancé
+</h2><h3 id="récupération-durgence">
+<a class="header-anchor" href="#r%c3%a9cup%c3%a9ration-durgence"></a>
+Récupération d&rsquo;urgence
+</h3><p><strong>Si la réinstallation échoue :</strong></p>
+<ol>
+<li><strong>Mode sans échec</strong> : Démarrez Windows en mode sans échec</li>
+<li><strong>Nettoyage registre</strong> : Utilisez CCleaner ou équivalent</li>
+<li><strong>Installation portable</strong> : Testez avec les versions portables</li>
+<li><strong>Restauration système</strong> : Point de restauration Windows</li>
+</ol>
+<h3 id="migration-vers-un-nouveau-pc">
+<a class="header-anchor" href="#migration-vers-un-nouveau-pc"></a>
+Migration vers un nouveau PC
+</h3><p><strong>Transférer tout l&rsquo;environnement :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dossiers à copier</span>
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\ </span>       → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Jeux<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Backup<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>        → Nouveau PC
+</span></span></code></pre></div><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>La réinstallation de <strong>Yuzu</strong> et <strong>Ryujinx</strong> tout en préservant vos sauvegardes est un processus simple si vous suivez la bonne méthode. L&rsquo;essentiel est de <strong>toujours sauvegarder avant d&rsquo;agir</strong> et de procéder étape par étape.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé de la procédure :</strong></p>
+<ol>
+<li><strong>Sauvegardez</strong> toutes les données de jeu importantes</li>
+<li><strong>Supprimez</strong> proprement les dossiers de configuration</li>
+<li><strong>Réinstallez</strong> l&rsquo;émulateur avec une version récente</li>
+<li><strong>Restaurez</strong> vos sauvegardes et testez</li>
+<li><strong>Configurez</strong> selon vos préférences</li>
+</ol></blockquote>
+<h3 id="maintenance-préventive">
+<a class="header-anchor" href="#maintenance-pr%c3%a9ventive"></a>
+Maintenance préventive
+</h3><p><strong>Pour éviter les réinstallations :</strong></p>
+<ul>
+<li>Mises à jour régulières mais prudentes</li>
+<li>Sauvegardes automatiques hebdomadaires</li>
+<li>Surveillance des performances</li>
+<li>Nettoyage périodique des caches</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Puis-je transférer mes sauvegardes entre Yuzu et Ryujinx ?</strong>
+R : Généralement non directement, les formats de sauvegarde diffèrent. Utilisez des outils de conversion spécialisés si nécessaire.</p>
+<p><strong>Q : Combien de temps faut-il pour la procédure complète ?</strong>
+R : Environ 30-60 minutes selon le nombre de jeux et la vitesse de votre PC.</p>
+<p><strong>Q : Les sauvegardes en ligne (Nintendo Switch Online) sont-elles compatibles ?</strong>
+R : Non, les sauvegardes d&rsquo;émulateur et console officielle ne sont pas interchangeables.</p>
+<p><strong>Q : Que faire si j&rsquo;ai oublié de sauvegarder avant la réinstallation ?</strong>
+R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fichiers, ou restaurez depuis une sauvegarde système.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-setup/">Configuration Optimale de Yuzu</a></li>
+<li><a href="/fr/post/ryujinx-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/switch-emulation-performance/">Meilleures Performances Émulation Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
+      <link>https://axekin.com/fr/post/cheat_citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/cheat_citra/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Avertissement Important</strong> : L&rsquo;utilisation de cheats peut parfois corrompre vos sauvegardes ou rendre certains jeux instables. Utilisez-les à vos risques et périls !</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;utilisation de cheats sur l&rsquo;émulateur <strong>Citra</strong> peut parfois être déroutante pour les nouveaux utilisateurs. Ce guide complet vous expliquera <strong>étape par étape</strong> comment configurer et utiliser efficacement les codes de triche sur vos jeux Nintendo 3DS émulés.</p>
+<p>Le processus est similaire à celui de l&rsquo;émulateur <strong>Dolphin</strong>, mais avec quelques spécificités propres à Citra que nous allons explorer ensemble.</p>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Lancer Citra</strong> → Charger votre jeu</li>
+<li><strong>Menu Emulation</strong> → Cheats</li>
+<li><strong>Add Cheat</strong> → Entrer le code</li>
+<li><strong>Activer le cheat</strong> → Tester en jeu</li>
+<li><strong>Vérifier</strong> version/région si problème</li>
+</ol>
+<h2 id="prérequis">
+<a class="header-anchor" href="#pr%c3%a9requis"></a>
+Prérequis
+</h2><p>Avant de commencer, assurez-vous d&rsquo;avoir :</p>
+<ul>
+<li>✅ <strong>Citra</strong> installé et fonctionnel (version recommandée : dernière stable)</li>
+<li>✅ Un <strong>jeu 3DS</strong> chargé et fonctionnel</li>
+<li>✅ Les <strong>codes de triche</strong> compatibles avec votre version de jeu</li>
+<li>✅ Une <strong>sauvegarde</strong> de votre progression (fortement recommandé)</li>
+</ul>
+<h2 id="étape-1--accéder-au-menu-des-cheats">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-menu-des-cheats"></a>
+Étape 1 : Accéder au menu des cheats
+</h2><h3 id="lancement-initial">
+<a class="header-anchor" href="#lancement-initial"></a>
+Lancement initial
+</h3><ol>
+<li><strong>Démarrez Citra</strong> et chargez votre jeu Nintendo 3DS</li>
+<li>Une fois le jeu lancé, allez dans le menu principal de Citra</li>
+<li>Cliquez sur <strong>Emulation</strong> &gt; <strong>Cheats</strong></li>
+</ol>
+<p><img src="/images/citra-cheats-menu.png" alt="Menu des cheats dans Citra">
+<em>Accès au menu de gestion des cheats</em></p>
+<h3 id="interface-des-cheats">
+<a class="header-anchor" href="#interface-des-cheats"></a>
+Interface des cheats
+</h3><p>Une nouvelle fenêtre s&rsquo;ouvre avec :</p>
+<ul>
+<li><strong>Liste des cheats</strong> disponibles (vide au début)</li>
+<li><strong>Bouton &ldquo;Add Cheat&rdquo;</strong> pour ajouter de nouveaux codes</li>
+<li><strong>Cases à cocher</strong> pour activer/désactiver les cheats</li>
+<li><strong>Boutons d&rsquo;édition</strong> et de suppression</li>
+</ul>
+<h2 id="étape-2--ajouter-un-nouveau-cheat">
+<a class="header-anchor" href="#%c3%a9tape-2--ajouter-un-nouveau-cheat"></a>
+Étape 2 : Ajouter un nouveau cheat
+</h2><h3 id="création-dun-cheat">
+<a class="header-anchor" href="#cr%c3%a9ation-dun-cheat"></a>
+Création d&rsquo;un cheat
+</h3><ol>
+<li>Cliquez sur <strong>&ldquo;Add Cheat&rdquo;</strong> dans la fenêtre des cheats</li>
+<li>Une boîte de dialogue apparaît avec trois champs :
+<ul>
+<li><strong>Name</strong> : Nom descriptif du cheat</li>
+<li><strong>Notes</strong> : Description optionnelle</li>
+<li><strong>Code</strong> : Le code de triche lui-même</li>
+</ul>
+</li>
+</ol>
+<h3 id="options-de-nommage">
+<a class="header-anchor" href="#options-de-nommage"></a>
+Options de nommage
+</h3><p><strong>Noms descriptifs recommandés :</strong></p>
+<ul>
+<li><code>Argent Infini</code></li>
+<li><code>Vies Illimitées</code></li>
+<li><code>Tous les objets</code></li>
+</ul>
+<p><strong>Notes utiles à ajouter :</strong></p>
+<ul>
+<li>Version du jeu compatible</li>
+<li>Région (EU/US/JP)</li>
+<li>Effets du code</li>
+</ul>
+<p><strong>Format des codes Citra :</strong></p>
+<pre tabindex="0"><code>[Nom du cheat]
+ADRESSE VALEUR
+</code></pre><h2 id="étape-3--format-et-syntaxe-des-codes">
+<a class="header-anchor" href="#%c3%a9tape-3--format-et-syntaxe-des-codes"></a>
+Étape 3 : Format et syntaxe des codes
+</h2><h3 id="structure-des-codes">
+<a class="header-anchor" href="#structure-des-codes"></a>
+Structure des codes
+</h3><p>Les codes Citra suivent ce format spécifique :</p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Gold 999999 (Code Offset 1)]
+0808E0E4 000F423F
+
+[Or 999999 (Code Offset 2)]
+080900A4 000F423F
+
+[Or 999999 (Code Offset 3)]
+08092064 000F423F
+
+[Max SP (Décalage de code 1)]
+08ED0CF8 00000003
+
+[Max SP (Code Offset 2)]
+08ED2CB8 00000003
+
+[Max SP (Code Offset 3)]
+08ED4C78 00000003
+</code></pre><p><strong>Structure générale :</strong></p>
+<pre tabindex="0"><code>[Nom descriptif du cheat]
+ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
+
+[Autre cheat]
+ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
+</code></pre><blockquote>
+<p><strong>💡 Astuce</strong> : Ces codes d&rsquo;exemple proviennent de <em>Bravely Default</em> et sont pleinement fonctionnels, mais servent ici uniquement de démonstration.</p></blockquote>
+<h3 id="types-de-codes-courants">
+<a class="header-anchor" href="#types-de-codes-courants"></a>
+Types de codes courants
+</h3><table>
+  <thead>
+      <tr>
+          <th>Type de Code</th>
+          <th>Description</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Money/Gold</strong></td>
+          <td>Argent infini</td>
+          <td><code>08XXXXXX 000F423F</code></td>
+      </tr>
+      <tr>
+          <td><strong>HP/SP</strong></td>
+          <td>Points de vie/magie max</td>
+          <td><code>08XXXXXX 00000063</code></td>
+      </tr>
+      <tr>
+          <td><strong>Items</strong></td>
+          <td>Objets en quantité</td>
+          <td><code>08XXXXXX 00000063</code></td>
+      </tr>
+      <tr>
+          <td><strong>Experience</strong></td>
+          <td>Expérience maximale</td>
+          <td><code>08XXXXXX 0098967F</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="étape-4--activation-et-test">
+<a class="header-anchor" href="#%c3%a9tape-4--activation-et-test"></a>
+Étape 4 : Activation et test
+</h2><h3 id="procédure-dactivation">
+<a class="header-anchor" href="#proc%c3%a9dure-dactivation"></a>
+Procédure d&rsquo;activation
+</h3><ol>
+<li><strong>Saisissez le code</strong> dans le champ approprié</li>
+<li><strong>Donnez un nom</strong> explicite au cheat</li>
+<li>Cliquez sur <strong>&ldquo;OK&rdquo;</strong> pour sauvegarder</li>
+<li><strong>Cochez la case</strong> à côté du cheat pour l&rsquo;activer</li>
+<li><strong>Retournez dans le jeu</strong> pour tester</li>
+</ol>
+<p><img src="/images/citra-cheat-activation.gif" alt="Animation d’activation d’un cheat">
+<em>Processus d&rsquo;activation d&rsquo;un code de triche</em></p>
+<h3 id="vérification-des-effets">
+<a class="header-anchor" href="#v%c3%a9rification-des-effets"></a>
+Vérification des effets
+</h3><p>Une fois le cheat activé, vous devriez observer :</p>
+<p><strong>Modifications immédiates :</strong></p>
+<ul>
+<li>Changement des valeurs d&rsquo;argent</li>
+<li>Modification des statistiques</li>
+<li>Objets ajoutés à l&rsquo;inventaire</li>
+</ul>
+<p><strong>Effets après redémarrage :</strong></p>
+<ul>
+<li>Certains cheats nécessitent un redémarrage</li>
+<li>Sauvegardez avant de relancer</li>
+<li>Vérifiez la persistance des effets</li>
+</ul>
+<h2 id="troubleshooting---résolution-des-problèmes">
+<a class="header-anchor" href="#troubleshooting---r%c3%a9solution-des-probl%c3%a8mes"></a>
+Troubleshooting - Résolution des problèmes
+</h2><h3 id="-le-cheat-ne-fonctionne-pas">
+<a class="header-anchor" href="#-le-cheat-ne-fonctionne-pas"></a>
+🚫 Le cheat ne fonctionne pas
+</h3><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Version de jeu incompatible</li>
+<li>Région différente (US vs EU vs JP)</li>
+<li>Code mal formaté</li>
+<li>Adresse mémoire incorrecte</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez la correspondance version/région</li>
+<li>Testez avec d&rsquo;autres codes du même jeu</li>
+<li>Consultez les forums spécialisés</li>
+<li>Essayez avec une ROM différente</li>
+</ol>
+<h3 id="-le-jeu-plante-ou-devient-instable">
+<a class="header-anchor" href="#-le-jeu-plante-ou-devient-instable"></a>
+💥 Le jeu plante ou devient instable
+</h3><p><strong>Actions immédiates :</strong></p>
+<ol>
+<li><strong>Désactivez immédiatement</strong> tous les cheats</li>
+<li><strong>Redémarrez</strong> l&rsquo;émulateur</li>
+<li><strong>Restaurez</strong> une sauvegarde antérieure</li>
+<li><strong>Testez les cheats un par un</strong> pour identifier le problème</li>
+</ol>
+<p><strong>Prévention :</strong></p>
+<ul>
+<li>Sauvegardez avant d&rsquo;utiliser de nouveaux cheats</li>
+<li>N&rsquo;activez pas trop de cheats simultanément</li>
+<li>Utilisez des codes de sources fiables</li>
+</ul>
+<h3 id="-codes-partiellement-fonctionnels">
+<a class="header-anchor" href="#-codes-partiellement-fonctionnels"></a>
+⚠️ Codes partiellement fonctionnels
+</h3><p><strong>Symptômes :</strong></p>
+<ul>
+<li>Certains effets marchent, d&rsquo;autres non</li>
+<li>Valeurs incorrectes appliquées</li>
+<li>Effets temporaires seulement</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Vérifiez si le code nécessite plusieurs offsets</li>
+<li>Essayez d&rsquo;appliquer tous les offsets du code</li>
+<li>Consultez la documentation du code source</li>
+</ul>
+<h2 id="ressources-et-bases-de-données">
+<a class="header-anchor" href="#ressources-et-bases-de-donn%c3%a9es"></a>
+Ressources et bases de données
+</h2><h3 id="sites-recommandés-pour-les-codes">
+<a class="header-anchor" href="#sites-recommand%c3%a9s-pour-les-codes"></a>
+Sites recommandés pour les codes
+</h3><p><strong><a href="https://gamehacking.org/">GameHacking.org</a></strong></p>
+<ul>
+<li>La plus grande base de données de codes de triche</li>
+<li>Interface facile à utiliser</li>
+<li>Codes vérifiés par la communauté</li>
+</ul>
+<p><strong><a href="https://www.codebreaker.net/">CodeBreaker Database</a></strong></p>
+<ul>
+<li>Codes spécialisés pour consoles Nintendo</li>
+<li>Section dédiée aux jeux 3DS</li>
+<li>Mise à jour régulière</li>
+</ul>
+<p><strong><a href="https://reddit.com/r/Citra">Reddit r/Citra</a></strong></p>
+<ul>
+<li>Communauté active d&rsquo;utilisateurs Citra</li>
+<li>Partage de codes et conseils</li>
+<li>Support technique communautaire</li>
+</ul>
+<h3 id="outils-complémentaires">
+<a class="header-anchor" href="#outils-compl%c3%a9mentaires"></a>
+Outils complémentaires
+</h3><table>
+  <thead>
+      <tr>
+          <th>Outil</th>
+          <th>Description</th>
+          <th>Utilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Cheat Engine</strong></td>
+          <td>Éditeur mémoire avancé</td>
+          <td>Création de codes personnalisés</td>
+      </tr>
+      <tr>
+          <td><strong>HxD</strong></td>
+          <td>Éditeur hexadécimal</td>
+          <td>Analyse de fichiers de sauvegarde</td>
+      </tr>
+      <tr>
+          <td><strong>Save Editors</strong></td>
+          <td>Éditeurs de sauvegarde spécialisés</td>
+          <td>Alternative aux cheats</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="bonnes-pratiques-et-conseils-avancés">
+<a class="header-anchor" href="#bonnes-pratiques-et-conseils-avanc%c3%a9s"></a>
+Bonnes pratiques et conseils avancés
+</h2><h3 id="sécurité-et-sauvegarde">
+<a class="header-anchor" href="#s%c3%a9curit%c3%a9-et-sauvegarde"></a>
+Sécurité et sauvegarde
+</h3><blockquote>
+<p><strong>🛡️ Règles de sécurité essentielles :</strong></p>
+<ol>
+<li><strong>Toujours sauvegarder</strong> avant d&rsquo;activer de nouveaux cheats</li>
+<li><strong>Tester un cheat à la fois</strong> pour identifier les problèmes</li>
+<li><strong>Éviter les cheats durant les cutscenes</strong> ou événements scriptés</li>
+<li><strong>Désactiver les cheats</strong> avant les combats de boss importants</li>
+</ol></blockquote>
+<h3 id="optimisation-des-performances">
+<a class="header-anchor" href="#optimisation-des-performances"></a>
+Optimisation des performances
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Configuration recommandée pour Citra avec cheats</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Graphics</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Resolution</span>: <span style="color:#ae81ff">2x Native (400x240)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Frame Limit</span>: <span style="color:#ae81ff">100</span><span style="color:#ae81ff">%</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Audio</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Output Engine</span>: <span style="color:#ae81ff">SDL2</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">System</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Region</span>: <span style="color:#ae81ff">Auto-Select</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Language</span>: <span style="color:#ae81ff">System Default</span>
+</span></span></code></pre></div><h3 id="codes-avancés-et-modifications">
+<a class="header-anchor" href="#codes-avanc%c3%a9s-et-modifications"></a>
+Codes avancés et modifications
+</h3><p>Pour les utilisateurs expérimentés, voici quelques techniques avancées :</p>
+<p><strong>Code conditionnel avancé :</strong></p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Argent infini SI level &gt; 10]
+D3000000 10000000
+80XXXXXX 0000000A
+D2000000 00000000
+</code></pre><p><strong>Modification de pointeur :</strong></p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Stats maximales (via pointeur)]
+B8XXXXXX 00000000
+B8XXXXXX 00000000
+80XXXXXX 000000FF
+D2000000 00000000
+</code></pre><h2 id="exemples-pratiques-par-jeu-populaire">
+<a class="header-anchor" href="#exemples-pratiques-par-jeu-populaire"></a>
+Exemples pratiques par jeu populaire
+</h2><h3 id="pokémon-xy">
+<a class="header-anchor" href="#pok%c3%a9mon-xy"></a>
+Pokémon X/Y
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Argent Infini]
+0818CE0C 0098967F
+
+[Pokéballs Infinies]
+08C6D6CC 00000063
+
+[Rare Candies x999]
+08C6D7C4 000003E7
+</code></pre><h3 id="the-legend-of-zelda-a-link-between-worlds">
+<a class="header-anchor" href="#the-legend-of-zelda-a-link-between-worlds"></a>
+The Legend of Zelda: A Link Between Worlds
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Rupees Max]
+08796D20 0000270F
+
+[Vies Infinies]
+08796D1C 00000063
+</code></pre><h3 id="animal-crossing-new-leaf">
+<a class="header-anchor" href="#animal-crossing-new-leaf"></a>
+Animal Crossing: New Leaf
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Bells Infinis]
+0893A8B8 0098967F
+
+[Tous les fruits]
+08XXXXXX 00000063
+</code></pre><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;utilisation des cheats sur Citra peut grandement enrichir votre expérience de jeu, que ce soit pour :</p>
+<ul>
+<li><strong>Débloquer du contenu</strong> rapidement</li>
+<li><strong>Tester différentes stratégies</strong> sans grinding</li>
+<li><strong>Revivre vos jeux favoris</strong> avec de nouveaux défis</li>
+<li><strong>Contourner des passages difficiles</strong></li>
+</ul>
+<blockquote>
+<p><strong>🎯 Points clés à retenir :</strong></p>
+<ul>
+<li>Sauvegardez toujours avant d&rsquo;utiliser des cheats</li>
+<li>Testez les codes progressivement</li>
+<li>Utilisez des sources fiables pour vos codes</li>
+<li>N&rsquo;hésitez pas à désactiver les cheats si nécessaire</li>
+</ul></blockquote>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Les cheats fonctionnent-ils sur toutes les versions de Citra ?</strong>
+R : La plupart des cheats fonctionnent sur les versions récentes de Citra. Cependant, certains codes peuvent être spécifiques à certaines versions. Utilisez de préférence la dernière version stable.</p>
+<p><strong>Q : Puis-je utiliser plusieurs cheats simultanément ?</strong>
+R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commencez par tester les cheats individuellement avant de les combiner.</p>
+<p><strong>Q : Comment créer mes propres codes ?</strong>
+R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.</p>
+<p><strong>Q : Les cheats affectent-ils les achievements/succès ?</strong>
+R : Sur émulateur, il n&rsquo;y a généralement pas de système d&rsquo;achievements officiels, donc pas d&rsquo;impact. Pour les achievements communautaires, cela dépend des règles spécifiques.</p>
+<hr>
+<p><strong>Vous avez trouvé ce guide utile ?</strong> Partagez-le avec la communauté gaming et n&rsquo;hésitez pas à laisser vos propres conseils en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/post/guide-citra/">Guide Complet de l&rsquo;Émulateur Citra</a></li>
+<li><a href="/post/citra-performance/">Optimiser les Performances de Citra</a></li>
+<li><a href="/post/best-3ds-games/">Les Meilleurs Jeux 3DS à Émuler</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+  </channel>
+</rss>

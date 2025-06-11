@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xbox 360 on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/tags/xbox-360/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/tags/xbox-360/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Guide complet : Installation et configuration de Xenia</title>
+      <link>https://axekin.com/fr/post/xenia/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/xenia/</guid>
+      <description>
+        <![CDATA[<h1>Guide complet : Installation et configuration de Xenia</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-xenia">
+<a class="header-anchor" href="#-introduction-%c3%a0-xenia"></a>
+🎮 Introduction à Xenia
+</h2><p><strong>Xenia</strong> est l&rsquo;émulateur Xbox 360 open-source le plus avancé disponible. Développé depuis 2013, il émule l&rsquo;architecture PowerPC Xenon de la Xbox 360 et offre une compatibilité croissante avec de nombreux jeux emblématiques de la console Microsoft.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 10 (64-bit) uniquement</li>
+<li><strong>CPU</strong> : Intel Core i5-4690K / AMD FX-8350 (4+ cores, 3.0+ GHz)</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : DirectX 12 / Vulkan 1.1 compatible</li>
+<li><strong>Stockage</strong> : 5 GB d&rsquo;espace libre + espace jeux</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-8700K / AMD Ryzen 7 2700X (8+ cores, 3.5+ GHz)</li>
+<li><strong>RAM</strong> : 16 GB DDR4</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1070 / AMD RX 580 ou supérieur</li>
+<li><strong>Stockage</strong> : SSD avec 50+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale">
+<a class="header-anchor" href="#configuration-optimale"></a>
+Configuration optimale
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 4.0+ GHz)</li>
+<li><strong>RAM</strong> : 32 GB DDR4-3200+</li>
+<li><strong>GPU</strong> : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 100+ GB d&rsquo;espace libre</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Note importante</strong> : Xenia nécessite un CPU puissant avec de bonnes performances single-thread. Les GPU récents avec support Vulkan donnent les meilleurs résultats.</p></blockquote>
+<h2 id="-étape-1--téléchargement-de-xenia">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-xenia"></a>
+🔧 Étape 1 : Téléchargement de Xenia
+</h2><h3 id="version-master-stable">
+<a class="header-anchor" href="#version-master-stable"></a>
+Version Master (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://xenia.jp/download/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download Master&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>xenia_master.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Xenia</code>)</li>
+</ol>
+<h3 id="version-canary-développement">
+<a class="header-anchor" href="#version-canary-d%c3%a9veloppement"></a>
+Version Canary (Développement)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Builds automatiques avec dernières améliorations</span>
+</span></span><span style="display:flex;"><span>https://github.com/xenia-project/xenia/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Avantages:
+</span></span><span style="display:flex;"><span>- Nouvelles fonctionnalités
+</span></span><span style="display:flex;"><span>- Corrections récentes
+</span></span><span style="display:flex;"><span>- Amélioration compatibilité
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risques:
+</span></span><span style="display:flex;"><span>- Potentiellement instable
+</span></span><span style="display:flex;"><span>- Régressions possibles
+</span></span><span style="display:flex;"><span>- Bugs inattendus
+</span></span></code></pre></div><h3 id="xenia-vfs-tool">
+<a class="header-anchor" href="#xenia-vfs-tool"></a>
+Xenia VFS Tool
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Outil pour extraire les jeux multi-disques</span>
+</span></span><span style="display:flex;"><span>Inclus dans le package principal
+</span></span><span style="display:flex;"><span>Utilisation: Extraction fichiers .iso complexes
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>Xenia/
+├── xenia.exe                # Exécutable principal
+├── xenia_canary.exe         # Version développement (optionnel)
+├── games/                   # Vos jeux Xbox 360
+│   ├── iso/                # Images disque .iso
+│   ├── xex/                # Executables .xex
+│   ├── xbla/               # Xbox Live Arcade
+│   └── extracted/          # Jeux extraits
+├── content/                # DLC et mises à jour
+│   └── [Title-ID]/         # Contenu par jeu
+├── saves/                  # Données de sauvegarde
+│   └── [Profile-ID]/       # Sauvegardes par profil
+├── cache/                  # Cache shaders et textures
+│   ├── shaders/           # Cache compilation shaders
+│   └── textures/          # Cache textures
+├── licenses/               # Licences pour contenu
+└── portable.txt            # Mode portable (optionnel)
+</code></pre><h2 id="-étape-3--premier-lancement-et-configuration">
+<a class="header-anchor" href="#-%c3%a9tape-3--premier-lancement-et-configuration"></a>
+⚙️ Étape 3 : Premier lancement et configuration
+</h2><h3 id="installation-des-prérequis">
+<a class="header-anchor" href="#installation-des-pr%c3%a9requis"></a>
+Installation des prérequis
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime (si D3D12)</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vulkan Runtime (recommandé)</span>
+</span></span><span style="display:flex;"><span>https://vulkan.lunarg.com/sdk/home
+</span></span></code></pre></div><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>xenia.exe</code> en tant qu&rsquo;administrateur</li>
+<li><strong>Acceptez</strong> les avertissements de compatibilité</li>
+<li><strong>Configurez</strong> les paramètres de base</li>
+</ol>
+<h2 id="-étape-4--configuration-cpu-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-cpu-optimale"></a>
+⚙️ Étape 4 : Configuration CPU optimale
+</h2><h3 id="paramètres-cpu-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-cpu-g%c3%a9n%c3%a9raux"></a>
+Paramètres CPU généraux
+</h3><pre tabindex="0"><code>File → Config → CPU
+</code></pre><p><strong>Configuration recommandée :</strong></p>
+<ul>
+<li><strong>Clock frequency</strong> : 100% (standard Xbox 360)</li>
+<li><strong>Thread quantum</strong> : 20ms (défaut)</li>
+<li><strong>Processor count</strong> : 6 (émule les 6 cores Xenon)</li>
+<li><strong>Enable debugging</strong> : ❌ Désactivé (sauf développement)</li>
+</ul>
+<h3 id="options-avancées-cpu">
+<a class="header-anchor" href="#options-avanc%c3%a9es-cpu"></a>
+Options avancées CPU
+</h3><pre tabindex="0"><code>File → Config → CPU → Advanced
+</code></pre><ul>
+<li><strong>Break on instruction access</strong> : ❌ Désactivé</li>
+<li><strong>Validate instruction addresses</strong> : ❌ Désactivé (performance)</li>
+<li><strong>Ignore kernel debugging</strong> : ✅ Activé</li>
+<li><strong>Disable kernel driver signing</strong> : ✅ Activé</li>
+</ul>
+<h2 id="-étape-5--configuration-gpu-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-gpu-optimale"></a>
+⚙️ Étape 5 : Configuration GPU optimale
+</h2><h3 id="paramètres-graphiques-de-base">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-de-base"></a>
+Paramètres graphiques de base
+</h3><pre tabindex="0"><code>File → Config → GPU
+</code></pre><p><strong>Backend recommandé :</strong></p>
+<ul>
+<li><strong>Graphics API</strong> : Vulkan (performance) ou D3D12 (compatibilité)</li>
+<li><strong>Graphics adapter</strong> : Votre GPU principal</li>
+<li><strong>Fullscreen</strong> : ✅ Activé (réduit latence)</li>
+<li><strong>VSync</strong> : ✅ Activé (évite tearing)</li>
+</ul>
+<h3 id="résolution-et-qualité">
+<a class="header-anchor" href="#r%c3%a9solution-et-qualit%c3%a9"></a>
+Résolution et qualité
+</h3><pre tabindex="0"><code>File → Config → GPU → Display
+</code></pre><p><strong>Paramètres optimaux :</strong></p>
+<ul>
+<li><strong>Internal display resolution</strong> : 1280x720 (natif) ou 1920x1080</li>
+<li><strong>Internal framebuffer resolution</strong> : 1280x720 ou upscale</li>
+<li><strong>Scaling mode</strong> : Bilinear ou Lanczos (plus net)</li>
+<li><strong>Pixel shader interlock</strong> : ✅ Activé (si supporté)</li>
+</ul>
+<h3 id="options-de-rendu-avancées">
+<a class="header-anchor" href="#options-de-rendu-avanc%c3%a9es"></a>
+Options de rendu avancées
+</h3><pre tabindex="0"><code>File → Config → GPU → Rendering
+</code></pre><p><strong>Configuration performance :</strong></p>
+<ul>
+<li><strong>Enable 10-bit color</strong> : ❌ Désactivé (sauf écran 10-bit)</li>
+<li><strong>Enable gamma ramp</strong> : ✅ Activé</li>
+<li><strong>Enable postprocessing</strong> : ❌ Désactivé (économie performance)</li>
+<li><strong>Texture filter anisotropic</strong> : ✅ Activé</li>
+<li><strong>Texture addressing clamp to border</strong> : ✅ Activé</li>
+</ul>
+<h2 id="-étape-6--configuration-audio-et-contrôles">
+<a class="header-anchor" href="#-%c3%a9tape-6--configuration-audio-et-contr%c3%b4les"></a>
+⚙️ Étape 6 : Configuration audio et contrôles
+</h2><h3 id="paramètres-audio">
+<a class="header-anchor" href="#param%c3%a8tres-audio"></a>
+Paramètres audio
+</h3><pre tabindex="0"><code>File → Config → Audio
+</code></pre><p><strong>Configuration optimale :</strong></p>
+<ul>
+<li><strong>Audio system</strong> : XAudio2 (Windows natif)</li>
+<li><strong>Audio channels</strong> : Stereo ou 5.1 selon votre setup</li>
+<li><strong>Audio sample rate</strong> : 48000 Hz</li>
+<li><strong>Audio buffer size</strong> : 512 samples (ajustez si crachotements)</li>
+</ul>
+<h3 id="configuration-des-contrôleurs">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4leurs"></a>
+Configuration des contrôleurs
+</h3><pre tabindex="0"><code>File → Config → Input
+</code></pre><p><strong>Manette Xbox 360/One :</strong></p>
+<ul>
+<li><strong>Input system</strong> : XInput (natif Microsoft)</li>
+<li><strong>Controller</strong> : Xbox 360 Controller</li>
+<li><strong>Vibration</strong> : ✅ Activé</li>
+</ul>
+<p><strong>Mapping automatique :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour manette Xbox (mapping natif)</span>
+</span></span><span style="display:flex;"><span>1. Connectez votre manette Xbox
+</span></span><span style="display:flex;"><span>2. Xenia détecte automatiquement
+</span></span><span style="display:flex;"><span>3. Testez dans le menu XInput Test
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour autres manettes</span>
+</span></span><span style="display:flex;"><span>1. Input system: DirectInput
+</span></span><span style="display:flex;"><span>2. Configuration manuelle des boutons
+</span></span><span style="display:flex;"><span>3. Mapping DualShock → Xbox:
+</span></span><span style="display:flex;"><span>   X → A, O → B, ▢ → X, △ → Y
+</span></span><span style="display:flex;"><span>   L1 → LB, L2 → LT, R1 → RB, R2 → RT
+</span></span></code></pre></div><h2 id="-étape-7--installation-et-gestion-des-jeux">
+<a class="header-anchor" href="#-%c3%a9tape-7--installation-et-gestion-des-jeux"></a>
+🎮 Étape 7 : Installation et gestion des jeux
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><h4 id="jeux-sur-disque">
+<a class="header-anchor" href="#jeux-sur-disque"></a>
+Jeux sur disque
+</h4><ul>
+<li><strong>.iso</strong> : Image disque DVD standard</li>
+<li><strong>.xex</strong> : Xbox Executable (jeu individuel)</li>
+<li><strong>Dossier extrait</strong> : Structure complète du jeu</li>
+</ul>
+<h4 id="contenu-téléchargeable">
+<a class="header-anchor" href="#contenu-t%c3%a9l%c3%a9chargeable"></a>
+Contenu téléchargeable
+</h4><ul>
+<li><strong>STFS</strong> : Secure Transacted File System (DLC, saves)</li>
+<li><strong>LIVE</strong> : Packages Xbox Live Arcade</li>
+<li><strong>GOD</strong> : Games on Demand</li>
+</ul>
+<h3 id="méthodes-de-lancement">
+<a class="header-anchor" href="#m%c3%a9thodes-de-lancement"></a>
+Méthodes de lancement
+</h3><h4 id="lancement-direct">
+<a class="header-anchor" href="#lancement-direct"></a>
+Lancement direct
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Méthode 1: Fichier ISO</span>
+</span></span><span style="display:flex;"><span>1. File → Open
+</span></span><span style="display:flex;"><span>2. Sélectionnez votre fichier .iso
+</span></span><span style="display:flex;"><span>3. Le jeu démarre automatiquement
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Méthode 2: Drag &amp; Drop</span>
+</span></span><span style="display:flex;"><span>1. Glissez le fichier .iso sur Xenia
+</span></span><span style="display:flex;"><span>2. Lancement automatique
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Méthode 3: Executable XEX</span>
+</span></span><span style="display:flex;"><span>1. Extrayez le contenu du disque
+</span></span><span style="display:flex;"><span>2. Lancez le fichier default.xex principal
+</span></span></code></pre></div><h4 id="extraction-de-jeux-multi-disques">
+<a class="header-anchor" href="#extraction-de-jeux-multi-disques"></a>
+Extraction de jeux multi-disques
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec Xenia VFS Tool</span>
+</span></span><span style="display:flex;"><span>1. Ouvrez une invite de commande
+</span></span><span style="display:flex;"><span>2. cd C:<span style="color:#ae81ff">\X</span>enia<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>3. xenia-vfs-dump.exe <span style="color:#e6db74">&#34;Game.iso&#34;</span> <span style="color:#e6db74">&#34;ExtractedFolder\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">4. Lancez default.xex depuis le dossier extrait
+</span></span></span></code></pre></div><h3 id="installation-dlc-et-mises-à-jour">
+<a class="header-anchor" href="#installation-dlc-et-mises-%c3%a0-jour"></a>
+Installation DLC et mises à jour
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installation contenu additionnel</span>
+</span></span><span style="display:flex;"><span>1. File → Install Content
+</span></span><span style="display:flex;"><span>2. Sélectionnez fichiers DLC/Update
+</span></span><span style="display:flex;"><span>3. Installation automatique dans content/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>4. Relancez le jeu pour activer le contenu
+</span></span></code></pre></div><h2 id="-optimisation-par-jeux-populaires">
+<a class="header-anchor" href="#-optimisation-par-jeux-populaires"></a>
+🚀 Optimisation par jeux populaires
+</h2><h3 id="halo-3">
+<a class="header-anchor" href="#halo-3"></a>
+Halo 3
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration optimale</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan
+</span></span><span style="display:flex;"><span>- Resolution: 720p ou 1080p
+</span></span><span style="display:flex;"><span>- VSync: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Clock frequency: 100%
+</span></span><span style="display:flex;"><span>- Toutes optimisations activées
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Excellent, <span style="color:#ae81ff">60</span> FPS stable généralement
+</span></span></code></pre></div><h3 id="gears-of-war-series">
+<a class="header-anchor" href="#gears-of-war-series"></a>
+Gears of War Series
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Paramètres recommandés</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: D3D12 <span style="color:#f92672">(</span>meilleure compatibilité<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p-1080p
+</span></span><span style="display:flex;"><span>- Pixel shader interlock: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Buffer size: <span style="color:#ae81ff">1024</span> samples <span style="color:#f92672">(</span>évite crachotements<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Notes: Gears 1-3 bien supportés
+</span></span></code></pre></div><h3 id="forza-motorsport-series">
+<a class="header-anchor" href="#forza-motorsport-series"></a>
+Forza Motorsport Series
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration courses</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan <span style="color:#f92672">(</span>performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Internal resolution: 1080p possible
+</span></span><span style="display:flex;"><span>- VSync: ✅ Obligatoire <span style="color:#f92672">(</span>évite tearing<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Clock frequency: 100% <span style="color:#f92672">(</span>timing important<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Input:
+</span></span><span style="display:flex;"><span>- Controller vibration: ✅ Pour immersion
+</span></span><span style="display:flex;"><span>- Low latency mode si disponible
+</span></span></code></pre></div><h3 id="red-dead-redemption">
+<a class="header-anchor" href="#red-dead-redemption"></a>
+Red Dead Redemption
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Jeu très exigeant</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: Vulkan ou D3D12 <span style="color:#f92672">(</span>testez les deux<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p recommandé
+</span></span><span style="display:flex;"><span>- Postprocessing: ❌ Désactivé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Tous les cores disponibles
+</span></span><span style="display:flex;"><span>- Priority process: High
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance: Variable, 30-60 FPS selon les zones
+</span></span></code></pre></div><h3 id="fable-ii">
+<a class="header-anchor" href="#fable-ii"></a>
+Fable II
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration RPG</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- Graphics API: Vulkan
+</span></span><span style="display:flex;"><span>- Resolution: 1080p possible
+</span></span><span style="display:flex;"><span>- Texture filtering: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Saves:
+</span></span><span style="display:flex;"><span>- Sauvegarde fréquente recommandée
+</span></span><span style="display:flex;"><span>- Backup manuel des saves
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Compatibilité: Excellent du début à la fin
+</span></span></code></pre></div><h3 id="crackdown">
+<a class="header-anchor" href="#crackdown"></a>
+Crackdown
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Action open-world</span>
+</span></span><span style="display:flex;"><span>GPU:
+</span></span><span style="display:flex;"><span>- API: D3D12 <span style="color:#f92672">(</span>stabilité<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 720p-1080p
+</span></span><span style="display:flex;"><span>- Frame limiting: <span style="color:#ae81ff">30</span> FPS <span style="color:#f92672">(</span>comme original<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>CPU:
+</span></span><span style="display:flex;"><span>- Performance cores prioritaires
+</span></span><span style="display:flex;"><span>- Fermer applications en arrière-plan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Physics: Peut être instable dans certaines zones
+</span></span></code></pre></div><h2 id="-fonctionnalités-avancées">
+<a class="header-anchor" href="#-fonctionnalit%c3%a9s-avanc%c3%a9es"></a>
+🛠️ Fonctionnalités avancées
+</h2><h3 id="profils-utilisateur-xbox-360">
+<a class="header-anchor" href="#profils-utilisateur-xbox-360"></a>
+Profils utilisateur Xbox 360
+</h3><h4 id="création-de-profil">
+<a class="header-anchor" href="#cr%c3%a9ation-de-profil"></a>
+Création de profil
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Profil local obligatoire</span>
+</span></span><span style="display:flex;"><span>1. File → Create Profile
+</span></span><span style="display:flex;"><span>2. Entrez nom d<span style="color:#960050;background-color:#1e0010">&#39;</span>utilisateur
+</span></span><span style="display:flex;"><span>3. Sélectionnez avatar <span style="color:#f92672">(</span>optionnel<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Le profil est créé dans saves/<span style="color:#f92672">[</span>ProfileID<span style="color:#f92672">]</span>/
+</span></span></code></pre></div><h4 id="gestion-des-sauvegardes">
+<a class="header-anchor" href="#gestion-des-sauvegardes"></a>
+Gestion des sauvegardes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Localisation des saves</span>
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\X</span>enia<span style="color:#ae81ff">\c</span>ontent<span style="color:#ae81ff">\[</span>ProfileID<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>TitleID<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Backup des sauvegardes</span>
+</span></span><span style="display:flex;"><span>1. Copiez le dossier ProfileID complet
+</span></span><span style="display:flex;"><span>2. Sauvegarde externe recommandée
+</span></span><span style="display:flex;"><span>3. Restauration: Remplacer le dossier
+</span></span></code></pre></div><h3 id="debug-et-développement">
+<a class="header-anchor" href="#debug-et-d%c3%a9veloppement"></a>
+Debug et développement
+</h3><h4 id="mode-développeur">
+<a class="header-anchor" href="#mode-d%c3%a9veloppeur"></a>
+Mode développeur
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour développeurs/modders</span>
+</span></span><span style="display:flex;"><span>File → Config → General
+</span></span><span style="display:flex;"><span>- Show debug info: ✅ Activé
+</span></span><span style="display:flex;"><span>- Log level: <span style="color:#ae81ff">2</span> <span style="color:#f92672">(</span>Info<span style="color:#f92672">)</span> ou <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>Debug<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Console debug</span>
+</span></span><span style="display:flex;"><span>View → Show Debug Console
+</span></span><span style="display:flex;"><span>- Affiche logs temps réel
+</span></span><span style="display:flex;"><span>- Utile pour diagnostiquer problèmes
+</span></span></code></pre></div><h4 id="extraction-de-contenu">
+<a class="header-anchor" href="#extraction-de-contenu"></a>
+Extraction de contenu
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction assets de jeux</span>
+</span></span><span style="display:flex;"><span>1. Utilisez Xenia VFS Dump
+</span></span><span style="display:flex;"><span>2. Extraction textures, modèles, sounds
+</span></span><span style="display:flex;"><span>3. Outils modding communautaires
+</span></span><span style="display:flex;"><span>4. Respect copyright obligatoire
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-de-lancement">
+<a class="header-anchor" href="#probl%c3%a8mes-de-lancement"></a>
+Problèmes de lancement
+</h3><h4 id="xenia-ne-démarre-pas">
+<a class="header-anchor" href="#xenia-ne-d%c3%a9marre-pas"></a>
+Xenia ne démarre pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Vérifications système:
+</span></span><span style="display:flex;"><span>1. Windows <span style="color:#ae81ff">10</span> 64-bit obligatoire
+</span></span><span style="display:flex;"><span>2. Visual C++ <span style="color:#ae81ff">2022</span> installé
+</span></span><span style="display:flex;"><span>3. DirectX/Vulkan runtime à jour
+</span></span><span style="display:flex;"><span>4. Antivirus: exception sur dossier Xenia
+</span></span><span style="display:flex;"><span>5. Droits administrateur accordés
+</span></span></code></pre></div><h4 id="jeu-ne-se-lance-pas">
+<a class="header-anchor" href="#jeu-ne-se-lance-pas"></a>
+Jeu ne se lance pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics jeu:
+</span></span><span style="display:flex;"><span>1. Vérifiez format supporté <span style="color:#f92672">(</span>.iso, .xex<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Intégrité fichier <span style="color:#f92672">(</span>MD5/SHA1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Région du jeu <span style="color:#f92672">(</span>PAL/NTSC/JPN<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Espace disque suffisant
+</span></span><span style="display:flex;"><span>5. Consultez compatibility list officielle
+</span></span></code></pre></div><h3 id="problèmes-de-performance">
+<a class="header-anchor" href="#probl%c3%a8mes-de-performance"></a>
+Problèmes de performance
+</h3><h4 id="fps-très-bas">
+<a class="header-anchor" href="#fps-tr%c3%a8s-bas"></a>
+FPS très bas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Optimisations performance:
+</span></span><span style="display:flex;"><span>1. Graphics API: Testez Vulkan vs D3D12
+</span></span><span style="display:flex;"><span>2. Resolution: Réduisez à 720p natif
+</span></span><span style="display:flex;"><span>3. VSync: Désactivez temporairement
+</span></span><span style="display:flex;"><span>4. Process priority: Élevé
+</span></span><span style="display:flex;"><span>5. Cores CPU: Vérifiez utilisation
+</span></span><span style="display:flex;"><span>6. GPU usage: Monitoring avec MSI Afterburner
+</span></span></code></pre></div><h4 id="micro-freezes-fréquents">
+<a class="header-anchor" href="#micro-freezes-fr%c3%a9quents"></a>
+Micro-freezes fréquents
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions stuttering:
+</span></span><span style="display:flex;"><span>1. SSD: Déplacez Xenia et jeux sur SSD
+</span></span><span style="display:flex;"><span>2. RAM: 16GB+ recommandé
+</span></span><span style="display:flex;"><span>3. Page file: Augmentez taille Windows
+</span></span><span style="display:flex;"><span>4. Background apps: Fermez tout
+</span></span><span style="display:flex;"><span>5. Windows Game Mode: Désactivez
+</span></span><span style="display:flex;"><span>6. Real-time antivirus: Désactivez temporairement
+</span></span></code></pre></div><h4 id="utilisation-cpu-élevée">
+<a class="header-anchor" href="#utilisation-cpu-%c3%a9lev%c3%a9e"></a>
+Utilisation CPU élevée
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Gestion CPU:
+</span></span><span style="display:flex;"><span>1. Affinity: Réservez cores physiques à Xenia
+</span></span><span style="display:flex;"><span>2. Hyperthreading: Peut causer instabilité
+</span></span><span style="display:flex;"><span>3. Boost frequencies: Monitoring températures
+</span></span><span style="display:flex;"><span>4. Power plan: High Performance
+</span></span><span style="display:flex;"><span>5. CPU scheduling: Windows <span style="color:#ae81ff">10</span> optimisations
+</span></span></code></pre></div><h3 id="problèmes-graphiques">
+<a class="header-anchor" href="#probl%c3%a8mes-graphiques"></a>
+Problèmes graphiques
+</h3><h4 id="écran-noircorruptions">
+<a class="header-anchor" href="#%c3%a9cran-noircorruptions"></a>
+Écran noir/corruptions
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections visuelles:
+</span></span><span style="display:flex;"><span>1. Graphics API: Changez <span style="color:#f92672">(</span>Vulkan ↔ D3D12<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. GPU drivers: Dernière version stable
+</span></span><span style="display:flex;"><span>3. Resolution: 720p natif test
+</span></span><span style="display:flex;"><span>4. Pixel shader interlock: Basculez
+</span></span><span style="display:flex;"><span>5. Fullscreen: Testez windowed mode
+</span></span></code></pre></div><h4 id="textures-manquantes">
+<a class="header-anchor" href="#textures-manquantes"></a>
+Textures manquantes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Fixes textures:
+</span></span><span style="display:flex;"><span>1. Texture addressing: Clamp to border
+</span></span><span style="display:flex;"><span>2. Anisotropic filtering: Désactivez test
+</span></span><span style="display:flex;"><span>3. Memory: Vérifiez VRAM disponible
+</span></span><span style="display:flex;"><span>4. Cache: Videz cache textures
+</span></span><span style="display:flex;"><span>5. Game-specific: Recherchez patches
+</span></span></code></pre></div><h4 id="framerate-instable">
+<a class="header-anchor" href="#framerate-instable"></a>
+Framerate instable
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stabilisation FPS:
+</span></span><span style="display:flex;"><span>1. VSync: Force via drivers GPU
+</span></span><span style="display:flex;"><span>2. Frame limiting: Activez si disponible
+</span></span><span style="display:flex;"><span>3. Adaptive sync: G-Sync/FreeSync
+</span></span><span style="display:flex;"><span>4. Triple buffering: Testez activation
+</span></span><span style="display:flex;"><span>5. Exclusive fullscreen: Privilégiez
+</span></span></code></pre></div><h3 id="problèmes-audio">
+<a class="header-anchor" href="#probl%c3%a8mes-audio"></a>
+Problèmes audio
+</h3><h4 id="pas-de-son">
+<a class="header-anchor" href="#pas-de-son"></a>
+Pas de son
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics audio:
+</span></span><span style="display:flex;"><span>1. Audio system: XAudio2 recommandé
+</span></span><span style="display:flex;"><span>2. Device: Vérifiez périphérique par défaut
+</span></span><span style="display:flex;"><span>3. Sample rate: <span style="color:#ae81ff">48000</span> Hz standard
+</span></span><span style="display:flex;"><span>4. Exclusive mode: Désactivez Windows
+</span></span><span style="display:flex;"><span>5. Audio services: Redémarrez Windows Audio
+</span></span></code></pre></div><h4 id="crachotementsdistorsion">
+<a class="header-anchor" href="#crachotementsdistorsion"></a>
+Crachotements/distorsion
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions audio:
+</span></span><span style="display:flex;"><span>1. Buffer size: Augmentez <span style="color:#f92672">(</span>1024, 2048<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Audio channels: Réduisez à Stereo
+</span></span><span style="display:flex;"><span>3. Sample rate: Testez <span style="color:#ae81ff">44100</span> Hz
+</span></span><span style="display:flex;"><span>4. Other audio apps: Fermez tout
+</span></span><span style="display:flex;"><span>5. Audio drivers: Mettez à jour
+</span></span></code></pre></div><h2 id="-compatibilité-et-base-de-données">
+<a class="header-anchor" href="#-compatibilit%c3%a9-et-base-de-donn%c3%a9es"></a>
+📊 Compatibilité et base de données
+</h2><h3 id="statistiques-actuelles-2025">
+<a class="header-anchor" href="#statistiques-actuelles-2025"></a>
+Statistiques actuelles (2025)
+</h3><table>
+  <thead>
+      <tr>
+          <th>Statut</th>
+          <th>Pourcentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~40%</td>
+          <td>Jouable du début à la fin</td>
+      </tr>
+      <tr>
+          <td><strong>Menus</strong></td>
+          <td>~25%</td>
+          <td>Démarre, problèmes gameplay</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~20%</td>
+          <td>Entre en jeu, bugs majeurs</td>
+      </tr>
+      <tr>
+          <td><strong>Intro</strong></td>
+          <td>~10%</td>
+          <td>Logo/intro seulement</td>
+      </tr>
+      <tr>
+          <td><strong>Nothing</strong></td>
+          <td>~5%</td>
+          <td>Ne démarre pas</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>📈 <strong>Note</strong> : La compatibilité s&rsquo;améliore rapidement avec les versions Canary</p></blockquote>
+<h3 id="jeux-parfaitement-compatibles">
+<a class="header-anchor" href="#jeux-parfaitement-compatibles"></a>
+Jeux parfaitement compatibles
+</h3><h4 id="exclusivités-microsoft">
+<a class="header-anchor" href="#exclusivit%c3%a9s-microsoft"></a>
+Exclusivités Microsoft
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Halo 3, 4, ODST, Reach
+</span></span><span style="display:flex;"><span>✅ Gears of War 1, 2, <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>✅ Forza Motorsport 2, 3, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>✅ Fable II, III
+</span></span><span style="display:flex;"><span>✅ Crackdown 1, <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Alan Wake
+</span></span><span style="display:flex;"><span>✅ Lost Odyssey <span style="color:#f92672">(</span>avec patience<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="xbox-live-arcade">
+<a class="header-anchor" href="#xbox-live-arcade"></a>
+Xbox Live Arcade
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Castle Crashers
+</span></span><span style="display:flex;"><span>✅ Geometry Wars series
+</span></span><span style="display:flex;"><span>✅ Limbo
+</span></span><span style="display:flex;"><span>✅ Braid
+</span></span><span style="display:flex;"><span>✅ Shadow Complex
+</span></span><span style="display:flex;"><span>✅ Trials HD/Evolution
+</span></span><span style="display:flex;"><span>✅ Pac-Man Championship Edition
+</span></span></code></pre></div><h4 id="multiplateforme-bien-supporté">
+<a class="header-anchor" href="#multiplateforme-bien-support%c3%a9"></a>
+Multiplateforme bien supporté
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Red Dead Redemption <span style="color:#f92672">(</span>variable<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ GTA IV + DLC
+</span></span><span style="display:flex;"><span>✅ Assassin<span style="color:#960050;background-color:#1e0010">&#39;</span>s Creed series
+</span></span><span style="display:flex;"><span>✅ Call of Duty series <span style="color:#f92672">(</span>la plupart<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ FIFA series
+</span></span><span style="display:flex;"><span>✅ Burnout Paradise
+</span></span></code></pre></div><h3 id="benchmarks-performance">
+<a class="header-anchor" href="#benchmarks-performance"></a>
+Benchmarks performance
+</h3><h4 id="configuration-test--i7-10700k-rtx-3060-16gb-ram">
+<a class="header-anchor" href="#configuration-test--i7-10700k-rtx-3060-16gb-ram"></a>
+Configuration test : i7-10700K, RTX 3060, 16GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Resolution</th>
+          <th>FPS moyen</th>
+          <th>CPU Usage</th>
+          <th>Statut</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Halo 3</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>60%</td>
+          <td>Perfect</td>
+      </tr>
+      <tr>
+          <td><strong>Gears of War</strong></td>
+          <td>1080p</td>
+          <td>55-60</td>
+          <td>70%</td>
+          <td>Excellent</td>
+      </tr>
+      <tr>
+          <td><strong>Fable II</strong></td>
+          <td>1080p</td>
+          <td>50-60</td>
+          <td>65%</td>
+          <td>Très bon</td>
+      </tr>
+      <tr>
+          <td><strong>RDR</strong></td>
+          <td>720p</td>
+          <td>30-45</td>
+          <td>85%</td>
+          <td>Jouable</td>
+      </tr>
+      <tr>
+          <td><strong>Forza 3</strong></td>
+          <td>1080p</td>
+          <td>60</td>
+          <td>55%</td>
+          <td>Perfect</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels">
+<a class="header-anchor" href="#sites-officiels"></a>
+Sites officiels
+</h3><ul>
+<li><a href="https://xenia.jp/">🏠 Site officiel Xenia</a></li>
+<li><a href="https://github.com/xenia-project/game-compatibility/issues">📊 Liste compatibilité</a></li>
+<li><a href="https://github.com/xenia-project/xenia/wiki">📚 Wiki Xenia</a></li>
+<li><a href="https://xenia.jp/docs/">🔧 Documentation développeur</a></li>
+</ul>
+<h3 id="communautés-actives">
+<a class="header-anchor" href="#communaut%c3%a9s-actives"></a>
+Communautés actives
+</h3><ul>
+<li><a href="https://discord.gg/Q9mxZf9">💬 Discord Xenia</a></li>
+<li><a href="https://www.reddit.com/r/xenia/">🗨️ Reddit r/xenia</a></li>
+<li><a href="https://www.emugen.com/forums/xenia.27/">🌐 Forums Emugen</a></li>
+<li><a href="https://www.youtube.com/results?search_query=xenia&#43;emulator&#43;guide">📺 YouTube guides</a></li>
+</ul>
+<h3 id="développement-et-contribution">
+<a class="header-anchor" href="#d%c3%a9veloppement-et-contribution"></a>
+Développement et contribution
+</h3><ul>
+<li><a href="https://github.com/xenia-project/xenia">💻 GitHub Xenia</a></li>
+<li><a href="https://github.com/xenia-project/xenia/issues">🐛 Bug reports</a></li>
+<li><a href="https://www.patreon.com/xeniaproject">💰 Donations</a></li>
+<li><a href="https://github.com/xenia-project/xenia/blob/master/docs/building.md">🔧 Build instructions</a></li>
+</ul>
+<h3 id="outils-xbox-360">
+<a class="header-anchor" href="#outils-xbox-360"></a>
+Outils Xbox 360
+</h3><ul>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=3074">🔧 Xbox 360 Neighborhood</a> - Outils développeur</li>
+<li><a href="https://www.wemod.com/horizon">📁 Horizon</a> - Éditeur saves Xbox 360</li>
+<li><a href="http://team-xecuter.com/forums/freestyle-dash/">🎮 FreeStyle Dash</a> - Dashboard alternatif</li>
+<li><a href="https://www.djtmnth.com/">🔍 Xbox 360 ISO Extract</a> - Extraction ISO</li>
+</ul>
+<h2 id="-faq---questions-fréquentes">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quentes"></a>
+❓ FAQ - Questions fréquentes
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Xenia fonctionne-t-il sur Linux/Mac ?</strong>
+<strong>R :</strong> Non, Xenia est exclusivement Windows 10/11 64-bit. Aucun port prévu officiellement.</p>
+<p><strong>Q : Puis-je jouer en ligne avec Xenia ?</strong>
+<strong>R :</strong> Non, Xbox Live n&rsquo;est pas supporté et ne le sera probablement jamais.</p>
+<p><strong>Q : Xenia peut-il jouer aux jeux Xbox originale ?</strong>
+<strong>R :</strong> Non, Xenia émule uniquement Xbox 360. Utilisez xemu pour Xbox originale.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou D3D12 ?</strong>
+<strong>R :</strong> Vulkan généralement plus performant, D3D12 parfois plus stable. Testez selon le jeu.</p>
+<p><strong>Q : Combien de RAM minimum ?</strong>
+<strong>R :</strong> 8GB minimum absolu, 16GB fortement recommandé, 32GB pour les gros jeux.</p>
+<p><strong>Q : Mon GPU est-il suffisant ?</strong>
+<strong>R :</strong> DirectX 12 ou Vulkan 1.1 minimum requis. GTX 1060/RX 580 pour performances correctes.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu plante au lancement ?</strong>
+<strong>R :</strong> Vérifiez compatibilité officielle, testez différents APIs, vérifiez intégrité fichier.</p>
+<p><strong>Q : Performance très faible ?</strong>
+<strong>R :</strong> CPU factor limitant principal. Fermez apps, utilisez SSD, vérifiez températures.</p>
+<p><strong>Q : Audio désynchronisé ?</strong>
+<strong>R :</strong> Augmentez buffer audio, changez sample rate, fermez autres apps audio.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Xenia est un émulateur Xbox 360 prometteur qui offre :</p>
+<ul>
+<li>✅ <strong>Accès aux exclusivités Xbox 360</strong> impossibles à jouer ailleurs</li>
+<li>✅ <strong>Amélioration graphique</strong> avec résolutions supérieures</li>
+<li>✅ <strong>Développement actif</strong> avec améliorations constantes</li>
+<li>✅ <strong>Support exclusivités Microsoft</strong> (Halo, Gears, Forza)</li>
+<li>✅ <strong>Préservation</strong> du patrimoine Xbox 360</li>
+<li>✅ <strong>Performance correcte</strong> sur matériel moderne</li>
+<li>⚠️ <strong>Compatibilité en progression</strong> (40% jouable actuellement)</li>
+</ul>
+<p>Avec ce guide complet, vous savez maintenant :</p>
+<ul>
+<li><strong>Installer</strong> et configurer Xenia optimalement</li>
+<li><strong>Optimiser</strong> selon votre configuration</li>
+<li><strong>Résoudre</strong> les problèmes courants</li>
+<li><strong>Accéder</strong> aux jeux Xbox 360 légendaires</li>
+<li><strong>Comprendre</strong> les limitations actuelles</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Rappel légal</strong> : Utilisez uniquement des jeux que vous possédez légalement. Xenia ne fournit aucun jeu - vous devez créer vos propres backups depuis vos disques Xbox 360.</p></blockquote>
+<p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Gaming</category><category>Tutoriels</category>
+      
+    </item>
+    
+  </channel>
+</rss>

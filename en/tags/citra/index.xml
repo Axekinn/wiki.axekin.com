@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citra on Wiki of Axekin</title>
+    <link>https://axekin.com/en/tags/citra/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/en/tags/citra/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>How to Install Cheats and Mods on Citra Emulator</title>
+      <link>https://axekin.com/en/post/citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/en/post/citra/</guid>
+      <description>
+        <![CDATA[<h1>How to Install Cheats and Mods on Citra Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-citra">
+<a class="header-anchor" href="#-introduction-to-citra"></a>
+🎮 Introduction to Citra
+</h2><p><strong>Citra</strong> is the world&rsquo;s most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphical improvements and near-perfect compatibility.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / macOS / Android</li>
+<li><strong>CPU</strong>: Intel Core i3-4130 / AMD FX-4300</li>
+<li><strong>RAM</strong>: 4 GB</li>
+<li><strong>GPU</strong>: DirectX 11 compatible (Intel HD 4000+)</li>
+<li><strong>Storage</strong>: 2 GB free space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i5-8400 / AMD Ryzen 5 2600</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1050 / AMD RX 560 or higher</li>
+<li><strong>Storage</strong>: SSD with 10+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration">
+<a class="header-anchor" href="#optimal-configuration"></a>
+Optimal Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-10700K / AMD Ryzen 7 3700X</li>
+<li><strong>RAM</strong>: 16 GB</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1660 / AMD RX 6600 or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 20+ GB free space</li>
+</ul>
+<h2 id="-step-1-downloading-citra">
+<a class="header-anchor" href="#-step-1-downloading-citra"></a>
+🔧 Step 1: Downloading Citra
+</h2><h3 id="option-1-citra-official-free">
+<a class="header-anchor" href="#option-1-citra-official-free"></a>
+Option 1: Citra Official (Free)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://citra-emu.org/download/
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Download</strong> <code>citra-windows-x86_64.zip</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>C:\Citra</code>)</li>
+</ol>
+<h3 id="option-2-citra-mmj-android-optimized">
+<a class="header-anchor" href="#option-2-citra-mmj-android-optimized"></a>
+Option 2: Citra MMJ (Android Optimized)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Android performance version</span>
+</span></span><span style="display:flex;"><span>https://github.com/weihuoya/citra/releases
+</span></span></code></pre></div><h3 id="option-3-citra-canary-nightly-builds">
+<a class="header-anchor" href="#option-3-citra-canary-nightly-builds"></a>
+Option 3: Citra Canary (Nightly Builds)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Development versions</span>
+</span></span><span style="display:flex;"><span>https://github.com/citra-emu/citra-canary/releases
+</span></span></code></pre></div><h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Organize your files with this structure:</p>
+<pre tabindex="0"><code>Citra/
+├── citra-qt.exe             # Graphical interface
+├── citra.exe                # CLI version
+├── games/                   # Your .3ds/.cia/.cxi ROMs
+│   ├── 3ds/                 # .3ds cartridges
+│   ├── cia/                 # .cia install files
+│   └── homebrew/            # Homebrew applications
+├── saves/                   # Exported saves
+├── screenshots/             # Screenshots
+├── system/                  # BIOS and system files
+│   ├── aes_keys.txt         # Encryption keys
+│   └── seeddb.bin           # Seeds database
+├── mods/                    # Game modifications
+│   └── [Title-ID]/          # Folder per game
+└── cheats/                  # Cheat codes
+    └── [Title-ID].txt       # Cheats per game
+</code></pre><h2 id="-step-3-installation-and-first-launch">
+<a class="header-anchor" href="#-step-3-installation-and-first-launch"></a>
+⚙️ Step 3: Installation and First Launch
+</h2><h3 id="installing-windows-prerequisites">
+<a class="header-anchor" href="#installing-windows-prerequisites"></a>
+Installing Windows Prerequisites
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/en-us/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span></code></pre></div><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First Launch
+</h3><ol>
+<li><strong>Run</strong> <code>citra-qt.exe</code></li>
+<li><strong>Accept</strong> the default configuration</li>
+<li><strong>Configure</strong> basic folders</li>
+<li><strong>Set</strong> the games folder</li>
+</ol>
+<h2 id="-step-4-essential-system-configuration">
+<a class="header-anchor" href="#-step-4-essential-system-configuration"></a>
+🎯 Step 4: Essential System Configuration
+</h2><h3 id="required-system-files">
+<a class="header-anchor" href="#required-system-files"></a>
+Required System Files
+</h3><blockquote>
+<p>⚠️ <strong>Important</strong>: These files must be extracted from your own Nintendo 3DS.</p></blockquote>
+<h4 id="aes-keys-required">
+<a class="header-anchor" href="#aes-keys-required"></a>
+AES Keys (Required)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction from your 3DS with Homebrew</span>
+</span></span><span style="display:flex;"><span>1. Install FBI + GodMode9 on your 3DS
+</span></span><span style="display:flex;"><span>2. Use GodMode9 to extract aes_keys.txt
+</span></span><span style="display:flex;"><span>3. Copy to: Citra/system/aes_keys.txt
+</span></span></code></pre></div><p>Typical aes_keys.txt content:</p>
+<pre tabindex="0"><code>slot0x2CKeyX=xxx
+slot0x25KeyX=xxx
+slot0x18KeyX=xxx
+slot0x1BKeyX=xxx
+# ... other keys
+</code></pre><h4 id="seeddb-for-certain-games">
+<a class="header-anchor" href="#seeddb-for-certain-games"></a>
+SeedDB (For certain games)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction with Decrypt9WIP</span>
+</span></span><span style="display:flex;"><span>1. Download seeddb.bin from your 3DS
+</span></span><span style="display:flex;"><span>2. Copy to: Citra/system/seeddb.bin
+</span></span></code></pre></div><h4 id="system-fonts-optional-but-recommended">
+<a class="header-anchor" href="#system-fonts-optional-but-recommended"></a>
+System Fonts (Optional but recommended)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extraction with GodMode9</span>
+</span></span><span style="display:flex;"><span>1. Extract shared_font.bin from your 3DS
+</span></span><span style="display:flex;"><span>2. Copy to: Citra/system/shared_font.bin
+</span></span></code></pre></div><h2 id="-step-5-optimal-configuration">
+<a class="header-anchor" href="#-step-5-optimal-configuration"></a>
+⚙️ Step 5: Optimal Configuration
+</h2><h3 id="general-settings">
+<a class="header-anchor" href="#general-settings"></a>
+General Settings
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Confirm exit while emulation is running</strong>: ✅ Enabled</li>
+<li><strong>Pause emulation when in background</strong>: ✅ Enabled (optional)</li>
+<li><strong>Enable Discord Presence</strong>: ✅ Enabled (optional)</li>
+</ul>
+<h3 id="system-configuration">
+<a class="header-anchor" href="#system-configuration"></a>
+System Configuration
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong>: Europe (or your region)</li>
+<li><strong>Language</strong>: English</li>
+<li><strong>Play Coin</strong>: 300 (maximum)</li>
+<li><strong>Console ID</strong>: Random (automatically generated)</li>
+<li><strong>Enable New 3DS</strong>: ✅ Enabled (for better performance)</li>
+</ul>
+<h3 id="optimal-graphics-settings">
+<a class="header-anchor" href="#optimal-graphics-settings"></a>
+Optimal Graphics Settings
+</h3><h4 id="general-tab">
+<a class="header-anchor" href="#general-tab"></a>
+General Tab
+</h4><pre tabindex="0"><code>Graphics → General
+- Internal Resolution: 2x Native (400x480) or higher
+- Enable Linear Filtering: ✅ Enabled
+- Enable V-Sync: ✅ Enabled
+</code></pre><h4 id="renderer-tab">
+<a class="header-anchor" href="#renderer-tab"></a>
+Renderer Tab
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Graphics API: OpenGL (recommended) or Vulkan
+- Enable Hardware Renderer: ✅ Enabled
+- Enable Hardware Shader: ✅ Enabled
+- Enable Accurate Multiplication: ✅ Enabled
+- Use Disk Shader Cache: ✅ Enabled
+- Enable VSync: ✅ Enabled
+</code></pre><h4 id="stereoscopy-tab-3d">
+<a class="header-anchor" href="#stereoscopy-tab-3d"></a>
+Stereoscopy Tab (3D)
+</h4><pre tabindex="0"><code>Graphics → Stereoscopy
+- Stereoscopic 3D Mode: Off (or Side by Side for VR)
+- Depth: 100% (if enabled)
+- Eye to render: Both (recommended)
+</code></pre><h3 id="audio-configuration">
+<a class="header-anchor" href="#audio-configuration"></a>
+Audio Configuration
+</h3><pre tabindex="0"><code>Audio
+- Enable DSP LLE: ✅ Enabled (more accurate)
+- Enable DSP LLE Multithread: ✅ Enabled
+- Output Type: Auto
+- Volume: 100%
+</code></pre><h3 id="controls-configuration">
+<a class="header-anchor" href="#controls-configuration"></a>
+Controls Configuration
+</h3><h4 id="automatic-method">
+<a class="header-anchor" href="#automatic-method"></a>
+Automatic Method
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Click &#34;Auto Map&#34;
+2. Press the buttons on your controller
+3. Test all controls
+</code></pre><h4 id="recommended-mapping-xbox-controller">
+<a class="header-anchor" href="#recommended-mapping-xbox-controller"></a>
+Recommended Mapping (Xbox Controller)
+</h4><pre tabindex="0"><code>A Button → A
+B Button → B
+X Button → Y
+Y Button → X
+L Button → LB
+R Button → RB
+ZL Button → LT
+ZR Button → RT
+D-Pad → D-Pad
+Circle Pad → Left Stick
+C-Stick (New 3DS) → Right Stick
+Start → Menu
+Select → View
+</code></pre><h2 id="-step-6-adding-and-managing-games">
+<a class="header-anchor" href="#-step-6-adding-and-managing-games"></a>
+🎮 Step 6: Adding and Managing Games
+</h2><h3 id="supported-formats">
+<a class="header-anchor" href="#supported-formats"></a>
+Supported Formats
+</h3><ul>
+<li><strong>.3DS</strong>: Nintendo 3DS cartridges (standard format)</li>
+<li><strong>.CIA</strong>: CTR Importable Archive (installable)</li>
+<li><strong>.CXI</strong>: CTR eXecutable Image (raw executables)</li>
+<li><strong>.APP</strong>: Nintendo system applications</li>
+</ul>
+<h3 id="game-addition-methods">
+<a class="header-anchor" href="#game-addition-methods"></a>
+Game Addition Methods
+</h3><h4 id="cartridge-roms-3ds">
+<a class="header-anchor" href="#cartridge-roms-3ds"></a>
+Cartridge ROMs (.3DS)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Simple to use</span>
+</span></span><span style="display:flex;"><span>1. Place your .3ds files in the games/3ds/ folder
+</span></span><span style="display:flex;"><span>2. Refresh the list in Citra
+</span></span><span style="display:flex;"><span>3. Double-click to play
+</span></span></code></pre></div><h4 id="cia-installation">
+<a class="header-anchor" href="#cia-installation"></a>
+CIA Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For DLC, updates, and homebrew</span>
+</span></span><span style="display:flex;"><span>1. File → Install CIA...
+</span></span><span style="display:flex;"><span>2. Select your .cia file
+</span></span><span style="display:flex;"><span>3. Wait <span style="color:#66d9ef">for</span> installation
+</span></span><span style="display:flex;"><span>4. The game/content appears in the list
+</span></span></code></pre></div><h3 id="dumping-your-own-games">
+<a class="header-anchor" href="#dumping-your-own-games"></a>
+Dumping Your Own Games
+</h3><h4 id="from-physical-cartridge">
+<a class="header-anchor" href="#from-physical-cartridge"></a>
+From Physical Cartridge
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With GodMode9 (3DS with CFW)</span>
+</span></span><span style="display:flex;"><span>1. Insert cartridge into your 3DS
+</span></span><span style="display:flex;"><span>2. Launch GodMode9
+</span></span><span style="display:flex;"><span>3. Navigate to <span style="color:#f92672">[</span>C:<span style="color:#f92672">]</span> GAMECART
+</span></span><span style="display:flex;"><span>4. Select the .3ds file
+</span></span><span style="display:flex;"><span>5. Copy to 0:/gm9/out/
+</span></span><span style="display:flex;"><span>6. Transfer to PC
+</span></span></code></pre></div><h4 id="from-eshop-installed">
+<a class="header-anchor" href="#from-eshop-installed"></a>
+From eShop (Installed)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># With GodMode9</span>
+</span></span><span style="display:flex;"><span>1. Navigate to <span style="color:#f92672">[</span>A:<span style="color:#f92672">]</span> SYSNAND SD
+</span></span><span style="display:flex;"><span>2. title → <span style="color:#ae81ff">00040000</span> → <span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>3. Dump as .cia
+</span></span><span style="display:flex;"><span>4. Transfer to PC
+</span></span></code></pre></div><h2 id="-advanced-optimization">
+<a class="header-anchor" href="#-advanced-optimization"></a>
+🚀 Advanced Optimization
+</h2><h3 id="configurations-by-game-type">
+<a class="header-anchor" href="#configurations-by-game-type"></a>
+Configurations by Game Type
+</h3><h4 id="actionplatform-games">
+<a class="header-anchor" href="#actionplatform-games"></a>
+Action/Platform Games
+</h4><pre tabindex="0"><code>Graphics:
+- Internal Resolution: 3x-4x Native
+- Hardware Renderer: ✅ Enabled
+- V-Sync: ✅ Enabled
+
+Performance:
+- New 3DS Mode: ✅ Enabled
+- DSP LLE: ✅ Enabled
+</code></pre><h4 id="jrpgsvisual-novels">
+<a class="header-anchor" href="#jrpgsvisual-novels"></a>
+JRPGs/Visual Novels
+</h4><pre tabindex="0"><code>Graphics:
+- Internal Resolution: 4x-6x Native
+- Linear Filtering: ✅ Enabled
+- Anisotropic Filtering: 16x
+
+Quality:
+- Accurate Multiplication: ✅ Enabled
+- Hardware Shaders: ✅ Enabled
+</code></pre><h4 id="demanding-games-monster-hunter-etc">
+<a class="header-anchor" href="#demanding-games-monster-hunter-etc"></a>
+Demanding Games (Monster Hunter, etc.)
+</h4><pre tabindex="0"><code>Performance:
+- Internal Resolution: 2x Native maximum
+- New 3DS Mode: ✅ Required
+- Frame Limiting: ✅ Enabled
+
+Balanced quality/performance compromise
+</code></pre><h3 id="specific-optimizations">
+<a class="header-anchor" href="#specific-optimizations"></a>
+Specific Optimizations
+</h3><h4 id="the-legend-of-zelda-ocarina-of-time-3d">
+<a class="header-anchor" href="#the-legend-of-zelda-ocarina-of-time-3d"></a>
+The Legend of Zelda: Ocarina of Time 3D
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimal configuration</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 4x Native <span style="color:#f92672">(</span>800x960<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Hardware Renderer: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Accurate Multiplication: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Recommended mods:
+</span></span><span style="display:flex;"><span>- HD Texture Pack
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS patch
+</span></span><span style="display:flex;"><span>- Widescreen mod
+</span></span></code></pre></div><h4 id="pokémon-xyoras">
+<a class="header-anchor" href="#pok%c3%a9mon-xyoras"></a>
+Pokémon X/Y/OR/AS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Performance settings</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Hardware Shaders: ✅ Enabled
+</span></span><span style="display:flex;"><span>- New 3DS Mode: ✅ Required
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Notes:
+</span></span><span style="display:flex;"><span>- Some areas may slow down
+</span></span><span style="display:flex;"><span>- Use latest Canary versions
+</span></span></code></pre></div><h4 id="super-mario-3d-land">
+<a class="header-anchor" href="#super-mario-3d-land"></a>
+Super Mario 3D Land
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Balanced configuration</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Resolution: 3x-4x Native
+</span></span><span style="display:flex;"><span>- Linear Filtering: ✅ Enabled
+</span></span><span style="display:flex;"><span>- V-Sync: ✅ Enabled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Generally excellent performance
+</span></span></code></pre></div><h2 id="-mods-and-enhancements">
+<a class="header-anchor" href="#-mods-and-enhancements"></a>
+🛠️ Mods and Enhancements
+</h2><h3 id="supported-mod-types">
+<a class="header-anchor" href="#supported-mod-types"></a>
+Supported Mod Types
+</h3><h4 id="hd-texture-packs">
+<a class="header-anchor" href="#hd-texture-packs"></a>
+HD Texture Packs
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>1. Download compatible texture pack
+</span></span><span style="display:flex;"><span>2. Create: Citra/load/textures/<span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Extract textures to this folder
+</span></span><span style="display:flex;"><span>4. Enable <span style="color:#e6db74">&#34;Custom Textures&#34;</span> in graphics options
+</span></span></code></pre></div><h4 id="cheat-codes">
+<a class="header-anchor" href="#cheat-codes"></a>
+Cheat Codes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Cheat format</span>
+</span></span><span style="display:flex;"><span>1. Create: Citra/cheats/<span style="color:#f92672">[</span>Title-ID<span style="color:#f92672">]</span>.txt
+</span></span><span style="display:flex;"><span>2. Use Gateway/ActionReplay format
+</span></span><span style="display:flex;"><span>3. Enable in System → Cheats
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Example <span style="color:#66d9ef">for</span> Pokémon X <span style="color:#f92672">(</span>0004000000055D00<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Max Money<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>08C6A0AC 000F423F
+</span></span></code></pre></div><h4 id="60-fps-patches">
+<a class="header-anchor" href="#60-fps-patches"></a>
+60 FPS Patches
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Manual application</span>
+</span></span><span style="display:flex;"><span>1. Download .ips/.ups patch
+</span></span><span style="display:flex;"><span>2. Apply with Lunar IPS or similar
+</span></span><span style="display:flex;"><span>3. Use patched ROM in Citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Compatible games:
+</span></span><span style="display:flex;"><span>- Zelda: Ocarina of Time 3D
+</span></span><span style="display:flex;"><span>- Mario Kart <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>- Super Mario 3D Land
+</span></span></code></pre></div><h3 id="mod-resources">
+<a class="header-anchor" href="#mod-resources"></a>
+Mod Resources
+</h3><h4 id="recommended-sites">
+<a class="header-anchor" href="#recommended-sites"></a>
+Recommended Sites
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Texture Packs</span>
+</span></span><span style="display:flex;"><span>- Citra Community Forum
+</span></span><span style="display:flex;"><span>- GBAtemp Forums
+</span></span><span style="display:flex;"><span>- Reddit r/citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cheats</span>
+</span></span><span style="display:flex;"><span>- GameHacking.org
+</span></span><span style="display:flex;"><span>- Fort42.com cheat database
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Patches</span>
+</span></span><span style="display:flex;"><span>- RomHacking.net
+</span></span><span style="display:flex;"><span>- GitHub repositories
+</span></span></code></pre></div><h2 id="-citra-on-other-platforms">
+<a class="header-anchor" href="#-citra-on-other-platforms"></a>
+📱 Citra on Other Platforms
+</h2><h3 id="citra-android">
+<a class="header-anchor" href="#citra-android"></a>
+Citra Android
+</h3><h4 id="android-prerequisites">
+<a class="header-anchor" href="#android-prerequisites"></a>
+Android Prerequisites
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 8.0+ <span style="color:#f92672">(</span>API 26<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 845+ or Exynos 9810+
+</span></span><span style="display:flex;"><span>- 6GB RAM minimum <span style="color:#f92672">(</span>8GB recommended<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 32GB free storage
+</span></span><span style="display:flex;"><span>- GPU Adreno 630+ or Mali-G72+
+</span></span></code></pre></div><h4 id="installation">
+<a class="header-anchor" href="#installation"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Google Play Store → Citra MMJ <span style="color:#f92672">(</span>optimized version<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Or APK from GitHub
+</span></span><span style="display:flex;"><span>3. Configure storage permissions
+</span></span><span style="display:flex;"><span>4. Transfer ROMs and system files
+</span></span></code></pre></div><h4 id="android-optimizations">
+<a class="header-anchor" href="#android-optimizations"></a>
+Android Optimizations
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU JIT: ✅ Enabled
+</span></span><span style="display:flex;"><span>- Hardware Renderer: ✅ Enabled <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> supported<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x Native <span style="color:#f92672">(</span>battery saving<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Frame Skip: Auto <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> necessary<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Controls:
+</span></span><span style="display:flex;"><span>- Customizable touch overlay
+</span></span><span style="display:flex;"><span>- Bluetooth controller support
+</span></span><span style="display:flex;"><span>- Gyroscope <span style="color:#66d9ef">for</span> certain games
+</span></span></code></pre></div><h3 id="citra-linux">
+<a class="header-anchor" href="#citra-linux"></a>
+Citra Linux
+</h3><h4 id="ubuntudebian-installation">
+<a class="header-anchor" href="#ubuntudebian-installation"></a>
+Ubuntu/Debian Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Flatpak (recommended)</span>
+</span></span><span style="display:flex;"><span>flatpak install flathub org.citra_emu.citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or compile from source</span>
+</span></span><span style="display:flex;"><span>sudo apt install build-essential cmake qt5-default libsdl2-dev
+</span></span><span style="display:flex;"><span>git clone --recursive https://github.com/citra-emu/citra.git
+</span></span><span style="display:flex;"><span>cd citra <span style="color:#f92672">&amp;&amp;</span> mkdir build <span style="color:#f92672">&amp;&amp;</span> cd build
+</span></span><span style="display:flex;"><span>cmake .. -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Release
+</span></span><span style="display:flex;"><span>make -j<span style="color:#66d9ef">$(</span>nproc<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><h4 id="arch-linux-installation">
+<a class="header-anchor" href="#arch-linux-installation"></a>
+Arch Linux Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># From AUR</span>
+</span></span><span style="display:flex;"><span>yay -S citra-git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S citra-qt
+</span></span></code></pre></div><h3 id="citra-macos">
+<a class="header-anchor" href="#citra-macos"></a>
+Citra macOS
+</h3><h4 id="installation-1">
+<a class="header-anchor" href="#installation-1"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Homebrew</span>
+</span></span><span style="display:flex;"><span>brew install --cask citra
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or direct download</span>
+</span></span><span style="display:flex;"><span>https://citra-emu.org/download/
+</span></span></code></pre></div><h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="common-problems-and-solutions">
+<a class="header-anchor" href="#common-problems-and-solutions"></a>
+Common Problems and Solutions
+</h3><h4 id="game-wont-launch">
+<a class="header-anchor" href="#game-wont-launch"></a>
+Game Won&rsquo;t Launch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Checks in order:
+</span></span><span style="display:flex;"><span>1. AES keys present and valid
+</span></span><span style="display:flex;"><span>2. ROM not corrupted <span style="color:#f92672">(</span>check MD5/SHA1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Seeddb.bin <span style="color:#66d9ef">if</span> required <span style="color:#66d9ef">for</span> the game
+</span></span><span style="display:flex;"><span>4. Correct region in system settings
+</span></span><span style="display:flex;"><span>5. Updated Citra version
+</span></span></code></pre></div><h4 id="black-screen-at-launch">
+<a class="header-anchor" href="#black-screen-at-launch"></a>
+Black Screen at Launch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Change Graphics API <span style="color:#f92672">(</span>OpenGL ↔ Vulkan<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Disable Hardware Renderer temporarily
+</span></span><span style="display:flex;"><span>3. Reduce Internal Resolution to 1x
+</span></span><span style="display:flex;"><span>4. Check GPU drivers
+</span></span><span style="display:flex;"><span>5. Test in New 3DS mode
+</span></span></code></pre></div><h4 id="poor-performance">
+<a class="header-anchor" href="#poor-performance"></a>
+Poor Performance
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Immediate optimizations:
+</span></span><span style="display:flex;"><span>1. Enable New 3DS Mode
+</span></span><span style="display:flex;"><span>2. Enable Hardware Renderer + Shaders
+</span></span><span style="display:flex;"><span>3. Reduce Internal Resolution
+</span></span><span style="display:flex;"><span>4. Close background applications
+</span></span><span style="display:flex;"><span>5. Use SSD <span style="color:#66d9ef">for</span> ROMs
+</span></span></code></pre></div><h4 id="distortedmissing-audio">
+<a class="header-anchor" href="#distortedmissing-audio"></a>
+Distorted/Missing Audio
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio corrections:
+</span></span><span style="display:flex;"><span>1. Enable DSP LLE
+</span></span><span style="display:flex;"><span>2. Change Output Type
+</span></span><span style="display:flex;"><span>3. Check audio drivers
+</span></span><span style="display:flex;"><span>4. Disable Windows audio effects
+</span></span><span style="display:flex;"><span>5. Test without DSP LLE Multithread
+</span></span></code></pre></div><h4 id="frequent-crashes">
+<a class="header-anchor" href="#frequent-crashes"></a>
+Frequent Crashes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Stabilization:
+</span></span><span style="display:flex;"><span>1. Disable mods temporarily
+</span></span><span style="display:flex;"><span>2. Use stable version instead of Canary
+</span></span><span style="display:flex;"><span>3. Verify ROM integrity
+</span></span><span style="display:flex;"><span>4. Reset configuration
+</span></span><span style="display:flex;"><span>5. Check RAM <span style="color:#f92672">(</span>MemTest86<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="-compatibility-and-performance">
+<a class="header-anchor" href="#-compatibility-and-performance"></a>
+📊 Compatibility and Performance
+</h2><h3 id="compatibility-statistics">
+<a class="header-anchor" href="#compatibility-statistics"></a>
+Compatibility Statistics
+</h3><table>
+  <thead>
+      <tr>
+          <th>Status</th>
+          <th>Percentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~75%</td>
+          <td>Works perfectly</td>
+      </tr>
+      <tr>
+          <td><strong>Great</strong></td>
+          <td>~15%</td>
+          <td>Minor bugs</td>
+      </tr>
+      <tr>
+          <td><strong>Good</strong></td>
+          <td>~7%</td>
+          <td>Playable with limitations</td>
+      </tr>
+      <tr>
+          <td><strong>Bad</strong></td>
+          <td>~2%</td>
+          <td>Major problems</td>
+      </tr>
+      <tr>
+          <td><strong>Intro/Nothing</strong></td>
+          <td>~1%</td>
+          <td>Non-functional</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="best-supported-games">
+<a class="header-anchor" href="#best-supported-games"></a>
+Best Supported Games
+</h3><h4 id="perfectly-compatible">
+<a class="header-anchor" href="#perfectly-compatible"></a>
+Perfectly Compatible
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Legend of Zelda: Ocarina of Time 3D
+</span></span><span style="display:flex;"><span>✅ Super Mario 3D Land
+</span></span><span style="display:flex;"><span>✅ Mario Kart <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>✅ Animal Crossing: New Leaf
+</span></span><span style="display:flex;"><span>✅ Fire Emblem Awakening
+</span></span><span style="display:flex;"><span>✅ Pokémon X/Y <span style="color:#f92672">(</span>some slowdowns<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>✅ Luigi<span style="color:#960050;background-color:#1e0010">&#39;</span>s Mansion: Dark Moon
+</span></span><span style="display:flex;"><span>✅ Kid Icarus: Uprising
+</span></span></code></pre></div><h4 id="excellent-compatibility">
+<a class="header-anchor" href="#excellent-compatibility"></a>
+Excellent Compatibility
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>⭐ Pokémon Omega Ruby/Alpha Sapphire
+</span></span><span style="display:flex;"><span>⭐ The Legend of Zelda: A Link Between Worlds
+</span></span><span style="display:flex;"><span>⭐ Metroid: Samus Returns
+</span></span><span style="display:flex;"><span>⭐ Monster Hunter <span style="color:#ae81ff">4</span> Ultimate
+</span></span><span style="display:flex;"><span>⭐ Xenoblade Chronicles 3D
+</span></span><span style="display:flex;"><span>⭐ Kirby: Planet Robobot
+</span></span></code></pre></div><h3 id="performance-benchmarks">
+<a class="header-anchor" href="#performance-benchmarks"></a>
+Performance Benchmarks
+</h3><h4 id="test-configuration-i5-8400-gtx-1060-16gb-ram">
+<a class="header-anchor" href="#test-configuration-i5-8400-gtx-1060-16gb-ram"></a>
+Test Configuration: i5-8400, GTX 1060, 16GB RAM
+</h4><table>
+  <thead>
+      <tr>
+          <th>Game</th>
+          <th>1x Native</th>
+          <th>2x Native</th>
+          <th>4x Native</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Mario 3D Land</strong></td>
+          <td>60 FPS</td>
+          <td>60 FPS</td>
+          <td>55-60 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda OoT 3D</strong></td>
+          <td>60 FPS</td>
+          <td>60 FPS</td>
+          <td>45-60 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Pokémon X</strong></td>
+          <td>30-60 FPS</td>
+          <td>25-55 FPS</td>
+          <td>20-45 FPS</td>
+      </tr>
+      <tr>
+          <td><strong>Monster Hunter 4U</strong></td>
+          <td>30-60 FPS</td>
+          <td>25-50 FPS</td>
+          <td>20-40 FPS</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-resources-and-community">
+<a class="header-anchor" href="#-resources-and-community"></a>
+🌐 Resources and Community
+</h2><h3 id="official-sites-and-documentation">
+<a class="header-anchor" href="#official-sites-and-documentation"></a>
+Official Sites and Documentation
+</h3><ul>
+<li><a href="https://citra-emu.org/">🏠 Official Citra Site</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.citra.citra_emu">📱 Citra Android</a></li>
+<li><a href="https://citra-emu.org/wiki/">📚 Official Wiki</a></li>
+<li><a href="https://citra-emu.org/wiki/user-directory/">🔧 Configuration Guide</a></li>
+</ul>
+<h3 id="active-communities">
+<a class="header-anchor" href="#active-communities"></a>
+Active Communities
+</h3><ul>
+<li><a href="https://discord.gg/FAXfZV9">💬 Citra Discord</a></li>
+<li><a href="https://www.reddit.com/r/Citra/">🗨️ Reddit r/Citra</a></li>
+<li><a href="https://community.citra-emu.org/">🌐 Official Forum</a></li>
+<li><a href="https://www.youtube.com/results?search_query=citra&#43;guide">📺 YouTube Guides</a></li>
+</ul>
+<h3 id="development-and-mod-resources">
+<a class="header-anchor" href="#development-and-mod-resources"></a>
+Development and Mod Resources
+</h3><ul>
+<li><a href="https://github.com/citra-emu/citra">💻 GitHub Citra</a></li>
+<li><a href="https://forums.citra-emu.org/c/art-assets">🎨 Texture Packs</a></li>
+<li><a href="https://gamebanana.com/games/4203">🎮 GameBanana 3DS</a></li>
+<li><a href="https://gbatemp.net/categories/nintendo-3ds-emulation.297/">🔓 GBAtemp Forums</a></li>
+</ul>
+<h3 id="useful-tools">
+<a class="header-anchor" href="#useful-tools"></a>
+Useful Tools
+</h3><ul>
+<li><a href="https://github.com/d0k3/GodMode9">🔧 GodMode9</a> - 3DS Swiss Army Knife</li>
+<li><a href="https://github.com/Steveice10/FBI">📁 FBI</a> - 3DS File Manager</li>
+<li><a href="https://github.com/FlagBrew/Checkpoint">🎯 Checkpoint</a> - Save Manager</li>
+<li><a href="https://github.com/matiffeder/BatchCIA3DSDecryptor">🖼️ Batch CIA 3DS Decryptor</a> - ROM Conversion</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Can Citra run all 3DS games?</strong>
+<strong>A:</strong> About 90% of 3DS games work well to perfectly. Check the compatibility database for your specific game.</p>
+<p><strong>Q: Does stereoscopic 3D work?</strong>
+<strong>A:</strong> Yes, with 3D glasses or a 3D display. Side-by-Side mode is also available for VR.</p>
+<p><strong>Q: Can I use my real 3DS saves?</strong>
+<strong>A:</strong> Yes, with Checkpoint or JKSM you can transfer saves in both directions.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Why are some games slow?</strong>
+<strong>A:</strong> 3DS games are optimized for specific hardware. Emulation requires more power, especially for complex games.</p>
+<p><strong>Q: OpenGL or Vulkan?</strong>
+<strong>A:</strong> OpenGL is more stable and compatible. Vulkan may offer better performance on recent GPUs.</p>
+<p><strong>Q: Does New 3DS Mode improve all games?</strong>
+<strong>A:</strong> Mainly games that use it natively (Xenoblade, Monster Hunter, etc.) and some homebrew.</p>
+<h3 id="common-issues">
+<a class="header-anchor" href="#common-issues"></a>
+Common Issues
+</h3><p><strong>Q: &ldquo;Could not determine the system region&rdquo;?</strong>
+<strong>A:</strong> Install system files (aes_keys.txt) and configure the region in settings.</p>
+<p><strong>Q: HD textures don&rsquo;t display?</strong>
+<strong>A:</strong> Check that &ldquo;Custom Textures&rdquo; is enabled and the Title ID matches the folder.</p>
+<p><strong>Q: How to improve performance on Android?</strong>
+<strong>A:</strong> Use Citra MMJ, reduce resolution, enable frame skip if necessary.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Citra is an exceptional 3DS emulator that offers:</p>
+<ul>
+<li>✅ <strong>Excellent compatibility</strong> with most 3DS games</li>
+<li>✅ <strong>Significant graphical improvement</strong> over the original console</li>
+<li>✅ <strong>Stability</strong> and maturity after years of development</li>
+<li>✅ <strong>Multiplatform support</strong> (Windows, Linux, macOS, Android)</li>
+<li>✅ <strong>Active community</strong> with mods and HD texture packs</li>
+<li>✅ <strong>Excellent performance</strong> on modern hardware</li>
+</ul>
+<p>With this detailed guide, you are now equipped to:</p>
+<ul>
+<li><strong>Install</strong> and configure Citra optimally</li>
+<li><strong>Extract</strong> your own games legally</li>
+<li><strong>Optimize</strong> performance according to your hardware</li>
+<li><strong>Use</strong> mods and enhancements</li>
+<li><strong>Solve</strong> common problems</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Important Reminder</strong>: Only use games you legally own. Respect copyrights and support developers by purchasing their creations.</p></blockquote>
+<p><strong>Enjoy your 3DS games in high definition! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-06-04 at <a href='https://axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Complete Guide to Cheats on Citra Emulator</title>
+      <link>https://axekin.com/en/post/cheat_citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/en/post/cheat_citra/</guid>
+      <description>
+        <![CDATA[<h1>Complete Guide to Cheats on Citra Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important Warning</strong>: Using cheats can sometimes corrupt your saves or make certain games unstable. Use them at your own risk!</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Using cheats on the <strong>Citra</strong> emulator can sometimes be confusing for new users. This complete guide will explain <strong>step by step</strong> how to configure and effectively use cheat codes on your emulated Nintendo 3DS games.</p>
+<p>The process is similar to that of the <strong>Dolphin</strong> emulator, but with some specificities unique to Citra that we will explore together.</p>
+<h3 id="general-process">
+<a class="header-anchor" href="#general-process"></a>
+General Process
+</h3><ol>
+<li><strong>Launch Citra</strong> → Load your game</li>
+<li><strong>Emulation Menu</strong> → Cheats</li>
+<li><strong>Add Cheat</strong> → Enter the code</li>
+<li><strong>Activate the cheat</strong> → Test in game</li>
+<li><strong>Check</strong> version/region if problem</li>
+</ol>
+<h2 id="prerequisites">
+<a class="header-anchor" href="#prerequisites"></a>
+Prerequisites
+</h2><p>Before starting, make sure you have:</p>
+<ul>
+<li>✅ <strong>Citra</strong> installed and functional (recommended version: latest stable)</li>
+<li>✅ A <strong>3DS game</strong> loaded and functional</li>
+<li>✅ <strong>Cheat codes</strong> compatible with your game version</li>
+<li>✅ A <strong>backup</strong> of your progress (highly recommended)</li>
+</ul>
+<h2 id="step-1-access-the-cheats-menu">
+<a class="header-anchor" href="#step-1-access-the-cheats-menu"></a>
+Step 1: Access the cheats menu
+</h2><h3 id="initial-launch">
+<a class="header-anchor" href="#initial-launch"></a>
+Initial launch
+</h3><ol>
+<li><strong>Start Citra</strong> and load your Nintendo 3DS game</li>
+<li>Once the game is launched, go to Citra&rsquo;s main menu</li>
+<li>Click on <strong>Emulation</strong> &gt; <strong>Cheats</strong></li>
+</ol>
+<p><img src="/images/citra-cheats-menu.png" alt="Cheats menu in Citra">
+<em>Access to the cheats management menu</em></p>
+<h3 id="cheats-interface">
+<a class="header-anchor" href="#cheats-interface"></a>
+Cheats interface
+</h3><p>A new window opens with:</p>
+<ul>
+<li><strong>List of available cheats</strong> (empty at the beginning)</li>
+<li><strong>&ldquo;Add Cheat&rdquo; button</strong> to add new codes</li>
+<li><strong>Checkboxes</strong> to enable/disable cheats</li>
+<li><strong>Edit and delete buttons</strong></li>
+</ul>
+<h2 id="step-2-add-a-new-cheat">
+<a class="header-anchor" href="#step-2-add-a-new-cheat"></a>
+Step 2: Add a new cheat
+</h2><h3 id="creating-a-cheat">
+<a class="header-anchor" href="#creating-a-cheat"></a>
+Creating a cheat
+</h3><ol>
+<li>Click on <strong>&ldquo;Add Cheat&rdquo;</strong> in the cheats window</li>
+<li>A dialog box appears with three fields:
+<ul>
+<li><strong>Name</strong>: Descriptive name of the cheat</li>
+<li><strong>Notes</strong>: Optional description</li>
+<li><strong>Code</strong>: The cheat code itself</li>
+</ul>
+</li>
+</ol>
+<h3 id="naming-options">
+<a class="header-anchor" href="#naming-options"></a>
+Naming options
+</h3><p><strong>Recommended descriptive names:</strong></p>
+<ul>
+<li><code>Infinite Money</code></li>
+<li><code>Unlimited Lives</code></li>
+<li><code>All Items</code></li>
+</ul>
+<p><strong>Useful notes to add:</strong></p>
+<ul>
+<li>Compatible game version</li>
+<li>Region (EU/US/JP)</li>
+<li>Code effects</li>
+</ul>
+<p><strong>Citra code format:</strong></p>
+<pre tabindex="0"><code>[Cheat name]
+ADDRESS VALUE
+</code></pre><h2 id="step-3-code-format-and-syntax">
+<a class="header-anchor" href="#step-3-code-format-and-syntax"></a>
+Step 3: Code format and syntax
+</h2><h3 id="code-structure">
+<a class="header-anchor" href="#code-structure"></a>
+Code structure
+</h3><p>Citra codes follow this specific format:</p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Gold 999999 (Code Offset 1)]
+0808E0E4 000F423F
+
+[Gold 999999 (Code Offset 2)]
+080900A4 000F423F
+
+[Gold 999999 (Code Offset 3)]
+08092064 000F423F
+
+[Max SP (Code Offset 1)]
+08ED0CF8 00000003
+
+[Max SP (Code Offset 2)]
+08ED2CB8 00000003
+
+[Max SP (Code Offset 3)]
+08ED4C78 00000003
+</code></pre><p><strong>General structure:</strong></p>
+<pre tabindex="0"><code>[Descriptive cheat name]
+MEMORY_ADDRESS HEXADECIMAL_VALUE
+
+[Another cheat]
+MEMORY_ADDRESS HEXADECIMAL_VALUE
+</code></pre><blockquote>
+<p><strong>💡 Tip</strong>: These example codes come from <em>Bravely Default</em> and are fully functional, but are used here for demonstration purposes only.</p></blockquote>
+<h3 id="common-code-types">
+<a class="header-anchor" href="#common-code-types"></a>
+Common code types
+</h3><table>
+  <thead>
+      <tr>
+          <th>Code Type</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Money/Gold</strong></td>
+          <td>Infinite money</td>
+          <td><code>08XXXXXX 000F423F</code></td>
+      </tr>
+      <tr>
+          <td><strong>HP/SP</strong></td>
+          <td>Max health/magic points</td>
+          <td><code>08XXXXXX 00000063</code></td>
+      </tr>
+      <tr>
+          <td><strong>Items</strong></td>
+          <td>Items in quantity</td>
+          <td><code>08XXXXXX 00000063</code></td>
+      </tr>
+      <tr>
+          <td><strong>Experience</strong></td>
+          <td>Maximum experience</td>
+          <td><code>08XXXXXX 0098967F</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="step-4-activation-and-testing">
+<a class="header-anchor" href="#step-4-activation-and-testing"></a>
+Step 4: Activation and testing
+</h2><h3 id="activation-procedure">
+<a class="header-anchor" href="#activation-procedure"></a>
+Activation procedure
+</h3><ol>
+<li><strong>Enter the code</strong> in the appropriate field</li>
+<li><strong>Give an explicit name</strong> to the cheat</li>
+<li>Click on <strong>&ldquo;OK&rdquo;</strong> to save</li>
+<li><strong>Check the box</strong> next to the cheat to activate it</li>
+<li><strong>Return to the game</strong> to test</li>
+</ol>
+<p><img src="/images/citra-cheat-activation.gif" alt="Cheat activation animation">
+<em>Cheat code activation process</em></p>
+<h3 id="effects-verification">
+<a class="header-anchor" href="#effects-verification"></a>
+Effects verification
+</h3><p>Once the cheat is activated, you should observe:</p>
+<p><strong>Immediate modifications:</strong></p>
+<ul>
+<li>Change in money values</li>
+<li>Modification of statistics</li>
+<li>Items added to inventory</li>
+</ul>
+<p><strong>Effects after restart:</strong></p>
+<ul>
+<li>Some cheats require a restart</li>
+<li>Save before relaunching</li>
+<li>Check the persistence of effects</li>
+</ul>
+<h2 id="troubleshooting---problem-solving">
+<a class="header-anchor" href="#troubleshooting---problem-solving"></a>
+Troubleshooting - Problem solving
+</h2><h3 id="-the-cheat-doesnt-work">
+<a class="header-anchor" href="#-the-cheat-doesnt-work"></a>
+🚫 The cheat doesn&rsquo;t work
+</h3><p><strong>Possible causes:</strong></p>
+<ul>
+<li>Incompatible game version</li>
+<li>Different region (US vs EU vs JP)</li>
+<li>Poorly formatted code</li>
+<li>Incorrect memory address</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check version/region correspondence</li>
+<li>Test with other codes from the same game</li>
+<li>Consult specialized forums</li>
+<li>Try with a different ROM</li>
+</ol>
+<h3 id="-the-game-crashes-or-becomes-unstable">
+<a class="header-anchor" href="#-the-game-crashes-or-becomes-unstable"></a>
+💥 The game crashes or becomes unstable
+</h3><p><strong>Immediate actions:</strong></p>
+<ol>
+<li><strong>Immediately disable</strong> all cheats</li>
+<li><strong>Restart</strong> the emulator</li>
+<li><strong>Restore</strong> an earlier save</li>
+<li><strong>Test cheats one by one</strong> to identify the problem</li>
+</ol>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Save before using new cheats</li>
+<li>Don&rsquo;t activate too many cheats simultaneously</li>
+<li>Use codes from reliable sources</li>
+</ul>
+<h3 id="-partially-functional-codes">
+<a class="header-anchor" href="#-partially-functional-codes"></a>
+⚠️ Partially functional codes
+</h3><p><strong>Symptoms:</strong></p>
+<ul>
+<li>Some effects work, others don&rsquo;t</li>
+<li>Incorrect values applied</li>
+<li>Temporary effects only</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Check if the code requires multiple offsets</li>
+<li>Try applying all code offsets</li>
+<li>Consult the source code documentation</li>
+</ul>
+<h2 id="resources-and-databases">
+<a class="header-anchor" href="#resources-and-databases"></a>
+Resources and databases
+</h2><h3 id="recommended-sites-for-codes">
+<a class="header-anchor" href="#recommended-sites-for-codes"></a>
+Recommended sites for codes
+</h3><p><strong><a href="https://gamehacking.org/">GameHacking.org</a></strong></p>
+<ul>
+<li>The largest cheat code database</li>
+<li>Easy-to-use interface</li>
+<li>Community-verified codes</li>
+</ul>
+<p><strong><a href="https://www.codebreaker.net/">CodeBreaker Database</a></strong></p>
+<ul>
+<li>Codes specialized for Nintendo consoles</li>
+<li>Dedicated section for 3DS games</li>
+<li>Regular updates</li>
+</ul>
+<p><strong><a href="https://reddit.com/r/Citra">Reddit r/Citra</a></strong></p>
+<ul>
+<li>Active Citra user community</li>
+<li>Code and tip sharing</li>
+<li>Community technical support</li>
+</ul>
+<h3 id="complementary-tools">
+<a class="header-anchor" href="#complementary-tools"></a>
+Complementary tools
+</h3><table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Description</th>
+          <th>Utility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Cheat Engine</strong></td>
+          <td>Advanced memory editor</td>
+          <td>Custom code creation</td>
+      </tr>
+      <tr>
+          <td><strong>HxD</strong></td>
+          <td>Hexadecimal editor</td>
+          <td>Save file analysis</td>
+      </tr>
+      <tr>
+          <td><strong>Save Editors</strong></td>
+          <td>Specialized save editors</td>
+          <td>Alternative to cheats</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="best-practices-and-advanced-tips">
+<a class="header-anchor" href="#best-practices-and-advanced-tips"></a>
+Best practices and advanced tips
+</h2><h3 id="security-and-backup">
+<a class="header-anchor" href="#security-and-backup"></a>
+Security and backup
+</h3><blockquote>
+<p><strong>🛡️ Essential security rules:</strong></p>
+<ol>
+<li><strong>Always backup</strong> before activating new cheats</li>
+<li><strong>Test one cheat at a time</strong> to identify problems</li>
+<li><strong>Avoid cheats during cutscenes</strong> or scripted events</li>
+<li><strong>Disable cheats</strong> before important boss fights</li>
+</ol></blockquote>
+<h3 id="performance-optimization">
+<a class="header-anchor" href="#performance-optimization"></a>
+Performance optimization
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Recommended configuration for Citra with cheats</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Graphics</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Resolution</span>: <span style="color:#ae81ff">2x Native (400x240)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Frame Limit</span>: <span style="color:#ae81ff">100</span><span style="color:#ae81ff">%</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Audio</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Output Engine</span>: <span style="color:#ae81ff">SDL2</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">System</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Region</span>: <span style="color:#ae81ff">Auto-Select</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Language</span>: <span style="color:#ae81ff">System Default</span>
+</span></span></code></pre></div><h3 id="advanced-codes-and-modifications">
+<a class="header-anchor" href="#advanced-codes-and-modifications"></a>
+Advanced codes and modifications
+</h3><p>For experienced users, here are some advanced techniques:</p>
+<p><strong>Advanced conditional code:</strong></p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Infinite money IF level &gt; 10]
+D3000000 10000000
+80XXXXXX 0000000A
+D2000000 00000000
+</code></pre><p><strong>Pointer modification:</strong></p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Maximum stats (via pointer)]
+B8XXXXXX 00000000
+B8XXXXXX 00000000
+80XXXXXX 000000FF
+D2000000 00000000
+</code></pre><h2 id="practical-examples-by-popular-game">
+<a class="header-anchor" href="#practical-examples-by-popular-game"></a>
+Practical examples by popular game
+</h2><h3 id="pokémon-xy">
+<a class="header-anchor" href="#pok%c3%a9mon-xy"></a>
+Pokémon X/Y
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Infinite Money]
+0818CE0C 0098967F
+
+[Infinite Pokéballs]
+08C6D6CC 00000063
+
+[Rare Candies x999]
+08C6D7C4 000003E7
+</code></pre><h3 id="the-legend-of-zelda-a-link-between-worlds">
+<a class="header-anchor" href="#the-legend-of-zelda-a-link-between-worlds"></a>
+The Legend of Zelda: A Link Between Worlds
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Max Rupees]
+08796D20 0000270F
+
+[Infinite Lives]
+08796D1C 00000063
+</code></pre><h3 id="animal-crossing-new-leaf">
+<a class="header-anchor" href="#animal-crossing-new-leaf"></a>
+Animal Crossing: New Leaf
+</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Infinite Bells]
+0893A8B8 0098967F
+
+[All Fruits]
+08XXXXXX 00000063
+</code></pre><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Using cheats on Citra can greatly enrich your gaming experience, whether to:</p>
+<ul>
+<li><strong>Unlock content</strong> quickly</li>
+<li><strong>Test different strategies</strong> without grinding</li>
+<li><strong>Relive your favorite games</strong> with new challenges</li>
+<li><strong>Bypass difficult passages</strong></li>
+</ul>
+<blockquote>
+<p><strong>🎯 Key points to remember:</strong></p>
+<ul>
+<li>Always save before using cheats</li>
+<li>Test codes progressively</li>
+<li>Use reliable sources for your codes</li>
+<li>Don&rsquo;t hesitate to disable cheats if necessary</li>
+</ul></blockquote>
+<h2 id="faq---frequently-asked-questions">
+<a class="header-anchor" href="#faq---frequently-asked-questions"></a>
+FAQ - Frequently Asked Questions
+</h2><p><strong>Q: Do cheats work on all versions of Citra?</strong>
+A: Most cheats work on recent versions of Citra. However, some codes may be specific to certain versions. Preferably use the latest stable version.</p>
+<p><strong>Q: Can I use multiple cheats simultaneously?</strong>
+A: Yes, but with caution. Some cheats may conflict. Start by testing cheats individually before combining them.</p>
+<p><strong>Q: How do I create my own codes?</strong>
+A: Creating codes requires knowledge in memory analysis. Use tools like Cheat Engine or consult reverse engineering tutorials.</p>
+<p><strong>Q: Do cheats affect achievements/successes?</strong>
+A: On emulator, there is generally no official achievement system, so no impact. For community achievements, it depends on specific rules.</p>
+<hr>
+<p><strong>Did you find this guide useful?</strong> Share it with the gaming community and feel free to leave your own tips in the comments!</p>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><a href="/en/post/guide-citra/">Complete Guide to Citra Emulator</a></li>
+<li><a href="/en/post/citra-performance/">Optimize Citra Performance</a></li>
+<li><a href="/en/post/best-3ds-games/">Best 3DS Games to Emulate</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-06-04 at <a href='https://axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+  </channel>
+</rss>

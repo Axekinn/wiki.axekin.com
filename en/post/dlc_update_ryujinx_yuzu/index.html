@@ -1,0 +1,1167 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  How to Install DLC and Updates on Yuzu and Ryujinx | Axekin
+</title>
+<meta
+  name="description"
+  content="Complete guide to install DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="How to Install DLC and Updates on Yuzu and Ryujinx | Axekin" />
+  <meta
+    property="og:description"
+    content="Complete guide to install DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure"
+  />
+  <meta property="og:url" content="https://axekin.com/en/post/dlc_update_ryujinx_yuzu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/yuzu-ryujinx-dlc-updates.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="yuzuryujinxnintendo-switchdlcupdatesemulationinstallation" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/yuzu-ryujinx-dlc-updates.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/dlc_update_ryujinx_yuzu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/yuzu-ryujinx-dlc-updates.webp" alt="How to Install DLC and Updates on Yuzu and Ryujinx"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="slide-up">How to Install DLC and Updates on Yuzu and Ryujinx</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#supported-file-formats">Supported file formats</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-on-yuzu">Installation on Yuzu</a>
+      <ul>
+        <li><a href="#universal-method-update--dlc">Universal method (Update + DLC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-on-ryujinx">Installation on Ryujinx</a>
+      <ul>
+        <li><a href="#for-updates">For Updates</a></li>
+        <li><a href="#for-dlc">For DLC</a></li>
+      </ul>
+    </li>
+    <li><a href="#method-comparison">Method Comparison</a></li>
+    <li><a href="#management-and-organization">Management and Organization</a>
+      <ul>
+        <li><a href="#organize-your-dlcupdate-files">Organize your DLC/Update files</a></li>
+        <li><a href="#check-installed-versions">Check installed versions</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-common-problems">Troubleshooting Common Problems</a>
+      <ul>
+        <li><a href="#installation-issues">Installation issues</a></li>
+        <li><a href="#compatibility-issues">Compatibility issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices">Best Practices</a>
+      <ul>
+        <li><a href="#backup-and-security">Backup and security</a></li>
+        <li><a href="#efficient-organization">Efficient organization</a></li>
+        <li><a href="#regular-maintenance">Regular maintenance</a></li>
+      </ul>
+    </li>
+    <li><a href="#special-use-cases">Special Use Cases</a>
+      <ul>
+        <li><a href="#games-with-multiple-dlc">Games with multiple DLC</a></li>
+        <li><a href="#migration-between-emulators">Migration between emulators</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#key-points-to-remember">Key points to remember</a></li>
+        <li><a href="#final-tips">Final tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---frequently-asked-questions">FAQ - Frequently Asked Questions</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/emulation"
+      data-aos="zoom-in"
+      >EMULATION</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><blockquote>
+<p><strong>⚠️ Important Note</strong>: Make sure you legally own the games, DLC, and updates you install. This guide is for educational purposes only.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Installing <strong>DLC</strong> (downloadable content) and <strong>updates</strong> on <strong>Yuzu</strong> and <strong>Ryujinx</strong> emulators is a simple but essential process to fully enjoy your emulated Nintendo Switch games.</p>
+<p>This guide explains <strong>step by step</strong> how to proceed on the two most popular emulators.</p>
+<h3 id="supported-file-formats">
+<a class="header-anchor" href="#supported-file-formats"></a>
+Supported file formats
+</h3><p><strong>Accepted file types:</strong></p>
+<ul>
+<li><strong>NSP</strong> - Nintendo Submission Package (main format)</li>
+<li><strong>XCI</strong> - Nintendo Game Card Image</li>
+<li><strong>NCA</strong> - Nintendo Content Archive</li>
+</ul>
+<p><strong>Difference between Update and DLC:</strong></p>
+<ul>
+<li><strong>Update</strong>: Base game update (fixes, improvements)</li>
+<li><strong>DLC</strong>: Additional paid content (new levels, characters, etc.)</li>
+</ul>
+<h2 id="installation-on-yuzu">
+<a class="header-anchor" href="#installation-on-yuzu"></a>
+Installation on Yuzu
+</h2><h3 id="universal-method-update--dlc">
+<a class="header-anchor" href="#universal-method-update--dlc"></a>
+Universal method (Update + DLC)
+</h3><h4 id="step-1-access-the-installation-menu">
+<a class="header-anchor" href="#step-1-access-the-installation-menu"></a>
+Step 1: Access the installation menu
+</h4><ol>
+<li><strong>Launch Yuzu</strong> and wait for the interface to load</li>
+<li>In the menu bar, click on <strong>&ldquo;File&rdquo;</strong></li>
+<li>Select <strong>&ldquo;Install Files to NAND&rdquo;</strong></li>
+</ol>
+<p><img src="/images/yuzu-file-menu.png" alt="Yuzu File Menu">
+<em>File menu with installation option in Yuzu</em></p>
+<h4 id="step-2-select-the-file">
+<a class="header-anchor" href="#step-2-select-the-file"></a>
+Step 2: Select the file
+</h4><ol start="4">
+<li>A <strong>file selection window</strong> opens</li>
+<li><strong>Navigate</strong> to the location of your DLC/Update file</li>
+<li><strong>Select</strong> the file (.nsp, .xci, or .nca)</li>
+<li>Click <strong>&ldquo;Open&rdquo;</strong></li>
+</ol>
+<p><img src="/images/yuzu-file-selection.png" alt="Yuzu file selection">
+<em>File selection window in Yuzu</em></p>
+<h4 id="step-3-confirm-installation">
+<a class="header-anchor" href="#step-3-confirm-installation"></a>
+Step 3: Confirm installation
+</h4><ol start="8">
+<li>Yuzu <strong>analyzes the file</strong> and displays information</li>
+<li>A dialog box appears asking for confirmation</li>
+<li>Click <strong>&ldquo;Yes&rdquo;</strong> to proceed with installation</li>
+<li><strong>Wait</strong> for installation to complete (progress bar)</li>
+</ol>
+<h4 id="step-4-verification">
+<a class="header-anchor" href="#step-4-verification"></a>
+Step 4: Verification
+</h4><ol start="12">
+<li>Installation is <strong>complete</strong> when the success message appears</li>
+<li><strong>Restart</strong> Yuzu to ensure everything is properly recognized</li>
+<li>Launch your game to verify that the DLC/Update is active</li>
+</ol>
+<p><strong>Success indicators:</strong></p>
+<ul>
+<li>&ldquo;Installation completed successfully&rdquo; message</li>
+<li>New content visible in the game</li>
+<li>Updated version displayed in game properties</li>
+</ul>
+<h2 id="installation-on-ryujinx">
+<a class="header-anchor" href="#installation-on-ryujinx"></a>
+Installation on Ryujinx
+</h2><h3 id="for-updates">
+<a class="header-anchor" href="#for-updates"></a>
+For Updates
+</h3><h4 id="step-1-access-update-management">
+<a class="header-anchor" href="#step-1-access-update-management"></a>
+Step 1: Access update management
+</h4><ol>
+<li><strong>Launch Ryujinx</strong> and locate your game in the list</li>
+<li><strong>Right-click</strong> on the game you want to update</li>
+<li>In the context menu, select <strong>&ldquo;Manage Updates&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-context-menu.png" alt="Ryujinx context menu">
+<em>Right-click menu with Manage Updates option</em></p>
+<h4 id="step-2-add-the-update">
+<a class="header-anchor" href="#step-2-add-the-update"></a>
+Step 2: Add the update
+</h4><ol start="4">
+<li>The <strong>&ldquo;Manage Updates&rdquo;</strong> window opens</li>
+<li>Click the <strong>&ldquo;Add&rdquo;</strong> or <strong>&ldquo;Browse&rdquo;</strong> button</li>
+<li><strong>Select</strong> your update file (.nsp or .xci)</li>
+<li>Click <strong>&ldquo;Open&rdquo;</strong> to add it</li>
+</ol>
+<h4 id="step-3-apply-the-update">
+<a class="header-anchor" href="#step-3-apply-the-update"></a>
+Step 3: Apply the update
+</h4><ol start="8">
+<li>Your update appears in the list with <strong>its version</strong></li>
+<li><strong>Check</strong> the box next to the update to activate it</li>
+<li>Click <strong>&ldquo;Save&rdquo;</strong> to apply changes</li>
+</ol>
+<p><img src="/images/ryujinx-update-manager.png" alt="Ryujinx update management">
+<em>Update management interface in Ryujinx</em></p>
+<h4 id="update-verification">
+<a class="header-anchor" href="#update-verification"></a>
+Update verification
+</h4><ol start="11">
+<li><strong>Close</strong> the management window</li>
+<li>In the game list, you should see the <strong>new version</strong> displayed</li>
+<li><strong>Launch the game</strong> to confirm the update is active</li>
+</ol>
+<h3 id="for-dlc">
+<a class="header-anchor" href="#for-dlc"></a>
+For DLC
+</h3><h4 id="identical-procedure-to-updates">
+<a class="header-anchor" href="#identical-procedure-to-updates"></a>
+Identical procedure to updates
+</h4><p><strong>The method is exactly the same:</strong></p>
+<ol>
+<li><strong>Right-click</strong> on the game → <strong>&ldquo;Manage DLC&rdquo;</strong> (instead of Manage Updates)</li>
+<li><strong>Add/Browse</strong> → Select the DLC file</li>
+<li><strong>Check</strong> the DLC to activate it</li>
+<li><strong>Save</strong> to apply</li>
+</ol>
+<p><img src="/images/ryujinx-dlc-manager.png" alt="Ryujinx DLC management">
+<em>DLC management interface in Ryujinx</em></p>
+<h2 id="method-comparison">
+<a class="header-anchor" href="#method-comparison"></a>
+Method Comparison
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Method</strong></td>
+          <td>File → Install Files to NAND</td>
+          <td>Right-click → Manage Updates/DLC</td>
+      </tr>
+      <tr>
+          <td><strong>Simplicity</strong></td>
+          <td>Very simple, one method</td>
+          <td>Slightly more steps</td>
+      </tr>
+      <tr>
+          <td><strong>Management</strong></td>
+          <td>Direct installation</td>
+          <td>Individual management per game</td>
+      </tr>
+      <tr>
+          <td><strong>Verification</strong></td>
+          <td>Automatic</td>
+          <td>Visual in the list</td>
+      </tr>
+      <tr>
+          <td><strong>Flexibility</strong></td>
+          <td>Less control</td>
+          <td>More granular control</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="management-and-organization">
+<a class="header-anchor" href="#management-and-organization"></a>
+Management and Organization
+</h2><h3 id="organize-your-dlcupdate-files">
+<a class="header-anchor" href="#organize-your-dlcupdate-files"></a>
+Organize your DLC/Update files
+</h3><p><strong>Recommended folder structure:</strong></p>
+<pre tabindex="0"><code>📁 Nintendo_Switch_Content/
+├── 📁 Games/
+│   ├── game1.nsp
+│   ├── game2.xci
+│   └── game3.nsp
+├── 📁 Updates/
+│   ├── 📁 Game1/
+│   │   ├── update_v1.1.0.nsp
+│   │   └── update_v1.2.0.nsp
+│   └── 📁 Game2/
+│       └── update_v2.0.1.nsp
+└── 📁 DLC/
+    ├── 📁 Game1/
+    │   ├── dlc1.nsp
+    │   └── dlc2.nsp
+    └── 📁 Game2/
+        └── season_pass.nsp
+</code></pre><h3 id="check-installed-versions">
+<a class="header-anchor" href="#check-installed-versions"></a>
+Check installed versions
+</h3><h4 id="in-yuzu">
+<a class="header-anchor" href="#in-yuzu"></a>
+In Yuzu
+</h4><ol>
+<li><strong>Right-click</strong> on the game → <strong>&ldquo;Properties&rdquo;</strong></li>
+<li><strong>&ldquo;General&rdquo;</strong> tab → Check version</li>
+<li><strong>&ldquo;Installed Content&rdquo;</strong> tab → DLC list</li>
+</ol>
+<h4 id="in-ryujinx">
+<a class="header-anchor" href="#in-ryujinx"></a>
+In Ryujinx
+</h4><ol>
+<li><strong>Information</strong> visible directly in the game list</li>
+<li><strong>Right-click</strong> → <strong>&ldquo;Manage Updates/DLC&rdquo;</strong> for details</li>
+<li>Version displayed next to the game name</li>
+</ol>
+<h2 id="troubleshooting-common-problems">
+<a class="header-anchor" href="#troubleshooting-common-problems"></a>
+Troubleshooting Common Problems
+</h2><h3 id="installation-issues">
+<a class="header-anchor" href="#installation-issues"></a>
+Installation issues
+</h3><h4 id="-file-not-recognized">
+<a class="header-anchor" href="#-file-not-recognized"></a>
+🚫 File not recognized
+</h4><p><strong>Possible causes:</strong></p>
+<ul>
+<li>Incompatible file format</li>
+<li>Corrupted file</li>
+<li>Missing decryption keys</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check file format (.nsp, .xci, .nca)</li>
+<li>Re-download the file if corrupted</li>
+<li>Install updated prod.keys</li>
+<li>Verify firmware compatibility</li>
+</ol>
+<h4 id="-installation-fails">
+<a class="header-anchor" href="#-installation-fails"></a>
+⚠️ Installation fails
+</h4><p><strong>Common error messages:</strong></p>
+<ul>
+<li>&ldquo;Failed to install to NAND&rdquo;</li>
+<li>&ldquo;Invalid signature&rdquo;</li>
+<li>&ldquo;Missing keys&rdquo;</li>
+</ul>
+<p><strong>Step-by-step solutions:</strong></p>
+<ol>
+<li><strong>Check available disk space</strong></li>
+<li><strong>Completely close</strong> the emulator and restart</li>
+<li><strong>Run as administrator</strong> if necessary</li>
+<li><strong>Update</strong> the emulator to the latest version</li>
+</ol>
+<h3 id="compatibility-issues">
+<a class="header-anchor" href="#compatibility-issues"></a>
+Compatibility issues
+</h3><h4 id="firmware-version">
+<a class="header-anchor" href="#firmware-version"></a>
+Firmware version
+</h4><p><strong>Check required firmware:</strong></p>
+<pre tabindex="0"><code>Game → Properties → Required System Version
+</code></pre><p><strong>Firmware update:</strong></p>
+<ul>
+<li>Download corresponding firmware</li>
+<li>Install via emulator tools</li>
+<li>Restart emulator</li>
+</ul>
+<h4 id="decryption-keys">
+<a class="header-anchor" href="#decryption-keys"></a>
+Decryption keys
+</h4><p><strong>Key locations:</strong></p>
+<ul>
+<li><strong>Yuzu</strong>: <code>%appdata%/yuzu/keys/</code></li>
+<li><strong>Ryujinx</strong>: <code>%appdata%/Ryujinx/system/</code></li>
+</ul>
+<p><strong>Required files:</strong></p>
+<ul>
+<li><code>prod.keys</code> (main keys)</li>
+<li><code>title.keys</code> (title keys)</li>
+</ul>
+<h2 id="best-practices">
+<a class="header-anchor" href="#best-practices"></a>
+Best Practices
+</h2><h3 id="backup-and-security">
+<a class="header-anchor" href="#backup-and-security"></a>
+Backup and security
+</h3><p><strong>Before installation:</strong></p>
+<ul>
+<li>✅ <strong>Backup</strong> your important saves</li>
+<li>✅ <strong>Note</strong> currently installed versions</li>
+<li>✅ <strong>Check</strong> emulator/firmware compatibility</li>
+<li>✅ <strong>Test</strong> with a less important game first</li>
+</ul>
+<h3 id="efficient-organization">
+<a class="header-anchor" href="#efficient-organization"></a>
+Efficient organization
+</h3><p><strong>Naming system:</strong></p>
+<pre tabindex="0"><code>GameName_Update_v1.2.0.nsp
+GameName_DLC_SeasonPass.nsp
+GameName_DLC_Expansion1.nsp
+</code></pre><p><strong>Advantages:</strong></p>
+<ul>
+<li>Quick identification</li>
+<li>Avoids duplicates</li>
+<li>Facilitates management</li>
+</ul>
+<h3 id="regular-maintenance">
+<a class="header-anchor" href="#regular-maintenance"></a>
+Regular maintenance
+</h3><p><strong>Periodic cleanup:</strong></p>
+<ol>
+<li><strong>Delete</strong> old update versions</li>
+<li><strong>Check</strong> used storage space</li>
+<li><strong>Backup</strong> important DLC</li>
+<li><strong>Document</strong> working combinations</li>
+</ol>
+<h2 id="special-use-cases">
+<a class="header-anchor" href="#special-use-cases"></a>
+Special Use Cases
+</h2><h3 id="games-with-multiple-dlc">
+<a class="header-anchor" href="#games-with-multiple-dlc"></a>
+Games with multiple DLC
+</h3><p><strong>Example: The Legend of Zelda: Breath of the Wild</strong></p>
+<pre tabindex="0"><code>📁 BOTW_Content/
+├── BOTW_Update_v1.6.0.nsp
+├── BOTW_DLC_Pack1_MasterTrials.nsp
+├── BOTW_DLC_Pack2_ChampionsBallad.nsp
+└── BOTW_SeasonPass_Complete.nsp
+</code></pre><p><strong>Recommended installation:</strong></p>
+<ol>
+<li><strong>Update</strong> first</li>
+<li><strong>DLC</strong> in release order</li>
+<li><strong>Test</strong> after each installation</li>
+</ol>
+<h3 id="migration-between-emulators">
+<a class="header-anchor" href="#migration-between-emulators"></a>
+Migration between emulators
+</h3><p><strong>Yuzu to Ryujinx:</strong></p>
+<ol>
+<li>Installed DLC/Updates don&rsquo;t transfer automatically</li>
+<li><strong>Reinstall</strong> all content on the new emulator</li>
+<li><strong>Check</strong> compatibility before migration</li>
+</ol>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Installing <strong>DLC and updates</strong> on Yuzu and Ryujinx is a simple process once mastered. The main difference lies in the approach: Yuzu uses a universal method while Ryujinx offers more granular management.</p>
+<h3 id="key-points-to-remember">
+<a class="header-anchor" href="#key-points-to-remember"></a>
+Key points to remember
+</h3><blockquote>
+<p><strong>🎯 Procedure summary:</strong></p>
+<p><strong>Yuzu (Universal):</strong></p>
+<ul>
+<li>File → Install Files to NAND</li>
+<li>Select file → Confirm</li>
+<li>Works for both Update AND DLC</li>
+</ul>
+<p><strong>Ryujinx (Separate):</strong></p>
+<ul>
+<li>Right-click → Manage Updates/DLC</li>
+<li>Add → Select → Save</li>
+<li>Separate Update/DLC management</li>
+</ul></blockquote>
+<h3 id="final-tips">
+<a class="header-anchor" href="#final-tips"></a>
+Final tips
+</h3><p><strong>For optimal experience:</strong></p>
+<ul>
+<li>Keep your emulators updated</li>
+<li>Organize your files clearly</li>
+<li>Backup regularly</li>
+<li>Test progressively</li>
+</ul>
+<h2 id="faq---frequently-asked-questions">
+<a class="header-anchor" href="#faq---frequently-asked-questions"></a>
+FAQ - Frequently Asked Questions
+</h2><p><strong>Q: Can I install multiple versions of the same DLC?</strong>
+A: No, only one version per DLC. Installing a new version automatically replaces the old one.</p>
+<p><strong>Q: Do DLC work between different game regions?</strong>
+A: Generally no. DLC must match the base game region (EU, US, JP).</p>
+<p><strong>Q: What to do if installation gets stuck?</strong>
+A: Close the emulator, restart as administrator, and try again. Also check available disk space.</p>
+<p><strong>Q: Are save files affected by DLC installation?</strong>
+A: No, existing saves remain intact. Some DLC may add new content to saves.</p>
+<p><strong>Q: How to uninstall a DLC or update?</strong>
+A: In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you&rsquo;ll need to delete from the emulator&rsquo;s system settings.</p>
+<hr>
+<p><strong>Did this guide help you?</strong> Share your installation experiences and favorite games with DLC in the comments!</p>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><a href="/en/post/yuzu-setup/">Optimal Yuzu Configuration</a></li>
+<li><a href="/en/post/ryujinx-guide/">Complete Ryujinx Guide</a></li>
+<li><a href="/en/post/install-switch-mods/">Installing Mods on Switch Emulators</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://axekin.com/en/post/dlc_update_ryujinx_yuzu/">https://axekin.com/en/post/dlc_update_ryujinx_yuzu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>How to Install DLC and Updates on Yuzu and Ryujinx</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/en/post/dlc_update_ryujinx_yuzu/" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/en/post/dlc_update_ryujinx_yuzu/&amp;text=How%20to%20Install%20DLC%20and%20Updates%20on%20Yuzu%20and%20Ryujinx&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/en/post/dlc_update_ryujinx_yuzu/&amp;title=How%20to%20Install%20DLC%20and%20Updates%20on%20Yuzu%20and%20Ryujinx&amp;summary=Complete%20guide%20to%20install%20DLC%20and%20updates%20on%20Nintendo%20Switch%20emulators%20Yuzu%20and%20Ryujinx%20-%20Detailed%20step-by-step%20procedure&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/en/post/dlc_update_ryujinx_yuzu/&amp;title=How%20to%20Install%20DLC%20and%20Updates%20on%20Yuzu%20and%20Ryujinx" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="How to Install DLC and Updates on Yuzu and Ryujinx">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/yuzu"
+        rel="tag"
+        >YUZU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/ryujinx"
+        rel="tag"
+        >RYUJINX</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nintendo-switch"
+        rel="tag"
+        >NINTENDO-SWITCH</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/dlc"
+        rel="tag"
+        >DLC</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/updates"
+        rel="tag"
+        >UPDATES</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/installation"
+        rel="tag"
+        >INSTALLATION</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/amiibo-emulators.webp"
+            data-sizes="auto"
+            alt="How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)"
+            class="lazyload"
+          /><a href="/en/post/amibo_switch/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/amiibo-cemu-guide.webp"
+            data-sizes="auto"
+            alt="Complete Guide: Using Amiibo on Cemu Wii U Emulator"
+            class="lazyload"
+          /><a href="/en/post/amibo_cemu/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Complete Guide: Using Amiibo on Cemu Wii U Emulator</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;27.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:15</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Made with ❤️ by Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#supported-file-formats">Supported file formats</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-on-yuzu">Installation on Yuzu</a>
+      <ul>
+        <li><a href="#universal-method-update--dlc">Universal method (Update + DLC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-on-ryujinx">Installation on Ryujinx</a>
+      <ul>
+        <li><a href="#for-updates">For Updates</a></li>
+        <li><a href="#for-dlc">For DLC</a></li>
+      </ul>
+    </li>
+    <li><a href="#method-comparison">Method Comparison</a></li>
+    <li><a href="#management-and-organization">Management and Organization</a>
+      <ul>
+        <li><a href="#organize-your-dlcupdate-files">Organize your DLC/Update files</a></li>
+        <li><a href="#check-installed-versions">Check installed versions</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-common-problems">Troubleshooting Common Problems</a>
+      <ul>
+        <li><a href="#installation-issues">Installation issues</a></li>
+        <li><a href="#compatibility-issues">Compatibility issues</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices">Best Practices</a>
+      <ul>
+        <li><a href="#backup-and-security">Backup and security</a></li>
+        <li><a href="#efficient-organization">Efficient organization</a></li>
+        <li><a href="#regular-maintenance">Regular maintenance</a></li>
+      </ul>
+    </li>
+    <li><a href="#special-use-cases">Special Use Cases</a>
+      <ul>
+        <li><a href="#games-with-multiple-dlc">Games with multiple DLC</a></li>
+        <li><a href="#migration-between-emulators">Migration between emulators</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#key-points-to-remember">Key points to remember</a></li>
+        <li><a href="#final-tips">Final tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---frequently-asked-questions">FAQ - Frequently Asked Questions</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "How to Install DLC and Updates on Yuzu and Ryujinx",
+          url: "https:\/\/axekin.com\/en\/post\/dlc_update_ryujinx_yuzu\/",
+          description: "Complete guide to install DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure",
+          cover: "https:\/\/axekin.com\/images\/covers\/yuzu-ryujinx-dlc-updates.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modding on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/tags/modding/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/tags/modding/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
+      <link>https://axekin.com/fr/post/cheat_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/cheat_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important</strong> : Sauvegardez toujours vos fichiers de sauvegarde avant d&rsquo;installer des cheats ou mods. Certaines modifications peuvent affecter la stabilité du jeu.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p><strong>Ryujinx</strong> prend en charge à la fois les <strong>codes de triche</strong> et les <strong>modifications de jeu (mods)</strong> pour améliorer votre expérience de jeu Nintendo Switch. Que vous souhaitiez une santé infinie, débloquer tous les objets, ou transformer complètement les graphismes d&rsquo;un jeu, ce guide vous montrera exactement comment les installer.</p>
+<h3 id="quelle-est-la-différence-">
+<a class="header-anchor" href="#quelle-est-la-diff%c3%a9rence-"></a>
+Quelle est la différence ?
+</h3><p><strong>Cheats vs Mods :</strong></p>
+<ul>
+<li><strong>Cheats</strong> : Petites modifications de code (argent infini, stats max, etc.)</li>
+<li><strong>Mods</strong> : Modifications complètes du contenu du jeu (nouvelles textures, personnages, niveaux, etc.)</li>
+</ul>
+<p>Les deux utilisent des méthodes d&rsquo;installation et des structures de dossiers différentes dans Ryujinx.</p>
+<h2 id="installation-des-cheats-sur-ryujinx">
+<a class="header-anchor" href="#installation-des-cheats-sur-ryujinx"></a>
+Installation des Cheats sur Ryujinx
+</h2><h3 id="étape-1--accéder-au-répertoire-mod">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-r%c3%a9pertoire-mod"></a>
+Étape 1 : Accéder au répertoire Mod
+</h3><h4 id="ouvrir-ryujinx-et-localiser-votre-jeu">
+<a class="header-anchor" href="#ouvrir-ryujinx-et-localiser-votre-jeu"></a>
+Ouvrir Ryujinx et localiser votre jeu
+</h4><ol>
+<li><strong>Lancez</strong> l&rsquo;émulateur Ryujinx</li>
+<li><strong>Clic droit</strong> sur le jeu auquel vous souhaitez ajouter des cheats</li>
+<li>Sélectionnez <strong>&ldquo;Open Mods Directory&rdquo;</strong> dans le menu contextuel</li>
+</ol>
+<p><img src="/images/ryujinx-mods-menu.png" alt="Menu clic droit Ryujinx">
+<em>Accès au répertoire mods dans Ryujinx</em></p>
+<h3 id="étape-2--comprendre-la-structure-des-dossiers">
+<a class="header-anchor" href="#%c3%a9tape-2--comprendre-la-structure-des-dossiers"></a>
+Étape 2 : Comprendre la structure des dossiers
+</h3><h4 id="structure-du-répertoire">
+<a class="header-anchor" href="#structure-du-r%c3%a9pertoire"></a>
+Structure du répertoire
+</h4><p>Lorsque vous ouvrez le répertoire mods, vous verrez un chemin comme celui-ci :</p>
+<pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
+</code></pre><p>Où <code>XXXXXXXXXXXXXXXX</code> est l&rsquo;<strong>ID unique du jeu</strong> (Title ID) de votre jeu sélectionné.</p>
+<p><strong>Exemples d&rsquo;ID de jeux :</strong></p>
+<ul>
+<li>The Legend of Zelda: Breath of the Wild : <code>01007EF00011E000</code></li>
+<li>Super Mario Odyssey : <code>0100000000010000</code></li>
+<li>Pokémon Épée : <code>0100ABF008968000</code></li>
+</ul>
+<h3 id="étape-3--installer-les-fichiers-de-cheat">
+<a class="header-anchor" href="#%c3%a9tape-3--installer-les-fichiers-de-cheat"></a>
+Étape 3 : Installer les fichiers de cheat
+</h3><h4 id="extraire-et-placer-les-fichiers-de-cheat">
+<a class="header-anchor" href="#extraire-et-placer-les-fichiers-de-cheat"></a>
+Extraire et placer les fichiers de cheat
+</h4><ol>
+<li><strong>Téléchargez</strong> vos fichiers de cheat (généralement au format .zip)</li>
+<li><strong>Extrayez</strong> le contenu de l&rsquo;archive</li>
+<li><strong>Créez la structure de dossier appropriée :</strong></li>
+</ol>
+<pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
+└── Nom_Cheat\
+    └── cheats\
+        ├── cheat1.txt
+        ├── cheat2.txt
+        └── autres_cheats.txt
+</code></pre><h4 id="étapes-dinstallation-détaillées">
+<a class="header-anchor" href="#%c3%a9tapes-dinstallation-d%c3%a9taill%c3%a9es"></a>
+Étapes d&rsquo;installation détaillées
+</h4><ol start="4">
+<li><strong>Naviguez</strong> vers le répertoire mod de votre jeu</li>
+<li><strong>Créez un nouveau dossier</strong> avec le nom du cheat (ex: &ldquo;Argent_Infini&rdquo;)</li>
+<li><strong>À l&rsquo;intérieur de ce dossier</strong>, créez un sous-dossier appelé <strong>&ldquo;cheats&rdquo;</strong></li>
+<li><strong>Placez tous les fichiers .txt de cheat</strong> dans le dossier &ldquo;cheats&rdquo;</li>
+</ol>
+<p><img src="/images/ryujinx-cheat-structure.png" alt="Structure dossier cheat">
+<em>Structure appropriée du dossier cheat dans Ryujinx</em></p>
+<h3 id="étape-4--activer-les-cheats">
+<a class="header-anchor" href="#%c3%a9tape-4--activer-les-cheats"></a>
+Étape 4 : Activer les cheats
+</h3><h4 id="activer-les-cheats-en-jeu">
+<a class="header-anchor" href="#activer-les-cheats-en-jeu"></a>
+Activer les cheats en jeu
+</h4><ol>
+<li><strong>Lancez votre jeu</strong> dans Ryujinx</li>
+<li><strong>Clic droit</strong> sur le titre du jeu à nouveau</li>
+<li>Sélectionnez <strong>&ldquo;Manage Cheats&rdquo;</strong> ou accédez via le menu</li>
+<li><strong>Cochez les cases</strong> à côté des cheats que vous souhaitez activer</li>
+<li><strong>Appliquez</strong> les changements et redémarrez le jeu si nécessaire</li>
+</ol>
+<h2 id="installation-des-mods-sur-ryujinx">
+<a class="header-anchor" href="#installation-des-mods-sur-ryujinx"></a>
+Installation des Mods sur Ryujinx
+</h2><h3 id="étape-1--accéder-au-répertoire-mods">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-r%c3%a9pertoire-mods"></a>
+Étape 1 : Accéder au répertoire Mods
+</h3><h4 id="même-processus-initial-que-pour-les-cheats">
+<a class="header-anchor" href="#m%c3%aame-processus-initial-que-pour-les-cheats"></a>
+Même processus initial que pour les cheats
+</h4><ol>
+<li><strong>Ouvrez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur votre jeu cible</li>
+<li>Cliquez sur <strong>&ldquo;Open Mods Directory&rdquo;</strong></li>
+</ol>
+<p>Cela ouvre : <code>AppData\Roaming\Ryujinx\mods\contents\&lt;ID jeu&gt;\</code></p>
+<h3 id="étape-2--créer-la-structure-de-dossier-mod">
+<a class="header-anchor" href="#%c3%a9tape-2--cr%c3%a9er-la-structure-de-dossier-mod"></a>
+Étape 2 : Créer la structure de dossier mod
+</h3><h4 id="organisez-vos-mods-correctement">
+<a class="header-anchor" href="#organisez-vos-mods-correctement"></a>
+Organisez vos mods correctement
+</h4><ol>
+<li><strong>Créez un nouveau sous-dossier</strong> sous le répertoire ID du jeu</li>
+<li><strong>Nommez-le de manière descriptive</strong> (ex: &ldquo;Vies_Infinies&rdquo;, &ldquo;Textures_HD&rdquo;, &ldquo;Musique_Personnalisée&rdquo;)</li>
+<li>Cela vous aide à <strong>gérer plusieurs mods</strong> facilement</li>
+</ol>
+<p><strong>Exemple de structure :</strong></p>
+<pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+├── Mod_Graphiques_HD\
+│   └── romfs\
+├── Vies_Infinies\
+│   └── exefs\
+└── Bande_Son_Personnalisée\
+    └── romfs\
+</code></pre><h3 id="étape-3--installer-les-fichiers-mod">
+<a class="header-anchor" href="#%c3%a9tape-3--installer-les-fichiers-mod"></a>
+Étape 3 : Installer les fichiers mod
+</h3><h4 id="copier-le-contenu-du-mod">
+<a class="header-anchor" href="#copier-le-contenu-du-mod"></a>
+Copier le contenu du mod
+</h4><ol>
+<li><strong>Extrayez vos fichiers de mod</strong> téléchargés</li>
+<li><strong>Localisez le dossier romfs ou exefs</strong> du mod</li>
+<li><strong>Copiez ces dossiers</strong> dans votre répertoire mod nouvellement créé</li>
+</ol>
+<p><strong>Types de dossiers mod :</strong></p>
+<ul>
+<li><strong>romfs</strong> : Modifications du contenu du jeu (textures, modèles, audio)</li>
+<li><strong>exefs</strong> : Modifications d&rsquo;exécutables (patches de code, changements de gameplay)</li>
+</ul>
+<h4 id="installation-complète">
+<a class="header-anchor" href="#installation-compl%c3%a8te"></a>
+Installation complète
+</h4><ol start="4">
+<li><strong>Naviguez</strong> vers le dossier d&rsquo;extraction de votre mod</li>
+<li><strong>Copiez l&rsquo;intégralité du dossier romfs ou exefs</strong></li>
+<li><strong>Collez</strong> dans votre répertoire mod créé</li>
+</ol>
+<p><img src="/images/ryujinx-mod-installation.png" alt="Processus installation mod">
+<em>Installation d&rsquo;un mod graphique dans Ryujinx</em></p>
+<h3 id="étape-4--activer-les-mods">
+<a class="header-anchor" href="#%c3%a9tape-4--activer-les-mods"></a>
+Étape 4 : Activer les mods
+</h3><h4 id="activer-les-mods-installés">
+<a class="header-anchor" href="#activer-les-mods-install%c3%a9s"></a>
+Activer les mods installés
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur votre jeu</li>
+<li>Sélectionnez <strong>&ldquo;Manage Mods&rdquo;</strong></li>
+<li><strong>Activez/désactivez</strong> les mods selon vos souhaits</li>
+<li><strong>Démarrez le jeu</strong> pour voir les changements</li>
+</ol>
+<h2 id="exemples-de-structure-de-dossiers">
+<a class="header-anchor" href="#exemples-de-structure-de-dossiers"></a>
+Exemples de Structure de Dossiers
+</h2><h3 id="installation-complète-de-cheat">
+<a class="header-anchor" href="#installation-compl%c3%a8te-de-cheat"></a>
+Installation complète de cheat
+</h3><pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+└── BOTW_Cheats\
+    └── cheats\
+        ├── endurance_infinie.txt
+        ├── coeurs_max.txt
+        ├── toutes_armes.txt
+        └── rupees_infinis.txt
+</code></pre><h3 id="installation-complète-de-mod">
+<a class="header-anchor" href="#installation-compl%c3%a8te-de-mod"></a>
+Installation complète de mod
+</h3><pre tabindex="0"><code>Ryujinx\mods\contents\01007EF00011E000\
+├── Pack_Graphiques_HD\
+│   └── romfs\
+│       ├── Model\
+│       ├── Texture\
+│       └── Effect\
+└── Refonte_Gameplay\
+    ├── romfs\
+    │   └── GameData\
+    └── exefs\
+        └── main.npdm
+</code></pre><h2 id="gestion-de-multiples-mods-et-cheats">
+<a class="header-anchor" href="#gestion-de-multiples-mods-et-cheats"></a>
+Gestion de Multiples Mods et Cheats
+</h2><h3 id="bonnes-pratiques-dorganisation">
+<a class="header-anchor" href="#bonnes-pratiques-dorganisation"></a>
+Bonnes pratiques d&rsquo;organisation
+</h3><h4 id="conventions-de-nommage">
+<a class="header-anchor" href="#conventions-de-nommage"></a>
+Conventions de nommage
+</h4><p><strong>Bons noms de dossiers :</strong></p>
+<ul>
+<li><code>Cheat_Argent_Infini</code></li>
+<li><code>Pack_Textures_4K</code></li>
+<li><code>Mod_Audio_Ameliore</code></li>
+<li><code>Reequilibrage_Difficulte</code></li>
+</ul>
+<p><strong>À éviter :</strong></p>
+<ul>
+<li>Caractères spéciaux (<code>!@#$%</code>)</li>
+<li>Espaces au début ou à la fin</li>
+<li>Noms très longs</li>
+</ul>
+<h4 id="compatibilité-des-mods">
+<a class="header-anchor" href="#compatibilit%c3%a9-des-mods"></a>
+Compatibilité des mods
+</h4><p><strong>Test de compatibilité :</strong></p>
+<ol>
+<li><strong>Installez un mod à la fois</strong></li>
+<li><strong>Testez la stabilité du jeu</strong></li>
+<li><strong>Vérifiez les conflits</strong> avant d&rsquo;en ajouter d&rsquo;autres</li>
+<li><strong>Prenez des notes</strong> sur les combinaisons qui fonctionnent</li>
+</ol>
+<h3 id="système-dactivationdésactivation">
+<a class="header-anchor" href="#syst%c3%a8me-dactivationd%c3%a9sactivation"></a>
+Système d&rsquo;activation/désactivation
+</h3><h4 id="gestion-temporaire-des-mods">
+<a class="header-anchor" href="#gestion-temporaire-des-mods"></a>
+Gestion temporaire des mods
+</h4><pre tabindex="0"><code>Ryujinx\mods\contents\ID_JEU\
+├── Mods_Actifs\
+│   ├── Mod_Graphique\    (activé)
+│   └── Mod_Audio\        (activé)
+└── Mods_Desactives\
+    ├── Anciens_Graphiques\    (sauvegarde)
+    └── Experimental\          (test)
+</code></pre><h2 id="dépannage-des-problèmes-courants">
+<a class="header-anchor" href="#d%c3%a9pannage-des-probl%c3%a8mes-courants"></a>
+Dépannage des Problèmes Courants
+</h2><h3 id="cheats-qui-ne-fonctionnent-pas">
+<a class="header-anchor" href="#cheats-qui-ne-fonctionnent-pas"></a>
+Cheats qui ne fonctionnent pas
+</h3><h4 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h4><p><strong>🚫 Fichiers de cheat non détectés :</strong></p>
+<ul>
+<li>Vérifiez la structure du dossier : <code>ID_Jeu\Nom_Cheat\cheats\*.txt</code></li>
+<li>Vérifiez les extensions de fichier (.txt, pas .txt.txt)</li>
+<li>Assurez-vous qu&rsquo;il n&rsquo;y a pas d&rsquo;espaces supplémentaires dans les noms de dossiers</li>
+</ul>
+<p><strong>⚠️ Les cheats causent des plantages :</strong></p>
+<ul>
+<li>Désactivez tous les cheats et testez-les un par un</li>
+<li>Vérifiez la compatibilité du cheat avec la version du jeu</li>
+<li>Utilisez des cheats de sources fiables</li>
+</ul>
+<h3 id="mods-qui-ne-se-chargent-pas">
+<a class="header-anchor" href="#mods-qui-ne-se-chargent-pas"></a>
+Mods qui ne se chargent pas
+</h3><h4 id="débogage-des-problèmes-de-mod">
+<a class="header-anchor" href="#d%c3%a9bogage-des-probl%c3%a8mes-de-mod"></a>
+Débogage des problèmes de mod
+</h4><p><strong>📁 Structure de dossier incorrecte :</strong></p>
+<pre tabindex="0"><code>❌ Incorrect :
+Ryujinx\mods\contents\ID_JEU\romfs\...
+
+✅ Correct :
+Ryujinx\mods\contents\ID_JEU\Nom_Mod\romfs\...
+</code></pre><p><strong>🎮 Problèmes spécifiques au jeu :</strong></p>
+<ul>
+<li>Vérifiez la compatibilité du mod avec votre version de jeu</li>
+<li>Vérifiez si le mod nécessite une version de firmware spécifique</li>
+<li>Testez avec le mod désactivé pour confirmer qu&rsquo;il en est la cause</li>
+</ul>
+<h3 id="problèmes-de-performance">
+<a class="header-anchor" href="#probl%c3%a8mes-de-performance"></a>
+Problèmes de performance
+</h3><h4 id="conseils-doptimisation">
+<a class="header-anchor" href="#conseils-doptimisation"></a>
+Conseils d&rsquo;optimisation
+</h4><p><strong>Performance liée aux mods :</strong></p>
+<ul>
+<li><strong>Désactivez les mods inutilisés</strong> pour réduire l&rsquo;utilisation mémoire</li>
+<li><strong>Utilisez des packs de textures optimisés</strong> pour votre matériel</li>
+<li><strong>Surveillez les ressources système</strong> lors de l&rsquo;exécution de plusieurs mods</li>
+</ul>
+<h2 id="trouver-des-cheats-et-mods">
+<a class="header-anchor" href="#trouver-des-cheats-et-mods"></a>
+Trouver des Cheats et Mods
+</h2><h3 id="sources-recommandées">
+<a class="header-anchor" href="#sources-recommand%c3%a9es"></a>
+Sources recommandées
+</h3><h4 id="sites-web-fiables-pour-les-téléchargements">
+<a class="header-anchor" href="#sites-web-fiables-pour-les-t%c3%a9l%c3%a9chargements"></a>
+Sites web fiables pour les téléchargements
+</h4><table>
+  <thead>
+      <tr>
+          <th>Source</th>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>GameBanana</strong></td>
+          <td>Mods</td>
+          <td>Plus grande communauté de mods</td>
+      </tr>
+      <tr>
+          <td><strong>NexusMods</strong></td>
+          <td>Mods</td>
+          <td>Hébergement professionnel de mods</td>
+      </tr>
+      <tr>
+          <td><strong>Forums GBAtemp</strong></td>
+          <td>Cheats &amp; Mods</td>
+          <td>Discussions communautaires actives</td>
+      </tr>
+      <tr>
+          <td><strong>Reddit r/Ryujinx</strong></td>
+          <td>Les deux</td>
+          <td>Support communautaire</td>
+      </tr>
+      <tr>
+          <td><strong>GitHub</strong></td>
+          <td>Les deux</td>
+          <td>Projets open-source</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="considérations-de-sécurité">
+<a class="header-anchor" href="#consid%c3%a9rations-de-s%c3%a9curit%c3%a9"></a>
+Considérations de sécurité
+</h4><p><strong>Liste de vérification sécurité téléchargement :</strong></p>
+<ul>
+<li>✅ Utilisez uniquement des sources réputées</li>
+<li>✅ Lisez les commentaires et avis des utilisateurs</li>
+<li>✅ Scannez les fichiers avec un antivirus</li>
+<li>✅ Sauvegardez avant d&rsquo;installer</li>
+<li>✅ Testez d&rsquo;abord sur des jeux moins importants</li>
+</ul>
+<h2 id="gestion-avancée-des-mods">
+<a class="header-anchor" href="#gestion-avanc%c3%a9e-des-mods"></a>
+Gestion Avancée des Mods
+</h2><h3 id="opérations-par-lots">
+<a class="header-anchor" href="#op%c3%a9rations-par-lots"></a>
+Opérations par lots
+</h3><h4 id="gestion-de-plusieurs-jeux">
+<a class="header-anchor" href="#gestion-de-plusieurs-jeux"></a>
+Gestion de plusieurs jeux
+</h4><p><strong>Script PowerShell pour sauvegarde :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarder tous les mods</span>
+</span></span><span style="display:flex;"><span>$source = <span style="color:#e6db74">&#34;</span>$env:APPDATA<span style="color:#e6db74">\Ryujinx\mods&#34;</span>
+</span></span><span style="display:flex;"><span>$backup = <span style="color:#e6db74">&#34;C:\Sauvegarde_Mods_Ryujinx\</span>$(Get-Date -Format <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>Copy-Item -Path $source -Destination $backup -Recurse
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Mods sauvegardés dans : </span>$backup<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h3 id="contrôle-de-version-pour-les-mods">
+<a class="header-anchor" href="#contr%c3%b4le-de-version-pour-les-mods"></a>
+Contrôle de version pour les mods
+</h3><h4 id="suivre-les-changements">
+<a class="header-anchor" href="#suivre-les-changements"></a>
+Suivre les changements
+</h4><pre tabindex="0"><code>📁 Versions_Mod\
+├── 📁 v1.0_Original\
+├── 📁 v2.0_Mise_a_jour\
+└── 📁 v3.0_Derniere\
+    └── changelog.txt
+</code></pre><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Installer des <strong>cheats et mods</strong> sur Ryujinx est simple une fois que vous comprenez la structure des dossiers. La clé est une organisation appropriée et tester une modification à la fois.</p>
+<h3 id="résumé-de-référence-rapide">
+<a class="header-anchor" href="#r%c3%a9sum%c3%a9-de-r%c3%a9f%c3%a9rence-rapide"></a>
+Résumé de référence rapide
+</h3><blockquote>
+<p><strong>🎯 Liste de vérification d&rsquo;installation :</strong></p>
+<p><strong>Pour les Cheats :</strong></p>
+<ol>
+<li>Clic droit jeu → Open Mods Directory</li>
+<li>Créer : <code>Nom_Cheat\cheats\</code></li>
+<li>Placer fichiers .txt dans dossier cheats</li>
+<li>Activer via menu Manage Cheats</li>
+</ol>
+<p><strong>Pour les Mods :</strong></p>
+<ol>
+<li>Clic droit jeu → Open Mods Directory</li>
+<li>Créer dossier mod descriptif</li>
+<li>Copier romfs/exefs dans dossier mod</li>
+<li>Activer via menu Manage Mods</li>
+</ol></blockquote>
+<h3 id="bonnes-pratiques">
+<a class="header-anchor" href="#bonnes-pratiques"></a>
+Bonnes pratiques
+</h3><p><strong>N&rsquo;oubliez pas de :</strong></p>
+<ul>
+<li>Toujours sauvegarder vos saves en premier</li>
+<li>Tester les modifications individuellement</li>
+<li>Utiliser des sources fiables pour les téléchargements</li>
+<li>Garder les fichiers originaux en sauvegarde</li>
+<li>Documenter les combinaisons de mods qui fonctionnent</li>
+</ul>
+<h2 id="faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+FAQ - Questions Fréquemment Posées
+</h2><p><strong>Q : Puis-je utiliser cheats et mods simultanément ?</strong>
+R : Oui, mais testez soigneusement car certaines combinaisons peuvent causer des conflits ou plantages.</p>
+<p><strong>Q : Les mods affectent-ils les performances du jeu ?</strong>
+R : Cela dépend du mod. Les mods graphiques nécessitent généralement plus de ressources, tandis que les cheats simples ont un impact minimal.</p>
+<p><strong>Q : Les mods Ryujinx sont-ils compatibles avec Yuzu ?</strong>
+R : Parfois, mais la structure des dossiers diffère. Vous devrez peut-être réorganiser les fichiers pour la compatibilité croisée.</p>
+<p><strong>Q : Puis-je créer mes propres cheats ?</strong>
+R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu. Des outils comme Cheat Engine peuvent aider à identifier les valeurs à modifier.</p>
+<p><strong>Q : Que faire si un mod casse mon jeu ?</strong>
+R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.</p>
+<hr>
+<p><strong>Ce guide vous a été utile ?</strong> Partagez vos mods et cheats favoris dans les commentaires ci-dessous !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/ryujinx-performance/">Optimisation des Performances Ryujinx</a></li>
+<li><a href="/fr/post/best-switch-mods/">Meilleurs Mods Nintendo Switch</a></li>
+<li><a href="/fr/post/custom-cheat-creation/">Création de Cheats Personnalisés</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+  </channel>
+</rss>

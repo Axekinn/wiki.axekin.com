@@ -1,0 +1,1621 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Guide complet : Installation et configuration de Yuzu | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo Switch Yuzu"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Guide complet : Installation et configuration de Yuzu | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo Switch Yuzu"
+  />
+  <meta property="og:url" content="https://axekin.com/fr/post/yuzu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="YuzuNintendo SwitchÉmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/yuzu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+        <img style="visibility:hidden"></img><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="slide-up">Guide complet : Installation et configuration de Yuzu</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-yuzu">🎮 Introduction à Yuzu</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-yuzu">🔧 Étape 1 : Téléchargement de Yuzu</a>
+      <ul>
+        <li><a href="#option-1--version-mainline-stable">Option 1 : Version Mainline (Stable)</a></li>
+        <li><a href="#option-2--version-early-access-premium">Option 2 : Version Early Access (Premium)</a></li>
+        <li><a href="#option-3--appimage-linux">Option 3 : AppImage (Linux)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#installation-des-prérequis">Installation des prérequis</a></li>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--installation-des-clés-et-firmware">🎯 Étape 4 : Installation des clés et firmware</a>
+      <ul>
+        <li><a href="#installation-des-clés-de-chiffrement">Installation des clés de chiffrement</a></li>
+        <li><a href="#installation-du-firmware-nintendo-switch">Installation du firmware Nintendo Switch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-optimale">⚙️ Étape 5 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-système">Configuration système</a></li>
+        <li><a href="#paramètres-graphiques-optimaux">Paramètres graphiques optimaux</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--ajout-et-optimisation-des-jeux">🎮 Étape 6 : Ajout et optimisation des jeux</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#ajouter-des-jeux">Ajouter des jeux</a></li>
+        <li><a href="#installation-des-mises-à-jour">Installation des mises à jour</a></li>
+        <li><a href="#installation-des-dlc">Installation des DLC</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-avancée">🚀 Optimisation avancée</a>
+      <ul>
+        <li><a href="#paramètres-par-jeu">Paramètres par jeu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-installation-et-gestion-des-mods">🛠️ Installation et gestion des mods</a>
+      <ul>
+        <li><a href="#structure-des-mods">Structure des mods</a></li>
+        <li><a href="#installation-étape-par-étape">Installation étape par étape</a></li>
+        <li><a href="#mods-populaires-par-jeu">Mods populaires par jeu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-des-performances">📊 Optimisation des performances</a>
+      <ul>
+        <li><a href="#benchmark-et-monitoring">Benchmark et monitoring</a></li>
+        <li><a href="#optimisations-système">Optimisations système</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-courants-et-solutions">Problèmes courants et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-yuzu-sur-autres-plateformes">📱 Yuzu sur autres plateformes</a>
+      <ul>
+        <li><a href="#yuzu-android">Yuzu Android</a></li>
+        <li><a href="#yuzu-linux">Yuzu Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-comparatif-détaillé-avec-les-concurrents">📚 Comparatif détaillé avec les concurrents</a>
+      <ul>
+        <li><a href="#points-forts-de-yuzu">Points forts de Yuzu</a></li>
+        <li><a href="#points-faibles-de-yuzu">Points faibles de Yuzu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conseils-avancés-et-astuces">🎯 Conseils avancés et astuces</a>
+      <ul>
+        <li><a href="#gestion-des-sauvegardes">Gestion des sauvegardes</a></li>
+        <li><a href="#transfert-de-sauvegardes-switch--yuzu">Transfert de sauvegardes Switch ↔ Yuzu</a></li>
+        <li><a href="#optimisation-du-cache-shaders">Optimisation du cache shaders</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels">Sites officiels</a></li>
+        <li><a href="#ressources-communautaires">Ressources communautaires</a></li>
+        <li><a href="#mods-et-ressources">Mods et ressources</a></li>
+        <li><a href="#outils-utiles">Outils utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#résolution-de-problèmes">Résolution de problèmes</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-02</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/tutoriels"
+      data-aos="zoom-in"
+      >TUTORIELS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><h2 id="-introduction-à-yuzu">
+<a class="header-anchor" href="#-introduction-%c3%a0-yuzu"></a>
+🎮 Introduction à Yuzu
+</h2><p><strong>Yuzu</strong> est un émulateur Nintendo Switch open-source développé par l&rsquo;équipe de Citra. Réputé pour ses performances élevées et sa compatibilité croissante, Yuzu est l&rsquo;un des émulateurs Switch les plus populaires au monde.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 10 (64-bit) / Linux / Android</li>
+<li><strong>CPU</strong> : Intel Core i5-4430 / AMD FX-6300</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : Intel HD Graphics 4000 / AMD Radeon R5 M230</li>
+<li><strong>Stockage</strong> : 5 GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i5-10400 / AMD Ryzen 5 3600</li>
+<li><strong>RAM</strong> : 16 GB ou plus</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1060 / AMD RX 580 ou supérieur</li>
+<li><strong>Stockage</strong> : SSD avec 20+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale">
+<a class="header-anchor" href="#configuration-optimale"></a>
+Configuration optimale
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-12700K / AMD Ryzen 7 5800X</li>
+<li><strong>RAM</strong> : 32 GB</li>
+<li><strong>GPU</strong> : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 50+ GB d&rsquo;espace libre</li>
+</ul>
+<h2 id="-étape-1--téléchargement-de-yuzu">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-yuzu"></a>
+🔧 Étape 1 : Téléchargement de Yuzu
+</h2><h3 id="option-1--version-mainline-stable">
+<a class="header-anchor" href="#option-1--version-mainline-stable"></a>
+Option 1 : Version Mainline (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://yuzu-emu.org/downloads/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>yuzu-windows-msvc.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Yuzu</code>)</li>
+</ol>
+<h3 id="option-2--version-early-access-premium">
+<a class="header-anchor" href="#option-2--version-early-access-premium"></a>
+Option 2 : Version Early Access (Premium)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version payante avec fonctionnalités avancées</span>
+</span></span><span style="display:flex;"><span>- Multithreading amélioré
+</span></span><span style="display:flex;"><span>- Optimisations exclusives
+</span></span><span style="display:flex;"><span>- Support prioritaire
+</span></span></code></pre></div><h3 id="option-3--appimage-linux">
+<a class="header-anchor" href="#option-3--appimage-linux"></a>
+Option 3 : AppImage (Linux)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour Linux</span>
+</span></span><span style="display:flex;"><span>wget https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>chmod +x yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>./yuzu-*.AppImage
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>Yuzu/
+├── yuzu.exe                 # Exécutable principal
+├── games/                   # Vos ROMs .nsp/.xci
+│   ├── nsp/                 # Jeux .nsp
+│   ├── xci/                 # Jeux .xci
+│   └── nca/                 # Archives .nca
+├── saves/                   # Sauvegardes exportées
+├── screenshots/             # Captures d&#39;écran
+├── mods/                    # Modifications de jeux
+│   └── [Title-ID]/          # Dossier par jeu
+├── dlc/                     # Contenus téléchargeables
+├── updates/                 # Mises à jour de jeux
+└── shaders/                 # Cache des shaders
+</code></pre><h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="installation-des-prérequis">
+<a class="header-anchor" href="#installation-des-pr%c3%a9requis"></a>
+Installation des prérequis
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022 (Windows)</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .NET Framework 4.8 ou supérieur</span>
+</span></span><span style="display:flex;"><span>https://dotnet.microsoft.com/download/dotnet-framework
+</span></span></code></pre></div><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>yuzu.exe</code> en tant qu&rsquo;administrateur</li>
+<li><strong>Acceptez</strong> la configuration initiale</li>
+<li><strong>Configurez</strong> les dossiers de base</li>
+</ol>
+<h2 id="-étape-4--installation-des-clés-et-firmware">
+<a class="header-anchor" href="#-%c3%a9tape-4--installation-des-cl%c3%a9s-et-firmware"></a>
+🎯 Étape 4 : Installation des clés et firmware
+</h2><h3 id="installation-des-clés-de-chiffrement">
+<a class="header-anchor" href="#installation-des-cl%c3%a9s-de-chiffrement"></a>
+Installation des clés de chiffrement
+</h3><blockquote>
+<p>⚠️ <strong>Légalité</strong> : Vous devez extraire ces clés depuis votre propre Nintendo Switch.</p></blockquote>
+<h4 id="méthode-automatique-homebrew-requis">
+<a class="header-anchor" href="#m%c3%a9thode-automatique-homebrew-requis"></a>
+Méthode automatique (Homebrew requis)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Utiliser Lockpick_RCM sur votre Switch</span>
+</span></span><span style="display:flex;"><span>1. Démarrez votre Switch en mode RCM
+</span></span><span style="display:flex;"><span>2. Injectez Lockpick_RCM.bin
+</span></span><span style="display:flex;"><span>3. Extrayez prod.keys et title.keys
+</span></span><span style="display:flex;"><span>4. Transférez sur PC
+</span></span></code></pre></div><h4 id="installation-dans-yuzu">
+<a class="header-anchor" href="#installation-dans-yuzu"></a>
+Installation dans Yuzu
+</h4><ol>
+<li><strong>Ouvrez</strong> Yuzu</li>
+<li><code>File → Open yuzu Folder</code></li>
+<li><strong>Naviguez</strong> vers le dossier <code>keys/</code></li>
+<li><strong>Copiez</strong> <code>prod.keys</code> et <code>title.keys</code></li>
+<li><strong>Redémarrez</strong> Yuzu</li>
+</ol>
+<h3 id="installation-du-firmware-nintendo-switch">
+<a class="header-anchor" href="#installation-du-firmware-nintendo-switch"></a>
+Installation du firmware Nintendo Switch
+</h3><h4 id="extraction-du-firmware">
+<a class="header-anchor" href="#extraction-du-firmware"></a>
+Extraction du firmware
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis votre Switch avec Homebrew</span>
+</span></span><span style="display:flex;"><span>1. Utilisez TegraRcmGUI + Hekate
+</span></span><span style="display:flex;"><span>2. Créez un dump NAND complet
+</span></span><span style="display:flex;"><span>3. Extrayez le firmware avec HacDiskMount
+</span></span></code></pre></div><h4 id="installation-dans-yuzu-1">
+<a class="header-anchor" href="#installation-dans-yuzu-1"></a>
+Installation dans Yuzu
+</h4><ol>
+<li><code>Tools → Install Firmware</code></li>
+<li><strong>Sélectionnez</strong> le fichier firmware (.zip ou dossier)</li>
+<li><strong>Attendez</strong> l&rsquo;installation complète</li>
+<li><strong>Vérifiez</strong> : <code>Tools → Firmware Version</code></li>
+</ol>
+<h2 id="-étape-5--configuration-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-optimale"></a>
+⚙️ Étape 5 : Configuration optimale
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Limit Speed Percent</strong> : 100% (pour vitesse normale)</li>
+<li><strong>Multicore CPU Emulation</strong> : ✅ Activé</li>
+<li><strong>Extended Memory Layout</strong> : ✅ Activé (si 12GB+ RAM)</li>
+</ul>
+<h3 id="configuration-système">
+<a class="header-anchor" href="#configuration-syst%c3%a8me"></a>
+Configuration système
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong> : Europe</li>
+<li><strong>Language</strong> : Français</li>
+<li><strong>RTC Source</strong> : System Clock</li>
+<li><strong>Time Zone</strong> : Europe/Paris</li>
+<li><strong>Sound Output Mode</strong> : Stereo</li>
+</ul>
+<h3 id="paramètres-graphiques-optimaux">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-optimaux"></a>
+Paramètres graphiques optimaux
+</h3><h4 id="onglet-api">
+<a class="header-anchor" href="#onglet-api"></a>
+Onglet API
+</h4><pre tabindex="0"><code>Graphics → API
+- API: Vulkan (recommandé) ou OpenGL
+- Device: Votre GPU principal
+- Shader Backend: GLSL (Vulkan) / GLASM (OpenGL)
+</code></pre><h4 id="onglet-graphics">
+<a class="header-anchor" href="#onglet-graphics"></a>
+Onglet Graphics
+</h4><pre tabindex="0"><code>Graphics → Graphics
+- Use disk pipeline cache: ✅ Activé
+- Use asynchronous GPU emulation: ✅ Activé
+- Use asynchronous shader building: ✅ Activé
+- Accelerate ASTC texture decoding: ✅ Activé
+- VSync Mode: FIFO (Recommended)
+</code></pre><h4 id="onglet-advanced-graphics">
+<a class="header-anchor" href="#onglet-advanced-graphics"></a>
+Onglet Advanced Graphics
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Accuracy Level: Normal (High pour plus de précision)
+- Use Fast GPU Time: ✅ Activé
+- Use Vulkan pipeline cache: ✅ Activé (si Vulkan)
+- Anisotropic Filtering: 16x
+- Resolution Scaler: 1x (ou plus si GPU puissant)
+- Anti-Aliasing: None ou FXAA
+</code></pre><h3 id="configuration-audio">
+<a class="header-anchor" href="#configuration-audio"></a>
+Configuration audio
+</h3><pre tabindex="0"><code>Audio
+- Output Engine: auto (ou WASAPI sur Windows)
+- Output Device: Default
+- Volume: 100%
+</code></pre><h3 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h3><h4 id="manette-xboxplaystation">
+<a class="header-anchor" href="#manette-xboxplaystation"></a>
+Manette Xbox/PlayStation
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Pro Controller
+2. Configure → Automatically map
+3. Test all buttons
+</code></pre><h4 id="clavier-temporaire">
+<a class="header-anchor" href="#clavier-temporaire"></a>
+Clavier (temporaire)
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Handheld
+2. Configure → Manual mapping
+3. Assign keys to buttons
+</code></pre><h2 id="-étape-6--ajout-et-optimisation-des-jeux">
+<a class="header-anchor" href="#-%c3%a9tape-6--ajout-et-optimisation-des-jeux"></a>
+🎮 Étape 6 : Ajout et optimisation des jeux
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><ul>
+<li><strong>.NSP</strong> : Nintendo Submission Package (eShop games)</li>
+<li><strong>.XCI</strong> : NX Card Image (Physical cards)</li>
+<li><strong>.NCA</strong> : Nintendo Content Archive (Raw content)</li>
+<li><strong>.NSZ</strong> : Compressed NSP (requires tools)</li>
+<li><strong>.XCZ</strong> : Compressed XCI (requires tools)</li>
+</ul>
+<h3 id="ajouter-des-jeux">
+<a class="header-anchor" href="#ajouter-des-jeux"></a>
+Ajouter des jeux
+</h3><h4 id="méthode-drag--drop">
+<a class="header-anchor" href="#m%c3%a9thode-drag--drop"></a>
+Méthode Drag &amp; Drop
+</h4><ol>
+<li><strong>Glissez</strong> le fichier de jeu dans Yuzu</li>
+<li>Le jeu apparaît automatiquement</li>
+</ol>
+<h4 id="méthode-traditionnelle">
+<a class="header-anchor" href="#m%c3%a9thode-traditionnelle"></a>
+Méthode traditionnelle
+</h4><ol>
+<li><code>File → Load File</code></li>
+<li><strong>Naviguez</strong> vers votre jeu</li>
+<li><strong>Double-cliquez</strong> pour lancer</li>
+</ol>
+<h3 id="installation-des-mises-à-jour">
+<a class="header-anchor" href="#installation-des-mises-%c3%a0-jour"></a>
+Installation des mises à jour
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dans Yuzu</span>
+</span></span><span style="display:flex;"><span>File → Install Files to NAND
+</span></span><span style="display:flex;"><span>→ Sélectionnez le fichier .nsp de mise à jour
+</span></span></code></pre></div><h3 id="installation-des-dlc">
+<a class="header-anchor" href="#installation-des-dlc"></a>
+Installation des DLC
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dans Yuzu</span>
+</span></span><span style="display:flex;"><span>File → Install Files to NAND
+</span></span><span style="display:flex;"><span>→ Sélectionnez le fichier .nsp du DLC
+</span></span></code></pre></div><h2 id="-optimisation-avancée">
+<a class="header-anchor" href="#-optimisation-avanc%c3%a9e"></a>
+🚀 Optimisation avancée
+</h2><h3 id="paramètres-par-jeu">
+<a class="header-anchor" href="#param%c3%a8tres-par-jeu"></a>
+Paramètres par jeu
+</h3><p>Pour optimiser chaque titre individuellement :</p>
+<ol>
+<li><strong>Clic droit</strong> sur le jeu</li>
+<li><strong>Properties</strong></li>
+<li><strong>Ajustez</strong> les paramètres spécifiques</li>
+</ol>
+<h4 id="exemple--the-legend-of-zelda-botw">
+<a class="header-anchor" href="#exemple--the-legend-of-zelda-botw"></a>
+Exemple : The Legend of Zelda BOTW
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 2x-4x (selon GPU)
+- Anisotropic Filtering: 16x
+- Accuracy Level: High
+
+System:
+- Extended Memory Layout: ✅ Activé
+- CPU Accuracy: Auto
+
+Mods recommandés:
+- 60 FPS mod
+- High resolution shadows
+- Improved draw distance
+</code></pre><h4 id="exemple--super-mario-odyssey">
+<a class="header-anchor" href="#exemple--super-mario-odyssey"></a>
+Exemple : Super Mario Odyssey
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 2x-3x
+- Anti-Aliasing: FXAA
+- Accuracy Level: Normal
+
+Performance: Généralement excellent
+</code></pre><h4 id="exemple--pokémon-legends-arceus">
+<a class="header-anchor" href="#exemple--pok%c3%a9mon-legends-arceus"></a>
+Exemple : Pokémon Legends Arceus
+</h4><pre tabindex="0"><code>Graphics:
+- Resolution Scaler: 1x-2x (jeu lourd)
+- Accuracy Level: Normal
+- Use Fast GPU Time: ✅ Activé
+
+Mods:
+- 60 FPS patch (optionnel)
+- Quality of life improvements
+</code></pre><h2 id="-installation-et-gestion-des-mods">
+<a class="header-anchor" href="#-installation-et-gestion-des-mods"></a>
+🛠️ Installation et gestion des mods
+</h2><h3 id="structure-des-mods">
+<a class="header-anchor" href="#structure-des-mods"></a>
+Structure des mods
+</h3><pre tabindex="0"><code>%APPDATA%\yuzu\load\[Title-ID]\
+├── romfs/          # Remplacement de fichiers
+├── exefs/          # Patches binaires
+└── cheats/         # Codes de triche
+</code></pre><h3 id="installation-étape-par-étape">
+<a class="header-anchor" href="#installation-%c3%a9tape-par-%c3%a9tape"></a>
+Installation étape par étape
+</h3><h4 id="trouver-le-title-id">
+<a class="header-anchor" href="#trouver-le-title-id"></a>
+Trouver le Title ID
+</h4><ol>
+<li><strong>Clic droit</strong> sur le jeu dans Yuzu</li>
+<li><strong>Properties → Title ID</strong></li>
+<li><strong>Copiez</strong> l&rsquo;ID (ex: 01007EF00011E000)</li>
+</ol>
+<h4 id="installer-un-mod">
+<a class="header-anchor" href="#installer-un-mod"></a>
+Installer un mod
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Téléchargez le mod compatible
+</span></span><span style="display:flex;"><span>2. Extrayez dans: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\l</span>oad<span style="color:#ae81ff">\[</span>Title-ID<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>3. Relancez le jeu
+</span></span><span style="display:flex;"><span>4. Vérifiez que le mod fonctionne
+</span></span></code></pre></div><h3 id="mods-populaires-par-jeu">
+<a class="header-anchor" href="#mods-populaires-par-jeu"></a>
+Mods populaires par jeu
+</h3><h4 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mods essentiels</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS <span style="color:#f92672">(</span>Performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 4K Graphics Pack <span style="color:#f92672">(</span>Visuel<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Improved Shadows <span style="color:#f92672">(</span>Qualité<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- No Heat Distortion <span style="color:#f92672">(</span>Confort<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>Title ID: 01007EF00011E000
+</span></span><span style="display:flex;"><span>Dossier: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\l</span>oad<span style="color:#ae81ff">\0</span>1007EF00011E000<span style="color:#ae81ff">\
+</span></span></span></code></pre></div><h4 id="super-mario-odyssey">
+<a class="header-anchor" href="#super-mario-odyssey"></a>
+Super Mario Odyssey
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mods recommandés</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS <span style="color:#f92672">(</span>Performance<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Higher Quality Reflections <span style="color:#f92672">(</span>Visuel<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- No Cap Kingdom Fog <span style="color:#f92672">(</span>Clarté<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
+</span></span><span style="display:flex;"><span>Title ID: <span style="color:#ae81ff">0100000000010000</span>
+</span></span></code></pre></div><h2 id="-optimisation-des-performances">
+<a class="header-anchor" href="#-optimisation-des-performances"></a>
+📊 Optimisation des performances
+</h2><h3 id="benchmark-et-monitoring">
+<a class="header-anchor" href="#benchmark-et-monitoring"></a>
+Benchmark et monitoring
+</h3><h4 id="outils-intégrés">
+<a class="header-anchor" href="#outils-int%c3%a9gr%c3%a9s"></a>
+Outils intégrés
+</h4><pre tabindex="0"><code>View → Developer → Statistics
+- FPS actuel
+- Frametime
+- GPU/CPU usage
+</code></pre><h4 id="outils-externes">
+<a class="header-anchor" href="#outils-externes"></a>
+Outils externes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># MSI Afterburner + RivaTuner</span>
+</span></span><span style="display:flex;"><span>- Monitoring GPU/CPU
+</span></span><span style="display:flex;"><span>- Framerate cap
+</span></span><span style="display:flex;"><span>- Overclocking
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># HWiNFO64</span>
+</span></span><span style="display:flex;"><span>- Températures détaillées
+</span></span><span style="display:flex;"><span>- Utilisation mémoire
+</span></span><span style="display:flex;"><span>- Bottlenecks identification
+</span></span></code></pre></div><h3 id="optimisations-système">
+<a class="header-anchor" href="#optimisations-syst%c3%a8me"></a>
+Optimisations système
+</h3><h4 id="windows">
+<a class="header-anchor" href="#windows"></a>
+Windows
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Game Mode</span>
+</span></span><span style="display:flex;"><span>Windows Settings → Gaming → Game Mode → On
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># High Performance Power Plan</span>
+</span></span><span style="display:flex;"><span>Control Panel → Power Options → High Performance
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GPU Scheduling (Windows 10 2004+)</span>
+</span></span><span style="display:flex;"><span>Settings → Display → Graphics → Hardware-accelerated GPU scheduling
+</span></span></code></pre></div><h4 id="nvidia">
+<a class="header-anchor" href="#nvidia"></a>
+NVIDIA
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># NVIDIA Control Panel</span>
+</span></span><span style="display:flex;"><span>- Power Management: Prefer Maximum Performance
+</span></span><span style="display:flex;"><span>- Texture Filtering: High Performance
+</span></span><span style="display:flex;"><span>- Shader Cache: On
+</span></span><span style="display:flex;"><span>- G-Sync: On <span style="color:#f92672">(</span>si compatible<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="amd">
+<a class="header-anchor" href="#amd"></a>
+AMD
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># AMD Software</span>
+</span></span><span style="display:flex;"><span>- Graphics Profile: High Performance
+</span></span><span style="display:flex;"><span>- Anti-Lag: Enhanced
+</span></span><span style="display:flex;"><span>- Radeon Image Sharpening: 80-100%
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="jeu-ne-se-lance-pas">
+<a class="header-anchor" href="#jeu-ne-se-lance-pas"></a>
+Jeu ne se lance pas
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions par ordre de priorité:
+</span></span><span style="display:flex;"><span>1. Vérifiez l<span style="color:#960050;background-color:#1e0010">&#39;</span>installation du firmware
+</span></span><span style="display:flex;"><span>2. Vérifiez les clés <span style="color:#f92672">(</span>prod.keys/title.keys<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Testez avec les paramètres par défaut
+</span></span><span style="display:flex;"><span>4. Réinstallez les Visual C++ Redistributables
+</span></span><span style="display:flex;"><span>5. Mettez à jour Yuzu vers la dernière version
+</span></span></code></pre></div><h4 id="performances-faibles">
+<a class="header-anchor" href="#performances-faibles"></a>
+Performances faibles
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Optimisations immédiates:
+</span></span><span style="display:flex;"><span>1. Réduisez Resolution Scaler à 1x
+</span></span><span style="display:flex;"><span>2. Activez Multicore CPU Emulation
+</span></span><span style="display:flex;"><span>3. Utilisez Vulkan au lieu d<span style="color:#960050;background-color:#1e0010">&#39;</span>OpenGL
+</span></span><span style="display:flex;"><span>4. Fermez les applications en arrière-plan
+</span></span><span style="display:flex;"><span>5. Vérifiez les températures CPU/GPU
+</span></span></code></pre></div><h4 id="plantages-fréquents">
+<a class="header-anchor" href="#plantages-fr%c3%a9quents"></a>
+Plantages fréquents
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics:
+</span></span><span style="display:flex;"><span>1. Vérifiez l<span style="color:#e6db74">&#39;intégrité du jeu (SHA256)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. Testez sans mods
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. Réduisez l&#39;</span>accuracy level
+</span></span><span style="display:flex;"><span>4. Désactivez l<span style="color:#960050;background-color:#1e0010">&#39;</span>overclocking
+</span></span><span style="display:flex;"><span>5. Testez avec une version antérieure de Yuzu
+</span></span></code></pre></div><h4 id="audio-désynchronisé">
+<a class="header-anchor" href="#audio-d%c3%a9synchronis%c3%a9"></a>
+Audio désynchronisé
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Changez Output Engine <span style="color:#f92672">(</span>auto → WASAPI<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Ajustez le buffer audio
+</span></span><span style="display:flex;"><span>3. Vérifiez les pilotes audio
+</span></span><span style="display:flex;"><span>4. Désactivez les effets audio Windows
+</span></span></code></pre></div><h4 id="graphismes-corrompus">
+<a class="header-anchor" href="#graphismes-corrompus"></a>
+Graphismes corrompus
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections:
+</span></span><span style="display:flex;"><span>1. Supprimez le cache shaders
+</span></span><span style="display:flex;"><span>2. Changez d<span style="color:#960050;background-color:#1e0010">&#39;</span>API graphique <span style="color:#f92672">(</span>Vulkan ↔ OpenGL<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Mettez à jour les pilotes GPU
+</span></span><span style="display:flex;"><span>4. Réduisez Accuracy Level
+</span></span><span style="display:flex;"><span>5. Désactivez ASTC decoding temporairement
+</span></span></code></pre></div><h2 id="-yuzu-sur-autres-plateformes">
+<a class="header-anchor" href="#-yuzu-sur-autres-plateformes"></a>
+📱 Yuzu sur autres plateformes
+</h2><h3 id="yuzu-android">
+<a class="header-anchor" href="#yuzu-android"></a>
+Yuzu Android
+</h3><h4 id="prérequis">
+<a class="header-anchor" href="#pr%c3%a9requis"></a>
+Prérequis
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 8.0+ <span style="color:#f92672">(</span>API 26<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 855+ ou Exynos 990+
+</span></span><span style="display:flex;"><span>- 8GB RAM minimum <span style="color:#f92672">(</span>12GB recommandé<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- 64GB stockage libre
+</span></span></code></pre></div><h4 id="installation">
+<a class="header-anchor" href="#installation"></a>
+Installation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Téléchargez depuis Google Play Store
+</span></span><span style="display:flex;"><span>2. Ou APK depuis GitHub <span style="color:#f92672">(</span>versions EA<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Configurez les permissions
+</span></span><span style="display:flex;"><span>4. Transférez clés et firmware
+</span></span></code></pre></div><h4 id="optimisations-android">
+<a class="header-anchor" href="#optimisations-android"></a>
+Optimisations Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU Backend: JIT <span style="color:#f92672">(</span>plus rapide<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- GPU Driver: Custom <span style="color:#f92672">(</span>si disponible<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x <span style="color:#f92672">(</span>720p natif<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Skip Presenting Duplicate Frames: ✅
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contrôles:
+</span></span><span style="display:flex;"><span>- Overlay personnalisable
+</span></span><span style="display:flex;"><span>- Support manettes Bluetooth
+</span></span><span style="display:flex;"><span>- Sensibilité gyroscope réglable
+</span></span></code></pre></div><h3 id="yuzu-linux">
+<a class="header-anchor" href="#yuzu-linux"></a>
+Yuzu Linux
+</h3><h4 id="installation-ubuntudebian">
+<a class="header-anchor" href="#installation-ubuntudebian"></a>
+Installation Ubuntu/Debian
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ajout du PPA</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:yuzu-emu/yuzu
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install yuzu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ou AppImage</span>
+</span></span><span style="display:flex;"><span>wget https://github.com/yuzu-emu/yuzu-mainline/releases/latest/download/yuzu-*.AppImage
+</span></span><span style="display:flex;"><span>chmod +x yuzu-*.AppImage
+</span></span></code></pre></div><h4 id="installation-arch-linux">
+<a class="header-anchor" href="#installation-arch-linux"></a>
+Installation Arch Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis AUR</span>
+</span></span><span style="display:flex;"><span>yay -S yuzu-mainline-git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ou</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S yuzu
+</span></span></code></pre></div><h4 id="optimisations-linux">
+<a class="header-anchor" href="#optimisations-linux"></a>
+Optimisations Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pilotes propriétaires NVIDIA</span>
+</span></span><span style="display:flex;"><span>sudo apt install nvidia-driver-515 vulkan-utils
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mesa pour AMD (dernière version)</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:kisak/kisak-mesa
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Performance CPU</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;performance&#39;</span> | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+</span></span></code></pre></div><h2 id="-comparatif-détaillé-avec-les-concurrents">
+<a class="header-anchor" href="#-comparatif-d%c3%a9taill%c3%a9-avec-les-concurrents"></a>
+📚 Comparatif détaillé avec les concurrents
+</h2><table>
+  <thead>
+      <tr>
+          <th>Caractéristique</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+          <th>SkyNX</th>
+          <th>Egg NS</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Performance générale</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Compatibilité jeux</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Stabilité</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Facilité d&rsquo;utilisation</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Support mods</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Développement actif</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Support mobile</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="points-forts-de-yuzu">
+<a class="header-anchor" href="#points-forts-de-yuzu"></a>
+Points forts de Yuzu
+</h3><ul>
+<li><strong>Performance</strong> : Généralement plus rapide que Ryujinx</li>
+<li><strong>Support Android</strong> : Excellent émulateur mobile</li>
+<li><strong>Communauté</strong> : Large base d&rsquo;utilisateurs et mods</li>
+<li><strong>Early Access</strong> : Fonctionnalités avancées pour les supporters</li>
+</ul>
+<h3 id="points-faibles-de-yuzu">
+<a class="header-anchor" href="#points-faibles-de-yuzu"></a>
+Points faibles de Yuzu
+</h3><ul>
+<li><strong>Stabilité</strong> : Parfois moins stable que Ryujinx</li>
+<li><strong>Configuration</strong> : Plus complexe à optimiser</li>
+<li><strong>Compatibilité</strong> : Quelques jeux moins bien supportés</li>
+</ul>
+<h2 id="-conseils-avancés-et-astuces">
+<a class="header-anchor" href="#-conseils-avanc%c3%a9s-et-astuces"></a>
+🎯 Conseils avancés et astuces
+</h2><h3 id="gestion-des-sauvegardes">
+<a class="header-anchor" href="#gestion-des-sauvegardes"></a>
+Gestion des sauvegardes
+</h3><h4 id="localisation-des-sauvegardes">
+<a class="header-anchor" href="#localisation-des-sauvegardes"></a>
+Localisation des sauvegardes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Windows</span>
+</span></span><span style="display:flex;"><span>%APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\n</span>and<span style="color:#ae81ff">\u</span>ser<span style="color:#ae81ff">\s</span>ave<span style="color:#ae81ff">\a</span>ccount<span style="color:#ae81ff">\[</span>user-id<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>title-id<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Linux</span>
+</span></span><span style="display:flex;"><span>~/.local/share/yuzu/nand/user/save/account/<span style="color:#f92672">[</span>user-id<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>title-id<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Android</span>
+</span></span><span style="display:flex;"><span>Android/data/org.yuzu.yuzu_emu/files/nand/user/save/
+</span></span></code></pre></div><h4 id="sauvegarde-automatique">
+<a class="header-anchor" href="#sauvegarde-automatique"></a>
+Sauvegarde automatique
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Script Windows (PowerShell)</span>
+</span></span><span style="display:flex;"><span>$source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$env<span style="color:#e6db74">:APPDATA\yuzu\nand\user\save&#34;</span>
+</span></span><span style="display:flex;"><span>$destination <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\Backup\Yuzu\Saves\$(Get-Date -f &#39;yyyy-MM-dd&#39;)&#34;</span>
+</span></span><span style="display:flex;"><span>Copy-Item -Recurse $source $destination
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Script Linux (bash)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>cp -r ~/.local/share/yuzu/nand/user/save/ ~/backup/yuzu/saves/<span style="color:#66d9ef">$(</span>date +%Y-%m-%d<span style="color:#66d9ef">)</span>/
+</span></span></code></pre></div><h3 id="transfert-de-sauvegardes-switch--yuzu">
+<a class="header-anchor" href="#transfert-de-sauvegardes-switch--yuzu"></a>
+Transfert de sauvegardes Switch ↔ Yuzu
+</h3><h4 id="depuis-la-switch">
+<a class="header-anchor" href="#depuis-la-switch"></a>
+Depuis la Switch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec Checkpoint (Homebrew)</span>
+</span></span><span style="display:flex;"><span>1. Dump de la sauvegarde sur Switch
+</span></span><span style="display:flex;"><span>2. Transfert via FTP/USB
+</span></span><span style="display:flex;"><span>3. Placement dans le dossier Yuzu approprié
+</span></span><span style="display:flex;"><span>4. Conversion du format si nécessaire
+</span></span></code></pre></div><h4 id="vers-la-switch">
+<a class="header-anchor" href="#vers-la-switch"></a>
+Vers la Switch
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec Checkpoint (Homebrew)</span>
+</span></span><span style="display:flex;"><span>1. Export de la sauvegarde Yuzu
+</span></span><span style="display:flex;"><span>2. Conversion au format Switch
+</span></span><span style="display:flex;"><span>3. Injection via Checkpoint
+</span></span><span style="display:flex;"><span>4. Synchronisation sur la console
+</span></span></code></pre></div><h3 id="optimisation-du-cache-shaders">
+<a class="header-anchor" href="#optimisation-du-cache-shaders"></a>
+Optimisation du cache shaders
+</h3><h4 id="pré-compilation">
+<a class="header-anchor" href="#pr%c3%a9-compilation"></a>
+Pré-compilation
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Téléchargement de cache pré-buildés</span>
+</span></span><span style="display:flex;"><span>1. Visitez les communautés Yuzu <span style="color:#f92672">(</span>Reddit, Discord<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Téléchargez les caches pour vos jeux
+</span></span><span style="display:flex;"><span>3. Placez dans: %APPDATA%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\s</span>hader<span style="color:#ae81ff">\[</span>API<span style="color:#f92672">]</span><span style="color:#ae81ff">\[</span>Game<span style="color:#f92672">]</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>4. Relancez le jeu <span style="color:#f92672">(</span>compilation instantanée<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="maintenance-du-cache">
+<a class="header-anchor" href="#maintenance-du-cache"></a>
+Maintenance du cache
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Nettoyage régulier</span>
+</span></span><span style="display:flex;"><span>1. Supprimez les caches des jeux non utilisés
+</span></span><span style="display:flex;"><span>2. Videz le cache en cas de problèmes graphiques
+</span></span><span style="display:flex;"><span>3. Sauvegardez les caches longs à compiler
+</span></span></code></pre></div><h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels">
+<a class="header-anchor" href="#sites-officiels"></a>
+Sites officiels
+</h3><ul>
+<li><a href="https://yuzu-emu.org/">🏠 Site officiel Yuzu</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu">📱 Yuzu Android</a></li>
+<li><a href="https://yuzu-emu.org/help/early-access/">💰 Early Access</a></li>
+</ul>
+<h3 id="ressources-communautaires">
+<a class="header-anchor" href="#ressources-communautaires"></a>
+Ressources communautaires
+</h3><ul>
+<li><a href="https://yuzu-emu.org/game/">📊 Base de compatibilité</a></li>
+<li><a href="https://discord.gg/u77vRWY">💬 Discord officiel</a></li>
+<li><a href="https://www.reddit.com/r/yuzu/">🗨️ Reddit r/yuzu</a></li>
+<li><a href="https://www.youtube.com/results?search_query=yuzu&#43;guide">📹 Guides YouTube</a></li>
+</ul>
+<h3 id="mods-et-ressources">
+<a class="header-anchor" href="#mods-et-ressources"></a>
+Mods et ressources
+</h3><ul>
+<li><a href="https://gamebanana.com/games/6386">🎮 GameBanana Yuzu</a></li>
+<li><a href="https://www.nxmods.com/">🔧 NXMods</a></li>
+<li><a href="https://moddinghaven.com/">📦 ModdingHaven</a></li>
+</ul>
+<h3 id="outils-utiles">
+<a class="header-anchor" href="#outils-utiles"></a>
+Outils utiles
+</h3><ul>
+<li><a href="https://github.com/shchmue/Lockpick_RCM">🔑 Lockpick_RCM</a> - Extraction des clés</li>
+<li><a href="https://github.com/eliboa/TegraRcmGUI">💾 TegraRcmGUI</a> - Homebrew Switch</li>
+<li><a href="https://github.com/aboood40091/BNTX-Editor">🎨 BNTX Editor</a> - Édition textures</li>
+<li><a href="https://github.com/KillzXGaming/Switch-Toolbox">🔧 Switch Toolbox</a> - Multi-outils</li>
+</ul>
+<h2 id="-faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+❓ FAQ - Questions fréquemment posées
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Yuzu est-il légal ?</strong>
+<strong>R :</strong> Oui, l&rsquo;émulation est légale. Cependant, vous devez posséder légalement tous les jeux et firmware que vous utilisez.</p>
+<p><strong>Q : Yuzu Early Access en vaut-il la peine ?</strong>
+<strong>R :</strong> Si vous jouez régulièrement et voulez les dernières optimisations, oui. Pour un usage occasionnel, la version gratuite suffit.</p>
+<p><strong>Q : Puis-je jouer en ligne avec Yuzu ?</strong>
+<strong>R :</strong> Non, les fonctionnalités en ligne ne sont pas supportées et ne le seront probablement jamais.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou OpenGL ?</strong>
+<strong>R :</strong> Vulkan est généralement plus performant sur GPU récents. OpenGL peut être plus stable sur certains systèmes.</p>
+<p><strong>Q : Combien de RAM minimum ?</strong>
+<strong>R :</strong> 8GB minimum, 16GB recommandé, 32GB pour les jeux les plus lourds avec mods.</p>
+<p><strong>Q : Mon GPU est-il compatible ?</strong>
+<strong>R :</strong> Vulkan : GTX 1060/RX 580 minimum. OpenGL : Tout GPU supportant OpenGL 4.6.</p>
+<h3 id="résolution-de-problèmes">
+<a class="header-anchor" href="#r%c3%a9solution-de-probl%c3%a8mes"></a>
+Résolution de problèmes
+</h3><p><strong>Q : Le jeu ne se lance pas du tout</strong>
+<strong>R :</strong> Vérifiez dans cet ordre : firmware installé → clés présentes → format de jeu valide → paramètres par défaut.</p>
+<p><strong>Q : FPS très bas sur un PC puissant</strong>
+<strong>R :</strong> Activez Multicore CPU, utilisez Vulkan, fermez les autres applications, vérifiez les températures.</p>
+<p><strong>Q : Audio crachotant</strong>
+<strong>R :</strong> Changez l&rsquo;engine audio, réduisez la latence, fermez les applications audio en arrière-plan.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Yuzu est un émulateur Nintendo Switch extraordinaire qui offre :</p>
+<ul>
+<li>✅ <strong>Performances excellentes</strong> sur matériel adapté</li>
+<li>✅ <strong>Support mobile</strong> unique dans l&rsquo;écosystème Switch</li>
+<li>✅ <strong>Communauté active</strong> avec mods et optimisations</li>
+<li>✅ <strong>Développement continu</strong> avec mises à jour fréquentes</li>
+<li>✅ <strong>Flexibilité</strong> de configuration avancée</li>
+</ul>
+<p>Avec ce guide complet, vous avez maintenant toutes les clés pour :</p>
+<ul>
+<li><strong>Installer</strong> et configurer Yuzu optimalement</li>
+<li><strong>Optimiser</strong> les performances selon votre matériel</li>
+<li><strong>Résoudre</strong> les problèmes courants</li>
+<li><strong>Profiter</strong> de vos jeux Nintendo Switch avec une qualité supérieure</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Reminder</strong> : Respectez toujours les droits d&rsquo;auteur. N&rsquo;utilisez que des jeux que vous possédez légalement et soutenez les développeurs en achetant leurs créations.</p></blockquote>
+<p><strong>Bon gaming avec Yuzu ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://axekin.com/fr/post/yuzu/">https://axekin.com/fr/post/yuzu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Guide complet : Installation et configuration de Yuzu</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-02 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/fr/post/yuzu/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/fr/post/yuzu/&amp;text=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Yuzu&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/fr/post/yuzu/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Yuzu&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20installer,%20configurer%20et%20utiliser%20l%27%c3%a9mulateur%20Nintendo%20Switch%20Yuzu&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/fr/post/yuzu/&amp;title=Guide%20complet%20:%20Installation%20et%20configuration%20de%20Yuzu" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide complet : Installation et configuration de Yuzu">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/yuzu"
+        rel="tag"
+        >YUZU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo-switch"
+        rel="tag"
+        >NINTENDO SWITCH</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/%c3%a9mulation"
+        rel="tag"
+        >ÉMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-right"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Guide complet : Installation et configuration de Xenia"
+              class="lazyload"
+            /><a href="/fr/post/xenia/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Guide complet : Installation et configuration de Xenia</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;28.3k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:19</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-yuzu">🎮 Introduction à Yuzu</a></li>
+    <li><a href="#-prérequis-système">📋 Prérequis système</a>
+      <ul>
+        <li><a href="#configuration-minimale">Configuration minimale</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#configuration-optimale">Configuration optimale</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-1--téléchargement-de-yuzu">🔧 Étape 1 : Téléchargement de Yuzu</a>
+      <ul>
+        <li><a href="#option-1--version-mainline-stable">Option 1 : Version Mainline (Stable)</a></li>
+        <li><a href="#option-2--version-early-access-premium">Option 2 : Version Early Access (Premium)</a></li>
+        <li><a href="#option-3--appimage-linux">Option 3 : AppImage (Linux)</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a></li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#installation-des-prérequis">Installation des prérequis</a></li>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--installation-des-clés-et-firmware">🎯 Étape 4 : Installation des clés et firmware</a>
+      <ul>
+        <li><a href="#installation-des-clés-de-chiffrement">Installation des clés de chiffrement</a></li>
+        <li><a href="#installation-du-firmware-nintendo-switch">Installation du firmware Nintendo Switch</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--configuration-optimale">⚙️ Étape 5 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-système">Configuration système</a></li>
+        <li><a href="#paramètres-graphiques-optimaux">Paramètres graphiques optimaux</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-6--ajout-et-optimisation-des-jeux">🎮 Étape 6 : Ajout et optimisation des jeux</a>
+      <ul>
+        <li><a href="#formats-supportés">Formats supportés</a></li>
+        <li><a href="#ajouter-des-jeux">Ajouter des jeux</a></li>
+        <li><a href="#installation-des-mises-à-jour">Installation des mises à jour</a></li>
+        <li><a href="#installation-des-dlc">Installation des DLC</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-avancée">🚀 Optimisation avancée</a>
+      <ul>
+        <li><a href="#paramètres-par-jeu">Paramètres par jeu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-installation-et-gestion-des-mods">🛠️ Installation et gestion des mods</a>
+      <ul>
+        <li><a href="#structure-des-mods">Structure des mods</a></li>
+        <li><a href="#installation-étape-par-étape">Installation étape par étape</a></li>
+        <li><a href="#mods-populaires-par-jeu">Mods populaires par jeu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-optimisation-des-performances">📊 Optimisation des performances</a>
+      <ul>
+        <li><a href="#benchmark-et-monitoring">Benchmark et monitoring</a></li>
+        <li><a href="#optimisations-système">Optimisations système</a></li>
+      </ul>
+    </li>
+    <li><a href="#-résolution-des-problèmes">🔧 Résolution des problèmes</a>
+      <ul>
+        <li><a href="#problèmes-courants-et-solutions">Problèmes courants et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-yuzu-sur-autres-plateformes">📱 Yuzu sur autres plateformes</a>
+      <ul>
+        <li><a href="#yuzu-android">Yuzu Android</a></li>
+        <li><a href="#yuzu-linux">Yuzu Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#-comparatif-détaillé-avec-les-concurrents">📚 Comparatif détaillé avec les concurrents</a>
+      <ul>
+        <li><a href="#points-forts-de-yuzu">Points forts de Yuzu</a></li>
+        <li><a href="#points-faibles-de-yuzu">Points faibles de Yuzu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conseils-avancés-et-astuces">🎯 Conseils avancés et astuces</a>
+      <ul>
+        <li><a href="#gestion-des-sauvegardes">Gestion des sauvegardes</a></li>
+        <li><a href="#transfert-de-sauvegardes-switch--yuzu">Transfert de sauvegardes Switch ↔ Yuzu</a></li>
+        <li><a href="#optimisation-du-cache-shaders">Optimisation du cache shaders</a></li>
+      </ul>
+    </li>
+    <li><a href="#-ressources-et-communauté">🌐 Ressources et communauté</a>
+      <ul>
+        <li><a href="#sites-officiels">Sites officiels</a></li>
+        <li><a href="#ressources-communautaires">Ressources communautaires</a></li>
+        <li><a href="#mods-et-ressources">Mods et ressources</a></li>
+        <li><a href="#outils-utiles">Outils utiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#résolution-de-problèmes">Résolution de problèmes</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Guide complet : Installation et configuration de Yuzu",
+          url: "https:\/\/axekin.com\/fr\/post\/yuzu\/",
+          description: "Tutoriel détaillé pour installer, configurer et utiliser l\u0027émulateur Nintendo Switch Yuzu",
+          cover: "https:\/\/axekin.com\/images\/banner.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

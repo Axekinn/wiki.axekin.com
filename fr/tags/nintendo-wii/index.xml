@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo Wii on Wiki de Axekin</title>
+    <link>https://axekin.com/fr/tags/nintendo-wii/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://axekin.com/fr/tags/nintendo-wii/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Guide complet : Installation et configuration de Dolphin</title>
+      <link>https://axekin.com/fr/post/dolphin/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://axekin.com/fr/post/dolphin/</guid>
+      <description>
+        <![CDATA[<h1>Guide complet : Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-dolphin">
+<a class="header-anchor" href="#-introduction-%c3%a0-dolphin"></a>
+🎮 Introduction à Dolphin
+</h2><p><strong>Dolphin</strong> est l&rsquo;émulateur Nintendo GameCube et Wii le plus avancé au monde. Développé depuis 2003, il offre une compatibilité quasi-parfaite, des améliorations graphiques spectaculaires et des fonctionnalités uniques comme le jeu en ligne et la réalité virtuelle.</p>
+<blockquote>
+<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
+<h2 id="-prérequis-système">
+<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
+📋 Prérequis système
+</h2><h3 id="configuration-minimale">
+<a class="header-anchor" href="#configuration-minimale"></a>
+Configuration minimale
+</h3><ul>
+<li><strong>OS</strong> : Windows 10 (64-bit) / Linux / macOS / Android</li>
+<li><strong>CPU</strong> : Intel Core i5-4690 / AMD Ryzen 3 1200</li>
+<li><strong>RAM</strong> : 4 GB</li>
+<li><strong>GPU</strong> : DirectX 11.1 compatible (Intel HD 4000+)</li>
+<li><strong>Stockage</strong> : 4 GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i5-8600K / AMD Ryzen 5 2600X</li>
+<li><strong>RAM</strong> : 8 GB</li>
+<li><strong>GPU</strong> : NVIDIA GTX 1060 / AMD RX 580 ou supérieur</li>
+<li><strong>Stockage</strong> : SSD avec 20+ GB d&rsquo;espace libre</li>
+</ul>
+<h3 id="configuration-optimale-4kvr">
+<a class="header-anchor" href="#configuration-optimale-4kvr"></a>
+Configuration optimale (4K/VR)
+</h3><ul>
+<li><strong>CPU</strong> : Intel Core i7-10700K / AMD Ryzen 7 3700X</li>
+<li><strong>RAM</strong> : 16 GB</li>
+<li><strong>GPU</strong> : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur</li>
+<li><strong>Stockage</strong> : NVMe SSD avec 50+ GB d&rsquo;espace libre</li>
+</ul>
+<h2 id="-étape-1--téléchargement-de-dolphin">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-dolphin"></a>
+🔧 Étape 1 : Téléchargement de Dolphin
+</h2><h3 id="option-1--version-stable-recommandée">
+<a class="header-anchor" href="#option-1--version-stable-recommand%c3%a9e"></a>
+Option 1 : Version Stable (Recommandée)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download Dolphin 5.0&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>dolphin-x64-5.0.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Dolphin</code>)</li>
+</ol>
+<h3 id="option-2--versions-betadevelopment">
+<a class="header-anchor" href="#option-2--versions-betadevelopment"></a>
+Option 2 : Versions Beta/Development
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Builds de développement avec nouvelles fonctionnalités</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/dev/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Avantages:
+</span></span><span style="display:flex;"><span>- Dernières améliorations
+</span></span><span style="display:flex;"><span>- Nouveaux correctifs
+</span></span><span style="display:flex;"><span>- Fonctionnalités expérimentales
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Inconvénients:
+</span></span><span style="display:flex;"><span>- Potentiellement instable
+</span></span><span style="display:flex;"><span>- Bugs possibles
+</span></span></code></pre></div><h3 id="option-3--dolphin-android">
+<a class="header-anchor" href="#option-3--dolphin-android"></a>
+Option 3 : Dolphin Android
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version mobile optimisée</span>
+</span></span><span style="display:flex;"><span>https://play.google.com/store/apps/details?id<span style="color:#f92672">=</span>org.dolphinemu.dolphinemu
+</span></span></code></pre></div><h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos fichiers avec cette structure :</p>
+<pre tabindex="0"><code>Dolphin/
+├── Dolphin.exe              # Exécutable principal
+├── games/                   # Vos ROMs et ISOs
+│   ├── GameCube/            # Jeux .iso/.gcm/.gcz
+│   ├── Wii/                 # Jeux .iso/.wbfs/.wad
+│   └── WiiWare/             # Jeux téléchargeables .wad
+├── saves/                   # Sauvegardes exportées
+│   ├── GC/                  # Cartes mémoire GameCube
+│   └── Wii/                 # Données système Wii
+├── screenshots/             # Captures d&#39;écran
+├── textures/                # Texture packs HD
+│   └── [Game-ID]/           # Textures par jeu
+├── maps/                    # Cartes mémoire virtuelles
+├── wfs/                     # Système de fichiers Wii U
+└── load/                    # Codes AR et mods
+    ├── Riivolution/         # Mods Riivolution
+    └── Gecko/               # Codes Gecko
+</code></pre><h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="installation-des-prérequis-windows">
+<a class="header-anchor" href="#installation-des-pr%c3%a9requis-windows"></a>
+Installation des prérequis Windows
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visual C++ Redistributable 2022</span>
+</span></span><span style="display:flex;"><span>https://aka.ms/vs/17/release/vc_redist.x64.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DirectX End-User Runtime</span>
+</span></span><span style="display:flex;"><span>https://www.microsoft.com/download/details.aspx?id<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>
+</span></span></code></pre></div><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>Dolphin.exe</code></li>
+<li><strong>Acceptez</strong> la configuration par défaut</li>
+<li><strong>Configurez</strong> le dossier des jeux : <code>Config → Paths</code></li>
+<li><strong>Ajoutez</strong> vos dossiers de ROMs</li>
+</ol>
+<h2 id="-étape-4--configuration-système-de-base">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-syst%c3%a8me-de-base"></a>
+🎯 Étape 4 : Configuration système de base
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Config → General
+</code></pre><h4 id="onglet-general">
+<a class="header-anchor" href="#onglet-general"></a>
+Onglet General
+</h4><ul>
+<li><strong>Enable Dual Core</strong> : ✅ Activé (améliore grandement les performances)</li>
+<li><strong>Enable Idle Skipping</strong> : ✅ Activé</li>
+<li><strong>Enable Cheats</strong> : ✅ Activé (si vous voulez utiliser des codes)</li>
+<li><strong>CPU Emulator Engine</strong> : JIT Recompiler (64-bit) [le plus rapide]</li>
+</ul>
+<h4 id="onglet-interface">
+<a class="header-anchor" href="#onglet-interface"></a>
+Onglet Interface
+</h4><ul>
+<li><strong>Confirm on Stop</strong> : ✅ Activé (évite les arrêts accidentels)</li>
+<li><strong>Use Panic Handlers</strong> : ✅ Activé</li>
+<li><strong>On-Screen Display Messages</strong> : ✅ Activé</li>
+<li><strong>Show Active Title in Window Title</strong> : ✅ Activé</li>
+</ul>
+<h3 id="configuration-des-contrôleurs">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4leurs"></a>
+Configuration des contrôleurs
+</h3><h4 id="manette-gamecube">
+<a class="header-anchor" href="#manette-gamecube"></a>
+Manette GameCube
+</h4><pre tabindex="0"><code>Controllers → GameCube Controllers
+</code></pre><p><strong>Configuration recommandée :</strong></p>
+<ul>
+<li><strong>Port 1</strong> : Standard Controller</li>
+<li><strong>Device</strong> : Votre manette (Xbox, PlayStation, etc.)</li>
+</ul>
+<p><strong>Mapping automatique :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> sur &ldquo;Configure&rdquo; pour le Port 1</li>
+<li><strong>Sélectionnez</strong> votre device</li>
+<li><strong>Cliquez</strong> sur &ldquo;Auto Configure For:&rdquo;</li>
+<li><strong>Choisissez</strong> votre type de manette</li>
+<li><strong>Testez</strong> tous les boutons</li>
+</ol>
+<h4 id="wiimote">
+<a class="header-anchor" href="#wiimote"></a>
+Wiimote
+</h4><pre tabindex="0"><code>Controllers → Wiimote
+</code></pre><p><strong>Options disponibles :</strong></p>
+<ul>
+<li><strong>None</strong> : Pas de Wiimote</li>
+<li><strong>Emulated Wiimote</strong> : Émulation avec manette standard</li>
+<li><strong>Real Wiimote</strong> : Vraie Wiimote via Bluetooth</li>
+</ul>
+<p><strong>Configuration Emulated Wiimote :</strong></p>
+<pre tabindex="0"><code>1. Sélectionnez &#34;Emulated Wiimote&#34; pour Wiimote 1
+2. Configure → Extension: Nunchuk (si requis)
+3. Mappez les contrôles :
+   - A → A (manette)
+   - B → B (manette)
+   - D-Pad → D-Pad
+   - Nunchuk Stick → Stick analogique
+   - Motion Controls → Gyroscope (si supporté)
+</code></pre><h2 id="-étape-5--configuration-graphique-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-graphique-optimale"></a>
+⚙️ Étape 5 : Configuration graphique optimale
+</h2><h3 id="paramètres-graphiques-de-base">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-de-base"></a>
+Paramètres graphiques de base
+</h3><pre tabindex="0"><code>Graphics → General
+</code></pre><h4 id="backend-graphics">
+<a class="header-anchor" href="#backend-graphics"></a>
+Backend Graphics
+</h4><ul>
+<li><strong>Backend</strong> : Vulkan (recommandé) ou Direct3D 11/12</li>
+<li><strong>Adapter</strong> : Votre GPU principal</li>
+<li><strong>Fullscreen Resolution</strong> : Votre résolution native</li>
+<li><strong>Aspect Ratio</strong> : Auto ou Force 16:9</li>
+</ul>
+<h4 id="améliorations-visuelles">
+<a class="header-anchor" href="#am%c3%a9liorations-visuelles"></a>
+Améliorations visuelles
+</h4><pre tabindex="0"><code>Graphics → Enhancements
+</code></pre><p><strong>Améliorations essentielles :</strong></p>
+<ul>
+<li><strong>Internal Resolution</strong> : 2x Native (1056x528) ou plus selon votre GPU</li>
+<li><strong>Anti-Aliasing</strong> : 4x MSAA ou plus</li>
+<li><strong>Anisotropic Filtering</strong> : 16x</li>
+<li><strong>Scaled EFB Copy</strong> : ✅ Activé</li>
+<li><strong>Per-Pixel Lighting</strong> : ✅ Activé (améliore l&rsquo;éclairage)</li>
+<li><strong>Force Texture Filtering</strong> : ✅ Activé</li>
+<li><strong>Widescreen Hack</strong> : ✅ Activé (pour les jeux sans support natif 16:9)</li>
+</ul>
+<h3 id="paramètres-avancés">
+<a class="header-anchor" href="#param%c3%a8tres-avanc%c3%a9s"></a>
+Paramètres avancés
+</h3><pre tabindex="0"><code>Graphics → Advanced
+</code></pre><p><strong>Configuration optimale :</strong></p>
+<ul>
+<li><strong>Show FPS</strong> : ✅ Activé (monitoring performance)</li>
+<li><strong>Enable Progressive Scan</strong> : ✅ Activé</li>
+<li><strong>Backend Multithreading</strong> : ✅ Activé</li>
+<li><strong>Prefer Exclusive Fullscreen</strong> : ✅ Activé (réduit la latence)</li>
+</ul>
+<p><strong>Paramètres de précision :</strong></p>
+<ul>
+<li><strong>Accuracy</strong> : Safe (recommandé) ou Fast (si problèmes de performance)</li>
+<li><strong>GPU Texture Decoding</strong> : ✅ Activé</li>
+<li><strong>Store EFB Copies to Texture Only</strong> : ✅ Activé (économise VRAM)</li>
+</ul>
+<h2 id="-étape-6--ajout-et-gestion-des-jeux">
+<a class="header-anchor" href="#-%c3%a9tape-6--ajout-et-gestion-des-jeux"></a>
+🎮 Étape 6 : Ajout et gestion des jeux
+</h2><h3 id="formats-supportés">
+<a class="header-anchor" href="#formats-support%c3%a9s"></a>
+Formats supportés
+</h3><h4 id="gamecube">
+<a class="header-anchor" href="#gamecube"></a>
+GameCube
+</h4><ul>
+<li><strong>.iso</strong> : Image disque standard (recommandé)</li>
+<li><strong>.gcm</strong> : GameCube Master (identique à .iso)</li>
+<li><strong>.gcz</strong> : GameCube compressé (économise l&rsquo;espace)</li>
+<li><strong>.ciso</strong> : Compressed ISO</li>
+<li><strong>.wbfs</strong> : Rare pour GameCube</li>
+</ul>
+<h4 id="wii">
+<a class="header-anchor" href="#wii"></a>
+Wii
+</h4><ul>
+<li><strong>.iso</strong> : Image disque standard</li>
+<li><strong>.wbfs</strong> : Wii Backup File System (format natif)</li>
+<li><strong>.wad</strong> : WiiWare/Virtual Console</li>
+<li><strong>.dol/.elf</strong> : Homebrew Wii</li>
+</ul>
+<h3 id="dumping-de-vos-propres-jeux">
+<a class="header-anchor" href="#dumping-de-vos-propres-jeux"></a>
+Dumping de vos propres jeux
+</h3><h4 id="gamecube-avec-wii-softmoddée">
+<a class="header-anchor" href="#gamecube-avec-wii-softmodd%c3%a9e"></a>
+GameCube (avec Wii softmoddée)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec CleanRip</span>
+</span></span><span style="display:flex;"><span>1. Installez Homebrew Channel sur votre Wii
+</span></span><span style="display:flex;"><span>2. Téléchargez CleanRip
+</span></span><span style="display:flex;"><span>3. Insérez le disque GameCube
+</span></span><span style="display:flex;"><span>4. Lancez CleanRip → Dump vers SD/USB
+</span></span><span style="display:flex;"><span>5. Transférez le fichier .iso sur PC
+</span></span></code></pre></div><h4 id="wii-avec-cfw">
+<a class="header-anchor" href="#wii-avec-cfw"></a>
+Wii (avec CFW)
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Avec USB Loader GX</span>
+</span></span><span style="display:flex;"><span>1. Installez CFW <span style="color:#f92672">(</span>LetterBomb + HackMii<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Installez USB Loader GX
+</span></span><span style="display:flex;"><span>3. Connectez disque dur USB formaté WBFS
+</span></span><span style="display:flex;"><span>4. Dump des jeux depuis USB Loader GX
+</span></span><span style="display:flex;"><span>5. Copiez les .wbfs sur PC
+</span></span></code></pre></div><h3 id="organisation-des-jeux-dans-dolphin">
+<a class="header-anchor" href="#organisation-des-jeux-dans-dolphin"></a>
+Organisation des jeux dans Dolphin
+</h3><h4 id="ajout-automatique">
+<a class="header-anchor" href="#ajout-automatique"></a>
+Ajout automatique
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. Config → Paths
+</span></span><span style="display:flex;"><span>2. Ajoutez vos dossiers de jeux
+</span></span><span style="display:flex;"><span>3. ✅ Cochez <span style="color:#e6db74">&#34;Search Subfolders&#34;</span>
+</span></span><span style="display:flex;"><span>4. Dolphin scanne et affiche automatiquement
+</span></span></code></pre></div><h4 id="métadonnées-et-artwork">
+<a class="header-anchor" href="#m%c3%a9tadonn%c3%a9es-et-artwork"></a>
+Métadonnées et artwork
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ajout automatique via GameTDB</span>
+</span></span><span style="display:flex;"><span>1. Clic droit sur un jeu → Properties
+</span></span><span style="display:flex;"><span>2. Info tab → Update... 
+</span></span><span style="display:flex;"><span>3. Télécharge description, artwork, screenshots
+</span></span></code></pre></div><h2 id="-optimisation-avancée-par-type-de-jeu">
+<a class="header-anchor" href="#-optimisation-avanc%c3%a9e-par-type-de-jeu"></a>
+🚀 Optimisation avancée par type de jeu
+</h2><h3 id="super-mario-galaxy-1--2">
+<a class="header-anchor" href="#super-mario-galaxy-1--2"></a>
+Super Mario Galaxy 1 &amp; 2
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration optimale</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 3x-4x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 8x MSAA
+</span></span><span style="display:flex;"><span>- Anisotropic Filtering: 16x
+</span></span><span style="display:flex;"><span>- Per-Pixel Lighting: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GameINI tweaks:
+</span></span><span style="display:flex;"><span>- EFBToTextureEnable <span style="color:#f92672">=</span> True
+</span></span><span style="display:flex;"><span>- SafeTextureCacheColorSamples <span style="color:#f92672">=</span> <span style="color:#ae81ff">512</span>
+</span></span></code></pre></div><h3 id="the-legend-of-zelda-twilight-princess">
+<a class="header-anchor" href="#the-legend-of-zelda-twilight-princess"></a>
+The Legend of Zelda: Twilight Princess
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Paramètres spéciaux</span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Scaled EFB Copy: ✅ Activé
+</span></span><span style="display:flex;"><span>- Store EFB Copies to Texture Only: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Fixes spécifiques:
+</span></span><span style="display:flex;"><span>- EFBAccessEnable <span style="color:#f92672">=</span> True <span style="color:#f92672">(</span>pour les graphismes corrects<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- EFBEmulateFormatChanges <span style="color:#f92672">=</span> True
+</span></span></code></pre></div><h3 id="metroid-prime-trilogy">
+<a class="header-anchor" href="#metroid-prime-trilogy"></a>
+Metroid Prime Trilogy
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration recommandée</span>
+</span></span><span style="display:flex;"><span>Controls:
+</span></span><span style="display:flex;"><span>- Wiimote → Emulated
+</span></span><span style="display:flex;"><span>- Extension: None
+</span></span><span style="display:flex;"><span>- Motion Plus: ✅ Si MP3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x Native <span style="color:#f92672">(</span>jeu gourmand<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 4x MSAA
+</span></span><span style="display:flex;"><span>- Anisotropic Filtering: 16x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Activé
+</span></span><span style="display:flex;"><span>- Idle Skipping: ✅ Activé
+</span></span></code></pre></div><h3 id="super-smash-bros-melee">
+<a class="header-anchor" href="#super-smash-bros-melee"></a>
+Super Smash Bros. Melee
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Configuration compétitive</span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ❌ Désactivé <span style="color:#f92672">(</span>pour la stabilité netplay<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Idle Skipping: ❌ Désactivé
+</span></span><span style="display:flex;"><span>- CPU Clock Override: 100% <span style="color:#f92672">(</span>pas d<span style="color:#960050;background-color:#1e0010">&#39;</span>overclock<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: Off <span style="color:#f92672">(</span>réduit latence<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- V-Sync: ❌ Désactivé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Audio:
+</span></span><span style="display:flex;"><span>- Backend: XAudio2 <span style="color:#f92672">(</span>Windows<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Latency: 2ms <span style="color:#f92672">(</span>minimum<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="mario-kart-wii">
+<a class="header-anchor" href="#mario-kart-wii"></a>
+Mario Kart Wii
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimisation courses en ligne</span>
+</span></span><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Activé
+</span></span><span style="display:flex;"><span>- MMU Speed: Fast <span style="color:#f92672">(</span>pour Wiimmfi<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Internal Resolution: 2x-3x Native
+</span></span><span style="display:flex;"><span>- Anti-Aliasing: 4x MSAA
+</span></span><span style="display:flex;"><span>- Widescreen Hack: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Network:
+</span></span><span style="display:flex;"><span>- Configuration Wiimmfi pour jeu en ligne
+</span></span></code></pre></div><h2 id="-fonctionnalités-avancées">
+<a class="header-anchor" href="#-fonctionnalit%c3%a9s-avanc%c3%a9es"></a>
+🌐 Fonctionnalités avancées
+</h2><h3 id="netplay-jeu-en-ligne">
+<a class="header-anchor" href="#netplay-jeu-en-ligne"></a>
+Netplay (Jeu en ligne)
+</h3><h4 id="configuration-du-netplay">
+<a class="header-anchor" href="#configuration-du-netplay"></a>
+Configuration du netplay
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Host une session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay
+</span></span><span style="display:flex;"><span>2. Host tab → Configure settings:
+</span></span><span style="display:flex;"><span>   - Game: Sélectionnez votre jeu
+</span></span><span style="display:flex;"><span>   - Players: Nombre de joueurs
+</span></span><span style="display:flex;"><span>   - Buffer: 4-8 <span style="color:#f92672">(</span>selon ping<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Start → Partagez le code de session
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Rejoindre une session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay  
+</span></span><span style="display:flex;"><span>2. Connect tab → Entrez le code
+</span></span><span style="display:flex;"><span>3. Connect et attendez la synchronisation
+</span></span></code></pre></div><h4 id="paramètres-netplay-optimaux">
+<a class="header-anchor" href="#param%c3%a8tres-netplay-optimaux"></a>
+Paramètres netplay optimaux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour une expérience stable</span>
+</span></span><span style="display:flex;"><span>General:
+</span></span><span style="display:flex;"><span>- Dual Core: ❌ Désactivé
+</span></span><span style="display:flex;"><span>- Idle Skipping: ❌ Désactivé
+</span></span><span style="display:flex;"><span>- Audio: DSP HLE <span style="color:#f92672">(</span>plus stable<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Backend: Direct3D <span style="color:#ae81ff">11</span> <span style="color:#f92672">(</span>plus stable que Vulkan<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x Native <span style="color:#f92672">(</span>réduit charge réseau<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Enhancements: Minimales
+</span></span></code></pre></div><h3 id="jeu-en-réalité-virtuelle">
+<a class="header-anchor" href="#jeu-en-r%c3%a9alit%c3%a9-virtuelle"></a>
+Jeu en réalité virtuelle
+</h3><h4 id="prérequis-vr">
+<a class="header-anchor" href="#pr%c3%a9requis-vr"></a>
+Prérequis VR
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Hardware requis</span>
+</span></span><span style="display:flex;"><span>- Casque VR compatible OpenVR <span style="color:#f92672">(</span>Valve Index, HTC Vive, etc.<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- GPU haut de gamme <span style="color:#f92672">(</span>RTX 3070+ recommandé<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- CPU puissant <span style="color:#f92672">(</span>i7-8700K+ recommandé<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="configuration-vr">
+<a class="header-anchor" href="#configuration-vr"></a>
+Configuration VR
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Activation du mode VR</span>
+</span></span><span style="display:flex;"><span>1. Config → General → Enable VR
+</span></span><span style="display:flex;"><span>2. Graphics → Backend: OpenGL <span style="color:#f92672">(</span>requis pour VR<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Graphics → Enhancements: 
+</span></span><span style="display:flex;"><span>   - Internal Resolution: 2x Native maximum
+</span></span><span style="display:flex;"><span>   - Anti-Aliasing: Désactivé <span style="color:#f92672">(</span>économise GPU<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Jeux compatibles VR</span>
+</span></span><span style="display:flex;"><span>- Metroid Prime 1, 2, <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>excellent<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- F-Zero GX <span style="color:#f92672">(</span>bon<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Mario Kart Wii <span style="color:#f92672">(</span>correct<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="texture-packs-hd">
+<a class="header-anchor" href="#texture-packs-hd"></a>
+Texture Packs HD
+</h3><h4 id="installation-de-texture-packs">
+<a class="header-anchor" href="#installation-de-texture-packs"></a>
+Installation de texture packs
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Méthode automatique</span>
+</span></span><span style="display:flex;"><span>1. Téléchargez le pack depuis forums Dolphin
+</span></span><span style="display:flex;"><span>2. Extrayez dans: Dolphin/Load/Textures/<span style="color:#f92672">[</span>GameID<span style="color:#f92672">]</span>/
+</span></span><span style="display:flex;"><span>3. Graphics → Advanced → Load Custom Textures: ✅
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création de vos propres textures</span>
+</span></span><span style="display:flex;"><span>1. Graphics → Advanced → Dump Textures: ✅
+</span></span><span style="display:flex;"><span>2. Jouez au jeu pour extraire les textures
+</span></span><span style="display:flex;"><span>3. Modifiez les fichiers .png extraits
+</span></span><span style="display:flex;"><span>4. Placez dans le dossier Load/Textures/
+</span></span></code></pre></div><h4 id="texture-packs-populaires">
+<a class="header-anchor" href="#texture-packs-populaires"></a>
+Texture packs populaires
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Zelda Wind Waker HD</span>
+</span></span><span style="display:flex;"><span>- Resolution: 4x les textures originales
+</span></span><span style="display:flex;"><span>- Effets: Améliorations d<span style="color:#960050;background-color:#1e0010">&#39;</span>éclairage
+</span></span><span style="display:flex;"><span>- Download: Forums Dolphin communauté
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Super Mario Sunshine HD</span>
+</span></span><span style="display:flex;"><span>- Textures: Upscale AI + retouches manuelles
+</span></span><span style="display:flex;"><span>- UI: Interface haute résolution
+</span></span><span style="display:flex;"><span>- Effets: Ombres améliorées
+</span></span></code></pre></div><h2 id="-dolphin-sur-autres-plateformes">
+<a class="header-anchor" href="#-dolphin-sur-autres-plateformes"></a>
+📱 Dolphin sur autres plateformes
+</h2><h3 id="dolphin-android">
+<a class="header-anchor" href="#dolphin-android"></a>
+Dolphin Android
+</h3><h4 id="prérequis-android">
+<a class="header-anchor" href="#pr%c3%a9requis-android"></a>
+Prérequis Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>- Android 9.0+ <span style="color:#f92672">(</span>API 28<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- SOC Snapdragon 855+ ou Exynos 9820+
+</span></span><span style="display:flex;"><span>- 8GB RAM minimum <span style="color:#f92672">(</span>12GB pour Wii<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- GPU Adreno 640+ ou Mali-G76+
+</span></span><span style="display:flex;"><span>- 64GB stockage libre
+</span></span></code></pre></div><h4 id="optimisations-android">
+<a class="header-anchor" href="#optimisations-android"></a>
+Optimisations Android
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance:
+</span></span><span style="display:flex;"><span>- CPU Core: JIT <span style="color:#f92672">(</span>plus rapide sur mobile<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Dual Core: ✅ Activé
+</span></span><span style="display:flex;"><span>- Skip EFB Access: ✅ Activé
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Backend: Vulkan <span style="color:#f92672">(</span>si supporté<span style="color:#f92672">)</span> ou OpenGL ES
+</span></span><span style="display:flex;"><span>- Internal Resolution: 1x Native
+</span></span><span style="display:flex;"><span>- Enhancements: Minimales pour préserver batterie
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contrôles:
+</span></span><span style="display:flex;"><span>- Overlay tactile personnalisable
+</span></span><span style="display:flex;"><span>- Support manettes Bluetooth
+</span></span><span style="display:flex;"><span>- Wiimote via capteurs téléphone
+</span></span></code></pre></div><h3 id="dolphin-linux">
+<a class="header-anchor" href="#dolphin-linux"></a>
+Dolphin Linux
+</h3><h4 id="installation-ubuntudebian">
+<a class="header-anchor" href="#installation-ubuntudebian"></a>
+Installation Ubuntu/Debian
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># PPA officiel</span>
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:dolphin-emu/ppa
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Flatpak</span>
+</span></span><span style="display:flex;"><span>flatpak install flathub org.DolphinEmu.dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compilation source</span>
+</span></span><span style="display:flex;"><span>sudo apt install build-essential cmake qt5-default
+</span></span><span style="display:flex;"><span>git clone https://github.com/dolphin-emu/dolphin.git
+</span></span><span style="display:flex;"><span>cd dolphin <span style="color:#f92672">&amp;&amp;</span> mkdir build <span style="color:#f92672">&amp;&amp;</span> cd build
+</span></span><span style="display:flex;"><span>cmake .. -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Release
+</span></span><span style="display:flex;"><span>make -j<span style="color:#66d9ef">$(</span>nproc<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><h4 id="installation-arch-linux">
+<a class="header-anchor" href="#installation-arch-linux"></a>
+Installation Arch Linux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Depuis les repos officiels</span>
+</span></span><span style="display:flex;"><span>sudo pacman -S dolphin-emu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Version git (dernière)</span>
+</span></span><span style="display:flex;"><span>yay -S dolphin-emu-git
+</span></span></code></pre></div><h3 id="dolphin-macos">
+<a class="header-anchor" href="#dolphin-macos"></a>
+Dolphin macOS
+</h3><h4 id="installation-macos">
+<a class="header-anchor" href="#installation-macos"></a>
+Installation macOS
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Homebrew</span>
+</span></span><span style="display:flex;"><span>brew install --cask dolphin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Download direct</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compilation (développeurs)</span>
+</span></span><span style="display:flex;"><span>brew install cmake qt5 pkg-config
+</span></span><span style="display:flex;"><span>git clone https://github.com/dolphin-emu/dolphin.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Suivez instructions GitHub</span>
+</span></span></code></pre></div><h2 id="-résolution-des-problèmes">
+<a class="header-anchor" href="#-r%c3%a9solution-des-probl%c3%a8mes"></a>
+🔧 Résolution des problèmes
+</h2><h3 id="problèmes-de-performance">
+<a class="header-anchor" href="#probl%c3%a8mes-de-performance"></a>
+Problèmes de performance
+</h3><h4 id="fps-basinstables">
+<a class="header-anchor" href="#fps-basinstables"></a>
+FPS bas/instables
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions par priorité:
+</span></span><span style="display:flex;"><span>1. Activez Dual Core + Idle Skipping
+</span></span><span style="display:flex;"><span>2. Réduisez Internal Resolution à 1x-2x
+</span></span><span style="display:flex;"><span>3. Désactivez Anti-Aliasing temporairement
+</span></span><span style="display:flex;"><span>4. Changez backend <span style="color:#f92672">(</span>Vulkan ↔ D3D11<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>5. Fermez applications en arrière-plan
+</span></span><span style="display:flex;"><span>6. Vérifiez températures CPU/GPU
+</span></span></code></pre></div><h4 id="stutteringmicro-freezes">
+<a class="header-anchor" href="#stutteringmicro-freezes"></a>
+Stuttering/micro-freezes
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections:
+</span></span><span style="display:flex;"><span>1. Activez Backend Multithreading
+</span></span><span style="display:flex;"><span>2. Utilisez un SSD pour les ROMs
+</span></span><span style="display:flex;"><span>3. Augmentez RAM virtuelle Windows
+</span></span><span style="display:flex;"><span>4. Désactivez Windows Game Mode
+</span></span><span style="display:flex;"><span>5. Testez différents backends audio
+</span></span></code></pre></div><h3 id="problèmes-graphiques">
+<a class="header-anchor" href="#probl%c3%a8mes-graphiques"></a>
+Problèmes graphiques
+</h3><h4 id="textures-manquantescorrompues">
+<a class="header-anchor" href="#textures-manquantescorrompues"></a>
+Textures manquantes/corrompues
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Fixes graphiques:
+</span></span><span style="display:flex;"><span>1. Store EFB Copies to Texture Only: ✅
+</span></span><span style="display:flex;"><span>2. EFB Access: Safe <span style="color:#f92672">(</span>depuis Advanced<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Changez Accuracy Level: Safe
+</span></span><span style="display:flex;"><span>4. Désactivez custom textures temporairement
+</span></span><span style="display:flex;"><span>5. Videz le cache shader
+</span></span></code></pre></div><h4 id="effets-deautransparence-incorrects">
+<a class="header-anchor" href="#effets-deautransparence-incorrects"></a>
+Effets d&rsquo;eau/transparence incorrects
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions spécifiques:
+</span></span><span style="display:flex;"><span>1. EFB Emulate Format Changes: ✅
+</span></span><span style="display:flex;"><span>2. Force Texture Filtering: ❌ Désactivé
+</span></span><span style="display:flex;"><span>3. Backend: OpenGL ou Vulkan
+</span></span><span style="display:flex;"><span>4. GPU Texture Decoding: ❌ Désactivé
+</span></span></code></pre></div><h3 id="problèmes-audio">
+<a class="header-anchor" href="#probl%c3%a8mes-audio"></a>
+Problèmes audio
+</h3><h4 id="audio-désynchronisé">
+<a class="header-anchor" href="#audio-d%c3%a9synchronis%c3%a9"></a>
+Audio désynchronisé
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Corrections audio:
+</span></span><span style="display:flex;"><span>1. Audio Backend: Changez <span style="color:#f92672">(</span>XAudio2, WASAPI, etc.<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Latency: Augmentez à 20-40ms
+</span></span><span style="display:flex;"><span>3. Audio Stretching: ✅ Activé
+</span></span><span style="display:flex;"><span>4. DSP Emulation: HLE <span style="color:#f92672">(</span>plus stable<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h4 id="crachotementsdistorsion">
+<a class="header-anchor" href="#crachotementsdistorsion"></a>
+Crachotements/distorsion
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Fermez autres applications audio
+</span></span><span style="display:flex;"><span>2. Changez sample rate audio système
+</span></span><span style="display:flex;"><span>3. Désactivez effets audio Windows
+</span></span><span style="display:flex;"><span>4. Testez backend DSP LLE <span style="color:#f92672">(</span>plus précis<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="problèmes-de-contrôleurs">
+<a class="header-anchor" href="#probl%c3%a8mes-de-contr%c3%b4leurs"></a>
+Problèmes de contrôleurs
+</h3><h4 id="manette-non-détectée">
+<a class="header-anchor" href="#manette-non-d%c3%a9tect%c3%a9e"></a>
+Manette non détectée
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Diagnostics contrôleurs:
+</span></span><span style="display:flex;"><span>1. Controllers → Refresh <span style="color:#f92672">(</span>rescanne devices<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Testez avec différents drivers <span style="color:#f92672">(</span>XInput, DInput<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Vérifiez Steam Input <span style="color:#f92672">(</span>peut interférer<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Utilisez mode administrateur
+</span></span><span style="display:flex;"><span>5. Réinstallez pilotes manette
+</span></span></code></pre></div><h4 id="wiimote-bluetooth-problématique">
+<a class="header-anchor" href="#wiimote-bluetooth-probl%c3%a9matique"></a>
+Wiimote Bluetooth problématique
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Configuration Bluetooth:
+</span></span><span style="display:flex;"><span>1. Utilisez adaptateur Bluetooth compatible
+</span></span><span style="display:flex;"><span>2. Windows: Désactivez <span style="color:#e6db74">&#34;Allow computer to turn off&#34;</span>
+</span></span><span style="display:flex;"><span>3. Appairez via Dolphin <span style="color:#f92672">(</span>Tools → Connect Wiimote<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>4. Mode permanent: Continuous Scanning
+</span></span></code></pre></div><h2 id="-compatibilité-et-base-de-données">
+<a class="header-anchor" href="#-compatibilit%c3%a9-et-base-de-donn%c3%a9es"></a>
+📊 Compatibilité et base de données
+</h2><h3 id="statistiques-gamecube">
+<a class="header-anchor" href="#statistiques-gamecube"></a>
+Statistiques GameCube
+</h3><table>
+  <thead>
+      <tr>
+          <th>Statut</th>
+          <th>Pourcentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~85%</td>
+          <td>Fonctionne parfaitement</td>
+      </tr>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~12%</td>
+          <td>Quelques bugs mineurs</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~2%</td>
+          <td>Démarre mais problèmes majeurs</td>
+      </tr>
+      <tr>
+          <td><strong>Broken</strong></td>
+          <td>~1%</td>
+          <td>Ne fonctionne pas</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="statistiques-wii">
+<a class="header-anchor" href="#statistiques-wii"></a>
+Statistiques Wii
+</h3><table>
+  <thead>
+      <tr>
+          <th>Statut</th>
+          <th>Pourcentage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Perfect</strong></td>
+          <td>~75%</td>
+          <td>Fonctionne parfaitement</td>
+      </tr>
+      <tr>
+          <td><strong>Playable</strong></td>
+          <td>~20%</td>
+          <td>Bugs mineurs acceptables</td>
+      </tr>
+      <tr>
+          <td><strong>Ingame</strong></td>
+          <td>~4%</td>
+          <td>Problèmes mais jouable</td>
+      </tr>
+      <tr>
+          <td><strong>Broken</strong></td>
+          <td>~1%</td>
+          <td>Non fonctionnel</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-les-mieux-optimisés">
+<a class="header-anchor" href="#jeux-les-mieux-optimis%c3%a9s"></a>
+Jeux les mieux optimisés
+</h3><h4 id="gamecube---compatibilité-parfaite">
+<a class="header-anchor" href="#gamecube---compatibilit%c3%a9-parfaite"></a>
+GameCube - Compatibilité parfaite
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Super Mario Sunshine
+</span></span><span style="display:flex;"><span>✅ The Legend of Zelda: Wind Waker
+</span></span><span style="display:flex;"><span>✅ Metroid Prime <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Melee
+</span></span><span style="display:flex;"><span>✅ F-Zero GX
+</span></span><span style="display:flex;"><span>✅ Paper Mario: The Thousand-Year Door
+</span></span><span style="display:flex;"><span>✅ Pikmin <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ Animal Crossing
+</span></span><span style="display:flex;"><span>✅ Luigi<span style="color:#960050;background-color:#1e0010">&#39;</span>s Mansion
+</span></span><span style="display:flex;"><span>✅ Mario Kart: Double Dash
+</span></span></code></pre></div><h4 id="wii---excellent-support">
+<a class="header-anchor" href="#wii---excellent-support"></a>
+Wii - Excellent support
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ Super Mario Galaxy <span style="color:#ae81ff">1</span> &amp; <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>✅ The Legend of Zelda: Twilight Princess
+</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Brawl
+</span></span><span style="display:flex;"><span>✅ Mario Kart Wii
+</span></span><span style="display:flex;"><span>✅ Donkey Kong Country Returns
+</span></span><span style="display:flex;"><span>✅ New Super Mario Bros. Wii
+</span></span><span style="display:flex;"><span>✅ Wii Sports/Resort
+</span></span><span style="display:flex;"><span>✅ Metroid Prime 3: Corruption
+</span></span></code></pre></div><h2 id="-ressources-et-communauté">
+<a class="header-anchor" href="#-ressources-et-communaut%c3%a9"></a>
+🌐 Ressources et communauté
+</h2><h3 id="sites-officiels">
+<a class="header-anchor" href="#sites-officiels"></a>
+Sites officiels
+</h3><ul>
+<li><a href="https://dolphin-emu.org/">🏠 Site officiel Dolphin</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu">📱 Dolphin Android</a></li>
+<li><a href="https://wiki.dolphin-emu.org/">📚 Wiki développeurs</a></li>
+<li><a href="https://wiki.dolphin-emu.org/index.php?title=GameCube_Compatibility_List">📊 Base compatibilité</a></li>
+</ul>
+<h3 id="communautés-actives">
+<a class="header-anchor" href="#communaut%c3%a9s-actives"></a>
+Communautés actives
+</h3><ul>
+<li><a href="https://discord.gg/GQMFT7J">💬 Discord Dolphin</a></li>
+<li><a href="https://www.reddit.com/r/DolphinEmulator/">🗨️ Reddit r/DolphinEmulator</a></li>
+<li><a href="https://forums.dolphin-emu.org/">🌐 Forums officiels</a></li>
+<li><a href="https://www.youtube.com/results?search_query=dolphin&#43;emulator&#43;guide">📺 YouTube guides</a></li>
+</ul>
+<h3 id="ressources-mods-et-textures">
+<a class="header-anchor" href="#ressources-mods-et-textures"></a>
+Ressources mods et textures
+</h3><ul>
+<li><a href="https://github.com/dolphin-emu/dolphin">💻 GitHub Dolphin</a></li>
+<li><a href="https://forums.dolphin-emu.org/Forum-custom-textures">🎨 Texture packs forum</a></li>
+<li><a href="https://gamebanana.com/games/6293">🔧 GameBanana mods</a></li>
+<li><a href="https://www.romhacking.net/">🎮 Romhacks et mods</a></li>
+</ul>
+<h3 id="outils-et-utilitaires">
+<a class="header-anchor" href="#outils-et-utilitaires"></a>
+Outils et utilitaires
+</h3><ul>
+<li><a href="https://wiibrew.org/wiki/CleanRip">🔧 CleanRip</a> - Dump GameCube/Wii</li>
+<li><a href="https://sourceforge.net/projects/usbloadergx/">📁 USB Loader GX</a> - Gestionnaire Wii</li>
+<li><a href="https://wiimmfi.de/">🎯 Wiimmfi</a> - Serveurs Nintendo Wi-Fi remplacement</li>
+<li><a href="https://www.gametdb.com/">🔍 GameTDB</a> - Base de données métadonnées</li>
+</ul>
+<h2 id="-faq---questions-fréquentes">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quentes"></a>
+❓ FAQ - Questions fréquentes
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Dolphin peut-il jouer tous les jeux GameCube/Wii ?</strong>
+<strong>R :</strong> Environ 95% des jeux fonctionnent parfaitement ou avec des bugs mineurs. Consultez la liste de compatibilité.</p>
+<p><strong>Q : Puis-je utiliser mes vraies manettes GameCube ?</strong>
+<strong>R :</strong> Oui, avec un adaptateur GameCube-USB officiel Nintendo ou compatible Mayflash.</p>
+<p><strong>Q : Les sauvegardes de vraie console fonctionnent-elles ?</strong>
+<strong>R :</strong> Oui, vous pouvez importer/exporter vos sauvegardes avec des homebrew comme GCMM.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou Direct3D ?</strong>
+<strong>R :</strong> Vulkan offre généralement de meilleures performances sur GPU récents. D3D11 est plus stable sur systèmes plus anciens.</p>
+<p><strong>Q : Dois-je activer Dual Core ?</strong>
+<strong>R :</strong> Oui pour de meilleures performances, sauf pour le netplay où il faut le désactiver.</p>
+<p><strong>Q : Quelle résolution interne choisir ?</strong>
+<strong>R :</strong> 2x Native (856x528) est un bon compromis. 4x+ pour GPU puissants.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu lag malgré un PC puissant ?</strong>
+<strong>R :</strong> Certains jeux sont plus exigeants. Activez Dual Core, réduisez résolution, changez de backend.</p>
+<p><strong>Q : Audio crachotant ?</strong>
+<strong>R :</strong> Changez backend audio, augmentez latency, fermez autres apps audio.</p>
+<p><strong>Q : Wiimote ne se connecte pas ?</strong>
+<strong>R :</strong> Vérifiez adaptateur Bluetooth, utilisez &ldquo;Continuous Scanning&rdquo;, appairez via Dolphin.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>Dolphin est l&rsquo;émulateur GameCube/Wii de référence qui offre :</p>
+<ul>
+<li>✅ <strong>Compatibilité exceptionnelle</strong> avec 95%+ des jeux</li>
+<li>✅ <strong>Améliorations graphiques</strong> massives (4K, anti-aliasing, etc.)</li>
+<li>✅ <strong>Fonctionnalités uniques</strong> (netplay, VR, texture packs HD)</li>
+<li>✅ <strong>Performance excellente</strong> même sur matériel modeste</li>
+<li>✅ <strong>Support multiplateforme</strong> complet</li>
+<li>✅ <strong>Communauté gigantesque</strong> avec mods et améliorations</li>
+<li>✅ <strong>Développement actif</strong> depuis plus de 20 ans</li>
+</ul>
+<p>Avec ce guide complet, vous maîtrisez maintenant :</p>
+<ul>
+<li><strong>Installation</strong> et configuration optimales</li>
+<li><strong>Optimisation</strong> des performances par jeu</li>
+<li><strong>Fonctionnalités avancées</strong> (netplay, VR, mods)</li>
+<li><strong>Résolution</strong> des problèmes courants</li>
+<li><strong>Utilisation</strong> sur toutes les plateformes</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Rappel légal</strong> : Utilisez uniquement des jeux que vous possédez légalement. Respectez les droits d&rsquo;auteur et soutenez Nintendo en achetant leurs créations.</p></blockquote>
+<p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Gaming</category><category>Tutoriels</category>
+      
+    </item>
+    
+  </channel>
+</rss>

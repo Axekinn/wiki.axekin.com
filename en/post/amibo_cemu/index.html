@@ -1,0 +1,1425 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Complete Guide: Using Amiibo on Cemu Wii U Emulator | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for using Amiibo .bin files on Cemu emulator - NFC scanning configuration and step-by-step usage"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Complete Guide: Using Amiibo on Cemu Wii U Emulator | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for using Amiibo .bin files on Cemu emulator - NFC scanning configuration and step-by-step usage"
+  />
+  <meta property="og:url" content="https://axekin.com/en/post/amibo_cemu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/amiibo-cemu-guide.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="amiibocemuwiiuemulationnintendonfcfigurineszelda" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/amiibo-cemu-guide.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/amibo_cemu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/amiibo-cemu-guide.webp" alt="Complete Guide: Using Amiibo on Cemu Wii U Emulator"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="slide-up">Complete Guide: Using Amiibo on Cemu Wii U Emulator</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#general-process">General Process</a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisites-and-downloads">Prerequisites and Downloads</a>
+      <ul>
+        <li><a href="#required-software">Required Software</a></li>
+        <li><a href="#amiibo-files-collection">Amiibo Files Collection</a></li>
+        <li><a href="#understanding-bin-files">Understanding .bin Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#cemu-configuration">Cemu Configuration</a>
+      <ul>
+        <li><a href="#enabling-nfc-support">Enabling NFC Support</a></li>
+        <li><a href="#loading-games-with-amiibo-support">Loading Games with Amiibo Support</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-by-step-amiibo-usage">Step-by-Step Amiibo Usage</a>
+      <ul>
+        <li><a href="#example-the-legend-of-zelda-breath-of-the-wild">Example: The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#scanning-process-in-cemu">Scanning Process in Cemu</a></li>
+      </ul>
+    </li>
+    <li><a href="#game-specific-usage-examples">Game-Specific Usage Examples</a>
+      <ul>
+        <li><a href="#the-legend-of-zelda-breath-of-the-wild">The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#super-smash-bros-for-wii-u">Super Smash Bros. for Wii U</a></li>
+        <li><a href="#mario-kart-8">Mario Kart 8</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-features-and-tips">Advanced Features and Tips</a>
+      <ul>
+        <li><a href="#unlimited-amiibo-usage">Unlimited Amiibo Usage</a></li>
+        <li><a href="#multiple-amiibo-management">Multiple Amiibo Management</a></li>
+        <li><a href="#creating-custom-collections">Creating Custom Collections</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-common-issues">Troubleshooting Common Issues</a>
+      <ul>
+        <li><a href="#amiibo-not-detected">Amiibo Not Detected</a></li>
+        <li><a href="#game-crashes-during-scanning">Game Crashes During Scanning</a></li>
+        <li><a href="#wrong-or-missing-rewards">Wrong or Missing Rewards</a></li>
+      </ul>
+    </li>
+    <li><a href="#video-tutorial-reference">Video Tutorial Reference</a>
+      <ul>
+        <li><a href="#complete-visual-guide">Complete Visual Guide</a></li>
+        <li><a href="#key-video-timestamps">Key Video Timestamps</a></li>
+      </ul>
+    </li>
+    <li><a href="#performance-and-compatibility">Performance and Compatibility</a>
+      <ul>
+        <li><a href="#system-requirements">System Requirements</a></li>
+        <li><a href="#game-performance-impact">Game Performance Impact</a></li>
+      </ul>
+    </li>
+    <li><a href="#legal-and-ethical-considerations">Legal and Ethical Considerations</a>
+      <ul>
+        <li><a href="#fair-use-guidelines">Fair Use Guidelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#key-points-to-remember">Key Points to Remember</a></li>
+        <li><a href="#final-tips">Final Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---frequently-asked-questions">FAQ - Frequently Asked Questions</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/emulation"
+      data-aos="zoom-in"
+      >EMULATION</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><blockquote>
+<p><strong>⚠️ Legal Notice</strong>: This guide is for educational purposes only. Make sure you own the physical Amiibo before using their digital files. Respect copyright laws in your region.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Using <strong>Amiibo</strong> on the <strong>Cemu</strong> Wii U emulator allows you to access exclusive content and features without needing the physical figurines. This guide explains how to configure and use Amiibo .bin files specifically on Cemu for Wii U games.</p>
+<p>Amiibo functionality on Cemu is particularly useful for:</p>
+<ul>
+<li>Unlocking exclusive content in Zelda: Breath of the Wild</li>
+<li>Getting rare items and costumes in compatible games</li>
+<li>Testing Amiibo features without purchasing figurines</li>
+<li>Accessing special game modes and challenges</li>
+</ul>
+<h3 id="general-process">
+<a class="header-anchor" href="#general-process"></a>
+General Process
+</h3><ol>
+<li><strong>Download</strong> Amiibo collection files (.bin format)</li>
+<li><strong>Organize</strong> files in a dedicated &ldquo;Amiibo&rdquo; folder</li>
+<li><strong>Load</strong> your Wii U game in Cemu</li>
+<li><strong>Access</strong> NFC menu during gameplay</li>
+<li><strong>Scan</strong> desired Amiibo from file</li>
+</ol>
+<h2 id="prerequisites-and-downloads">
+<a class="header-anchor" href="#prerequisites-and-downloads"></a>
+Prerequisites and Downloads
+</h2><h3 id="required-software">
+<a class="header-anchor" href="#required-software"></a>
+Required Software
+</h3><p><strong>Essential components:</strong></p>
+<ul>
+<li><strong>Cemu</strong>: Latest stable version (1.15.0 or newer)</li>
+<li><strong>Amiibo files</strong>: Complete .bin collection</li>
+<li><strong>Compatible Wii U games</strong>: That support Amiibo functionality</li>
+</ul>
+<h3 id="amiibo-files-collection">
+<a class="header-anchor" href="#amiibo-files-collection"></a>
+Amiibo Files Collection
+</h3><h4 id="download-and-setup">
+<a class="header-anchor" href="#download-and-setup"></a>
+Download and Setup
+</h4><p><strong>🔗 Download Link</strong>: <code>aHR0cHM6Ly9tZWdhLm56L2ZpbGUvb2VaaW5BTGEjM1J2d1hVaV9PRzBTLXdldFNENUN6WFVXeG9hZzlFV0EzRUlVVXVUVUZGQQ==</code></p>
+<blockquote>
+<p><strong>Note</strong>: This is a Base64 encoded link for the Amiibo collection. Decode it using any Base64 decoder.</p></blockquote>
+<p><strong>Download instructions:</strong></p>
+<ol>
+<li><strong>Decode</strong> the Base64 link above</li>
+<li><strong>Download</strong> the complete Amiibo collection</li>
+<li><strong>Extract</strong> the archive to your computer</li>
+<li><strong>Create</strong> a folder named &ldquo;Amiibo&rdquo; for organization</li>
+</ol>
+<p><img src="/images/amiibo-collection-download.png" alt="Amiibo Collection Download">
+<em>Downloading and extracting the Amiibo collection</em></p>
+<h4 id="file-organization">
+<a class="header-anchor" href="#file-organization"></a>
+File Organization
+</h4><p><strong>Recommended folder structure:</strong></p>
+<pre tabindex="0"><code>Amiibo/
+├── Zelda/
+│   ├── Link_Archer.bin
+│   ├── Link_Rider.bin
+│   ├── Link_SSB.bin
+│   ├── Zelda.bin
+│   ├── Sheik.bin
+│   ├── Ganondorf.bin
+│   ├── Toon_Link.bin
+│   ├── Young_Link.bin
+│   └── Midna.bin
+├── Mario/
+│   ├── Mario.bin
+│   ├── Luigi.bin
+│   ├── Peach.bin
+│   └── Bowser.bin
+├── Other_Series/
+│   ├── Samus.bin
+│   ├── Captain_Falcon.bin
+│   └── Fox.bin
+└── Animal_Crossing/
+    ├── Isabelle.bin
+    ├── Tom_Nook.bin
+    └── KK_Slider.bin
+</code></pre><p><img src="/images/amiibo-folder-structure.png" alt="Amiibo Folder Structure">
+<em>Proper Amiibo folder organization</em></p>
+<h3 id="understanding-bin-files">
+<a class="header-anchor" href="#understanding-bin-files"></a>
+Understanding .bin Files
+</h3><h4 id="file-format-details">
+<a class="header-anchor" href="#file-format-details"></a>
+File Format Details
+</h4><p><strong>What are .bin files:</strong></p>
+<ul>
+<li><strong>Binary format</strong>: Contains encrypted Amiibo data</li>
+<li><strong>Size</strong>: Exactly 540 bytes per file</li>
+<li><strong>Content</strong>: Character ID, game unlock data, save information</li>
+<li><strong>Compatibility</strong>: Works with Cemu&rsquo;s NFC emulation</li>
+</ul>
+<p><strong>Important characteristics:</strong></p>
+<ul>
+<li>Each .bin file represents one specific Amiibo figurine</li>
+<li>Files contain the same data as physical Amiibo</li>
+<li>Some files may have different names but same content</li>
+</ul>
+<h2 id="cemu-configuration">
+<a class="header-anchor" href="#cemu-configuration"></a>
+Cemu Configuration
+</h2><h3 id="enabling-nfc-support">
+<a class="header-anchor" href="#enabling-nfc-support"></a>
+Enabling NFC Support
+</h3><h4 id="basic-cemu-setup">
+<a class="header-anchor" href="#basic-cemu-setup"></a>
+Basic Cemu Setup
+</h4><p><strong>Prerequisites verification:</strong></p>
+<ol>
+<li><strong>Cemu version</strong>: 1.15.0 or newer (NFC support required)</li>
+<li><strong>Game compatibility</strong>: Verify your game supports Amiibo</li>
+<li><strong>File access</strong>: Ensure Cemu can access your Amiibo folder</li>
+</ol>
+<h4 id="nfc-settings-in-cemu">
+<a class="header-anchor" href="#nfc-settings-in-cemu"></a>
+NFC Settings in Cemu
+</h4><p><strong>No special configuration needed:</strong></p>
+<ul>
+<li>Cemu has built-in NFC emulation</li>
+<li>No additional plugins or settings required</li>
+<li>Works automatically with compatible games</li>
+</ul>
+<h3 id="loading-games-with-amiibo-support">
+<a class="header-anchor" href="#loading-games-with-amiibo-support"></a>
+Loading Games with Amiibo Support
+</h3><h4 id="compatible-wii-u-games">
+<a class="header-anchor" href="#compatible-wii-u-games"></a>
+Compatible Wii U Games
+</h4><p><strong>Major Amiibo-supported titles:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Game</th>
+          <th>Amiibo Functions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>The Legend of Zelda: Breath of the Wild</strong></td>
+          <td>Items, weapons, exclusive gear</td>
+      </tr>
+      <tr>
+          <td><strong>Super Smash Bros. for Wii U</strong></td>
+          <td>Fighter training, customization</td>
+      </tr>
+      <tr>
+          <td><strong>Mario Kart 8</strong></td>
+          <td>Racing suits and costumes</td>
+      </tr>
+      <tr>
+          <td><strong>Super Mario Maker</strong></td>
+          <td>Special costumes and levels</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade Chronicles X</strong></td>
+          <td>Exclusive items and gear</td>
+      </tr>
+      <tr>
+          <td><strong>Yoshi&rsquo;s Woolly World</strong></td>
+          <td>Yoshi patterns and designs</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="step-by-step-amiibo-usage">
+<a class="header-anchor" href="#step-by-step-amiibo-usage"></a>
+Step-by-Step Amiibo Usage
+</h2><h3 id="example-the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#example-the-legend-of-zelda-breath-of-the-wild"></a>
+Example: The Legend of Zelda: Breath of the Wild
+</h3><h4 id="accessing-the-amiibo-rune">
+<a class="header-anchor" href="#accessing-the-amiibo-rune"></a>
+Accessing the Amiibo Rune
+</h4><p><strong>In-game preparation:</strong></p>
+<ol>
+<li><strong>Progress</strong> through the game until you obtain the Amiibo rune</li>
+<li><strong>Equip</strong> the Amiibo rune to your Sheikah Slate</li>
+<li><strong>Find</strong> an open area away from buildings and cliffs</li>
+<li><strong>Position</strong> Link in a suitable location</li>
+</ol>
+<p><img src="/images/botw-amiibo-rune.png" alt="BOTW Amiibo Rune">
+<em>Amiibo rune equipped in Zelda: BOTW</em></p>
+<h4 id="preparing-to-scan">
+<a class="header-anchor" href="#preparing-to-scan"></a>
+Preparing to Scan
+</h4><p><strong>Before scanning steps:</strong></p>
+<ol>
+<li><strong>Open</strong> your Amiibo folder on your computer</li>
+<li><strong>Navigate</strong> to the Zelda subfolder</li>
+<li><strong>Identify</strong> the Amiibo you want to use</li>
+<li><strong>Keep</strong> the folder window accessible</li>
+</ol>
+<p><img src="/images/amiibo-folder-ready.png" alt="Amiibo Folder Ready">
+<em>Amiibo folder prepared for scanning</em></p>
+<h3 id="scanning-process-in-cemu">
+<a class="header-anchor" href="#scanning-process-in-cemu"></a>
+Scanning Process in Cemu
+</h3><h4 id="accessing-nfc-menu">
+<a class="header-anchor" href="#accessing-nfc-menu"></a>
+Accessing NFC Menu
+</h4><p><strong>Step-by-step scanning:</strong></p>
+<ol>
+<li><strong>Activate</strong> the Amiibo rune in-game (hold up on D-pad)</li>
+<li><strong>Switch</strong> to Cemu window</li>
+<li><strong>Click</strong> on &ldquo;NFC&rdquo; in the top menu bar</li>
+<li><strong>Select</strong> &ldquo;Scan NFC Tag from File&hellip;&rdquo;</li>
+</ol>
+<p><img src="/images/cemu-nfc-menu.png" alt="Cemu NFC Menu">
+<em>Accessing NFC menu in Cemu</em></p>
+<h4 id="selecting-your-amiibo">
+<a class="header-anchor" href="#selecting-your-amiibo"></a>
+Selecting Your Amiibo
+</h4><p><strong>File selection process:</strong></p>
+<ol>
+<li><strong>Navigate</strong> to your Amiibo folder</li>
+<li><strong>Choose</strong> the desired .bin file (e.g., Link_Archer.bin)</li>
+<li><strong>Click</strong> &ldquo;Open&rdquo; to confirm selection</li>
+<li><strong>Return</strong> to game window immediately</li>
+</ol>
+<p><img src="/images/amiibo-file-selection.png" alt="Amiibo File Selection">
+<em>Selecting Amiibo .bin file</em></p>
+<h4 id="completing-the-scan">
+<a class="header-anchor" href="#completing-the-scan"></a>
+Completing the Scan
+</h4><p><strong>Finalization steps:</strong></p>
+<ol>
+<li><strong>Switch back</strong> to the game window</li>
+<li><strong>Complete</strong> the Amiibo rune activation</li>
+<li><strong>Watch</strong> items spawn from the sky</li>
+<li><strong>Collect</strong> your rewards!</li>
+</ol>
+<p><img src="/images/amiibo-rewards-spawn.png" alt="Amiibo Rewards Spawn">
+<em>Items spawning after successful Amiibo scan</em></p>
+<h2 id="game-specific-usage-examples">
+<a class="header-anchor" href="#game-specific-usage-examples"></a>
+Game-Specific Usage Examples
+</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
+The Legend of Zelda: Breath of the Wild
+</h3><h4 id="popular-amiibo-and-their-rewards">
+<a class="header-anchor" href="#popular-amiibo-and-their-rewards"></a>
+Popular Amiibo and Their Rewards
+</h4><p><strong>Zelda Series Amiibo:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Amiibo</th>
+          <th>Common Rewards</th>
+          <th>Rare Rewards</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Link (Archer)</strong></td>
+          <td>Arrows, meat, plants</td>
+          <td>Twilight Bow</td>
+      </tr>
+      <tr>
+          <td><strong>Link (Rider)</strong></td>
+          <td>Food, materials</td>
+          <td>Traveler&rsquo;s series armor</td>
+      </tr>
+      <tr>
+          <td><strong>Zelda</strong></td>
+          <td>Gems, plants</td>
+          <td>Sheik&rsquo;s Mask</td>
+      </tr>
+      <tr>
+          <td><strong>Ganondorf</strong></td>
+          <td>Weapons, meat</td>
+          <td>Sword of the Six Sages</td>
+      </tr>
+      <tr>
+          <td><strong>Sheik</strong></td>
+          <td>Weapons, food</td>
+          <td>Sheik&rsquo;s armor set</td>
+      </tr>
+      <tr>
+          <td><strong>Midna</strong></td>
+          <td>Weapons, rupees</td>
+          <td>Midna&rsquo;s Helmet</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Non-Zelda Amiibo:</strong></p>
+<ul>
+<li><strong>Mario series</strong>: Mushrooms, meat, rupees</li>
+<li><strong>Metroid series</strong>: Energy food, weapons</li>
+<li><strong>Star Fox series</strong>: Barrels, weapons, meat</li>
+</ul>
+<h4 id="usage-tips-for-botw">
+<a class="header-anchor" href="#usage-tips-for-botw"></a>
+Usage Tips for BOTW
+</h4><p><strong>Optimization strategies:</strong></p>
+<ul>
+<li><strong>Save before scanning</strong>: In case you want to re-roll rewards</li>
+<li><strong>Daily limit</strong>: Each Amiibo can only be used once per day</li>
+<li><strong>Location matters</strong>: Scan in open areas to avoid items falling off cliffs</li>
+<li><strong>Weather considerations</strong>: Some items may be affected by rain/wind</li>
+</ul>
+<h3 id="super-smash-bros-for-wii-u">
+<a class="header-anchor" href="#super-smash-bros-for-wii-u"></a>
+Super Smash Bros. for Wii U
+</h3><h4 id="training-fighter-players">
+<a class="header-anchor" href="#training-fighter-players"></a>
+Training Fighter Players
+</h4><p><strong>Amiibo Fighter setup:</strong></p>
+<ol>
+<li><strong>Navigate</strong> to &ldquo;amiibo&rdquo; section in main menu</li>
+<li><strong>Select</strong> &ldquo;Register Fighter&rdquo;</li>
+<li><strong>Use</strong> Cemu&rsquo;s NFC scanning when prompted</li>
+<li><strong>Choose</strong> corresponding fighter Amiibo .bin file</li>
+</ol>
+<p><strong>Training benefits:</strong></p>
+<ul>
+<li>AI learns from your play style</li>
+<li>Unlocks custom moves and equipment</li>
+<li>Can battle other Amiibo or players</li>
+<li>Levels up through battles (up to level 50)</li>
+</ul>
+<h3 id="mario-kart-8">
+<a class="header-anchor" href="#mario-kart-8"></a>
+Mario Kart 8
+</h3><h4 id="unlocking-racing-suits">
+<a class="header-anchor" href="#unlocking-racing-suits"></a>
+Unlocking Racing Suits
+</h4><p><strong>Costume Amiibo:</strong></p>
+<ul>
+<li><strong>Mario</strong>: Classic Mario racing suit</li>
+<li><strong>Luigi</strong>: Luigi-themed racing gear</li>
+<li><strong>Peach</strong>: Princess Peach outfit</li>
+<li><strong>Yoshi</strong>: Yoshi racing suit</li>
+<li><strong>Captain Falcon</strong>: F-Zero inspired suit</li>
+</ul>
+<p><strong>Scanning process:</strong></p>
+<ol>
+<li><strong>Go</strong> to character selection screen</li>
+<li><strong>Look</strong> for Amiibo prompt</li>
+<li><strong>Scan</strong> desired character Amiibo via Cemu NFC menu</li>
+<li><strong>Unlock</strong> corresponding racing suit</li>
+</ol>
+<h2 id="advanced-features-and-tips">
+<a class="header-anchor" href="#advanced-features-and-tips"></a>
+Advanced Features and Tips
+</h2><h3 id="unlimited-amiibo-usage">
+<a class="header-anchor" href="#unlimited-amiibo-usage"></a>
+Unlimited Amiibo Usage
+</h3><h4 id="bypassing-daily-limits">
+<a class="header-anchor" href="#bypassing-daily-limits"></a>
+Bypassing Daily Limits
+</h4><p><strong>Important Cemu feature:</strong></p>
+<ul>
+<li><strong>Check</strong> &ldquo;Remove Amiibo after scan&rdquo; option in NFC menu</li>
+<li><strong>Allows</strong> multiple uses of same Amiibo per day</li>
+<li><strong>Useful</strong> for testing and farming rare items</li>
+<li><strong>May affect</strong> game balance and intended experience</li>
+</ul>
+<p><img src="/images/unlimited-amiibo-option.png" alt="Unlimited Amiibo Option">
+<em>Option to enable unlimited Amiibo usage</em></p>
+<h3 id="multiple-amiibo-management">
+<a class="header-anchor" href="#multiple-amiibo-management"></a>
+Multiple Amiibo Management
+</h3><h4 id="efficient-scanning-workflow">
+<a class="header-anchor" href="#efficient-scanning-workflow"></a>
+Efficient Scanning Workflow
+</h4><p><strong>Organization tips:</strong></p>
+<ol>
+<li><strong>Create shortcuts</strong> to frequently used Amiibo</li>
+<li><strong>Use descriptive names</strong> for .bin files</li>
+<li><strong>Group</strong> by game or series for easy access</li>
+<li><strong>Keep</strong> a &ldquo;favorites&rdquo; folder for most-used Amiibo</li>
+</ol>
+<h4 id="batch-processing">
+<a class="header-anchor" href="#batch-processing"></a>
+Batch Processing
+</h4><p><strong>For testing purposes:</strong></p>
+<ul>
+<li>Test multiple Amiibo quickly in succession</li>
+<li>Compare reward drop rates</li>
+<li>Verify compatibility across different games</li>
+<li>Document unique rewards for reference</li>
+</ul>
+<h3 id="creating-custom-collections">
+<a class="header-anchor" href="#creating-custom-collections"></a>
+Creating Custom Collections
+</h3><h4 id="curated-game-specific-sets">
+<a class="header-anchor" href="#curated-game-specific-sets"></a>
+Curated Game-Specific Sets
+</h4><p><strong>Example: Zelda BOTW Collection:</strong></p>
+<pre tabindex="0"><code>BOTW_Amiibo/
+├── Essential/
+│   ├── Link_Archer.bin (Twilight Bow)
+│   ├── Link_Rider.bin (Traveler&#39;s Gear)
+│   └── Ganondorf.bin (Six Sages Sword)
+├── Armor_Sets/
+│   ├── Sheik.bin (Sheik Set)
+│   ├── Midna.bin (Midna&#39;s Helmet)
+│   └── SSB_Link.bin (Soldier Set)
+└── Resources/
+    ├── Mario.bin (Food/Mushrooms)
+    ├── Samus.bin (Energy Items)
+    └── Fox.bin (Meat/Weapons)
+</code></pre><h2 id="troubleshooting-common-issues">
+<a class="header-anchor" href="#troubleshooting-common-issues"></a>
+Troubleshooting Common Issues
+</h2><h3 id="amiibo-not-detected">
+<a class="header-anchor" href="#amiibo-not-detected"></a>
+Amiibo Not Detected
+</h3><h4 id="common-causes-and-solutions">
+<a class="header-anchor" href="#common-causes-and-solutions"></a>
+Common Causes and Solutions
+</h4><p><strong>🚫 &ldquo;No NFC tag detected&rdquo; error:</strong></p>
+<p><strong>Diagnostic steps:</strong></p>
+<ol>
+<li><strong>Verify</strong> Cemu version supports NFC (1.15.0+)</li>
+<li><strong>Check</strong> .bin file isn&rsquo;t corrupted (should be exactly 540 bytes)</li>
+<li><strong>Ensure</strong> game actually supports Amiibo functionality</li>
+<li><strong>Try</strong> a different .bin file to test</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<pre tabindex="0"><code>1. Update Cemu to latest version
+2. Re-download Amiibo collection
+3. Verify file permissions on Amiibo folder
+4. Try scanning during appropriate in-game moments
+</code></pre><h3 id="game-crashes-during-scanning">
+<a class="header-anchor" href="#game-crashes-during-scanning"></a>
+Game Crashes During Scanning
+</h3><h4 id="stability-issues">
+<a class="header-anchor" href="#stability-issues"></a>
+Stability Issues
+</h4><p><strong>Prevention measures:</strong></p>
+<ul>
+<li><strong>Save</strong> game before attempting Amiibo scans</li>
+<li><strong>Close</strong> unnecessary background applications</li>
+<li><strong>Ensure</strong> adequate system memory (8GB+ recommended)</li>
+<li><strong>Use</strong> stable Cemu settings (avoid experimental options)</li>
+</ul>
+<p><strong>If crashes persist:</strong></p>
+<ol>
+<li><strong>Test</strong> with different Amiibo files</li>
+<li><strong>Update</strong> graphics drivers</li>
+<li><strong>Lower</strong> Cemu graphics settings temporarily</li>
+<li><strong>Report</strong> issue to Cemu developers</li>
+</ol>
+<h3 id="wrong-or-missing-rewards">
+<a class="header-anchor" href="#wrong-or-missing-rewards"></a>
+Wrong or Missing Rewards
+</h3><h4 id="understanding-amiibo-mechanics">
+<a class="header-anchor" href="#understanding-amiibo-mechanics"></a>
+Understanding Amiibo Mechanics
+</h4><p><strong>Expected behavior:</strong></p>
+<ul>
+<li><strong>Randomized rewards</strong>: Most Amiibo have multiple possible drops</li>
+<li><strong>Rare item chances</strong>: Some rewards have very low drop rates</li>
+<li><strong>Daily cooldowns</strong>: Physical Amiibo limitations are emulated</li>
+<li><strong>Location dependencies</strong>: Some games check scan location</li>
+</ul>
+<p><strong>Troubleshooting steps:</strong></p>
+<ol>
+<li><strong>Verify</strong> you&rsquo;re using correct Amiibo for desired reward</li>
+<li><strong>Check</strong> if game has daily usage limits</li>
+<li><strong>Try</strong> scanning in different in-game locations</li>
+<li><strong>Confirm</strong> .bin file matches expected character</li>
+</ol>
+<h2 id="video-tutorial-reference">
+<a class="header-anchor" href="#video-tutorial-reference"></a>
+Video Tutorial Reference
+</h2><h3 id="complete-visual-guide">
+<a class="header-anchor" href="#complete-visual-guide"></a>
+Complete Visual Guide
+</h3><p><strong>🎥 <a href="https://youtu.be/CVpseHxe5RM">Complete Amiibo Tutorial for Cemu</a></strong></p>
+<p>The video tutorial covers:</p>
+<ul>
+<li>Complete download and setup process</li>
+<li>Live demonstration in Zelda: BOTW</li>
+<li>Troubleshooting common problems</li>
+<li>Advanced tips and optimization</li>
+</ul>
+<h3 id="key-video-timestamps">
+<a class="header-anchor" href="#key-video-timestamps"></a>
+Key Video Timestamps
+</h3><p><strong>Important sections:</strong></p>
+<ul>
+<li><strong>0:00-2:00</strong>: Download and extraction</li>
+<li><strong>2:00-4:00</strong>: Folder organization</li>
+<li><strong>4:00-7:00</strong>: In-game scanning demonstration</li>
+<li><strong>7:00-9:00</strong>: Troubleshooting and tips</li>
+</ul>
+<h2 id="performance-and-compatibility">
+<a class="header-anchor" href="#performance-and-compatibility"></a>
+Performance and Compatibility
+</h2><h3 id="system-requirements">
+<a class="header-anchor" href="#system-requirements"></a>
+System Requirements
+</h3><h4 id="recommended-specifications">
+<a class="header-anchor" href="#recommended-specifications"></a>
+Recommended Specifications
+</h4><p><strong>For smooth Amiibo usage:</strong></p>
+<pre tabindex="0"><code>CPU: Intel i5-4590 / AMD FX-8320 or better
+RAM: 8GB+ (16GB recommended)
+GPU: GTX 750 Ti / RX 460 or better
+Storage: SSD recommended for faster file access
+</code></pre><h4 id="cemu-settings">
+<a class="header-anchor" href="#cemu-settings"></a>
+Cemu Settings
+</h4><p><strong>Optimal configuration:</strong></p>
+<ul>
+<li><strong>CPU Mode</strong>: Recompiler (triple-core)</li>
+<li><strong>GPU Buffer Cache</strong>: Medium or High</li>
+<li><strong>Debug</strong>: Keep minimal for performance</li>
+<li><strong>Audio</strong>: 48kHz for best compatibility</li>
+</ul>
+<h3 id="game-performance-impact">
+<a class="header-anchor" href="#game-performance-impact"></a>
+Game Performance Impact
+</h3><h4 id="minimal-resource-usage">
+<a class="header-anchor" href="#minimal-resource-usage"></a>
+Minimal Resource Usage
+</h4><p><strong>Amiibo scanning impact:</strong></p>
+<ul>
+<li><strong>CPU</strong>: Negligible additional load</li>
+<li><strong>RAM</strong>: ~1MB for .bin file loading</li>
+<li><strong>Storage</strong>: Brief file access during scan</li>
+<li><strong>Graphics</strong>: No impact on rendering</li>
+</ul>
+<h2 id="legal-and-ethical-considerations">
+<a class="header-anchor" href="#legal-and-ethical-considerations"></a>
+Legal and Ethical Considerations
+</h2><h3 id="fair-use-guidelines">
+<a class="header-anchor" href="#fair-use-guidelines"></a>
+Fair Use Guidelines
+</h3><h4 id="responsible-usage">
+<a class="header-anchor" href="#responsible-usage"></a>
+Responsible Usage
+</h4><p><strong>Recommended practices:</strong></p>
+<ul>
+<li><strong>Own physical Amiibo</strong> before using .bin files</li>
+<li><strong>Personal use only</strong> - don&rsquo;t distribute files</li>
+<li><strong>Support developers</strong> by purchasing games legally</li>
+<li><strong>Respect</strong> regional copyright laws</li>
+</ul>
+<h4 id="educational-purpose">
+<a class="header-anchor" href="#educational-purpose"></a>
+Educational Purpose
+</h4><p><strong>Learning opportunities:</strong></p>
+<ul>
+<li>Understanding NFC technology</li>
+<li>Game development insights</li>
+<li>Emulation technology advancement</li>
+<li>Preservation of gaming history</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Using <strong>Amiibo</strong> on <strong>Cemu</strong> significantly enhances the Wii U gaming experience, particularly for games like <strong>The Legend of Zelda: Breath of the Wild</strong>. The process is straightforward and opens up exclusive content without requiring physical figurines.</p>
+<h3 id="key-points-to-remember">
+<a class="header-anchor" href="#key-points-to-remember"></a>
+Key Points to Remember
+</h3><blockquote>
+<p><strong>🎯 Essential steps:</strong></p>
+<ol>
+<li><strong>Download</strong> and organize Amiibo .bin collection</li>
+<li><strong>Load</strong> compatible game in Cemu</li>
+<li><strong>Access</strong> NFC menu during appropriate moments</li>
+<li><strong>Scan</strong> desired Amiibo from file</li>
+<li><strong>Enjoy</strong> unlocked content and rewards</li>
+</ol></blockquote>
+<h3 id="final-tips">
+<a class="header-anchor" href="#final-tips"></a>
+Final Tips
+</h3><p><strong>For the best experience:</strong></p>
+<ul>
+<li>Start with Zelda: BOTW for the most robust Amiibo features</li>
+<li>Save before scanning to experiment with different rewards</li>
+<li>Organize your collection for easy access</li>
+<li>Use the unlimited scanning feature responsibly</li>
+<li>Explore different games to discover unique Amiibo functions</li>
+</ul>
+<h2 id="faq---frequently-asked-questions">
+<a class="header-anchor" href="#faq---frequently-asked-questions"></a>
+FAQ - Frequently Asked Questions
+</h2><p><strong>Q: Do I need to own physical Amiibo to use .bin files legally?</strong>
+A: This varies by jurisdiction, but it&rsquo;s generally recommended to own the physical Amiibo for legal compliance.</p>
+<p><strong>Q: Can I use the same Amiibo multiple times per day?</strong>
+A: Yes, by enabling &ldquo;Remove Amiibo after scan&rdquo; in Cemu&rsquo;s NFC menu, you can bypass daily limits.</p>
+<p><strong>Q: Why do some Amiibo give different rewards each time?</strong>
+A: Most Amiibo have randomized reward pools with different drop rates for various items.</p>
+<p><strong>Q: Will using Amiibo affect my game saves?</strong>
+A: No, Amiibo usage doesn&rsquo;t modify save files beyond adding the received items to your inventory.</p>
+<p><strong>Q: Can I use non-Nintendo Amiibo with Cemu?</strong>
+A: Only official Nintendo Amiibo .bin files work with Cemu&rsquo;s NFC emulation.</p>
+<hr>
+<p><strong>Did this guide help you set up Amiibo on Cemu?</strong> Share your best Amiibo discoveries and tips in the comments!</p>
+<p><strong>Related articles:</strong></p>
+<ul>
+<li><a href="/en/post/cemu-complete-setup/">Complete Cemu Setup Guide</a></li>
+<li><a href="/en/post/zelda-botw-cemu-optimization/">Zelda BOTW Optimization for Cemu</a></li>
+<li><a href="/en/post/best-wiiu-games-emulation/">Best Wii U Games for Emulation</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://axekin.com/en/post/amibo_cemu/">https://axekin.com/en/post/amibo_cemu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Complete Guide: Using Amiibo on Cemu Wii U Emulator</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/en/post/amibo_cemu/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/en/post/amibo_cemu/&amp;text=Complete%20Guide:%20Using%20Amiibo%20on%20Cemu%20Wii%20U%20Emulator&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/en/post/amibo_cemu/&amp;title=Complete%20Guide:%20Using%20Amiibo%20on%20Cemu%20Wii%20U%20Emulator&amp;summary=Detailed%20tutorial%20for%20using%20Amiibo%20.bin%20files%20on%20Cemu%20emulator%20-%20NFC%20scanning%20configuration%20and%20step-by-step%20usage&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/en/post/amibo_cemu/&amp;title=Complete%20Guide:%20Using%20Amiibo%20on%20Cemu%20Wii%20U%20Emulator" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete Guide: Using Amiibo on Cemu Wii U Emulator">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/amiibo"
+        rel="tag"
+        >AMIIBO</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/cemu"
+        rel="tag"
+        >CEMU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/wiiu"
+        rel="tag"
+        >WIIU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nintendo"
+        rel="tag"
+        >NINTENDO</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nfc"
+        rel="tag"
+        >NFC</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/figurines"
+        rel="tag"
+        >FIGURINES</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/zelda"
+        rel="tag"
+        >ZELDA</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/yuzu-ryujinx-dlc-updates.webp"
+            data-sizes="auto"
+            alt="How to Install DLC and Updates on Yuzu and Ryujinx"
+            class="lazyload"
+          /><a href="/en/post/dlc_update_ryujinx_yuzu/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">How to Install DLC and Updates on Yuzu and Ryujinx</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/ryujinx-cheats-mods.webp"
+            data-sizes="auto"
+            alt="How to Install Cheats and Mods on Ryujinx Emulator"
+            class="lazyload"
+          /><a href="/en/post/cheat_ryujinx/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">How to Install Cheats and Mods on Ryujinx Emulator</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;27.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:15</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Made with ❤️ by Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#general-process">General Process</a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisites-and-downloads">Prerequisites and Downloads</a>
+      <ul>
+        <li><a href="#required-software">Required Software</a></li>
+        <li><a href="#amiibo-files-collection">Amiibo Files Collection</a></li>
+        <li><a href="#understanding-bin-files">Understanding .bin Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#cemu-configuration">Cemu Configuration</a>
+      <ul>
+        <li><a href="#enabling-nfc-support">Enabling NFC Support</a></li>
+        <li><a href="#loading-games-with-amiibo-support">Loading Games with Amiibo Support</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-by-step-amiibo-usage">Step-by-Step Amiibo Usage</a>
+      <ul>
+        <li><a href="#example-the-legend-of-zelda-breath-of-the-wild">Example: The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#scanning-process-in-cemu">Scanning Process in Cemu</a></li>
+      </ul>
+    </li>
+    <li><a href="#game-specific-usage-examples">Game-Specific Usage Examples</a>
+      <ul>
+        <li><a href="#the-legend-of-zelda-breath-of-the-wild">The Legend of Zelda: Breath of the Wild</a></li>
+        <li><a href="#super-smash-bros-for-wii-u">Super Smash Bros. for Wii U</a></li>
+        <li><a href="#mario-kart-8">Mario Kart 8</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-features-and-tips">Advanced Features and Tips</a>
+      <ul>
+        <li><a href="#unlimited-amiibo-usage">Unlimited Amiibo Usage</a></li>
+        <li><a href="#multiple-amiibo-management">Multiple Amiibo Management</a></li>
+        <li><a href="#creating-custom-collections">Creating Custom Collections</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-common-issues">Troubleshooting Common Issues</a>
+      <ul>
+        <li><a href="#amiibo-not-detected">Amiibo Not Detected</a></li>
+        <li><a href="#game-crashes-during-scanning">Game Crashes During Scanning</a></li>
+        <li><a href="#wrong-or-missing-rewards">Wrong or Missing Rewards</a></li>
+      </ul>
+    </li>
+    <li><a href="#video-tutorial-reference">Video Tutorial Reference</a>
+      <ul>
+        <li><a href="#complete-visual-guide">Complete Visual Guide</a></li>
+        <li><a href="#key-video-timestamps">Key Video Timestamps</a></li>
+      </ul>
+    </li>
+    <li><a href="#performance-and-compatibility">Performance and Compatibility</a>
+      <ul>
+        <li><a href="#system-requirements">System Requirements</a></li>
+        <li><a href="#game-performance-impact">Game Performance Impact</a></li>
+      </ul>
+    </li>
+    <li><a href="#legal-and-ethical-considerations">Legal and Ethical Considerations</a>
+      <ul>
+        <li><a href="#fair-use-guidelines">Fair Use Guidelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#key-points-to-remember">Key Points to Remember</a></li>
+        <li><a href="#final-tips">Final Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---frequently-asked-questions">FAQ - Frequently Asked Questions</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      5
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">55</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Complete Guide: Using Amiibo on Cemu Wii U Emulator",
+          url: "https:\/\/axekin.com\/en\/post\/amibo_cemu\/",
+          description: "Detailed tutorial for using Amiibo .bin files on Cemu emulator - NFC scanning configuration and step-by-step usage",
+          cover: "https:\/\/axekin.com\/images\/covers\/amiibo-cemu-guide.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

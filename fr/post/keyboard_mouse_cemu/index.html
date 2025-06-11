@@ -1,0 +1,1409 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour configurer le contrôle clavier-souris sur Cemu avec Mouse2Joystick et ViGEmBus - Configuration étape par étape"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour configurer le contrôle clavier-souris sur Cemu avec Mouse2Joystick et ViGEmBus - Configuration étape par étape"
+  />
+  <meta property="og:url" content="https://axekin.com/fr/post/keyboard_mouse_cemu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/cemu-keyboard-mouse.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="cemuwiiuclavier-sourismouse2joystickvigembusemulationnintendo" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/cemu-keyboard-mouse.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/keyboard_mouse_cemu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/cemu-keyboard-mouse.webp" alt="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu"><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="slide-up">Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#processus-général">Processus général</a></li>
+      </ul>
+    </li>
+    <li><a href="#prérequis-et-téléchargements">Prérequis et téléchargements</a>
+      <ul>
+        <li><a href="#logiciels-nécessaires">Logiciels nécessaires</a></li>
+        <li><a href="#téléchargements">Téléchargements</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-1--installation-de-vigembus">Étape 1 : Installation de ViGEmBus</a>
+      <ul>
+        <li><a href="#processus-dinstallation">Processus d&rsquo;installation</a></li>
+        <li><a href="#vérification-de-linstallation">Vérification de l&rsquo;installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-2--configuration-de-mouse2joystick">Étape 2 : Configuration de Mouse2Joystick</a>
+      <ul>
+        <li><a href="#extraction-et-première-utilisation">Extraction et première utilisation</a></li>
+        <li><a href="#interface-et-configuration-de-base">Interface et configuration de base</a></li>
+        <li><a href="#mappage-des-touches">Mappage des touches</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-3--configuration-de-cemu">Étape 3 : Configuration de Cemu</a>
+      <ul>
+        <li><a href="#accès-aux-paramètres-de-contrôle">Accès aux paramètres de contrôle</a></li>
+        <li><a href="#suppression-des-contrôleurs-existants">Suppression des contrôleurs existants</a></li>
+        <li><a href="#ajout-des-nouveaux-contrôleurs">Ajout des nouveaux contrôleurs</a></li>
+        <li><a href="#configuration-finale-des-touches">Configuration finale des touches</a></li>
+      </ul>
+    </li>
+    <li><a href="#tests-et-ajustements">Tests et ajustements</a>
+      <ul>
+        <li><a href="#test-de-fonctionnement">Test de fonctionnement</a></li>
+        <li><a href="#optimisations-et-ajustements">Optimisations et ajustements</a></li>
+        <li><a href="#profils-personnalisés">Profils personnalisés</a></li>
+      </ul>
+    </li>
+    <li><a href="#jeux-recommandés-et-incompatibles">Jeux recommandés et incompatibles</a>
+      <ul>
+        <li><a href="#jeux-adaptés-au-clavier-souris">Jeux adaptés au clavier-souris</a></li>
+        <li><a href="#jeux-non-recommandés">Jeux non recommandés</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-avancé">Troubleshooting avancé</a>
+      <ul>
+        <li><a href="#problèmes-de-détection">Problèmes de détection</a></li>
+        <li><a href="#optimisations-de-performance">Optimisations de performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#ressources-et-aide-supplémentaire">Ressources et aide supplémentaire</a>
+      <ul>
+        <li><a href="#tutoriel-vidéo">Tutoriel vidéo</a></li>
+        <li><a href="#communauté-et-support">Communauté et support</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#conseils-finaux">Conseils finaux</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/emulation"
+      data-aos="zoom-in"
+      >EMULATION</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><blockquote>
+<p><strong>⚠️ Note Importante</strong> : Bien que possible, l&rsquo;expérience clavier-souris sur Cemu ne sera pas aussi agréable qu&rsquo;avec une manette. Cette solution convient aux joueurs n&rsquo;ayant pas de contrôleur compatible.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur l&rsquo;émulateur <strong>Cemu</strong> avec un <strong>clavier et une souris</strong> nécessite l&rsquo;utilisation d&rsquo;outils tiers pour simuler une manette. Ce guide vous explique comment configurer cette solution avec <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>.</p>
+<p>Cette méthode est particulièrement utile pour :</p>
+<ul>
+<li>Les joueurs n&rsquo;ayant pas de manette compatible</li>
+<li>Tester rapidement des jeux sans investir dans un contrôleur</li>
+<li>Certains genres de jeux adaptés au clavier-souris</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> ViGEmBus et Mouse2Joystick</li>
+<li><strong>Installer</strong> ViGEmBus (pilote de manette virtuelle)</li>
+<li><strong>Configurer</strong> Mouse2Joystick selon vos préférences</li>
+<li><strong>Paramétrer</strong> Cemu pour reconnaître les contrôles</li>
+<li><strong>Tester</strong> et ajuster les paramètres</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-nécessaires">
+<a class="header-anchor" href="#logiciels-n%c3%a9cessaires"></a>
+Logiciels nécessaires
+</h3><p><strong>Applications requises :</strong></p>
+<ul>
+<li><strong>ViGEmBus</strong> : Pilote pour manettes virtuelles</li>
+<li><strong>Mouse2Joystick</strong> : Convertit clavier/souris en signaux manette</li>
+<li><strong>Cemu</strong> : Émulateur Wii U (dernière version stable)</li>
+</ul>
+<h3 id="téléchargements">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargements"></a>
+Téléchargements
+</h3><h4 id="vigembus-pilote-de-manette-virtuelle">
+<a class="header-anchor" href="#vigembus-pilote-de-manette-virtuelle"></a>
+ViGEmBus (Pilote de manette virtuelle)
+</h4><p><strong>🔗 <a href="https://github.com/ViGEm/ViGEmBus/releases">Télécharger ViGEmBus</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Accédez</strong> à la page des releases</li>
+<li><strong>Téléchargez</strong> le fichier <code>.msi</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>ViGEmBus_Setup_1.17.333.msi</code></li>
+</ol>
+<p><img src="/images/vigembus-download.png" alt="ViGEmBus Download">
+<em>Page de téléchargement ViGEmBus</em></p>
+<p><strong>Caractéristiques ViGEmBus :</strong></p>
+<ul>
+<li><strong>Gratuit</strong> et open-source</li>
+<li><strong>Compatible</strong> Windows 10/11</li>
+<li><strong>Stable</strong> et régulièrement mis à jour</li>
+<li><strong>Nécessaire</strong> pour simuler des manettes Xbox</li>
+</ul>
+<h4 id="mouse2joystick-convertisseur-de-contrôles">
+<a class="header-anchor" href="#mouse2joystick-convertisseur-de-contr%c3%b4les"></a>
+Mouse2Joystick (Convertisseur de contrôles)
+</h4><p><strong>🔗 <a href="https://github.com/memethyl/Mouse2Joystick/releases">Télécharger Mouse2Joystick</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Téléchargez</strong> le fichier <code>.zip</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>Mouse2Joystick_v2.3.1.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+</ol>
+<p><img src="/images/mouse2joystick-download.png" alt="Mouse2Joystick Download">
+<em>Page de téléchargement Mouse2Joystick</em></p>
+<p><strong>Caractéristiques Mouse2Joystick :</strong></p>
+<ul>
+<li><strong>Portable</strong> : aucune installation requise</li>
+<li><strong>Personnalisable</strong> : mappage des touches configurable</li>
+<li><strong>Léger</strong> : faible impact sur les performances</li>
+<li><strong>Temps réel</strong> : conversion instantanée des mouvements</li>
+</ul>
+<h2 id="étape-1--installation-de-vigembus">
+<a class="header-anchor" href="#%c3%a9tape-1--installation-de-vigembus"></a>
+Étape 1 : Installation de ViGEmBus
+</h2><h3 id="processus-dinstallation">
+<a class="header-anchor" href="#processus-dinstallation"></a>
+Processus d&rsquo;installation
+</h3><h4 id="lancement-de-linstallateur">
+<a class="header-anchor" href="#lancement-de-linstallateur"></a>
+Lancement de l&rsquo;installateur
+</h4><ol>
+<li><strong>Localisez</strong> le fichier <code>.msi</code> téléchargé</li>
+<li><strong>Double-cliquez</strong> pour lancer l&rsquo;installation</li>
+<li><strong>Acceptez</strong> les permissions administrateur si demandées</li>
+</ol>
+<p><img src="/images/vigembus-installer.png" alt="ViGEmBus Installer">
+<em>Assistant d&rsquo;installation ViGEmBus</em></p>
+<h4 id="configuration-de-linstallation">
+<a class="header-anchor" href="#configuration-de-linstallation"></a>
+Configuration de l&rsquo;installation
+</h4><p><strong>Étapes d&rsquo;installation :</strong></p>
+<ol>
+<li><strong>Welcome</strong> → Cliquez &ldquo;Next&rdquo;</li>
+<li><strong>License Agreement</strong> → Acceptez et cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Destination Folder</strong> → Laissez par défaut, cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Ready to Install</strong> → Cliquez &ldquo;Install&rdquo;</li>
+<li><strong>Completed</strong> → Cliquez &ldquo;Finish&rdquo;</li>
+</ol>
+<p><strong>Composants installés :</strong></p>
+<ul>
+<li>Pilote de bus virtuel</li>
+<li>Bibliothèques système nécessaires</li>
+<li>Interface de gestion des périphériques</li>
+</ul>
+<h3 id="vérification-de-linstallation">
+<a class="header-anchor" href="#v%c3%a9rification-de-linstallation"></a>
+Vérification de l&rsquo;installation
+</h3><h4 id="contrôle-dans-le-gestionnaire-de-périphériques">
+<a class="header-anchor" href="#contr%c3%b4le-dans-le-gestionnaire-de-p%c3%a9riph%c3%a9riques"></a>
+Contrôle dans le Gestionnaire de périphériques
+</h4><ol>
+<li><strong>Clic droit</strong> sur &ldquo;Ce PC&rdquo; → <strong>Gestionnaire de périphériques</strong></li>
+<li><strong>Développez</strong> &ldquo;Périphériques système&rdquo;</li>
+<li><strong>Vérifiez</strong> la présence de &ldquo;ViGEmBus Device&rdquo;</li>
+</ol>
+<p><img src="/images/vigembus-device-manager.png" alt="ViGEmBus Device Manager">
+<em>ViGEmBus dans le Gestionnaire de périphériques</em></p>
+<h2 id="étape-2--configuration-de-mouse2joystick">
+<a class="header-anchor" href="#%c3%a9tape-2--configuration-de-mouse2joystick"></a>
+Étape 2 : Configuration de Mouse2Joystick
+</h2><h3 id="extraction-et-première-utilisation">
+<a class="header-anchor" href="#extraction-et-premi%c3%a8re-utilisation"></a>
+Extraction et première utilisation
+</h3><h4 id="préparation-du-logiciel">
+<a class="header-anchor" href="#pr%c3%a9paration-du-logiciel"></a>
+Préparation du logiciel
+</h4><ol>
+<li><strong>Naviguez</strong> vers le fichier <code>.zip</code> téléchargé</li>
+<li><strong>Clic droit</strong> → <strong>Extraire tout</strong></li>
+<li><strong>Choisissez</strong> un dossier permanent (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+<li><strong>Lancez</strong> <code>Mouse2Joystick.exe</code></li>
+</ol>
+<p><img src="/images/mouse2joystick-extraction.png" alt="Mouse2Joystick Extraction">
+<em>Extraction de Mouse2Joystick</em></p>
+<h3 id="interface-et-configuration-de-base">
+<a class="header-anchor" href="#interface-et-configuration-de-base"></a>
+Interface et configuration de base
+</h3><h4 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h4><p>Une fois lancé, Mouse2Joystick affiche une interface simple :</p>
+<p><img src="/images/mouse2joystick-interface.png" alt="Mouse2Joystick Interface">
+<em>Interface principale de Mouse2Joystick</em></p>
+<h4 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h4><p><strong>Paramètres de base suggérés :</strong></p>
+<p><strong>Section &ldquo;Mouse Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Mouse Sensitivity X: 3.0
+Mouse Sensitivity Y: 3.0
+Mouse Deadzone: 0.1
+Invert Y-axis: Selon préférence
+</code></pre><p><strong>Section &ldquo;Controller Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Controller Type: Xbox 360 Controller
+Vibration: Disabled (pas nécessaire)
+</code></pre><h3 id="mappage-des-touches">
+<a class="header-anchor" href="#mappage-des-touches"></a>
+Mappage des touches
+</h3><h4 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h4><p><strong>Mappage standard recommandé :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Action Wii U</th>
+          <th>Touche Clavier</th>
+          <th>Fonction</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Stick gauche</strong></td>
+          <td>WASD</td>
+          <td>Déplacement</td>
+      </tr>
+      <tr>
+          <td><strong>Stick droit</strong></td>
+          <td>Souris</td>
+          <td>Caméra</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton A</strong></td>
+          <td>Espace</td>
+          <td>Action principale</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton B</strong></td>
+          <td>Ctrl gauche</td>
+          <td>Action secondaire</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton X</strong></td>
+          <td>E</td>
+          <td>Interaction</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton Y</strong></td>
+          <td>Q</td>
+          <td>Menu/Inventaire</td>
+      </tr>
+      <tr>
+          <td><strong>L/R</strong></td>
+          <td>Shift/Tab</td>
+          <td>Gâchettes</td>
+      </tr>
+      <tr>
+          <td><strong>ZL/ZR</strong></td>
+          <td>Clic gauche/droit</td>
+          <td>Gâchettes numériques</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/mouse2joystick-mapping.png" alt="Mouse2Joystick Mapping">
+<em>Configuration du mappage des touches</em></p>
+<h4 id="paramètres-avancés">
+<a class="header-anchor" href="#param%c3%a8tres-avanc%c3%a9s"></a>
+Paramètres avancés
+</h4><p><strong>Sensibilité de la souris :</strong></p>
+<ul>
+<li><strong>Jeux FPS</strong> : Sensibilité élevée (4.0-5.0)</li>
+<li><strong>Jeux d&rsquo;aventure</strong> : Sensibilité moyenne (2.5-3.5)</li>
+<li><strong>Jeux de plateforme</strong> : Sensibilité faible (1.5-2.5)</li>
+</ul>
+<p><strong>Dead zones :</strong></p>
+<ul>
+<li><strong>Souris</strong> : 0.05-0.15 (évite les micro-mouvements)</li>
+<li><strong>Clavier</strong> : 0.0 (réponse instantanée)</li>
+</ul>
+<h2 id="étape-3--configuration-de-cemu">
+<a class="header-anchor" href="#%c3%a9tape-3--configuration-de-cemu"></a>
+Étape 3 : Configuration de Cemu
+</h2><h3 id="accès-aux-paramètres-de-contrôle">
+<a class="header-anchor" href="#acc%c3%a8s-aux-param%c3%a8tres-de-contr%c3%b4le"></a>
+Accès aux paramètres de contrôle
+</h3><h4 id="navigation-dans-cemu">
+<a class="header-anchor" href="#navigation-dans-cemu"></a>
+Navigation dans Cemu
+</h4><ol>
+<li><strong>Lancez</strong> Cemu</li>
+<li><strong>Menu</strong> &ldquo;Options&rdquo; → <strong>&ldquo;Paramètres de la manette&rdquo;</strong> (Input Settings)</li>
+<li><strong>Supprimez</strong> toutes les manettes existantes avec le bouton <strong>&quot;-&quot;</strong></li>
+</ol>
+<p><img src="/images/cemu-input-settings.png" alt="Cemu Input Settings">
+<em>Paramètres de contrôle dans Cemu</em></p>
+<h3 id="suppression-des-contrôleurs-existants">
+<a class="header-anchor" href="#suppression-des-contr%c3%b4leurs-existants"></a>
+Suppression des contrôleurs existants
+</h3><h4 id="nettoyage-des-configurations">
+<a class="header-anchor" href="#nettoyage-des-configurations"></a>
+Nettoyage des configurations
+</h4><p><strong>Étapes de suppression :</strong></p>
+<ol>
+<li><strong>Identifiez</strong> tous les contrôleurs listés</li>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;-&quot;</strong> pour chaque contrôleur</li>
+<li><strong>Confirmez</strong> la suppression si demandé</li>
+<li><strong>Vérifiez</strong> que la liste est vide</li>
+</ol>
+<p><img src="/images/cemu-remove-controllers.png" alt="Cemu Remove Controllers">
+<em>Suppression des contrôleurs existants</em></p>
+<h3 id="ajout-des-nouveaux-contrôleurs">
+<a class="header-anchor" href="#ajout-des-nouveaux-contr%c3%b4leurs"></a>
+Ajout des nouveaux contrôleurs
+</h3><h4 id="configuration-xinput-mouse2joystick">
+<a class="header-anchor" href="#configuration-xinput-mouse2joystick"></a>
+Configuration XInput (Mouse2Joystick)
+</h4><p><strong>Avec Mouse2Joystick ouvert :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;XInput&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo; qui devrait apparaître</li>
+<li><strong>Confirmez</strong> la sélection</li>
+</ol>
+<p><img src="/images/cemu-add-xinput.png" alt="Cemu Add XInput">
+<em>Ajout du contrôleur XInput</em></p>
+<h4 id="configuration-keyboard-touches-supplémentaires">
+<a class="header-anchor" href="#configuration-keyboard-touches-suppl%c3%a9mentaires"></a>
+Configuration Keyboard (Touches supplémentaires)
+</h4><p><strong>Pour les touches non mappées :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> à nouveau sur <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;Keyboard&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo;</li>
+<li><strong>Configurez</strong> les touches spécifiques Wii U</li>
+</ol>
+<p><img src="/images/cemu-add-keyboard.png" alt="Cemu Add Keyboard">
+<em>Ajout du contrôleur clavier</em></p>
+<h3 id="configuration-finale-des-touches">
+<a class="header-anchor" href="#configuration-finale-des-touches"></a>
+Configuration finale des touches
+</h3><h4 id="mappage-dans-cemu">
+<a class="header-anchor" href="#mappage-dans-cemu"></a>
+Mappage dans Cemu
+</h4><p><strong>Configuration recommandée :</strong></p>
+<p><strong>Contrôleur XInput (Mouse2Joystick) :</strong></p>
+<pre tabindex="0"><code>Left Stick: Mouvement du personnage
+Right Stick: Contrôle de la caméra
+A Button: Action principale
+B Button: Retour/Annuler
+X Button: Action secondaire
+Y Button: Menu
+L/R Bumper: Gâchettes rapides
+L/R Trigger: Gâchettes analogiques
+</code></pre><p><strong>Contrôleur Keyboard (touches spéciales) :</strong></p>
+<pre tabindex="0"><code>Plus: Entrée (Menu principal)
+Minus: Échap (Pause)
+Home: Tab (Menu Home)
+Screenshot: F12
+</code></pre><p><img src="/images/cemu-final-config.png" alt="Cemu Final Configuration">
+<em>Configuration finale des contrôles</em></p>
+<h2 id="tests-et-ajustements">
+<a class="header-anchor" href="#tests-et-ajustements"></a>
+Tests et ajustements
+</h2><h3 id="test-de-fonctionnement">
+<a class="header-anchor" href="#test-de-fonctionnement"></a>
+Test de fonctionnement
+</h3><h4 id="vérification-de-base">
+<a class="header-anchor" href="#v%c3%a9rification-de-base"></a>
+Vérification de base
+</h4><p><strong>Checklist de test :</strong></p>
+<pre tabindex="0"><code>☑ Mouse2Joystick fonctionne en arrière-plan
+☑ Mouvements de souris = rotation caméra
+☑ WASD = déplacement du personnage
+☑ Clics souris = gâchettes
+☑ Touches clavier = boutons manette
+</code></pre><h4 id="test-en-jeu">
+<a class="header-anchor" href="#test-en-jeu"></a>
+Test en jeu
+</h4><p><strong>Jeux recommandés pour tester :</strong></p>
+<ul>
+<li><strong>The Legend of Zelda: Breath of the Wild</strong> : Test complet des contrôles</li>
+<li><strong>Super Mario 3D World</strong> : Test de précision</li>
+<li><strong>Mario Kart 8</strong> : Test de réactivité</li>
+</ul>
+<h3 id="optimisations-et-ajustements">
+<a class="header-anchor" href="#optimisations-et-ajustements"></a>
+Optimisations et ajustements
+</h3><h4 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h4><p><strong>🚫 La souris ne contrôle pas la caméra</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> que Mouse2Joystick est ouvert</li>
+<li><strong>Redémarrez</strong> Mouse2Joystick</li>
+<li><strong>Reconfigurez</strong> le stick droit dans Cemu</li>
+</ol>
+<p><strong>⚠️ Mouvements saccadés</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Réduisez</strong> la sensibilité de la souris</li>
+<li><strong>Augmentez</strong> la dead zone</li>
+<li><strong>Fermez</strong> les applications consommatrices de ressources</li>
+</ol>
+<p><strong>💻 Latence importante</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Mode plein écran</strong> dans Cemu</li>
+<li><strong>Désactivez</strong> la synchronisation verticale</li>
+<li><strong>Augmentez</strong> la priorité de processus de Mouse2Joystick</li>
+</ol>
+<h3 id="profils-personnalisés">
+<a class="header-anchor" href="#profils-personnalis%c3%a9s"></a>
+Profils personnalisés
+</h3><h4 id="sauvegarde-des-configurations">
+<a class="header-anchor" href="#sauvegarde-des-configurations"></a>
+Sauvegarde des configurations
+</h4><p><strong>Création de profils par jeu :</strong></p>
+<ol>
+<li><strong>Configurez</strong> les contrôles pour un jeu spécifique</li>
+<li><strong>Sauvegardez</strong> la configuration Mouse2Joystick</li>
+<li><strong>Exportez</strong> les paramètres Cemu</li>
+<li><strong>Nommez</strong> clairement chaque profil</li>
+</ol>
+<p><strong>Exemples de profils :</strong></p>
+<ul>
+<li><code>Zelda_BOTW_KBM.xml</code></li>
+<li><code>Mario3D_KBM.xml</code></li>
+<li><code>MarioKart8_KBM.xml</code></li>
+</ul>
+<h2 id="jeux-recommandés-et-incompatibles">
+<a class="header-anchor" href="#jeux-recommand%c3%a9s-et-incompatibles"></a>
+Jeux recommandés et incompatibles
+</h2><h3 id="jeux-adaptés-au-clavier-souris">
+<a class="header-anchor" href="#jeux-adapt%c3%a9s-au-clavier-souris"></a>
+Jeux adaptés au clavier-souris
+</h3><h4 id="excellente-compatibilité">
+<a class="header-anchor" href="#excellente-compatibilit%c3%a9"></a>
+Excellente compatibilité
+</h4><p><strong>Jeux fonctionnant bien :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Raison</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zelda: Breath of the Wild</strong></td>
+          <td>Contrôle libre de caméra</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade Chronicles X</strong></td>
+          <td>Gameplay lent, RPG</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Assassin&rsquo;s Creed 4</strong></td>
+          <td>Port PC-like</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Call of Duty: Ghosts</strong></td>
+          <td>FPS natif</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="compatibilité-moyenne">
+<a class="header-anchor" href="#compatibilit%c3%a9-moyenne"></a>
+Compatibilité moyenne
+</h4><p><strong>Jeux jouables avec adaptations :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Défis</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Super Mario 3D World</strong></td>
+          <td>Précision requise</td>
+          <td>⭐⭐⭐⭐☆</td>
+      </tr>
+      <tr>
+          <td><strong>Donkey Kong Country</strong></td>
+          <td>Timing important</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+      <tr>
+          <td><strong>New Super Mario Bros. U</strong></td>
+          <td>Contrôles rapides</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-non-recommandés">
+<a class="header-anchor" href="#jeux-non-recommand%c3%a9s"></a>
+Jeux non recommandés
+</h3><h4 id="mauvaise-compatibilité">
+<a class="header-anchor" href="#mauvaise-compatibilit%c3%a9"></a>
+Mauvaise compatibilité
+</h4><p><strong>Jeux difficiles au clavier-souris :</strong></p>
+<ul>
+<li><strong>Mario Kart 8</strong> : Contrôles analogiques cruciaux</li>
+<li><strong>Super Smash Bros.</strong> : Précision et rapidité extrêmes</li>
+<li><strong>Pokken Tournament</strong> : Combats complexes</li>
+<li><strong>Splatoon</strong> : Gyroscope nécessaire</li>
+</ul>
+<h2 id="troubleshooting-avancé">
+<a class="header-anchor" href="#troubleshooting-avanc%c3%a9"></a>
+Troubleshooting avancé
+</h2><h3 id="problèmes-de-détection">
+<a class="header-anchor" href="#probl%c3%a8mes-de-d%c3%a9tection"></a>
+Problèmes de détection
+</h3><h4 id="mouse2joystick-non-reconnu">
+<a class="header-anchor" href="#mouse2joystick-non-reconnu"></a>
+Mouse2Joystick non reconnu
+</h4><p><strong>Diagnostic :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> l&rsquo;installation de ViGEmBus</li>
+<li><strong>Redémarrez</strong> Windows</li>
+<li><strong>Relancez</strong> Mouse2Joystick en administrateur</li>
+<li><strong>Vérifiez</strong> les processus en arrière-plan</li>
+</ol>
+<p><strong>Solutions avancées :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span># Vérifier les services ViGEmBus
+</span></span><span style="display:flex;"><span>sc query ViGEmBus
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Redémarrer le service si nécessaire
+</span></span><span style="display:flex;"><span>sc stop ViGEmBus
+</span></span><span style="display:flex;"><span>sc start ViGEmBus
+</span></span></code></pre></div><h4 id="conflits-avec-dautres-logiciels">
+<a class="header-anchor" href="#conflits-avec-dautres-logiciels"></a>
+Conflits avec d&rsquo;autres logiciels
+</h4><p><strong>Logiciels potentiellement conflictuels :</strong></p>
+<ul>
+<li><strong>Steam Input</strong> : Désactivez pour Cemu</li>
+<li><strong>Xbox Game Bar</strong> : Peut interférer</li>
+<li><strong>Discord Overlay</strong> : Parfois problématique</li>
+<li><strong>GeForce Experience</strong> : Désactivez l&rsquo;overlay</li>
+</ul>
+<h3 id="optimisations-de-performance">
+<a class="header-anchor" href="#optimisations-de-performance"></a>
+Optimisations de performance
+</h3><h4 id="paramètres-windows">
+<a class="header-anchor" href="#param%c3%a8tres-windows"></a>
+Paramètres Windows
+</h4><p><strong>Optimisations système :</strong></p>
+<pre tabindex="0"><code>Mode de jeu Windows: Activé
+Priorité haute pour Cemu: Recommandée
+Fermer applications inutiles: Obligatoire
+Antivirus en mode jeu: Si disponible
+</code></pre><h4 id="paramètres-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-cemu"></a>
+Paramètres Cemu
+</h4><p><strong>Configuration optimale :</strong></p>
+<pre tabindex="0"><code>Async Shader Compilation: Activé
+Precompiled Shaders: Utilisez si disponibles
+GPU Buffer Cache Accuracy: Medium
+CPU Mode: Triple-core recompiler
+</code></pre><h2 id="ressources-et-aide-supplémentaire">
+<a class="header-anchor" href="#ressources-et-aide-suppl%c3%a9mentaire"></a>
+Ressources et aide supplémentaire
+</h2><h3 id="tutoriel-vidéo">
+<a class="header-anchor" href="#tutoriel-vid%c3%a9o"></a>
+Tutoriel vidéo
+</h3><p><strong>🎥 <a href="https://youtu.be/UAtG_UEbESI">Tutoriel complet en vidéo</a></strong></p>
+<p>Le tutoriel vidéo couvre :</p>
+<ul>
+<li>Installation complète étape par étape</li>
+<li>Configuration en temps réel</li>
+<li>Démonstration sur plusieurs jeux</li>
+<li>Résolution des problèmes courants</li>
+</ul>
+<h3 id="communauté-et-support">
+<a class="header-anchor" href="#communaut%c3%a9-et-support"></a>
+Communauté et support
+</h3><h4 id="forums-et-ressources">
+<a class="header-anchor" href="#forums-et-ressources"></a>
+Forums et ressources
+</h4><p><strong>Sites utiles :</strong></p>
+<ul>
+<li><strong>Reddit</strong> : r/cemu pour l&rsquo;aide communautaire</li>
+<li><strong>Discord Cemu</strong> : Support en temps réel</li>
+<li><strong>GitHub</strong> : Rapports de bugs et améliorations</li>
+<li><strong>YouTube</strong> : Tutoriels spécialisés</li>
+</ul>
+<h4 id="documentation-officielle">
+<a class="header-anchor" href="#documentation-officielle"></a>
+Documentation officielle
+</h4><p><strong>Ressources officielles :</strong></p>
+<ul>
+<li><strong>Cemu Wiki</strong> : Guide complet de l&rsquo;émulateur</li>
+<li><strong>ViGEmBus Docs</strong> : Documentation technique</li>
+<li><strong>Mouse2Joystick GitHub</strong> : Issues et mises à jour</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur <strong>Cemu</strong> avec un clavier et une souris est possible grâce à <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>. Bien que l&rsquo;expérience ne soit pas optimale pour tous les jeux, cette solution permet de découvrir l&rsquo;excellent catalogue Wii U sans investir dans une manette.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Configuration essentielle :</strong></p>
+<ol>
+<li><strong>ViGEmBus</strong> installé et fonctionnel</li>
+<li><strong>Mouse2Joystick</strong> configuré et actif</li>
+<li><strong>Cemu</strong> configuré avec XInput + Keyboard</li>
+<li><strong>Tests</strong> et ajustements par jeu</li>
+<li><strong>Patience</strong> pour l&rsquo;adaptation</li>
+</ol></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une meilleure expérience :</strong></p>
+<ul>
+<li>Commencez par des jeux adaptés (Zelda, RPG)</li>
+<li>Prenez le temps d&rsquo;ajuster les sensibilités</li>
+<li>Sauvegardez vos configurations</li>
+<li>Considérez l&rsquo;achat d&rsquo;une manette à terme</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Cette méthode fonctionne-t-elle avec tous les jeux Wii U ?</strong>
+R : Non, certains jeux nécessitent absolument une manette pour une expérience correcte (Mario Kart, Smash Bros, etc.).</p>
+<p><strong>Q : Puis-je utiliser cette configuration pour d&rsquo;autres émulateurs ?</strong>
+R : Oui, Mouse2Joystick fonctionne avec la plupart des émulateurs supportant XInput.</p>
+<p><strong>Q : La latence est-elle importante ?</strong>
+R : La latence est généralement faible, mais peut varier selon votre configuration matérielle.</p>
+<p><strong>Q : Dois-je laisser Mouse2Joystick ouvert en permanence ?</strong>
+R : Oui, Mouse2Joystick doit rester ouvert tant que vous jouez pour maintenir la simulation de manette.</p>
+<p><strong>Q : Cette méthode affecte-t-elle les performances de Cemu ?</strong>
+R : L&rsquo;impact est minimal, Mouse2Joystick étant très léger en ressources.</p>
+<hr>
+<p><strong>Ce guide vous a aidé à configurer vos contrôles ?</strong> Partagez vos configurations optimales et vos retours d&rsquo;expérience en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/cemu-complete-guide/">Guide Complet de l&rsquo;Émulateur Cemu</a></li>
+<li><a href="/fr/post/cemu-performance-optimization/">Optimiser les Performances sur Cemu</a></li>
+<li><a href="/fr/post/best-controllers-emulation/">Meilleures Manettes pour Émulation</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://axekin.com/fr/post/keyboard_mouse_cemu/">https://axekin.com/fr/post/keyboard_mouse_cemu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/fr/post/keyboard_mouse_cemu/" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/fr/post/keyboard_mouse_cemu/&amp;text=Guide%20Complet%20:%20Jouer%20Clavier-Souris%20sur%20l%27%c3%89mulateur%20Cemu&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/fr/post/keyboard_mouse_cemu/&amp;title=Guide%20Complet%20:%20Jouer%20Clavier-Souris%20sur%20l%27%c3%89mulateur%20Cemu&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20configurer%20le%20contr%c3%b4le%20clavier-souris%20sur%20Cemu%20avec%20Mouse2Joystick%20et%20ViGEmBus%20-%20Configuration%20%c3%a9tape%20par%20%c3%a9tape&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/fr/post/keyboard_mouse_cemu/&amp;title=Guide%20Complet%20:%20Jouer%20Clavier-Souris%20sur%20l%27%c3%89mulateur%20Cemu" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Guide Complet : Jouer Clavier-Souris sur l&#39;Émulateur Cemu">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/cemu"
+        rel="tag"
+        >CEMU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/wiiu"
+        rel="tag"
+        >WIIU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/clavier-souris"
+        rel="tag"
+        >CLAVIER-SOURIS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/mouse2joystick"
+        rel="tag"
+        >MOUSE2JOYSTICK</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/vigembus"
+        rel="tag"
+        >VIGEMBUS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo"
+        rel="tag"
+        >NINTENDO</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/citra-cheats-mods.webp"
+            data-sizes="auto"
+            alt="Guide complet : Installation et configuration de Citra"
+            class="lazyload"
+          /><a href="/fr/post/citra/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Guide complet : Installation et configuration de Citra</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/ryujinx-cheats-mods.webp"
+            data-sizes="auto"
+            alt="Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx"
+            class="lazyload"
+          /><a href="/fr/post/cheat_ryujinx/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;28.3k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:19</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#processus-général">Processus général</a></li>
+      </ul>
+    </li>
+    <li><a href="#prérequis-et-téléchargements">Prérequis et téléchargements</a>
+      <ul>
+        <li><a href="#logiciels-nécessaires">Logiciels nécessaires</a></li>
+        <li><a href="#téléchargements">Téléchargements</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-1--installation-de-vigembus">Étape 1 : Installation de ViGEmBus</a>
+      <ul>
+        <li><a href="#processus-dinstallation">Processus d&rsquo;installation</a></li>
+        <li><a href="#vérification-de-linstallation">Vérification de l&rsquo;installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-2--configuration-de-mouse2joystick">Étape 2 : Configuration de Mouse2Joystick</a>
+      <ul>
+        <li><a href="#extraction-et-première-utilisation">Extraction et première utilisation</a></li>
+        <li><a href="#interface-et-configuration-de-base">Interface et configuration de base</a></li>
+        <li><a href="#mappage-des-touches">Mappage des touches</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-3--configuration-de-cemu">Étape 3 : Configuration de Cemu</a>
+      <ul>
+        <li><a href="#accès-aux-paramètres-de-contrôle">Accès aux paramètres de contrôle</a></li>
+        <li><a href="#suppression-des-contrôleurs-existants">Suppression des contrôleurs existants</a></li>
+        <li><a href="#ajout-des-nouveaux-contrôleurs">Ajout des nouveaux contrôleurs</a></li>
+        <li><a href="#configuration-finale-des-touches">Configuration finale des touches</a></li>
+      </ul>
+    </li>
+    <li><a href="#tests-et-ajustements">Tests et ajustements</a>
+      <ul>
+        <li><a href="#test-de-fonctionnement">Test de fonctionnement</a></li>
+        <li><a href="#optimisations-et-ajustements">Optimisations et ajustements</a></li>
+        <li><a href="#profils-personnalisés">Profils personnalisés</a></li>
+      </ul>
+    </li>
+    <li><a href="#jeux-recommandés-et-incompatibles">Jeux recommandés et incompatibles</a>
+      <ul>
+        <li><a href="#jeux-adaptés-au-clavier-souris">Jeux adaptés au clavier-souris</a></li>
+        <li><a href="#jeux-non-recommandés">Jeux non recommandés</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-avancé">Troubleshooting avancé</a>
+      <ul>
+        <li><a href="#problèmes-de-détection">Problèmes de détection</a></li>
+        <li><a href="#optimisations-de-performance">Optimisations de performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#ressources-et-aide-supplémentaire">Ressources et aide supplémentaire</a>
+      <ul>
+        <li><a href="#tutoriel-vidéo">Tutoriel vidéo</a></li>
+        <li><a href="#communauté-et-support">Communauté et support</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#conseils-finaux">Conseils finaux</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Guide Complet : Jouer Clavier-Souris sur l\u0027Émulateur Cemu",
+          url: "https:\/\/axekin.com\/fr\/post\/keyboard_mouse_cemu\/",
+          description: "Tutoriel détaillé pour configurer le contrôle clavier-souris sur Cemu avec Mouse2Joystick et ViGEmBus - Configuration étape par étape",
+          cover: "https:\/\/axekin.com\/images\/covers\/cemu-keyboard-mouse.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

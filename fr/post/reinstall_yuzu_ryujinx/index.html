@@ -1,0 +1,1160 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes | Axekin
+</title>
+<meta
+  name="description"
+  content="Guide complet pour réinstaller proprement les émulateurs Nintendo Switch Yuzu et Ryujinx tout en préservant vos sauvegardes de jeux"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":true,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes | Axekin" />
+  <meta
+    property="og:description"
+    content="Guide complet pour réinstaller proprement les émulateurs Nintendo Switch Yuzu et Ryujinx tout en préservant vos sauvegardes de jeux"
+  />
+  <meta property="og:url" content="https://axekin.com/fr/post/reinstall_yuzu_ryujinx/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/yuzu-ryujinx-backup.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="yuzuryujinxnintendo-switchemulationsauvegardebackupreinstallation" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/yuzu-ryujinx-backup.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.f598ed868b3911ee4b8604a5325f69f3d7198d4cd0def7972d5b8cb90d7d3fab.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/axekin"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/reinstall_yuzu_ryujinx\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/yuzu-ryujinx-backup.webp" alt="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes"><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="slide-up">Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</h1>
+          </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#pourquoi-réinstaller-">Pourquoi réinstaller ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#méthode-pour-yuzu">Méthode pour Yuzu</a>
+      <ul>
+        <li><a href="#étape-1--sauvegarder-les-données-de-jeu">Étape 1 : Sauvegarder les données de jeu</a></li>
+        <li><a href="#étape-2--supprimer-les-données-yuzu">Étape 2 : Supprimer les données Yuzu</a></li>
+        <li><a href="#étape-3--réinstaller-yuzu">Étape 3 : Réinstaller Yuzu</a></li>
+        <li><a href="#étape-4--restaurer-les-sauvegardes">Étape 4 : Restaurer les sauvegardes</a></li>
+      </ul>
+    </li>
+    <li><a href="#méthode-pour-ryujinx">Méthode pour Ryujinx</a>
+      <ul>
+        <li><a href="#étape-1--sauvegarder-les-données-ryujinx">Étape 1 : Sauvegarder les données Ryujinx</a></li>
+        <li><a href="#étape-2--supprimer-ryujinx">Étape 2 : Supprimer Ryujinx</a></li>
+        <li><a href="#étape-3--réinstallation-et-restauration">Étape 3 : Réinstallation et restauration</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparaison-des-méthodes">Comparaison des méthodes</a></li>
+    <li><a href="#conseils-et-bonnes-pratiques">Conseils et bonnes pratiques</a>
+      <ul>
+        <li><a href="#sauvegardes-automatiques">Sauvegardes automatiques</a></li>
+        <li><a href="#vérifications-importantes">Vérifications importantes</a></li>
+        <li><a href="#problèmes-courants-et-solutions">Problèmes courants et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#outils-recommandés">Outils recommandés</a>
+      <ul>
+        <li><a href="#gestionnaires-de-sauvegarde">Gestionnaires de sauvegarde</a></li>
+        <li><a href="#synchronisation-cloud">Synchronisation cloud</a></li>
+      </ul>
+    </li>
+    <li><a href="#dépannage-avancé">Dépannage avancé</a>
+      <ul>
+        <li><a href="#récupération-durgence">Récupération d&rsquo;urgence</a></li>
+        <li><a href="#migration-vers-un-nouveau-pc">Migration vers un nouveau PC</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#maintenance-préventive">Maintenance préventive</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="zoom-in"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/gaming"
+      data-aos="zoom-in"
+      >GAMING</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/emulation"
+      data-aos="zoom-in"
+      >EMULATION</a
+    ><a
+      class="article-category-link"
+      href="/fr/categories/tutorials"
+      data-aos="zoom-in"
+      >TUTORIALS</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote id="outdate-blockquote" style="display: none;">
+          <p></p>
+        </blockquote><blockquote>
+<p><strong>⚠️ Important</strong> : Toujours sauvegarder vos données avant toute réinstallation ! Ce guide vous montre comment procéder en sécurité.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Il arrive parfois que <strong>Yuzu</strong> ou <strong>Ryujinx</strong> rencontrent des problèmes nécessitant une réinstallation complète. Corruption de fichiers, mises à jour problématiques, ou simplement envie de repartir sur des bases saines&hellip;</p>
+<p>Ce guide vous explique <strong>comment réinstaller proprement</strong> ces émulateurs <strong>sans perdre vos sauvegardes</strong> de jeux Nintendo Switch.</p>
+<h3 id="pourquoi-réinstaller-">
+<a class="header-anchor" href="#pourquoi-r%c3%a9installer-"></a>
+Pourquoi réinstaller ?
+</h3><p><strong>Problèmes courants nécessitant une réinstallation :</strong></p>
+<ul>
+<li>Émulateur qui refuse de démarrer</li>
+<li>Performances dégradées après une mise à jour</li>
+<li>Fichiers de configuration corrompus</li>
+<li>Problèmes graphiques persistants</li>
+<li>Messages d&rsquo;erreur récurrents</li>
+</ul>
+<h2 id="méthode-pour-yuzu">
+<a class="header-anchor" href="#m%c3%a9thode-pour-yuzu"></a>
+Méthode pour Yuzu
+</h2><h3 id="étape-1--sauvegarder-les-données-de-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-de-jeu"></a>
+Étape 1 : Sauvegarder les données de jeu
+</h3><h4 id="localiser-les-sauvegardes">
+<a class="header-anchor" href="#localiser-les-sauvegardes"></a>
+Localiser les sauvegardes
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> (si possible)</li>
+<li><strong>Clic droit</strong> sur le jeu souhaité dans la liste</li>
+<li>Sélectionnez <strong>&ldquo;Open Save Data Location&rdquo;</strong> (ou &ldquo;Ouvrir l&rsquo;emplacement des données de sauvegarde&rdquo;)</li>
+</ol>
+<p><img src="/images/yuzu-right-click-menu.png" alt="Menu contextuel Yuzu">
+<em>Menu clic droit sur un jeu dans Yuzu</em></p>
+<h4 id="sauvegarder-le-contenu">
+<a class="header-anchor" href="#sauvegarder-le-contenu"></a>
+Sauvegarder le contenu
+</h4><ol start="4">
+<li><strong>Sélectionnez tout le contenu</strong> du dossier qui s&rsquo;ouvre (Ctrl+A)</li>
+<li><strong>Copiez</strong> les fichiers (Ctrl+C)</li>
+<li><strong>Créez un dossier</strong> de sauvegarde sur votre bureau ou disque dur</li>
+<li><strong>Collez</strong> le contenu dans ce dossier (Ctrl+V)</li>
+</ol>
+<p><strong>Structure recommandée pour l&rsquo;organisation :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Yuzu_2025-06-04/
+├── 📁 The_Legend_of_Zelda_BOTW/
+│   ├── save_data.bin
+│   └── other_files...
+├── 📁 Super_Mario_Odyssey/
+│   ├── save_data.bin
+│   └── other_files...
+└── 📁 Pokemon_Legends_Arceus/
+    ├── save_data.bin
+    └── other_files...
+</code></pre><h4 id="répéter-pour-tous-les-jeux">
+<a class="header-anchor" href="#r%c3%a9p%c3%a9ter-pour-tous-les-jeux"></a>
+Répéter pour tous les jeux
+</h4><ol start="8">
+<li><strong>Répétez cette opération</strong> pour chaque jeu dont vous voulez conserver la sauvegarde</li>
+<li><strong>Notez le nom</strong> de chaque dossier pour faciliter la restauration</li>
+</ol>
+<h3 id="étape-2--supprimer-les-données-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-les-donn%c3%a9es-yuzu"></a>
+Étape 2 : Supprimer les données Yuzu
+</h3><h4 id="accéder-au-dossier-de-configuration">
+<a class="header-anchor" href="#acc%c3%a9der-au-dossier-de-configuration"></a>
+Accéder au dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et appuyez sur <strong>Entrée</strong></li>
+</ol>
+<p><img src="/images/windows-run-appdata.png" alt="Boîte de dialogue Exécuter">
+<em>Accès au dossier AppData via Windows + R</em></p>
+<h4 id="supprimer-le-dossier-yuzu">
+<a class="header-anchor" href="#supprimer-le-dossier-yuzu"></a>
+Supprimer le dossier Yuzu
+</h4><ol start="3">
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;yuzu&rdquo;</strong></li>
+<li><strong>Supprimez complètement</strong> ce dossier</li>
+<li><strong>Videz la corbeille</strong> pour libérer l&rsquo;espace</li>
+</ol>
+<blockquote>
+<p><strong>💡 Conseil</strong> : Si le dossier est en cours d&rsquo;utilisation, fermez complètement Yuzu via le gestionnaire des tâches.</p></blockquote>
+<h3 id="étape-3--réinstaller-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installer-yuzu"></a>
+Étape 3 : Réinstaller Yuzu
+</h3><h4 id="installation-propre">
+<a class="header-anchor" href="#installation-propre"></a>
+Installation propre
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Yuzu depuis le site officiel</li>
+<li><strong>Désinstallez</strong> l&rsquo;ancienne version si elle est encore présente</li>
+<li><strong>Installez</strong> la nouvelle version avec les paramètres par défaut</li>
+<li><strong>Lancez</strong> Yuzu pour la configuration initiale</li>
+</ol>
+<h4 id="configuration-de-base">
+<a class="header-anchor" href="#configuration-de-base"></a>
+Configuration de base
+</h4><ol start="5">
+<li><strong>Configurez</strong> les paramètres graphiques selon votre matériel</li>
+<li><strong>Ajoutez</strong> vos dossiers de jeux</li>
+<li><strong>Installez</strong> les firmware et clés si nécessaire</li>
+</ol>
+<h3 id="étape-4--restaurer-les-sauvegardes">
+<a class="header-anchor" href="#%c3%a9tape-4--restaurer-les-sauvegardes"></a>
+Étape 4 : Restaurer les sauvegardes
+</h3><h4 id="remettre-les-fichiers-de-sauvegarde">
+<a class="header-anchor" href="#remettre-les-fichiers-de-sauvegarde"></a>
+Remettre les fichiers de sauvegarde
+</h4><ol>
+<li><strong>Lancez</strong> vos jeux une première fois pour créer les dossiers de sauvegarde</li>
+<li><strong>Fermez</strong> Yuzu complètement</li>
+<li><strong>Clic droit</strong> sur chaque jeu → &ldquo;Open Save Data Location&rdquo;</li>
+<li><strong>Remplacez</strong> le contenu par vos fichiers sauvegardés</li>
+</ol>
+<p><strong>Vérification :</strong></p>
+<ul>
+<li>Lancez le jeu pour vérifier que la sauvegarde est bien chargée</li>
+<li>Vérifiez la progression, les statistiques, etc.</li>
+</ul>
+<h2 id="méthode-pour-ryujinx">
+<a class="header-anchor" href="#m%c3%a9thode-pour-ryujinx"></a>
+Méthode pour Ryujinx
+</h2><h3 id="étape-1--sauvegarder-les-données-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-ryujinx"></a>
+Étape 1 : Sauvegarder les données Ryujinx
+</h3><h4 id="localiser-les-sauvegardes-utilisateur">
+<a class="header-anchor" href="#localiser-les-sauvegardes-utilisateur"></a>
+Localiser les sauvegardes utilisateur
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur le jeu souhaité</li>
+<li>Sélectionnez <strong>&ldquo;Open User Save Directory&rdquo;</strong></li>
+</ol>
+<p><img src="/images/ryujinx-save-menu.png" alt="Menu Ryujinx">
+<em>Options de sauvegarde dans Ryujinx</em></p>
+<h4 id="sauvegarder-les-données-additionnelles">
+<a class="header-anchor" href="#sauvegarder-les-donn%c3%a9es-additionnelles"></a>
+Sauvegarder les données additionnelles
+</h4><ol start="4">
+<li>Si disponible, cliquez aussi sur <strong>&ldquo;Open Mod Data Directory&rdquo;</strong> ou données additionnelles</li>
+<li><strong>Copiez</strong> tout le contenu dans vos dossiers de sauvegarde</li>
+<li><strong>Organisez</strong> par nom de jeu comme pour Yuzu</li>
+</ol>
+<h3 id="étape-2--supprimer-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-ryujinx"></a>
+Étape 2 : Supprimer Ryujinx
+</h3><h4 id="localiser-le-dossier-de-configuration">
+<a class="header-anchor" href="#localiser-le-dossier-de-configuration"></a>
+Localiser le dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et validez</li>
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;Ryujinx&rdquo;</strong></li>
+<li><strong>Supprimez</strong> complètement ce dossier</li>
+</ol>
+<h3 id="étape-3--réinstallation-et-restauration">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installation-et-restauration"></a>
+Étape 3 : Réinstallation et restauration
+</h3><h4 id="réinstaller-ryujinx">
+<a class="header-anchor" href="#r%c3%a9installer-ryujinx"></a>
+Réinstaller Ryujinx
+</h4><ol>
+<li><strong>Téléchargez</strong> la dernière version de Ryujinx</li>
+<li><strong>Installez</strong> proprement l&rsquo;émulateur</li>
+<li><strong>Configurez</strong> les paramètres de base</li>
+</ol>
+<h4 id="restaurer-les-sauvegardes">
+<a class="header-anchor" href="#restaurer-les-sauvegardes"></a>
+Restaurer les sauvegardes
+</h4><ol start="4">
+<li><strong>Lancez chaque jeu</strong> une première fois</li>
+<li><strong>Fermez</strong> Ryujinx</li>
+<li><strong>Remplacez</strong> les fichiers de sauvegarde par vos backups</li>
+<li><strong>Testez</strong> que tout fonctionne correctement</li>
+</ol>
+<h2 id="comparaison-des-méthodes">
+<a class="header-anchor" href="#comparaison-des-m%c3%a9thodes"></a>
+Comparaison des méthodes
+</h2><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Yuzu</th>
+          <th>Ryujinx</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Accès aux saves</strong></td>
+          <td>Clic droit → Open Save Data Location</td>
+          <td>Clic droit → Open User Save Directory</td>
+      </tr>
+      <tr>
+          <td><strong>Dossier config</strong></td>
+          <td><code>%appdata%\yuzu</code></td>
+          <td><code>%appdata%\Ryujinx</code></td>
+      </tr>
+      <tr>
+          <td><strong>Données supplémentaires</strong></td>
+          <td>Automatique</td>
+          <td>Mod Data Directory séparé</td>
+      </tr>
+      <tr>
+          <td><strong>Complexité</strong></td>
+          <td>Simple</td>
+          <td>Simple</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="conseils-et-bonnes-pratiques">
+<a class="header-anchor" href="#conseils-et-bonnes-pratiques"></a>
+Conseils et bonnes pratiques
+</h2><h3 id="sauvegardes-automatiques">
+<a class="header-anchor" href="#sauvegardes-automatiques"></a>
+Sauvegardes automatiques
+</h3><p><strong>Script de sauvegarde automatique (Windows) :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> backup_dir=C:\Backup_Emulateurs\%date:~-4,4%-%date:~-10,2%-%date:~-7,2%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mkdir</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\yuzu\nand\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Yuzu_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\Ryujinx\bis\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Ryujinx_Saves\&#34;</span> /E /I /Y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Sauvegarde terminée dans %backup_dir%
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
+</span></span></code></pre></div><h3 id="vérifications-importantes">
+<a class="header-anchor" href="#v%c3%a9rifications-importantes"></a>
+Vérifications importantes
+</h3><p><strong>Avant la réinstallation :</strong></p>
+<ul>
+<li>✅ Sauvegardes complètes créées</li>
+<li>✅ Noms des jeux notés</li>
+<li>✅ Firmware/clés disponibles</li>
+<li>✅ Configuration matérielle notée</li>
+</ul>
+<p><strong>Après la réinstallation :</strong></p>
+<ul>
+<li>✅ Émulateur démarre correctement</li>
+<li>✅ Jeux détectés</li>
+<li>✅ Sauvegardes restaurées</li>
+<li>✅ Performances satisfaisantes</li>
+</ul>
+<h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="-sauvegardes-non-reconnues">
+<a class="header-anchor" href="#-sauvegardes-non-reconnues"></a>
+🚫 Sauvegardes non reconnues
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Mauvais emplacement de fichiers</li>
+<li>Versions d&rsquo;émulateur incompatibles</li>
+<li>Fichiers corrompus</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez l&rsquo;emplacement exact des fichiers</li>
+<li>Essayez avec une version similaire de l&rsquo;émulateur</li>
+<li>Utilisez une sauvegarde plus ancienne</li>
+</ol>
+<h4 id="-fichiers-de-sauvegarde-volumineux">
+<a class="header-anchor" href="#-fichiers-de-sauvegarde-volumineux"></a>
+💾 Fichiers de sauvegarde volumineux
+</h4><p><strong>Optimisation :</strong></p>
+<ul>
+<li>Compressez les dossiers de sauvegarde (.zip, .7z)</li>
+<li>Utilisez un stockage cloud pour la sécurité</li>
+<li>Créez des sauvegardes incrémentielles</li>
+</ul>
+<h4 id="-perte-de-configuration">
+<a class="header-anchor" href="#-perte-de-configuration"></a>
+⚠️ Perte de configuration
+</h4><p><strong>Sauvegarde préventive :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Complet/
+├── 📁 Saves/ (sauvegardes de jeux)
+├── 📁 Config/ (fichiers de configuration)
+├── 📁 Keys/ (clés et firmware)
+└── 📄 settings_backup.txt (paramètres notés)
+</code></pre><h2 id="outils-recommandés">
+<a class="header-anchor" href="#outils-recommand%c3%a9s"></a>
+Outils recommandés
+</h2><h3 id="gestionnaires-de-sauvegarde">
+<a class="header-anchor" href="#gestionnaires-de-sauvegarde"></a>
+Gestionnaires de sauvegarde
+</h3><table>
+  <thead>
+      <tr>
+          <th>Outil</th>
+          <th>Description</th>
+          <th>Avantages</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>JKSV</strong></td>
+          <td>Gestionnaire Switch homebrew</td>
+          <td>Sauvegardes natives</td>
+      </tr>
+      <tr>
+          <td><strong>Checkpoint</strong></td>
+          <td>Alternative à JKSV</td>
+          <td>Interface conviviale</td>
+      </tr>
+      <tr>
+          <td><strong>Save Manager</strong></td>
+          <td>Outil PC tiers</td>
+          <td>Automatisation</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="synchronisation-cloud">
+<a class="header-anchor" href="#synchronisation-cloud"></a>
+Synchronisation cloud
+</h3><p><strong>Services recommandés :</strong></p>
+<ul>
+<li><strong>Google Drive</strong> - 15 GB gratuits</li>
+<li><strong>OneDrive</strong> - Intégration Windows</li>
+<li><strong>Dropbox</strong> - Synchronisation rapide</li>
+<li><strong>Git</strong> - Versioning pour experts</li>
+</ul>
+<h2 id="dépannage-avancé">
+<a class="header-anchor" href="#d%c3%a9pannage-avanc%c3%a9"></a>
+Dépannage avancé
+</h2><h3 id="récupération-durgence">
+<a class="header-anchor" href="#r%c3%a9cup%c3%a9ration-durgence"></a>
+Récupération d&rsquo;urgence
+</h3><p><strong>Si la réinstallation échoue :</strong></p>
+<ol>
+<li><strong>Mode sans échec</strong> : Démarrez Windows en mode sans échec</li>
+<li><strong>Nettoyage registre</strong> : Utilisez CCleaner ou équivalent</li>
+<li><strong>Installation portable</strong> : Testez avec les versions portables</li>
+<li><strong>Restauration système</strong> : Point de restauration Windows</li>
+</ol>
+<h3 id="migration-vers-un-nouveau-pc">
+<a class="header-anchor" href="#migration-vers-un-nouveau-pc"></a>
+Migration vers un nouveau PC
+</h3><p><strong>Transférer tout l&rsquo;environnement :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dossiers à copier</span>
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\ </span>       → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Jeux<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>          → Nouveau PC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Dossier_Backup<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>        → Nouveau PC
+</span></span></code></pre></div><h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>La réinstallation de <strong>Yuzu</strong> et <strong>Ryujinx</strong> tout en préservant vos sauvegardes est un processus simple si vous suivez la bonne méthode. L&rsquo;essentiel est de <strong>toujours sauvegarder avant d&rsquo;agir</strong> et de procéder étape par étape.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé de la procédure :</strong></p>
+<ol>
+<li><strong>Sauvegardez</strong> toutes les données de jeu importantes</li>
+<li><strong>Supprimez</strong> proprement les dossiers de configuration</li>
+<li><strong>Réinstallez</strong> l&rsquo;émulateur avec une version récente</li>
+<li><strong>Restaurez</strong> vos sauvegardes et testez</li>
+<li><strong>Configurez</strong> selon vos préférences</li>
+</ol></blockquote>
+<h3 id="maintenance-préventive">
+<a class="header-anchor" href="#maintenance-pr%c3%a9ventive"></a>
+Maintenance préventive
+</h3><p><strong>Pour éviter les réinstallations :</strong></p>
+<ul>
+<li>Mises à jour régulières mais prudentes</li>
+<li>Sauvegardes automatiques hebdomadaires</li>
+<li>Surveillance des performances</li>
+<li>Nettoyage périodique des caches</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Puis-je transférer mes sauvegardes entre Yuzu et Ryujinx ?</strong>
+R : Généralement non directement, les formats de sauvegarde diffèrent. Utilisez des outils de conversion spécialisés si nécessaire.</p>
+<p><strong>Q : Combien de temps faut-il pour la procédure complète ?</strong>
+R : Environ 30-60 minutes selon le nombre de jeux et la vitesse de votre PC.</p>
+<p><strong>Q : Les sauvegardes en ligne (Nintendo Switch Online) sont-elles compatibles ?</strong>
+R : Non, les sauvegardes d&rsquo;émulateur et console officielle ne sont pas interchangeables.</p>
+<p><strong>Q : Que faire si j&rsquo;ai oublié de sauvegarder avant la réinstallation ?</strong>
+R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fichiers, ou restaurez depuis une sauvegarde système.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/yuzu-setup/">Configuration Optimale de Yuzu</a></li>
+<li><a href="/fr/post/ryujinx-guide/">Guide Complet de Ryujinx</a></li>
+<li><a href="/fr/post/switch-emulation-performance/">Meilleures Performances Émulation Switch</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://axekin.com/fr/post/reinstall_yuzu_ryujinx/">https://axekin.com/fr/post/reinstall_yuzu_ryujinx/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://axekin.com/fr/post/reinstall_yuzu_ryujinx/" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://axekin.com/fr/post/reinstall_yuzu_ryujinx/&amp;text=Comment%20R%c3%a9installer%20Yuzu%20&amp;%20Ryujinx%20en%20Gardant%20ses%20Sauvegardes&amp;via=https://axekin.com/" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://axekin.com/fr/post/reinstall_yuzu_ryujinx/&amp;title=Comment%20R%c3%a9installer%20Yuzu%20&amp;%20Ryujinx%20en%20Gardant%20ses%20Sauvegardes&amp;summary=Guide%20complet%20pour%20r%c3%a9installer%20proprement%20les%20%c3%a9mulateurs%20Nintendo%20Switch%20Yuzu%20et%20Ryujinx%20tout%20en%20pr%c3%a9servant%20vos%20sauvegardes%20de%20jeux&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://axekin.com/fr/post/reinstall_yuzu_ryujinx/&amp;title=Comment%20R%c3%a9installer%20Yuzu%20&amp;%20Ryujinx%20en%20Gardant%20ses%20Sauvegardes" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-telegram"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-whatsapp"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-pocket"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/yuzu"
+        rel="tag"
+        >YUZU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/ryujinx"
+        rel="tag"
+        >RYUJINX</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo-switch"
+        rel="tag"
+        >NINTENDO-SWITCH</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/sauvegarde"
+        rel="tag"
+        >SAUVEGARDE</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/backup"
+        rel="tag"
+        >BACKUP</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/reinstallation"
+        rel="tag"
+        >REINSTALLATION</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/gpu-driver-reinstall.webp"
+            data-sizes="auto"
+            alt="Guide Complet : Réinstallation Propre des Pilotes Graphiques"
+            class="lazyload"
+          /><a href="/fr/post/reinstall_driver_gpu/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Guide Complet : Réinstallation Propre des Pilotes Graphiques</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/citra-cheats-mods.webp"
+            data-sizes="auto"
+            alt="Guide Complet des Cheats sur l&#39;émulateur Citra"
+            class="lazyload"
+          /><a href="/fr/post/cheat_citra/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Guide Complet des Cheats sur l&#39;émulateur Citra</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;28.3k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:19</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#pourquoi-réinstaller-">Pourquoi réinstaller ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#méthode-pour-yuzu">Méthode pour Yuzu</a>
+      <ul>
+        <li><a href="#étape-1--sauvegarder-les-données-de-jeu">Étape 1 : Sauvegarder les données de jeu</a></li>
+        <li><a href="#étape-2--supprimer-les-données-yuzu">Étape 2 : Supprimer les données Yuzu</a></li>
+        <li><a href="#étape-3--réinstaller-yuzu">Étape 3 : Réinstaller Yuzu</a></li>
+        <li><a href="#étape-4--restaurer-les-sauvegardes">Étape 4 : Restaurer les sauvegardes</a></li>
+      </ul>
+    </li>
+    <li><a href="#méthode-pour-ryujinx">Méthode pour Ryujinx</a>
+      <ul>
+        <li><a href="#étape-1--sauvegarder-les-données-ryujinx">Étape 1 : Sauvegarder les données Ryujinx</a></li>
+        <li><a href="#étape-2--supprimer-ryujinx">Étape 2 : Supprimer Ryujinx</a></li>
+        <li><a href="#étape-3--réinstallation-et-restauration">Étape 3 : Réinstallation et restauration</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparaison-des-méthodes">Comparaison des méthodes</a></li>
+    <li><a href="#conseils-et-bonnes-pratiques">Conseils et bonnes pratiques</a>
+      <ul>
+        <li><a href="#sauvegardes-automatiques">Sauvegardes automatiques</a></li>
+        <li><a href="#vérifications-importantes">Vérifications importantes</a></li>
+        <li><a href="#problèmes-courants-et-solutions">Problèmes courants et solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#outils-recommandés">Outils recommandés</a>
+      <ul>
+        <li><a href="#gestionnaires-de-sauvegarde">Gestionnaires de sauvegarde</a></li>
+        <li><a href="#synchronisation-cloud">Synchronisation cloud</a></li>
+      </ul>
+    </li>
+    <li><a href="#dépannage-avancé">Dépannage avancé</a>
+      <ul>
+        <li><a href="#récupération-durgence">Récupération d&rsquo;urgence</a></li>
+        <li><a href="#migration-vers-un-nouveau-pc">Migration vers un nouveau PC</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#maintenance-préventive">Maintenance préventive</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description">Si seulement vous pouviez voir ce que je vois...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">17</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      7
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">57</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/axekin"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/axekin"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[\"#\",\"/admin\"]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Comment Réinstaller Yuzu \u0026 Ryujinx en Gardant ses Sauvegardes",
+          url: "https:\/\/axekin.com\/fr\/post\/reinstall_yuzu_ryujinx\/",
+          description: "Guide complet pour réinstaller proprement les émulateurs Nintendo Switch Yuzu et Ryujinx tout en préservant vos sauvegardes de jeux",
+          cover: "https:\/\/axekin.com\/images\/covers\/yuzu-ryujinx-backup.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script data-pjax>
+    var updateTime = _$('#post-update-time')?.innerHTML;
+
+    if (updateTime) {
+      const update = new Date(updateTime);
+      const now = new Date();
+      const diff = now - update;
+      const days = diff / 86400000;
+      const { daysago: daysAgo, message: template } = window.siteConfig.outdate;
+      if (days >= daysAgo) {
+        let message = `This article was last updated on ${updateTime}. Please note that the content may no longer be applicable.`;
+        if (typeof template === 'string') {
+          message = template.replace(/{time}/, updateTime);
+        } else if (typeof template === 'object') {
+          const lang = document.documentElement.lang;
+          const messageKey = Object.keys(template).find(key => key.toLowerCase() === lang.toLowerCase());
+          if (messageKey && template[messageKey]) {
+            message = template[messageKey].replace(/{time}/, updateTime);
+          }
+        }
+        const blockquote = _$('#outdate-blockquote');
+        if (blockquote) {
+          blockquote.querySelector('p').innerText = message;
+          blockquote.style.display = 'block';
+        }
+      }
+    }
+  </script><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>
