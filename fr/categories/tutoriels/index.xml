@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutoriels on Wiki de Axekin</title>
-    <link>https://axekin.com/fr/categories/tutoriels/</link>
+    <link>https://wiki.axekin.com/fr/categories/tutoriels/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://axekin.com/fr/categories/tutoriels/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/categories/tutoriels/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Guide complet : Installation et configuration de Yuzu</title>
-      <link>https://axekin.com/fr/post/yuzu/</link>
+      <link>https://wiki.axekin.com/fr/post/yuzu/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/yuzu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/yuzu/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de Yuzu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -804,7 +804,7 @@ Résolution de problèmes
 <p><strong>Bon gaming avec Yuzu ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -816,10 +816,10 @@ Résolution de problèmes
 
     <item>
       <title>Guide complet : Installation et configuration de Xenia</title>
-      <link>https://axekin.com/fr/post/xenia/</link>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/xenia/</guid>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de Xenia</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1559,7 +1559,7 @@ Problèmes courants
 <p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -1571,10 +1571,10 @@ Problèmes courants
 
     <item>
       <title>Guide complet : Installation et configuration de Ryujinx</title>
-      <link>https://axekin.com/fr/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1927,7 +1927,7 @@ R : Une GTX 1660 ou supérieure est recommandée pour une expérience optimale.<
 R : Oui, Ryujinx peut être installé sur Steam Deck via le mode desktop.</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -1939,10 +1939,10 @@ R : Oui, Ryujinx peut être installé sur Steam Deck via le mode desktop.</p>
 
     <item>
       <title>Guide complet : Installation et configuration de RPCS3</title>
-      <link>https://axekin.com/fr/post/rpcs3/</link>
+      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/rpcs3/</guid>
+      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2727,7 +2727,7 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -2739,10 +2739,10 @@ Problèmes courants
 
     <item>
       <title>Guide complet : Installation et configuration de melonDS</title>
-      <link>https://axekin.com/fr/post/melonds/</link>
+      <link>https://wiki.axekin.com/fr/post/melonds/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/melonds/</guid>
+      <guid>https://wiki.axekin.com/fr/post/melonds/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de melonDS</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3597,7 +3597,7 @@ Problèmes courants
 <p><strong>Redécouvrez la bibliothèque Nintendo DS en haute définition avec melonDS ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -3609,10 +3609,10 @@ Problèmes courants
 
     <item>
       <title>Guide complet : Installation et configuration de Citra</title>
-      <link>https://axekin.com/fr/post/citra/</link>
+      <link>https://wiki.axekin.com/fr/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -4334,7 +4334,7 @@ Problèmes courants
 <p><strong>Profitez de vos jeux 3DS en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>Tutoriels</category>
@@ -4346,10 +4346,10 @@ Problèmes courants
 
     <item>
       <title>Guide complet : Installation et configuration de Dolphin</title>
-      <link>https://axekin.com/fr/post/dolphin/</link>
+      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/dolphin/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Guide complet : Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -5153,7 +5153,7 @@ Problèmes courants
 <p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>

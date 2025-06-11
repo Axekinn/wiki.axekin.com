@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zelda on Wiki de Axekin</title>
-    <link>https://axekin.com/fr/tags/zelda/</link>
+    <link>https://wiki.axekin.com/fr/tags/zelda/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://axekin.com/fr/tags/zelda/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/zelda/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Guide Complet : Utiliser des Amiibo sur l&#39;Émulateur Cemu Wii U</title>
-      <link>https://axekin.com/fr/post/amibo_cemu/</link>
+      <link>https://wiki.axekin.com/fr/post/amibo_cemu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://axekin.com/fr/post/amibo_cemu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/amibo_cemu/</guid>
       <description>
         <![CDATA[<h1>Guide Complet : Utiliser des Amiibo sur l'Émulateur Cemu Wii U</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -270,7 +270,7 @@ Finalisation du scan
 <p>// &hellip;existing code&hellip;</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

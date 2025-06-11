@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personnel on Wiki de Axekin</title>
-    <link>https://axekin.com/fr/categories/personnel/</link>
+    <link>https://wiki.axekin.com/fr/categories/personnel/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate></lastBuildDate>
     
     
-    <atom:link href="https://axekin.com/fr/categories/personnel/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/categories/personnel/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     

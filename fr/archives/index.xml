@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Wiki de Axekin</title>
-    <link>https://axekin.com/fr/archives/</link>
+    <link>https://wiki.axekin.com/fr/archives/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -13,7 +13,7 @@
     <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
     
     
-    <atom:link href="https://axekin.com/fr/archives/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/archives/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
