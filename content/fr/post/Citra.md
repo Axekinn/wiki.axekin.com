@@ -15,8 +15,8 @@ aliases:
   - /fr/citra-cheats-mods/
   - /fr/guides/citra-modding/
 summary: "Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps."
-cover: "/images/covers/citra-cheats-mods.webp"
-image: "/images/covers/citra-cheats-mods.webp"
+cover: "/images/covers/azahar.webp"
+image: "/images/covers/azahar.webp"
 showtoc: true
 tocopen: true
 comments: true

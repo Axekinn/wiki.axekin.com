@@ -16,8 +16,8 @@ aliases:
   - /en/azahar-installation-guide/
   - /en/guides/azahar-setup/
 summary: "Learn how to install and configure Azahar emulator for optimal Nintendo 3DS gaming. Complete setup guide with graphics enhancement and performance optimization."
-cover: "/images/covers/azahar-emulator-guide.webp"
-image: "/images/covers/azahar-emulator-guide.webp"
+cover: "/images/covers/azahar.webp"
+image: "/images/covers/azahar.webp"
 showtoc: true
 tocopen: true
 comments: true
