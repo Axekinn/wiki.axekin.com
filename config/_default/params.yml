@@ -2,8 +2,6 @@ mainSections: ["post"]
 
 author: Axekin
 email: axekinn@proton.me
-description: 
-subtitle: "Welcome !"
 
 internal_theme:
   light:
@@ -97,7 +95,7 @@ preloader:
     en: Loading...
   rotate: true
   animation: pulse
-  logo: "/images/logo-preloader.png"
+  logo: "/images/ninho.png"
 
 # Effet de feu d'artifice sur clic
 firework:
@@ -447,7 +445,7 @@ i18n:
   reading_time:
     fr: "min de lecture"
     en: "min read"
-  
+    
 # Sécurité
 security:
   content_security_policy: true
@@ -461,5 +459,5 @@ development:
   error_pages: true
 
 params:
-  customCSS: ["/css/custom.css"]
-  customJS: ["/js/custom.js"]
+  customCSS: ["css/custom.css"]
+  customJS: ["js/custom.js"]

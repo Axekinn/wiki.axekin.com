@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3ds on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/3ds/</link>
+    <link>http://localhost:1313/fr/tags/3ds/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/3ds/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/3ds/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
-      <link>https://wiki.axekin.com/fr/post/cheat_citra/</link>
+      <link>http://localhost:1313/fr/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cheat_citra/</guid>
+      <guid>http://localhost:1313/fr/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -37,7 +37,6 @@
 <a class="header-anchor" href="#introduction"></a>
 Introduction
 </h2><p>L&rsquo;utilisation de cheats sur l&rsquo;émulateur <strong>Citra</strong> peut parfois être déroutante pour les nouveaux utilisateurs. Ce guide complet vous expliquera <strong>étape par étape</strong> comment configurer et utiliser efficacement les codes de triche sur vos jeux Nintendo 3DS émulés.</p>
-<p>Le processus est similaire à celui de l&rsquo;émulateur <strong>Dolphin</strong>, mais avec quelques spécificités propres à Citra que nous allons explorer ensemble.</p>
 <h3 id="processus-général">
 <a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
 Processus général
@@ -65,19 +64,16 @@ Prérequis
 <a class="header-anchor" href="#lancement-initial"></a>
 Lancement initial
 </h3><ol>
-<li><strong>Démarrez Citra</strong> et chargez votre jeu Nintendo 3DS</li>
-<li>Une fois le jeu lancé, allez dans le menu principal de Citra</li>
-<li>Cliquez sur <strong>Emulation</strong> &gt; <strong>Cheats</strong></li>
+<li><strong>Démarrez Citra</strong> et attendez que l&rsquo;émulateur liste le reste de vos jeux</li>
+<li>Une fois votre jeux affiché, faites <strong>Clique Droit</strong> puis <strong>Propriété</strong> puis allez dans le dernier onglet <strong>Cheats</strong></li>
 </ol>
-<p><img src="/images/citra-cheats-menu.png" alt="Menu des cheats dans Citra">
-<em>Accès au menu de gestion des cheats</em></p>
 <h3 id="interface-des-cheats">
 <a class="header-anchor" href="#interface-des-cheats"></a>
 Interface des cheats
 </h3><p>Une nouvelle fenêtre s&rsquo;ouvre avec :</p>
 <ul>
 <li><strong>Liste des cheats</strong> disponibles (vide au début)</li>
-<li><strong>Bouton &ldquo;Add Cheat&rdquo;</strong> pour ajouter de nouveaux codes</li>
+<li><strong>Bouton &ldquo;Add Cheat&rdquo;</strong> pour ajouter de nouveaux cheats</li>
 <li><strong>Cases à cocher</strong> pour activer/désactiver les cheats</li>
 <li><strong>Boutons d&rsquo;édition</strong> et de suppression</li>
 </ul>
@@ -147,40 +143,6 @@ ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
 ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
 </code></pre><blockquote>
 <p><strong>💡 Astuce</strong> : Ces codes d&rsquo;exemple proviennent de <em>Bravely Default</em> et sont pleinement fonctionnels, mais servent ici uniquement de démonstration.</p></blockquote>
-<h3 id="types-de-codes-courants">
-<a class="header-anchor" href="#types-de-codes-courants"></a>
-Types de codes courants
-</h3><table>
-  <thead>
-      <tr>
-          <th>Type de Code</th>
-          <th>Description</th>
-          <th>Exemple</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Money/Gold</strong></td>
-          <td>Argent infini</td>
-          <td><code>08XXXXXX 000F423F</code></td>
-      </tr>
-      <tr>
-          <td><strong>HP/SP</strong></td>
-          <td>Points de vie/magie max</td>
-          <td><code>08XXXXXX 00000063</code></td>
-      </tr>
-      <tr>
-          <td><strong>Items</strong></td>
-          <td>Objets en quantité</td>
-          <td><code>08XXXXXX 00000063</code></td>
-      </tr>
-      <tr>
-          <td><strong>Experience</strong></td>
-          <td>Expérience maximale</td>
-          <td><code>08XXXXXX 0098967F</code></td>
-      </tr>
-  </tbody>
-</table>
 <h2 id="étape-4--activation-et-test">
 <a class="header-anchor" href="#%c3%a9tape-4--activation-et-test"></a>
 Étape 4 : Activation et test
@@ -194,8 +156,6 @@ Procédure d&rsquo;activation
 <li><strong>Cochez la case</strong> à côté du cheat pour l&rsquo;activer</li>
 <li><strong>Retournez dans le jeu</strong> pour tester</li>
 </ol>
-<p><img src="/images/citra-cheat-activation.gif" alt="Animation d’activation d’un cheat">
-<em>Processus d&rsquo;activation d&rsquo;un code de triche</em></p>
 <h3 id="vérification-des-effets">
 <a class="header-anchor" href="#v%c3%a9rification-des-effets"></a>
 Vérification des effets
@@ -287,35 +247,6 @@ Sites recommandés pour les codes
 <li>Partage de codes et conseils</li>
 <li>Support technique communautaire</li>
 </ul>
-<h3 id="outils-complémentaires">
-<a class="header-anchor" href="#outils-compl%c3%a9mentaires"></a>
-Outils complémentaires
-</h3><table>
-  <thead>
-      <tr>
-          <th>Outil</th>
-          <th>Description</th>
-          <th>Utilité</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Cheat Engine</strong></td>
-          <td>Éditeur mémoire avancé</td>
-          <td>Création de codes personnalisés</td>
-      </tr>
-      <tr>
-          <td><strong>HxD</strong></td>
-          <td>Éditeur hexadécimal</td>
-          <td>Analyse de fichiers de sauvegarde</td>
-      </tr>
-      <tr>
-          <td><strong>Save Editors</strong></td>
-          <td>Éditeurs de sauvegarde spécialisés</td>
-          <td>Alternative aux cheats</td>
-      </tr>
-  </tbody>
-</table>
 <h2 id="bonnes-pratiques-et-conseils-avancés">
 <a class="header-anchor" href="#bonnes-pratiques-et-conseils-avanc%c3%a9s"></a>
 Bonnes pratiques et conseils avancés
@@ -330,66 +261,7 @@ Sécurité et sauvegarde
 <li><strong>Éviter les cheats durant les cutscenes</strong> ou événements scriptés</li>
 <li><strong>Désactiver les cheats</strong> avant les combats de boss importants</li>
 </ol></blockquote>
-<h3 id="optimisation-des-performances">
-<a class="header-anchor" href="#optimisation-des-performances"></a>
-Optimisation des performances
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Configuration recommandée pour Citra avec cheats</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">Graphics</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Resolution</span>: <span style="color:#ae81ff">2x Native (400x240)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Frame Limit</span>: <span style="color:#ae81ff">100</span><span style="color:#ae81ff">%</span>
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span><span style="color:#f92672">Audio</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Output Engine</span>: <span style="color:#ae81ff">SDL2</span>
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span><span style="color:#f92672">System</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Region</span>: <span style="color:#ae81ff">Auto-Select</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Language</span>: <span style="color:#ae81ff">System Default</span>
-</span></span></code></pre></div><h3 id="codes-avancés-et-modifications">
-<a class="header-anchor" href="#codes-avanc%c3%a9s-et-modifications"></a>
-Codes avancés et modifications
-</h3><p>Pour les utilisateurs expérimentés, voici quelques techniques avancées :</p>
-<p><strong>Code conditionnel avancé :</strong></p>
-<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Argent infini SI level &gt; 10]
-D3000000 10000000
-80XXXXXX 0000000A
-D2000000 00000000
-</code></pre><p><strong>Modification de pointeur :</strong></p>
-<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Stats maximales (via pointeur)]
-B8XXXXXX 00000000
-B8XXXXXX 00000000
-80XXXXXX 000000FF
-D2000000 00000000
-</code></pre><h2 id="exemples-pratiques-par-jeu-populaire">
-<a class="header-anchor" href="#exemples-pratiques-par-jeu-populaire"></a>
-Exemples pratiques par jeu populaire
-</h2><h3 id="pokémon-xy">
-<a class="header-anchor" href="#pok%c3%a9mon-xy"></a>
-Pokémon X/Y
-</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Argent Infini]
-0818CE0C 0098967F
-
-[Pokéballs Infinies]
-08C6D6CC 00000063
-
-[Rare Candies x999]
-08C6D7C4 000003E7
-</code></pre><h3 id="the-legend-of-zelda-a-link-between-worlds">
-<a class="header-anchor" href="#the-legend-of-zelda-a-link-between-worlds"></a>
-The Legend of Zelda: A Link Between Worlds
-</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Rupees Max]
-08796D20 0000270F
-
-[Vies Infinies]
-08796D1C 00000063
-</code></pre><h3 id="animal-crossing-new-leaf">
-<a class="header-anchor" href="#animal-crossing-new-leaf"></a>
-Animal Crossing: New Leaf
-</h3><pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Bells Infinis]
-0893A8B8 0098967F
-
-[Tous les fruits]
-08XXXXXX 00000063
-</code></pre><h2 id="conclusion">
+<h2 id="conclusion">
 <a class="header-anchor" href="#conclusion"></a>
 Conclusion
 </h2><p>L&rsquo;utilisation des cheats sur Citra peut grandement enrichir votre expérience de jeu, que ce soit pour :</p>
@@ -399,14 +271,6 @@ Conclusion
 <li><strong>Revivre vos jeux favoris</strong> avec de nouveaux défis</li>
 <li><strong>Contourner des passages difficiles</strong></li>
 </ul>
-<blockquote>
-<p><strong>🎯 Points clés à retenir :</strong></p>
-<ul>
-<li>Sauvegardez toujours avant d&rsquo;utiliser des cheats</li>
-<li>Testez les codes progressivement</li>
-<li>Utilisez des sources fiables pour vos codes</li>
-<li>N&rsquo;hésitez pas à désactiver les cheats si nécessaire</li>
-</ul></blockquote>
 <h2 id="faq---questions-fréquentes">
 <a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
 FAQ - Questions fréquentes
@@ -414,21 +278,13 @@ FAQ - Questions fréquentes
 R : La plupart des cheats fonctionnent sur les versions récentes de Citra. Cependant, certains codes peuvent être spécifiques à certaines versions. Utilisez de préférence la dernière version stable.</p>
 <p><strong>Q : Puis-je utiliser plusieurs cheats simultanément ?</strong>
 R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commencez par tester les cheats individuellement avant de les combiner.</p>
-<p><strong>Q : Comment créer mes propres codes ?</strong>
-R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.</p>
-<p><strong>Q : Les cheats affectent-ils les achievements/succès ?</strong>
-R : Sur émulateur, il n&rsquo;y a généralement pas de système d&rsquo;achievements officiels, donc pas d&rsquo;impact. Pour les achievements communautaires, cela dépend des règles spécifiques.</p>
-<hr>
-<p><strong>Vous avez trouvé ce guide utile ?</strong> Partagez-le avec la communauté gaming et n&rsquo;hésitez pas à laisser vos propres conseils en commentaires !</p>
-<p><strong>Articles connexes :</strong></p>
-<ul>
-<li><a href="/post/guide-citra/">Guide Complet de l&rsquo;Émulateur Citra</a></li>
-<li><a href="/post/citra-performance/">Optimiser les Performances de Citra</a></li>
-<li><a href="/post/best-3ds-games/">Les Meilleurs Jeux 3DS à Émuler</a></li>
-</ul>
-<pre tabindex="0"><code></code></pre>
+<h2 id="r--la-création-de-codes-nécessite-des-connaissances-en-analyse-mémoire-utilisez-des-outils-comme-cheat-engine-ou-consultez-les-tutoriels-de-reverse-engineering">
+<a class="header-anchor" href="#r--la-cr%c3%a9ation-de-codes-n%c3%a9cessite-des-connaissances-en-analyse-m%c3%a9moire-utilisez-des-outils-comme-cheat-engine-ou-consultez-les-tutoriels-de-reverse-engineering"></a>
+<strong>Q : Comment créer mes propres codes ?</strong>
+R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.
+</h2><pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

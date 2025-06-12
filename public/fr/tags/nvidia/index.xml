@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nvidia on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/nvidia/</link>
+    <link>http://localhost:1313/fr/tags/nvidia/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/nvidia/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/nvidia/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,13 +23,13 @@
     
 
     <item>
-      <title>Guide Complet : Réinstallation Propre des Pilotes Graphiques</title>
-      <link>https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</link>
+      <title>Réinstallation Propre des Pilotes Graphiques</title>
+      <link>http://localhost:1313/fr/post/reinstall_driver_gpu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</guid>
+      <guid>http://localhost:1313/fr/post/reinstall_driver_gpu/</guid>
       <description>
-        <![CDATA[<h1>Guide Complet : Réinstallation Propre des Pilotes Graphiques</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>Réinstallation Propre des Pilotes Graphiques</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           <blockquote>
 <p><strong>⚠️ Avertissement Important</strong> : Cette procédure implique de redémarrer en mode sans échec et de désinstaller complètement vos pilotes. Suivez attentivement chaque étape et assurez-vous d&rsquo;avoir téléchargé les drivers avant de commencer.</p></blockquote>
@@ -84,13 +84,10 @@ Pour cartes NVIDIA
 <li><strong>Téléchargez</strong> le driver <strong>&ldquo;Game Ready&rdquo;</strong> le plus récent</li>
 <li><strong>Sauvegardez</strong> le fichier sur votre bureau</li>
 </ol>
-<p><img src="/images/nvidia-driver-download.png" alt="NVIDIA Driver Download">
-<em>Interface de téléchargement des drivers NVIDIA</em></p>
 <p><strong>Types de drivers NVIDIA :</strong></p>
 <ul>
 <li><strong>Game Ready Driver</strong> : Optimisé pour les jeux (recommandé)</li>
 <li><strong>Studio Driver</strong> : Optimisé pour la création de contenu</li>
-<li><strong>DCH Driver</strong> : Version moderne pour Windows 10/11</li>
 </ul>
 <h4 id="pour-cartes-amd">
 <a class="header-anchor" href="#pour-cartes-amd"></a>
@@ -103,8 +100,6 @@ Pour cartes AMD
 <li><strong>Téléchargez</strong> le package <strong>&ldquo;Adrenalin&rdquo;</strong> complet</li>
 <li><strong>Sauvegardez</strong> le fichier sur votre bureau</li>
 </ol>
-<p><img src="/images/amd-driver-download.png" alt="AMD Driver Download">
-<em>Interface de téléchargement des drivers AMD</em></p>
 <h4 id="display-driver-uninstaller-ddu">
 <a class="header-anchor" href="#display-driver-uninstaller-ddu"></a>
 Display Driver Uninstaller (DDU)
@@ -165,18 +160,6 @@ Via les Paramètres
 <li><strong>Sélectionnez</strong> &ldquo;Récupération&rdquo; dans le menu gauche</li>
 <li>Sous <strong>&ldquo;Démarrage avancé&rdquo;</strong>, cliquez sur <strong>&ldquo;Redémarrer maintenant&rdquo;</strong></li>
 </ol>
-<p><img src="/images/win10-recovery-settings.png" alt="Windows 10 Recovery">
-<em>Menu de récupération Windows 10</em></p>
-<h4 id="méthode-alternative-si-windows-ne-démarre-pas">
-<a class="header-anchor" href="#m%c3%a9thode-alternative-si-windows-ne-d%c3%a9marre-pas"></a>
-Méthode alternative (si Windows ne démarre pas)
-</h4><p><strong>Redémarrage forcé :</strong></p>
-<ol>
-<li><strong>Maintenez</strong> le bouton d&rsquo;alimentation 10 secondes (extinction forcée)</li>
-<li><strong>Rallumez</strong> le PC</li>
-<li><strong>Répétez</strong> l&rsquo;opération 2-3 fois</li>
-<li>Windows affichera automatiquement les options de réparation</li>
-</ol>
 <h3 id="pour-windows-11">
 <a class="header-anchor" href="#pour-windows-11"></a>
 Pour Windows 11
@@ -190,8 +173,6 @@ Via les Paramètres
 <li><strong>Cliquez</strong> sur &ldquo;Récupération&rdquo;</li>
 <li>Sous <strong>&ldquo;Démarrage avancé&rdquo;</strong>, cliquez sur <strong>&ldquo;Redémarrer maintenant&rdquo;</strong></li>
 </ol>
-<p><img src="/images/win11-recovery-settings.png" alt="Windows 11 Recovery">
-<em>Menu de récupération Windows 11</em></p>
 <h3 id="navigation-dans-le-menu-de-démarrage-avancé">
 <a class="header-anchor" href="#navigation-dans-le-menu-de-d%c3%a9marrage-avanc%c3%a9"></a>
 Navigation dans le menu de démarrage avancé
@@ -205,8 +186,6 @@ Séquence de navigation
 <li><strong>Cliquez</strong> sur &ldquo;Paramètres de démarrage&rdquo;</li>
 <li><strong>Cliquez</strong> sur &ldquo;Redémarrer&rdquo;</li>
 </ol>
-<p><img src="/images/windows-boot-options.png" alt="Boot Options Menu">
-<em>Menu des options de démarrage avancé</em></p>
 <h4 id="menu-des-paramètres-de-démarrage">
 <a class="header-anchor" href="#menu-des-param%c3%a8tres-de-d%c3%a9marrage"></a>
 Menu des paramètres de démarrage
@@ -234,8 +213,6 @@ Premier lancement
 <li><strong>Clic droit</strong> sur &ldquo;Display Driver Uninstaller.exe&rdquo;</li>
 <li><strong>Sélectionnez</strong> &ldquo;Exécuter en tant qu&rsquo;administrateur&rdquo;</li>
 </ol>
-<p><img src="/images/ddu-main-interface.png" alt="DDU Interface">
-<em>Interface principale de DDU</em></p>
 <h3 id="configuration-de-ddu">
 <a class="header-anchor" href="#configuration-de-ddu"></a>
 Configuration de DDU
@@ -255,19 +232,6 @@ Sélection du fabricant
 <li><strong>Pour AMD</strong> : Sélectionnez &ldquo;AMD&rdquo;</li>
 <li><strong>Pour Intel</strong> : Sélectionnez &ldquo;INTEL&rdquo; (si applicable)</li>
 </ul>
-<h4 id="options-avancées-recommandées">
-<a class="header-anchor" href="#options-avanc%c3%a9es-recommand%c3%a9es"></a>
-Options avancées (recommandées)
-</h4><p><strong>Cliquez</strong> sur &ldquo;Options&rdquo; pour accéder aux paramètres avancés :</p>
-<p><strong>Paramètres recommandés :</strong></p>
-<pre tabindex="0"><code>☑ Create System Restore Point
-☑ Prevent downloads of drivers from Windows Update
-☑ Remove AMD Audio Bus
-☑ Remove NVIDIA Audio Driver
-☑ Remove PhysX
-☑ Remove GeForce Experience
-</code></pre><p><img src="/images/ddu-advanced-options.png" alt="DDU Options">
-<em>Options avancées de DDU</em></p>
 <h3 id="processus-de-désinstallation">
 <a class="header-anchor" href="#processus-de-d%c3%a9sinstallation"></a>
 Processus de désinstallation
@@ -279,8 +243,6 @@ Lancement de la désinstallation
 <li><strong>Confirmez</strong> l&rsquo;action si demandé</li>
 <li><strong>Attendez</strong> que DDU termine le processus (2-5 minutes)</li>
 </ol>
-<p><img src="/images/ddu-cleaning-process.png" alt="DDU Cleaning Process">
-<em>Processus de nettoyage en cours</em></p>
 <h4 id="progression-du-nettoyage">
 <a class="header-anchor" href="#progression-du-nettoyage"></a>
 Progression du nettoyage
@@ -332,8 +294,6 @@ GeForce Game Ready Driver
 <li><strong>Express</strong> : Installation rapide avec paramètres par défaut</li>
 <li><strong>Personnalisée</strong> : Contrôle total des composants (recommandé)</li>
 </ul>
-<p><img src="/images/nvidia-driver-install.png" alt="NVIDIA Installation">
-<em>Assistant d&rsquo;installation NVIDIA</em></p>
 <h4 id="installation-personnalisée-recommandée">
 <a class="header-anchor" href="#installation-personnalis%c3%a9e-recommand%c3%a9e"></a>
 Installation personnalisée (recommandée)
@@ -346,8 +306,6 @@ Installation personnalisée (recommandée)
 <p><strong>Composants optionnels :</strong></p>
 <ul>
 <li><strong>GeForce Experience</strong> : Optimisation automatique des jeux</li>
-<li><strong>NVIDIA RTX Desktop Manager</strong> : Gestion des écrans multiples</li>
-<li><strong>3D Vision</strong> : Technologie 3D stéréoscopique (obsolète)</li>
 </ul>
 <p><strong>Options d&rsquo;installation :</strong></p>
 <ul>
@@ -371,8 +329,6 @@ AMD Adrenalin Software
 <li><strong>Minimal Install</strong> : Pilotes seulement</li>
 <li><strong>Factory Reset</strong> : Réinitialisation complète</li>
 </ul>
-<p><img src="/images/amd-driver-install.png" alt="AMD Installation">
-<em>Assistant d&rsquo;installation AMD</em></p>
 <h4 id="composants-amd-adrenalin">
 <a class="header-anchor" href="#composants-amd-adrenalin"></a>
 Composants AMD Adrenalin
@@ -385,7 +341,6 @@ Composants AMD Adrenalin
 <ul>
 <li><strong>Radeon Software</strong> : Interface de contrôle principale</li>
 <li><strong>ReLive</strong> : Enregistrement et streaming de gameplay</li>
-<li><strong>Radeon Anti-Lag</strong> : Réduction de la latence</li>
 <li><strong>Radeon Image Sharpening</strong> : Amélioration de la netteté</li>
 </ul>
 <h3 id="finalisation-de-linstallation">
@@ -442,14 +397,6 @@ Paramètres NVIDIA (via Panneau de configuration NVIDIA)
 </h4><p><strong>Paramètres 3D optimaux :</strong></p>
 <pre tabindex="0"><code>Gestion de l&#39;alimentation : Performances maximales
 Mode de synchronisation verticale : Utiliser le paramètre d&#39;application 3D
-Filtrage anisotrope : Application-controlled
-</code></pre><h4 id="paramètres-amd-via-amd-software">
-<a class="header-anchor" href="#param%c3%a8tres-amd-via-amd-software"></a>
-Paramètres AMD (via AMD Software)
-</h4><p><strong>Paramètres graphiques optimaux :</strong></p>
-<pre tabindex="0"><code>Anti-Lag : Activé
-Radeon Boost : Activé (selon préférence)
-Radeon Image Sharpening : 80% + 80%
 </code></pre><h3 id="restauration-des-profils">
 <a class="header-anchor" href="#restauration-des-profils"></a>
 Restauration des profils
@@ -480,14 +427,12 @@ Problèmes courants
 </h4><p><strong>Causes possibles :</strong></p>
 <ul>
 <li>Restes de l&rsquo;ancien pilote non supprimés</li>
-<li>Connexion internet active pendant DDU</li>
 <li>Antivirus bloquant l&rsquo;installation</li>
 <li>Fichier d&rsquo;installation corrompu</li>
 </ul>
 <p><strong>Solutions :</strong></p>
 <ol>
 <li><strong>Relancez</strong> DDU en mode sans échec</li>
-<li><strong>Désactivez</strong> temporairement l&rsquo;antivirus</li>
 <li><strong>Re-téléchargez</strong> le pilote</li>
 <li><strong>Tentez</strong> l&rsquo;installation en mode compatibilité</li>
 </ol>
@@ -509,46 +454,6 @@ Problèmes courants
 <li><strong>Température</strong> GPU (MSI Afterburner / HWMonitor)</li>
 <li><strong>Utilisation</strong> GPU dans le Gestionnaire des tâches</li>
 <li><strong>Paramètres d&rsquo;alimentation</strong> Windows (Performance maximale)</li>
-<li><strong>Mode de jeu</strong> Windows activé</li>
-</ul>
-<h3 id="solutions-avancées">
-<a class="header-anchor" href="#solutions-avanc%c3%a9es"></a>
-Solutions avancées
-</h3><h4 id="rollback-de-pilote">
-<a class="header-anchor" href="#rollback-de-pilote"></a>
-Rollback de pilote
-</h4><p>Si les nouveaux pilotes posent problème :</p>
-<ol>
-<li><strong>Gestionnaire de périphériques</strong> → <strong>Cartes graphiques</strong></li>
-<li><strong>Clic droit</strong> sur votre GPU → <strong>Propriétés</strong></li>
-<li><strong>Onglet</strong> &ldquo;Pilote&rdquo; → <strong>Version précédente</strong></li>
-</ol>
-<h4 id="installation-de-version-spécifique">
-<a class="header-anchor" href="#installation-de-version-sp%c3%a9cifique"></a>
-Installation de version spécifique
-</h4><p><strong>Pour NVIDIA :</strong></p>
-<ul>
-<li>Visitez l&rsquo;archive des drivers NVIDIA</li>
-<li>Téléchargez une version stable spécifique</li>
-<li>Utilisez DDU puis installez la version choisie</li>
-</ul>
-<p><strong>Pour AMD :</strong></p>
-<ul>
-<li>Consultez les notes de version AMD</li>
-<li>Identifiez la dernière version stable</li>
-<li>Procédez à l&rsquo;installation ciblée</li>
-</ul>
-<h2 id="maintenance-préventive">
-<a class="header-anchor" href="#maintenance-pr%c3%a9ventive"></a>
-Maintenance préventive
-</h2><h3 id="calendrier-de-mise-à-jour">
-<a class="header-anchor" href="#calendrier-de-mise-%c3%a0-jour"></a>
-Calendrier de mise à jour
-</h3><p><strong>Fréquence recommandée :</strong></p>
-<ul>
-<li><strong>Gamers actifs</strong> : Vérification mensuelle</li>
-<li><strong>Usage bureautique</strong> : Vérification trimestrielle</li>
-<li><strong>Professionnels</strong> : Selon les besoins des logiciels</li>
 </ul>
 <h3 id="surveillance-des-performances">
 <a class="header-anchor" href="#surveillance-des-performances"></a>
@@ -588,7 +493,6 @@ Signaux d&rsquo;alerte
 <li>Crashs fréquents de jeux</li>
 <li>Artefacts graphiques</li>
 <li>Performance en baisse inexpliquée</li>
-<li>Erreurs dans l&rsquo;Observateur d&rsquo;événements Windows</li>
 </ul>
 <h2 id="best-practices-et-conseils-dexpert">
 <a class="header-anchor" href="#best-practices-et-conseils-dexpert"></a>
@@ -603,61 +507,7 @@ Avant chaque réinstallation
 ☑ Point de restauration système
 ☑ Fermeture de tous les programmes
 ☑ Déconnexion internet
-</code></pre><h3 id="optimisations-post-installation">
-<a class="header-anchor" href="#optimisations-post-installation"></a>
-Optimisations post-installation
-</h3><h4 id="paramètres-système-windows">
-<a class="header-anchor" href="#param%c3%a8tres-syst%c3%a8me-windows"></a>
-Paramètres système Windows
-</h4><p><strong>Optimisations recommandées :</strong></p>
-<pre tabindex="0"><code>Mode de jeu : Activé
-Planification GPU accélérée par matériel : Activé
-Mode haute performance : Sélectionné
-Mise à jour automatique des pilotes : Désactivée
-</code></pre><h4 id="configuration-du-biosuefi">
-<a class="header-anchor" href="#configuration-du-biosuefi"></a>
-Configuration du BIOS/UEFI
-</h4><p><strong>Paramètres importants :</strong></p>
-<ul>
-<li><strong>Résizable BAR</strong> : Activé (si supporté)</li>
-<li><strong>Above 4G Decoding</strong> : Activé</li>
-<li><strong>CSM</strong> : Désactivé (pour UEFI pur)</li>
-<li><strong>Secure Boot</strong> : Selon compatibilité</li>
-</ul>
-<h3 id="cas-dusage-spécifiques">
-<a class="header-anchor" href="#cas-dusage-sp%c3%a9cifiques"></a>
-Cas d&rsquo;usage spécifiques
-</h3><h4 id="gaming-compétitif">
-<a class="header-anchor" href="#gaming-comp%c3%a9titif"></a>
-Gaming compétitif
-</h4><p><strong>Priorités :</strong></p>
-<ul>
-<li>Latence minimale</li>
-<li>Framerate stable</li>
-<li>G-Sync/FreeSync optimisé</li>
-</ul>
-<h4 id="création-de-contenu">
-<a class="header-anchor" href="#cr%c3%a9ation-de-contenu"></a>
-Création de contenu
-</h4><p><strong>Priorités :</strong></p>
-<ul>
-<li>Précision colorimétrique</li>
-<li>Stabilité des performances</li>
-<li>Support multi-écrans</li>
-</ul>
-<h4 id="miningcalcul">
-<a class="header-anchor" href="#miningcalcul"></a>
-Mining/Calcul
-</h4><p><strong>Priorités :</strong></p>
-<ul>
-<li>Efficacité énergétique</li>
-<li>Stabilité 24/7</li>
-<li>Gestion thermique optimale</li>
-</ul>
-<h2 id="conclusion">
-<a class="header-anchor" href="#conclusion"></a>
-Conclusion
-</h2><p>La <strong>réinstallation propre des pilotes graphiques</strong> avec DDU est une procédure essentielle dans la maintenance d&rsquo;un PC gaming ou professionnel. Cette méthode résout la majorité des problèmes liés aux pilotes et garantit des performances optimales.</p>
+</code></pre><p>La <strong>réinstallation propre des pilotes graphiques</strong> avec DDU est une procédure essentielle dans la maintenance d&rsquo;un PC gaming ou professionnel. Cette méthode résout la majorité des problèmes liés aux pilotes et garantit des performances optimales.</p>
 <h3 id="points-clés-à-retenir">
 <a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
 Points clés à retenir
@@ -695,16 +545,9 @@ R : Non, les paramètres de jeux sont généralement stockés séparément. Seul
 <p><strong>Q : Combien de temps prend la procédure complète ?</strong>
 R : Comptez 30-45 minutes pour l&rsquo;ensemble du processus, incluant les téléchargements et redémarrages.</p>
 <hr>
-<p><strong>Ce guide vous a aidé à résoudre vos problèmes de pilotes ?</strong> Partagez votre expérience et vos conseils additionnels en commentaires !</p>
-<p><strong>Articles connexes :</strong></p>
-<ul>
-<li><a href="/fr/post/optimize-gaming-performance/">Optimiser les Performances Gaming sur PC</a></li>
-<li><a href="/fr/post/hardware-monitoring-guide/">Guide Complet du Monitoring Hardware</a></li>
-<li><a href="/fr/post/gpu-troubleshooting/">Résoudre les Problèmes de Performance GPU</a></li>
-</ul>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>maintenance</category><category>tutorials</category><category>hardware</category>

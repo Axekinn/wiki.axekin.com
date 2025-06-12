@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coop on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/coop/</link>
+    <link>http://localhost:1313/fr/tags/coop/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/coop/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/coop/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,62 +23,40 @@
     
 
     <item>
-      <title>Guide complet : Unsteam - Jouer en coop avec des jeux crackés</title>
-      <link>https://wiki.axekin.com/fr/post/unsteam/</link>
+      <title>Unsteam - Jouer en coopération avec des jeux patch</title>
+      <link>http://localhost:1313/fr/post/unsteam/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/unsteam/</guid>
+      <guid>http://localhost:1313/fr/post/unsteam/</guid>
       <description>
-        <![CDATA[<h1>Guide complet : Unsteam - Jouer en coop avec des jeux crackés</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>Unsteam - Jouer en coopération avec des jeux patch</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           <h2 id="-introduction-à-unsteam">
 <a class="header-anchor" href="#-introduction-%c3%a0-unsteam"></a>
 🎮 Introduction à Unsteam
-</h2><p><strong>Unsteam</strong> est un émulateur Steam qui permet de faire fonctionner les jeux crackés avec les fonctionnalités multijoueur en ligne. Il simule l&rsquo;API Steam pour permettre la coopération entre joueurs ayant des versions non-officielles.</p>
+</h2><p><strong>Unsteam</strong> est un émulateur Steam qui permet de faire fonctionner les jeux patchés avec les fonctionnalités multijoueur en ligne. Il simule l&rsquo;API Steam pour permettre la coopération entre joueurs ayant des versions non-officielles.</p>
 <blockquote>
-<p>⚠️ <strong>Avertissement légal</strong> : Ce tutoriel est à des fins éducatives uniquement. Assurez-vous de respecter les lois de votre pays concernant les droits d&rsquo;auteur. L&rsquo;idéal est de posséder une copie légale du jeu.</p></blockquote>
-<h2 id="-prérequis">
-<a class="header-anchor" href="#-pr%c3%a9requis"></a>
-📋 Prérequis
-</h2><h3 id="configuration-minimale">
-<a class="header-anchor" href="#configuration-minimale"></a>
-Configuration minimale
-</h3><ul>
-<li><strong>OS</strong> : Windows 10/11 (64-bit)</li>
-<li><strong>Steam</strong> : Client Steam installé et connecté</li>
-<li><strong>Jeu</strong> : Version crackée compatible</li>
-<li><strong>Réseau</strong> : Connexion Internet stable</li>
-</ul>
-<h3 id="outils-nécessaires">
-<a class="header-anchor" href="#outils-n%c3%a9cessaires"></a>
-Outils nécessaires
-</h3><ul>
-<li>Décodeur Base64 (pour les liens)</li>
-<li>Navigateur web</li>
-<li>Archiveur (7-Zip, WinRAR)</li>
-</ul>
+<p>💡 <strong>Note importante</strong> : Unsteam est possible sur les jeux UNIQUEMENT avec la protection steam, pas autre chose. Donc vous ne pouvez pas patch Black Myth Wukong car à ce jourl, l&rsquo;anti cheat Denuvo est présent, pareil pour FC 25 avec EA, etc etc. Donc ne venez pas me dire si ça marche pas, si vous essayez de patch ces jeux la</p></blockquote>
 <h2 id="-étape-1--obtention-des-fichiers">
 <a class="header-anchor" href="#-%c3%a9tape-1--obtention-des-fichiers"></a>
 🔧 Étape 1 : Obtention des fichiers
 </h2><h3 id="téléchargement-des-jeux">
 <a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-des-jeux"></a>
 Téléchargement des jeux
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Lien encodé en Base64 - Décodez-le</span>
-</span></span><span style="display:flex;"><span>aHR0cHM6Ly9jcy5yaW4ucnUvZm9ydW0vdmlld2ZvcnVtLnBocD9mPTIy
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewforum.php?f<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
 </span></span></code></pre></div><ol>
-<li><strong>Décodez</strong> le lien Base64 ci-dessus</li>
 <li><strong>Accédez</strong> au forum cs.rin.ru</li>
-<li><strong>Téléchargez</strong> votre jeu souhaité</li>
+<li><strong>Téléchargez</strong> votre jeu souhaité. Si il n&rsquo;est pas disponible, aller dans <a href="https://cs.rin.ru/forum/viewforum.php?f=10">https://cs.rin.ru/forum/viewforum.php?f=10</a>, rechercher votre jeux voulu au format CSF (CSF = Clean Steam Files) dans la page de votre jeux.</li>
 </ol>
 <h3 id="téléchargement-dunsteam">
 <a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-dunsteam"></a>
 Téléchargement d&rsquo;Unsteam
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Lien encodé en Base64 - Décodez-le</span>
-</span></span><span style="display:flex;"><span>aHR0cHM6Ly9jcy5yaW4ucnUvZm9ydW0vdmlld3RvcGljLnBocD9mPTIwJnQ9MTM0NzA3
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewtopic.php?f<span style="color:#f92672">=</span>29&amp;t<span style="color:#f92672">=</span><span style="color:#ae81ff">134707</span>
 </span></span></code></pre></div><ol>
-<li><strong>Décodez</strong> le lien Base64 ci-dessus</li>
 <li><strong>Téléchargez</strong> la dernière version d&rsquo;Unsteam</li>
-<li><strong>Extrayez</strong> l&rsquo;archive dans un dossier temporaire</li>
+<li><strong>Extrayez</strong> l&rsquo;archive dans un dossier EXCLU DE WINDOWS DEFENDER. Suivre ce tutoriel si vous ne savez pas comment : <a href="https://www.youtube.com/watch?v=BonLkFNnO9w">https://www.youtube.com/watch?v=BonLkFNnO9w</a></li>
 </ol>
 <h2 id="-étape-2--recherche-des-informations-du-jeu">
 <a class="header-anchor" href="#-%c3%a9tape-2--recherche-des-informations-du-jeu"></a>
@@ -118,7 +96,7 @@ Structure des fichiers Unsteam
 </code></pre><h3 id="configuration-du-fichier-unsteamini">
 <a class="header-anchor" href="#configuration-du-fichier-unsteamini"></a>
 Configuration du fichier unsteam.ini
-</h3><p>Créez ou modifiez le fichier <code>unsteam.ini</code> :</p>
+</h3><p>Créez ou modifiez le fichier <code>unsteam.ini</code>. Il vas s&rsquo;auto générer au premier lancement, et voici sa configuration :</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[loader]</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">exe_file</span><span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">dll_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">unsteam_x64.dll</span>
@@ -205,13 +183,7 @@ Vérification du fonctionnement
 </code></pre><h2 id="-étape-6--jeu-en-coopération">
 <a class="header-anchor" href="#-%c3%a9tape-6--jeu-en-coop%c3%a9ration"></a>
 🌐 Étape 6 : Jeu en coopération
-</h2><h3 id="configuration-réseau">
-<a class="header-anchor" href="#configuration-r%c3%a9seau"></a>
-Configuration réseau
-</h3><pre tabindex="0"><code>Mode 1: LAN via Hamachi/Radmin
-Mode 2: Connexion directe Steam
-Mode 3: Serveurs communautaires
-</code></pre><h3 id="connexion-avec-des-amis">
+</h2><h3 id="connexion-avec-des-amis">
 <a class="header-anchor" href="#connexion-avec-des-amis"></a>
 Connexion avec des amis
 </h3><ol>
@@ -240,18 +212,19 @@ Steam overlay absent
 <a class="header-anchor" href="#multijoueur-non-fonctionnel"></a>
 Multijoueur non fonctionnel
 </h4><pre tabindex="0"><code>❌ Problème: Impossible de rejoindre des amis
-✅ Solution: Vérifiez que tous utilisent le même real_app_id
+✅ Solution: Vérifiez que tous utilisent le même real_app_id. Sinon, si ça marche toujours pas,
+la fonctionnalité online n&#39;est tout simplement pas supporté
 </code></pre><h4 id="erreur-de-dll">
 <a class="header-anchor" href="#erreur-de-dll"></a>
 Erreur de DLL
 </h4><pre tabindex="0"><code>❌ Problème: &#34;unsteam_x64.dll not found&#34;
 ✅ Solution: Placez la DLL dans le même dossier que l&#39;EXE
-</code></pre><h3 id="logs-et-débogage">
-<a class="header-anchor" href="#logs-et-d%c3%a9bogage"></a>
-Logs et débogage
-</h3><pre tabindex="0"><code>Fichiers de logs générés :
-- unsteam.log (dans le dossier du jeu)
-- Steam logs (dans Steam/logs/)
+</code></pre><h4 id="le-jeux-se-lance-toujours-pas">
+<a class="header-anchor" href="#le-jeux-se-lance-toujours-pas"></a>
+Le jeux se lance toujours pas
+</h4><pre tabindex="0"><code>❌ Problème: &#34;Le jeux ne se lance pas même après avoir fait tout ça ?&#34;
+✅ Solution: Des fois, un jeux n&#39;a pas que la protection steam. Comme dit au début, si le jeux a une autre 
+protection AUTRE que steam, par exemple Denuvo, BattleEye, etc etc, bah c&#39;est mort, vous pouvez pas.
 </code></pre><h2 id="-précautions-importantes">
 <a class="header-anchor" href="#-pr%c3%a9cautions-importantes"></a>
 ⚠️ Précautions importantes
@@ -276,18 +249,7 @@ Mise à jour
 </h3><pre tabindex="0"><code>Fréquence: Vérifiez les mises à jour d&#39;Unsteam mensuellement
 Source: cs.rin.ru (forum officiel)
 Version: Utilisez toujours la dernière version stable
-</code></pre><h2 id="-conseils-avancés">
-<a class="header-anchor" href="#-conseils-avanc%c3%a9s"></a>
-🎯 Conseils avancés
-</h2><h3 id="optimisation-des-performances">
-<a class="header-anchor" href="#optimisation-des-performances"></a>
-Optimisation des performances
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[advanced]</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enable_overlay</span><span style="color:#f92672">=</span><span style="color:#e6db74">1               # Active l&#39;overlay Steam</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enable_achievements</span><span style="color:#f92672">=</span><span style="color:#e6db74">0          # Désactive les succès (optionnel)</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enable_stats</span><span style="color:#f92672">=</span><span style="color:#e6db74">1                 # Active les statistiques</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">network_timeout</span><span style="color:#f92672">=</span><span style="color:#e6db74">5000           # Timeout réseau en ms</span>
-</span></span></code></pre></div><h3 id="configuration-multi-jeux">
+</code></pre><h3 id="configuration-multi-jeux">
 <a class="header-anchor" href="#configuration-multi-jeux"></a>
 Configuration multi-jeux
 </h3><pre tabindex="0"><code>Créez un dossier par jeu avec sa propre configuration :
@@ -298,43 +260,15 @@ Games/
 └── Elden Ring/
     ├── unsteam.ini (config Elden Ring)
     └── unsteam_loader_x64.exe
-</code></pre><h3 id="sauvegarde-des-configurations">
-<a class="header-anchor" href="#sauvegarde-des-configurations"></a>
-Sauvegarde des configurations
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Sauvegardez vos configurations</span>
-</span></span><span style="display:flex;"><span>backup/
-</span></span><span style="display:flex;"><span>├── unsteam_configs/
-</span></span><span style="display:flex;"><span>│   ├── gow_unsteam.ini
-</span></span><span style="display:flex;"><span>│   ├── eldenring_unsteam.ini
-</span></span><span style="display:flex;"><span>│   └── readme.txt
-</span></span></code></pre></div><h2 id="-ressources-additionnelles">
-<a class="header-anchor" href="#-ressources-additionnelles"></a>
-📚 Ressources additionnelles
-</h2><h3 id="sites-utiles">
-<a class="header-anchor" href="#sites-utiles"></a>
-Sites utiles
-</h3><ul>
-<li><strong>SteamDB</strong> : <a href="https://steamdb.info/">https://steamdb.info/</a> (informations jeux)</li>
-<li><strong>cs.rin.ru</strong> : Forum communautaire principal</li>
-<li><strong>Steam Calculator</strong> : Calculateur d&rsquo;AppID</li>
-</ul>
-<h3 id="communauté">
-<a class="header-anchor" href="#communaut%c3%a9"></a>
-Communauté
-</h3><ul>
-<li>Discord communautaires de gaming</li>
-<li>Forums Reddit spécialisés</li>
-<li>Guides communautaires actualisés</li>
-</ul>
-<hr>
+</code></pre><hr>
 <blockquote>
 <p>💡 <strong>Astuce finale</strong> : Testez toujours avec des jeux gratuits ou que vous possédez légalement avant d&rsquo;utiliser avec d&rsquo;autres titres. La coopération fonctionne mieux avec des connexions stables et des configurations identiques entre joueurs.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>gaming</category><category>tutorials</category>
+        <category>gaming</category><category>tutorials</category><category>networking</category>
       
     </item>
     

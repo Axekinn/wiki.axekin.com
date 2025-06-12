@@ -1,39 +1,18 @@
 ---
-title: "Guide complet : Installation et configuration de RPCS3"
+title: "Installation et configuration de RPCS3"
 date: 2025-06-02
 draft: false
 categories: ["Gaming", "Tutoriels"]
 tags: ["RPCS3", "PlayStation 3", "PS3", "Émulation", "Gaming"]
 author: "Axekin"
 description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur PlayStation 3 RPCS3"
+cover: "/images/covers/rpcs3.png"
 ---
 
 ## 🎮 Introduction à RPCS3
 
 **RPCS3** est l'émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour émuler l'architecture Cell de la PS3. Après des années de développement, il offre maintenant une compatibilité impressionnante avec plus de 60% des jeux PS3.
 
-> ⚠️ **Note légale** : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L'émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l'est pas.
-
-## 📋 Prérequis système
-
-### Configuration minimale
-- **OS** : Windows 10 (64-bit) / Linux / FreeBSD
-- **CPU** : Intel Core i5-4430 / AMD FX-6300 (4 cores, 3.0 GHz)
-- **RAM** : 8 GB
-- **GPU** : DirectX 12 compatible / Vulkan 1.1 compatible
-- **Stockage** : 10 GB d'espace libre + espace jeux
-
-### Configuration recommandée
-- **CPU** : Intel Core i7-8700 / AMD Ryzen 7 2700 (8 cores, 3.2+ GHz)
-- **RAM** : 16 GB
-- **GPU** : NVIDIA GTX 1060 / AMD RX 580 ou supérieur
-- **Stockage** : SSD avec 50+ GB d'espace libre
-
-### Configuration optimale
-- **CPU** : Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 3.5+ GHz)
-- **RAM** : 32 GB DDR4-3200+
-- **GPU** : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur
-- **Stockage** : NVMe SSD avec 100+ GB d'espace libre
 
 > 💡 **Note importante** : RPCS3 est extrêmement exigeant en CPU. Un processeur puissant avec de nombreux cœurs est essentiel.
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SteamAutoCrack on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/steamautocrack/</link>
+    <title>Steamautocrack on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/steamautocrack/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/steamautocrack/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/steamautocrack/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,65 +23,32 @@
     
 
     <item>
-      <title>Guide complet : SteamAutoCrack - Cracker automatiquement les jeux Steam</title>
-      <link>https://wiki.axekin.com/fr/post/sac/</link>
+      <title>SteamAutoCrack - Patcher automatiquement les jeux Steam</title>
+      <link>http://localhost:1313/fr/post/sac/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/sac/</guid>
+      <guid>http://localhost:1313/fr/post/sac/</guid>
       <description>
-        <![CDATA[<h1>Guide complet : SteamAutoCrack - Cracker automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>SteamAutoCrack - Patcher automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           <h2 id="-introduction-à-steamautocrack">
 <a class="header-anchor" href="#-introduction-%c3%a0-steamautocrack"></a>
 🎮 Introduction à SteamAutoCrack
-</h2><p><strong>SteamAutoCrack</strong> est un outil automatisé qui simplifie le processus de crack des jeux Steam. Il rationalise toute la procédure en appliquant automatiquement les modifications nécessaires pour faire fonctionner les jeux sans authentification Steam.</p>
-<blockquote>
-<p>⚠️ <strong>Avertissement légal</strong> : Ce tutoriel est à des fins éducatives uniquement. Assurez-vous de respecter les lois de votre pays concernant les droits d&rsquo;auteur. L&rsquo;idéal est de posséder une copie légale du jeu.</p></blockquote>
-<h2 id="-prérequis">
-<a class="header-anchor" href="#-pr%c3%a9requis"></a>
-📋 Prérequis
-</h2><h3 id="configuration-système">
-<a class="header-anchor" href="#configuration-syst%c3%a8me"></a>
-Configuration système
-</h3><ul>
-<li><strong>OS</strong> : Windows 10/11 (64-bit)</li>
-<li><strong>Steam</strong> : Installation Steam propre (optionnel)</li>
-<li><strong>Internet</strong> : Connexion stable pour les téléchargements</li>
-<li><strong>Stockage</strong> : Espace suffisant pour les jeux</li>
-</ul>
-<h3 id="outils-requis">
-<a class="header-anchor" href="#outils-requis"></a>
-Outils requis
-</h3><ul>
-<li>Décodeur Base64 (pour les liens encodés)</li>
-<li>Gestionnaire d&rsquo;archives (7-Zip, WinRAR)</li>
-<li>Éditeur de texte (Notepad++)</li>
-</ul>
+</h2><p><strong>SteamAutoCrack</strong> est un outil automatisé qui simplifie le processus de patch des jeux Steam. Il rationalise toute la procédure en appliquant automatiquement les modifications nécessaires pour faire fonctionner les jeux sans authentification Steam.</p>
 <h2 id="-étape-1--obtention-des-fichiers-requis">
 <a class="header-anchor" href="#-%c3%a9tape-1--obtention-des-fichiers-requis"></a>
 🔧 Étape 1 : Obtention des fichiers requis
 </h2><h3 id="téléchargement-des-jeux">
 <a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-des-jeux"></a>
 Téléchargement des jeux
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Lien encodé en Base64 - Décodez-le d&#39;abord</span>
-</span></span><span style="display:flex;"><span>aHR0cHM6Ly9jcy5yaW4ucnUvZm9ydW0vdmlld2ZvcnVtLnBocD9mPTIy
-</span></span></code></pre></div><ol>
-<li><strong>Décodez</strong> le lien Base64 ci-dessus</li>
-<li><strong>Créez un compte</strong> sur le forum cs.rin.ru</li>
-<li><strong>Parcourez</strong> et téléchargez vos jeux souhaités</li>
-<li><strong>Note</strong> : Vous pourriez avoir besoin d&rsquo;un accès au forum ou contacter pour des liens directs</li>
-</ol>
-<h3 id="téléchargement-de-steamautocrack">
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewforum.php?f<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
+</span></span></code></pre></div><h3 id="téléchargement-de-steamautocrack">
 <a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-de-steamautocrack"></a>
 Téléchargement de SteamAutoCrack
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Lien encodé en Base64 - Décodez-le d&#39;abord</span>
-</span></span><span style="display:flex;"><span>aHR0cHM6Ly9jcy5yaW4ucnUvZm9ydW0vdmlld3RvcGljLnBocD9mPTI5JnQ9MTEwNjA1
-</span></span></code></pre></div><ol>
-<li><strong>Décodez</strong> le lien Base64 ci-dessus</li>
-<li><strong>Téléchargez</strong> la dernière version de SteamAutoCrack</li>
-<li><strong>Extrayez</strong> dans un dossier dédié</li>
-</ol>
-<h2 id="-étape-2--préparation-des-fichiers">
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://github.com/SteamAutoCracks/Steam-auto-crack/releases
+</span></span></code></pre></div><h2 id="-étape-2--préparation-des-fichiers">
 <a class="header-anchor" href="#-%c3%a9tape-2--pr%c3%a9paration-des-fichiers"></a>
 📁 Étape 2 : Préparation des fichiers
 </h2><h3 id="extraction-des-jeux">
@@ -89,13 +56,8 @@ Téléchargement de SteamAutoCrack
 Extraction des jeux
 </h3><p>La plupart des jeux téléchargés viennent avec une protection par mot de passe :</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mot de passe par défaut (encodé en Base64)</span>
-</span></span><span style="display:flex;"><span>Password: Y3MucmluLnJ1
-</span></span></code></pre></div><ol>
-<li><strong>Décodez</strong> le mot de passe : <code>Y3MucmluLnJ1</code> → <code>cs.rin.ru</code></li>
-<li><strong>Extrayez</strong> votre archive de jeu avec ce mot de passe</li>
-<li><strong>Localisez</strong> le dossier principal du jeu</li>
-</ol>
-<h3 id="structure-des-dossiers">
+</span></span><span style="display:flex;"><span>Password: cs.rin.ru
+</span></span></code></pre></div><h3 id="structure-des-dossiers">
 <a class="header-anchor" href="#structure-des-dossiers"></a>
 Structure des dossiers
 </h3><p>Après extraction, votre jeu devrait ressembler à :</p>
@@ -142,7 +104,7 @@ Exemple : C:\Games\VotreJeu\steamapps\common\NomDuJeu
 <ul>
 <li>Naviguez vers votre jeu extrait</li>
 <li>Sélectionnez le chemin : <code>steamapps/common/NomDuJeu/</code></li>
-<li>Ceci devrait contenir l&rsquo;exécutable principal du jeu</li>
+<li>Ceci devra contenir l&rsquo;ensemble du jeux</li>
 </ul>
 <h4 id="2-clé-api-steam">
 <a class="header-anchor" href="#2-cl%c3%a9-api-steam"></a>
@@ -159,7 +121,7 @@ Exemple : 1234567890ABCDEF1234567890ABCDEF12345678
 <a class="header-anchor" href="#3-nom-du-compte"></a>
 3. Nom du compte
 </h4><pre tabindex="0"><code>Champ : &#34;Account Name&#34;
-But : Nom d&#39;affichage pour le jeu cracké
+But : Nom d&#39;affichage pour le jeu patché
 Défaut : Généralement auto-rempli
 Exemple : VotreNomUtilisateur
 </code></pre><p><strong>Comment remplir :</strong></p>
@@ -167,7 +129,14 @@ Exemple : VotreNomUtilisateur
 <li>Changez pour votre nom préféré (optionnel)</li>
 <li>Ce nom apparaîtra dans le jeu si applicable</li>
 </ul>
-<h3 id="processus-étape-par-étape">
+<h4 id="4-steam-appid">
+<a class="header-anchor" href="#4-steam-appid"></a>
+4. Steam AppID
+</h4><pre tabindex="0"><code>Champ : &#34;Steam AppID&#34;
+But : Trouver l&#39;AppID de steam
+Défaut : Vide, il faut le remplir depuis https://steamdb.info
+Exemple : 221100 (Exemple pour DayZ)
+</code></pre><h3 id="processus-étape-par-étape">
 <a class="header-anchor" href="#processus-%c3%a9tape-par-%c3%a9tape"></a>
 Processus étape par étape
 </h3><h4 id="exemple-de-configuration">
@@ -176,14 +145,153 @@ Exemple de configuration
 </h4><pre tabindex="0"><code>Game Path : C:\Games\GodOfWar\steamapps\common\GodOfWar
 API Key : 1234567890ABCDEF1234567890ABCDEF12345678
 Account Name : MonGamerTag
-</code></pre><h4 id="exécution">
+</code></pre><h2 id="-options-de-configuration-avancées">
+<a class="header-anchor" href="#-options-de-configuration-avanc%c3%a9es"></a>
+⚙️ Options de configuration avancées
+</h2><h3 id="-catégorie-2--mode-de-fonctionnement">
+<a class="header-anchor" href="#-cat%c3%a9gorie-2--mode-de-fonctionnement"></a>
+🎯 Catégorie 2 : Mode de fonctionnement
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Mode hors ligne recommandé
+  </div>
+  <div class="admonition-content">
+    <strong>Activez le mode offline</strong> : Ce tutoriel étant principalement conçu pour le jeu hors ligne, cette option évite toute interaction avec Steam.
+  </div>
+</div>
+<div class="admonition admonition-info">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Interface utilisateur
+  </div>
+  <div class="admonition-content">
+    <strong>Activez l&rsquo;overlay</strong> : Peut être utile et agréable pour certains utilisateurs qui souhaitent garder une interface familière.
+  </div>
+</div>
+<h3 id="-catégorie-3--fonctionnalités-expérimentales">
+<a class="header-anchor" href="#-cat%c3%a9gorie-3--fonctionnalit%c3%a9s-exp%c3%a9rimentales"></a>
+🧪 Catégorie 3 : Fonctionnalités expérimentales
+</h3><table>
+  <thead>
+      <tr>
+          <th>Option</th>
+          <th>Recommandation</th>
+          <th>Raison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fonctionnalités expérimentales</strong></td>
+          <td>✅ Activé par défaut</td>
+          <td>Généralement sans danger</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-warning">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    En cas de problèmes
+  </div>
+  <div class="admonition-content">
+    Si vous rencontrez des <strong>bugs</strong> ou des <strong>dysfonctionnements</strong>, décochez cette case pour revenir aux fonctionnalités stables.
+  </div>
+</div>
+<h3 id="-catégorie-4--gestion-des-sauvegardes">
+<a class="header-anchor" href="#-cat%c3%a9gorie-4--gestion-des-sauvegardes"></a>
+💾 Catégorie 4 : Gestion des sauvegardes
+</h3><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Configuration recommandée
+  </div>
+  <div class="admonition-content">
+    <strong>Utilisez le chemin de sauvegarde personnalisé</strong> : Vos sauvegardes seront stockées directement dans le dossier du jeu, évitant de les chercher partout sur votre ordinateur !
+  </div>
+</div>
+<h4 id="avantages-du-chemin-personnalisé">
+<a class="header-anchor" href="#avantages-du-chemin-personnalis%c3%a9"></a>
+Avantages du chemin personnalisé
+</h4><pre tabindex="0"><code>📁 VotreJeu/
+├── 🎮 Executable.exe
+├── 📄 Fichiers du jeu
+└── 💾 saves/                 # Sauvegardes ici !
+    ├── save1.dat
+    └── save2.dat
+</code></pre><h3 id="-options-goldberg">
+<a class="header-anchor" href="#-options-goldberg"></a>
+🔧 Options Goldberg
+</h3><div class="admonition admonition-note">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Fonctionnalités expérimentales Goldberg
+  </div>
+  <div class="admonition-content">
+    <strong>Activez si nécessaire</strong> : Même principe que pour SteamStub - généralement bénéfique pour la compatibilité.
+  </div>
+</div>
+<h3 id="-récapitulatif-des-options-recommandées">
+<a class="header-anchor" href="#-r%c3%a9capitulatif-des-options-recommand%c3%a9es"></a>
+📋 Récapitulatif des options recommandées
+</h3><table>
+  <thead>
+      <tr>
+          <th>Catégorie</th>
+          <th>Option</th>
+          <th>Status</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Mode</strong></td>
+          <td>Offline Mode</td>
+          <td>✅ Activé</td>
+          <td>Évite Steam</td>
+      </tr>
+      <tr>
+          <td><strong>Interface</strong></td>
+          <td>Overlay</td>
+          <td>🔵 Optionnel</td>
+          <td>Confort visuel</td>
+      </tr>
+      <tr>
+          <td><strong>Expérimental</strong></td>
+          <td>Fonctionnalités avancées</td>
+          <td>✅ Activé</td>
+          <td>Performance</td>
+      </tr>
+      <tr>
+          <td><strong>Sauvegardes</strong></td>
+          <td>Chemin personnalisé</td>
+          <td>✅ Activé</td>
+          <td>Organisation</td>
+      </tr>
+      <tr>
+          <td><strong>Goldberg</strong></td>
+          <td>Expérimental</td>
+          <td>🔵 Optionnel</td>
+          <td>Compatibilité</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Conseil d&#39;expert
+  </div>
+  <div class="admonition-content">
+    Ces réglages optimisent l&rsquo;expérience hors ligne tout en gardant vos fichiers organisés et accessibles ! 🎯
+  </div>
+</div>
+<h4 id="exécution">
 <a class="header-anchor" href="#ex%c3%a9cution"></a>
 Exécution
 </h4><ol>
 <li><strong>Remplissez</strong> tous les trois champs correctement</li>
 <li><strong>Vérifiez</strong> que le chemin du jeu contient l&rsquo;exécutable</li>
 <li><strong>Double-vérifiez</strong> que votre clé API est valide</li>
-<li><strong>Cliquez</strong> sur &ldquo;Start&rdquo; pour commencer le processus de crack</li>
+<li><strong>Cliquez</strong> sur &ldquo;Start&rdquo; pour commencer le processus de patch</li>
 <li><strong>Attendez</strong> que le processus se termine</li>
 </ol>
 <h2 id="-étape-5--vérification-et-test">
@@ -196,9 +304,9 @@ Indicateurs de crack réussi
 ✅ Fichiers d&#39;émulation Steam créés
 ✅ Le jeu se lance sans Steam
 ✅ Les fichiers de sauvegarde fonctionnent correctement
-</code></pre><h3 id="tester-votre-jeu-cracké">
-<a class="header-anchor" href="#tester-votre-jeu-crack%c3%a9"></a>
-Tester votre jeu cracké
+</code></pre><h3 id="tester-votre-jeu-patché">
+<a class="header-anchor" href="#tester-votre-jeu-patch%c3%a9"></a>
+Tester votre jeu patché
 </h3><ol>
 <li><strong>Fermez Steam</strong> complètement</li>
 <li><strong>Naviguez</strong> vers le dossier du jeu</li>
@@ -240,16 +348,7 @@ Erreurs de permission
 Interférence antivirus
 </h4><pre tabindex="0"><code>❌ Erreur : Fichiers supprimés ou mis en quarantaine
 ✅ Solution : Ajoutez une exception pour le dossier SteamAutoCrack
-</code></pre><h3 id="étapes-de-débogage">
-<a class="header-anchor" href="#%c3%a9tapes-de-d%c3%a9bogage"></a>
-Étapes de débogage
-</h3><ol>
-<li><strong>Vérifiez</strong> l&rsquo;Observateur d&rsquo;événements Windows pour les erreurs</li>
-<li><strong>Vérifiez</strong> que tous les fichiers sont présents après le crack</li>
-<li><strong>Testez</strong> avec l&rsquo;antivirus temporairement désactivé</li>
-<li><strong>Assurez-vous</strong> d&rsquo;avoir suffisamment d&rsquo;espace disque disponible</li>
-</ol>
-<h2 id="-bonnes-pratiques">
+</code></pre><h2 id="-bonnes-pratiques">
 <a class="header-anchor" href="#-bonnes-pratiques"></a>
 🎯 Bonnes pratiques
 </h2><h3 id="sélection-de-jeux">
@@ -268,16 +367,7 @@ Considérations de sécurité
 <li><strong>Scannez</strong> tous les téléchargements avec un antivirus</li>
 <li><strong>Testez</strong> dans un environnement isolé d&rsquo;abord</li>
 </ul>
-<h3 id="conseils-dorganisation">
-<a class="header-anchor" href="#conseils-dorganisation"></a>
-Conseils d&rsquo;organisation
-</h3><pre tabindex="0"><code>Structure des dossiers :
-Games/
-├── Original/           # Fichiers de jeu propres
-├── Cracked/           # Jeux post-crack
-├── Tools/             # SteamAutoCrack &amp; utilitaires
-└── Backups/           # Copies de sauvegarde
-</code></pre><h2 id="-informations-additionnelles">
+<h2 id="-informations-additionnelles">
 <a class="header-anchor" href="#-informations-additionnelles"></a>
 📚 Informations additionnelles
 </h2><h3 id="quand-utiliser-steamautocrack">
@@ -298,45 +388,27 @@ Limitations
 <li><strong>Succès</strong> peuvent ne pas se synchroniser</li>
 <li><strong>Mises à jour</strong> nécessitent une gestion manuelle</li>
 </ul>
-<h3 id="alternatives">
-<a class="header-anchor" href="#alternatives"></a>
-Alternatives
-</h3><ul>
-<li>Crack manuel avec des outils spécifiques</li>
-<li>Autres crackeurs automatisés</li>
-<li>Émulateurs Steam comme Unsteam</li>
-<li>Achats légitimes pendant les soldes</li>
-</ul>
 <h2 id="-considérations-légales-et-éthiques">
 <a class="header-anchor" href="#-consid%c3%a9rations-l%c3%a9gales-et-%c3%a9thiques"></a>
 🔒 Considérations légales et éthiques
-</h2><h3 id="rappels-importants">
-<a class="header-anchor" href="#rappels-importants"></a>
-Rappels importants
-</h3><ul>
-<li>Utilisez uniquement avec des jeux que vous <strong>possédez légalement</strong></li>
-<li>Respectez les droits de <strong>propriété intellectuelle</strong></li>
-<li>Suivez les <strong>lois locales sur les droits d&rsquo;auteur</strong></li>
-<li>Soutenez les <strong>développeurs de jeux</strong> quand possible</li>
-</ul>
-<h3 id="approche-recommandée">
+</h2><h3 id="approche-recommandée">
 <a class="header-anchor" href="#approche-recommand%c3%a9e"></a>
 Approche recommandée
 </h3><ol>
 <li><strong>Achetez</strong> les jeux que vous appréciez</li>
-<li><strong>Utilisez le crack</strong> pour la sauvegarde/usage hors ligne</li>
+<li><strong>Utilisez le patch</strong> pour la sauvegarde/usage hors ligne</li>
 <li><strong>Soutenez les développeurs</strong> via des achats légitimes</li>
 <li><strong>Partagez les connaissances</strong> de manière responsable</li>
 </ol>
 <hr>
 <blockquote>
-<p>💡 <strong>Astuce Pro</strong> : SteamAutoCrack est particulièrement utile pour les jeux solo où vous voulez un accès hors ligne. Maintenez toujours des copies légales et utilisez ces connaissances de manière responsable à des fins éducatives.</p></blockquote>
+<p>💡 <strong>Astuce</strong> : SteamAutoCrack est particulièrement utile pour les jeux solo où vous voulez un accès hors ligne. Maintenez toujours des copies légales et utilisez ces connaissances de manière responsable à des fins éducatives.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>gaming</category><category>tutorials</category>
+        <category>gaming</category><category>tutorials</category><category>automation</category>
       
     </item>
     

@@ -30,8 +30,6 @@ searchHidden: false
 
 L'utilisation de cheats sur l'émulateur **Citra** peut parfois être déroutante pour les nouveaux utilisateurs. Ce guide complet vous expliquera **étape par étape** comment configurer et utiliser efficacement les codes de triche sur vos jeux Nintendo 3DS émulés.
 
-Le processus est similaire à celui de l'émulateur **Dolphin**, mais avec quelques spécificités propres à Citra que nous allons explorer ensemble.
-
 ### Processus général
 
 1. **Lancer Citra** → Charger votre jeu
@@ -53,18 +51,14 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### Lancement initial
 
-1. **Démarrez Citra** et chargez votre jeu Nintendo 3DS
-2. Une fois le jeu lancé, allez dans le menu principal de Citra
-3. Cliquez sur **Emulation** > **Cheats**
-
-![Menu des cheats dans Citra](/images/citra-cheats-menu.png)
-*Accès au menu de gestion des cheats*
+1. **Démarrez Citra** et attendez que l'émulateur liste le reste de vos jeux
+2. Une fois votre jeux affiché, faites **Clique Droit** puis **Propriété** puis allez dans le dernier onglet **Cheats**
 
 ### Interface des cheats
 
 Une nouvelle fenêtre s'ouvre avec :
 - **Liste des cheats** disponibles (vide au début)
-- **Bouton "Add Cheat"** pour ajouter de nouveaux codes
+- **Bouton "Add Cheat"** pour ajouter de nouveaux cheats
 - **Cases à cocher** pour activer/désactiver les cheats
 - **Boutons d'édition** et de suppression
 
@@ -133,15 +127,6 @@ ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
 
 > **💡 Astuce** : Ces codes d'exemple proviennent de *Bravely Default* et sont pleinement fonctionnels, mais servent ici uniquement de démonstration.
 
-### Types de codes courants
-
-| Type de Code | Description | Exemple |
-|--------------|-------------|---------|
-| **Money/Gold** | Argent infini | `08XXXXXX 000F423F` |
-| **HP/SP** | Points de vie/magie max | `08XXXXXX 00000063` |
-| **Items** | Objets en quantité | `08XXXXXX 00000063` |
-| **Experience** | Expérience maximale | `08XXXXXX 0098967F` |
-
 ## Étape 4 : Activation et test
 
 ### Procédure d'activation
@@ -151,9 +136,6 @@ ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
 3. Cliquez sur **"OK"** pour sauvegarder
 4. **Cochez la case** à côté du cheat pour l'activer
 5. **Retournez dans le jeu** pour tester
-
-![Animation d'activation d'un cheat](/images/citra-cheat-activation.gif)
-*Processus d'activation d'un code de triche*
 
 ### Vérification des effets
 
@@ -229,14 +211,6 @@ Une fois le cheat activé, vous devriez observer :
 - Partage de codes et conseils
 - Support technique communautaire
 
-### Outils complémentaires
-
-| Outil | Description | Utilité |
-|-------|-------------|---------|
-| **Cheat Engine** | Éditeur mémoire avancé | Création de codes personnalisés |
-| **HxD** | Éditeur hexadécimal | Analyse de fichiers de sauvegarde |
-| **Save Editors** | Éditeurs de sauvegarde spécialisés | Alternative aux cheats |
-
 ## Bonnes pratiques et conseils avancés
 
 ### Sécurité et sauvegarde
@@ -248,78 +222,6 @@ Une fois le cheat activé, vous devriez observer :
 > 3. **Éviter les cheats durant les cutscenes** ou événements scriptés
 > 4. **Désactiver les cheats** avant les combats de boss importants
 
-### Optimisation des performances
-
-```yaml
-# Configuration recommandée pour Citra avec cheats
-Graphics:
-  Resolution: 2x Native (400x240)
-  Frame Limit: 100%
-  
-Audio:
-  Output Engine: SDL2
-  
-System:
-  Region: Auto-Select
-  Language: System Default
-```
-
-### Codes avancés et modifications
-
-Pour les utilisateurs expérimentés, voici quelques techniques avancées :
-
-**Code conditionnel avancé :**
-```cheat
-[Argent infini SI level > 10]
-D3000000 10000000
-80XXXXXX 0000000A
-D2000000 00000000
-```
-
-**Modification de pointeur :**
-```cheat
-[Stats maximales (via pointeur)]
-B8XXXXXX 00000000
-B8XXXXXX 00000000
-80XXXXXX 000000FF
-D2000000 00000000
-```
-
-## Exemples pratiques par jeu populaire
-
-### Pokémon X/Y
-
-```cheat
-[Argent Infini]
-0818CE0C 0098967F
-
-[Pokéballs Infinies]
-08C6D6CC 00000063
-
-[Rare Candies x999]
-08C6D7C4 000003E7
-```
-
-### The Legend of Zelda: A Link Between Worlds
-
-```cheat
-[Rupees Max]
-08796D20 0000270F
-
-[Vies Infinies]
-08796D1C 00000063
-```
-
-### Animal Crossing: New Leaf
-
-```cheat
-[Bells Infinis]
-0893A8B8 0098967F
-
-[Tous les fruits]
-08XXXXXX 00000063
-```
-
 ## Conclusion
 
 L'utilisation des cheats sur Citra peut grandement enrichir votre expérience de jeu, que ce soit pour :
@@ -327,12 +229,6 @@ L'utilisation des cheats sur Citra peut grandement enrichir votre expérience de
 - **Tester différentes stratégies** sans grinding
 - **Revivre vos jeux favoris** avec de nouveaux défis
 - **Contourner des passages difficiles**
-
-> **🎯 Points clés à retenir :**
-> - Sauvegardez toujours avant d'utiliser des cheats
-> - Testez les codes progressivement
-> - Utilisez des sources fiables pour vos codes
-> - N'hésitez pas à désactiver les cheats si nécessaire
 
 ## FAQ - Questions fréquentes
 
@@ -344,16 +240,5 @@ R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commence
 
 **Q : Comment créer mes propres codes ?**
 R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.
-
-**Q : Les cheats affectent-ils les achievements/succès ?**
-R : Sur émulateur, il n'y a généralement pas de système d'achievements officiels, donc pas d'impact. Pour les achievements communautaires, cela dépend des règles spécifiques.
-
 ---
-
-**Vous avez trouvé ce guide utile ?** Partagez-le avec la communauté gaming et n'hésitez pas à laisser vos propres conseils en commentaires !
-
-**Articles connexes :**
-- [Guide Complet de l'Émulateur Citra](/post/guide-citra/)
-- [Optimiser les Performances de Citra](/post/citra-performance/)
-- [Les Meilleurs Jeux 3DS à Émuler](/post/best-3ds-games/)
 ````

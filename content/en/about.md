@@ -5,66 +5,111 @@ lastmod: 2025-06-02
 draft: false
 translationKey: "about"
 description: "Discover who's behind Axekin and the universe of this site"
-images: []
+images: ["/images/about/axekin-banner.jpg"]
+keywords: ["axekin", "developer", "gaming", "anime", "tutorials"]
+author: "Axekin"
+weight: 1
+toc: true
+tocOpen: true
+comments: true
+reward: true
+mathjax: false
+lightgallery: true
+readingTime: true
+showFullContent: false
+layout: "about"
+aliases: ["/about-me", "/aboutme"]
+categories: ["Personal"]
+tags: ["introduction", "bio", "contact"]
 ---
 
 # About Axekin
 
-> *"If only you could see what I see..."*
+{{< quote author="Axekin" >}}
+When in doubt, there's no doubt, bro
+{{< /quote >}}
 
 ## Who am I?
 
-Hey! I'm **Axekin**, passionate about technology, web development, and digital universes. This site is my little corner of the internet where I share my thoughts, discoveries, and experiences.
+Hey! I'm **Axekin**, passionate about technology, gaming and especially anime. This site is my little corner of the internet where I share my tutorials, discoveries and experiences.
 
 ### What I love
 
-- 🚀 **Web Development**: Hugo, JavaScript, Python
+{{< admonition tip "My passions" >}}
+- 🚀 **Web Development**: HTML/CSS, JavaScript, Python 
 - 🎮 **Gaming**: Find me on [Discord](https://discord.gg/axekin)
-- 💭 **Digital Philosophy**: How technology shapes our world
 - 📚 **Continuous Learning**: Always seeking new knowledge
+- 🎌 **Japanese Culture**: Manga, anime, and the entire Japanese universe
+{{< /admonition >}}
 
-## Why this site?
+### My GitHub stats
 
-This personal wiki was born from my passion for knowledge sharing. In a world where information moves fast, I wanted to create a space to:
+{{< github-stats username="axekinn" >}}
 
-- **Document** my learnings and discoveries
-- **Share** tutorials and practical guides
-- **Reflect** on technological evolutions
-- **Connect** with other enthusiasts
+### 🚀 My journey
 
-## The site's philosophy
+**2024** ➤ **Initial idea**  
+*Desire to document my learning and discoveries*
 
-### "If only you could see what I see..."
+**2025** ➤ **Site creation**  
+*Official launch of my wiki*
 
-This phrase sums up my vision: sharing a unique perspective on the digital world around us. Each article is a window into my way of seeing and understanding technology.
+**Today** ➤ **Continuous evolution**  
+*Regular content addition and user experience improvement*
 
-### Pondering...
+## Recent projects
 
-Sometimes, you need to take time to think, analyze, ponder. This site is also a space for personal reflection that I share with you.
+{{< gallery >}}
+{{< gallery-item src="/images/projects/project1.jpg" alt="Project 1" caption="Modern web application" >}}
+{{< gallery-item src="/images/projects/project2.jpg" alt="Project 2" caption="Custom Discord bot" >}}
+{{< gallery-item src="/images/projects/project3.jpg" alt="Project 3" caption="E-commerce website" >}}
+{{< /gallery >}}
 
-## Technologies used
+## Contact & Social
 
-This site is built with:
+{{< admonition info "Let's stay connected!" >}}
+Want to chat, collaborate or just say hello?
+{{< /admonition >}}
 
-- **[Hugo](https://gohugo.io/)**: Ultra-fast static site generator
-- **[Reimu Theme](https://github.com/D-Sketon/hugo-theme-reimu)**: An elegant and modern theme
-- **Markdown**: For simple and efficient writing
-- **Git**: For versioning and collaboration
-
-## Contact & Networks
-
-Want to chat, collaborate, or just say hello?
-
+{{< social-links >}}
 - 📧 **Email**: [axekinn@proton.me](mailto:axekinn@proton.me)
 - 💬 **Discord**: [Join our server](https://discord.gg/axekin)
 - 🌐 **Website**: [axekin.com](https://axekin.com)
+- 🐙 **GitHub**: [@axekin](https://github.com/axekinn)
+{{< /social-links >}}
 
-## Legal notices
+## Site statistics
 
-This site is personal and the opinions expressed are solely mine. Content is shared in a spirit of kindness and mutual learning.
+{{< chart >}}
+{
+  "type": "line",
+  "data": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "datasets": [{
+      "label": "Monthly visitors",
+      "data": [120, 190, 300, 500, 800, 1200],
+      "borderColor": "rgb(75, 192, 192)",
+      "tension": 0.1
+    }]
+  }
+}
+{{< /chart >}}
+
+## Legal notice
+
+{{< admonition warning "Disclaimer" >}}
+This site is personal and the opinions expressed are mine alone. Content is shared in a spirit of goodwill and mutual learning.
+{{< /admonition >}}
+
+### Content license
+
+{{< license >}}
+The content of this site is under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license
+{{< /license >}}
 
 ---
 
-*Last updated: {{ .Lastmod.Format "January 2, 2006" }}*
+{{< reward >}}
 
-**Thanks for visiting and happy reading!** 🚀
+**Thanks for your visit and happy reading!** 🚀
+````

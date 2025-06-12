@@ -1,11 +1,11 @@
 ---
-title: "Guide complet : Installation et configuration de Citra"
+title: "Installation et configuration de Azahar"
 date: 2025-06-02
 draft: false
 categories: ["gaming", "Tutoriels"]
 tags: ["Citra", "Nintendo 3DS", "Émulation", "Gaming"]
 author: "Axekin"
-description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur Nintendo 3DS Citra"
+description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur Nintendo 3DS Azahar"
 series: ["Emulation Guides"]
 toc: true
 math: false
@@ -27,131 +27,139 @@ searchHidden: false
 
 **Citra** est l'émulateur Nintendo 3DS open-source le plus abouti au monde. Développé depuis 2013, il permet de jouer aux jeux 3DS sur PC avec des améliorations graphiques significatives et une compatibilité quasi-parfaite.
 
-> ⚠️ **Note légale** : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L'émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l'est pas.
-
-## 📋 Prérequis système
-
-### Configuration minimale
-- **OS** : Windows 10 (64-bit) / Linux / macOS / Android
-- **CPU** : Intel Core i3-4130 / AMD FX-4300
-- **RAM** : 4 GB
-- **GPU** : DirectX 11 compatible (Intel HD 4000+)
-- **Stockage** : 2 GB d'espace libre
-
-### Configuration recommandée
-- **CPU** : Intel Core i5-8400 / AMD Ryzen 5 2600
-- **RAM** : 8 GB
-- **GPU** : NVIDIA GTX 1050 / AMD RX 560 ou supérieur
-- **Stockage** : SSD avec 10+ GB d'espace libre
-
-### Configuration optimale
-- **CPU** : Intel Core i7-10700K / AMD Ryzen 7 3700X
-- **RAM** : 16 GB
-- **GPU** : NVIDIA GTX 1660 / AMD RX 6600 ou supérieur
-- **Stockage** : NVMe SSD avec 20+ GB d'espace libre
-
 ## 🔧 Étape 1 : Téléchargement de Citra
 
-### Option 1 : Citra Official (Gratuit)
+### Option 1 : Azahar Officiam
 ```bash
 # Site officiel
-https://citra-emu.org/download/
+https://github.com/azahar-emu/azahar/releases
 ```
 
 1. **Cliquez** sur "Download for Windows"
-2. **Téléchargez** `citra-windows-x86_64.zip`
-3. **Extrayez** dans un dossier dédié (ex: `C:\Citra`)
+2. **Téléchargez** ` azahar-XXXX-rc1-windows-msvc-installer.exe `
+3. **Extrayez** dans un dossier dédié (ex: `Dolphin\Citra` ou à la racine d'un de vos autre disque, pas le C)
 
-### Option 2 : Citra MMJ (Android optimisé)
-```bash
-# Version Android performance
-https://github.com/weihuoya/citra/releases
-```
+## Téléchargement de votre jeu
 
-### Option 3 : Citra Canary (Builds nightlies)
-```bash
-# Versions de développement
-https://github.com/citra-emu/citra-canary/releases
-```
+### Étape 1 : Accéder à la bibliothèque de jeux
+
+Rendez-vous sur **[🎮 Axekin Games - Nintendo 3DS](https://www.axekin.com/search?platform=3ds)** pour accéder à la collection de jeux Nintendo 3DS.
+
+### Étape 2 : Télécharger le jeu
+
+1. **Recherchez** le jeu désiré dans la liste
+2. **Cliquez** sur le bouton de téléchargement
+3. **Attendez** la fin du téléchargement
+
+### Étape 3 : Extraction du fichier
+
+Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces logiciels :
+
+| Logiciel | Lien de téléchargement | Compatibilité |
+|----------|------------------------|---------------|
+| **7-Zip** | [Télécharger 7-Zip](https://www.7-zip.org/) | Windows/Linux |
+| **WinRAR** | [Télécharger WinRAR](https://www.win-rar.com/) | Windows |
+
+> **💡 Astuce** : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d'essai.
+
+**Résultat** : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec 3DS ! 🎯
+
 
 ## 📁 Étape 2 : Structure des dossiers
 
-Organisez vos fichiers avec cette structure :
+Créez cette structure de dossiers pour organiser vos fichiers :
+
+Pour une organisation optimale de votre bibliothèque, voici l'arborescence conseillée :
+
+````
+Jeux 3DS/
+├── Animal Crossing - Happy Home Designer/
+│   ├── BASE/                # 🎮 Le jeu de base (fichier principal)
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu (recommandé)
+│   └── DLC/                 # 📦 Contenu téléchargeable (optionnel)
+├── Dead or Alive - Dimensions/
+│   ├── BASE/                # 🎮 Le jeu de base
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu
+│   └── DLC/                 # 📦 DLC supplémentaires
+├── Ben 10 - Galactic Racing/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Captain America - Super Soldier/
+    ├── BASE/
+    └── UPDATE/              # (Pas de DLC pour ce jeu)
+````
+
+### Types de contenu
+
+{{< admonition tip "Comprendre les dossiers" >}}
+- **BASE** 📁 : Le jeu principal que vous téléchargez
+- **UPDATE** 📁 : Mises à jour et correctifs (recommandé)
+- **DLC** 📁 : Contenu supplémentaire payant (optionnel mais recommandé)
+{{< /admonition >}}
+
+{{< admonition success "Avantages de cette organisation" >}}
+✅ **Détection automatique** : Les jeux s'ajoutent automatiquement dans l'émulateur  
+✅ **Gestion simplifiée** : Plus besoin de sélectionner manuellement chaque ROM  
+✅ **Organisation claire** : Facile de voir quel contenu vous avez pour chaque jeu  
+✅ **Maintenance aisée** : Ajout/suppression de contenu simplifié
+{{< /admonition >}}
+
+> **📝 Remarque importante** : Si un jeu n'a pas de mise à jour ou de DLC, inutile de créer les dossiers correspondants. Créez uniquement les dossiers pour le contenu que vous possédez.
+
+### Résultat
+
+Une fois cette structure mise en place, votre émulateur détectera automatiquement tous les jeux présents dans le dossier "Jeux 3DS" et les organisera proprement dans votre bibliothèque ! 🎯
+
+## 💡 Configuration portable (Recommandé)
+
+{{< admonition tip "Installation portable" >}}
+**Avant le premier lancement**, créez un dossier nommé `user` à la racine du répertoire Azahar. Cette manipulation rendra l'installation entièrement portable.
+{{< /admonition >}}
+
+### Avantages du mode portable
+
+| Aspect | Mode normal | Mode portable |
+|--------|-------------|---------------|
+| **Configurations** | Stockées dans le système | Stockées dans le dossier |
+| **Sauvegardes** | Dispersées sur l'ordinateur | Centralisées dans un dossier |
+| **Portabilité** | ❌ Liée au système | ✅ Déplaçable facilement |
+| **Sauvegarde** | Difficile à localiser | Simple à sauvegarder |
+
+### Structure après création du dossier portable
 
 ```
-Citra/
-├── citra-qt.exe             # Interface graphique
-├── citra.exe                # Version CLI
-├── games/                   # Vos ROMs .3ds/.cia/.cxi
-│   ├── 3ds/                 # Cartouches .3ds
-│   ├── cia/                 # Install files .cia
-│   └── homebrew/            # Applications homebrew
-├── saves/                   # Sauvegardes exportées
-├── screenshots/             # Captures d'écran
-├── system/                  # BIOS et fichiers système
-│   ├── aes_keys.txt         # Clés de chiffrement
-│   └── seeddb.bin           # Base de données seeds
-├── mods/                    # Modifications de jeux
-│   └── [Title-ID]/          # Dossier par jeu
-└── cheats/                  # Codes de triche
-    └── [Title-ID].txt       # Cheats par jeu
+📁 Azahar/
+├── 🎮 Azahar.exe
+├── 📁 user/              # ← Créez ce dossier !
+│   ├── 📁 bis/
+│   ├── 📁 games/
+│   ├── 📁 profiles/
+│   └── 📁 system/
+└── 📄 Autres fichiers...
 ```
+
+{{< admonition success "Résultat" >}}
+**Toutes vos données** (configurations, sauvegardes, profils) seront stockées dans le dossier `user`, facilitant grandement la gestion et les sauvegardes !
+{{< /admonition >}}
+
+### Instructions de création
+
+1. **Naviguez** vers le dossier d'installation de Azahar
+2. **Créez** un nouveau dossier nommé exactement `user`
+3. **Lancez** Azahar - il détectera automatiquement le mode portable
+
+> **📝 Note** : Cette opération doit être effectuée **avant** le premier lancement pour être prise en compte !
 
 ## ⚙️ Étape 3 : Installation et premier lancement
 
 ### Installation des prérequis Windows
-```bash
-# Visual C++ Redistributable 2022
-https://aka.ms/vs/17/release/vc_redist.x64.exe
-
-# DirectX End-User Runtime
-https://www.microsoft.com/en-us/download/details.aspx?id=35
-```
 
 ### Premier lancement
-1. **Exécutez** `citra-qt.exe`
-2. **Acceptez** la configuration par défaut
-3. **Configurez** les dossiers de base
-4. **Définissez** le dossier des jeux
+1. **Exécutez** `azahar.exe`
+2. **Définissez** le dossier des jeux (double cliquer sur le menu, ajouter le dossier "Jeux 3DS")
 
-## 🎯 Étape 4 : Configuration système essentielle
-
-### Fichiers système requis
-
-> ⚠️ **Important** : Ces fichiers doivent être extraits de votre propre Nintendo 3DS.
-
-#### AES Keys (Obligatoire)
-```bash
-# Extraction depuis votre 3DS avec Homebrew
-1. Installez FBI + GodMode9 sur votre 3DS
-2. Utilisez GodMode9 pour extraire aes_keys.txt
-3. Copiez dans: Citra/system/aes_keys.txt
-```
-
-Contenu type d'aes_keys.txt :
-```
-slot0x2CKeyX=xxx
-slot0x25KeyX=xxx
-slot0x18KeyX=xxx
-slot0x1BKeyX=xxx
-# ... autres clés
-```
-
-#### SeedDB (Pour certains jeux)
-```bash
-# Extraction avec Decrypt9WIP
-1. Téléchargez seeddb.bin depuis votre 3DS
-2. Copiez dans: Citra/system/seeddb.bin
-```
-
-#### Fonts système (Optionnel mais recommandé)
-```bash
-# Extraction avec GodMode9
-1. Extrayez shared_font.bin de votre 3DS
-2. Copiez dans: Citra/system/shared_font.bin
-```
-
-## ⚙️ Étape 5 : Configuration optimale
+## ⚙️ Étape 3 : Configuration optimale
 
 ### Paramètres généraux
 ```
@@ -166,22 +174,89 @@ Emulation → Configure → General
 Emulation → Configure → System
 ```
 - **Region** : Europe (ou votre région)
-- **Language** : Français
-- **Play Coin** : 300 (maximum)
+- **Language** : Votre language
 - **Console ID** : Random (généré automatiquement)
 - **Enable New 3DS** : ✅ Activé (pour de meilleures performances)
 
 ### Paramètres graphiques optimaux
 
-#### Onglet General
+#### Onglet Graphismes
 ```
 Graphics → General
-- Internal Resolution: 2x Native (400x480) ou plus
+- Internal Resolution: 2x Native (400x480) ou plus. Plus vous mettrez la valeure haute, plus ça consommera en GPU
 - Enable Linear Filtering: ✅ Activé
-- Enable V-Sync: ✅ Activé
+→ General
 ```
 
-#### Onglet Renderer
+#### Onglet Disposition
+
+```
+Graphics → Disposition
+```
+
+{{< admonition tip "Interface de disposition des écrans" >}}
+Cette section vous permet de personnaliser l'affichage des deux écrans de la 3DS selon vos préférences visuelles et votre configuration matérielle.
+{{< /admonition >}}
+
+### Disposition des écrans
+
+**Options de disposition prédéfinies :**
+
+| Mode | Description | Recommandation |
+|------|-------------|----------------|
+| **Défaut** | Configuration standard Nintendo | ✅ **Débutants** |
+| **Un seul écran** | Affiche seulement l'écran actif | Gameplay focus |
+| **Écran large** | Étire sur toute la largeur | Écrans larges |
+| **Côte à côte** | Écrans horizontaux | **Recommandé gaming** |
+| **Fenêtres séparées** | Deux fenêtres indépendantes | Multi-moniteurs |
+| **Écran hybride** | Écrans superposés | Économie d'espace |
+| **Disposition personnalisée** | Configuration manuelle | ⭐ **Plus flexible** |
+
+### Configuration personnalisée
+
+{{< admonition success "Disposition personnalisée avancée" >}}
+**Écran supérieur :**
+- **Position X/Y** : `0px, 0px` (coin supérieur gauche)
+- **Largeur/Hauteur** : `800px, 480px` (ratio 4:3 optimal)
+
+**Écran inférieur :**
+- **Position X/Y** : `80px, 500px` (légèrement centré)
+- **Largeur/Hauteur** : `640px, 480px` (proportionnel)
+
+**Opacité écran inférieur** : `100%` (pleine visibilité)
+{{< /admonition >}}
+
+### Paramètres d'affichage
+
+#### Options générales
+```
+Écrans → Configuration
+```
+
+**Réglages recommandés :**
+- **Permuter les écrans** : ❌ Désactivé (garde la logique DS)
+- **Rotation des écrans vers le haut** : ❌ Désactivé
+- **Écart d'écran** : `0.00` à `4.00` selon préférence
+- **Proportion du grand écran** : `4.00` (écran principal plus grand)
+- **Proportion du petit écran** : `En bas à droite` (position tactile)
+
+#### Disposition avec un seul écran
+
+{{< admonition note "Mode un seul écran" >}}
+**Utilisation :**
+- Jeux n'utilisant qu'un écran principal
+- Économie de ressources d'affichage
+- Concentration sur l'action principale
+
+**Configuration :**
+- **Étiré** : ☑️ Coché pour les deux écrans
+- **Marge Gauche/Droite** : `0px` (plein écran)
+- **Marge Haut/Bas** : `0px` (utilisation maximale)
+{{< /admonition >}}
+
+> **💡 Conseil pratique** : Testez différentes dispositions selon le jeu. Les RPG fonctionnent mieux en disposition personnalisée, tandis que les jeux d'action préfèrent souvent le mode côte à côte.
+
+#### Onglet Avancé
 ```
 Graphics → Advanced
 - Graphics API: OpenGL (recommandé) ou Vulkan
@@ -192,21 +267,10 @@ Graphics → Advanced
 - Enable VSync: ✅ Activé
 ```
 
-#### Onglet Stereoscopy (3D)
-```
-Graphics → Stereoscopy
-- Stereoscopic 3D Mode: Off (ou Side by Side pour VR)
-- Depth: 100% (si activé)
-- Eye to render: Both (recommandé)
-```
-
 ### Configuration audio
 ```
 Audio
-- Enable DSP LLE: ✅ Activé (plus précis)
-- Enable DSP LLE Multithread: ✅ Activé
-- Output Type: Auto
-- Volume: 100%
+- Emulation: HLE
 ```
 
 ### Configuration des contrôles
@@ -214,412 +278,20 @@ Audio
 #### Méthode automatique
 ```
 Controls → Configure
-1. Cliquez sur "Auto Map"
+1. Cliquez sur "Configuration Auto"
 2. Appuyez sur les boutons de votre manette
 3. Testez tous les contrôles
 ```
 
-#### Mapping recommandé (Manette Xbox)
-```
-A Button → A
-B Button → B
-X Button → Y
-Y Button → X
-L Button → LB
-R Button → RB
-ZL Button → LT
-ZR Button → RT
-D-Pad → D-Pad
-Circle Pad → Left Stick
-C-Stick (New 3DS) → Right Stick
-Start → Menu
-Select → View
-```
-
-## 🎮 Étape 6 : Ajout et gestion des jeux
-
 ### Formats supportés
-- **.3DS** : Cartouches Nintendo 3DS (format standard)
-- **.CIA** : CTR Importable Archive (installables)
-- **.CXI** : CTR eXecutable Image (exécutables bruts)
-- **.APP** : Applications système Nintendo
+- **.CCI** : Seul format supporté avec mes roms avec Azahar, dû à leurs restrictions anti piracy
 
-### Méthodes d'ajout de jeux
-
-#### ROMs cartouches (.3DS)
-```bash
-# Simple à utiliser
-1. Placez vos fichiers .3ds dans le dossier games/3ds/
-2. Rafraîchissez la liste dans Citra
-3. Double-cliquez pour jouer
-```
-
-#### Installation de CIA
-```bash
-# Pour DLC, mises à jour, et homebrew
-1. File → Install CIA...
-2. Sélectionnez votre fichier .cia
-3. Attendez l'installation
-4. Le jeu/contenu apparaît dans la liste
-```
-
-### Dumping de vos propres jeux
-
-#### Depuis cartouche physique
-```bash
-# Avec GodMode9 (3DS avec CFW)
-1. Insérez la cartouche dans votre 3DS
-2. Lancez GodMode9
-3. Naviguez vers [C:] GAMECART
-4. Sélectionnez le fichier .3ds
-5. Copy to 0:/gm9/out/
-6. Transférez sur PC
-```
-
-#### Depuis eShop (installé)
-```bash
-# Avec GodMode9
-1. Naviguez vers [A:] SYSNAND SD
-2. title → 00040000 → [Title-ID]
-3. Dump en .cia
-4. Transférez sur PC
-```
-
-## 🚀 Optimisation avancée
-
-### Configurations par type de jeu
-
-#### Jeux d'action/platforme
-```
-Graphics:
-- Internal Resolution: 3x-4x Native
-- Hardware Renderer: ✅ Activé
-- V-Sync: ✅ Activé
-
-Performance:
-- New 3DS Mode: ✅ Activé
-- DSP LLE: ✅ Activé
-```
-
-#### JRPGs/Visual Novels
-```
-Graphics:
-- Internal Resolution: 4x-6x Native
-- Linear Filtering: ✅ Activé
-- Anisotropic Filtering: 16x
-
-Quality:
-- Accurate Multiplication: ✅ Activé
-- Hardware Shaders: ✅ Activé
-```
-
-#### Jeux gourmands (Monster Hunter, etc.)
-```
-Performance:
-- Internal Resolution: 2x Native maximum
-- New 3DS Mode: ✅ Obligatoire
-- Frame Limiting: ✅ Activé
-
-Compromis qualité/performance équilibré
-```
-
-### Optimisations spécifiques
-
-#### The Legend of Zelda: Ocarina of Time 3D
-```bash
-# Configuration optimale
-Graphics:
-- Resolution: 4x Native (800x960)
-- Hardware Renderer: ✅ Activé
-- Accurate Multiplication: ✅ Activé
-
-Mods recommandés:
-- HD Texture Pack
-- 60 FPS patch
-- Widescreen mod
-```
-
-#### Pokémon X/Y/OR/AS
-```bash
-# Réglages performance
-Graphics:
-- Resolution: 2x-3x Native
-- Hardware Shaders: ✅ Activé
-- New 3DS Mode: ✅ Obligatoire
-
-Notes:
-- Certaines zones peuvent ralentir
-- Utilisez les dernières versions Canary
-```
-
-#### Super Mario 3D Land
-```bash
-# Configuration équilibrée
-Graphics:
-- Resolution: 3x-4x Native
-- Linear Filtering: ✅ Activé
-- V-Sync: ✅ Activé
-
-Performance généralement excellente
-```
-
-## 🛠️ Mods et améliorations
-
-### Types de mods supportés
-
-#### Texture Packs HD
-```bash
-# Installation
-1. Téléchargez le texture pack compatible
-2. Créez: Citra/load/textures/[Title-ID]/
-3. Extrayez les textures dans ce dossier
-4. Activez "Custom Textures" dans les options graphiques
-```
-
-#### Codes de triche
-```bash
-# Format des cheats
-1. Créez: Citra/cheats/[Title-ID].txt
-2. Utilisez le format Gateway/ActionReplay
-3. Activez dans System → Cheats
-
-Exemple pour Pokémon X (0004000000055D00):
-[Max Money]
-08C6A0AC 000F423F
-```
-
-#### Patches 60 FPS
-```bash
-# Application manuelle
-1. Téléchargez le patch .ips/.ups
-2. Appliquez avec Lunar IPS ou similar
-3. Utilisez la ROM patchée dans Citra
-
-Jeux compatibles:
-- Zelda: Ocarina of Time 3D
-- Mario Kart 7
-- Super Mario 3D Land
-```
-
-### Ressources pour mods
-
-#### Sites recommandés
-```bash
-# Texture Packs
-- Citra Community Forum
-- GBAtemp Forums
-- Reddit r/citra
-
-# Cheats
-- GameHacking.org
-- Fort42.com cheat database
-
-# Patches
-- RomHacking.net
-- GitHub repositories
-```
-
-## 📱 Citra sur autres plateformes
-
-### Citra Android
-
-#### Prérequis Android
-```bash
-- Android 8.0+ (API 26)
-- SOC Snapdragon 845+ ou Exynos 9810+
-- 6GB RAM minimum (8GB recommandé)
-- 32GB stockage libre
-- GPU Adreno 630+ ou Mali-G72+
-```
-
-#### Installation
-```bash
-1. Google Play Store → Citra MMJ (version optimisée)
-2. Ou APK depuis GitHub
-3. Configurez les permissions de stockage
-4. Transférez ROMs et fichiers système
-```
-
-#### Optimisations Android
-```bash
-Performance:
-- CPU JIT: ✅ Activé
-- Hardware Renderer: ✅ Activé (si supporté)
-- Resolution: 1x Native (économie batterie)
-- Frame Skip: Auto (si nécessaire)
-
-Contrôles:
-- Overlay tactile personnalisable
-- Support manettes Bluetooth
-- Gyroscope pour certains jeux
-```
-
-### Citra Linux
-
-#### Installation Ubuntu/Debian
-```bash
-# Flatpak (recommandé)
-flatpak install flathub org.citra_emu.citra
-
-# Ou compilation depuis source
-sudo apt install build-essential cmake qt5-default libsdl2-dev
-git clone --recursive https://github.com/citra-emu/citra.git
-cd citra && mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j$(nproc)
-```
-
-#### Installation Arch Linux
-```bash
-# Depuis AUR
-yay -S citra-git
-# ou
-sudo pacman -S citra-qt
-```
-
-### Citra macOS
-
-#### Installation
-```bash
-# Homebrew
-brew install --cask citra
-
-# Ou download direct
-https://citra-emu.org/download/
-```
-
-## 🔧 Résolution des problèmes
-
-### Problèmes fréquents et solutions
-
-#### Jeu ne se lance pas
-```bash
-Vérifications par ordre:
-1. AES keys présentes et valides
-2. ROM non corrompue (vérifiez MD5/SHA1)
-3. Seeddb.bin si requis pour le jeu
-4. Région correcte dans les paramètres système
-5. Version Citra à jour
-```
-
-#### Écran noir au lancement
-```bash
-Solutions:
-1. Changez Graphics API (OpenGL ↔ Vulkan)
-2. Désactivez Hardware Renderer temporairement
-3. Réduisez Internal Resolution à 1x
-4. Vérifiez les pilotes GPU
-5. Testez en mode New 3DS
-```
-
-#### Performance médiocre
-```bash
-Optimisations immédiates:
-1. Activez New 3DS Mode
-2. Activez Hardware Renderer + Shaders
-3. Réduisez Internal Resolution
-4. Fermez applications en arrière-plan
-5. Utilisez un SSD pour les ROMs
-```
-
-#### Audio distordu/absent
-```bash
-Corrections audio:
-1. Activez DSP LLE
-2. Changez Output Type
-3. Vérifiez les pilotes audio
-4. Désactivez les effets audio Windows
-5. Testez sans DSP LLE Multithread
-```
-
-#### Plantages fréquents
-```bash
-Stabilisation:
-1. Désactivez les mods temporairement
-2. Utilisez version stable au lieu de Canary
-3. Vérifiez l'intégrité de la ROM
-4. Réinitialisez la configuration
-5. Vérifiez la RAM (MemTest86)
-```
-
-## 📊 Compatibilité et performances
-
-### Statistiques de compatibilité
-
-| Statut | Pourcentage | Description |
-|--------|-------------|-------------|
-| **Perfect** | ~75% | Fonctionne parfaitement |
-| **Great** | ~15% | Quelques bugs mineurs |
-| **Good** | ~7% | Jouable avec limitations |
-| **Bad** | ~2% | Problèmes majeurs |
-| **Intro/Nothing** | ~1% | Non fonctionnel |
-
-### Jeux les mieux supportés
-
-#### Parfaitement compatibles
-```bash
-✅ The Legend of Zelda: Ocarina of Time 3D
-✅ Super Mario 3D Land
-✅ Mario Kart 7
-✅ Animal Crossing: New Leaf
-✅ Fire Emblem Awakening
-✅ Pokémon X/Y (quelques ralentissements)
-✅ Luigi's Mansion: Dark Moon
-✅ Kid Icarus: Uprising
-```
-
-#### Excellente compatibilité
-```bash
-⭐ Pokémon Omega Ruby/Alpha Sapphire
-⭐ The Legend of Zelda: A Link Between Worlds
-⭐ Metroid: Samus Returns
-⭐ Monster Hunter 4 Ultimate
-⭐ Xenoblade Chronicles 3D
-⭐ Kirby: Planet Robobot
-```
-
-### Benchmarks performance
-
-#### Configuration test : i5-8400, GTX 1060, 16GB RAM
-
-| Jeu | 1x Native | 2x Native | 4x Native |
-|-----|-----------|-----------|-----------|
-| **Mario 3D Land** | 60 FPS | 60 FPS | 55-60 FPS |
-| **Zelda OoT 3D** | 60 FPS | 60 FPS | 45-60 FPS |
-| **Pokémon X** | 30-60 FPS | 25-55 FPS | 20-45 FPS |
-| **Monster Hunter 4U** | 30-60 FPS | 25-50 FPS | 20-40 FPS |
-
-## 🌐 Ressources et communauté
-
-### Sites officiels et documentation
-- [🏠 Site officiel Citra](https://citra-emu.org/)
-- [📱 Citra Android](https://play.google.com/store/apps/details?id=org.citra.citra_emu)
-- [📚 Wiki officiel](https://citra-emu.org/wiki/)
-- [🔧 Guide de configuration](https://citra-emu.org/wiki/user-directory/)
-
-### Communautés actives
-- [💬 Discord Citra](https://discord.gg/FAXfZV9)
-- [🗨️ Reddit r/Citra](https://www.reddit.com/r/Citra/)
-- [🌐 Forum officiel](https://community.citra-emu.org/)
-- [📺 YouTube guides](https://www.youtube.com/results?search_query=citra+guide)
-
-### Ressources développement et mods
-- [💻 GitHub Citra](https://github.com/citra-emu/citra)
-- [🎨 Texture Packs](https://forums.citra-emu.org/c/art-assets)
-- [🎮 GameBanana 3DS](https://gamebanana.com/games/4203)
-- [🔓 GBAtemp Forums](https://gbatemp.net/categories/nintendo-3ds-emulation.297/)
-
-### Outils utiles
-- [🔧 GodMode9](https://github.com/d0k3/GodMode9) - Swiss Army Knife 3DS
-- [📁 FBI](https://github.com/Steveice10/FBI) - Gestionnaire de fichiers 3DS
-- [🎯 Checkpoint](https://github.com/FlagBrew/Checkpoint) - Gestionnaire de sauvegardes
-- [🖼️ Batch CIA 3DS Decryptor](https://github.com/matiffeder/BatchCIA3DSDecryptor) - Conversion ROMs
 
 ## ❓ FAQ - Questions fréquemment posées
 
 ### Questions générales
 
-**Q : Citra peut-il faire fonctionner tous les jeux 3DS ?**
+**Q : Azahar peut-il faire fonctionner tous les jeux 3DS ?**
 **R :** Environ 90% des jeux 3DS fonctionnent bien à parfaitement. Consultez la base de compatibilité pour votre jeu spécifique.
 
 **Q : La 3D stéréoscopique fonctionne-t-elle ?**
@@ -649,28 +321,6 @@ Stabilisation:
 
 **Q : Comment améliorer les performances sur Android ?**
 **R :** Utilisez Citra MMJ, réduisez la résolution, activez le frame skip si nécessaire.
-
-## 🎯 Conclusion
-
-Citra est un émulateur 3DS exceptionnel qui offre :
-
-- ✅ **Compatibilité excellente** avec la majorité des jeux 3DS
-- ✅ **Amélioration graphique** significative par rapport à la console originale
-- ✅ **Stabilité** et maturité après des années de développement
-- ✅ **Support multiplateforme** (Windows, Linux, macOS, Android)
-- ✅ **Communauté active** avec mods et texture packs HD
-- ✅ **Performance** excellente sur matériel moderne
-
-Avec ce guide détaillé, vous êtes maintenant équipé pour :
-- **Installer** et configurer Citra optimalement
-- **Extraire** vos propres jeux légalement
-- **Optimiser** les performances selon votre matériel
-- **Utiliser** des mods et améliorations
-- **Résoudre** les problèmes courants
-
----
-
-> **Rappel important** : Utilisez uniquement des jeux que vous possédez légalement. Respectez les droits d'auteur et soutenez les développeurs en achetant leurs créations.
 
 **Profitez de vos jeux 3DS en haute définition ! 🎮✨**
 ```

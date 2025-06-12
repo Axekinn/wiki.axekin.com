@@ -1,6 +1,6 @@
 ---
-title: "How to Install Cheats and Mods on Ryujinx Emulator"
-description: "Complete step-by-step guide to install cheat codes and game modifications on Ryujinx Nintendo Switch emulator"
+title: "How to Install Cheats and Mods on the Ryujinx Emulator"
+description: "Complete step-by-step guide to install cheat codes and game modifications on the Nintendo Switch Ryujinx emulator"
 date: 2025-06-04
 lastmod: 2025-06-04
 categories: ["gaming", "emulation", "tutorials"]
@@ -15,7 +15,7 @@ weight: 20
 aliases: 
   - /en/ryujinx-cheats-mods/
   - /en/guides/ryujinx-modding/
-summary: "Learn how to install cheat codes and game modifications on Ryujinx emulator. Detailed tutorial with folder structure and installation steps."
+summary: "Learn how to install cheat codes and game modifications on the Ryujinx emulator. Detailed tutorial with folder structure and installation steps."
 cover: "/images/covers/ryujinx-cheats-mods.webp"
 image: "/images/covers/ryujinx-cheats-mods.webp"
 showtoc: true
@@ -24,11 +24,11 @@ comments: true
 searchHidden: false
 ---
 
-> **⚠️ Important**: Always backup your save files before installing cheats or mods. Some modifications may affect game stability.
+> **⚠️ Important**: Always backup your save files before installing cheats or mods. Some modifications can affect game stability.
 
 ## Introduction
 
-**Ryujinx** supports both **cheat codes** and **game modifications (mods)** to enhance your Nintendo Switch gaming experience. Whether you want infinite health, unlock all items, or completely transform game graphics, this guide will show you exactly how to install them.
+**Ryujinx** supports both **cheat codes** and **game modifications (mods)** to enhance your Nintendo Switch gaming experience. Whether you want infinite health, unlock all items, or completely transform a game's graphics, this guide will show you exactly how to install them.
 
 ### What's the difference?
 
@@ -44,12 +44,9 @@ Both use different installation methods and folder structures in Ryujinx.
 
 #### Open Ryujinx and locate your game
 
-1. **Launch Ryujinx** emulator
+1. **Launch** the Ryujinx emulator
 2. **Right-click** on the game you want to add cheats to
 3. Select **"Open Mods Directory"** from the context menu
-
-![Ryujinx right-click menu](/images/ryujinx-mods-menu.png)
-*Accessing the mods directory in Ryujinx*
 
 ### Step 2: Understanding the folder structure
 
@@ -62,18 +59,18 @@ Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
 
 Where `XXXXXXXXXXXXXXXX` is the **unique game ID** (Title ID) of your selected game.
 
-**Example game IDs:**
+**Examples of game IDs:**
 - The Legend of Zelda: Breath of the Wild: `01007EF00011E000`
 - Super Mario Odyssey: `0100000000010000`
 - Pokémon Sword: `0100ABF008968000`
 
-### Step 3: Install the cheat files
+### Step 3: Install cheat files
 
 #### Extract and place cheat files
 
 1. **Download** your cheat files (usually in .zip format)
 2. **Extract** the archive contents
-3. **Create the proper folder structure:**
+3. **Create the appropriate folder structure:**
 
 ```
 Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
@@ -81,47 +78,44 @@ Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
     └── cheats\
         ├── cheat1.txt
         ├── cheat2.txt
-        └── more_cheats.txt
+        └── other_cheats.txt
 ```
 
 #### Detailed installation steps
 
 4. **Navigate** to your game's mod directory
-5. **Create a new folder** with the cheat name (e.g., "Infinite_Money")
+5. **Create a new folder** with the cheat name (ex: "Infinite_Money")
 6. **Inside this folder**, create a subfolder called **"cheats"**
-7. **Place all .txt cheat files** inside the "cheats" folder
+7. **Place all .txt cheat files** in the "cheats" folder
 
-![Cheat folder structure](/images/ryujinx-cheat-structure.png)
-*Proper cheat folder structure in Ryujinx*
-
-### Step 4: Activate cheats
+### Step 4: Enable cheats
 
 #### Enable cheats in-game
 
 1. **Launch your game** in Ryujinx
 2. **Right-click** on the game title again
-3. Select **"Manage Cheats"** or access through the menu
-4. **Check the boxes** next to the cheats you want to activate
+3. Select **"Manage Cheats"** or access via the menu
+4. **Check the boxes** next to the cheats you want to enable
 5. **Apply** the changes and restart the game if necessary
 
 ## Installing Mods on Ryujinx
 
 ### Step 1: Access the Mods Directory
 
-#### Same initial process as cheats
+#### Same initial process as for cheats
 
 1. **Open Ryujinx**
 2. **Right-click** on your target game
-3. Click **"Open Mods Directory"**
+3. Click on **"Open Mods Directory"**
 
-This opens: `AppData\Roaming\Ryujinx\mods\contents\<game ID>\`
+This opens: `AppData\Roaming\Ryujinx\mods\contents\<Game ID>\`
 
 ### Step 2: Create mod folder structure
 
-#### Organize your mods properly
+#### Organize your mods correctly
 
 1. **Create a new subfolder** under the game ID directory
-2. **Name it descriptively** (e.g., "Infinite_Lives", "HD_Textures", "Custom_Music")
+2. **Name it descriptively** (ex: "Infinite_Lives", "HD_Textures", "Custom_Music")
 3. This helps you **manage multiple mods** easily
 
 **Example structure:**
@@ -137,10 +131,10 @@ Ryujinx\mods\contents\01007EF00011E000\
 
 ### Step 3: Install mod files
 
-#### Copy mod contents
+#### Copy mod content
 
-1. **Extract your downloaded mod** files
-2. **Locate the mod's romfs or exefs folder**
+1. **Extract your downloaded mod files**
+2. **Locate the romfs or exefs folder** from the mod
 3. **Copy these folders** into your newly created mod directory
 
 **Types of mod folders:**
@@ -153,18 +147,15 @@ Ryujinx\mods\contents\01007EF00011E000\
 5. **Copy the entire romfs or exefs folder**
 6. **Paste** into your created mod directory
 
-![Mod installation process](/images/ryujinx-mod-installation.png)
-*Installing a graphics mod in Ryujinx*
-
 ### Step 4: Enable mods
 
-#### Activate installed mods
+#### Enable installed mods
 
 1. **Launch Ryujinx**
 2. **Right-click** on your game
 3. Select **"Manage Mods"**
-4. **Enable/disable** mods as desired
-5. **Start the game** to see changes
+4. **Enable/disable** mods according to your preferences
+5. **Start the game** to see the changes
 
 ## Folder Structure Examples
 
@@ -196,44 +187,13 @@ Ryujinx\mods\contents\01007EF00011E000\
         └── main.npdm
 ```
 
-## Managing Multiple Mods and Cheats
-
-### Organization best practices
-
-#### Naming conventions
-
-**Good folder names:**
-- `Infinite_Money_Cheat`
-- `4K_Texture_Pack`
-- `Enhanced_Audio_Mod`
-- `Difficulty_Rebalance`
-
-**Avoid:**
-- Special characters (`!@#$%`)
-- Spaces at the beginning or end
-- Very long names
-
 #### Mod compatibility
 
-**Testing compatibility:**
+**Compatibility testing:**
 1. **Install one mod at a time**
 2. **Test game stability**
-3. **Check for conflicts** before adding more
-4. **Keep notes** on working combinations
-
-### Enable/Disable system
-
-#### Temporary mod management
-
-```
-Ryujinx\mods\contents\GAME_ID\
-├── Active_Mods\
-│   ├── Graphics_Mod\    (enabled)
-│   └── Audio_Mod\       (enabled)
-└── Disabled_Mods\
-    ├── Old_Graphics\    (backup)
-    └── Experimental\    (testing)
-```
+3. **Check for conflicts** before adding others
+4. **Take notes** on working combinations
 
 ## Troubleshooting Common Issues
 
@@ -242,14 +202,15 @@ Ryujinx\mods\contents\GAME_ID\
 #### Common problems and solutions
 
 **🚫 Cheat files not detected:**
-- Verify folder structure: `Game_ID\Cheat_Name\cheats\*.txt`
+- Check folder structure: `Game_ID\Cheat_Name\cheats\*.txt`
 - Check file extensions (.txt, not .txt.txt)
 - Ensure no extra spaces in folder names
 
-**⚠️ Cheats cause crashes:**
-- Disable all cheats and test one by one
+**⚠️ Cheats causing crashes:**
+- Disable all cheats and test them one by one
 - Check cheat compatibility with game version
-- Use cheats from trusted sources
+- Use cheats from reliable sources
+- MAKE SURE THE CHEAT VERSION MATCHES THE GAME VERSION
 
 ### Mods not loading
 
@@ -257,113 +218,50 @@ Ryujinx\mods\contents\GAME_ID\
 
 **📁 Incorrect folder structure:**
 ```
-❌ Wrong:
+❌ Incorrect:
 Ryujinx\mods\contents\GAME_ID\romfs\...
 
 ✅ Correct:
 Ryujinx\mods\contents\GAME_ID\Mod_Name\romfs\...
 ```
 
-**🎮 Game-specific problems:**
-- Verify mod compatibility with your game version
-- Check if mod requires specific firmware version
-- Test with mod disabled to confirm it's the cause
-
-### Performance issues
-
-#### Optimization tips
-
-**Mod-related performance:**
-- **Disable unused mods** to reduce memory usage
-- **Use optimized texture packs** for your hardware
-- **Monitor system resources** when running multiple mods
+**🎮 Game-specific issues:**
+- Check mod compatibility with your game version
+- Check if the mod requires a specific firmware version
+- Test with the mod disabled to confirm it's the cause
 
 ## Finding Cheats and Mods
 
 ### Recommended sources
 
-#### Trusted websites for downloads
+#### Reliable websites for downloads
 
 | Source | Type | Description |
 |--------|------|-------------|
-| **GameBanana** | Mods | Largest mod community |
-| **NexusMods** | Mods | Professional mod hosting |
-| **GBAtemp Forums** | Cheats & Mods | Active community discussions |
-| **Reddit r/Ryujinx** | Both | Community support |
-| **GitHub** | Both | Open-source projects |
+| **[GameBanana](https://gamebanana.com/)** | Mods | Largest modding community |
+| **[NexusMods](https://www.nexusmods.com/)** | Mods | Professional mod hosting |
+| **[GBAtemp Forums](https://gbatemp.net/)** | Cheats & Mods | Active community discussions |
 
-#### Safety considerations
+#### Security considerations
 
-**Download safety checklist:**
-- ✅ Use reputable sources only
+**Download security checklist:**
+- ✅ Only use reputable sources
 - ✅ Read user comments and reviews
 - ✅ Scan files with antivirus
-- ✅ Backup saves before installing
+- ✅ Backup before installing
 - ✅ Test on less important games first
-
-## Advanced Mod Management
-
-### Batch operations
-
-#### Managing multiple games
-
-**PowerShell script for backup:**
-```powershell
-# Backup all mods
-$source = "$env:APPDATA\Ryujinx\mods"
-$backup = "C:\Ryujinx_Mods_Backup\$(Get-Date -Format 'yyyy-MM-dd')"
-Copy-Item -Path $source -Destination $backup -Recurse
-Write-Host "Mods backed up to: $backup"
-```
-
-### Version control for mods
-
-#### Keeping track of changes
-
-```
-📁 Mod_Versions\
-├── 📁 v1.0_Original\
-├── 📁 v2.0_Updated\
-└── 📁 v3.0_Latest\
-    └── changelog.txt
-```
 
 ## Conclusion
 
-Installing **cheats and mods** on Ryujinx is straightforward once you understand the folder structure. The key is proper organization and testing one modification at a time.
-
-### Quick reference summary
-
-> **🎯 Installation checklist:**
-> 
-> **For Cheats:**
-> 1. Right-click game → Open Mods Directory
-> 2. Create: `Cheat_Name\cheats\`
-> 3. Place .txt files in cheats folder
-> 4. Enable via Manage Cheats menu
-> 
-> **For Mods:**
-> 1. Right-click game → Open Mods Directory  
-> 2. Create descriptive mod folder
-> 3. Copy romfs/exefs into mod folder
-> 4. Enable via Manage Mods menu
-
-### Best practices
-
-**Remember to:**
-- Always backup your saves first
-- Test modifications individually
-- Use trusted sources for downloads
-- Keep original files as backup
-- Document working mod combinations
+Installing **cheats and mods** on Ryujinx is simple once you understand the folder structure. The key is proper organization and testing one modification at a time.
 
 ## FAQ - Frequently Asked Questions
 
-**Q: Can I use both cheats and mods simultaneously?**
-A: Yes, but test carefully as some combinations may cause conflicts or crashes.
+**Q: Can I use cheats and mods simultaneously?**
+A: Yes, but test carefully as some combinations can cause conflicts or crashes.
 
 **Q: Do mods affect game performance?**
-A: It depends on the mod. Graphics mods typically require more resources, while simple cheats have minimal impact.
+A: It depends on the mod. Graphics mods usually require more resources, while simple cheats have minimal impact.
 
 **Q: Are Ryujinx mods compatible with Yuzu?**
 A: Sometimes, but the folder structure differs. You may need to reorganize files for cross-compatibility.
@@ -372,14 +270,4 @@ A: Sometimes, but the folder structure differs. You may need to reorganize files
 A: Yes, with knowledge of memory addresses and game structure. Tools like Cheat Engine can help identify values to modify.
 
 **Q: What if a mod breaks my game?**
-A: Simply disable or delete the mod from the mods directory. Your original game files remain untouched.
-
----
-
-**Found this guide helpful?** Share your favorite mods and cheats in the comments below!
-
-**Related articles:**
-- [Ryujinx Performance Optimization](/en/post/ryujinx-performance/)
-- [Best Nintendo Switch Mods](/en/post/best-switch-mods/)
-- [Creating Custom Cheats](/en/post/custom-cheat-creation/)
-````
+A: Simply disable or remove the mod from the mods directory. Your original game files remain intact.

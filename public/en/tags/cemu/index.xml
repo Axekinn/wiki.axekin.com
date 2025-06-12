@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cemu on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/cemu/</link>
+    <link>http://localhost:1313/en/tags/cemu/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/cemu/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/cemu/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,25 +23,23 @@
     
 
     <item>
-      <title>Complete Guide: Using Amiibo on Cemu Wii U Emulator</title>
-      <link>https://wiki.axekin.com/en/post/amibo_cemu/</link>
+      <title> Using Amiibo on the Cemu Wii U Emulator</title>
+      <link>http://localhost:1313/en/post/amibo_cemu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/amibo_cemu/</guid>
+      <guid>http://localhost:1313/en/post/amibo_cemu/</guid>
       <description>
-        <![CDATA[<h1>Complete Guide: Using Amiibo on Cemu Wii U Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1> Using Amiibo on the Cemu Wii U Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
-          <blockquote>
-<p><strong>⚠️ Legal Notice</strong>: This guide is for educational purposes only. Make sure you own the physical Amiibo before using their digital files. Respect copyright laws in your region.</p></blockquote>
-<h2 id="introduction">
+          <h2 id="introduction">
 <a class="header-anchor" href="#introduction"></a>
 Introduction
-</h2><p>Using <strong>Amiibo</strong> on the <strong>Cemu</strong> Wii U emulator allows you to access exclusive content and features without needing the physical figurines. This guide explains how to configure and use Amiibo .bin files specifically on Cemu for Wii U games.</p>
-<p>Amiibo functionality on Cemu is particularly useful for:</p>
+</h2><p>Using <strong>Amiibo</strong> on the <strong>Cemu</strong> Wii U emulator allows access to exclusive content and features without needing physical figurines. This guide explains how to configure and use Amiibo .bin files specifically on Cemu for Wii U games.</p>
+<p>The Amiibo functionality on Cemu is particularly useful for:</p>
 <ul>
 <li>Unlocking exclusive content in Zelda: Breath of the Wild</li>
-<li>Getting rare items and costumes in compatible games</li>
-<li>Testing Amiibo features without purchasing figurines</li>
+<li>Obtaining rare items and costumes in compatible games</li>
+<li>Testing Amiibo features without buying figurines</li>
 <li>Accessing special game modes and challenges</li>
 </ul>
 <h3 id="general-process">
@@ -51,8 +49,8 @@ General Process
 <li><strong>Download</strong> Amiibo collection files (.bin format)</li>
 <li><strong>Organize</strong> files in a dedicated &ldquo;Amiibo&rdquo; folder</li>
 <li><strong>Load</strong> your Wii U game in Cemu</li>
-<li><strong>Access</strong> NFC menu during gameplay</li>
-<li><strong>Scan</strong> desired Amiibo from file</li>
+<li><strong>Access</strong> the NFC menu during gameplay</li>
+<li><strong>Scan</strong> the desired Amiibo from file</li>
 </ol>
 <h2 id="prerequisites-and-downloads">
 <a class="header-anchor" href="#prerequisites-and-downloads"></a>
@@ -60,93 +58,38 @@ Prerequisites and Downloads
 </h2><h3 id="required-software">
 <a class="header-anchor" href="#required-software"></a>
 Required Software
-</h3><p><strong>Essential components:</strong></p>
+</h3><p><strong>Essential Components:</strong></p>
 <ul>
-<li><strong>Cemu</strong>: Latest stable version (1.15.0 or newer)</li>
-<li><strong>Amiibo files</strong>: Complete .bin collection</li>
-<li><strong>Compatible Wii U games</strong>: That support Amiibo functionality</li>
+<li><strong>Cemu</strong>: Latest stable version (2.6.0 or newer)</li>
+<li><strong>Amiibo Files</strong>: Complete .bin collection</li>
+<li><strong>Compatible Wii U Games</strong>: That support Amiibo functionality</li>
 </ul>
-<h3 id="amiibo-files-collection">
-<a class="header-anchor" href="#amiibo-files-collection"></a>
-Amiibo Files Collection
+<h3 id="amiibo-file-collection">
+<a class="header-anchor" href="#amiibo-file-collection"></a>
+Amiibo File Collection
 </h3><h4 id="download-and-setup">
 <a class="header-anchor" href="#download-and-setup"></a>
 Download and Setup
-</h4><p><strong>🔗 Download Link</strong>: <code>aHR0cHM6Ly9tZWdhLm56L2ZpbGUvb2VaaW5BTGEjM1J2d1hVaV9PRzBTLXdldFNENUN6WFVXeG9hZzlFV0EzRUlVVXVUVUZGQQ==</code></p>
-<blockquote>
-<p><strong>Note</strong>: This is a Base64 encoded link for the Amiibo collection. Decode it using any Base64 decoder.</p></blockquote>
-<p><strong>Download instructions:</strong></p>
+</h4><p><strong>🔗 Download Link</strong>: <code>https://vikingfile.com/f/3PsPBKLrJG</code> (Credit: LinkNotZelda08)</p>
+<p><strong>Download Instructions:</strong></p>
 <ol>
-<li><strong>Decode</strong> the Base64 link above</li>
 <li><strong>Download</strong> the complete Amiibo collection</li>
-<li><strong>Extract</strong> the archive to your computer</li>
-<li><strong>Create</strong> a folder named &ldquo;Amiibo&rdquo; for organization</li>
+<li><strong>Extract</strong> the archive on your computer</li>
 </ol>
-<p><img src="/images/amiibo-collection-download.png" alt="Amiibo Collection Download">
-<em>Downloading and extracting the Amiibo collection</em></p>
-<h4 id="file-organization">
-<a class="header-anchor" href="#file-organization"></a>
-File Organization
-</h4><p><strong>Recommended folder structure:</strong></p>
-<pre tabindex="0"><code>Amiibo/
-├── Zelda/
-│   ├── Link_Archer.bin
-│   ├── Link_Rider.bin
-│   ├── Link_SSB.bin
-│   ├── Zelda.bin
-│   ├── Sheik.bin
-│   ├── Ganondorf.bin
-│   ├── Toon_Link.bin
-│   ├── Young_Link.bin
-│   └── Midna.bin
-├── Mario/
-│   ├── Mario.bin
-│   ├── Luigi.bin
-│   ├── Peach.bin
-│   └── Bowser.bin
-├── Other_Series/
-│   ├── Samus.bin
-│   ├── Captain_Falcon.bin
-│   └── Fox.bin
-└── Animal_Crossing/
-    ├── Isabelle.bin
-    ├── Tom_Nook.bin
-    └── KK_Slider.bin
-</code></pre><p><img src="/images/amiibo-folder-structure.png" alt="Amiibo Folder Structure">
-<em>Proper Amiibo folder organization</em></p>
-<h3 id="understanding-bin-files">
-<a class="header-anchor" href="#understanding-bin-files"></a>
-Understanding .bin Files
-</h3><h4 id="file-format-details">
-<a class="header-anchor" href="#file-format-details"></a>
-File Format Details
-</h4><p><strong>What are .bin files:</strong></p>
-<ul>
-<li><strong>Binary format</strong>: Contains encrypted Amiibo data</li>
-<li><strong>Size</strong>: Exactly 540 bytes per file</li>
-<li><strong>Content</strong>: Character ID, game unlock data, save information</li>
-<li><strong>Compatibility</strong>: Works with Cemu&rsquo;s NFC emulation</li>
-</ul>
-<p><strong>Important characteristics:</strong></p>
-<ul>
-<li>Each .bin file represents one specific Amiibo figurine</li>
-<li>Files contain the same data as physical Amiibo</li>
-<li>Some files may have different names but same content</li>
-</ul>
 <h2 id="cemu-configuration">
 <a class="header-anchor" href="#cemu-configuration"></a>
 Cemu Configuration
 </h2><h3 id="enabling-nfc-support">
 <a class="header-anchor" href="#enabling-nfc-support"></a>
 Enabling NFC Support
-</h3><h4 id="basic-cemu-setup">
-<a class="header-anchor" href="#basic-cemu-setup"></a>
-Basic Cemu Setup
-</h4><p><strong>Prerequisites verification:</strong></p>
+</h3><h4 id="basic-cemu-configuration">
+<a class="header-anchor" href="#basic-cemu-configuration"></a>
+Basic Cemu Configuration
+</h4><p><strong>Prerequisites Check:</strong></p>
 <ol>
-<li><strong>Cemu version</strong>: 1.15.0 or newer (NFC support required)</li>
-<li><strong>Game compatibility</strong>: Verify your game supports Amiibo</li>
-<li><strong>File access</strong>: Ensure Cemu can access your Amiibo folder</li>
+<li><strong>Cemu Version</strong>: 1.26.0 or newer (NFC support required)</li>
+<li><strong>Game Compatibility</strong>: Verify your game supports Amiibo</li>
+<li><strong>File Access</strong>: Ensure Cemu can access your Amiibo folder</li>
 </ol>
 <h4 id="nfc-settings-in-cemu">
 <a class="header-anchor" href="#nfc-settings-in-cemu"></a>
@@ -160,45 +103,7 @@ NFC Settings in Cemu
 <h3 id="loading-games-with-amiibo-support">
 <a class="header-anchor" href="#loading-games-with-amiibo-support"></a>
 Loading Games with Amiibo Support
-</h3><h4 id="compatible-wii-u-games">
-<a class="header-anchor" href="#compatible-wii-u-games"></a>
-Compatible Wii U Games
-</h4><p><strong>Major Amiibo-supported titles:</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Game</th>
-          <th>Amiibo Functions</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>The Legend of Zelda: Breath of the Wild</strong></td>
-          <td>Items, weapons, exclusive gear</td>
-      </tr>
-      <tr>
-          <td><strong>Super Smash Bros. for Wii U</strong></td>
-          <td>Fighter training, customization</td>
-      </tr>
-      <tr>
-          <td><strong>Mario Kart 8</strong></td>
-          <td>Racing suits and costumes</td>
-      </tr>
-      <tr>
-          <td><strong>Super Mario Maker</strong></td>
-          <td>Special costumes and levels</td>
-      </tr>
-      <tr>
-          <td><strong>Xenoblade Chronicles X</strong></td>
-          <td>Exclusive items and gear</td>
-      </tr>
-      <tr>
-          <td><strong>Yoshi&rsquo;s Woolly World</strong></td>
-          <td>Yoshi patterns and designs</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="step-by-step-amiibo-usage">
+</h3><h2 id="step-by-step-amiibo-usage">
 <a class="header-anchor" href="#step-by-step-amiibo-usage"></a>
 Step-by-Step Amiibo Usage
 </h2><h3 id="example-the-legend-of-zelda-breath-of-the-wild">
@@ -207,435 +112,74 @@ Example: The Legend of Zelda: Breath of the Wild
 </h3><h4 id="accessing-the-amiibo-rune">
 <a class="header-anchor" href="#accessing-the-amiibo-rune"></a>
 Accessing the Amiibo Rune
-</h4><p><strong>In-game preparation:</strong></p>
+</h4><p><strong>In-Game Preparation:</strong></p>
 <ol>
 <li><strong>Progress</strong> through the game until you obtain the Amiibo rune</li>
-<li><strong>Equip</strong> the Amiibo rune to your Sheikah Slate</li>
+<li><strong>Equip</strong> the Amiibo rune on your Sheikah Slate</li>
 <li><strong>Find</strong> an open area away from buildings and cliffs</li>
-<li><strong>Position</strong> Link in a suitable location</li>
+<li><strong>Position</strong> Link in an appropriate location</li>
 </ol>
-<p><img src="/images/botw-amiibo-rune.png" alt="BOTW Amiibo Rune">
-<em>Amiibo rune equipped in Zelda: BOTW</em></p>
 <h4 id="preparing-to-scan">
 <a class="header-anchor" href="#preparing-to-scan"></a>
 Preparing to Scan
-</h4><p><strong>Before scanning steps:</strong></p>
+</h4><p><strong>Steps before scanning:</strong></p>
 <ol>
 <li><strong>Open</strong> your Amiibo folder on your computer</li>
 <li><strong>Navigate</strong> to the Zelda subfolder</li>
 <li><strong>Identify</strong> the Amiibo you want to use</li>
 <li><strong>Keep</strong> the folder window accessible</li>
 </ol>
-<p><img src="/images/amiibo-folder-ready.png" alt="Amiibo Folder Ready">
-<em>Amiibo folder prepared for scanning</em></p>
 <h3 id="scanning-process-in-cemu">
 <a class="header-anchor" href="#scanning-process-in-cemu"></a>
 Scanning Process in Cemu
-</h3><h4 id="accessing-nfc-menu">
-<a class="header-anchor" href="#accessing-nfc-menu"></a>
-Accessing NFC Menu
+</h3><h4 id="accessing-the-nfc-menu">
+<a class="header-anchor" href="#accessing-the-nfc-menu"></a>
+Accessing the NFC Menu
 </h4><p><strong>Step-by-step scanning:</strong></p>
 <ol>
 <li><strong>Activate</strong> the Amiibo rune in-game (hold up on D-pad)</li>
-<li><strong>Switch</strong> to Cemu window</li>
+<li><strong>Switch</strong> to the Cemu window</li>
 <li><strong>Click</strong> on &ldquo;NFC&rdquo; in the top menu bar</li>
 <li><strong>Select</strong> &ldquo;Scan NFC Tag from File&hellip;&rdquo;</li>
 </ol>
-<p><img src="/images/cemu-nfc-menu.png" alt="Cemu NFC Menu">
-<em>Accessing NFC menu in Cemu</em></p>
 <h4 id="selecting-your-amiibo">
 <a class="header-anchor" href="#selecting-your-amiibo"></a>
 Selecting Your Amiibo
-</h4><p><strong>File selection process:</strong></p>
+</h4><p><strong>File Selection Process:</strong></p>
 <ol>
 <li><strong>Navigate</strong> to your Amiibo folder</li>
 <li><strong>Choose</strong> the desired .bin file (e.g., Link_Archer.bin)</li>
-<li><strong>Click</strong> &ldquo;Open&rdquo; to confirm selection</li>
-<li><strong>Return</strong> to game window immediately</li>
+<li><strong>Click</strong> &ldquo;Open&rdquo; to confirm the selection</li>
+<li><strong>Return</strong> immediately to the game window</li>
 </ol>
-<p><img src="/images/amiibo-file-selection.png" alt="Amiibo File Selection">
-<em>Selecting Amiibo .bin file</em></p>
-<h4 id="completing-the-scan">
-<a class="header-anchor" href="#completing-the-scan"></a>
-Completing the Scan
-</h4><p><strong>Finalization steps:</strong></p>
+<h4 id="finalizing-the-scan">
+<a class="header-anchor" href="#finalizing-the-scan"></a>
+Finalizing the Scan
+</h4><p><strong>Finalization Steps:</strong></p>
 <ol>
-<li><strong>Switch back</strong> to the game window</li>
+<li><strong>Return</strong> to the game window</li>
 <li><strong>Complete</strong> the Amiibo rune activation</li>
-<li><strong>Watch</strong> items spawn from the sky</li>
+<li><strong>Watch</strong> objects appear from the sky</li>
 <li><strong>Collect</strong> your rewards!</li>
 </ol>
-<p><img src="/images/amiibo-rewards-spawn.png" alt="Amiibo Rewards Spawn">
-<em>Items spawning after successful Amiibo scan</em></p>
-<h2 id="game-specific-usage-examples">
-<a class="header-anchor" href="#game-specific-usage-examples"></a>
-Game-Specific Usage Examples
-</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
-<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
-The Legend of Zelda: Breath of the Wild
-</h3><h4 id="popular-amiibo-and-their-rewards">
-<a class="header-anchor" href="#popular-amiibo-and-their-rewards"></a>
-Popular Amiibo and Their Rewards
-</h4><p><strong>Zelda Series Amiibo:</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Amiibo</th>
-          <th>Common Rewards</th>
-          <th>Rare Rewards</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Link (Archer)</strong></td>
-          <td>Arrows, meat, plants</td>
-          <td>Twilight Bow</td>
-      </tr>
-      <tr>
-          <td><strong>Link (Rider)</strong></td>
-          <td>Food, materials</td>
-          <td>Traveler&rsquo;s series armor</td>
-      </tr>
-      <tr>
-          <td><strong>Zelda</strong></td>
-          <td>Gems, plants</td>
-          <td>Sheik&rsquo;s Mask</td>
-      </tr>
-      <tr>
-          <td><strong>Ganondorf</strong></td>
-          <td>Weapons, meat</td>
-          <td>Sword of the Six Sages</td>
-      </tr>
-      <tr>
-          <td><strong>Sheik</strong></td>
-          <td>Weapons, food</td>
-          <td>Sheik&rsquo;s armor set</td>
-      </tr>
-      <tr>
-          <td><strong>Midna</strong></td>
-          <td>Weapons, rupees</td>
-          <td>Midna&rsquo;s Helmet</td>
-      </tr>
-  </tbody>
-</table>
-<p><strong>Non-Zelda Amiibo:</strong></p>
-<ul>
-<li><strong>Mario series</strong>: Mushrooms, meat, rupees</li>
-<li><strong>Metroid series</strong>: Energy food, weapons</li>
-<li><strong>Star Fox series</strong>: Barrels, weapons, meat</li>
-</ul>
-<h4 id="usage-tips-for-botw">
-<a class="header-anchor" href="#usage-tips-for-botw"></a>
-Usage Tips for BOTW
-</h4><p><strong>Optimization strategies:</strong></p>
-<ul>
-<li><strong>Save before scanning</strong>: In case you want to re-roll rewards</li>
-<li><strong>Daily limit</strong>: Each Amiibo can only be used once per day</li>
-<li><strong>Location matters</strong>: Scan in open areas to avoid items falling off cliffs</li>
-<li><strong>Weather considerations</strong>: Some items may be affected by rain/wind</li>
-</ul>
-<h3 id="super-smash-bros-for-wii-u">
-<a class="header-anchor" href="#super-smash-bros-for-wii-u"></a>
-Super Smash Bros. for Wii U
-</h3><h4 id="training-fighter-players">
-<a class="header-anchor" href="#training-fighter-players"></a>
-Training Fighter Players
-</h4><p><strong>Amiibo Fighter setup:</strong></p>
-<ol>
-<li><strong>Navigate</strong> to &ldquo;amiibo&rdquo; section in main menu</li>
-<li><strong>Select</strong> &ldquo;Register Fighter&rdquo;</li>
-<li><strong>Use</strong> Cemu&rsquo;s NFC scanning when prompted</li>
-<li><strong>Choose</strong> corresponding fighter Amiibo .bin file</li>
-</ol>
-<p><strong>Training benefits:</strong></p>
-<ul>
-<li>AI learns from your play style</li>
-<li>Unlocks custom moves and equipment</li>
-<li>Can battle other Amiibo or players</li>
-<li>Levels up through battles (up to level 50)</li>
-</ul>
-<h3 id="mario-kart-8">
-<a class="header-anchor" href="#mario-kart-8"></a>
-Mario Kart 8
-</h3><h4 id="unlocking-racing-suits">
-<a class="header-anchor" href="#unlocking-racing-suits"></a>
-Unlocking Racing Suits
-</h4><p><strong>Costume Amiibo:</strong></p>
-<ul>
-<li><strong>Mario</strong>: Classic Mario racing suit</li>
-<li><strong>Luigi</strong>: Luigi-themed racing gear</li>
-<li><strong>Peach</strong>: Princess Peach outfit</li>
-<li><strong>Yoshi</strong>: Yoshi racing suit</li>
-<li><strong>Captain Falcon</strong>: F-Zero inspired suit</li>
-</ul>
-<p><strong>Scanning process:</strong></p>
-<ol>
-<li><strong>Go</strong> to character selection screen</li>
-<li><strong>Look</strong> for Amiibo prompt</li>
-<li><strong>Scan</strong> desired character Amiibo via Cemu NFC menu</li>
-<li><strong>Unlock</strong> corresponding racing suit</li>
-</ol>
-<h2 id="advanced-features-and-tips">
-<a class="header-anchor" href="#advanced-features-and-tips"></a>
-Advanced Features and Tips
-</h2><h3 id="unlimited-amiibo-usage">
-<a class="header-anchor" href="#unlimited-amiibo-usage"></a>
-Unlimited Amiibo Usage
-</h3><h4 id="bypassing-daily-limits">
-<a class="header-anchor" href="#bypassing-daily-limits"></a>
-Bypassing Daily Limits
-</h4><p><strong>Important Cemu feature:</strong></p>
-<ul>
-<li><strong>Check</strong> &ldquo;Remove Amiibo after scan&rdquo; option in NFC menu</li>
-<li><strong>Allows</strong> multiple uses of same Amiibo per day</li>
-<li><strong>Useful</strong> for testing and farming rare items</li>
-<li><strong>May affect</strong> game balance and intended experience</li>
-</ul>
-<p><img src="/images/unlimited-amiibo-option.png" alt="Unlimited Amiibo Option">
-<em>Option to enable unlimited Amiibo usage</em></p>
-<h3 id="multiple-amiibo-management">
-<a class="header-anchor" href="#multiple-amiibo-management"></a>
-Multiple Amiibo Management
-</h3><h4 id="efficient-scanning-workflow">
-<a class="header-anchor" href="#efficient-scanning-workflow"></a>
-Efficient Scanning Workflow
-</h4><p><strong>Organization tips:</strong></p>
-<ol>
-<li><strong>Create shortcuts</strong> to frequently used Amiibo</li>
-<li><strong>Use descriptive names</strong> for .bin files</li>
-<li><strong>Group</strong> by game or series for easy access</li>
-<li><strong>Keep</strong> a &ldquo;favorites&rdquo; folder for most-used Amiibo</li>
-</ol>
-<h4 id="batch-processing">
-<a class="header-anchor" href="#batch-processing"></a>
-Batch Processing
-</h4><p><strong>For testing purposes:</strong></p>
-<ul>
-<li>Test multiple Amiibo quickly in succession</li>
-<li>Compare reward drop rates</li>
-<li>Verify compatibility across different games</li>
-<li>Document unique rewards for reference</li>
-</ul>
-<h3 id="creating-custom-collections">
-<a class="header-anchor" href="#creating-custom-collections"></a>
-Creating Custom Collections
-</h3><h4 id="curated-game-specific-sets">
-<a class="header-anchor" href="#curated-game-specific-sets"></a>
-Curated Game-Specific Sets
-</h4><p><strong>Example: Zelda BOTW Collection:</strong></p>
-<pre tabindex="0"><code>BOTW_Amiibo/
-├── Essential/
-│   ├── Link_Archer.bin (Twilight Bow)
-│   ├── Link_Rider.bin (Traveler&#39;s Gear)
-│   └── Ganondorf.bin (Six Sages Sword)
-├── Armor_Sets/
-│   ├── Sheik.bin (Sheik Set)
-│   ├── Midna.bin (Midna&#39;s Helmet)
-│   └── SSB_Link.bin (Soldier Set)
-└── Resources/
-    ├── Mario.bin (Food/Mushrooms)
-    ├── Samus.bin (Energy Items)
-    └── Fox.bin (Meat/Weapons)
-</code></pre><h2 id="troubleshooting-common-issues">
-<a class="header-anchor" href="#troubleshooting-common-issues"></a>
-Troubleshooting Common Issues
-</h2><h3 id="amiibo-not-detected">
-<a class="header-anchor" href="#amiibo-not-detected"></a>
-Amiibo Not Detected
-</h3><h4 id="common-causes-and-solutions">
-<a class="header-anchor" href="#common-causes-and-solutions"></a>
-Common Causes and Solutions
-</h4><p><strong>🚫 &ldquo;No NFC tag detected&rdquo; error:</strong></p>
-<p><strong>Diagnostic steps:</strong></p>
-<ol>
-<li><strong>Verify</strong> Cemu version supports NFC (1.15.0+)</li>
-<li><strong>Check</strong> .bin file isn&rsquo;t corrupted (should be exactly 540 bytes)</li>
-<li><strong>Ensure</strong> game actually supports Amiibo functionality</li>
-<li><strong>Try</strong> a different .bin file to test</li>
-</ol>
-<p><strong>Solutions:</strong></p>
-<pre tabindex="0"><code>1. Update Cemu to latest version
-2. Re-download Amiibo collection
-3. Verify file permissions on Amiibo folder
-4. Try scanning during appropriate in-game moments
-</code></pre><h3 id="game-crashes-during-scanning">
-<a class="header-anchor" href="#game-crashes-during-scanning"></a>
-Game Crashes During Scanning
-</h3><h4 id="stability-issues">
-<a class="header-anchor" href="#stability-issues"></a>
-Stability Issues
-</h4><p><strong>Prevention measures:</strong></p>
-<ul>
-<li><strong>Save</strong> game before attempting Amiibo scans</li>
-<li><strong>Close</strong> unnecessary background applications</li>
-<li><strong>Ensure</strong> adequate system memory (8GB+ recommended)</li>
-<li><strong>Use</strong> stable Cemu settings (avoid experimental options)</li>
-</ul>
-<p><strong>If crashes persist:</strong></p>
-<ol>
-<li><strong>Test</strong> with different Amiibo files</li>
-<li><strong>Update</strong> graphics drivers</li>
-<li><strong>Lower</strong> Cemu graphics settings temporarily</li>
-<li><strong>Report</strong> issue to Cemu developers</li>
-</ol>
-<h3 id="wrong-or-missing-rewards">
-<a class="header-anchor" href="#wrong-or-missing-rewards"></a>
-Wrong or Missing Rewards
-</h3><h4 id="understanding-amiibo-mechanics">
-<a class="header-anchor" href="#understanding-amiibo-mechanics"></a>
-Understanding Amiibo Mechanics
-</h4><p><strong>Expected behavior:</strong></p>
-<ul>
-<li><strong>Randomized rewards</strong>: Most Amiibo have multiple possible drops</li>
-<li><strong>Rare item chances</strong>: Some rewards have very low drop rates</li>
-<li><strong>Daily cooldowns</strong>: Physical Amiibo limitations are emulated</li>
-<li><strong>Location dependencies</strong>: Some games check scan location</li>
-</ul>
-<p><strong>Troubleshooting steps:</strong></p>
-<ol>
-<li><strong>Verify</strong> you&rsquo;re using correct Amiibo for desired reward</li>
-<li><strong>Check</strong> if game has daily usage limits</li>
-<li><strong>Try</strong> scanning in different in-game locations</li>
-<li><strong>Confirm</strong> .bin file matches expected character</li>
-</ol>
-<h2 id="video-tutorial-reference">
-<a class="header-anchor" href="#video-tutorial-reference"></a>
-Video Tutorial Reference
-</h2><h3 id="complete-visual-guide">
-<a class="header-anchor" href="#complete-visual-guide"></a>
-Complete Visual Guide
-</h3><p><strong>🎥 <a href="https://youtu.be/CVpseHxe5RM">Complete Amiibo Tutorial for Cemu</a></strong></p>
-<p>The video tutorial covers:</p>
-<ul>
-<li>Complete download and setup process</li>
-<li>Live demonstration in Zelda: BOTW</li>
-<li>Troubleshooting common problems</li>
-<li>Advanced tips and optimization</li>
-</ul>
-<h3 id="key-video-timestamps">
-<a class="header-anchor" href="#key-video-timestamps"></a>
-Key Video Timestamps
-</h3><p><strong>Important sections:</strong></p>
-<ul>
-<li><strong>0:00-2:00</strong>: Download and extraction</li>
-<li><strong>2:00-4:00</strong>: Folder organization</li>
-<li><strong>4:00-7:00</strong>: In-game scanning demonstration</li>
-<li><strong>7:00-9:00</strong>: Troubleshooting and tips</li>
-</ul>
-<h2 id="performance-and-compatibility">
-<a class="header-anchor" href="#performance-and-compatibility"></a>
-Performance and Compatibility
-</h2><h3 id="system-requirements">
-<a class="header-anchor" href="#system-requirements"></a>
-System Requirements
-</h3><h4 id="recommended-specifications">
-<a class="header-anchor" href="#recommended-specifications"></a>
-Recommended Specifications
-</h4><p><strong>For smooth Amiibo usage:</strong></p>
-<pre tabindex="0"><code>CPU: Intel i5-4590 / AMD FX-8320 or better
-RAM: 8GB+ (16GB recommended)
-GPU: GTX 750 Ti / RX 460 or better
-Storage: SSD recommended for faster file access
-</code></pre><h4 id="cemu-settings">
-<a class="header-anchor" href="#cemu-settings"></a>
-Cemu Settings
-</h4><p><strong>Optimal configuration:</strong></p>
-<ul>
-<li><strong>CPU Mode</strong>: Recompiler (triple-core)</li>
-<li><strong>GPU Buffer Cache</strong>: Medium or High</li>
-<li><strong>Debug</strong>: Keep minimal for performance</li>
-<li><strong>Audio</strong>: 48kHz for best compatibility</li>
-</ul>
-<h3 id="game-performance-impact">
-<a class="header-anchor" href="#game-performance-impact"></a>
-Game Performance Impact
-</h3><h4 id="minimal-resource-usage">
-<a class="header-anchor" href="#minimal-resource-usage"></a>
-Minimal Resource Usage
-</h4><p><strong>Amiibo scanning impact:</strong></p>
-<ul>
-<li><strong>CPU</strong>: Negligible additional load</li>
-<li><strong>RAM</strong>: ~1MB for .bin file loading</li>
-<li><strong>Storage</strong>: Brief file access during scan</li>
-<li><strong>Graphics</strong>: No impact on rendering</li>
-</ul>
-<h2 id="legal-and-ethical-considerations">
-<a class="header-anchor" href="#legal-and-ethical-considerations"></a>
-Legal and Ethical Considerations
-</h2><h3 id="fair-use-guidelines">
-<a class="header-anchor" href="#fair-use-guidelines"></a>
-Fair Use Guidelines
-</h3><h4 id="responsible-usage">
-<a class="header-anchor" href="#responsible-usage"></a>
-Responsible Usage
-</h4><p><strong>Recommended practices:</strong></p>
-<ul>
-<li><strong>Own physical Amiibo</strong> before using .bin files</li>
-<li><strong>Personal use only</strong> - don&rsquo;t distribute files</li>
-<li><strong>Support developers</strong> by purchasing games legally</li>
-<li><strong>Respect</strong> regional copyright laws</li>
-</ul>
-<h4 id="educational-purpose">
-<a class="header-anchor" href="#educational-purpose"></a>
-Educational Purpose
-</h4><p><strong>Learning opportunities:</strong></p>
-<ul>
-<li>Understanding NFC technology</li>
-<li>Game development insights</li>
-<li>Emulation technology advancement</li>
-<li>Preservation of gaming history</li>
-</ul>
-<h2 id="conclusion">
-<a class="header-anchor" href="#conclusion"></a>
-Conclusion
-</h2><p>Using <strong>Amiibo</strong> on <strong>Cemu</strong> significantly enhances the Wii U gaming experience, particularly for games like <strong>The Legend of Zelda: Breath of the Wild</strong>. The process is straightforward and opens up exclusive content without requiring physical figurines.</p>
-<h3 id="key-points-to-remember">
-<a class="header-anchor" href="#key-points-to-remember"></a>
-Key Points to Remember
-</h3><blockquote>
-<p><strong>🎯 Essential steps:</strong></p>
-<ol>
-<li><strong>Download</strong> and organize Amiibo .bin collection</li>
-<li><strong>Load</strong> compatible game in Cemu</li>
-<li><strong>Access</strong> NFC menu during appropriate moments</li>
-<li><strong>Scan</strong> desired Amiibo from file</li>
-<li><strong>Enjoy</strong> unlocked content and rewards</li>
-</ol></blockquote>
-<h3 id="final-tips">
-<a class="header-anchor" href="#final-tips"></a>
-Final Tips
-</h3><p><strong>For the best experience:</strong></p>
-<ul>
-<li>Start with Zelda: BOTW for the most robust Amiibo features</li>
-<li>Save before scanning to experiment with different rewards</li>
-<li>Organize your collection for easy access</li>
-<li>Use the unlimited scanning feature responsibly</li>
-<li>Explore different games to discover unique Amiibo functions</li>
-</ul>
+<p>Each game has its own method for activating amiibo, check YouTube if you don&rsquo;t know how.</p>
 <h2 id="faq---frequently-asked-questions">
 <a class="header-anchor" href="#faq---frequently-asked-questions"></a>
 FAQ - Frequently Asked Questions
-</h2><p><strong>Q: Do I need to own physical Amiibo to use .bin files legally?</strong>
-A: This varies by jurisdiction, but it&rsquo;s generally recommended to own the physical Amiibo for legal compliance.</p>
-<p><strong>Q: Can I use the same Amiibo multiple times per day?</strong>
-A: Yes, by enabling &ldquo;Remove Amiibo after scan&rdquo; in Cemu&rsquo;s NFC menu, you can bypass daily limits.</p>
-<p><strong>Q: Why do some Amiibo give different rewards each time?</strong>
-A: Most Amiibo have randomized reward pools with different drop rates for various items.</p>
-<p><strong>Q: Will using Amiibo affect my game saves?</strong>
-A: No, Amiibo usage doesn&rsquo;t modify save files beyond adding the received items to your inventory.</p>
-<p><strong>Q: Can I use non-Nintendo Amiibo with Cemu?</strong>
-A: Only official Nintendo Amiibo .bin files work with Cemu&rsquo;s NFC emulation.</p>
+</h2><p><strong>Q: Can I use Amiibo multiple times per day?</strong>
+A: Depends on the game. Most games have daily limits, but some allow unlimited use.</p>
+<p><strong>Q: Do all Amiibo work with all games?</strong>
+A: No, compatibility varies by game. Check each game&rsquo;s supported Amiibo list.</p>
+<p><strong>Q: Can I create custom Amiibo?</strong>
+A: Yes, with tools like TagMo, but requires technical knowledge and proper encryption keys.</p>
+<p><strong>Q: Why doesn&rsquo;t my Amiibo scan work?</strong>
+A: Check file format (.bin), game compatibility, and ensure proper timing during scan.</p>
+<p><strong>Q: Do Amiibo affect Cemu performance?</strong>
+A: No, Amiibo scanning has minimal impact on emulator performance.</p>
 <hr>
-<p><strong>Did this guide help you set up Amiibo on Cemu?</strong> Share your best Amiibo discoveries and tips in the comments!</p>
-<p><strong>Related articles:</strong></p>
-<ul>
-<li><a href="/en/post/cemu-complete-setup/">Complete Cemu Setup Guide</a></li>
-<li><a href="/en/post/zelda-botw-cemu-optimization/">Zelda BOTW Optimization for Cemu</a></li>
-<li><a href="/en/post/best-wiiu-games-emulation/">Best Wii U Games for Emulation</a></li>
-</ul>
-<pre tabindex="0"><code></code></pre>
+
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -646,13 +190,13 @@ A: Only official Nintendo Amiibo .bin files work with Cemu&rsquo;s NFC emulation
     
 
     <item>
-      <title>Complete Guide: Playing with Keyboard &amp; Mouse on Cemu Emulator</title>
-      <link>https://wiki.axekin.com/en/post/keyboard_mouse_cemu/</link>
+      <title>Playing with Keyboard &amp; Mouse on Cemu Emulator</title>
+      <link>http://localhost:1313/en/post/keyboard_mouse_cemu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/keyboard_mouse_cemu/</guid>
+      <guid>http://localhost:1313/en/post/keyboard_mouse_cemu/</guid>
       <description>
-        <![CDATA[<h1>Complete Guide: Playing with Keyboard & Mouse on Cemu Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>Playing with Keyboard & Mouse on Cemu Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           <blockquote>
 <p><strong>⚠️ Important Note</strong>: While possible, the keyboard-mouse experience on Cemu won&rsquo;t be as pleasant as with a controller. This solution suits players who don&rsquo;t have a compatible gamepad.</p></blockquote>
@@ -1259,7 +803,7 @@ A: Impact is minimal, as Mouse2Joystick is very resource-light.</p>
 </ul>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

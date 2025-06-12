@@ -14,12 +14,6 @@ menu:
   - name: about
     url: "about"
     icon:
-  - name: friend
-    url: "friend"
-    icon:
-  - name: discord
-    url: "https://discord.gg/axekin"
-    icon: e60d
     
 
 mainSections: ["fr/post", "en/post"]
@@ -31,8 +25,6 @@ timeFormat: "2006-01-02 15:04:05"
 
 author: Axekin
 email: axekinn@proton.me
-description: "Si seulement vous pouviez voir ce que je vois..."
-subtitle: "gamberge..."
 
 banner: "images/banner.webp"
 # You can also write it in the form of the following url
@@ -97,7 +89,7 @@ copyright:
 #   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
 
 footer:
-  since: 2020 # 2020-current year
+  since: 2023 # 2020-current year
   powered: true
   count: true
   busuanzi: true
@@ -376,7 +368,7 @@ preloader:
     zh-TW: 少女祈禱中...
     en: Loading...
     ja: 少女祈祷中...
-  icon: # default use inline svg for fast speed, you can use a image url, like '/images/gura.png'
+  icon: ../images/ninho.png # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
   rotate: true # whether to rotate the icon
 
 # see https://github.com/D-Sketon/aos.js

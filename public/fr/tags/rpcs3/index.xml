@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RPCS3 on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/rpcs3/</link>
+    <link>http://localhost:1313/fr/tags/rpcs3/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/rpcs3/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/rpcs3/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,51 +23,18 @@
     
 
     <item>
-      <title>Guide complet : Installation et configuration de RPCS3</title>
-      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
+      <title>Installation et configuration de RPCS3</title>
+      <link>http://localhost:1313/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
+      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
       <description>
-        <![CDATA[<h1>Guide complet : Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           <h2 id="-introduction-à-rpcs3">
 <a class="header-anchor" href="#-introduction-%c3%a0-rpcs3"></a>
 🎮 Introduction à RPCS3
 </h2><p><strong>RPCS3</strong> est l&rsquo;émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour émuler l&rsquo;architecture Cell de la PS3. Après des années de développement, il offre maintenant une compatibilité impressionnante avec plus de 60% des jeux PS3.</p>
-<blockquote>
-<p>⚠️ <strong>Note légale</strong> : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p></blockquote>
-<h2 id="-prérequis-système">
-<a class="header-anchor" href="#-pr%c3%a9requis-syst%c3%a8me"></a>
-📋 Prérequis système
-</h2><h3 id="configuration-minimale">
-<a class="header-anchor" href="#configuration-minimale"></a>
-Configuration minimale
-</h3><ul>
-<li><strong>OS</strong> : Windows 10 (64-bit) / Linux / FreeBSD</li>
-<li><strong>CPU</strong> : Intel Core i5-4430 / AMD FX-6300 (4 cores, 3.0 GHz)</li>
-<li><strong>RAM</strong> : 8 GB</li>
-<li><strong>GPU</strong> : DirectX 12 compatible / Vulkan 1.1 compatible</li>
-<li><strong>Stockage</strong> : 10 GB d&rsquo;espace libre + espace jeux</li>
-</ul>
-<h3 id="configuration-recommandée">
-<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
-Configuration recommandée
-</h3><ul>
-<li><strong>CPU</strong> : Intel Core i7-8700 / AMD Ryzen 7 2700 (8 cores, 3.2+ GHz)</li>
-<li><strong>RAM</strong> : 16 GB</li>
-<li><strong>GPU</strong> : NVIDIA GTX 1060 / AMD RX 580 ou supérieur</li>
-<li><strong>Stockage</strong> : SSD avec 50+ GB d&rsquo;espace libre</li>
-</ul>
-<h3 id="configuration-optimale">
-<a class="header-anchor" href="#configuration-optimale"></a>
-Configuration optimale
-</h3><ul>
-<li><strong>CPU</strong> : Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 3.5+ GHz)</li>
-<li><strong>RAM</strong> : 32 GB DDR4-3200+</li>
-<li><strong>GPU</strong> : NVIDIA RTX 3070 / AMD RX 6700 XT ou supérieur</li>
-<li><strong>Stockage</strong> : NVMe SSD avec 100+ GB d&rsquo;espace libre</li>
-</ul>
 <blockquote>
 <p>💡 <strong>Note importante</strong> : RPCS3 est extrêmement exigeant en CPU. Un processeur puissant avec de nombreux cœurs est essentiel.</p></blockquote>
 <h2 id="-étape-1--téléchargement-de-rpcs3">
@@ -812,7 +779,7 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>

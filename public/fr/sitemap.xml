@@ -2,1024 +2,1128 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wiki.axekin.com/fr/about/</loc>
+    <loc>http://localhost:1313/fr/about/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/about/"
+                href="http://localhost:1313/fr/about/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/cheat_citra/</loc>
+    <loc>http://localhost:1313/fr/post/cheat_citra/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/cheat_citra/"
+                href="http://localhost:1313/en/post/cheat_citra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/cheat_citra/"
+                href="http://localhost:1313/fr/post/cheat_citra/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</loc>
+    <loc>http://localhost:1313/fr/post/yuzu/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/yuzu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/yuzu/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/reinstall_yuzu_ryujinx/"
+                href="http://localhost:1313/en/post/reinstall_yuzu_ryujinx/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/"
+                href="http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</loc>
+    <loc>http://localhost:1313/fr/post/reinstall_driver_gpu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/reinstall_driver_gpu/"
+                href="http://localhost:1313/en/post/reinstall_driver_gpu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/reinstall_driver_gpu/"
+                href="http://localhost:1313/fr/post/reinstall_driver_gpu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/dolphin/</loc>
+    <loc>http://localhost:1313/fr/post/dolphin/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/dolphin/"
+                href="http://localhost:1313/en/post/dolphin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/dolphin/"
+                href="http://localhost:1313/fr/post/dolphin/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/cheat_ryujinx/</loc>
+    <loc>http://localhost:1313/fr/post/xenia/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/xenia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/xenia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/post/cheat_ryujinx/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/cheat_ryujinx/"
+                href="http://localhost:1313/en/post/cheat_ryujinx/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/cheat_ryujinx/"
+                href="http://localhost:1313/fr/post/cheat_ryujinx/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/keyboard_mouse_cemu/</loc>
+    <loc>http://localhost:1313/fr/post/keyboard_mouse_cemu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/keyboard_mouse_cemu/"
+                href="http://localhost:1313/en/post/keyboard_mouse_cemu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/keyboard_mouse_cemu/"
+                href="http://localhost:1313/fr/post/keyboard_mouse_cemu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/citra/</loc>
+    <loc>http://localhost:1313/fr/post/citra/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/citra/"
+                href="http://localhost:1313/en/post/citra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/citra/"
+                href="http://localhost:1313/fr/post/citra/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</loc>
+    <loc>http://localhost:1313/fr/post/ryujinx/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/ryujinx/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/ryujinx/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/post/amibo_cemu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/dlc_update_ryujinx_yuzu/"
+                href="http://localhost:1313/en/post/amibo_cemu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/"
+                href="http://localhost:1313/fr/post/amibo_cemu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/amibo_cemu/</loc>
+    <loc>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/amibo_cemu/"
+                href="http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/amibo_cemu/"
+                href="http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/amibo_switch/</loc>
+    <loc>http://localhost:1313/fr/post/sac/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/amibo_switch/"
+                href="http://localhost:1313/en/post/sac/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/amibo_switch/"
+                href="http://localhost:1313/fr/post/sac/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/3ds/</loc>
+    <loc>http://localhost:1313/fr/post/amibo_switch/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/3ds/"
+                href="http://localhost:1313/en/post/amibo_switch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/3ds/"
+                href="http://localhost:1313/fr/post/amibo_switch/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/action-replay/</loc>
+    <loc>http://localhost:1313/fr/post/unsteam/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/action-replay/"
+                href="http://localhost:1313/en/post/unsteam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/action-replay/"
+                href="http://localhost:1313/fr/post/unsteam/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/amd/</loc>
+    <loc>http://localhost:1313/fr/tags/3ds/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/amd/"
+                href="http://localhost:1313/en/tags/3ds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/amd/"
+                href="http://localhost:1313/fr/tags/3ds/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/amiibo/</loc>
+    <loc>http://localhost:1313/fr/tags/action-replay/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/amiibo/"
+                href="http://localhost:1313/en/tags/action-replay/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/amiibo/"
+                href="http://localhost:1313/fr/tags/action-replay/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/</loc>
+    <loc>http://localhost:1313/fr/tags/amd/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/"
+                href="http://localhost:1313/en/tags/amd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/"
+                href="http://localhost:1313/fr/tags/amd/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/</loc>
+    <loc>http://localhost:1313/fr/tags/amiibo/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/"
+                href="http://localhost:1313/en/tags/amiibo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/"
+                href="http://localhost:1313/fr/tags/amiibo/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/automatisation/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/fr/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/"
+                />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/backup/</loc>
+    <loc>http://localhost:1313/fr/post/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/automation/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/backup/"
+                href="http://localhost:1313/en/categories/automation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/backup/"
+                href="http://localhost:1313/fr/categories/automation/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/</loc>
+    <loc>http://localhost:1313/fr/tags/automatisation/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/backup/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/categories/"
+                href="http://localhost:1313/en/tags/backup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/"
+                href="http://localhost:1313/fr/tags/backup/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/cemu/</loc>
+    <loc>http://localhost:1313/fr/categories/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/cemu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/cemu/"
+                href="http://localhost:1313/en/tags/cemu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/cemu/"
+                href="http://localhost:1313/fr/tags/cemu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/cheats/</loc>
+    <loc>http://localhost:1313/fr/tags/cheats/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/cheats/"
+                href="http://localhost:1313/en/tags/cheats/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/cheats/"
+                href="http://localhost:1313/fr/tags/cheats/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/citra/</loc>
+    <loc>http://localhost:1313/fr/tags/citra/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/citra/"
+                href="http://localhost:1313/en/tags/citra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/citra/"
+                href="http://localhost:1313/fr/tags/citra/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/clavier-souris/</loc>
+    <loc>http://localhost:1313/fr/tags/clavier-souris/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/codes/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/codes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/codes/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/coop/</loc>
+    <loc>http://localhost:1313/fr/tags/codes/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/coop/"
+                href="http://localhost:1313/en/tags/codes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/coop/"
+                href="http://localhost:1313/fr/tags/codes/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/crack/</loc>
+    <loc>http://localhost:1313/fr/tags/coop/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/crack/"
+                href="http://localhost:1313/en/tags/coop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/crack/"
+                href="http://localhost:1313/fr/tags/coop/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/ddu/</loc>
+    <loc>http://localhost:1313/fr/tags/ddu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/ddu/"
+                href="http://localhost:1313/en/tags/ddu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/ddu/"
+                href="http://localhost:1313/fr/tags/ddu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/dlc/</loc>
+    <loc>http://localhost:1313/fr/tags/dlc/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/dlc/"
+                href="http://localhost:1313/en/tags/dlc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/dlc/"
+                href="http://localhost:1313/fr/tags/dlc/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/drivers/</loc>
+    <loc>http://localhost:1313/fr/tags/drivers/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/drivers/"
+                href="http://localhost:1313/en/tags/drivers/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/drivers/"
+                href="http://localhost:1313/fr/tags/drivers/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/emulation/</loc>
+    <loc>http://localhost:1313/fr/categories/emulation/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/emulation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/emulation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/emulation/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/emulation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/emulation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/figurines/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/categories/emulation/"
+                href="http://localhost:1313/en/tags/figurines/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/emulation/"
+                href="http://localhost:1313/fr/tags/figurines/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/emulation/</loc>
+    <loc>http://localhost:1313/fr/categories/gaming/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/gaming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/gaming/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/gaming/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/gaming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/gaming/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/gpu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/emulation/"
+                href="http://localhost:1313/en/tags/gpu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/emulation/"
+                href="http://localhost:1313/fr/tags/gpu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/figurines/</loc>
+    <loc>http://localhost:1313/fr/categories/hardware/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/figurines/"
+                href="http://localhost:1313/en/categories/hardware/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/figurines/"
+                href="http://localhost:1313/fr/categories/hardware/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/gaming/</loc>
+    <loc>http://localhost:1313/fr/tags/installation/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/installation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/installation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/maintenance/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/categories/gaming/"
+                href="http://localhost:1313/en/categories/maintenance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/gaming/"
+                href="http://localhost:1313/fr/categories/maintenance/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/gaming/</loc>
+    <loc>http://localhost:1313/fr/tags/modding/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/gaming/"
+                href="http://localhost:1313/en/tags/modding/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/gaming/"
+                href="http://localhost:1313/fr/tags/modding/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/gpu/</loc>
+    <loc>http://localhost:1313/fr/tags/mods/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/gpu/"
+                href="http://localhost:1313/en/tags/mods/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/gpu/"
+                href="http://localhost:1313/fr/tags/mods/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/sac/</loc>
+    <loc>http://localhost:1313/fr/tags/mouse2joystick/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/sac/"
+                href="http://localhost:1313/en/tags/mouse2joystick/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/sac/"
+                href="http://localhost:1313/fr/tags/mouse2joystick/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/unsteam/</loc>
+    <loc>http://localhost:1313/fr/tags/multijoueur/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/networking/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/unsteam/"
+                href="http://localhost:1313/en/categories/networking/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/unsteam/"
+                href="http://localhost:1313/fr/categories/networking/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/hardware/</loc>
+    <loc>http://localhost:1313/fr/tags/nfc/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/categories/hardware/"
+                href="http://localhost:1313/en/tags/nfc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/hardware/"
+                href="http://localhost:1313/fr/tags/nfc/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/installation/</loc>
+    <loc>http://localhost:1313/fr/tags/nintendo/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/installation/"
+                href="http://localhost:1313/en/tags/nintendo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/installation/"
+                href="http://localhost:1313/fr/tags/nintendo/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/maintenance/</loc>
+    <loc>http://localhost:1313/fr/tags/nintendo-switch/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/nintendo-switch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/nintendo-switch/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/nvidia/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/categories/maintenance/"
+                href="http://localhost:1313/en/tags/nvidia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/maintenance/"
+                href="http://localhost:1313/fr/tags/nvidia/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/modding/</loc>
+    <loc>http://localhost:1313/fr/tags/patch/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/modding/"
+                href="http://localhost:1313/en/tags/patch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/modding/"
+                href="http://localhost:1313/fr/tags/patch/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/mods/</loc>
+    <loc>http://localhost:1313/fr/tags/pilotes/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/reinstallation/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/mods/"
+                href="http://localhost:1313/en/tags/reinstallation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/mods/"
+                href="http://localhost:1313/fr/tags/reinstallation/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/mouse2joystick/</loc>
+    <loc>http://localhost:1313/fr/tags/r%C3%A9paration/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/ryujinx/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ryujinx/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/ryujinx/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/sauvegarde/</loc>
+    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/steam/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/mouse2joystick/"
+                href="http://localhost:1313/en/tags/steam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/mouse2joystick/"
+                href="http://localhost:1313/fr/tags/steam/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nfc/</loc>
+    <loc>http://localhost:1313/fr/tags/steamautocrack/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nfc/"
+                href="http://localhost:1313/en/tags/steamautocrack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nfc/"
+                href="http://localhost:1313/fr/tags/steamautocrack/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nintendo/</loc>
+    <loc>http://localhost:1313/fr/tags/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/tutorials/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/tutorials/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/tutorials/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/unsteam/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nintendo/"
+                href="http://localhost:1313/en/tags/unsteam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nintendo/"
+                href="http://localhost:1313/fr/tags/unsteam/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nintendo-switch/</loc>
+    <loc>http://localhost:1313/fr/tags/updates/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nintendo-switch/"
+                href="http://localhost:1313/en/tags/updates/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nintendo-switch/"
+                href="http://localhost:1313/fr/tags/updates/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nvidia/</loc>
+    <loc>http://localhost:1313/fr/tags/vigembus/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nvidia/"
+                href="http://localhost:1313/en/tags/vigembus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nvidia/"
+                href="http://localhost:1313/fr/tags/vigembus/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/pilotes/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/reinstallation/</loc>
+    <loc>http://localhost:1313/fr/tags/wiiu/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/reinstallation/"
+                href="http://localhost:1313/en/tags/wiiu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/reinstallation/"
+                href="http://localhost:1313/fr/tags/wiiu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/r%C3%A9paration/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/ryujinx/</loc>
+    <loc>http://localhost:1313/fr/tags/windows/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/ryujinx/"
+                href="http://localhost:1313/en/tags/windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/ryujinx/"
+                href="http://localhost:1313/fr/tags/windows/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/sauvegarde/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/steam/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/fr/tags/yuzu/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/steam/"
+                href="http://localhost:1313/en/tags/yuzu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/steam/"
+                href="http://localhost:1313/fr/tags/yuzu/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/steamautocrack/</loc>
+    <loc>http://localhost:1313/fr/tags/zelda/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/steamautocrack/"
+                href="http://localhost:1313/en/tags/zelda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/steamautocrack/"
+                href="http://localhost:1313/fr/tags/zelda/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/tutorials/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/categories/tutorials/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/categories/tutorials/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/unsteam/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/unsteam/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/unsteam/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/updates/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/updates/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/updates/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/vigembus/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/vigembus/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/vigembus/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/wiiu/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/wiiu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/wiiu/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/windows/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/windows/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/yuzu/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/yuzu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/yuzu/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/zelda/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/zelda/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/zelda/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/bio/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/contact/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/dolphin/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/dolphin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/dolphin/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/%C3%A9mulation/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/gamecube/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/tags/gamecube/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/gamecube/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/post/melonds/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiki.axekin.com/en/post/melonds/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/melonds/"
-                />
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/post/rpcs3/</loc>
+    <loc>http://localhost:1313/fr/tags/bio/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/rpcs3/"
+                href="http://localhost:1313/en/tags/bio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/rpcs3/"
+                href="http://localhost:1313/fr/tags/bio/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/ryujinx/</loc>
+    <loc>http://localhost:1313/fr/tags/configuration/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/configuration/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/contact/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/ryujinx/"
+                href="http://localhost:1313/en/tags/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/ryujinx/"
+                href="http://localhost:1313/fr/tags/contact/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/xenia/</loc>
+    <loc>http://localhost:1313/fr/tags/dolphin/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/xenia/"
+                href="http://localhost:1313/en/tags/dolphin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/xenia/"
+                href="http://localhost:1313/fr/tags/dolphin/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/post/yuzu/</loc>
+    <loc>http://localhost:1313/fr/tags/eden/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/eden/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/eden/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/%C3%A9mulation/</loc>
+    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/firmware/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/firmware/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/firmware/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/gamecube/</loc>
+    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/post/melonds/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/post/yuzu/"
+                href="http://localhost:1313/en/post/melonds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/post/yuzu/"
+                href="http://localhost:1313/fr/post/melonds/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/melonds/</loc>
+    <loc>http://localhost:1313/fr/post/rpcs3/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/melonds/"
+                href="http://localhost:1313/en/post/rpcs3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/melonds/"
+                href="http://localhost:1313/fr/post/rpcs3/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nintendo-3ds/</loc>
+    <loc>http://localhost:1313/fr/tags/melonds/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nintendo-3ds/"
+                href="http://localhost:1313/en/tags/melonds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nintendo-3ds/"
+                href="http://localhost:1313/fr/tags/melonds/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nintendo-ds/</loc>
+    <loc>http://localhost:1313/fr/tags/microsoft/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/microsoft/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/microsoft/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/nintendo-3ds/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nintendo-ds/"
+                href="http://localhost:1313/en/tags/nintendo-3ds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nintendo-ds/"
+                href="http://localhost:1313/fr/tags/nintendo-3ds/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/nintendo-wii/</loc>
+    <loc>http://localhost:1313/fr/tags/nintendo-ds/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/nintendo-wii/"
+                href="http://localhost:1313/en/tags/nintendo-ds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/nintendo-wii/"
+                href="http://localhost:1313/fr/tags/nintendo-ds/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/personnel/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/playstation-3/</loc>
+    <loc>http://localhost:1313/fr/tags/nintendo-wii/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/playstation-3/"
+                href="http://localhost:1313/en/tags/nintendo-wii/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/playstation-3/"
+                href="http://localhost:1313/fr/tags/nintendo-wii/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/pr%C3%A9sentation/</loc>
+    <loc>http://localhost:1313/fr/tags/optimization/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/optimization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/optimization/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/personnel/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/ps3/</loc>
+    <loc>http://localhost:1313/fr/tags/playstation-3/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/ps3/"
+                href="http://localhost:1313/en/tags/playstation-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/ps3/"
+                href="http://localhost:1313/fr/tags/playstation-3/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/rpcs3/</loc>
+    <loc>http://localhost:1313/fr/tags/pr%C3%A9sentation/</loc>
+    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/ps3/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/rpcs3/"
+                href="http://localhost:1313/en/tags/ps3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/rpcs3/"
+                href="http://localhost:1313/fr/tags/ps3/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/categories/tutoriels/</loc>
-    <lastmod>2025-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/xbox-360/</loc>
+    <loc>http://localhost:1313/fr/tags/rpcs3/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/xbox-360/"
+                href="http://localhost:1313/en/tags/rpcs3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/xbox-360/"
+                href="http://localhost:1313/fr/tags/rpcs3/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/tags/xenia/</loc>
+    <loc>http://localhost:1313/fr/categories/tutoriels/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/xbox-360/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/tags/xenia/"
+                href="http://localhost:1313/en/tags/xbox-360/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/tags/xenia/"
+                href="http://localhost:1313/fr/tags/xbox-360/"
                 />
   </url><url>
-    <loc>https://wiki.axekin.com/fr/archives/</loc>
+    <loc>http://localhost:1313/fr/tags/xenia/</loc>
+    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://wiki.axekin.com/en/archives/"
+                href="http://localhost:1313/en/tags/xenia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://wiki.axekin.com/fr/archives/"
+                href="http://localhost:1313/fr/tags/xenia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/archives/"
                 />
   </url>
 </urlset>

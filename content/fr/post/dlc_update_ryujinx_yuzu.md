@@ -24,8 +24,6 @@ comments: true
 searchHidden: false
 ---
 
-> **⚠️ Note Importante** : Assurez-vous de posséder légalement les jeux, DLC et mises à jour que vous installez. Ce guide est à des fins éducatives uniquement.
-
 ## Introduction
 
 L'installation de **DLC** (contenu téléchargeable) et de **mises à jour** sur les émulateurs **Yuzu** et **Ryujinx** est un processus simple mais essentiel pour profiter pleinement de vos jeux Nintendo Switch émulés.
@@ -36,8 +34,6 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 
 **Types de fichiers acceptés :**
 - **NSP** - Nintendo Submission Package (format principal)
-- **XCI** - Nintendo Game Card Image
-- **NCA** - Nintendo Content Archive
 
 **Différence entre Update et DLC :**
 - **Update** : Mise à jour du jeu de base (corrections, améliorations)
@@ -53,18 +49,12 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 2. Dans la barre de menu, cliquez sur **"File"** (Fichier)
 3. Sélectionnez **"Install Files to NAND"** (Installer des fichiers sur la NAND)
 
-![Menu File Yuzu](/images/yuzu-file-menu.png)
-*Menu File avec l'option d'installation dans Yuzu*
-
 #### Étape 2 : Sélectionner le fichier
 
 4. Une **fenêtre de sélection** de fichiers s'ouvre
 5. **Naviguez** vers l'emplacement de votre fichier DLC/Update
-6. **Sélectionnez** le fichier (.nsp, .xci, ou .nca)
+6. **Sélectionnez** le fichier (.nsp)
 7. Cliquez sur **"Open"** (Ouvrir)
-
-![Sélection fichier Yuzu](/images/yuzu-file-selection.png)
-*Fenêtre de sélection de fichiers dans Yuzu*
 
 #### Étape 3 : Confirmer l'installation
 
@@ -94,14 +84,11 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 2. **Clic droit** sur le jeu que vous souhaitez mettre à jour
 3. Dans le menu contextuel, sélectionnez **"Manage Updates"**
 
-![Menu contextuel Ryujinx](/images/ryujinx-context-menu.png)
-*Menu clic droit avec l'option Manage Updates*
-
 #### Étape 2 : Ajouter l'update
 
 4. La fenêtre **"Manage Updates"** s'ouvre
 5. Cliquez sur le bouton **"Add"** ou **"Browse"**
-6. **Sélectionnez** votre fichier d'update (.nsp ou .xci)
+6. **Sélectionnez** votre fichier d'update (.nsp)
 7. Cliquez sur **"Open"** pour l'ajouter
 
 #### Étape 3 : Appliquer l'update
@@ -109,9 +96,6 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 8. Votre update apparaît dans la liste avec **sa version**
 9. **Cochez** la case à côté de l'update pour l'activer
 10. Cliquez sur **"Save"** pour appliquer les changements
-
-![Gestion updates Ryujinx](/images/ryujinx-update-manager.png)
-*Interface de gestion des updates dans Ryujinx*
 
 #### Vérification de l'update
 
@@ -128,44 +112,6 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 2. **Add/Browse** → Sélectionner le fichier DLC
 3. **Cocher** le DLC pour l'activer
 4. **Save** pour appliquer
-
-![Gestion DLC Ryujinx](/images/ryujinx-dlc-manager.png)
-*Interface de gestion des DLC dans Ryujinx*
-
-## Comparaison des Méthodes
-
-| Aspect | Yuzu | Ryujinx |
-|--------|------|---------|
-| **Méthode** | File → Install Files to NAND | Clic droit → Manage Updates/DLC |
-| **Simplicité** | Très simple, une seule méthode | Légèrement plus d'étapes |
-| **Gestion** | Installation directe | Gestion individuelle par jeu |
-| **Vérification** | Automatique | Visuelle dans la liste |
-| **Flexibilité** | Moins de contrôle | Plus de contrôle granulaire |
-
-## Gestion et Organisation
-
-### Organiser vos fichiers DLC/Updates
-
-**Structure de dossiers recommandée :**
-```
-📁 Nintendo_Switch_Content/
-├── 📁 Games/
-│   ├── game1.nsp
-│   ├── game2.xci
-│   └── game3.nsp
-├── 📁 Updates/
-│   ├── 📁 Game1/
-│   │   ├── update_v1.1.0.nsp
-│   │   └── update_v1.2.0.nsp
-│   └── 📁 Game2/
-│       └── update_v2.0.1.nsp
-└── 📁 DLC/
-    ├── 📁 Game1/
-    │   ├── dlc1.nsp
-    │   └── dlc2.nsp
-    └── 📁 Game2/
-        └── season_pass.nsp
-```
 
 ### Vérifier les versions installées
 
@@ -209,112 +155,10 @@ Ce guide vous explique **étape par étape** comment procéder sur les deux ému
 3. **Exécutez en tant qu'administrateur** si nécessaire
 4. **Mettez à jour** l'émulateur vers la dernière version
 
-### Problèmes de compatibilité
-
-#### Version de firmware
-
-**Vérification firmware requis :**
-```
-Jeu → Propriétés → Required System Version
-```
-
-**Mise à jour firmware :**
-- Téléchargez le firmware correspondant
-- Installez via les outils de l'émulateur
-- Redémarrez l'émulateur
-
-#### Clés de déchiffrement
-
-**Emplacement des clés :**
-- **Yuzu** : `%appdata%/yuzu/keys/`
-- **Ryujinx** : `%appdata%/Ryujinx/system/`
-
-**Fichiers requis :**
-- `prod.keys` (clés principales)
-- `title.keys` (clés des titres)
-
-## Bonnes Pratiques
-
-### Sauvegarde et sécurité
-
-**Avant installation :**
-- ✅ **Sauvegardez** vos saves importantes
-- ✅ **Notez** les versions actuellement installées
-- ✅ **Vérifiez** la compatibilité émulateur/firmware
-- ✅ **Testez** avec un jeu moins important d'abord
-
-### Organisation efficace
-
-**Système de nommage :**
-```
-NomDuJeu_Update_v1.2.0.nsp
-NomDuJeu_DLC_SeasonPass.nsp
-NomDuJeu_DLC_Expansion1.nsp
-```
-
-**Avantages :**
-- Identification rapide
-- Évite les doublons
-- Facilite la gestion
-
-### Maintenance régulière
-
-**Nettoyage périodique :**
-1. **Supprimez** les anciennes versions d'updates
-2. **Vérifiez** l'espace de stockage utilisé
-3. **Sauvegardez** les DLC importants
-4. **Documentez** les combinaisons qui fonctionnent
-
-## Cas d'Usage Spéciaux
-
-### Jeux avec multiples DLC
-
-**Exemple : The Legend of Zelda: Breath of the Wild**
-```
-📁 BOTW_Content/
-├── BOTW_Update_v1.6.0.nsp
-├── BOTW_DLC_Pack1_MasterTrials.nsp
-├── BOTW_DLC_Pack2_ChampionsBallad.nsp
-└── BOTW_SeasonPass_Complete.nsp
-```
-
-**Installation recommandée :**
-1. **Update** en premier
-2. **DLC** dans l'ordre de sortie
-3. **Test** après chaque installation
-
-### Migration entre émulateurs
-
-**Yuzu vers Ryujinx :**
-1. Les DLC/Updates installés ne se transfèrent pas automatiquement
-2. **Réinstallez** tout le contenu sur le nouvel émulateur
-3. **Vérifiez** la compatibilité avant migration
 
 ## Conclusion
 
 L'installation de **DLC et mises à jour** sur Yuzu et Ryujinx est un processus simple une fois maîtrisé. La différence principale réside dans l'approche : Yuzu utilise une méthode universelle tandis que Ryujinx offre une gestion plus granulaire.
-
-### Points clés à retenir
-
-> **🎯 Résumé des procédures :**
-> 
-> **Yuzu (Universal) :**
-> - File → Install Files to NAND
-> - Sélectionner fichier → Confirmer
-> - Fonctionne pour Update ET DLC
-> 
-> **Ryujinx (Séparé) :**
-> - Clic droit → Manage Updates/DLC
-> - Add → Select → Save
-> - Gestion séparée Update/DLC
-
-### Conseils finaux
-
-**Pour une expérience optimale :**
-- Maintenez vos émulateurs à jour
-- Organisez vos fichiers clairement
-- Sauvegardez régulièrement
-- Testez progressivement
 
 ## FAQ - Questions Fréquentes
 
@@ -334,11 +178,4 @@ R : Non, les sauvegardes existantes restent intactes. Certains DLC peuvent ajout
 R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous devrez supprimer depuis les paramètres système de l'émulateur.
 
 ---
-
-**Ce guide vous a aidé ?** Partagez vos expériences d'installation et vos jeux favoris avec DLC en commentaires !
-
-**Articles connexes :**
-- [Configuration Optimale de Yuzu](/fr/post/yuzu-setup/)
-- [Guide Complet de Ryujinx](/fr/post/ryujinx-guide/)
-- [Installer des Mods sur les Émulateurs Switch](/fr/post/install-switch-mods/)
 ````

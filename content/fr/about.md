@@ -44,43 +44,18 @@ Salut ! Je suis **Axekin**, passionne de technologie, gaming et surtout d'anime.
 
 ### Mes statistiques GitHub
 
-{{< github-stats username="axekin" >}}
+{{< github-stats username="axekinn" >}}
 
-## Pourquoi ce site ?
+### 🚀 Mon parcours
 
-Ce wiki personnel est né de ma passion pour le partage de connaissances. Dans un monde où l'information va vite, j'ai voulu créer un espace pour :
+**2024** ➤ **Idée initiale**  
+*Envie de documenter mes apprentissages et découvertes*
 
-{{< timeline >}}
-{{< timeline-item time="2024" title="Idée initiale" >}}
-Envie de documenter mes apprentissages et découvertes
-{{< /timeline-item >}}
-{{< timeline-item time="2025" title="Création du site" >}}
-Lancement officiel avec Hugo et le thème Reimu
-{{< /timeline-item >}}
-{{< timeline-item time="Aujourd'hui" title="Évolution continue" >}}
-Ajout régulier de contenu et amélioration de l'expérience utilisateur
-{{< /timeline-item >}}
-{{< /timeline >}}
+**2025** ➤ **Création du site**  
+*Lancement officiel de mon wiki*
 
-## Technologies utilisées
-
-{{< tabs >}}
-{{< tab "Frontend" >}}
-- **[Hugo](https://gohugo.io/)** : Générateur de sites statiques ultra-rapide
-- **[Thème Reimu](https://github.com/D-Sketon/hugo-theme-reimu)** : Un thème élégant et moderne
-- **Markdown** : Pour une rédaction simple et efficace
-{{< /tab >}}
-{{< tab "Déploiement" >}}
-- **Git** : Pour le versioning et la collaboration
-- **GitHub Actions** : CI/CD automatisé
-- **Netlify/Vercel** : Hébergement et déploiement
-{{< /tab >}}
-{{< tab "Outils" >}}
-- **VS Code** : Éditeur de code principal
-- **Figma** : Design et prototypage
-- **Canva** : Création graphique
-{{< /tab >}}
-{{< /tabs >}}
+**Aujourd'hui** ➤ **Évolution continue**  
+*Ajout régulier de contenu et amélioration de l'expérience utilisateur*
 
 ## Mes projets récents
 
@@ -100,11 +75,8 @@ Vous voulez discuter, collaborer ou simplement dire bonjour ?
 - 📧 **Email** : [axekinn@proton.me](mailto:axekinn@proton.me)
 - 💬 **Discord** : [Rejoignez notre serveur](https://discord.gg/axekin)
 - 🌐 **Site web** : [axekin.com](https://axekin.com)
-- 🐙 **GitHub** : [@axekin](https://github.com/axekin)
-- 🐦 **Twitter** : [@axekin_dev](https://twitter.com/axekin_dev)
+- 🐙 **GitHub** : [@axekin](https://github.com/axekinn)
 {{< /social-links >}}
-
-{{< contact-form >}}
 
 ## Statistiques du site
 
@@ -138,7 +110,5 @@ Le contenu de ce site est sous licence [Creative Commons BY-SA 4.0](https://crea
 ---
 
 {{< reward >}}
-
-*Dernière mise à jour : {{ .Lastmod.Format "2 janvier 2006" }}*
 
 **Merci de votre visite et bonne lecture !** 🚀

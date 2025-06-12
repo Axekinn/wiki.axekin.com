@@ -1,5 +1,5 @@
 ---
-title: "Guide Complet : Jouer Clavier-Souris sur l'Émulateur Cemu"
+title: "Jouer Clavier-Souris sur l'Émulateur Cemu"
 description: "Tutoriel détaillé pour configurer le contrôle clavier-souris sur Cemu avec Mouse2Joystick et ViGEmBus - Configuration étape par étape"
 date: 2025-06-04
 lastmod: 2025-06-04
@@ -24,7 +24,7 @@ comments: true
 searchHidden: false
 ---
 
-> **⚠️ Note Importante** : Bien que possible, l'expérience clavier-souris sur Cemu ne sera pas aussi agréable qu'avec une manette. Cette solution convient aux joueurs n'ayant pas de contrôleur compatible.
+> **⚠️ Note Importante** : Bien que possible, l'expérience clavier-souris sur Cemu ne sera pas aussi agréable qu'avec une manette. Cette solution convient aux joueurs n'ayant pas de manette compatible.
 
 ## Introduction
 

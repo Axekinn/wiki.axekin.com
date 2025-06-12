@@ -48,9 +48,6 @@ Les deux utilisent des méthodes d'installation et des structures de dossiers di
 2. **Clic droit** sur le jeu auquel vous souhaitez ajouter des cheats
 3. Sélectionnez **"Open Mods Directory"** dans le menu contextuel
 
-![Menu clic droit Ryujinx](/images/ryujinx-mods-menu.png)
-*Accès au répertoire mods dans Ryujinx*
-
 ### Étape 2 : Comprendre la structure des dossiers
 
 #### Structure du répertoire
@@ -90,9 +87,6 @@ Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
 5. **Créez un nouveau dossier** avec le nom du cheat (ex: "Argent_Infini")
 6. **À l'intérieur de ce dossier**, créez un sous-dossier appelé **"cheats"**
 7. **Placez tous les fichiers .txt de cheat** dans le dossier "cheats"
-
-![Structure dossier cheat](/images/ryujinx-cheat-structure.png)
-*Structure appropriée du dossier cheat dans Ryujinx*
 
 ### Étape 4 : Activer les cheats
 
@@ -153,9 +147,6 @@ Ryujinx\mods\contents\01007EF00011E000\
 5. **Copiez l'intégralité du dossier romfs ou exefs**
 6. **Collez** dans votre répertoire mod créé
 
-![Processus installation mod](/images/ryujinx-mod-installation.png)
-*Installation d'un mod graphique dans Ryujinx*
-
 ### Étape 4 : Activer les mods
 
 #### Activer les mods installés
@@ -196,23 +187,6 @@ Ryujinx\mods\contents\01007EF00011E000\
         └── main.npdm
 ```
 
-## Gestion de Multiples Mods et Cheats
-
-### Bonnes pratiques d'organisation
-
-#### Conventions de nommage
-
-**Bons noms de dossiers :**
-- `Cheat_Argent_Infini`
-- `Pack_Textures_4K`
-- `Mod_Audio_Ameliore`
-- `Reequilibrage_Difficulte`
-
-**À éviter :**
-- Caractères spéciaux (`!@#$%`)
-- Espaces au début ou à la fin
-- Noms très longs
-
 #### Compatibilité des mods
 
 **Test de compatibilité :**
@@ -220,20 +194,6 @@ Ryujinx\mods\contents\01007EF00011E000\
 2. **Testez la stabilité du jeu**
 3. **Vérifiez les conflits** avant d'en ajouter d'autres
 4. **Prenez des notes** sur les combinaisons qui fonctionnent
-
-### Système d'activation/désactivation
-
-#### Gestion temporaire des mods
-
-```
-Ryujinx\mods\contents\ID_JEU\
-├── Mods_Actifs\
-│   ├── Mod_Graphique\    (activé)
-│   └── Mod_Audio\        (activé)
-└── Mods_Desactives\
-    ├── Anciens_Graphiques\    (sauvegarde)
-    └── Experimental\          (test)
-```
 
 ## Dépannage des Problèmes Courants
 
@@ -250,6 +210,7 @@ Ryujinx\mods\contents\ID_JEU\
 - Désactivez tous les cheats et testez-les un par un
 - Vérifiez la compatibilité du cheat avec la version du jeu
 - Utilisez des cheats de sources fiables
+- FAITES EN SORTE QUE LA VERSION DU CHEAT CORRESPOND AVEC LA VERSION DU JEUX
 
 ### Mods qui ne se chargent pas
 
@@ -269,15 +230,6 @@ Ryujinx\mods\contents\ID_JEU\Nom_Mod\romfs\...
 - Vérifiez si le mod nécessite une version de firmware spécifique
 - Testez avec le mod désactivé pour confirmer qu'il en est la cause
 
-### Problèmes de performance
-
-#### Conseils d'optimisation
-
-**Performance liée aux mods :**
-- **Désactivez les mods inutilisés** pour réduire l'utilisation mémoire
-- **Utilisez des packs de textures optimisés** pour votre matériel
-- **Surveillez les ressources système** lors de l'exécution de plusieurs mods
-
 ## Trouver des Cheats et Mods
 
 ### Sources recommandées
@@ -286,11 +238,9 @@ Ryujinx\mods\contents\ID_JEU\Nom_Mod\romfs\...
 
 | Source | Type | Description |
 |--------|------|-------------|
-| **GameBanana** | Mods | Plus grande communauté de mods |
-| **NexusMods** | Mods | Hébergement professionnel de mods |
-| **Forums GBAtemp** | Cheats & Mods | Discussions communautaires actives |
-| **Reddit r/Ryujinx** | Les deux | Support communautaire |
-| **GitHub** | Les deux | Projets open-source |
+| **[GameBanana](https://gamebanana.com/)** | Mods | Plus grande communauté de mods |
+| **[NexusMods](https://www.nexusmods.com/)** | Mods | Hébergement professionnel de mods |
+| **[Forums GBAtemp](https://gbatemp.net/)** | Cheats & Mods | Discussions communautaires actives |
 
 #### Considérations de sécurité
 
@@ -301,61 +251,10 @@ Ryujinx\mods\contents\ID_JEU\Nom_Mod\romfs\...
 - ✅ Sauvegardez avant d'installer
 - ✅ Testez d'abord sur des jeux moins importants
 
-## Gestion Avancée des Mods
-
-### Opérations par lots
-
-#### Gestion de plusieurs jeux
-
-**Script PowerShell pour sauvegarde :**
-```powershell
-# Sauvegarder tous les mods
-$source = "$env:APPDATA\Ryujinx\mods"
-$backup = "C:\Sauvegarde_Mods_Ryujinx\$(Get-Date -Format 'yyyy-MM-dd')"
-Copy-Item -Path $source -Destination $backup -Recurse
-Write-Host "Mods sauvegardés dans : $backup"
-```
-
-### Contrôle de version pour les mods
-
-#### Suivre les changements
-
-```
-📁 Versions_Mod\
-├── 📁 v1.0_Original\
-├── 📁 v2.0_Mise_a_jour\
-└── 📁 v3.0_Derniere\
-    └── changelog.txt
-```
 
 ## Conclusion
 
 Installer des **cheats et mods** sur Ryujinx est simple une fois que vous comprenez la structure des dossiers. La clé est une organisation appropriée et tester une modification à la fois.
-
-### Résumé de référence rapide
-
-> **🎯 Liste de vérification d'installation :**
-> 
-> **Pour les Cheats :**
-> 1. Clic droit jeu → Open Mods Directory
-> 2. Créer : `Nom_Cheat\cheats\`
-> 3. Placer fichiers .txt dans dossier cheats
-> 4. Activer via menu Manage Cheats
-> 
-> **Pour les Mods :**
-> 1. Clic droit jeu → Open Mods Directory
-> 2. Créer dossier mod descriptif
-> 3. Copier romfs/exefs dans dossier mod
-> 4. Activer via menu Manage Mods
-
-### Bonnes pratiques
-
-**N'oubliez pas de :**
-- Toujours sauvegarder vos saves en premier
-- Tester les modifications individuellement
-- Utiliser des sources fiables pour les téléchargements
-- Garder les fichiers originaux en sauvegarde
-- Documenter les combinaisons de mods qui fonctionnent
 
 ## FAQ - Questions Fréquemment Posées
 
@@ -373,13 +272,4 @@ R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu.
 
 **Q : Que faire si un mod casse mon jeu ?**
 R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.
-
----
-
-**Ce guide vous a été utile ?** Partagez vos mods et cheats favoris dans les commentaires ci-dessous !
-
-**Articles connexes :**
-- [Optimisation des Performances Ryujinx](/fr/post/ryujinx-performance/)
-- [Meilleurs Mods Nintendo Switch](/fr/post/best-switch-mods/)
-- [Création de Cheats Personnalisés](/fr/post/custom-cheat-creation/)
 ````

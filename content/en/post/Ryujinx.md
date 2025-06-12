@@ -1,743 +1,315 @@
 ---
-title: "Complete Guide: Ryujinx Installation and Configuration"
+title: "Ryujinx Installation and Configuration"
+description: "Detailed tutorial for installing, configuring and optimizing the Ryujinx Nintendo Switch emulator - Complete setup with firmware, keys and settings"
 date: 2025-06-02
-draft: false
-categories: ["Gaming", "Tutorials"]
-tags: ["Ryujinx", "Nintendo Switch", "Emulation", "Gaming"]
+lastmod: 2025-06-07
+categories: ["gaming", "emulation", "tutorials"]
+tags: ["ryujinx", "nintendo-switch", "emulation", "installation", "configuration", "gaming"]
+series: ["Emulation Guides"]
 author: "Axekin"
-description: "Detailed tutorial for installing, configuring and using the Nintendo Switch emulator Ryujinx"
+draft: false
+toc: true
+math: false
+featured: true
+weight: 20
+aliases: 
+  - /en/ryujinx-guide/
+  - /en/guides/ryujinx-installation/
+summary: "Learn how to install and configure Ryujinx for optimal Nintendo Switch emulation. Complete guide with firmware, keys and optimizations."
 cover: "/images/covers/ryujinx.png"
+image: "/images/covers/ryujinx.png"
+showtoc: true
+tocopen: true
+comments: true
+searchHidden: false
 ---
 
 ## 🎮 Introduction to Ryujinx
 
 **Ryujinx** is an open-source Nintendo Switch emulator written in C#. It allows you to play Nintendo Switch games on PC with excellent performance and constantly improving compatibility.
 
-> ⚠️ **Legal Notice**: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.
-
-## 📋 System Requirements
-
-### Minimum Configuration
-- **OS**: Windows 10 (64-bit) / Linux / macOS
-- **CPU**: Intel Core i5-8400 / AMD Ryzen 5 2600
-- **RAM**: 8 GB
-- **GPU**: DirectX 11.1 compatible
-- **Storage**: 5 GB free space
-
-### Recommended Configuration
-- **CPU**: Intel Core i7-9700K / AMD Ryzen 7 3700X
-- **RAM**: 16 GB or more
-- **GPU**: NVIDIA GTX 1660 / AMD RX 580 or higher
-- **Storage**: SSD with 20+ GB free space
-
-### Optimal Configuration
-- **CPU**: Intel Core i9-12900K / AMD Ryzen 9 5900X
-- **RAM**: 32 GB DDR4-3200+
-- **GPU**: NVIDIA RTX 3060 / AMD RX 6600 or higher
-- **Storage**: NVMe SSD with 50+ GB free space
-
-> 💡 **Important Note**: Nintendo Switch emulation requires significant CPU and GPU power due to the modern ARM architecture and advanced graphics.
-
 ## 🔧 Step 1: Downloading Ryujinx
 
 ### Option 1: Stable Version (Recommended)
 ```bash
-# Official website
-https://ryujinx.org/download
+# Visit the official website
+https://ryujinx.app/
 ```
 
-1. **Click** on "Download for Windows"
-2. **Download** the file `ryujinx-X.X.X-win_x64.zip`
-3. **Extract** to a dedicated folder (e.g., `C:\Ryujinx`)
+1. Click on **"Download"**
+2. Extract the archive to a dedicated folder (e.g., `Documents\Ryujinx` or at the root of another drive, not C)
 
-### Option 2: Development Version (Advanced)
-```bash
-# For advanced users wanting latest features
-https://github.com/Ryujinx/Ryujinx/releases
+## Game Download
 
-Advantages:
-- Latest improvements
-- Bug fixes
-- New features
+### Step 1: Access the game library
 
-Risks:
-- Potentially unstable
-- Possible regressions
-```
+Go to **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** to access the Nintendo Switch game collection.
 
-### Option 3: Ryujinx Linux
-```bash
-# Flatpak installation
-flatpak install flathub org.ryujinx.Ryujinx
+### Step 2: Download the game
 
-# AppImage download
-https://ryujinx.org/download
-```
+1. **Search** for the desired game in the list
+2. **Click** on the download button
+3. **Wait** for the download to complete
+
+### Step 3: File extraction
+
+Once the download is finished, **extract** the archive with one of these software:
+
+| Software | Download Link | Compatibility |
+|----------|---------------|---------------|
+| **7-Zip** | [Download 7-Zip](https://www.7-zip.org/) | Windows/Linux |
+| **WinRAR** | [Download WinRAR](https://www.win-rar.com/) | Windows |
+
+> **💡 Tip**: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.
+
+**Result**: You'll get game files ready to be used with Ryujinx! 🎯
 
 ## 📁 Step 2: Folder Structure
 
 Create this folder structure to organize your files:
 
+For optimal organization of your library, here's the recommended tree structure:
+
+````
+Switch Games/
+├── Mario Kart 8 Deluxe/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── New Super Mario Bros U Deluxe/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── The Legend of Zelda BOTW/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Super Mario Odyssey/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game)
+````
+
+### Content types
+
+{{< admonition tip "Understanding folders" >}}
+- **BASE** 📁: The main game you download
+- **UPDATE** 📁: Updates and patches (recommended)
+- **DLC** 📁: Additional paid content (optional but recommended)
+{{< /admonition >}}
+
+{{< admonition success "Advantages of this organization" >}}
+✅ **Automatic detection**: Games are automatically added to the emulator  
+✅ **Simplified management**: No need to manually select each ROM  
+✅ **Clear organization**: Easy to see what content you have for each game  
+✅ **Easy maintenance**: Simplified content addition/removal
+{{< /admonition >}}
+
+> **📝 Important note**: If a game doesn't have updates or DLC, there's no need to create the corresponding folders. Only create folders for content you actually have.
+
+### Result
+
+Once this structure is in place, your emulator will automatically detect all games present in the "Switch Games" folder and organize them properly in your library! 🎯
+
+## 💡 Portable Configuration (Recommended)
+
+{{< admonition tip "Portable installation" >}}
+**Before the first launch**, create a folder named `portable` at the root of the Ryujinx directory. This operation will make the installation entirely portable.
+{{< /admonition >}}
+
+### Advantages of portable mode
+
+| Aspect | Normal mode | Portable mode |
+|--------|-------------|---------------|
+| **Configurations** | Stored in system | Stored in folder |
+| **Saves** | Scattered on computer | Centralized in folder |
+| **Portability** | ❌ Tied to system | ✅ Easily movable |
+| **Backup** | Hard to locate | Simple to backup |
+
+### Structure after creating portable folder
+
 ```
-Ryujinx/
-├── Ryujinx.exe              # Main executable
-├── games/                   # Your .nsp/.xci ROMs
-│   ├── nsp/                 # Digital games .nsp
-│   ├── xci/                 # Cartridge dumps .xci
-│   └── homebrew/            # Homebrew applications
-├── system/                  # System files
-│   ├── firmware/            # Switch firmware
-│   ├── keys/                # prod.keys and title.keys
-│   └── contents/            # System archives
-├── saves/                   # Save data
-├── mods/                    # Game modifications
-│   └── [Title-ID]/          # Mods per game
-├── updates/                 # Game updates
-├── dlc/                     # Downloadable content
-├── screenshots/             # Screenshots
-└── cache/                   # Shader cache
-    ├── gpu/                 # GPU shaders
-    └── cpu/                 # PTC cache
+📁 Ryujinx/
+├── 🎮 Ryujinx.exe
+├── 📁 portable/              # ← Create this folder!
+│   ├── 📁 bis/
+│   ├── 📁 games/
+│   ├── 📁 profiles/
+│   └── 📁 system/
+└── 📄 Other files...
 ```
 
-## ⚙️ Step 3: Initial Configuration
+{{< admonition success "Result" >}}
+**All your data** (configurations, saves, profiles) will be stored in the `portable` folder, greatly facilitating management and backups!
+{{< /admonition >}}
 
-### First Launch
-1. **Run** `Ryujinx.exe`
-2. **Accept** terms and conditions
-3. **Select** your preferred language
-4. **Configure** initial settings
+### Creation instructions
 
-### Essential Settings Configuration
+1. **Navigate** to the Ryujinx installation folder
+2. **Create** a new folder named exactly `portable`
+3. **Launch** Ryujinx - it will automatically detect portable mode
 
-#### System Settings
+> **📝 Note**: This operation must be performed **before** the first launch to be taken into account!
+
+## ⚙️ Step 3: Initial configuration
+
+### First launch
+1. **Execute** `ryujinx.exe`
+2. **Install keys**
+- [Keys version 20.0.1 | 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+
+#### Installation in Ryujinx
+1. **Open** Ryujinx
+2. `File → Open Ryujinx Folder`
+3. **Navigate** to the `system/` folder
+4. **Copy** `prod.keys` and `title.keys` (if present, but useless) inside
+5. **Restart** Ryujinx
+
+### Installing Nintendo Switch firmware
+
+- [Firmware 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+
+#### Installation in Ryujinx
+1. `Action → Install Firmware → Install Firmware from a XCI or ZIP`
+2. **Select** the firmware .zip file
+3. **Wait** for complete installation
+
+### Essential settings configuration
+
+#### Interface settings
+```
+Options → Settings → User Interface
+```
+- **Game Directories**: Set the **Switch Games** directory you created previously
+- **Autoload DLC/Updates Directories**: Same as above
+- **Theme**: Choose what you want
+
+#### Input settings
+```
+Options → Settings → Input
+```
+- **Input Device**: Connect your controller, then select it
+- **Let it do**: Configuration is automatic, change buttons you want afterwards
+- **Keyboard/mouse**: For keyboard/mouse players, adjust your keys
+
+#### System settings
 ```
 Options → Settings → System
 ```
-- **Region**: Europe (or your region)
-- **Language**: English
-- **Time Zone**: Your local timezone
-- **System Time**: Current time
-- **Enable VSync**: ✅ Enabled
-- **Enable Shader Cache**: ✅ Enabled
-- **Enable PTC (Profiled Translation Cache)**: ✅ Enabled
-
-#### Graphics Settings
-```
-Options → Settings → Graphics
-```
-- **Graphics Backend**: Vulkan (recommended) or OpenGL
-- **Resolution Scale**: 1x (default) or 2x if your GPU allows
-- **Aspect Ratio**: 16:9
-- **Anti-Aliasing**: FXAA or SMAA
-- **Scaling Filter**: Bilinear or FSR
-- **V-Sync**: ✅ Enabled
-
-#### Audio Settings
-```
-Options → Settings → Audio
-```
-- **Audio Backend**: SDL2 (recommended) or OpenAL
+- **System Region**: Your country
+- **System Language**: Your language
+- **Audio Backend**: SDL2 (recommended)
 - **Volume**: 100%
-- **Buffer Size**: 1024 (default)
 
-## 🎯 Step 4: Installing Firmware and Keys
+## 🚀 Performance optimization
 
-### Installing Nintendo Switch Firmware
+### Advanced settings for better performance
 
-> ⚠️ **Important**: You must extract firmware from your own Nintendo Switch console.
-
-#### Method 1: Official Firmware Installation
-```bash
-# Legal firmware extraction from your Switch
-1. Use TegraRcmGUI + Hekate on your Switch
-2. Extract firmware with NXDumpTool
-3. In Ryujinx: Tools → Install Firmware
-4. Select firmware file (.zip or .xci)
-5. Wait for installation completion
-```
-
-#### Method 2: Firmware Update
-```bash
-# Updating existing firmware
-1. Download latest firmware (legally)
-2. Tools → Install Firmware → Update
-3. Select new firmware file
-4. Restart Ryujinx
-```
-
-### Installing Encryption Keys
-
-#### Required Key Files
-- **prod.keys**: Main encryption keys
-- **title.keys**: Title-specific keys (optional)
-
-#### Installation Process
-```bash
-# Key file location
-Windows: %APPDATA%\Ryujinx\system\
-Linux: ~/.config/Ryujinx/system/
-macOS: ~/Library/Application Support/Ryujinx/system/
-
-# Installation steps
-1. Extract prod.keys from your Switch (via Lockpick_RCM)
-2. Place prod.keys in system folder
-3. Restart Ryujinx
-4. Verify in Tools → Manage File Types
-```
-
-### Extracting Keys from Your Switch
-
-#### Using Lockpick_RCM
-```bash
-# Requirements
-- Modded Nintendo Switch (CFW)
-- SD card
-- Lockpick_RCM payload
-
-# Process
-1. Boot Switch into RCM mode
-2. Inject Lockpick_RCM payload
-3. Run key extraction
-4. Copy prod.keys from SD card
-5. Transfer to PC Ryujinx folder
-```
-
-## 🎮 Step 5: Game Management
-
-### Supported Game Formats
-
-#### Nintendo Switch Games
-- **.NSP**: Nintendo Submission Package (digital games)
-- **.XCI**: NX Card Image (cartridge dumps)
-- **.NCA**: Nintendo Content Archive (system files)
-- **.NSZ/.XCZ**: Compressed formats
-
-#### System Content
-- **.NAX**: Nintendo Archive eXtended
-- **.NRO**: Nintendo Relocatable Object (homebrew)
-
-### Adding Games
-
-#### Method 1: Drag & Drop
-```bash
-# Simple method
-1. Drag your game file into Ryujinx window
-2. Game automatically appears in library
-3. Double-click to launch
-```
-
-#### Method 2: File Menu
-```bash
-# Traditional method
-1. File → Load Application from File
-2. Navigate to your game file
-3. Select and open
-4. Game loads directly
-```
-
-#### Method 3: Game Directory
-```bash
-# Automatic scanning
-1. Options → Settings → UI
-2. Add Game Directories
-3. Select folder containing games
-4. Ryujinx scans and lists automatically
-```
-
-### Installing Updates and DLC
-
-#### Game Updates
-```bash
-# Update installation
-File → Install Update from File
-1. Select update .nsp file
-2. Confirm installation
-3. Update applies to base game
-
-# Verification
-Right-click game → Manage Title Updates
-```
-
-#### DLC (Downloadable Content)
-```bash
-# DLC installation
-File → Install DLC from File
-1. Select DLC .nsp file
-2. Wait for installation
-3. DLC appears in game properties
-
-# Management
-Right-click game → Manage DLC
-```
-
-### Dumping Your Own Games
-
-#### From Physical Cartridge
-```bash
-# Using nxdumptool (requires CFW)
-1. Install nxdumptool on Switch
-2. Insert cartridge
-3. Launch nxdumptool
-4. Select "Dump gamecard content"
-5. Choose XCI or NSP format
-6. Transfer to PC
-```
-
-#### From Digital Games
-```bash
-# Using nxdumptool
-1. Launch nxdumptool on Switch
-2. Select "Dump installed content"
-3. Choose your digital game
-4. Select NSP format
-5. Wait for dump completion
-6. Transfer to PC
-```
-
-## 🚀 Performance Optimization
-
-### Advanced Settings for Better Performance
-
-#### CPU Configuration
+#### CPU
 ```
 Settings → CPU
-- Enable CPU JIT: ✅ Enabled (essential)
-- Enable PTC: ✅ Enabled (reduces stuttering)
-- Memory Manager Mode: Host (faster)
-- Ignore Missing Services: ✅ Enabled (for homebrew)
+- Enable PTC (Profiled Translation Cache): ✅ Enabled
+- Memory Manager Mode: Host
 ```
 
-#### GPU Configuration
+#### GPU
 ```
 Settings → Graphics
-- Shader Cache: ✅ Enabled (essential)
-- Texture Recompression: ✅ Enabled (saves VRAM)
-- Resolution Scale: 1x-2x (depending on GPU)
-- Backend Multithreading: ✅ Enabled
-```
-
-#### Memory Optimization
-```bash
-# Windows optimizations
-1. Set Windows to High Performance mode
-2. Disable Windows Game Mode
-3. Close unnecessary background apps
-4. Increase virtual memory (pagefile)
-5. Use RAM disk for shader cache (if 32GB+ RAM)
-```
-
-### Game-Specific Performance Mods
-
-#### 60 FPS Patches
-```bash
-# Popular 60 FPS mods
-- The Legend of Zelda: Breath of the Wild
-- Super Mario Odyssey
-- Pokémon Legends: Arceus
-- Xenoblade Chronicles 3
-
-# Installation
-1. Download mod from GameBanana/NexusMods
-2. Extract to mods/[TitleID]/
-3. Enable in game properties
-```
-
-#### Resolution Mods
-```bash
-# High-resolution texture packs
-- Zelda: Breath of the Wild 4K textures
-- Super Mario Odyssey HD pack
-- Pokémon Sword/Shield enhanced
-
-# Installation same as performance mods
-```
-
-## 🎯 Game-Specific Configurations
-
-### The Legend of Zelda: Breath of the Wild
-```bash
-# Optimal settings
-Graphics:
-- Resolution Scale: 2x (if GPU powerful)
-- Backend: Vulkan
-- V-Sync: ✅ Enabled
-
-Recommended mods:
-- 60 FPS unlock
-- High resolution shadows
-- Enhanced draw distance
-- 4K texture pack
-
-Performance: Excellent with modern hardware
-```
-
-### Super Mario Odyssey
-```bash
-# Recommended configuration
-Graphics:
-- Resolution Scale: 1x-2x
-- Anti-aliasing: SMAA
-- V-Sync: ✅ Enabled
-
-CPU:
-- PTC: ✅ Essential for smooth gameplay
-- JIT: ✅ Enabled
-
-Performance: Generally excellent, stable 60 FPS
-```
-
-### Pokémon Legends: Arceus
-```bash
-# Special optimization needed
-Graphics:
-- Resolution Scale: 1x (recommended)
-- Backend: Vulkan preferred
-- Shader Cache: ✅ Critical
-
-Mods:
-- 60 FPS patch available
-- Draw distance improvement
-- Texture enhancement
-
-Note: Resource-intensive game
-```
-
-### Xenoblade Chronicles 3
-```bash
-# Demanding game settings
-Graphics:
-- Resolution Scale: 1x (very demanding)
-- Backend: Vulkan
+- Shader Cache: ✅ Enabled
 - Texture Recompression: ✅ Enabled
-
-CPU:
-- All optimizations enabled
-- Close background apps
-
-Performance: Variable, demanding on CPU/GPU
+- Resolution Scale: 1x (or higher if sufficient performance). Same for Anti Aliasing, scaling filter and anisotropic filtering, adjust the value according to your PC's power
 ```
 
-### Super Smash Bros. Ultimate
+## 🌐 Multiplayer mode configuration
+
+### Enabling online mode
+
+{{< admonition info "Network configuration" >}}
+**Go to** `Options → Settings → Network → Mode` and select **RyuLDN**.
+{{< /admonition >}}
+
+### Recommended connection mode
+
+| Connection Type | Action in game | Result |
+|-----------------|----------------|--------|
+| **❌ To avoid** | "Online" or "Internet" options | Connection to Nintendo servers |
+| **✅ Recommended** | "Play locally" or "Local wireless" options | Connection via RyuLDN |
+
+### Connection process
+
+```
+1. RyuLDN configuration enabled ✅
+2. Game launch
+3. Select "Play locally" in menu
+4. Automatic connection with other Ryujinx players
+```
+
+{{< admonition tip "Multiplayer advice" >}}
+Make sure all players use **the same version** of the game and have **RyuLDN enabled** for optimal connection!
+{{< /admonition >}}
+
+## 🛠️ Common troubleshooting
+
+### Problem: Game won't launch
 ```bash
-# Competitive gaming setup
-Graphics:
-- Resolution Scale: 1x (for consistency)
-- V-Sync: ❌ Disabled (reduces input lag)
-- Backend: Vulkan
-
-CPU:
-- Maximum performance settings
-- High priority process
-
-Network: Local multiplayer supported
+Solutions:
+1. Check that firmware is installed
+2. Check that prod.keys are present
+3. Test with different graphics settings
 ```
 
-### Animal Crossing: New Horizons
+### Problem: Poor performance
 ```bash
-# Casual gaming optimization
-Graphics:
-- Resolution Scale: 2x-3x possible
-- Anti-aliasing: FXAA
-- Backend: Vulkan or OpenGL
-
-Performance: Excellent, not demanding
-Quality improvements very noticeable
+Solutions:
+1. Reduce resolution to 1x
+2. Temporarily disable V-Sync
+3. Close other applications
+4. Use Vulkan instead of OpenGL
 ```
 
-## 🛠️ Advanced Features
-
-### Mods and Homebrew
-
-#### Installing Game Mods
+### Problem: Frequent crashes
 ```bash
-# Mod installation process
-1. Download mod from trusted source
-2. Extract to: mods/[TitleID]/
-3. Right-click game → Properties → Mods
-4. Enable desired mods
-5. Launch game
-
-# Popular mod sources
-- GameBanana
-- NexusMods
-- GBAtemp forums
-- GitHub repositories
+Solutions:
+1. Update Ryujinx to latest version
+2. Check integrity of your game files
+3. Reinstall firmware
+4. Test with default settings
 ```
-
-#### Homebrew Applications
-```bash
-# Running homebrew
-1. Download .nro homebrew files
-2. File → Load Homebrew
-3. Select .nro file
-4. Application launches
-
-# Popular homebrew
-- Goldleaf (file manager)
-- Tinfoil (game installer)
-- Atmosphere (CFW loader)
-- Checkpoint (save manager)
-```
-
-### Save Management
-
-#### Save Location
-```bash
-# Save data location
-Windows: %APPDATA%\Ryujinx\bis\user\save\
-Linux: ~/.config/Ryujinx/bis/user/save/
-macOS: ~/Library/Application Support/Ryujinx/bis/user/save/
-```
-
-#### Backup and Restore
-```bash
-# Automatic backup
-1. Settings → System → Auto-save
-2. Configure backup interval
-3. Choose backup location
-
-# Manual backup
-1. File → Export/Import Save Data
-2. Select game and save slot
-3. Choose export location
-
-# Cloud sync (recommended)
-- OneDrive, Google Drive, Dropbox
-- Sync save folder automatically
-```
-
-#### Save Transfer from Real Switch
-```bash
-# Using Checkpoint (requires CFW)
-1. Install Checkpoint on Switch
-2. Export saves to SD card
-3. Transfer to PC
-4. Import via Ryujinx save manager
-
-# Compatibility: Most saves transfer perfectly
-```
-
-## 🔧 Troubleshooting
-
-### Common Launch Issues
-
-#### Game Won't Start
-```bash
-System checks:
-1. Firmware installed and up to date
-2. prod.keys present and valid
-3. Game file not corrupted (check hash)
-4. Sufficient free disk space
-5. Latest Ryujinx version
-```
-
-#### Black Screen/Crash on Boot
-```bash
-Solutions in order:
-1. Change graphics backend (Vulkan ↔ OpenGL)
-2. Disable mods temporarily
-3. Reset game-specific settings
-4. Verify game dump integrity
-5. Update GPU drivers
-```
-
-#### Shader Compilation Stuttering
-```bash
-Shader cache optimization:
-1. Let shaders compile fully (first run)
-2. Enable PTC for CPU shaders
-3. Download pre-compiled shader cache
-4. Use SSD for cache storage
-5. Don't delete cache folder
-```
-
-### Performance Issues
-
-#### Low FPS/Stuttering
-```bash
-Performance optimization steps:
-1. Enable all CPU optimizations (JIT, PTC)
-2. Use Vulkan graphics backend
-3. Reduce resolution scale to 1x
-4. Close background applications
-5. Set Windows to High Performance
-6. Update graphics drivers
-```
-
-#### Memory Issues
-```bash
-RAM optimization:
-1. Close browser tabs and heavy apps
-2. Increase Windows virtual memory
-3. Use 16GB+ RAM for demanding games
-4. Monitor RAM usage in Task Manager
-5. Restart Ryujinx between games
-```
-
-#### GPU Issues
-```bash
-Graphics troubleshooting:
-1. Update GPU drivers to latest
-2. Test different graphics backends
-3. Disable GPU overclocking
-4. Monitor GPU temperatures
-5. Reduce resolution/effects
-```
-
-### Audio Issues
-
-#### No Audio/Distorted Sound
-```bash
-Audio solutions:
-1. Change audio backend (SDL2 ↔ OpenAL)
-2. Adjust buffer size (512, 1024, 2048)
-3. Update audio drivers
-4. Check Windows audio settings
-5. Test with different games
-```
-
-#### Audio Lag/Desync
-```bash
-Synchronization fixes:
-1. Enable V-Sync
-2. Adjust audio buffer size
-3. Close audio applications
-4. Check system audio latency
-5. Use exclusive audio mode
-```
-
-## 📊 Compatibility and Performance
-
-### Compatibility Statistics
-| Status | Percentage | Description |
-|--------|------------|-------------|
-| **Perfect** | ~70% | Works flawlessly |
-| **Great** | ~20% | Minor issues |
-| **Good** | ~8% | Playable with limitations |
-| **Poor** | ~2% | Major problems |
-
-### Perfectly Compatible Games
-
-#### First-Party Nintendo
-```bash
-✅ The Legend of Zelda: Breath of the Wild
-✅ Super Mario Odyssey
-✅ Mario Kart 8 Deluxe
-✅ Super Smash Bros. Ultimate
-✅ Animal Crossing: New Horizons
-✅ Splatoon 2/3
-✅ Pokémon Sword/Shield
-✅ Super Mario Party
-```
-
-#### Third-Party Highlights
-```bash
-✅ The Witcher 3: Wild Hunt
-✅ Doom (2016) / Doom Eternal
-✅ Skyrim Anniversary Edition
-✅ Diablo III: Eternal Collection
-✅ Hades
-✅ Celeste
-✅ Ori and the Blind Forest
-```
-
-### Performance Benchmarks
-
-#### Test Configuration: i7-10700K, RTX 3070, 32GB RAM
-
-| Game | Resolution | Average FPS | CPU Usage | GPU Usage |
-|------|------------|-------------|-----------|-----------|
-| **Zelda: BotW** | 1080p | 58-60 | 65% | 70% |
-| **Mario Odyssey** | 1080p | 60 | 45% | 55% |
-| **Smash Ultimate** | 1080p | 60 | 50% | 40% |
-| **Pokémon Legends** | 720p | 45-55 | 80% | 85% |
-| **Xenoblade 3** | 720p | 35-50 | 90% | 95% |
-
-## 🌐 Resources and Community
-
-### Official Resources
-- [🏠 Official Ryujinx Site](https://ryujinx.org/)
-- [📊 Compatibility List](https://github.com/Ryujinx/Ryujinx-Games-List)
-- [📚 Official Wiki](https://github.com/Ryujinx/Ryujinx/wiki)
-- [🔧 Setup Guide](https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide)
-
-### Active Communities
-- [💬 Ryujinx Discord](https://discord.gg/ryujinx)
-- [🗨️ Reddit r/Ryujinx](https://www.reddit.com/r/Ryujinx/)
-- [🌐 GBAtemp Forums](https://gbatemp.net/categories/nintendo-switch-emulation.283/)
-- [📺 YouTube Guides](https://www.youtube.com/results?search_query=ryujinx+guide)
-
-### Development and Contribution
-- [💻 GitHub Ryujinx](https://github.com/Ryujinx/Ryujinx)
-- [🐛 Bug Reports](https://github.com/Ryujinx/Ryujinx/issues)
-- [💰 Patreon Support](https://www.patreon.com/ryujinx)
-- [🔧 Contributing Guide](https://github.com/Ryujinx/Ryujinx/blob/master/CONTRIBUTING.md)
-
-### Switch Homebrew Tools
-- [🔧 Atmosphere CFW](https://github.com/Atmosphere-NX/Atmosphere)
-- [📁 Goldleaf](https://github.com/XorTroll/Goldleaf) - File manager
-- [💾 Checkpoint](https://github.com/FlagBrew/Checkpoint) - Save manager
-- [🔍 nxdumptool](https://github.com/DarkMatterCore/nxdumptool) - Game dumper
 
 ## ❓ FAQ - Frequently Asked Questions
 
-### General Questions
+### General questions
 
-**Q: Is Ryujinx free?**
-**A:** Yes, Ryujinx is completely free and open-source.
+**Q: Is Ryujinx legal?**
+**A:** Yes, emulation is legal. However, you must legally own all games and firmware you use.
 
-**Q: Can I use my real Switch saves?**
-**A:** Yes, with proper tools and CFW, save transfer is possible.
+**Q: Can I play online with Ryujinx?**
+**A:** Yes, via RyuLDN for local play emulation.
 
-**Q: Do I need a powerful PC?**
-**A:** Modern mid-range hardware recommended. i5-8400 + GTX 1660 minimum.
+**Q: What are the minimum system requirements?**
+**A:** Windows 10 64-bit, Intel Core i5-4430 / AMD FX-6300, 8GB RAM, DirectX 11 compatible GPU.
 
-### Technical Questions
+### Technical questions
 
 **Q: Vulkan or OpenGL?**
-**A:** Vulkan generally offers better performance. OpenGL for compatibility issues.
+**A:** Vulkan is generally more performant on recent GPUs. OpenGL can be more stable on some systems.
 
-**Q: Why do some games stutter initially?**
-**A:** Shader compilation on first run. Enable PTC and be patient.
+**Q: How much RAM minimum?**
+**A:** 8GB minimum, 16GB recommended, 32GB for the heaviest games.
 
-**Q: Can I play online?**
-**A:** Local wireless works. Online play not supported (Nintendo servers).
-
-### Legal Questions
-
-**Q: Is Switch emulation legal?**
-**A:** Yes, emulation is legal. Only use games you legally own.
-
-**Q: Where do I get games?**
-**A:** Dump from your own Switch cartridges/digital purchases only.
-
-**Q: Can I download firmware?**
-**A:** Must extract from your own Switch console legally.
+**Q: Is my GPU compatible?**
+**A:** Any GPU supporting DirectX 11 or Vulkan 1.1. GTX 1060/RX 580 for good performance.
 
 ## 🎯 Conclusion
 
-Ryujinx is an outstanding Nintendo Switch emulator that offers:
-
-- ✅ **Excellent compatibility** with 90%+ of Switch games
-- ✅ **Superior performance** with proper hardware
-- ✅ **Active development** with constant improvements
-- ✅ **User-friendly interface** and configuration
-- ✅ **Advanced features** (mods, save management, etc.)
-- ✅ **Cross-platform support** (Windows, Linux, macOS)
-- ✅ **Strong community** and regular updates
-
-With this comprehensive guide, you now know how to:
+With this complete guide, you now have all the keys to:
 - **Install** and configure Ryujinx optimally
-- **Extract** firmware and keys legally
-- **Optimize** performance for your hardware
-- **Install** and manage games, updates, DLC
-- **Use** mods and advanced features
-- **Troubleshoot** common issues
+- **Optimize** performance according to your hardware
+- **Solve** common problems
+- **Enjoy** your Nintendo Switch games with superior quality
 
 ---
 
-> **Important Reminder**: Only use games you legally own. Respect copyrights and support developers by purchasing their games.
+> **Reminder**: Always respect copyrights and support developers by buying their games.
 
-**Enjoy your Nintendo Switch games in enhanced quality on PC! 🎮✨**
+**Have fun with Ryujinx! 🎮✨**
 ````

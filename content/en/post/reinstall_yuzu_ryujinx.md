@@ -4,7 +4,7 @@ description: "Complete guide to cleanly reinstall Nintendo Switch emulators Yuzu
 date: 2025-06-04
 lastmod: 2025-06-04
 categories: ["gaming", "emulation", "tutorials"]
-tags: ["yuzu", "ryujinx", "nintendo-switch", "emulation", "backup", "save-data", "reinstallation"]
+tags: ["yuzu", "ryujinx", "nintendo-switch", "emulation", "backup", "save", "reinstallation"]
 series: ["Emulation Guides"]
 author: "Axekin"
 draft: false
@@ -15,7 +15,7 @@ weight: 15
 aliases: 
   - /en/reinstall-yuzu-ryujinx/
   - /en/guides/emulator-backup/
-summary: "Learn how to completely reinstall Yuzu and Ryujinx without losing your precious game saves. Detailed guide with screenshots and backup methods."
+summary: "Learn how to completely reinstall Yuzu and Ryujinx without losing your precious save files. Detailed guide with screenshots and backup methods."
 cover: "/images/covers/yuzu-ryujinx-backup.webp"
 image: "/images/covers/yuzu-ryujinx-backup.webp"
 showtoc: true
@@ -45,16 +45,13 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 
 ### Step 1: Backup game data
 
-#### Locate save files
+#### Locate saves
 
 1. **Launch Yuzu** (if possible)
 2. **Right-click** on the desired game in the list
 3. Select **"Open Save Data Location"**
 
-![Yuzu context menu](/images/yuzu-right-click-menu.png)
-*Right-click menu on a game in Yuzu*
-
-#### Backup the content
+#### Backup content
 
 4. **Select all content** from the folder that opens (Ctrl+A)
 5. **Copy** the files (Ctrl+C)
@@ -77,7 +74,7 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 
 #### Repeat for all games
 
-8. **Repeat this operation** for each game you want to keep the save for
+8. **Repeat this operation** for each game whose save you want to preserve
 9. **Note the name** of each folder to facilitate restoration
 
 ### Step 2: Delete Yuzu data
@@ -87,9 +84,6 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 1. Press **Windows + R**
 2. Type `%appdata%` and press **Enter**
 
-![Run dialog box](/images/windows-run-appdata.png)
-*Access to AppData folder via Windows + R*
-
 #### Delete Yuzu folder
 
 3. Navigate to the **"yuzu"** folder
@@ -98,22 +92,9 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 
 > **💡 Tip**: If the folder is in use, completely close Yuzu via Task Manager.
 
-### Step 3: Reinstall Yuzu
+### Step 3: [Reinstall Yuzu](http://localhost:1313/en/post/yuzu/)
 
-#### Clean installation
-
-1. **Download** the latest version of Yuzu from the official website
-2. **Uninstall** the old version if still present
-3. **Install** the new version with default settings
-4. **Launch** Yuzu for initial configuration
-
-#### Basic configuration
-
-5. **Configure** graphics settings according to your hardware
-6. **Add** your game folders
-7. **Install** firmware and keys if necessary
-
-### Step 4: Restore save files
+### Step 4: Restore saves
 
 #### Put back save files
 
@@ -136,12 +117,12 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 2. **Right-click** on the desired game
 3. Select **"Open User Save Directory"**
 
-![Ryujinx menu](/images/ryujinx-save-menu.png)
+![Ryujinx Menu](/images/path_save_1.png)
 *Save options in Ryujinx*
 
 #### Backup additional data
 
-4. If available, also click on **"Open Mod Data Directory"** or additional data
+4. If available, also click on **"Open Device Save Directory"** and/or BCAT
 5. **Copy** all content to your backup folders
 6. **Organize** by game name like for Yuzu
 
@@ -156,52 +137,21 @@ This guide explains **how to cleanly reinstall** these emulators **without losin
 
 ### Step 3: Reinstallation and restoration
 
-#### Reinstall Ryujinx
+#### [Reinstall Ryujinx](http://localhost:1313/en/post/ryujinx/)
 
-1. **Download** the latest version of Ryujinx
-2. **Cleanly install** the emulator
-3. **Configure** basic settings
-
-#### Restore save files
+#### Restore saves
 
 4. **Launch each game** once
 5. **Close** Ryujinx
 6. **Replace** save files with your backups
 7. **Test** that everything works correctly
 
-## Method comparison
-
-| Aspect | Yuzu | Ryujinx |
-|--------|------|---------|
-| **Save access** | Right-click → Open Save Data Location | Right-click → Open User Save Directory |
-| **Config folder** | `%appdata%\yuzu` | `%appdata%\Ryujinx` |
-| **Additional data** | Automatic | Separate Mod Data Directory |
-| **Complexity** | Simple | Simple |
-
-## Tips and best practices
-
-### Automatic backups
-
-**Automatic backup script (Windows):**
-```batch
-@echo off
-set backup_dir=C:\Backup_Emulators\%date:~-4,4%-%date:~-10,2%-%date:~-7,2%
-mkdir "%backup_dir%"
-
-xcopy "%appdata%\yuzu\nand\user\save" "%backup_dir%\Yuzu_Saves\" /E /I /Y
-xcopy "%appdata%\Ryujinx\bis\user\save" "%backup_dir%\Ryujinx_Saves\" /E /I /Y
-
-echo Backup completed in %backup_dir%
-pause
-```
-
-### Important checks
+### Important verifications
 
 **Before reinstallation:**
 - ✅ Complete backups created
 - ✅ Game names noted
 - ✅ Firmware/keys available
-- ✅ Hardware configuration noted
 
 **After reinstallation:**
 - ✅ Emulator starts correctly
@@ -219,68 +169,9 @@ pause
 - Corrupted files
 
 **Solutions:**
-1. Check exact file location
+1. Check the exact file location
 2. Try with a similar emulator version
 3. Use an older backup
-
-#### 💾 Large save files
-
-**Optimization:**
-- Compress backup folders (.zip, .7z)
-- Use cloud storage for security
-- Create incremental backups
-
-#### ⚠️ Configuration loss
-
-**Preventive backup:**
-```
-📁 Complete_Backup/
-├── 📁 Saves/ (game saves)
-├── 📁 Config/ (configuration files)
-├── 📁 Keys/ (keys and firmware)
-└── 📄 settings_backup.txt (noted settings)
-```
-
-## Recommended tools
-
-### Save managers
-
-| Tool | Description | Advantages |
-|------|-------------|------------|
-| **JKSV** | Switch homebrew manager | Native saves |
-| **Checkpoint** | Alternative to JKSV | User-friendly interface |
-| **Save Manager** | Third-party PC tool | Automation |
-
-### Cloud synchronization
-
-**Recommended services:**
-- **Google Drive** - 15 GB free
-- **OneDrive** - Windows integration
-- **Dropbox** - Fast synchronization
-- **Git** - Versioning for experts
-
-## Advanced troubleshooting
-
-### Emergency recovery
-
-**If reinstallation fails:**
-
-1. **Safe mode**: Start Windows in safe mode
-2. **Registry cleanup**: Use CCleaner or equivalent
-3. **Portable installation**: Test with portable versions
-4. **System restore**: Windows restore point
-
-### Migration to new PC
-
-**Transfer entire environment:**
-
-```bash
-# Folders to copy
-%appdata%\yuzu\           → New PC
-%appdata%\Ryujinx\        → New PC
-[Games_Folder]\           → New PC
-[Backup_Folder]\          → New PC
-```
 
 ## Conclusion
 
@@ -306,23 +197,14 @@ Reinstalling **Yuzu** and **Ryujinx** while preserving your saves is a simple pr
 ## FAQ - Frequently Asked Questions
 
 **Q: Can I transfer my saves between Yuzu and Ryujinx?**
-A: Generally not directly, save formats differ. Use specialized conversion tools if needed.
+**A:** Yes, there are plenty of tutorials available on the internet
 
 **Q: How long does the complete procedure take?**
-A: About 30-60 minutes depending on the number of games and your PC speed.
-
-**Q: Are online saves (Nintendo Switch Online) compatible?**
-A: No, emulator and official console saves are not interchangeable.
+**A:** It depends completely on the number of games you have
 
 **Q: What to do if I forgot to backup before reinstallation?**
-A: Check Windows recycle bin, use file recovery tools, or restore from a system backup.
+**A:** Check Windows recycle bin, use file recovery tools, or restore from a system backup.
 
 ---
 
 **Did this guide help you?** Share your experiences and additional tips in the comments!
-
-**Related articles:**
-- [Optimal Yuzu Configuration](/en/post/yuzu-setup/)
-- [Complete Ryujinx Guide](/en/post/ryujinx-guide/)
-- [Best Switch Emulation Performance](/en/post/switch-emulation-performance/)
-````

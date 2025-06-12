@@ -1,4 +1,4 @@
-baseURL = 'https://wiki.axekin.com/'
+baseURL = 'https://axekin.com/'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 title = 'Wiki of Axekin'

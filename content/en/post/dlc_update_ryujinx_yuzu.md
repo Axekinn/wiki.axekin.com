@@ -1,6 +1,6 @@
 ---
 title: "How to Install DLC and Updates on Yuzu and Ryujinx"
-description: "Complete guide to install DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure"
+description: "Complete guide for installing DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure"
 date: 2025-06-04
 lastmod: 2025-06-04
 categories: ["gaming", "emulation", "tutorials"]
@@ -24,8 +24,6 @@ comments: true
 searchHidden: false
 ---
 
-> **⚠️ Important Note**: Make sure you legally own the games, DLC, and updates you install. This guide is for educational purposes only.
-
 ## Introduction
 
 Installing **DLC** (downloadable content) and **updates** on **Yuzu** and **Ryujinx** emulators is a simple but essential process to fully enjoy your emulated Nintendo Switch games.
@@ -36,8 +34,6 @@ This guide explains **step by step** how to proceed on the two most popular emul
 
 **Accepted file types:**
 - **NSP** - Nintendo Submission Package (main format)
-- **XCI** - Nintendo Game Card Image
-- **NCA** - Nintendo Content Archive
 
 **Difference between Update and DLC:**
 - **Update**: Base game update (fixes, improvements)
@@ -53,24 +49,18 @@ This guide explains **step by step** how to proceed on the two most popular emul
 2. In the menu bar, click on **"File"**
 3. Select **"Install Files to NAND"**
 
-![Yuzu File Menu](/images/yuzu-file-menu.png)
-*File menu with installation option in Yuzu*
-
 #### Step 2: Select the file
 
 4. A **file selection window** opens
 5. **Navigate** to the location of your DLC/Update file
-6. **Select** the file (.nsp, .xci, or .nca)
-7. Click **"Open"**
-
-![Yuzu file selection](/images/yuzu-file-selection.png)
-*File selection window in Yuzu*
+6. **Select** the file (.nsp)
+7. Click on **"Open"**
 
 #### Step 3: Confirm installation
 
 8. Yuzu **analyzes the file** and displays information
 9. A dialog box appears asking for confirmation
-10. Click **"Yes"** to proceed with installation
+10. Click on **"Yes"** to proceed with installation
 11. **Wait** for installation to complete (progress bar)
 
 #### Step 4: Verification
@@ -94,24 +84,18 @@ This guide explains **step by step** how to proceed on the two most popular emul
 2. **Right-click** on the game you want to update
 3. In the context menu, select **"Manage Updates"**
 
-![Ryujinx context menu](/images/ryujinx-context-menu.png)
-*Right-click menu with Manage Updates option*
-
 #### Step 2: Add the update
 
 4. The **"Manage Updates"** window opens
-5. Click the **"Add"** or **"Browse"** button
-6. **Select** your update file (.nsp or .xci)
-7. Click **"Open"** to add it
+5. Click on the **"Add"** or **"Browse"** button
+6. **Select** your update file (.nsp)
+7. Click on **"Open"** to add it
 
 #### Step 3: Apply the update
 
 8. Your update appears in the list with **its version**
 9. **Check** the box next to the update to activate it
-10. Click **"Save"** to apply changes
-
-![Ryujinx update management](/images/ryujinx-update-manager.png)
-*Update management interface in Ryujinx*
+10. Click on **"Save"** to apply changes
 
 #### Update verification
 
@@ -129,59 +113,21 @@ This guide explains **step by step** how to proceed on the two most popular emul
 3. **Check** the DLC to activate it
 4. **Save** to apply
 
-![Ryujinx DLC management](/images/ryujinx-dlc-manager.png)
-*DLC management interface in Ryujinx*
-
-## Method Comparison
-
-| Aspect | Yuzu | Ryujinx |
-|--------|------|---------|
-| **Method** | File → Install Files to NAND | Right-click → Manage Updates/DLC |
-| **Simplicity** | Very simple, one method | Slightly more steps |
-| **Management** | Direct installation | Individual management per game |
-| **Verification** | Automatic | Visual in the list |
-| **Flexibility** | Less control | More granular control |
-
-## Management and Organization
-
-### Organize your DLC/Update files
-
-**Recommended folder structure:**
-```
-📁 Nintendo_Switch_Content/
-├── 📁 Games/
-│   ├── game1.nsp
-│   ├── game2.xci
-│   └── game3.nsp
-├── 📁 Updates/
-│   ├── 📁 Game1/
-│   │   ├── update_v1.1.0.nsp
-│   │   └── update_v1.2.0.nsp
-│   └── 📁 Game2/
-│       └── update_v2.0.1.nsp
-└── 📁 DLC/
-    ├── 📁 Game1/
-    │   ├── dlc1.nsp
-    │   └── dlc2.nsp
-    └── 📁 Game2/
-        └── season_pass.nsp
-```
-
 ### Check installed versions
 
 #### In Yuzu
 1. **Right-click** on the game → **"Properties"**
 2. **"General"** tab → Check version
-3. **"Installed Content"** tab → DLC list
+3. **"Installed Content"** tab → List of DLC
 
 #### In Ryujinx
 1. **Information** visible directly in the game list
 2. **Right-click** → **"Manage Updates/DLC"** for details
 3. Version displayed next to the game name
 
-## Troubleshooting Common Problems
+## Troubleshooting Common Issues
 
-### Installation issues
+### Installation problems
 
 #### 🚫 File not recognized
 
@@ -194,7 +140,7 @@ This guide explains **step by step** how to proceed on the two most popular emul
 1. Check file format (.nsp, .xci, .nca)
 2. Re-download the file if corrupted
 3. Install updated prod.keys
-4. Verify firmware compatibility
+4. Check that firmware is compatible
 
 #### ⚠️ Installation fails
 
@@ -209,136 +155,26 @@ This guide explains **step by step** how to proceed on the two most popular emul
 3. **Run as administrator** if necessary
 4. **Update** the emulator to the latest version
 
-### Compatibility issues
-
-#### Firmware version
-
-**Check required firmware:**
-```
-Game → Properties → Required System Version
-```
-
-**Firmware update:**
-- Download corresponding firmware
-- Install via emulator tools
-- Restart emulator
-
-#### Decryption keys
-
-**Key locations:**
-- **Yuzu**: `%appdata%/yuzu/keys/`
-- **Ryujinx**: `%appdata%/Ryujinx/system/`
-
-**Required files:**
-- `prod.keys` (main keys)
-- `title.keys` (title keys)
-
-## Best Practices
-
-### Backup and security
-
-**Before installation:**
-- ✅ **Backup** your important saves
-- ✅ **Note** currently installed versions
-- ✅ **Check** emulator/firmware compatibility
-- ✅ **Test** with a less important game first
-
-### Efficient organization
-
-**Naming system:**
-```
-GameName_Update_v1.2.0.nsp
-GameName_DLC_SeasonPass.nsp
-GameName_DLC_Expansion1.nsp
-```
-
-**Advantages:**
-- Quick identification
-- Avoids duplicates
-- Facilitates management
-
-### Regular maintenance
-
-**Periodic cleanup:**
-1. **Delete** old update versions
-2. **Check** used storage space
-3. **Backup** important DLC
-4. **Document** working combinations
-
-## Special Use Cases
-
-### Games with multiple DLC
-
-**Example: The Legend of Zelda: Breath of the Wild**
-```
-📁 BOTW_Content/
-├── BOTW_Update_v1.6.0.nsp
-├── BOTW_DLC_Pack1_MasterTrials.nsp
-├── BOTW_DLC_Pack2_ChampionsBallad.nsp
-└── BOTW_SeasonPass_Complete.nsp
-```
-
-**Recommended installation:**
-1. **Update** first
-2. **DLC** in release order
-3. **Test** after each installation
-
-### Migration between emulators
-
-**Yuzu to Ryujinx:**
-1. Installed DLC/Updates don't transfer automatically
-2. **Reinstall** all content on the new emulator
-3. **Check** compatibility before migration
-
 ## Conclusion
 
 Installing **DLC and updates** on Yuzu and Ryujinx is a simple process once mastered. The main difference lies in the approach: Yuzu uses a universal method while Ryujinx offers more granular management.
 
-### Key points to remember
-
-> **🎯 Procedure summary:**
-> 
-> **Yuzu (Universal):**
-> - File → Install Files to NAND
-> - Select file → Confirm
-> - Works for both Update AND DLC
-> 
-> **Ryujinx (Separate):**
-> - Right-click → Manage Updates/DLC
-> - Add → Select → Save
-> - Separate Update/DLC management
-
-### Final tips
-
-**For optimal experience:**
-- Keep your emulators updated
-- Organize your files clearly
-- Backup regularly
-- Test progressively
-
 ## FAQ - Frequently Asked Questions
 
 **Q: Can I install multiple versions of the same DLC?**
-A: No, only one version per DLC. Installing a new version automatically replaces the old one.
+**A:** No, only one version per DLC. Installing a new version automatically replaces the old one.
 
 **Q: Do DLC work between different game regions?**
-A: Generally no. DLC must match the base game region (EU, US, JP).
+**A:** Generally no. DLC must match the base game region (EU, US, JP).
 
 **Q: What to do if installation gets stuck?**
-A: Close the emulator, restart as administrator, and try again. Also check available disk space.
+**A:** Close the emulator, restart as administrator, and try again. Also check available disk space.
 
-**Q: Are save files affected by DLC installation?**
-A: No, existing saves remain intact. Some DLC may add new content to saves.
+**Q: Are saves affected by DLC installation?**
+**A:** No, existing saves remain intact. Some DLC may add new content to saves.
 
 **Q: How to uninstall a DLC or update?**
-A: In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you'll need to delete from the emulator's system settings.
+**A:** In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you'll need to remove from the emulator's system settings.
 
 ---
-
-**Did this guide help you?** Share your installation experiences and favorite games with DLC in the comments!
-
-**Related articles:**
-- [Optimal Yuzu Configuration](/en/post/yuzu-setup/)
-- [Complete Ryujinx Guide](/en/post/ryujinx-guide/)
-- [Installing Mods on Switch Emulators](/en/post/install-switch-mods/)
 ````

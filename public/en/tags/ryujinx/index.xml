@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryujinx on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/ryujinx/</link>
+    <link>http://localhost:1313/en/tags/ryujinx/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -12,10 +12,10 @@
     
     <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
     
-    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,17 +23,430 @@
     
 
     <item>
+      <title>Ryujinx Installation and Configuration</title>
+      <link>http://localhost:1313/en/post/ryujinx/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Ryujinx Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-ryujinx">
+<a class="header-anchor" href="#-introduction-to-ryujinx"></a>
+🎮 Introduction to Ryujinx
+</h2><p><strong>Ryujinx</strong> is an open-source Nintendo Switch emulator written in C#. It allows you to play Nintendo Switch games on PC with excellent performance and constantly improving compatibility.</p>
+<h2 id="-step-1-downloading-ryujinx">
+<a class="header-anchor" href="#-step-1-downloading-ryujinx"></a>
+🔧 Step 1: Downloading Ryujinx
+</h2><h3 id="option-1-stable-version-recommended">
+<a class="header-anchor" href="#option-1-stable-version-recommended"></a>
+Option 1: Stable Version (Recommended)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Visit the official website</span>
+</span></span><span style="display:flex;"><span>https://ryujinx.app/
+</span></span></code></pre></div><ol>
+<li>Click on <strong>&ldquo;Download&rdquo;</strong></li>
+<li>Extract the archive to a dedicated folder (e.g., <code>Documents\Ryujinx</code> or at the root of another drive, not C)</li>
+</ol>
+<h2 id="game-download">
+<a class="header-anchor" href="#game-download"></a>
+Game Download
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/search?platform=switch">🎮 Axekin Games - Nintendo Switch</a></strong> to access the Nintendo Switch game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-file-extraction">
+<a class="header-anchor" href="#step-3-file-extraction"></a>
+Step 3: File extraction
+</h3><p>Once the download is finished, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You&rsquo;ll get game files ready to be used with Ryujinx! 🎯</p>
+<h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Create this folder structure to organize your files:</p>
+<p>For optimal organization of your library, here&rsquo;s the recommended tree structure:</p>
+<pre tabindex="0"><code>Switch Games/
+├── Mario Kart 8 Deluxe/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── New Super Mario Bros U Deluxe/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── The Legend of Zelda BOTW/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Super Mario Odyssey/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game)
+</code></pre><h3 id="content-types">
+<a class="header-anchor" href="#content-types"></a>
+Content types
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Understanding folders
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>BASE</strong> 📁: The main game you download</li>
+<li><strong>UPDATE</strong> 📁: Updates and patches (recommended)</li>
+<li><strong>DLC</strong> 📁: Additional paid content (optional but recommended)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advantages of this organization
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Automatic detection</strong>: Games are automatically added to the emulator<br>
+✅ <strong>Simplified management</strong>: No need to manually select each ROM<br>
+✅ <strong>Clear organization</strong>: Easy to see what content you have for each game<br>
+✅ <strong>Easy maintenance</strong>: Simplified content addition/removal
+  </div>
+</div>
+<blockquote>
+<p><strong>📝 Important note</strong>: If a game doesn&rsquo;t have updates or DLC, there&rsquo;s no need to create the corresponding folders. Only create folders for content you actually have.</p></blockquote>
+<h3 id="result">
+<a class="header-anchor" href="#result"></a>
+Result
+</h3><p>Once this structure is in place, your emulator will automatically detect all games present in the &ldquo;Switch Games&rdquo; folder and organize them properly in your library! 🎯</p>
+<h2 id="-portable-configuration-recommended">
+<a class="header-anchor" href="#-portable-configuration-recommended"></a>
+💡 Portable Configuration (Recommended)
+</h2><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Portable installation
+  </div>
+  <div class="admonition-content">
+    <strong>Before the first launch</strong>, create a folder named <code>portable</code> at the root of the Ryujinx directory. This operation will make the installation entirely portable.
+  </div>
+</div>
+<h3 id="advantages-of-portable-mode">
+<a class="header-anchor" href="#advantages-of-portable-mode"></a>
+Advantages of portable mode
+</h3><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Normal mode</th>
+          <th>Portable mode</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Configurations</strong></td>
+          <td>Stored in system</td>
+          <td>Stored in folder</td>
+      </tr>
+      <tr>
+          <td><strong>Saves</strong></td>
+          <td>Scattered on computer</td>
+          <td>Centralized in folder</td>
+      </tr>
+      <tr>
+          <td><strong>Portability</strong></td>
+          <td>❌ Tied to system</td>
+          <td>✅ Easily movable</td>
+      </tr>
+      <tr>
+          <td><strong>Backup</strong></td>
+          <td>Hard to locate</td>
+          <td>Simple to backup</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="structure-after-creating-portable-folder">
+<a class="header-anchor" href="#structure-after-creating-portable-folder"></a>
+Structure after creating portable folder
+</h3><pre tabindex="0"><code>📁 Ryujinx/
+├── 🎮 Ryujinx.exe
+├── 📁 portable/              # ← Create this folder!
+│   ├── 📁 bis/
+│   ├── 📁 games/
+│   ├── 📁 profiles/
+│   └── 📁 system/
+└── 📄 Other files...
+</code></pre><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Result
+  </div>
+  <div class="admonition-content">
+    <strong>All your data</strong> (configurations, saves, profiles) will be stored in the <code>portable</code> folder, greatly facilitating management and backups!
+  </div>
+</div>
+<h3 id="creation-instructions">
+<a class="header-anchor" href="#creation-instructions"></a>
+Creation instructions
+</h3><ol>
+<li><strong>Navigate</strong> to the Ryujinx installation folder</li>
+<li><strong>Create</strong> a new folder named exactly <code>portable</code></li>
+<li><strong>Launch</strong> Ryujinx - it will automatically detect portable mode</li>
+</ol>
+<blockquote>
+<p><strong>📝 Note</strong>: This operation must be performed <strong>before</strong> the first launch to be taken into account!</p></blockquote>
+<h2 id="-step-3-initial-configuration">
+<a class="header-anchor" href="#-step-3-initial-configuration"></a>
+⚙️ Step 3: Initial configuration
+</h2><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First launch
+</h3><ol>
+<li><strong>Execute</strong> <code>ryujinx.exe</code></li>
+<li><strong>Install keys</strong></li>
+</ol>
+<ul>
+<li><a href="https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&amp;is=68432fd3&amp;hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&amp;">Keys version 20.0.1 | 20.1.0</a></li>
+</ul>
+<h4 id="installation-in-ryujinx">
+<a class="header-anchor" href="#installation-in-ryujinx"></a>
+Installation in Ryujinx
+</h4><ol>
+<li><strong>Open</strong> Ryujinx</li>
+<li><code>File → Open Ryujinx Folder</code></li>
+<li><strong>Navigate</strong> to the <code>system/</code> folder</li>
+<li><strong>Copy</strong> <code>prod.keys</code> and <code>title.keys</code> (if present, but useless) inside</li>
+<li><strong>Restart</strong> Ryujinx</li>
+</ol>
+<h3 id="installing-nintendo-switch-firmware">
+<a class="header-anchor" href="#installing-nintendo-switch-firmware"></a>
+Installing Nintendo Switch firmware
+</h3><ul>
+<li><a href="https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&amp;is=68432fd3&amp;hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&amp;">Firmware 20.1.0</a></li>
+</ul>
+<h4 id="installation-in-ryujinx-1">
+<a class="header-anchor" href="#installation-in-ryujinx-1"></a>
+Installation in Ryujinx
+</h4><ol>
+<li><code>Action → Install Firmware → Install Firmware from a XCI or ZIP</code></li>
+<li><strong>Select</strong> the firmware .zip file</li>
+<li><strong>Wait</strong> for complete installation</li>
+</ol>
+<h3 id="essential-settings-configuration">
+<a class="header-anchor" href="#essential-settings-configuration"></a>
+Essential settings configuration
+</h3><h4 id="interface-settings">
+<a class="header-anchor" href="#interface-settings"></a>
+Interface settings
+</h4><pre tabindex="0"><code>Options → Settings → User Interface
+</code></pre><ul>
+<li><strong>Game Directories</strong>: Set the <strong>Switch Games</strong> directory you created previously</li>
+<li><strong>Autoload DLC/Updates Directories</strong>: Same as above</li>
+<li><strong>Theme</strong>: Choose what you want</li>
+</ul>
+<h4 id="input-settings">
+<a class="header-anchor" href="#input-settings"></a>
+Input settings
+</h4><pre tabindex="0"><code>Options → Settings → Input
+</code></pre><ul>
+<li><strong>Input Device</strong>: Connect your controller, then select it</li>
+<li><strong>Let it do</strong>: Configuration is automatic, change buttons you want afterwards</li>
+<li><strong>Keyboard/mouse</strong>: For keyboard/mouse players, adjust your keys</li>
+</ul>
+<h4 id="system-settings">
+<a class="header-anchor" href="#system-settings"></a>
+System settings
+</h4><pre tabindex="0"><code>Options → Settings → System
+</code></pre><ul>
+<li><strong>System Region</strong>: Your country</li>
+<li><strong>System Language</strong>: Your language</li>
+<li><strong>Audio Backend</strong>: SDL2 (recommended)</li>
+<li><strong>Volume</strong>: 100%</li>
+</ul>
+<h2 id="-performance-optimization">
+<a class="header-anchor" href="#-performance-optimization"></a>
+🚀 Performance optimization
+</h2><h3 id="advanced-settings-for-better-performance">
+<a class="header-anchor" href="#advanced-settings-for-better-performance"></a>
+Advanced settings for better performance
+</h3><h4 id="cpu">
+<a class="header-anchor" href="#cpu"></a>
+CPU
+</h4><pre tabindex="0"><code>Settings → CPU
+- Enable PTC (Profiled Translation Cache): ✅ Enabled
+- Memory Manager Mode: Host
+</code></pre><h4 id="gpu">
+<a class="header-anchor" href="#gpu"></a>
+GPU
+</h4><pre tabindex="0"><code>Settings → Graphics
+- Shader Cache: ✅ Enabled
+- Texture Recompression: ✅ Enabled
+- Resolution Scale: 1x (or higher if sufficient performance). Same for Anti Aliasing, scaling filter and anisotropic filtering, adjust the value according to your PC&#39;s power
+</code></pre><h2 id="-multiplayer-mode-configuration">
+<a class="header-anchor" href="#-multiplayer-mode-configuration"></a>
+🌐 Multiplayer mode configuration
+</h2><h3 id="enabling-online-mode">
+<a class="header-anchor" href="#enabling-online-mode"></a>
+Enabling online mode
+</h3><div class="admonition admonition-info">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Network configuration
+  </div>
+  <div class="admonition-content">
+    <strong>Go to</strong> <code>Options → Settings → Network → Mode</code> and select <strong>RyuLDN</strong>.
+  </div>
+</div>
+<h3 id="recommended-connection-mode">
+<a class="header-anchor" href="#recommended-connection-mode"></a>
+Recommended connection mode
+</h3><table>
+  <thead>
+      <tr>
+          <th>Connection Type</th>
+          <th>Action in game</th>
+          <th>Result</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>❌ To avoid</strong></td>
+          <td>&ldquo;Online&rdquo; or &ldquo;Internet&rdquo; options</td>
+          <td>Connection to Nintendo servers</td>
+      </tr>
+      <tr>
+          <td><strong>✅ Recommended</strong></td>
+          <td>&ldquo;Play locally&rdquo; or &ldquo;Local wireless&rdquo; options</td>
+          <td>Connection via RyuLDN</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="connection-process">
+<a class="header-anchor" href="#connection-process"></a>
+Connection process
+</h3><pre tabindex="0"><code>1. RyuLDN configuration enabled ✅
+2. Game launch
+3. Select &#34;Play locally&#34; in menu
+4. Automatic connection with other Ryujinx players
+</code></pre><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Multiplayer advice
+  </div>
+  <div class="admonition-content">
+    Make sure all players use <strong>the same version</strong> of the game and have <strong>RyuLDN enabled</strong> for optimal connection!
+  </div>
+</div>
+<h2 id="-common-troubleshooting">
+<a class="header-anchor" href="#-common-troubleshooting"></a>
+🛠️ Common troubleshooting
+</h2><h3 id="problem-game-wont-launch">
+<a class="header-anchor" href="#problem-game-wont-launch"></a>
+Problem: Game won&rsquo;t launch
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Check that firmware is installed
+</span></span><span style="display:flex;"><span>2. Check that prod.keys are present
+</span></span><span style="display:flex;"><span>3. Test with different graphics settings
+</span></span></code></pre></div><h3 id="problem-poor-performance">
+<a class="header-anchor" href="#problem-poor-performance"></a>
+Problem: Poor performance
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Reduce resolution to 1x
+</span></span><span style="display:flex;"><span>2. Temporarily disable V-Sync
+</span></span><span style="display:flex;"><span>3. Close other applications
+</span></span><span style="display:flex;"><span>4. Use Vulkan instead of OpenGL
+</span></span></code></pre></div><h3 id="problem-frequent-crashes">
+<a class="header-anchor" href="#problem-frequent-crashes"></a>
+Problem: Frequent crashes
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions:
+</span></span><span style="display:flex;"><span>1. Update Ryujinx to latest version
+</span></span><span style="display:flex;"><span>2. Check integrity of your game files
+</span></span><span style="display:flex;"><span>3. Reinstall firmware
+</span></span><span style="display:flex;"><span>4. Test with default settings
+</span></span></code></pre></div><h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General questions
+</h3><p><strong>Q: Is Ryujinx legal?</strong>
+<strong>A:</strong> Yes, emulation is legal. However, you must legally own all games and firmware you use.</p>
+<p><strong>Q: Can I play online with Ryujinx?</strong>
+<strong>A:</strong> Yes, via RyuLDN for local play emulation.</p>
+<p><strong>Q: What are the minimum system requirements?</strong>
+<strong>A:</strong> Windows 10 64-bit, Intel Core i5-4430 / AMD FX-6300, 8GB RAM, DirectX 11 compatible GPU.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical questions
+</h3><p><strong>Q: Vulkan or OpenGL?</strong>
+<strong>A:</strong> Vulkan is generally more performant on recent GPUs. OpenGL can be more stable on some systems.</p>
+<p><strong>Q: How much RAM minimum?</strong>
+<strong>A:</strong> 8GB minimum, 16GB recommended, 32GB for the heaviest games.</p>
+<p><strong>Q: Is my GPU compatible?</strong>
+<strong>A:</strong> Any GPU supporting DirectX 11 or Vulkan 1.1. GTX 1060/RX 580 for good performance.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>With this complete guide, you now have all the keys to:</p>
+<ul>
+<li><strong>Install</strong> and configure Ryujinx optimally</li>
+<li><strong>Optimize</strong> performance according to your hardware</li>
+<li><strong>Solve</strong> common problems</li>
+<li><strong>Enjoy</strong> your Nintendo Switch games with superior quality</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Reminder</strong>: Always respect copyrights and support developers by buying their games.</p></blockquote>
+<p><strong>Have fun with Ryujinx! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>gaming</category><category>emulation</category><category>tutorials</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
       <title>How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</title>
-      <link>https://wiki.axekin.com/en/post/amibo_switch/</link>
+      <link>http://localhost:1313/en/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/amibo_switch/</guid>
+      <guid>http://localhost:1313/en/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>How to Use Amiibo on Switch Emulators (Yuzu & Ryujinx)</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
-          <blockquote>
-<p><strong>⚠️ Legal Disclaimer</strong>: Amiibo files should come from figurines you legally own. This guide is for educational purposes only.</p></blockquote>
-<h2 id="introduction">
+          <h2 id="introduction">
 <a class="header-anchor" href="#introduction"></a>
 Introduction
 </h2><p><strong>Amiibo</strong> are Nintendo&rsquo;s NFC figurines that unlock special content in many Switch games. Thanks to <strong>Yuzu</strong> and <strong>Ryujinx</strong> emulators, it&rsquo;s possible to use <strong>virtual amiibo</strong> without owning the physical figurines.</p>
@@ -43,14 +456,14 @@ Introduction
 What is a virtual amiibo?
 </h3><p><strong>Definition:</strong></p>
 <ul>
-<li><code>.bin</code> file containing NFC data of an amiibo</li>
+<li><code>.bin</code> file containing NFC data from an amiibo</li>
 <li>Simulates scanning a physical figurine</li>
-<li>Compatible with all amiibo-supporting games</li>
+<li>Compatible with all games supporting amiibo</li>
 </ul>
 <p><strong>Virtual amiibo advantages:</strong></p>
 <ul>
 <li>Access to all amiibo without purchase</li>
-<li>No daily scan limits</li>
+<li>No daily scan limit</li>
 <li>Easy storage and organization</li>
 <li>Instant usage</li>
 </ul>
@@ -68,22 +481,8 @@ Required files
 ├── 📁 Pokemon/
 └── 📁 Fire_Emblem/
 </code></pre><blockquote>
-<p><strong>📥 Download</strong>: <a href="https://mega.nz/file/AXolTKwC#UgYFoVPWQs_MPPaZZxVifaJgnvpqMJRr_psW-Q_U7A">Complete Amiibo Collection</a></p></blockquote>
-<h3 id="file-verification">
-<a class="header-anchor" href="#file-verification"></a>
-File verification
-</h3><p><strong>Expected format:</strong></p>
-<ul>
-<li>Extension: <code>.bin</code></li>
-<li>Size: 540 bytes (exactly)</li>
-<li>Naming: <code>Character_Name.bin</code></li>
-</ul>
-<p><strong>Example files:</strong></p>
-<pre tabindex="0"><code>Link_Breath_of_Wild.bin
-Mario_Super_Mario.bin
-Pikachu_Pokemon.bin
-Isabelle_Animal_Crossing.bin
-</code></pre><h2 id="usage-on-yuzu">
+<p><strong>📥 Download</strong>: Amiibo are already available in the Ryujinx emulator.</p></blockquote>
+<h2 id="usage-on-yuzu">
 <a class="header-anchor" href="#usage-on-yuzu"></a>
 Usage on Yuzu
 </h2><h3 id="step-1-game-preparation">
@@ -97,16 +496,6 @@ Launch and position the game
 <li><strong>Navigate</strong> to the amiibo scan area in the game</li>
 <li><strong>Position yourself</strong> where the game asks to scan an amiibo</li>
 </ol>
-<p><img src="/images/yuzu-amiibo-position.png" alt="TOTK amiibo scan position">
-<em>Position to scan an amiibo in Tears of the Kingdom</em></p>
-<p><strong>Popular compatible games:</strong></p>
-<ul>
-<li>The Legend of Zelda: Breath of the Wild / Tears of the Kingdom</li>
-<li>Super Mario Odyssey</li>
-<li>Animal Crossing: New Horizons</li>
-<li>Fire Emblem: Three Houses</li>
-<li>Super Smash Bros. Ultimate</li>
-</ul>
 <h3 id="step-2-load-the-amiibo">
 <a class="header-anchor" href="#step-2-load-the-amiibo"></a>
 Step 2: Load the amiibo
@@ -118,8 +507,6 @@ Access amiibo menu
 <li>Click on <strong>&ldquo;File&rdquo;</strong></li>
 <li>Select <strong>&ldquo;Load Amiibo&rdquo;</strong></li>
 </ol>
-<p><img src="/images/yuzu-amiibo-menu.png" alt="Yuzu amiibo menu">
-<em>Amiibo loading menu in Yuzu</em></p>
 <h4 id="select-the-file">
 <a class="header-anchor" href="#select-the-file"></a>
 Select the file
@@ -159,7 +546,7 @@ Launch and position
 </h4><ol>
 <li><strong>Start Ryujinx</strong> and launch your game</li>
 <li><strong>Navigate</strong> to the amiibo scan area</li>
-<li><strong>Prepare</strong> to scan (the game usually displays an amiibo icon)</li>
+<li><strong>Get ready</strong> to scan (the game usually displays an amiibo icon)</li>
 </ol>
 <h3 id="step-2-scan-the-amiibo">
 <a class="header-anchor" href="#step-2-scan-the-amiibo"></a>
@@ -172,348 +559,36 @@ Access scan menu
 <li>Click on <strong>&ldquo;Actions&rdquo;</strong></li>
 <li>Select <strong>&ldquo;Scan Amiibo&rdquo;</strong></li>
 </ol>
-<p><img src="/images/ryujinx-amiibo-scan.png" alt="Ryujinx scan menu">
-<em>Amiibo scan menu in Ryujinx</em></p>
 <h4 id="select-the-amiibo">
 <a class="header-anchor" href="#select-the-amiibo"></a>
 Select the amiibo
 </h4><ol start="7">
 <li>A <strong>selection window</strong> appears</li>
-<li><strong>Choose</strong> your amiibo <code>.bin</code> file</li>
+<li><strong>Choose</strong> your amiibo</li>
 <li>Click <strong>&ldquo;Open&rdquo;</strong></li>
 </ol>
 <h3 id="step-3-confirmation">
 <a class="header-anchor" href="#step-3-confirmation"></a>
 Step 3: Confirmation
-</h3><h4 id="scan-verification">
-<a class="header-anchor" href="#scan-verification"></a>
-Scan verification
+</h3><h4 id="verify-the-scan">
+<a class="header-anchor" href="#verify-the-scan"></a>
+Verify the scan
 </h4><ol start="10">
 <li><strong>The amiibo is immediately scanned</strong> in the game</li>
-<li><strong>Verify</strong> that content is unlocked</li>
-<li><strong>Repeat</strong> the operation for other amiibo if needed</li>
+<li><strong>Verify</strong> that the content is unlocked</li>
+<li><strong>Repeat</strong> the operation for other amiibo if necessary</li>
 </ol>
-<h2 id="method-comparison">
-<a class="header-anchor" href="#method-comparison"></a>
-Method Comparison
-</h2><table>
-  <thead>
-      <tr>
-          <th>Aspect</th>
-          <th>Yuzu</th>
-          <th>Ryujinx</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Access menu</strong></td>
-          <td>File → Load Amiibo</td>
-          <td>Actions → Scan Amiibo</td>
-      </tr>
-      <tr>
-          <td><strong>Simplicity</strong></td>
-          <td>2 steps</td>
-          <td>2 steps</td>
-      </tr>
-      <tr>
-          <td><strong>Speed</strong></td>
-          <td>Fast</td>
-          <td>Instant</td>
-      </tr>
-      <tr>
-          <td><strong>Interface</strong></td>
-          <td>Standard</td>
-          <td>More intuitive</td>
-      </tr>
-      <tr>
-          <td><strong>Compatibility</strong></td>
-          <td>Excellent</td>
-          <td>Excellent</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="amiibo-collection-management">
-<a class="header-anchor" href="#amiibo-collection-management"></a>
-Amiibo Collection Management
-</h2><h3 id="recommended-organization">
-<a class="header-anchor" href="#recommended-organization"></a>
-Recommended organization
-</h3><p><strong>Folder structure by series:</strong></p>
-<pre tabindex="0"><code>📁 Amiibo_Collection/
-├── 📁 01_Super_Mario/
-│   ├── Mario.bin
-│   ├── Luigi.bin
-│   ├── Peach.bin
-│   └── Bowser.bin
-├── 📁 02_Legend_of_Zelda/
-│   ├── Link_BOTW.bin
-│   ├── Link_TOTK.bin
-│   ├── Zelda.bin
-│   └── Ganondorf.bin
-├── 📁 03_Pokemon/
-│   ├── Pikachu.bin
-│   ├── Lucario.bin
-│   └── Mewtwo.bin
-└── 📁 04_Animal_Crossing/
-    ├── Isabelle.bin
-    ├── Tom_Nook.bin
-    └── K.K._Slider.bin
-</code></pre><h3 id="renaming-for-easier-usage">
-<a class="header-anchor" href="#renaming-for-easier-usage"></a>
-Renaming for easier usage
-</h3><p><strong>Naming convention:</strong></p>
-<pre tabindex="0"><code>[Series]_[Character]_[Variant].bin
-
-Examples:
-ZELDA_Link_Breath_of_Wild.bin
-MARIO_Mario_Wedding.bin
-POKEMON_Pikachu_Detective.bin
-</code></pre><h2 id="advanced-usage">
-<a class="header-anchor" href="#advanced-usage"></a>
-Advanced Usage
-</h2><h3 id="scanning-multiple-amiibo-quickly">
-<a class="header-anchor" href="#scanning-multiple-amiibo-quickly"></a>
-Scanning multiple amiibo quickly
-</h3><p><strong>Yuzu method:</strong></p>
-<ol>
-<li>Keep amiibo folder open</li>
-<li>Use <strong>Ctrl+O</strong> for quick access</li>
-<li>Double-click files to load</li>
-</ol>
-<p><strong>Ryujinx method:</strong></p>
-<ol>
-<li>Create <strong>bookmarks</strong> to most used amiibo</li>
-<li>Use <strong>Alt+A</strong> as shortcut (if configured)</li>
-</ol>
-<h3 id="amiibo-for-special-content">
-<a class="header-anchor" href="#amiibo-for-special-content"></a>
-Amiibo for special content
-</h3><h4 id="the-legend-of-zelda-botwtotk">
-<a class="header-anchor" href="#the-legend-of-zelda-botwtotk"></a>
-The Legend of Zelda: BOTW/TOTK
-</h4><p><strong>Essential amiibo:</strong></p>
-<ul>
-<li><strong>Link (BOTW)</strong>: Rare materials + chance of legendary sword</li>
-<li><strong>Zelda</strong>: Rare plants and herbs</li>
-<li><strong>Ganondorf</strong>: Dark weapons and unique materials</li>
-<li><strong>Mipha</strong>: Rare fish</li>
-</ul>
-<h4 id="super-mario-odyssey">
-<a class="header-anchor" href="#super-mario-odyssey"></a>
-Super Mario Odyssey
-</h4><p><strong>Useful amiibo:</strong></p>
-<ul>
-<li><strong>Mario (Wedding)</strong>: Wedding costume</li>
-<li><strong>Peach (Wedding)</strong>: Wedding dress for Peach</li>
-<li><strong>Bowser (Wedding)</strong>: Bowser costume</li>
-</ul>
-<h4 id="animal-crossing-new-horizons">
-<a class="header-anchor" href="#animal-crossing-new-horizons"></a>
-Animal Crossing: New Horizons
-</h4><p><strong>Popular amiibo:</strong></p>
-<ul>
-<li><strong>All villagers</strong>: Invitation to your island</li>
-<li><strong>Isabelle</strong>: Special office items</li>
-<li><strong>Tom Nook</strong>: Decoration items</li>
-</ul>
-<h2 id="troubleshooting">
-<a class="header-anchor" href="#troubleshooting"></a>
-Troubleshooting
-</h2><h3 id="common-problems">
-<a class="header-anchor" href="#common-problems"></a>
-Common problems
-</h3><h4 id="-amiibo-not-recognized">
-<a class="header-anchor" href="#-amiibo-not-recognized"></a>
-🚫 Amiibo not recognized
-</h4><p><strong>Possible causes:</strong></p>
-<ul>
-<li>Corrupted file</li>
-<li>Wrong format</li>
-<li>Game not compatible</li>
-</ul>
-<p><strong>Solutions:</strong></p>
-<ol>
-<li>Check file size (540 bytes)</li>
-<li>Re-download the amiibo file</li>
-<li>Test with another amiibo</li>
-<li>Verify game compatibility</li>
-</ol>
-<h4 id="-scan-doesnt-work">
-<a class="header-anchor" href="#-scan-doesnt-work"></a>
-⚠️ Scan doesn&rsquo;t work
-</h4><p><strong>Checks:</strong></p>
-<ol>
-<li>Is the game in &ldquo;amiibo scan&rdquo; mode?</li>
-<li>Are you in the right place in the game?</li>
-<li>Does the emulator support amiibo?</li>
-</ol>
-<p><strong>Solutions:</strong></p>
-<ul>
-<li>Restart the emulator</li>
-<li>Update to latest version</li>
-<li>Check error logs</li>
-</ul>
-<h3 id="specific-errors">
-<a class="header-anchor" href="#specific-errors"></a>
-Specific errors
-</h3><h4 id="invalid-file">
-<a class="header-anchor" href="#invalid-file"></a>
-Invalid file
-</h4><pre tabindex="0"><code>Error: Invalid amiibo file format
-</code></pre><p><strong>Solution:</strong> Verify the file is exactly 540 bytes and has <code>.bin</code> extension</p>
-<h4 id="amiibo-already-used">
-<a class="header-anchor" href="#amiibo-already-used"></a>
-Amiibo already used
-</h4><pre tabindex="0"><code>This amiibo has already been used today
-</code></pre><p><strong>Solution:</strong> Some games limit daily usage. Wait or change the emulator&rsquo;s system date.</p>
-<h2 id="creating-custom-amiibo">
-<a class="header-anchor" href="#creating-custom-amiibo"></a>
-Creating Custom Amiibo
-</h2><h3 id="required-tools">
-<a class="header-anchor" href="#required-tools"></a>
-Required tools
-</h3><p><strong>TagMo (Android):</strong></p>
-<ul>
-<li>Application to create amiibo</li>
-<li>Requires NFC keys</li>
-<li>User-friendly interface</li>
-</ul>
-<p><strong>Amiitool (PC):</strong></p>
-<ul>
-<li>Command line tool</li>
-<li>More technical but powerful</li>
-<li>Compatible Linux/Windows/Mac</li>
-</ul>
-<h3 id="creation-process">
-<a class="header-anchor" href="#creation-process"></a>
-Creation process
-</h3><ol>
-<li><strong>Obtain</strong> base amiibo data</li>
-<li><strong>Modify</strong> desired parameters</li>
-<li><strong>Generate</strong> the <code>.bin</code> file</li>
-<li><strong>Test</strong> on emulator</li>
-</ol>
-<blockquote>
-<p><strong>⚠️ Note</strong>: Creating amiibo requires advanced technical knowledge.</p></blockquote>
-<h2 id="legality-and-ethics">
-<a class="header-anchor" href="#legality-and-ethics"></a>
-Legality and Ethics
-</h2><h3 id="legal-usage">
-<a class="header-anchor" href="#legal-usage"></a>
-Legal usage
-</h3><p><strong>Best practices:</strong></p>
-<ul>
-<li>Only use amiibo you physically own</li>
-<li>Don&rsquo;t share files publicly</li>
-<li>Respect Nintendo&rsquo;s copyrights</li>
-</ul>
-<p><strong>Gray area:</strong></p>
-<ul>
-<li>Backing up your own amiibo: Generally accepted</li>
-<li>Downloading non-owned amiibo: Legally questionable</li>
-<li>Commercial usage: Strictly forbidden</li>
-</ul>
-<h2 id="popular-games-and-their-amiibo">
-<a class="header-anchor" href="#popular-games-and-their-amiibo"></a>
-Popular Games and their Amiibo
-</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
-<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
-The Legend of Zelda: Breath of the Wild
-</h3><p><strong>Rewards by amiibo:</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Amiibo</th>
-          <th>Main rewards</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Link (BOTW)</strong></td>
-          <td>Legendary sword, rare materials</td>
-      </tr>
-      <tr>
-          <td><strong>Zelda</strong></td>
-          <td>Plants, radishes, mushrooms</td>
-      </tr>
-      <tr>
-          <td><strong>Ganondorf</strong></td>
-          <td>Meat, dark minerals</td>
-      </tr>
-      <tr>
-          <td><strong>Guardian</strong></td>
-          <td>Guardian materials</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="super-smash-bros-ultimate">
-<a class="header-anchor" href="#super-smash-bros-ultimate"></a>
-Super Smash Bros. Ultimate
-</h3><p><strong>Fighter system:</strong></p>
-<ul>
-<li>AI fighter training</li>
-<li>Combat style customization</li>
-<li>Reward unlocking</li>
-</ul>
-<h3 id="animal-crossing-new-horizons-1">
-<a class="header-anchor" href="#animal-crossing-new-horizons-1"></a>
-Animal Crossing: New Horizons
-</h3><p><strong>Features:</strong></p>
-<ul>
-<li>Specific villager invitation</li>
-<li>Costume unlocking</li>
-<li>Exclusive decoration items</li>
-</ul>
-<h2 id="video-tutorial">
-<a class="header-anchor" href="#video-tutorial"></a>
-Video Tutorial
-</h2><p>For a complete visual demonstration, check out this tutorial:</p>
-<p><strong><a href="https://odysee.com/@696_STS:1/googledocpc:2">Complete explanatory video</a></strong></p>
-<p>The video covers:</p>
-<ul>
-<li>Amiibo file installation</li>
-<li>Usage on Yuzu and Ryujinx</li>
-<li>In-game demonstration</li>
-<li>Common problem troubleshooting</li>
-</ul>
 <h2 id="conclusion">
 <a class="header-anchor" href="#conclusion"></a>
 Conclusion
-</h2><p>Using <strong>virtual amiibo</strong> on Switch emulators opens a world of possibilities to enrich your gaming experience. Whether to unlock exclusive content or simply test features, the presented methods are simple and effective.</p>
-<h3 id="key-points-to-remember">
-<a class="header-anchor" href="#key-points-to-remember"></a>
-Key points to remember
-</h3><blockquote>
-<p><strong>🎯 Method summary:</strong></p>
-<p><strong>Yuzu:</strong></p>
-<ul>
-<li>File → Load Amiibo</li>
-<li>Select .bin file</li>
-<li>Scan in game</li>
-</ul>
-<p><strong>Ryujinx:</strong></p>
-<ul>
-<li>Actions → Scan Amiibo</li>
-<li>Choose .bin file</li>
-<li>Immediate activation</li>
-</ul></blockquote>
-<h3 id="final-tips">
-<a class="header-anchor" href="#final-tips"></a>
-Final tips
-</h3><p><strong>For optimal experience:</strong></p>
-<ul>
-<li>Organize your collection by series</li>
-<li>Test amiibo on different games</li>
-<li>Save your configurations</li>
-<li>Respect legal aspects</li>
-</ul>
+</h2><p>Using <strong>virtual amiibo</strong> on Switch emulators opens a world of possibilities to enrich your gaming experience. Whether to unlock exclusive content or simply to test features, the presented methods are simple and effective.</p>
 <h2 id="faq---frequently-asked-questions">
 <a class="header-anchor" href="#faq---frequently-asked-questions"></a>
 FAQ - Frequently Asked Questions
 </h2><p><strong>Q: Can I use the same amiibo multiple times per day?</strong>
 A: It depends on the game. Some limit daily usage, others allow unlimited use.</p>
 <p><strong>Q: Do amiibo work on all game versions?</strong>
-A: Generally yes, but check specific compatibility of your game version.</p>
+A: Generally yes, but check the specific compatibility of your game version.</p>
 <p><strong>Q: Can I create my own custom amiibo?</strong>
 A: Yes, with tools like TagMo or Amiitool, but it requires technical knowledge.</p>
 <p><strong>Q: Do amiibo affect emulator performance?</strong>
@@ -521,16 +596,9 @@ A: No, using amiibo has no impact on performance.</p>
 <p><strong>Q: How do I save my amiibo data?</strong>
 A: Data is automatically saved in the game&rsquo;s save files.</p>
 <hr>
-<p><strong>Did this guide help you?</strong> Share your favorite amiibo and their uses in the comments!</p>
-<p><strong>Related articles:</strong></p>
-<ul>
-<li><a href="/en/post/yuzu-zelda-optimization/">Optimize Yuzu for Zelda Games</a></li>
-<li><a href="/en/post/ryujinx-complete-guide/">Complete Ryujinx Guide</a></li>
-<li><a href="/en/post/switch-emulation-settings/">Best Switch Emulation Settings</a></li>
-</ul>
-<pre tabindex="0"><code></code></pre>
+
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -542,16 +610,14 @@ A: Data is automatically saved in the game&rsquo;s save files.</p>
 
     <item>
       <title>How to Install DLC and Updates on Yuzu and Ryujinx</title>
-      <link>https://wiki.axekin.com/en/post/dlc_update_ryujinx_yuzu/</link>
+      <link>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>How to Install DLC and Updates on Yuzu and Ryujinx</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
-          <blockquote>
-<p><strong>⚠️ Important Note</strong>: Make sure you legally own the games, DLC, and updates you install. This guide is for educational purposes only.</p></blockquote>
-<h2 id="introduction">
+          <h2 id="introduction">
 <a class="header-anchor" href="#introduction"></a>
 Introduction
 </h2><p>Installing <strong>DLC</strong> (downloadable content) and <strong>updates</strong> on <strong>Yuzu</strong> and <strong>Ryujinx</strong> emulators is a simple but essential process to fully enjoy your emulated Nintendo Switch games.</p>
@@ -562,8 +628,6 @@ Supported file formats
 </h3><p><strong>Accepted file types:</strong></p>
 <ul>
 <li><strong>NSP</strong> - Nintendo Submission Package (main format)</li>
-<li><strong>XCI</strong> - Nintendo Game Card Image</li>
-<li><strong>NCA</strong> - Nintendo Content Archive</li>
 </ul>
 <p><strong>Difference between Update and DLC:</strong></p>
 <ul>
@@ -584,26 +648,22 @@ Step 1: Access the installation menu
 <li>In the menu bar, click on <strong>&ldquo;File&rdquo;</strong></li>
 <li>Select <strong>&ldquo;Install Files to NAND&rdquo;</strong></li>
 </ol>
-<p><img src="/images/yuzu-file-menu.png" alt="Yuzu File Menu">
-<em>File menu with installation option in Yuzu</em></p>
 <h4 id="step-2-select-the-file">
 <a class="header-anchor" href="#step-2-select-the-file"></a>
 Step 2: Select the file
 </h4><ol start="4">
 <li>A <strong>file selection window</strong> opens</li>
 <li><strong>Navigate</strong> to the location of your DLC/Update file</li>
-<li><strong>Select</strong> the file (.nsp, .xci, or .nca)</li>
-<li>Click <strong>&ldquo;Open&rdquo;</strong></li>
+<li><strong>Select</strong> the file (.nsp)</li>
+<li>Click on <strong>&ldquo;Open&rdquo;</strong></li>
 </ol>
-<p><img src="/images/yuzu-file-selection.png" alt="Yuzu file selection">
-<em>File selection window in Yuzu</em></p>
 <h4 id="step-3-confirm-installation">
 <a class="header-anchor" href="#step-3-confirm-installation"></a>
 Step 3: Confirm installation
 </h4><ol start="8">
 <li>Yuzu <strong>analyzes the file</strong> and displays information</li>
 <li>A dialog box appears asking for confirmation</li>
-<li>Click <strong>&ldquo;Yes&rdquo;</strong> to proceed with installation</li>
+<li>Click on <strong>&ldquo;Yes&rdquo;</strong> to proceed with installation</li>
 <li><strong>Wait</strong> for installation to complete (progress bar)</li>
 </ol>
 <h4 id="step-4-verification">
@@ -634,16 +694,14 @@ Step 1: Access update management
 <li><strong>Right-click</strong> on the game you want to update</li>
 <li>In the context menu, select <strong>&ldquo;Manage Updates&rdquo;</strong></li>
 </ol>
-<p><img src="/images/ryujinx-context-menu.png" alt="Ryujinx context menu">
-<em>Right-click menu with Manage Updates option</em></p>
 <h4 id="step-2-add-the-update">
 <a class="header-anchor" href="#step-2-add-the-update"></a>
 Step 2: Add the update
 </h4><ol start="4">
 <li>The <strong>&ldquo;Manage Updates&rdquo;</strong> window opens</li>
-<li>Click the <strong>&ldquo;Add&rdquo;</strong> or <strong>&ldquo;Browse&rdquo;</strong> button</li>
-<li><strong>Select</strong> your update file (.nsp or .xci)</li>
-<li>Click <strong>&ldquo;Open&rdquo;</strong> to add it</li>
+<li>Click on the <strong>&ldquo;Add&rdquo;</strong> or <strong>&ldquo;Browse&rdquo;</strong> button</li>
+<li><strong>Select</strong> your update file (.nsp)</li>
+<li>Click on <strong>&ldquo;Open&rdquo;</strong> to add it</li>
 </ol>
 <h4 id="step-3-apply-the-update">
 <a class="header-anchor" href="#step-3-apply-the-update"></a>
@@ -651,10 +709,8 @@ Step 3: Apply the update
 </h4><ol start="8">
 <li>Your update appears in the list with <strong>its version</strong></li>
 <li><strong>Check</strong> the box next to the update to activate it</li>
-<li>Click <strong>&ldquo;Save&rdquo;</strong> to apply changes</li>
+<li>Click on <strong>&ldquo;Save&rdquo;</strong> to apply changes</li>
 </ol>
-<p><img src="/images/ryujinx-update-manager.png" alt="Ryujinx update management">
-<em>Update management interface in Ryujinx</em></p>
 <h4 id="update-verification">
 <a class="header-anchor" href="#update-verification"></a>
 Update verification
@@ -676,72 +732,7 @@ Identical procedure to updates
 <li><strong>Check</strong> the DLC to activate it</li>
 <li><strong>Save</strong> to apply</li>
 </ol>
-<p><img src="/images/ryujinx-dlc-manager.png" alt="Ryujinx DLC management">
-<em>DLC management interface in Ryujinx</em></p>
-<h2 id="method-comparison">
-<a class="header-anchor" href="#method-comparison"></a>
-Method Comparison
-</h2><table>
-  <thead>
-      <tr>
-          <th>Aspect</th>
-          <th>Yuzu</th>
-          <th>Ryujinx</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Method</strong></td>
-          <td>File → Install Files to NAND</td>
-          <td>Right-click → Manage Updates/DLC</td>
-      </tr>
-      <tr>
-          <td><strong>Simplicity</strong></td>
-          <td>Very simple, one method</td>
-          <td>Slightly more steps</td>
-      </tr>
-      <tr>
-          <td><strong>Management</strong></td>
-          <td>Direct installation</td>
-          <td>Individual management per game</td>
-      </tr>
-      <tr>
-          <td><strong>Verification</strong></td>
-          <td>Automatic</td>
-          <td>Visual in the list</td>
-      </tr>
-      <tr>
-          <td><strong>Flexibility</strong></td>
-          <td>Less control</td>
-          <td>More granular control</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="management-and-organization">
-<a class="header-anchor" href="#management-and-organization"></a>
-Management and Organization
-</h2><h3 id="organize-your-dlcupdate-files">
-<a class="header-anchor" href="#organize-your-dlcupdate-files"></a>
-Organize your DLC/Update files
-</h3><p><strong>Recommended folder structure:</strong></p>
-<pre tabindex="0"><code>📁 Nintendo_Switch_Content/
-├── 📁 Games/
-│   ├── game1.nsp
-│   ├── game2.xci
-│   └── game3.nsp
-├── 📁 Updates/
-│   ├── 📁 Game1/
-│   │   ├── update_v1.1.0.nsp
-│   │   └── update_v1.2.0.nsp
-│   └── 📁 Game2/
-│       └── update_v2.0.1.nsp
-└── 📁 DLC/
-    ├── 📁 Game1/
-    │   ├── dlc1.nsp
-    │   └── dlc2.nsp
-    └── 📁 Game2/
-        └── season_pass.nsp
-</code></pre><h3 id="check-installed-versions">
+<h3 id="check-installed-versions">
 <a class="header-anchor" href="#check-installed-versions"></a>
 Check installed versions
 </h3><h4 id="in-yuzu">
@@ -750,7 +741,7 @@ In Yuzu
 </h4><ol>
 <li><strong>Right-click</strong> on the game → <strong>&ldquo;Properties&rdquo;</strong></li>
 <li><strong>&ldquo;General&rdquo;</strong> tab → Check version</li>
-<li><strong>&ldquo;Installed Content&rdquo;</strong> tab → DLC list</li>
+<li><strong>&ldquo;Installed Content&rdquo;</strong> tab → List of DLC</li>
 </ol>
 <h4 id="in-ryujinx">
 <a class="header-anchor" href="#in-ryujinx"></a>
@@ -760,12 +751,12 @@ In Ryujinx
 <li><strong>Right-click</strong> → <strong>&ldquo;Manage Updates/DLC&rdquo;</strong> for details</li>
 <li>Version displayed next to the game name</li>
 </ol>
-<h2 id="troubleshooting-common-problems">
-<a class="header-anchor" href="#troubleshooting-common-problems"></a>
-Troubleshooting Common Problems
-</h2><h3 id="installation-issues">
-<a class="header-anchor" href="#installation-issues"></a>
-Installation issues
+<h2 id="troubleshooting-common-issues">
+<a class="header-anchor" href="#troubleshooting-common-issues"></a>
+Troubleshooting Common Issues
+</h2><h3 id="installation-problems">
+<a class="header-anchor" href="#installation-problems"></a>
+Installation problems
 </h3><h4 id="-file-not-recognized">
 <a class="header-anchor" href="#-file-not-recognized"></a>
 🚫 File not recognized
@@ -780,7 +771,7 @@ Installation issues
 <li>Check file format (.nsp, .xci, .nca)</li>
 <li>Re-download the file if corrupted</li>
 <li>Install updated prod.keys</li>
-<li>Verify firmware compatibility</li>
+<li>Check that firmware is compatible</li>
 </ol>
 <h4 id="-installation-fails">
 <a class="header-anchor" href="#-installation-fails"></a>
@@ -798,151 +789,27 @@ Installation issues
 <li><strong>Run as administrator</strong> if necessary</li>
 <li><strong>Update</strong> the emulator to the latest version</li>
 </ol>
-<h3 id="compatibility-issues">
-<a class="header-anchor" href="#compatibility-issues"></a>
-Compatibility issues
-</h3><h4 id="firmware-version">
-<a class="header-anchor" href="#firmware-version"></a>
-Firmware version
-</h4><p><strong>Check required firmware:</strong></p>
-<pre tabindex="0"><code>Game → Properties → Required System Version
-</code></pre><p><strong>Firmware update:</strong></p>
-<ul>
-<li>Download corresponding firmware</li>
-<li>Install via emulator tools</li>
-<li>Restart emulator</li>
-</ul>
-<h4 id="decryption-keys">
-<a class="header-anchor" href="#decryption-keys"></a>
-Decryption keys
-</h4><p><strong>Key locations:</strong></p>
-<ul>
-<li><strong>Yuzu</strong>: <code>%appdata%/yuzu/keys/</code></li>
-<li><strong>Ryujinx</strong>: <code>%appdata%/Ryujinx/system/</code></li>
-</ul>
-<p><strong>Required files:</strong></p>
-<ul>
-<li><code>prod.keys</code> (main keys)</li>
-<li><code>title.keys</code> (title keys)</li>
-</ul>
-<h2 id="best-practices">
-<a class="header-anchor" href="#best-practices"></a>
-Best Practices
-</h2><h3 id="backup-and-security">
-<a class="header-anchor" href="#backup-and-security"></a>
-Backup and security
-</h3><p><strong>Before installation:</strong></p>
-<ul>
-<li>✅ <strong>Backup</strong> your important saves</li>
-<li>✅ <strong>Note</strong> currently installed versions</li>
-<li>✅ <strong>Check</strong> emulator/firmware compatibility</li>
-<li>✅ <strong>Test</strong> with a less important game first</li>
-</ul>
-<h3 id="efficient-organization">
-<a class="header-anchor" href="#efficient-organization"></a>
-Efficient organization
-</h3><p><strong>Naming system:</strong></p>
-<pre tabindex="0"><code>GameName_Update_v1.2.0.nsp
-GameName_DLC_SeasonPass.nsp
-GameName_DLC_Expansion1.nsp
-</code></pre><p><strong>Advantages:</strong></p>
-<ul>
-<li>Quick identification</li>
-<li>Avoids duplicates</li>
-<li>Facilitates management</li>
-</ul>
-<h3 id="regular-maintenance">
-<a class="header-anchor" href="#regular-maintenance"></a>
-Regular maintenance
-</h3><p><strong>Periodic cleanup:</strong></p>
-<ol>
-<li><strong>Delete</strong> old update versions</li>
-<li><strong>Check</strong> used storage space</li>
-<li><strong>Backup</strong> important DLC</li>
-<li><strong>Document</strong> working combinations</li>
-</ol>
-<h2 id="special-use-cases">
-<a class="header-anchor" href="#special-use-cases"></a>
-Special Use Cases
-</h2><h3 id="games-with-multiple-dlc">
-<a class="header-anchor" href="#games-with-multiple-dlc"></a>
-Games with multiple DLC
-</h3><p><strong>Example: The Legend of Zelda: Breath of the Wild</strong></p>
-<pre tabindex="0"><code>📁 BOTW_Content/
-├── BOTW_Update_v1.6.0.nsp
-├── BOTW_DLC_Pack1_MasterTrials.nsp
-├── BOTW_DLC_Pack2_ChampionsBallad.nsp
-└── BOTW_SeasonPass_Complete.nsp
-</code></pre><p><strong>Recommended installation:</strong></p>
-<ol>
-<li><strong>Update</strong> first</li>
-<li><strong>DLC</strong> in release order</li>
-<li><strong>Test</strong> after each installation</li>
-</ol>
-<h3 id="migration-between-emulators">
-<a class="header-anchor" href="#migration-between-emulators"></a>
-Migration between emulators
-</h3><p><strong>Yuzu to Ryujinx:</strong></p>
-<ol>
-<li>Installed DLC/Updates don&rsquo;t transfer automatically</li>
-<li><strong>Reinstall</strong> all content on the new emulator</li>
-<li><strong>Check</strong> compatibility before migration</li>
-</ol>
 <h2 id="conclusion">
 <a class="header-anchor" href="#conclusion"></a>
 Conclusion
 </h2><p>Installing <strong>DLC and updates</strong> on Yuzu and Ryujinx is a simple process once mastered. The main difference lies in the approach: Yuzu uses a universal method while Ryujinx offers more granular management.</p>
-<h3 id="key-points-to-remember">
-<a class="header-anchor" href="#key-points-to-remember"></a>
-Key points to remember
-</h3><blockquote>
-<p><strong>🎯 Procedure summary:</strong></p>
-<p><strong>Yuzu (Universal):</strong></p>
-<ul>
-<li>File → Install Files to NAND</li>
-<li>Select file → Confirm</li>
-<li>Works for both Update AND DLC</li>
-</ul>
-<p><strong>Ryujinx (Separate):</strong></p>
-<ul>
-<li>Right-click → Manage Updates/DLC</li>
-<li>Add → Select → Save</li>
-<li>Separate Update/DLC management</li>
-</ul></blockquote>
-<h3 id="final-tips">
-<a class="header-anchor" href="#final-tips"></a>
-Final tips
-</h3><p><strong>For optimal experience:</strong></p>
-<ul>
-<li>Keep your emulators updated</li>
-<li>Organize your files clearly</li>
-<li>Backup regularly</li>
-<li>Test progressively</li>
-</ul>
 <h2 id="faq---frequently-asked-questions">
 <a class="header-anchor" href="#faq---frequently-asked-questions"></a>
 FAQ - Frequently Asked Questions
 </h2><p><strong>Q: Can I install multiple versions of the same DLC?</strong>
-A: No, only one version per DLC. Installing a new version automatically replaces the old one.</p>
+<strong>A:</strong> No, only one version per DLC. Installing a new version automatically replaces the old one.</p>
 <p><strong>Q: Do DLC work between different game regions?</strong>
-A: Generally no. DLC must match the base game region (EU, US, JP).</p>
+<strong>A:</strong> Generally no. DLC must match the base game region (EU, US, JP).</p>
 <p><strong>Q: What to do if installation gets stuck?</strong>
-A: Close the emulator, restart as administrator, and try again. Also check available disk space.</p>
-<p><strong>Q: Are save files affected by DLC installation?</strong>
-A: No, existing saves remain intact. Some DLC may add new content to saves.</p>
+<strong>A:</strong> Close the emulator, restart as administrator, and try again. Also check available disk space.</p>
+<p><strong>Q: Are saves affected by DLC installation?</strong>
+<strong>A:</strong> No, existing saves remain intact. Some DLC may add new content to saves.</p>
 <p><strong>Q: How to uninstall a DLC or update?</strong>
-A: In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you&rsquo;ll need to delete from the emulator&rsquo;s system settings.</p>
+<strong>A:</strong> In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you&rsquo;ll need to remove from the emulator&rsquo;s system settings.</p>
 <hr>
-<p><strong>Did this guide help you?</strong> Share your installation experiences and favorite games with DLC in the comments!</p>
-<p><strong>Related articles:</strong></p>
-<ul>
-<li><a href="/en/post/yuzu-setup/">Optimal Yuzu Configuration</a></li>
-<li><a href="/en/post/ryujinx-guide/">Complete Ryujinx Guide</a></li>
-<li><a href="/en/post/install-switch-mods/">Installing Mods on Switch Emulators</a></li>
-</ul>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -953,20 +820,20 @@ A: In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you&rsquo;ll need 
     
 
     <item>
-      <title>How to Install Cheats and Mods on Ryujinx Emulator</title>
-      <link>https://wiki.axekin.com/en/post/cheat_ryujinx/</link>
+      <title>How to Install Cheats and Mods on the Ryujinx Emulator</title>
+      <link>http://localhost:1313/en/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/cheat_ryujinx/</guid>
+      <guid>http://localhost:1313/en/post/cheat_ryujinx/</guid>
       <description>
-        <![CDATA[<h1>How to Install Cheats and Mods on Ryujinx Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>How to Install Cheats and Mods on the Ryujinx Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           <blockquote>
-<p><strong>⚠️ Important</strong>: Always backup your save files before installing cheats or mods. Some modifications may affect game stability.</p></blockquote>
+<p><strong>⚠️ Important</strong>: Always backup your save files before installing cheats or mods. Some modifications can affect game stability.</p></blockquote>
 <h2 id="introduction">
 <a class="header-anchor" href="#introduction"></a>
 Introduction
-</h2><p><strong>Ryujinx</strong> supports both <strong>cheat codes</strong> and <strong>game modifications (mods)</strong> to enhance your Nintendo Switch gaming experience. Whether you want infinite health, unlock all items, or completely transform game graphics, this guide will show you exactly how to install them.</p>
+</h2><p><strong>Ryujinx</strong> supports both <strong>cheat codes</strong> and <strong>game modifications (mods)</strong> to enhance your Nintendo Switch gaming experience. Whether you want infinite health, unlock all items, or completely transform a game&rsquo;s graphics, this guide will show you exactly how to install them.</p>
 <h3 id="whats-the-difference">
 <a class="header-anchor" href="#whats-the-difference"></a>
 What&rsquo;s the difference?
@@ -986,12 +853,10 @@ Step 1: Access the Mod Directory
 <a class="header-anchor" href="#open-ryujinx-and-locate-your-game"></a>
 Open Ryujinx and locate your game
 </h4><ol>
-<li><strong>Launch Ryujinx</strong> emulator</li>
+<li><strong>Launch</strong> the Ryujinx emulator</li>
 <li><strong>Right-click</strong> on the game you want to add cheats to</li>
 <li>Select <strong>&ldquo;Open Mods Directory&rdquo;</strong> from the context menu</li>
 </ol>
-<p><img src="/images/ryujinx-mods-menu.png" alt="Ryujinx right-click menu">
-<em>Accessing the mods directory in Ryujinx</em></p>
 <h3 id="step-2-understanding-the-folder-structure">
 <a class="header-anchor" href="#step-2-understanding-the-folder-structure"></a>
 Step 2: Understanding the folder structure
@@ -1001,51 +866,49 @@ Directory structure
 </h4><p>When you open the mods directory, you&rsquo;ll see a path like this:</p>
 <pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
 </code></pre><p>Where <code>XXXXXXXXXXXXXXXX</code> is the <strong>unique game ID</strong> (Title ID) of your selected game.</p>
-<p><strong>Example game IDs:</strong></p>
+<p><strong>Examples of game IDs:</strong></p>
 <ul>
 <li>The Legend of Zelda: Breath of the Wild: <code>01007EF00011E000</code></li>
 <li>Super Mario Odyssey: <code>0100000000010000</code></li>
 <li>Pokémon Sword: <code>0100ABF008968000</code></li>
 </ul>
-<h3 id="step-3-install-the-cheat-files">
-<a class="header-anchor" href="#step-3-install-the-cheat-files"></a>
-Step 3: Install the cheat files
+<h3 id="step-3-install-cheat-files">
+<a class="header-anchor" href="#step-3-install-cheat-files"></a>
+Step 3: Install cheat files
 </h3><h4 id="extract-and-place-cheat-files">
 <a class="header-anchor" href="#extract-and-place-cheat-files"></a>
 Extract and place cheat files
 </h4><ol>
 <li><strong>Download</strong> your cheat files (usually in .zip format)</li>
 <li><strong>Extract</strong> the archive contents</li>
-<li><strong>Create the proper folder structure:</strong></li>
+<li><strong>Create the appropriate folder structure:</strong></li>
 </ol>
 <pre tabindex="0"><code>Ryujinx\mods\contents\XXXXXXXXXXXXXXXX\
 └── Cheat_Name\
     └── cheats\
         ├── cheat1.txt
         ├── cheat2.txt
-        └── more_cheats.txt
+        └── other_cheats.txt
 </code></pre><h4 id="detailed-installation-steps">
 <a class="header-anchor" href="#detailed-installation-steps"></a>
 Detailed installation steps
 </h4><ol start="4">
 <li><strong>Navigate</strong> to your game&rsquo;s mod directory</li>
-<li><strong>Create a new folder</strong> with the cheat name (e.g., &ldquo;Infinite_Money&rdquo;)</li>
+<li><strong>Create a new folder</strong> with the cheat name (ex: &ldquo;Infinite_Money&rdquo;)</li>
 <li><strong>Inside this folder</strong>, create a subfolder called <strong>&ldquo;cheats&rdquo;</strong></li>
-<li><strong>Place all .txt cheat files</strong> inside the &ldquo;cheats&rdquo; folder</li>
+<li><strong>Place all .txt cheat files</strong> in the &ldquo;cheats&rdquo; folder</li>
 </ol>
-<p><img src="/images/ryujinx-cheat-structure.png" alt="Cheat folder structure">
-<em>Proper cheat folder structure in Ryujinx</em></p>
-<h3 id="step-4-activate-cheats">
-<a class="header-anchor" href="#step-4-activate-cheats"></a>
-Step 4: Activate cheats
+<h3 id="step-4-enable-cheats">
+<a class="header-anchor" href="#step-4-enable-cheats"></a>
+Step 4: Enable cheats
 </h3><h4 id="enable-cheats-in-game">
 <a class="header-anchor" href="#enable-cheats-in-game"></a>
 Enable cheats in-game
 </h4><ol>
 <li><strong>Launch your game</strong> in Ryujinx</li>
 <li><strong>Right-click</strong> on the game title again</li>
-<li>Select <strong>&ldquo;Manage Cheats&rdquo;</strong> or access through the menu</li>
-<li><strong>Check the boxes</strong> next to the cheats you want to activate</li>
+<li>Select <strong>&ldquo;Manage Cheats&rdquo;</strong> or access via the menu</li>
+<li><strong>Check the boxes</strong> next to the cheats you want to enable</li>
 <li><strong>Apply</strong> the changes and restart the game if necessary</li>
 </ol>
 <h2 id="installing-mods-on-ryujinx">
@@ -1054,24 +917,24 @@ Installing Mods on Ryujinx
 </h2><h3 id="step-1-access-the-mods-directory">
 <a class="header-anchor" href="#step-1-access-the-mods-directory"></a>
 Step 1: Access the Mods Directory
-</h3><h4 id="same-initial-process-as-cheats">
-<a class="header-anchor" href="#same-initial-process-as-cheats"></a>
-Same initial process as cheats
+</h3><h4 id="same-initial-process-as-for-cheats">
+<a class="header-anchor" href="#same-initial-process-as-for-cheats"></a>
+Same initial process as for cheats
 </h4><ol>
 <li><strong>Open Ryujinx</strong></li>
 <li><strong>Right-click</strong> on your target game</li>
-<li>Click <strong>&ldquo;Open Mods Directory&rdquo;</strong></li>
+<li>Click on <strong>&ldquo;Open Mods Directory&rdquo;</strong></li>
 </ol>
-<p>This opens: <code>AppData\Roaming\Ryujinx\mods\contents\&lt;game ID&gt;\</code></p>
+<p>This opens: <code>AppData\Roaming\Ryujinx\mods\contents\&lt;Game ID&gt;\</code></p>
 <h3 id="step-2-create-mod-folder-structure">
 <a class="header-anchor" href="#step-2-create-mod-folder-structure"></a>
 Step 2: Create mod folder structure
-</h3><h4 id="organize-your-mods-properly">
-<a class="header-anchor" href="#organize-your-mods-properly"></a>
-Organize your mods properly
+</h3><h4 id="organize-your-mods-correctly">
+<a class="header-anchor" href="#organize-your-mods-correctly"></a>
+Organize your mods correctly
 </h4><ol>
 <li><strong>Create a new subfolder</strong> under the game ID directory</li>
-<li><strong>Name it descriptively</strong> (e.g., &ldquo;Infinite_Lives&rdquo;, &ldquo;HD_Textures&rdquo;, &ldquo;Custom_Music&rdquo;)</li>
+<li><strong>Name it descriptively</strong> (ex: &ldquo;Infinite_Lives&rdquo;, &ldquo;HD_Textures&rdquo;, &ldquo;Custom_Music&rdquo;)</li>
 <li>This helps you <strong>manage multiple mods</strong> easily</li>
 </ol>
 <p><strong>Example structure:</strong></p>
@@ -1085,12 +948,12 @@ Organize your mods properly
 </code></pre><h3 id="step-3-install-mod-files">
 <a class="header-anchor" href="#step-3-install-mod-files"></a>
 Step 3: Install mod files
-</h3><h4 id="copy-mod-contents">
-<a class="header-anchor" href="#copy-mod-contents"></a>
-Copy mod contents
+</h3><h4 id="copy-mod-content">
+<a class="header-anchor" href="#copy-mod-content"></a>
+Copy mod content
 </h4><ol>
-<li><strong>Extract your downloaded mod</strong> files</li>
-<li><strong>Locate the mod&rsquo;s romfs or exefs folder</strong></li>
+<li><strong>Extract your downloaded mod files</strong></li>
+<li><strong>Locate the romfs or exefs folder</strong> from the mod</li>
 <li><strong>Copy these folders</strong> into your newly created mod directory</li>
 </ol>
 <p><strong>Types of mod folders:</strong></p>
@@ -1106,20 +969,18 @@ Complete installation
 <li><strong>Copy the entire romfs or exefs folder</strong></li>
 <li><strong>Paste</strong> into your created mod directory</li>
 </ol>
-<p><img src="/images/ryujinx-mod-installation.png" alt="Mod installation process">
-<em>Installing a graphics mod in Ryujinx</em></p>
 <h3 id="step-4-enable-mods">
 <a class="header-anchor" href="#step-4-enable-mods"></a>
 Step 4: Enable mods
-</h3><h4 id="activate-installed-mods">
-<a class="header-anchor" href="#activate-installed-mods"></a>
-Activate installed mods
+</h3><h4 id="enable-installed-mods">
+<a class="header-anchor" href="#enable-installed-mods"></a>
+Enable installed mods
 </h4><ol>
 <li><strong>Launch Ryujinx</strong></li>
 <li><strong>Right-click</strong> on your game</li>
 <li>Select <strong>&ldquo;Manage Mods&rdquo;</strong></li>
-<li><strong>Enable/disable</strong> mods as desired</li>
-<li><strong>Start the game</strong> to see changes</li>
+<li><strong>Enable/disable</strong> mods according to your preferences</li>
+<li><strong>Start the game</strong> to see the changes</li>
 </ol>
 <h2 id="folder-structure-examples">
 <a class="header-anchor" href="#folder-structure-examples"></a>
@@ -1148,52 +1009,17 @@ Complete mod installation
     │   └── GameData\
     └── exefs\
         └── main.npdm
-</code></pre><h2 id="managing-multiple-mods-and-cheats">
-<a class="header-anchor" href="#managing-multiple-mods-and-cheats"></a>
-Managing Multiple Mods and Cheats
-</h2><h3 id="organization-best-practices">
-<a class="header-anchor" href="#organization-best-practices"></a>
-Organization best practices
-</h3><h4 id="naming-conventions">
-<a class="header-anchor" href="#naming-conventions"></a>
-Naming conventions
-</h4><p><strong>Good folder names:</strong></p>
-<ul>
-<li><code>Infinite_Money_Cheat</code></li>
-<li><code>4K_Texture_Pack</code></li>
-<li><code>Enhanced_Audio_Mod</code></li>
-<li><code>Difficulty_Rebalance</code></li>
-</ul>
-<p><strong>Avoid:</strong></p>
-<ul>
-<li>Special characters (<code>!@#$%</code>)</li>
-<li>Spaces at the beginning or end</li>
-<li>Very long names</li>
-</ul>
-<h4 id="mod-compatibility">
+</code></pre><h4 id="mod-compatibility">
 <a class="header-anchor" href="#mod-compatibility"></a>
 Mod compatibility
-</h4><p><strong>Testing compatibility:</strong></p>
+</h4><p><strong>Compatibility testing:</strong></p>
 <ol>
 <li><strong>Install one mod at a time</strong></li>
 <li><strong>Test game stability</strong></li>
-<li><strong>Check for conflicts</strong> before adding more</li>
-<li><strong>Keep notes</strong> on working combinations</li>
+<li><strong>Check for conflicts</strong> before adding others</li>
+<li><strong>Take notes</strong> on working combinations</li>
 </ol>
-<h3 id="enabledisable-system">
-<a class="header-anchor" href="#enabledisable-system"></a>
-Enable/Disable system
-</h3><h4 id="temporary-mod-management">
-<a class="header-anchor" href="#temporary-mod-management"></a>
-Temporary mod management
-</h4><pre tabindex="0"><code>Ryujinx\mods\contents\GAME_ID\
-├── Active_Mods\
-│   ├── Graphics_Mod\    (enabled)
-│   └── Audio_Mod\       (enabled)
-└── Disabled_Mods\
-    ├── Old_Graphics\    (backup)
-    └── Experimental\    (testing)
-</code></pre><h2 id="troubleshooting-common-issues">
+<h2 id="troubleshooting-common-issues">
 <a class="header-anchor" href="#troubleshooting-common-issues"></a>
 Troubleshooting Common Issues
 </h2><h3 id="cheats-not-working">
@@ -1204,15 +1030,16 @@ Cheats not working
 Common problems and solutions
 </h4><p><strong>🚫 Cheat files not detected:</strong></p>
 <ul>
-<li>Verify folder structure: <code>Game_ID\Cheat_Name\cheats\*.txt</code></li>
+<li>Check folder structure: <code>Game_ID\Cheat_Name\cheats\*.txt</code></li>
 <li>Check file extensions (.txt, not .txt.txt)</li>
 <li>Ensure no extra spaces in folder names</li>
 </ul>
-<p><strong>⚠️ Cheats cause crashes:</strong></p>
+<p><strong>⚠️ Cheats causing crashes:</strong></p>
 <ul>
-<li>Disable all cheats and test one by one</li>
+<li>Disable all cheats and test them one by one</li>
 <li>Check cheat compatibility with game version</li>
-<li>Use cheats from trusted sources</li>
+<li>Use cheats from reliable sources</li>
+<li>MAKE SURE THE CHEAT VERSION MATCHES THE GAME VERSION</li>
 </ul>
 <h3 id="mods-not-loading">
 <a class="header-anchor" href="#mods-not-loading"></a>
@@ -1221,28 +1048,16 @@ Mods not loading
 <a class="header-anchor" href="#debugging-mod-issues"></a>
 Debugging mod issues
 </h4><p><strong>📁 Incorrect folder structure:</strong></p>
-<pre tabindex="0"><code>❌ Wrong:
+<pre tabindex="0"><code>❌ Incorrect:
 Ryujinx\mods\contents\GAME_ID\romfs\...
 
 ✅ Correct:
 Ryujinx\mods\contents\GAME_ID\Mod_Name\romfs\...
-</code></pre><p><strong>🎮 Game-specific problems:</strong></p>
+</code></pre><p><strong>🎮 Game-specific issues:</strong></p>
 <ul>
-<li>Verify mod compatibility with your game version</li>
-<li>Check if mod requires specific firmware version</li>
-<li>Test with mod disabled to confirm it&rsquo;s the cause</li>
-</ul>
-<h3 id="performance-issues">
-<a class="header-anchor" href="#performance-issues"></a>
-Performance issues
-</h3><h4 id="optimization-tips">
-<a class="header-anchor" href="#optimization-tips"></a>
-Optimization tips
-</h4><p><strong>Mod-related performance:</strong></p>
-<ul>
-<li><strong>Disable unused mods</strong> to reduce memory usage</li>
-<li><strong>Use optimized texture packs</strong> for your hardware</li>
-<li><strong>Monitor system resources</strong> when running multiple mods</li>
+<li>Check mod compatibility with your game version</li>
+<li>Check if the mod requires a specific firmware version</li>
+<li>Test with the mod disabled to confirm it&rsquo;s the cause</li>
 </ul>
 <h2 id="finding-cheats-and-mods">
 <a class="header-anchor" href="#finding-cheats-and-mods"></a>
@@ -1250,9 +1065,9 @@ Finding Cheats and Mods
 </h2><h3 id="recommended-sources">
 <a class="header-anchor" href="#recommended-sources"></a>
 Recommended sources
-</h3><h4 id="trusted-websites-for-downloads">
-<a class="header-anchor" href="#trusted-websites-for-downloads"></a>
-Trusted websites for downloads
+</h3><h4 id="reliable-websites-for-downloads">
+<a class="header-anchor" href="#reliable-websites-for-downloads"></a>
+Reliable websites for downloads
 </h4><table>
   <thead>
       <tr>
@@ -1263,127 +1078,53 @@ Trusted websites for downloads
   </thead>
   <tbody>
       <tr>
-          <td><strong>GameBanana</strong></td>
+          <td><strong><a href="https://gamebanana.com/">GameBanana</a></strong></td>
           <td>Mods</td>
-          <td>Largest mod community</td>
+          <td>Largest modding community</td>
       </tr>
       <tr>
-          <td><strong>NexusMods</strong></td>
+          <td><strong><a href="https://www.nexusmods.com/">NexusMods</a></strong></td>
           <td>Mods</td>
           <td>Professional mod hosting</td>
       </tr>
       <tr>
-          <td><strong>GBAtemp Forums</strong></td>
+          <td><strong><a href="https://gbatemp.net/">GBAtemp Forums</a></strong></td>
           <td>Cheats &amp; Mods</td>
           <td>Active community discussions</td>
       </tr>
-      <tr>
-          <td><strong>Reddit r/Ryujinx</strong></td>
-          <td>Both</td>
-          <td>Community support</td>
-      </tr>
-      <tr>
-          <td><strong>GitHub</strong></td>
-          <td>Both</td>
-          <td>Open-source projects</td>
-      </tr>
   </tbody>
 </table>
-<h4 id="safety-considerations">
-<a class="header-anchor" href="#safety-considerations"></a>
-Safety considerations
-</h4><p><strong>Download safety checklist:</strong></p>
+<h4 id="security-considerations">
+<a class="header-anchor" href="#security-considerations"></a>
+Security considerations
+</h4><p><strong>Download security checklist:</strong></p>
 <ul>
-<li>✅ Use reputable sources only</li>
+<li>✅ Only use reputable sources</li>
 <li>✅ Read user comments and reviews</li>
 <li>✅ Scan files with antivirus</li>
-<li>✅ Backup saves before installing</li>
+<li>✅ Backup before installing</li>
 <li>✅ Test on less important games first</li>
 </ul>
-<h2 id="advanced-mod-management">
-<a class="header-anchor" href="#advanced-mod-management"></a>
-Advanced Mod Management
-</h2><h3 id="batch-operations">
-<a class="header-anchor" href="#batch-operations"></a>
-Batch operations
-</h3><h4 id="managing-multiple-games">
-<a class="header-anchor" href="#managing-multiple-games"></a>
-Managing multiple games
-</h4><p><strong>PowerShell script for backup:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Backup all mods</span>
-</span></span><span style="display:flex;"><span>$source = <span style="color:#e6db74">&#34;</span>$env:APPDATA<span style="color:#e6db74">\Ryujinx\mods&#34;</span>
-</span></span><span style="display:flex;"><span>$backup = <span style="color:#e6db74">&#34;C:\Ryujinx_Mods_Backup\</span>$(Get-Date -Format <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>)<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>Copy-Item -Path $source -Destination $backup -Recurse
-</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Mods backed up to: </span>$backup<span style="color:#e6db74">&#34;</span>
-</span></span></code></pre></div><h3 id="version-control-for-mods">
-<a class="header-anchor" href="#version-control-for-mods"></a>
-Version control for mods
-</h3><h4 id="keeping-track-of-changes">
-<a class="header-anchor" href="#keeping-track-of-changes"></a>
-Keeping track of changes
-</h4><pre tabindex="0"><code>📁 Mod_Versions\
-├── 📁 v1.0_Original\
-├── 📁 v2.0_Updated\
-└── 📁 v3.0_Latest\
-    └── changelog.txt
-</code></pre><h2 id="conclusion">
+<h2 id="conclusion">
 <a class="header-anchor" href="#conclusion"></a>
 Conclusion
-</h2><p>Installing <strong>cheats and mods</strong> on Ryujinx is straightforward once you understand the folder structure. The key is proper organization and testing one modification at a time.</p>
-<h3 id="quick-reference-summary">
-<a class="header-anchor" href="#quick-reference-summary"></a>
-Quick reference summary
-</h3><blockquote>
-<p><strong>🎯 Installation checklist:</strong></p>
-<p><strong>For Cheats:</strong></p>
-<ol>
-<li>Right-click game → Open Mods Directory</li>
-<li>Create: <code>Cheat_Name\cheats\</code></li>
-<li>Place .txt files in cheats folder</li>
-<li>Enable via Manage Cheats menu</li>
-</ol>
-<p><strong>For Mods:</strong></p>
-<ol>
-<li>Right-click game → Open Mods Directory</li>
-<li>Create descriptive mod folder</li>
-<li>Copy romfs/exefs into mod folder</li>
-<li>Enable via Manage Mods menu</li>
-</ol></blockquote>
-<h3 id="best-practices">
-<a class="header-anchor" href="#best-practices"></a>
-Best practices
-</h3><p><strong>Remember to:</strong></p>
-<ul>
-<li>Always backup your saves first</li>
-<li>Test modifications individually</li>
-<li>Use trusted sources for downloads</li>
-<li>Keep original files as backup</li>
-<li>Document working mod combinations</li>
-</ul>
+</h2><p>Installing <strong>cheats and mods</strong> on Ryujinx is simple once you understand the folder structure. The key is proper organization and testing one modification at a time.</p>
 <h2 id="faq---frequently-asked-questions">
 <a class="header-anchor" href="#faq---frequently-asked-questions"></a>
 FAQ - Frequently Asked Questions
-</h2><p><strong>Q: Can I use both cheats and mods simultaneously?</strong>
-A: Yes, but test carefully as some combinations may cause conflicts or crashes.</p>
+</h2><p><strong>Q: Can I use cheats and mods simultaneously?</strong>
+A: Yes, but test carefully as some combinations can cause conflicts or crashes.</p>
 <p><strong>Q: Do mods affect game performance?</strong>
-A: It depends on the mod. Graphics mods typically require more resources, while simple cheats have minimal impact.</p>
+A: It depends on the mod. Graphics mods usually require more resources, while simple cheats have minimal impact.</p>
 <p><strong>Q: Are Ryujinx mods compatible with Yuzu?</strong>
 A: Sometimes, but the folder structure differs. You may need to reorganize files for cross-compatibility.</p>
 <p><strong>Q: Can I create my own cheats?</strong>
 A: Yes, with knowledge of memory addresses and game structure. Tools like Cheat Engine can help identify values to modify.</p>
 <p><strong>Q: What if a mod breaks my game?</strong>
-A: Simply disable or delete the mod from the mods directory. Your original game files remain untouched.</p>
-<hr>
-<p><strong>Found this guide helpful?</strong> Share your favorite mods and cheats in the comments below!</p>
-<p><strong>Related articles:</strong></p>
-<ul>
-<li><a href="/en/post/ryujinx-performance/">Ryujinx Performance Optimization</a></li>
-<li><a href="/en/post/best-switch-mods/">Best Nintendo Switch Mods</a></li>
-<li><a href="/en/post/custom-cheat-creation/">Creating Custom Cheats</a></li>
-</ul>
-<pre tabindex="0"><code></code></pre>
+A: Simply disable or remove the mod from the mods directory. Your original game files remain intact.</p>
+
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -1395,10 +1136,10 @@ A: Simply disable or delete the mod from the mods directory. Your original game 
 
     <item>
       <title>How to Reinstall Yuzu &amp; Ryujinx While Keeping Your Save Files</title>
-      <link>https://wiki.axekin.com/en/post/reinstall_yuzu_ryujinx/</link>
+      <link>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/reinstall_yuzu_ryujinx/</guid>
+      <guid>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</guid>
       <description>
         <![CDATA[<h1>How to Reinstall Yuzu & Ryujinx While Keeping Your Save Files</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -1426,19 +1167,17 @@ Method for Yuzu
 </h2><h3 id="step-1-backup-game-data">
 <a class="header-anchor" href="#step-1-backup-game-data"></a>
 Step 1: Backup game data
-</h3><h4 id="locate-save-files">
-<a class="header-anchor" href="#locate-save-files"></a>
-Locate save files
+</h3><h4 id="locate-saves">
+<a class="header-anchor" href="#locate-saves"></a>
+Locate saves
 </h4><ol>
 <li><strong>Launch Yuzu</strong> (if possible)</li>
 <li><strong>Right-click</strong> on the desired game in the list</li>
 <li>Select <strong>&ldquo;Open Save Data Location&rdquo;</strong></li>
 </ol>
-<p><img src="/images/yuzu-right-click-menu.png" alt="Yuzu context menu">
-<em>Right-click menu on a game in Yuzu</em></p>
-<h4 id="backup-the-content">
-<a class="header-anchor" href="#backup-the-content"></a>
-Backup the content
+<h4 id="backup-content">
+<a class="header-anchor" href="#backup-content"></a>
+Backup content
 </h4><ol start="4">
 <li><strong>Select all content</strong> from the folder that opens (Ctrl+A)</li>
 <li><strong>Copy</strong> the files (Ctrl+C)</li>
@@ -1460,7 +1199,7 @@ Backup the content
 <a class="header-anchor" href="#repeat-for-all-games"></a>
 Repeat for all games
 </h4><ol start="8">
-<li><strong>Repeat this operation</strong> for each game you want to keep the save for</li>
+<li><strong>Repeat this operation</strong> for each game whose save you want to preserve</li>
 <li><strong>Note the name</strong> of each folder to facilitate restoration</li>
 </ol>
 <h3 id="step-2-delete-yuzu-data">
@@ -1473,8 +1212,6 @@ Access configuration folder
 <li>Press <strong>Windows + R</strong></li>
 <li>Type <code>%appdata%</code> and press <strong>Enter</strong></li>
 </ol>
-<p><img src="/images/windows-run-appdata.png" alt="Run dialog box">
-<em>Access to AppData folder via Windows + R</em></p>
 <h4 id="delete-yuzu-folder">
 <a class="header-anchor" href="#delete-yuzu-folder"></a>
 Delete Yuzu folder
@@ -1487,27 +1224,10 @@ Delete Yuzu folder
 <p><strong>💡 Tip</strong>: If the folder is in use, completely close Yuzu via Task Manager.</p></blockquote>
 <h3 id="step-3-reinstall-yuzu">
 <a class="header-anchor" href="#step-3-reinstall-yuzu"></a>
-Step 3: Reinstall Yuzu
-</h3><h4 id="clean-installation">
-<a class="header-anchor" href="#clean-installation"></a>
-Clean installation
-</h4><ol>
-<li><strong>Download</strong> the latest version of Yuzu from the official website</li>
-<li><strong>Uninstall</strong> the old version if still present</li>
-<li><strong>Install</strong> the new version with default settings</li>
-<li><strong>Launch</strong> Yuzu for initial configuration</li>
-</ol>
-<h4 id="basic-configuration">
-<a class="header-anchor" href="#basic-configuration"></a>
-Basic configuration
-</h4><ol start="5">
-<li><strong>Configure</strong> graphics settings according to your hardware</li>
-<li><strong>Add</strong> your game folders</li>
-<li><strong>Install</strong> firmware and keys if necessary</li>
-</ol>
-<h3 id="step-4-restore-save-files">
-<a class="header-anchor" href="#step-4-restore-save-files"></a>
-Step 4: Restore save files
+Step 3: <a href="http://localhost:1313/en/post/yuzu/">Reinstall Yuzu</a>
+</h3><h3 id="step-4-restore-saves">
+<a class="header-anchor" href="#step-4-restore-saves"></a>
+Step 4: Restore saves
 </h3><h4 id="put-back-save-files">
 <a class="header-anchor" href="#put-back-save-files"></a>
 Put back save files
@@ -1536,13 +1256,13 @@ Locate user saves
 <li><strong>Right-click</strong> on the desired game</li>
 <li>Select <strong>&ldquo;Open User Save Directory&rdquo;</strong></li>
 </ol>
-<p><img src="/images/ryujinx-save-menu.png" alt="Ryujinx menu">
+<p><img src="/images/path_save_1.png" alt="Ryujinx Menu">
 <em>Save options in Ryujinx</em></p>
 <h4 id="backup-additional-data">
 <a class="header-anchor" href="#backup-additional-data"></a>
 Backup additional data
 </h4><ol start="4">
-<li>If available, also click on <strong>&ldquo;Open Mod Data Directory&rdquo;</strong> or additional data</li>
+<li>If available, also click on <strong>&ldquo;Open Device Save Directory&rdquo;</strong> and/or BCAT</li>
 <li><strong>Copy</strong> all content to your backup folders</li>
 <li><strong>Organize</strong> by game name like for Yuzu</li>
 </ol>
@@ -1563,80 +1283,24 @@ Locate configuration folder
 Step 3: Reinstallation and restoration
 </h3><h4 id="reinstall-ryujinx">
 <a class="header-anchor" href="#reinstall-ryujinx"></a>
-Reinstall Ryujinx
-</h4><ol>
-<li><strong>Download</strong> the latest version of Ryujinx</li>
-<li><strong>Cleanly install</strong> the emulator</li>
-<li><strong>Configure</strong> basic settings</li>
-</ol>
-<h4 id="restore-save-files">
-<a class="header-anchor" href="#restore-save-files"></a>
-Restore save files
+<a href="http://localhost:1313/en/post/ryujinx/">Reinstall Ryujinx</a>
+</h4><h4 id="restore-saves">
+<a class="header-anchor" href="#restore-saves"></a>
+Restore saves
 </h4><ol start="4">
 <li><strong>Launch each game</strong> once</li>
 <li><strong>Close</strong> Ryujinx</li>
 <li><strong>Replace</strong> save files with your backups</li>
 <li><strong>Test</strong> that everything works correctly</li>
 </ol>
-<h2 id="method-comparison">
-<a class="header-anchor" href="#method-comparison"></a>
-Method comparison
-</h2><table>
-  <thead>
-      <tr>
-          <th>Aspect</th>
-          <th>Yuzu</th>
-          <th>Ryujinx</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Save access</strong></td>
-          <td>Right-click → Open Save Data Location</td>
-          <td>Right-click → Open User Save Directory</td>
-      </tr>
-      <tr>
-          <td><strong>Config folder</strong></td>
-          <td><code>%appdata%\yuzu</code></td>
-          <td><code>%appdata%\Ryujinx</code></td>
-      </tr>
-      <tr>
-          <td><strong>Additional data</strong></td>
-          <td>Automatic</td>
-          <td>Separate Mod Data Directory</td>
-      </tr>
-      <tr>
-          <td><strong>Complexity</strong></td>
-          <td>Simple</td>
-          <td>Simple</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="tips-and-best-practices">
-<a class="header-anchor" href="#tips-and-best-practices"></a>
-Tips and best practices
-</h2><h3 id="automatic-backups">
-<a class="header-anchor" href="#automatic-backups"></a>
-Automatic backups
-</h3><p><strong>Automatic backup script (Windows):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> backup_dir=C:\Backup_Emulators\%date:~-4,4%-%date:~-10,2%-%date:~-7,2%
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mkdir</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\yuzu\nand\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Yuzu_Saves\&#34;</span> /E /I /Y
-</span></span><span style="display:flex;"><span>xcopy <span style="color:#e6db74">&#34;</span>%appdata%<span style="color:#e6db74">\Ryujinx\bis\user\save&#34;</span> <span style="color:#e6db74">&#34;</span>%backup_dir%<span style="color:#e6db74">\Ryujinx_Saves\&#34;</span> /E /I /Y
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Backup completed in %backup_dir%
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
-</span></span></code></pre></div><h3 id="important-checks">
-<a class="header-anchor" href="#important-checks"></a>
-Important checks
+<h3 id="important-verifications">
+<a class="header-anchor" href="#important-verifications"></a>
+Important verifications
 </h3><p><strong>Before reinstallation:</strong></p>
 <ul>
 <li>✅ Complete backups created</li>
 <li>✅ Game names noted</li>
 <li>✅ Firmware/keys available</li>
-<li>✅ Hardware configuration noted</li>
 </ul>
 <p><strong>After reinstallation:</strong></p>
 <ul>
@@ -1659,93 +1323,11 @@ Common problems and solutions
 </ul>
 <p><strong>Solutions:</strong></p>
 <ol>
-<li>Check exact file location</li>
+<li>Check the exact file location</li>
 <li>Try with a similar emulator version</li>
 <li>Use an older backup</li>
 </ol>
-<h4 id="-large-save-files">
-<a class="header-anchor" href="#-large-save-files"></a>
-💾 Large save files
-</h4><p><strong>Optimization:</strong></p>
-<ul>
-<li>Compress backup folders (.zip, .7z)</li>
-<li>Use cloud storage for security</li>
-<li>Create incremental backups</li>
-</ul>
-<h4 id="-configuration-loss">
-<a class="header-anchor" href="#-configuration-loss"></a>
-⚠️ Configuration loss
-</h4><p><strong>Preventive backup:</strong></p>
-<pre tabindex="0"><code>📁 Complete_Backup/
-├── 📁 Saves/ (game saves)
-├── 📁 Config/ (configuration files)
-├── 📁 Keys/ (keys and firmware)
-└── 📄 settings_backup.txt (noted settings)
-</code></pre><h2 id="recommended-tools">
-<a class="header-anchor" href="#recommended-tools"></a>
-Recommended tools
-</h2><h3 id="save-managers">
-<a class="header-anchor" href="#save-managers"></a>
-Save managers
-</h3><table>
-  <thead>
-      <tr>
-          <th>Tool</th>
-          <th>Description</th>
-          <th>Advantages</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>JKSV</strong></td>
-          <td>Switch homebrew manager</td>
-          <td>Native saves</td>
-      </tr>
-      <tr>
-          <td><strong>Checkpoint</strong></td>
-          <td>Alternative to JKSV</td>
-          <td>User-friendly interface</td>
-      </tr>
-      <tr>
-          <td><strong>Save Manager</strong></td>
-          <td>Third-party PC tool</td>
-          <td>Automation</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="cloud-synchronization">
-<a class="header-anchor" href="#cloud-synchronization"></a>
-Cloud synchronization
-</h3><p><strong>Recommended services:</strong></p>
-<ul>
-<li><strong>Google Drive</strong> - 15 GB free</li>
-<li><strong>OneDrive</strong> - Windows integration</li>
-<li><strong>Dropbox</strong> - Fast synchronization</li>
-<li><strong>Git</strong> - Versioning for experts</li>
-</ul>
-<h2 id="advanced-troubleshooting">
-<a class="header-anchor" href="#advanced-troubleshooting"></a>
-Advanced troubleshooting
-</h2><h3 id="emergency-recovery">
-<a class="header-anchor" href="#emergency-recovery"></a>
-Emergency recovery
-</h3><p><strong>If reinstallation fails:</strong></p>
-<ol>
-<li><strong>Safe mode</strong>: Start Windows in safe mode</li>
-<li><strong>Registry cleanup</strong>: Use CCleaner or equivalent</li>
-<li><strong>Portable installation</strong>: Test with portable versions</li>
-<li><strong>System restore</strong>: Windows restore point</li>
-</ol>
-<h3 id="migration-to-new-pc">
-<a class="header-anchor" href="#migration-to-new-pc"></a>
-Migration to new PC
-</h3><p><strong>Transfer entire environment:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Folders to copy</span>
-</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\y</span>uzu<span style="color:#ae81ff">\ </span>          → New PC
-</span></span><span style="display:flex;"><span>%appdata%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\ </span>       → New PC
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Games_Folder<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>          → New PC
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Backup_Folder<span style="color:#f92672">]</span><span style="color:#ae81ff">\ </span>         → New PC
-</span></span></code></pre></div><h2 id="conclusion">
+<h2 id="conclusion">
 <a class="header-anchor" href="#conclusion"></a>
 Conclusion
 </h2><p>Reinstalling <strong>Yuzu</strong> and <strong>Ryujinx</strong> while preserving your saves is a simple process if you follow the right method. The essential thing is to <strong>always backup before acting</strong> and proceed step by step.</p>
@@ -1775,864 +1357,19 @@ Preventive maintenance
 <a class="header-anchor" href="#faq---frequently-asked-questions"></a>
 FAQ - Frequently Asked Questions
 </h2><p><strong>Q: Can I transfer my saves between Yuzu and Ryujinx?</strong>
-A: Generally not directly, save formats differ. Use specialized conversion tools if needed.</p>
+<strong>A:</strong> Yes, there are plenty of tutorials available on the internet</p>
 <p><strong>Q: How long does the complete procedure take?</strong>
-A: About 30-60 minutes depending on the number of games and your PC speed.</p>
-<p><strong>Q: Are online saves (Nintendo Switch Online) compatible?</strong>
-A: No, emulator and official console saves are not interchangeable.</p>
+<strong>A:</strong> It depends completely on the number of games you have</p>
 <p><strong>Q: What to do if I forgot to backup before reinstallation?</strong>
-A: Check Windows recycle bin, use file recovery tools, or restore from a system backup.</p>
+<strong>A:</strong> Check Windows recycle bin, use file recovery tools, or restore from a system backup.</p>
 <hr>
 <p><strong>Did this guide help you?</strong> Share your experiences and additional tips in the comments!</p>
-<p><strong>Related articles:</strong></p>
-<ul>
-<li><a href="/en/post/yuzu-setup/">Optimal Yuzu Configuration</a></li>
-<li><a href="/en/post/ryujinx-guide/">Complete Ryujinx Guide</a></li>
-<li><a href="/en/post/switch-emulation-performance/">Best Switch Emulation Performance</a></li>
-</ul>
-<pre tabindex="0"><code></code></pre>
+
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
-      
-    </item>
-    
-      
-    
-
-    <item>
-      <title>Complete Guide: Ryujinx Installation and Configuration</title>
-      <link>https://wiki.axekin.com/en/post/ryujinx/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/ryujinx/</guid>
-      <description>
-        <![CDATA[<h1>Complete Guide: Ryujinx Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
-        
-          <h2 id="-introduction-to-ryujinx">
-<a class="header-anchor" href="#-introduction-to-ryujinx"></a>
-🎮 Introduction to Ryujinx
-</h2><p><strong>Ryujinx</strong> is an open-source Nintendo Switch emulator written in C#. It allows you to play Nintendo Switch games on PC with excellent performance and constantly improving compatibility.</p>
-<blockquote>
-<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
-<h2 id="-system-requirements">
-<a class="header-anchor" href="#-system-requirements"></a>
-📋 System Requirements
-</h2><h3 id="minimum-configuration">
-<a class="header-anchor" href="#minimum-configuration"></a>
-Minimum Configuration
-</h3><ul>
-<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / macOS</li>
-<li><strong>CPU</strong>: Intel Core i5-8400 / AMD Ryzen 5 2600</li>
-<li><strong>RAM</strong>: 8 GB</li>
-<li><strong>GPU</strong>: DirectX 11.1 compatible</li>
-<li><strong>Storage</strong>: 5 GB free space</li>
-</ul>
-<h3 id="recommended-configuration">
-<a class="header-anchor" href="#recommended-configuration"></a>
-Recommended Configuration
-</h3><ul>
-<li><strong>CPU</strong>: Intel Core i7-9700K / AMD Ryzen 7 3700X</li>
-<li><strong>RAM</strong>: 16 GB or more</li>
-<li><strong>GPU</strong>: NVIDIA GTX 1660 / AMD RX 580 or higher</li>
-<li><strong>Storage</strong>: SSD with 20+ GB free space</li>
-</ul>
-<h3 id="optimal-configuration">
-<a class="header-anchor" href="#optimal-configuration"></a>
-Optimal Configuration
-</h3><ul>
-<li><strong>CPU</strong>: Intel Core i9-12900K / AMD Ryzen 9 5900X</li>
-<li><strong>RAM</strong>: 32 GB DDR4-3200+</li>
-<li><strong>GPU</strong>: NVIDIA RTX 3060 / AMD RX 6600 or higher</li>
-<li><strong>Storage</strong>: NVMe SSD with 50+ GB free space</li>
-</ul>
-<blockquote>
-<p>💡 <strong>Important Note</strong>: Nintendo Switch emulation requires significant CPU and GPU power due to the modern ARM architecture and advanced graphics.</p></blockquote>
-<h2 id="-step-1-downloading-ryujinx">
-<a class="header-anchor" href="#-step-1-downloading-ryujinx"></a>
-🔧 Step 1: Downloading Ryujinx
-</h2><h3 id="option-1-stable-version-recommended">
-<a class="header-anchor" href="#option-1-stable-version-recommended"></a>
-Option 1: Stable Version (Recommended)
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
-</span></span><span style="display:flex;"><span>https://ryujinx.org/download
-</span></span></code></pre></div><ol>
-<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
-<li><strong>Download</strong> the file <code>ryujinx-X.X.X-win_x64.zip</code></li>
-<li><strong>Extract</strong> to a dedicated folder (e.g., <code>C:\Ryujinx</code>)</li>
-</ol>
-<h3 id="option-2-development-version-advanced">
-<a class="header-anchor" href="#option-2-development-version-advanced"></a>
-Option 2: Development Version (Advanced)
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For advanced users wanting latest features</span>
-</span></span><span style="display:flex;"><span>https://github.com/Ryujinx/Ryujinx/releases
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Advantages:
-</span></span><span style="display:flex;"><span>- Latest improvements
-</span></span><span style="display:flex;"><span>- Bug fixes
-</span></span><span style="display:flex;"><span>- New features
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Risks:
-</span></span><span style="display:flex;"><span>- Potentially unstable
-</span></span><span style="display:flex;"><span>- Possible regressions
-</span></span></code></pre></div><h3 id="option-3-ryujinx-linux">
-<a class="header-anchor" href="#option-3-ryujinx-linux"></a>
-Option 3: Ryujinx Linux
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Flatpak installation</span>
-</span></span><span style="display:flex;"><span>flatpak install flathub org.ryujinx.Ryujinx
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># AppImage download</span>
-</span></span><span style="display:flex;"><span>https://ryujinx.org/download
-</span></span></code></pre></div><h2 id="-step-2-folder-structure">
-<a class="header-anchor" href="#-step-2-folder-structure"></a>
-📁 Step 2: Folder Structure
-</h2><p>Create this folder structure to organize your files:</p>
-<pre tabindex="0"><code>Ryujinx/
-├── Ryujinx.exe              # Main executable
-├── games/                   # Your .nsp/.xci ROMs
-│   ├── nsp/                 # Digital games .nsp
-│   ├── xci/                 # Cartridge dumps .xci
-│   └── homebrew/            # Homebrew applications
-├── system/                  # System files
-│   ├── firmware/            # Switch firmware
-│   ├── keys/                # prod.keys and title.keys
-│   └── contents/            # System archives
-├── saves/                   # Save data
-├── mods/                    # Game modifications
-│   └── [Title-ID]/          # Mods per game
-├── updates/                 # Game updates
-├── dlc/                     # Downloadable content
-├── screenshots/             # Screenshots
-└── cache/                   # Shader cache
-    ├── gpu/                 # GPU shaders
-    └── cpu/                 # PTC cache
-</code></pre><h2 id="-step-3-initial-configuration">
-<a class="header-anchor" href="#-step-3-initial-configuration"></a>
-⚙️ Step 3: Initial Configuration
-</h2><h3 id="first-launch">
-<a class="header-anchor" href="#first-launch"></a>
-First Launch
-</h3><ol>
-<li><strong>Run</strong> <code>Ryujinx.exe</code></li>
-<li><strong>Accept</strong> terms and conditions</li>
-<li><strong>Select</strong> your preferred language</li>
-<li><strong>Configure</strong> initial settings</li>
-</ol>
-<h3 id="essential-settings-configuration">
-<a class="header-anchor" href="#essential-settings-configuration"></a>
-Essential Settings Configuration
-</h3><h4 id="system-settings">
-<a class="header-anchor" href="#system-settings"></a>
-System Settings
-</h4><pre tabindex="0"><code>Options → Settings → System
-</code></pre><ul>
-<li><strong>Region</strong>: Europe (or your region)</li>
-<li><strong>Language</strong>: English</li>
-<li><strong>Time Zone</strong>: Your local timezone</li>
-<li><strong>System Time</strong>: Current time</li>
-<li><strong>Enable VSync</strong>: ✅ Enabled</li>
-<li><strong>Enable Shader Cache</strong>: ✅ Enabled</li>
-<li><strong>Enable PTC (Profiled Translation Cache)</strong>: ✅ Enabled</li>
-</ul>
-<h4 id="graphics-settings">
-<a class="header-anchor" href="#graphics-settings"></a>
-Graphics Settings
-</h4><pre tabindex="0"><code>Options → Settings → Graphics
-</code></pre><ul>
-<li><strong>Graphics Backend</strong>: Vulkan (recommended) or OpenGL</li>
-<li><strong>Resolution Scale</strong>: 1x (default) or 2x if your GPU allows</li>
-<li><strong>Aspect Ratio</strong>: 16:9</li>
-<li><strong>Anti-Aliasing</strong>: FXAA or SMAA</li>
-<li><strong>Scaling Filter</strong>: Bilinear or FSR</li>
-<li><strong>V-Sync</strong>: ✅ Enabled</li>
-</ul>
-<h4 id="audio-settings">
-<a class="header-anchor" href="#audio-settings"></a>
-Audio Settings
-</h4><pre tabindex="0"><code>Options → Settings → Audio
-</code></pre><ul>
-<li><strong>Audio Backend</strong>: SDL2 (recommended) or OpenAL</li>
-<li><strong>Volume</strong>: 100%</li>
-<li><strong>Buffer Size</strong>: 1024 (default)</li>
-</ul>
-<h2 id="-step-4-installing-firmware-and-keys">
-<a class="header-anchor" href="#-step-4-installing-firmware-and-keys"></a>
-🎯 Step 4: Installing Firmware and Keys
-</h2><h3 id="installing-nintendo-switch-firmware">
-<a class="header-anchor" href="#installing-nintendo-switch-firmware"></a>
-Installing Nintendo Switch Firmware
-</h3><blockquote>
-<p>⚠️ <strong>Important</strong>: You must extract firmware from your own Nintendo Switch console.</p></blockquote>
-<h4 id="method-1-official-firmware-installation">
-<a class="header-anchor" href="#method-1-official-firmware-installation"></a>
-Method 1: Official Firmware Installation
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Legal firmware extraction from your Switch</span>
-</span></span><span style="display:flex;"><span>1. Use TegraRcmGUI + Hekate on your Switch
-</span></span><span style="display:flex;"><span>2. Extract firmware with NXDumpTool
-</span></span><span style="display:flex;"><span>3. In Ryujinx: Tools → Install Firmware
-</span></span><span style="display:flex;"><span>4. Select firmware file <span style="color:#f92672">(</span>.zip or .xci<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>5. Wait <span style="color:#66d9ef">for</span> installation completion
-</span></span></code></pre></div><h4 id="method-2-firmware-update">
-<a class="header-anchor" href="#method-2-firmware-update"></a>
-Method 2: Firmware Update
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Updating existing firmware</span>
-</span></span><span style="display:flex;"><span>1. Download latest firmware <span style="color:#f92672">(</span>legally<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Tools → Install Firmware → Update
-</span></span><span style="display:flex;"><span>3. Select new firmware file
-</span></span><span style="display:flex;"><span>4. Restart Ryujinx
-</span></span></code></pre></div><h3 id="installing-encryption-keys">
-<a class="header-anchor" href="#installing-encryption-keys"></a>
-Installing Encryption Keys
-</h3><h4 id="required-key-files">
-<a class="header-anchor" href="#required-key-files"></a>
-Required Key Files
-</h4><ul>
-<li><strong>prod.keys</strong>: Main encryption keys</li>
-<li><strong>title.keys</strong>: Title-specific keys (optional)</li>
-</ul>
-<h4 id="installation-process">
-<a class="header-anchor" href="#installation-process"></a>
-Installation Process
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Key file location</span>
-</span></span><span style="display:flex;"><span>Windows: %APPDATA%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\s</span>ystem<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>Linux: ~/.config/Ryujinx/system/
-</span></span><span style="display:flex;"><span>macOS: ~/Library/Application Support/Ryujinx/system/
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation steps</span>
-</span></span><span style="display:flex;"><span>1. Extract prod.keys from your Switch <span style="color:#f92672">(</span>via Lockpick_RCM<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Place prod.keys in system folder
-</span></span><span style="display:flex;"><span>3. Restart Ryujinx
-</span></span><span style="display:flex;"><span>4. Verify in Tools → Manage File Types
-</span></span></code></pre></div><h3 id="extracting-keys-from-your-switch">
-<a class="header-anchor" href="#extracting-keys-from-your-switch"></a>
-Extracting Keys from Your Switch
-</h3><h4 id="using-lockpick_rcm">
-<a class="header-anchor" href="#using-lockpick_rcm"></a>
-Using Lockpick_RCM
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Requirements</span>
-</span></span><span style="display:flex;"><span>- Modded Nintendo Switch <span style="color:#f92672">(</span>CFW<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- SD card
-</span></span><span style="display:flex;"><span>- Lockpick_RCM payload
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Process</span>
-</span></span><span style="display:flex;"><span>1. Boot Switch into RCM mode
-</span></span><span style="display:flex;"><span>2. Inject Lockpick_RCM payload
-</span></span><span style="display:flex;"><span>3. Run key extraction
-</span></span><span style="display:flex;"><span>4. Copy prod.keys from SD card
-</span></span><span style="display:flex;"><span>5. Transfer to PC Ryujinx folder
-</span></span></code></pre></div><h2 id="-step-5-game-management">
-<a class="header-anchor" href="#-step-5-game-management"></a>
-🎮 Step 5: Game Management
-</h2><h3 id="supported-game-formats">
-<a class="header-anchor" href="#supported-game-formats"></a>
-Supported Game Formats
-</h3><h4 id="nintendo-switch-games">
-<a class="header-anchor" href="#nintendo-switch-games"></a>
-Nintendo Switch Games
-</h4><ul>
-<li><strong>.NSP</strong>: Nintendo Submission Package (digital games)</li>
-<li><strong>.XCI</strong>: NX Card Image (cartridge dumps)</li>
-<li><strong>.NCA</strong>: Nintendo Content Archive (system files)</li>
-<li><strong>.NSZ/.XCZ</strong>: Compressed formats</li>
-</ul>
-<h4 id="system-content">
-<a class="header-anchor" href="#system-content"></a>
-System Content
-</h4><ul>
-<li><strong>.NAX</strong>: Nintendo Archive eXtended</li>
-<li><strong>.NRO</strong>: Nintendo Relocatable Object (homebrew)</li>
-</ul>
-<h3 id="adding-games">
-<a class="header-anchor" href="#adding-games"></a>
-Adding Games
-</h3><h4 id="method-1-drag--drop">
-<a class="header-anchor" href="#method-1-drag--drop"></a>
-Method 1: Drag &amp; Drop
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Simple method</span>
-</span></span><span style="display:flex;"><span>1. Drag your game file into Ryujinx window
-</span></span><span style="display:flex;"><span>2. Game automatically appears in library
-</span></span><span style="display:flex;"><span>3. Double-click to launch
-</span></span></code></pre></div><h4 id="method-2-file-menu">
-<a class="header-anchor" href="#method-2-file-menu"></a>
-Method 2: File Menu
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Traditional method</span>
-</span></span><span style="display:flex;"><span>1. File → Load Application from File
-</span></span><span style="display:flex;"><span>2. Navigate to your game file
-</span></span><span style="display:flex;"><span>3. Select and open
-</span></span><span style="display:flex;"><span>4. Game loads directly
-</span></span></code></pre></div><h4 id="method-3-game-directory">
-<a class="header-anchor" href="#method-3-game-directory"></a>
-Method 3: Game Directory
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic scanning</span>
-</span></span><span style="display:flex;"><span>1. Options → Settings → UI
-</span></span><span style="display:flex;"><span>2. Add Game Directories
-</span></span><span style="display:flex;"><span>3. Select folder containing games
-</span></span><span style="display:flex;"><span>4. Ryujinx scans and lists automatically
-</span></span></code></pre></div><h3 id="installing-updates-and-dlc">
-<a class="header-anchor" href="#installing-updates-and-dlc"></a>
-Installing Updates and DLC
-</h3><h4 id="game-updates">
-<a class="header-anchor" href="#game-updates"></a>
-Game Updates
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Update installation</span>
-</span></span><span style="display:flex;"><span>File → Install Update from File
-</span></span><span style="display:flex;"><span>1. Select update .nsp file
-</span></span><span style="display:flex;"><span>2. Confirm installation
-</span></span><span style="display:flex;"><span>3. Update applies to base game
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verification</span>
-</span></span><span style="display:flex;"><span>Right-click game → Manage Title Updates
-</span></span></code></pre></div><h4 id="dlc-downloadable-content">
-<a class="header-anchor" href="#dlc-downloadable-content"></a>
-DLC (Downloadable Content)
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># DLC installation</span>
-</span></span><span style="display:flex;"><span>File → Install DLC from File
-</span></span><span style="display:flex;"><span>1. Select DLC .nsp file
-</span></span><span style="display:flex;"><span>2. Wait <span style="color:#66d9ef">for</span> installation
-</span></span><span style="display:flex;"><span>3. DLC appears in game properties
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Management</span>
-</span></span><span style="display:flex;"><span>Right-click game → Manage DLC
-</span></span></code></pre></div><h3 id="dumping-your-own-games">
-<a class="header-anchor" href="#dumping-your-own-games"></a>
-Dumping Your Own Games
-</h3><h4 id="from-physical-cartridge">
-<a class="header-anchor" href="#from-physical-cartridge"></a>
-From Physical Cartridge
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using nxdumptool (requires CFW)</span>
-</span></span><span style="display:flex;"><span>1. Install nxdumptool on Switch
-</span></span><span style="display:flex;"><span>2. Insert cartridge
-</span></span><span style="display:flex;"><span>3. Launch nxdumptool
-</span></span><span style="display:flex;"><span>4. Select <span style="color:#e6db74">&#34;Dump gamecard content&#34;</span>
-</span></span><span style="display:flex;"><span>5. Choose XCI or NSP format
-</span></span><span style="display:flex;"><span>6. Transfer to PC
-</span></span></code></pre></div><h4 id="from-digital-games">
-<a class="header-anchor" href="#from-digital-games"></a>
-From Digital Games
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using nxdumptool</span>
-</span></span><span style="display:flex;"><span>1. Launch nxdumptool on Switch
-</span></span><span style="display:flex;"><span>2. Select <span style="color:#e6db74">&#34;Dump installed content&#34;</span>
-</span></span><span style="display:flex;"><span>3. Choose your digital game
-</span></span><span style="display:flex;"><span>4. Select NSP format
-</span></span><span style="display:flex;"><span>5. Wait <span style="color:#66d9ef">for</span> dump completion
-</span></span><span style="display:flex;"><span>6. Transfer to PC
-</span></span></code></pre></div><h2 id="-performance-optimization">
-<a class="header-anchor" href="#-performance-optimization"></a>
-🚀 Performance Optimization
-</h2><h3 id="advanced-settings-for-better-performance">
-<a class="header-anchor" href="#advanced-settings-for-better-performance"></a>
-Advanced Settings for Better Performance
-</h3><h4 id="cpu-configuration">
-<a class="header-anchor" href="#cpu-configuration"></a>
-CPU Configuration
-</h4><pre tabindex="0"><code>Settings → CPU
-- Enable CPU JIT: ✅ Enabled (essential)
-- Enable PTC: ✅ Enabled (reduces stuttering)
-- Memory Manager Mode: Host (faster)
-- Ignore Missing Services: ✅ Enabled (for homebrew)
-</code></pre><h4 id="gpu-configuration">
-<a class="header-anchor" href="#gpu-configuration"></a>
-GPU Configuration
-</h4><pre tabindex="0"><code>Settings → Graphics
-- Shader Cache: ✅ Enabled (essential)
-- Texture Recompression: ✅ Enabled (saves VRAM)
-- Resolution Scale: 1x-2x (depending on GPU)
-- Backend Multithreading: ✅ Enabled
-</code></pre><h4 id="memory-optimization">
-<a class="header-anchor" href="#memory-optimization"></a>
-Memory Optimization
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Windows optimizations</span>
-</span></span><span style="display:flex;"><span>1. Set Windows to High Performance mode
-</span></span><span style="display:flex;"><span>2. Disable Windows Game Mode
-</span></span><span style="display:flex;"><span>3. Close unnecessary background apps
-</span></span><span style="display:flex;"><span>4. Increase virtual memory <span style="color:#f92672">(</span>pagefile<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>5. Use RAM disk <span style="color:#66d9ef">for</span> shader cache <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> 32GB+ RAM<span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="game-specific-performance-mods">
-<a class="header-anchor" href="#game-specific-performance-mods"></a>
-Game-Specific Performance Mods
-</h3><h4 id="60-fps-patches">
-<a class="header-anchor" href="#60-fps-patches"></a>
-60 FPS Patches
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Popular 60 FPS mods</span>
-</span></span><span style="display:flex;"><span>- The Legend of Zelda: Breath of the Wild
-</span></span><span style="display:flex;"><span>- Super Mario Odyssey
-</span></span><span style="display:flex;"><span>- Pokémon Legends: Arceus
-</span></span><span style="display:flex;"><span>- Xenoblade Chronicles <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation</span>
-</span></span><span style="display:flex;"><span>1. Download mod from GameBanana/NexusMods
-</span></span><span style="display:flex;"><span>2. Extract to mods/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
-</span></span><span style="display:flex;"><span>3. Enable in game properties
-</span></span></code></pre></div><h4 id="resolution-mods">
-<a class="header-anchor" href="#resolution-mods"></a>
-Resolution Mods
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># High-resolution texture packs</span>
-</span></span><span style="display:flex;"><span>- Zelda: Breath of the Wild 4K textures
-</span></span><span style="display:flex;"><span>- Super Mario Odyssey HD pack
-</span></span><span style="display:flex;"><span>- Pokémon Sword/Shield enhanced
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Installation same as performance mods</span>
-</span></span></code></pre></div><h2 id="-game-specific-configurations">
-<a class="header-anchor" href="#-game-specific-configurations"></a>
-🎯 Game-Specific Configurations
-</h2><h3 id="the-legend-of-zelda-breath-of-the-wild">
-<a class="header-anchor" href="#the-legend-of-zelda-breath-of-the-wild"></a>
-The Legend of Zelda: Breath of the Wild
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Optimal settings</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 2x <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> GPU powerful<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Backend: Vulkan
-</span></span><span style="display:flex;"><span>- V-Sync: ✅ Enabled
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Recommended mods:
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS unlock
-</span></span><span style="display:flex;"><span>- High resolution shadows
-</span></span><span style="display:flex;"><span>- Enhanced draw distance
-</span></span><span style="display:flex;"><span>- 4K texture pack
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Performance: Excellent with modern hardware
-</span></span></code></pre></div><h3 id="super-mario-odyssey">
-<a class="header-anchor" href="#super-mario-odyssey"></a>
-Super Mario Odyssey
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Recommended configuration</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 1x-2x
-</span></span><span style="display:flex;"><span>- Anti-aliasing: SMAA
-</span></span><span style="display:flex;"><span>- V-Sync: ✅ Enabled
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>CPU:
-</span></span><span style="display:flex;"><span>- PTC: ✅ Essential <span style="color:#66d9ef">for</span> smooth gameplay
-</span></span><span style="display:flex;"><span>- JIT: ✅ Enabled
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Performance: Generally excellent, stable <span style="color:#ae81ff">60</span> FPS
-</span></span></code></pre></div><h3 id="pokémon-legends-arceus">
-<a class="header-anchor" href="#pok%c3%a9mon-legends-arceus"></a>
-Pokémon Legends: Arceus
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Special optimization needed</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span>recommended<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Backend: Vulkan preferred
-</span></span><span style="display:flex;"><span>- Shader Cache: ✅ Critical
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Mods:
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">60</span> FPS patch available
-</span></span><span style="display:flex;"><span>- Draw distance improvement
-</span></span><span style="display:flex;"><span>- Texture enhancement
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Note: Resource-intensive game
-</span></span></code></pre></div><h3 id="xenoblade-chronicles-3">
-<a class="header-anchor" href="#xenoblade-chronicles-3"></a>
-Xenoblade Chronicles 3
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Demanding game settings</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span>very demanding<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Backend: Vulkan
-</span></span><span style="display:flex;"><span>- Texture Recompression: ✅ Enabled
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>CPU:
-</span></span><span style="display:flex;"><span>- All optimizations enabled
-</span></span><span style="display:flex;"><span>- Close background apps
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Performance: Variable, demanding on CPU/GPU
-</span></span></code></pre></div><h3 id="super-smash-bros-ultimate">
-<a class="header-anchor" href="#super-smash-bros-ultimate"></a>
-Super Smash Bros. Ultimate
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Competitive gaming setup</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 1x <span style="color:#f92672">(</span><span style="color:#66d9ef">for</span> consistency<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- V-Sync: ❌ Disabled <span style="color:#f92672">(</span>reduces input lag<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Backend: Vulkan
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>CPU:
-</span></span><span style="display:flex;"><span>- Maximum performance settings
-</span></span><span style="display:flex;"><span>- High priority process
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Network: Local multiplayer supported
-</span></span></code></pre></div><h3 id="animal-crossing-new-horizons">
-<a class="header-anchor" href="#animal-crossing-new-horizons"></a>
-Animal Crossing: New Horizons
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Casual gaming optimization</span>
-</span></span><span style="display:flex;"><span>Graphics:
-</span></span><span style="display:flex;"><span>- Resolution Scale: 2x-3x possible
-</span></span><span style="display:flex;"><span>- Anti-aliasing: FXAA
-</span></span><span style="display:flex;"><span>- Backend: Vulkan or OpenGL
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Performance: Excellent, not demanding
-</span></span><span style="display:flex;"><span>Quality improvements very noticeable
-</span></span></code></pre></div><h2 id="-advanced-features">
-<a class="header-anchor" href="#-advanced-features"></a>
-🛠️ Advanced Features
-</h2><h3 id="mods-and-homebrew">
-<a class="header-anchor" href="#mods-and-homebrew"></a>
-Mods and Homebrew
-</h3><h4 id="installing-game-mods">
-<a class="header-anchor" href="#installing-game-mods"></a>
-Installing Game Mods
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mod installation process</span>
-</span></span><span style="display:flex;"><span>1. Download mod from trusted source
-</span></span><span style="display:flex;"><span>2. Extract to: mods/<span style="color:#f92672">[</span>TitleID<span style="color:#f92672">]</span>/
-</span></span><span style="display:flex;"><span>3. Right-click game → Properties → Mods
-</span></span><span style="display:flex;"><span>4. Enable desired mods
-</span></span><span style="display:flex;"><span>5. Launch game
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Popular mod sources</span>
-</span></span><span style="display:flex;"><span>- GameBanana
-</span></span><span style="display:flex;"><span>- NexusMods
-</span></span><span style="display:flex;"><span>- GBAtemp forums
-</span></span><span style="display:flex;"><span>- GitHub repositories
-</span></span></code></pre></div><h4 id="homebrew-applications">
-<a class="header-anchor" href="#homebrew-applications"></a>
-Homebrew Applications
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Running homebrew</span>
-</span></span><span style="display:flex;"><span>1. Download .nro homebrew files
-</span></span><span style="display:flex;"><span>2. File → Load Homebrew
-</span></span><span style="display:flex;"><span>3. Select .nro file
-</span></span><span style="display:flex;"><span>4. Application launches
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Popular homebrew</span>
-</span></span><span style="display:flex;"><span>- Goldleaf <span style="color:#f92672">(</span>file manager<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Tinfoil <span style="color:#f92672">(</span>game installer<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Atmosphere <span style="color:#f92672">(</span>CFW loader<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>- Checkpoint <span style="color:#f92672">(</span>save manager<span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="save-management">
-<a class="header-anchor" href="#save-management"></a>
-Save Management
-</h3><h4 id="save-location">
-<a class="header-anchor" href="#save-location"></a>
-Save Location
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Save data location</span>
-</span></span><span style="display:flex;"><span>Windows: %APPDATA%<span style="color:#ae81ff">\R</span>yujinx<span style="color:#ae81ff">\b</span>is<span style="color:#ae81ff">\u</span>ser<span style="color:#ae81ff">\s</span>ave<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>Linux: ~/.config/Ryujinx/bis/user/save/
-</span></span><span style="display:flex;"><span>macOS: ~/Library/Application Support/Ryujinx/bis/user/save/
-</span></span></code></pre></div><h4 id="backup-and-restore">
-<a class="header-anchor" href="#backup-and-restore"></a>
-Backup and Restore
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Automatic backup</span>
-</span></span><span style="display:flex;"><span>1. Settings → System → Auto-save
-</span></span><span style="display:flex;"><span>2. Configure backup interval
-</span></span><span style="display:flex;"><span>3. Choose backup location
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Manual backup</span>
-</span></span><span style="display:flex;"><span>1. File → Export/Import Save Data
-</span></span><span style="display:flex;"><span>2. Select game and save slot
-</span></span><span style="display:flex;"><span>3. Choose export location
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cloud sync (recommended)</span>
-</span></span><span style="display:flex;"><span>- OneDrive, Google Drive, Dropbox
-</span></span><span style="display:flex;"><span>- Sync save folder automatically
-</span></span></code></pre></div><h4 id="save-transfer-from-real-switch">
-<a class="header-anchor" href="#save-transfer-from-real-switch"></a>
-Save Transfer from Real Switch
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Using Checkpoint (requires CFW)</span>
-</span></span><span style="display:flex;"><span>1. Install Checkpoint on Switch
-</span></span><span style="display:flex;"><span>2. Export saves to SD card
-</span></span><span style="display:flex;"><span>3. Transfer to PC
-</span></span><span style="display:flex;"><span>4. Import via Ryujinx save manager
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compatibility: Most saves transfer perfectly</span>
-</span></span></code></pre></div><h2 id="-troubleshooting">
-<a class="header-anchor" href="#-troubleshooting"></a>
-🔧 Troubleshooting
-</h2><h3 id="common-launch-issues">
-<a class="header-anchor" href="#common-launch-issues"></a>
-Common Launch Issues
-</h3><h4 id="game-wont-start">
-<a class="header-anchor" href="#game-wont-start"></a>
-Game Won&rsquo;t Start
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>System checks:
-</span></span><span style="display:flex;"><span>1. Firmware installed and up to date
-</span></span><span style="display:flex;"><span>2. prod.keys present and valid
-</span></span><span style="display:flex;"><span>3. Game file not corrupted <span style="color:#f92672">(</span>check hash<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>4. Sufficient free disk space
-</span></span><span style="display:flex;"><span>5. Latest Ryujinx version
-</span></span></code></pre></div><h4 id="black-screencrash-on-boot">
-<a class="header-anchor" href="#black-screencrash-on-boot"></a>
-Black Screen/Crash on Boot
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Solutions in order:
-</span></span><span style="display:flex;"><span>1. Change graphics backend <span style="color:#f92672">(</span>Vulkan ↔ OpenGL<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Disable mods temporarily
-</span></span><span style="display:flex;"><span>3. Reset game-specific settings
-</span></span><span style="display:flex;"><span>4. Verify game dump integrity
-</span></span><span style="display:flex;"><span>5. Update GPU drivers
-</span></span></code></pre></div><h4 id="shader-compilation-stuttering">
-<a class="header-anchor" href="#shader-compilation-stuttering"></a>
-Shader Compilation Stuttering
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Shader cache optimization:
-</span></span><span style="display:flex;"><span>1. Let shaders compile fully <span style="color:#f92672">(</span>first run<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Enable PTC <span style="color:#66d9ef">for</span> CPU shaders
-</span></span><span style="display:flex;"><span>3. Download pre-compiled shader cache
-</span></span><span style="display:flex;"><span>4. Use SSD <span style="color:#66d9ef">for</span> cache storage
-</span></span><span style="display:flex;"><span>5. Don<span style="color:#960050;background-color:#1e0010">&#39;</span>t delete cache folder
-</span></span></code></pre></div><h3 id="performance-issues">
-<a class="header-anchor" href="#performance-issues"></a>
-Performance Issues
-</h3><h4 id="low-fpsstuttering">
-<a class="header-anchor" href="#low-fpsstuttering"></a>
-Low FPS/Stuttering
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Performance optimization steps:
-</span></span><span style="display:flex;"><span>1. Enable all CPU optimizations <span style="color:#f92672">(</span>JIT, PTC<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Use Vulkan graphics backend
-</span></span><span style="display:flex;"><span>3. Reduce resolution scale to 1x
-</span></span><span style="display:flex;"><span>4. Close background applications
-</span></span><span style="display:flex;"><span>5. Set Windows to High Performance
-</span></span><span style="display:flex;"><span>6. Update graphics drivers
-</span></span></code></pre></div><h4 id="memory-issues">
-<a class="header-anchor" href="#memory-issues"></a>
-Memory Issues
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>RAM optimization:
-</span></span><span style="display:flex;"><span>1. Close browser tabs and heavy apps
-</span></span><span style="display:flex;"><span>2. Increase Windows virtual memory
-</span></span><span style="display:flex;"><span>3. Use 16GB+ RAM <span style="color:#66d9ef">for</span> demanding games
-</span></span><span style="display:flex;"><span>4. Monitor RAM usage in Task Manager
-</span></span><span style="display:flex;"><span>5. Restart Ryujinx between games
-</span></span></code></pre></div><h4 id="gpu-issues">
-<a class="header-anchor" href="#gpu-issues"></a>
-GPU Issues
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Graphics troubleshooting:
-</span></span><span style="display:flex;"><span>1. Update GPU drivers to latest
-</span></span><span style="display:flex;"><span>2. Test different graphics backends
-</span></span><span style="display:flex;"><span>3. Disable GPU overclocking
-</span></span><span style="display:flex;"><span>4. Monitor GPU temperatures
-</span></span><span style="display:flex;"><span>5. Reduce resolution/effects
-</span></span></code></pre></div><h3 id="audio-issues">
-<a class="header-anchor" href="#audio-issues"></a>
-Audio Issues
-</h3><h4 id="no-audiodistorted-sound">
-<a class="header-anchor" href="#no-audiodistorted-sound"></a>
-No Audio/Distorted Sound
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Audio solutions:
-</span></span><span style="display:flex;"><span>1. Change audio backend <span style="color:#f92672">(</span>SDL2 ↔ OpenAL<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>2. Adjust buffer size <span style="color:#f92672">(</span>512, 1024, 2048<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>3. Update audio drivers
-</span></span><span style="display:flex;"><span>4. Check Windows audio settings
-</span></span><span style="display:flex;"><span>5. Test with different games
-</span></span></code></pre></div><h4 id="audio-lagdesync">
-<a class="header-anchor" href="#audio-lagdesync"></a>
-Audio Lag/Desync
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Synchronization fixes:
-</span></span><span style="display:flex;"><span>1. Enable V-Sync
-</span></span><span style="display:flex;"><span>2. Adjust audio buffer size
-</span></span><span style="display:flex;"><span>3. Close audio applications
-</span></span><span style="display:flex;"><span>4. Check system audio latency
-</span></span><span style="display:flex;"><span>5. Use exclusive audio mode
-</span></span></code></pre></div><h2 id="-compatibility-and-performance">
-<a class="header-anchor" href="#-compatibility-and-performance"></a>
-📊 Compatibility and Performance
-</h2><h3 id="compatibility-statistics">
-<a class="header-anchor" href="#compatibility-statistics"></a>
-Compatibility Statistics
-</h3><table>
-  <thead>
-      <tr>
-          <th>Status</th>
-          <th>Percentage</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Perfect</strong></td>
-          <td>~70%</td>
-          <td>Works flawlessly</td>
-      </tr>
-      <tr>
-          <td><strong>Great</strong></td>
-          <td>~20%</td>
-          <td>Minor issues</td>
-      </tr>
-      <tr>
-          <td><strong>Good</strong></td>
-          <td>~8%</td>
-          <td>Playable with limitations</td>
-      </tr>
-      <tr>
-          <td><strong>Poor</strong></td>
-          <td>~2%</td>
-          <td>Major problems</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="perfectly-compatible-games">
-<a class="header-anchor" href="#perfectly-compatible-games"></a>
-Perfectly Compatible Games
-</h3><h4 id="first-party-nintendo">
-<a class="header-anchor" href="#first-party-nintendo"></a>
-First-Party Nintendo
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Legend of Zelda: Breath of the Wild
-</span></span><span style="display:flex;"><span>✅ Super Mario Odyssey
-</span></span><span style="display:flex;"><span>✅ Mario Kart <span style="color:#ae81ff">8</span> Deluxe
-</span></span><span style="display:flex;"><span>✅ Super Smash Bros. Ultimate
-</span></span><span style="display:flex;"><span>✅ Animal Crossing: New Horizons
-</span></span><span style="display:flex;"><span>✅ Splatoon 2/3
-</span></span><span style="display:flex;"><span>✅ Pokémon Sword/Shield
-</span></span><span style="display:flex;"><span>✅ Super Mario Party
-</span></span></code></pre></div><h4 id="third-party-highlights">
-<a class="header-anchor" href="#third-party-highlights"></a>
-Third-Party Highlights
-</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>✅ The Witcher 3: Wild Hunt
-</span></span><span style="display:flex;"><span>✅ Doom <span style="color:#f92672">(</span>2016<span style="color:#f92672">)</span> / Doom Eternal
-</span></span><span style="display:flex;"><span>✅ Skyrim Anniversary Edition
-</span></span><span style="display:flex;"><span>✅ Diablo III: Eternal Collection
-</span></span><span style="display:flex;"><span>✅ Hades
-</span></span><span style="display:flex;"><span>✅ Celeste
-</span></span><span style="display:flex;"><span>✅ Ori and the Blind Forest
-</span></span></code></pre></div><h3 id="performance-benchmarks">
-<a class="header-anchor" href="#performance-benchmarks"></a>
-Performance Benchmarks
-</h3><h4 id="test-configuration-i7-10700k-rtx-3070-32gb-ram">
-<a class="header-anchor" href="#test-configuration-i7-10700k-rtx-3070-32gb-ram"></a>
-Test Configuration: i7-10700K, RTX 3070, 32GB RAM
-</h4><table>
-  <thead>
-      <tr>
-          <th>Game</th>
-          <th>Resolution</th>
-          <th>Average FPS</th>
-          <th>CPU Usage</th>
-          <th>GPU Usage</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Zelda: BotW</strong></td>
-          <td>1080p</td>
-          <td>58-60</td>
-          <td>65%</td>
-          <td>70%</td>
-      </tr>
-      <tr>
-          <td><strong>Mario Odyssey</strong></td>
-          <td>1080p</td>
-          <td>60</td>
-          <td>45%</td>
-          <td>55%</td>
-      </tr>
-      <tr>
-          <td><strong>Smash Ultimate</strong></td>
-          <td>1080p</td>
-          <td>60</td>
-          <td>50%</td>
-          <td>40%</td>
-      </tr>
-      <tr>
-          <td><strong>Pokémon Legends</strong></td>
-          <td>720p</td>
-          <td>45-55</td>
-          <td>80%</td>
-          <td>85%</td>
-      </tr>
-      <tr>
-          <td><strong>Xenoblade 3</strong></td>
-          <td>720p</td>
-          <td>35-50</td>
-          <td>90%</td>
-          <td>95%</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="-resources-and-community">
-<a class="header-anchor" href="#-resources-and-community"></a>
-🌐 Resources and Community
-</h2><h3 id="official-resources">
-<a class="header-anchor" href="#official-resources"></a>
-Official Resources
-</h3><ul>
-<li><a href="https://ryujinx.org/">🏠 Official Ryujinx Site</a></li>
-<li><a href="https://github.com/Ryujinx/Ryujinx-Games-List">📊 Compatibility List</a></li>
-<li><a href="https://github.com/Ryujinx/Ryujinx/wiki">📚 Official Wiki</a></li>
-<li><a href="https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&amp;-Configuration-Guide">🔧 Setup Guide</a></li>
-</ul>
-<h3 id="active-communities">
-<a class="header-anchor" href="#active-communities"></a>
-Active Communities
-</h3><ul>
-<li><a href="https://discord.gg/ryujinx">💬 Ryujinx Discord</a></li>
-<li><a href="https://www.reddit.com/r/Ryujinx/">🗨️ Reddit r/Ryujinx</a></li>
-<li><a href="https://gbatemp.net/categories/nintendo-switch-emulation.283/">🌐 GBAtemp Forums</a></li>
-<li><a href="https://www.youtube.com/results?search_query=ryujinx&#43;guide">📺 YouTube Guides</a></li>
-</ul>
-<h3 id="development-and-contribution">
-<a class="header-anchor" href="#development-and-contribution"></a>
-Development and Contribution
-</h3><ul>
-<li><a href="https://github.com/Ryujinx/Ryujinx">💻 GitHub Ryujinx</a></li>
-<li><a href="https://github.com/Ryujinx/Ryujinx/issues">🐛 Bug Reports</a></li>
-<li><a href="https://www.patreon.com/ryujinx">💰 Patreon Support</a></li>
-<li><a href="https://github.com/Ryujinx/Ryujinx/blob/master/CONTRIBUTING.md">🔧 Contributing Guide</a></li>
-</ul>
-<h3 id="switch-homebrew-tools">
-<a class="header-anchor" href="#switch-homebrew-tools"></a>
-Switch Homebrew Tools
-</h3><ul>
-<li><a href="https://github.com/Atmosphere-NX/Atmosphere">🔧 Atmosphere CFW</a></li>
-<li><a href="https://github.com/XorTroll/Goldleaf">📁 Goldleaf</a> - File manager</li>
-<li><a href="https://github.com/FlagBrew/Checkpoint">💾 Checkpoint</a> - Save manager</li>
-<li><a href="https://github.com/DarkMatterCore/nxdumptool">🔍 nxdumptool</a> - Game dumper</li>
-</ul>
-<h2 id="-faq---frequently-asked-questions">
-<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
-❓ FAQ - Frequently Asked Questions
-</h2><h3 id="general-questions">
-<a class="header-anchor" href="#general-questions"></a>
-General Questions
-</h3><p><strong>Q: Is Ryujinx free?</strong>
-<strong>A:</strong> Yes, Ryujinx is completely free and open-source.</p>
-<p><strong>Q: Can I use my real Switch saves?</strong>
-<strong>A:</strong> Yes, with proper tools and CFW, save transfer is possible.</p>
-<p><strong>Q: Do I need a powerful PC?</strong>
-<strong>A:</strong> Modern mid-range hardware recommended. i5-8400 + GTX 1660 minimum.</p>
-<h3 id="technical-questions">
-<a class="header-anchor" href="#technical-questions"></a>
-Technical Questions
-</h3><p><strong>Q: Vulkan or OpenGL?</strong>
-<strong>A:</strong> Vulkan generally offers better performance. OpenGL for compatibility issues.</p>
-<p><strong>Q: Why do some games stutter initially?</strong>
-<strong>A:</strong> Shader compilation on first run. Enable PTC and be patient.</p>
-<p><strong>Q: Can I play online?</strong>
-<strong>A:</strong> Local wireless works. Online play not supported (Nintendo servers).</p>
-<h3 id="legal-questions">
-<a class="header-anchor" href="#legal-questions"></a>
-Legal Questions
-</h3><p><strong>Q: Is Switch emulation legal?</strong>
-<strong>A:</strong> Yes, emulation is legal. Only use games you legally own.</p>
-<p><strong>Q: Where do I get games?</strong>
-<strong>A:</strong> Dump from your own Switch cartridges/digital purchases only.</p>
-<p><strong>Q: Can I download firmware?</strong>
-<strong>A:</strong> Must extract from your own Switch console legally.</p>
-<h2 id="-conclusion">
-<a class="header-anchor" href="#-conclusion"></a>
-🎯 Conclusion
-</h2><p>Ryujinx is an outstanding Nintendo Switch emulator that offers:</p>
-<ul>
-<li>✅ <strong>Excellent compatibility</strong> with 90%+ of Switch games</li>
-<li>✅ <strong>Superior performance</strong> with proper hardware</li>
-<li>✅ <strong>Active development</strong> with constant improvements</li>
-<li>✅ <strong>User-friendly interface</strong> and configuration</li>
-<li>✅ <strong>Advanced features</strong> (mods, save management, etc.)</li>
-<li>✅ <strong>Cross-platform support</strong> (Windows, Linux, macOS)</li>
-<li>✅ <strong>Strong community</strong> and regular updates</li>
-</ul>
-<p>With this comprehensive guide, you now know how to:</p>
-<ul>
-<li><strong>Install</strong> and configure Ryujinx optimally</li>
-<li><strong>Extract</strong> firmware and keys legally</li>
-<li><strong>Optimize</strong> performance for your hardware</li>
-<li><strong>Install</strong> and manage games, updates, DLC</li>
-<li><strong>Use</strong> mods and advanced features</li>
-<li><strong>Troubleshoot</strong> common issues</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>Important Reminder</strong>: Only use games you legally own. Respect copyrights and support developers by purchasing their games.</p></blockquote>
-<p><strong>Enjoy your Nintendo Switch games in enhanced quality on PC! 🎮✨</strong></p>
-<pre tabindex="0"><code></code></pre>
-        
-        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-02</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
-      </description>
-      
-        <category>Gaming</category><category>Tutorials</category>
       
     </item>
     

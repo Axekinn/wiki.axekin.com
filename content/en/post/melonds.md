@@ -1,56 +1,48 @@
 ---
-title: "Complete Guide: melonDS Installation and Configuration"
+title: "melonDS Installation and Configuration"
+description: "Detailed tutorial for installing, configuring and using the melonDS Nintendo DS emulator - Complete setup with BIOS, graphics and controls"
 date: 2025-06-02
-draft: false
-categories: ["Gaming", "Tutorials"]
-tags: ["melonDS", "Nintendo DS", "Emulation", "Gaming"]
+lastmod: 2025-06-07
+categories: ["gaming", "emulation", "tutorials"]
+tags: ["melonds", "nintendo-ds", "emulation", "installation", "configuration", "gaming"]
+series: ["Emulation Guides"]
 author: "Axekin"
-description: "Detailed tutorial for installing, configuring and using the Nintendo DS emulator melonDS"
+draft: false
+toc: true
+math: false
+featured: true
+weight: 5
+aliases: 
+  - /en/melonds-guide/
+  - /en/guides/melonds-installation/
+summary: "Learn how to install and configure melonDS for optimal Nintendo DS emulation. Complete guide with BIOS, graphics settings and advanced features."
 cover: "/images/covers/melonds.png"
+image: "/images/covers/melonds.png"
+showtoc: true
+tocopen: true
+comments: true
+searchHidden: false
 ---
 
 ## 🎮 Introduction to melonDS
 
-**melonDS** is a modern and accurate open-source Nintendo DS emulator, developed since 2016. It stands out with its excellent compatibility, emulation accuracy, and advanced features like local Wi-Fi, savestates, and graphical enhancement. It's the perfect modern alternative to DeSmuME.
+**melonDS** is a modern and accurate open-source Nintendo DS emulator, developed since 2016. It stands out for its excellent compatibility, emulation precision, and advanced features like local Wi-Fi, savestates, and graphics enhancement. It's the perfect modern alternative to DeSmuME.
 
-> ⚠️ **Legal Notice**: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.
-
-## 📋 System Requirements
-
-### Minimum Configuration
-- **OS**: Windows 7+ (64-bit) / Linux / macOS
-- **CPU**: Intel Core i3-3220 / AMD FX-4300 (2+ cores, 2.5+ GHz)
-- **RAM**: 2 GB
-- **GPU**: OpenGL 3.2 compatible
-- **Storage**: 1 GB free space + game space
-
-### Recommended Configuration
-- **CPU**: Intel Core i5-4590 / AMD Ryzen 3 1200 (4+ cores, 3.0+ GHz)
-- **RAM**: 4 GB
-- **GPU**: OpenGL 4.3 / Vulkan 1.0 compatible
-- **Storage**: SSD with 20+ GB free space
-
-### Optimal Configuration
-- **CPU**: Intel Core i7-8700 / AMD Ryzen 5 2600 (6+ cores, 3.2+ GHz)
-- **RAM**: 8 GB
-- **GPU**: NVIDIA GTX 1050 / AMD RX 560 or higher
-- **Storage**: NVMe SSD with 50+ GB free space
-
-> 💡 **Important Note**: melonDS is less demanding than most modern emulators thanks to the DS's simple architecture.
+> 💡 **Important note**: melonDS is less demanding than most modern emulators thanks to the DS's simple architecture.
 
 ## 🔧 Step 1: Downloading melonDS
 
 ### Stable Version (Recommended)
 ```bash
-# Official website
+# Official site
 https://melonds.kuribo64.net/downloads.php
 ```
 
 1. **Click** on "Download Windows x64"
 2. **Download** `melonds-0.9.5-windows-x64.zip`
-3. **Extract** to a dedicated folder (e.g., `C:\melonDS`)
+3. **Extract** to a dedicated folder (e.g., `Documents\melonDS` or at the root of another drive, not C)
 
-### Development Versions
+### Development versions
 ```bash
 # Automatic builds with latest features
 https://github.com/melonDS-emu/melonDS/releases
@@ -76,85 +68,105 @@ Features:
 - Save synchronization
 ```
 
+## Game Download
+
+### Step 1: Access the game library
+
+Go to **[🎮 Axekin Games - Nintendo DS](https://www.axekin.com/search?platform=ds)** to access the Nintendo DS game collection.
+
+### Step 2: Download the game
+
+1. **Search** for the desired game in the list
+2. **Click** on the download button
+3. **Wait** for the download to complete
+
+### Step 3: File extraction
+
+Once the download is finished, **extract** the archive with one of these software:
+
+| Software | Download Link | Compatibility |
+|----------|---------------|---------------|
+| **7-Zip** | [Download 7-Zip](https://www.7-zip.org/) | Windows/Linux |
+| **WinRAR** | [Download WinRAR](https://www.win-rar.com/) | Windows |
+
+> **💡 Tip**: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.
+
+**Result**: You'll get game files ready to be used with melonDS! 🎯
+
 ## 📁 Step 2: Folder Structure
 
-Organize your files with this structure:
+Create this folder structure to organize your files:
 
-```
-melonDS/
-├── melonDS.exe              # Main executable
-├── bios/                    # Nintendo DS BIOS (required)
-│   ├── bios7.bin           # ARM7 BIOS
-│   ├── bios9.bin           # ARM9 BIOS
-│   └── firmware.bin        # DS Firmware
-├── games/                   # Your Nintendo DS ROMs
-│   ├── nds/                # Standard .nds games
-│   ├── dsi/                # DSi .nds games
-│   └── homebrew/           # Homebrew applications
-├── saves/                   # Save data
-│   ├── sav/                # .sav saves
-│   └── states/             # .mln savestates
-├── cheats/                  # Cheat codes
-│   └── usrcheat.dat        # AR database
-├── screenshots/             # Screenshots
-├── firmware/                # Alternative firmwares
-└── dldi/                   # DLDI drivers for homebrew
-```
+For optimal organization of your library, here's the recommended tree structure:
 
-## ⚙️ Step 3: Installing Nintendo DS BIOS
+````
+DS Games/
+├── Animal Crossing: Wild World/
+│   ├── BASE/                # 🎮 Base game (main file)
+├── Anno 1701: Dawn of Discovery/
+│   ├── BASE/                # 🎮 Base game
+├── Art Academy/
+│   ├── BASE/
+└── Assassin's Creed: Altaïr's Chronicles/
+    ├── BASE/
+````
 
-### Required BIOS Files
+### Content types
 
-> ⚠️ **Mandatory**: Nintendo DS BIOS files are required for optimal operation.
+{{< admonition tip "Understanding folders" >}}
+- **BASE** 📁: The main game you download
+{{< /admonition >}}
 
-**Required files:**
-- `bios7.bin` (16 KB) - ARM7 BIOS
-- `bios9.bin` (4 KB) - ARM9 BIOS  
-- `firmware.bin` (256 KB) - DS Firmware
+{{< admonition success "Advantages of this organization" >}}
+✅ **Automatic detection**: Games are automatically added to the emulator  
+✅ **Simplified management**: No need to manually select each ROM  
+✅ **Clear organization**: Easy to see what content you have for each game  
+✅ **Easy maintenance**: Simplified content addition/removal
+{{< /admonition >}}
 
-### Extraction from Real Nintendo DS
+> **📝 Important note**: If a game doesn't have updates or DLC, there's no need to create the corresponding folders. Only create folders for content you actually have.
 
-#### Method 1: With Flashcart
-```bash
-# Using GodMode9i or similar
-1. Install homebrew on your DS via flashcart
-2. Use GodMode9i to extract:
-   - ARM7 BIOS → bios7.bin
-   - ARM9 BIOS → bios9.bin
-   - Firmware → firmware.bin
-3. Transfer to PC in melonDS/bios/
-```
+### Result
 
-#### Method 2: Via DSi with HiyaCFW
-```bash
-# If you have a modded DSi
-1. Install HiyaCFW on your DSi
-2. Use dsidumper to extract:
-   - BIOS files
-   - Complete firmware
-3. Copy to bios/ folder
-```
+Once this structure is in place, your emulator will automatically detect all games present in the "DS Games" folder and organize them properly in your library! 🎯
+
+## ⚙️ Step 3: Nintendo DS BIOS Installation
+
+### Required BIOS files
+
+> ⚠️ **(Not) Required**: Nintendo DSi BIOS files are required for optimal functionality.
+
+**Necessary files:**
+- `biosdsi7.bin` (16 KB) - ARM7 BIOS
+- `biosdsi9.bin` (4 KB) - ARM9 BIOS  
+- `dsifirmware.bin` (256 KB) - DS Firmware
+
+**📥 Nintendo DSi BIOS Download:**
+
+[Download Nintendo DSi BIOS](https://cdn.discordapp.com/attachments/1332956018665328702/1381293934109786246/Nintendo_DSi_Bios_for_emulators.zip?ex=6846fdb9&is=6845ac39&hm=e36162ccf2877cea45ea2ab9e004f2d38fddd8a7583be41f7e8414edc49e1383&)
+
+> **📋 Content:** `biosdsi7.bin`, `biosdsi9.bin`, `dsifirmware.bin`
 
 ### Configuration in melonDS
 
 1. **Launch** `melonDS.exe`
-2. `Config → Emu settings → DS-mode`
+2. `Config → Emu settings → DSi-mode`
 3. **Configure** BIOS paths:
-   - **DS ARM9 BIOS**: `bios/bios9.bin`
-   - **DS ARM7 BIOS**: `bios/bios7.bin`
-   - **DS Firmware**: `bios/firmware.bin`
+   - **DS ARM9 BIOS**: `bios/biosdsi9.bin`
+   - **DS ARM7 BIOS**: `bios/biosdsi7.bin`
+   - **DS Firmware**: `bios/dsifirmware.bin`
 4. **Restart** melonDS
 
-## ⚙️ Step 4: Basic Configuration
+## ⚙️ Step 4: Basic configuration
 
-### General Settings
+### General settings
 ```
 Config → Emu settings → General
 ```
 
 **Recommended configuration:**
-- **Console type**: DS (or DSi for DSi games)
-- **Direct boot**: ✅ Enabled (boots directly to game)
+- **Console type**: DS (or DSi if DSi games)
+- **Direct boot**: ✅ Enabled (starts game directly)
 - **JIT enable**: ✅ Enabled (greatly improves performance)
 - **JIT max block size**: 32 (optimal)
 - **JIT literal optimizations**: ✅ Enabled
@@ -163,31 +175,70 @@ Config → Emu settings → General
 
 ### 3D Settings
 ```
-Config → Emu settings → 3D settings
+Config → Video Settings
 ```
 
-**Optimal configuration:**
-- **3D renderer**: OpenGL (recommended) or Software
-- **Threaded 3D**: ✅ Enabled (uses multiple cores)
-- **GL scale factor**: 1x-4x depending on your GPU
-- **GL better polygons**: ✅ Enabled (improves quality)
-- **GL anti-aliasing**: ✅ Enabled if GPU sufficient
+{{< admonition tip "Video settings interface" >}}
+You'll access a window with two main sections: **Display settings** (left) and rendering settings **Software renderer** / **OpenGL renderer** (right).
+{{< /admonition >}}
 
-## ⚙️ Step 5: Video and Audio Configuration
+#### 3D Rendering Configuration
 
-### Video Settings
+**Rendering engine selection:**
+
+| Option | Performance | Quality | Recommendation |
+|--------|-------------|---------|----------------|
+| **Software** | Low | Basic | Old hardware |
+| **OpenGL (Classic)** | Excellent | Very good | ✅ **Recommended** |
+| **OpenGL (Compute shader)** | Variable | Maximum | Recent GPUs only |
+
+#### OpenGL Settings (Recommended)
+
+{{< admonition success "Optimal OpenGL configuration" >}}
+**Internal resolution:** `1x native (4096x3072)` to `16x` according to your GPU
+- 1x = Original DS resolution
+- 2x-3x = Good quality/performance compromise  
+- 4x+ = Powerful GPU required
+
+**Enhancement options:**
+- ✅ **Improved polygon splitting**: Improves geometric quality
+- ✅ **Use high resolution coordinates**: Increased texture precision
+{{< /admonition >}}
+
+#### General display settings
+
 ```
-Config → Video settings
+Display settings (left side)
+```
+
+**Recommended configuration:**
+- **VSync**: ✅ Enabled (prevents tearing)
+- **VSync interval**: `1` (standard 60 FPS)
+- **OpenGL display**: ✅ Checked for OpenGL display
+
+### Visual result
+
+{{< admonition info "Graphics improvement" >}}
+With these settings, your DS games will benefit from **multiplied resolution** and **considerably improved display quality** compared to the original console!
+{{< /admonition >}}
+
+> **💡 Performance tip**: If you experience slowdowns, first reduce the **Internal resolution** before changing rendering engine.
+
+## ⚙️ Step 5: Video and audio configuration
+
+### Video settings
+```
+View
 ```
 
 **Display settings:**
 - **DS screen layout**: Natural, Vertical, Horizontal (your choice)
 - **DS screen sizing**: Even (equal screens) or Emphasize top/bottom
 - **DS screen gap**: 0-96 pixels (personal preference)
-- **Screen filtering**: Linear (smoother) or Nearest (crisp pixel art)
+- **Screen filtering**: Linear (smoother) or Nearest (sharp pixel art)
 - **Show OSD**: ✅ Enabled (useful information)
 
-### Audio Settings
+### Audio settings
 ```
 Config → Audio settings
 ```
@@ -198,9 +249,9 @@ Config → Audio settings
 - **Mic input**: Automatic or specific device
 - **Mic noise gate**: ✅ Enabled (filters background noise)
 
-## ⚙️ Step 6: Control Configuration
+## ⚙️ Step 6: Control configuration
 
-### Keyboard Controls (Default)
+### Keyboard controls (default)
 ```
 Config → Input and hotkeys → DS keypad
 ```
@@ -216,13 +267,15 @@ Config → Input and hotkeys → DS keypad
 - **Select**: RShift
 - **D-Pad**: Arrow keys
 
-### Controller Configuration
+(Personal example, put whatever you want instead)
+
+### Controller configuration
 ```bash
 # Automatic detection
 1. Connect your controller
 2. Config → Input and hotkeys → DS keypad
 3. Click on a button to configure
-4. Press corresponding button on controller
+4. Press the corresponding button on the controller
 5. Repeat for all buttons
 
 # Recommended mapping (Xbox controller)
@@ -237,47 +290,9 @@ Start → Menu
 Select → View
 ```
 
-### Touch Controls
-```
-Config → Input and hotkeys → Touch screen
-```
+### Game launching
 
-**Available options:**
-- **Mouse**: Uses mouse for touchscreen
-- **Touch**: Touchscreen (on touchscreen PC/tablet)
-- **Joystick**: Right analog stick (recommended for controller)
-
-### Useful Hotkeys
-```
-Config → Input and hotkeys → Hotkeys
-```
-
-**Essential shortcuts:**
-- **Fast forward**: Tab (acceleration)
-- **Pause/unpause**: P
-- **Reset**: Ctrl+R
-- **Save state**: F1-F8  
-- **Load state**: Shift+F1-F8
-- **Screenshot**: F12
-
-## 🎮 Step 7: Game and ROM Management
-
-### Supported Formats
-
-#### Nintendo DS ROMs
-- **.nds**: Standard Nintendo DS format
-- **.srl**: Developer format (identical to .nds)
-- **.dsi**: DSi enhanced games
-- **.ids**: iQue DS (China region)
-
-#### Saves
-- **.sav**: Standard save
-- **.mln**: melonDS savestate
-- **.dsv**: DeSmuME save (compatible)
-
-### Launching Games
-
-#### Direct Method
+#### Direct method
 ```bash
 # Simple opening
 1. File → Open ROM
@@ -286,146 +301,15 @@ Config → Input and hotkeys → Hotkeys
 4. Game starts automatically
 
 # Drag & Drop
-1. Drag .nds file onto melonDS
-2. Instant launch
+1. Drag the .nds file onto melonDS
+2. Immediate launch
 ```
 
-#### Multi-ROM Management
-```bash
-# Recent games list
-File → Recent ROMs
-- Quick access to last 10 games
-- Persistent between sessions
+## 🛠️ Advanced features
 
-# Custom favorites
-- Create shortcuts in games/
-- Organization by genre/series
-```
+### Wi-Fi and local multiplayer
 
-### Dumping Your Own Games
-
-#### With R4/Acekard Flashcart
-```bash
-# Physical cartridge method
-1. Insert DS cartridge into flashcart dumper
-2. Use GodMode9i or Wood Dumper
-3. Dump in .nds format to SD
-4. Transfer to PC
-
-# Advantages: 
-- Perfect bit-perfect dump
-- Includes protection data
-- 100% melonDS compatible
-```
-
-#### With Nintendo 3DS (CFW)
-```bash
-# Via GodMode9 on 3DS
-1. Install CFW on your 3DS
-2. Insert DS cartridge into 3DS
-3. GodMode9 → [C:] GAMECART
-4. Dump cartridge as .nds
-5. Transfer via SD/FTP
-```
-
-## 🚀 Optimization by Popular Games
-
-### Pokémon Diamond/Pearl/Platinum
-```bash
-# Optimal RPG configuration
-3D Settings:
-- Renderer: OpenGL
-- Scale factor: 2x-3x
-- Better polygons: ✅ Enabled
-- Anti-aliasing: ✅ Enabled
-
-General:
-- JIT: ✅ All enabled
-- Direct boot: ✅ Enabled
-
-Performance: Excellent, stable 60 FPS
-```
-
-### Mario Kart DS
-```bash
-# Racing configuration
-3D Settings:
-- Renderer: OpenGL required
-- Scale factor: 2x-4x possible
-- Threaded 3D: ✅ Enabled
-
-Input:
-- Controller control recommended
-- Analog stick for fine steering
-
-Wi-Fi: Local play support in melonDS
-```
-
-### The Legend of Zelda: Spirit Tracks
-```bash
-# Game using microphone
-Audio:
-- Mic input: Mandatory configuration
-- Noise gate: ✅ Enabled
-
-3D Settings:
-- Renderer: OpenGL
-- Scale factor: 2x-3x
-- Anti-aliasing: ✅ Recommended
-
-Controls: Touchscreen essential
-```
-
-### Professor Layton Series
-```bash
-# Point-and-click games
-Input:
-- Touch screen: Mouse recommended
-- Touch precision important
-
-Video:
-- Screen layout: Natural or Vertical
-- Screen gap: Minimal (0-8px)
-- Filtering: Linear (sharper text)
-
-Perfect for PC emulation
-```
-
-### New Super Mario Bros.
-```bash
-# Classic platformer
-3D Settings:
-- Renderer: OpenGL
-- Scale factor: 3x-4x excellent
-- Better polygons: ✅ Enabled
-
-Performance:
-- JIT: ✅ All enabled
-- Threaded 3D: ✅ Enabled
-
-Result: Spectacular visual improvement
-```
-
-### Phoenix Wright: Ace Attorney
-```bash
-# Visual novel
-Video:
-- Screen layout: Vertical optimal
-- Filtering: Linear (sharp text)
-- Sizing: Emphasize top screen
-
-Audio:
-- Volume: Maximum (important music)
-- Excellent audio quality in melonDS
-
-Interface: Perfect for PC/mouse
-```
-
-## 🛠️ Advanced Features
-
-### Wi-Fi and Local Multiplayer
-
-#### Local Network Configuration
+#### Local network configuration
 ```bash
 # Local multiplayer melonDS
 1. System → Multiplayer → Local multiplayer
@@ -437,78 +321,12 @@ Interface: Perfect for PC/mouse
 - Same local network required
 - Firewall: Allow melonDS
 - Ports: Automatic
-```
-
-#### Online Gaming (Experimental)
-```bash
-# Via Kaeru WFC (third-party server)
-1. System → Wi-Fi settings
-2. Access point configuration:
-   - SSID: Your network
-   - Security: WPA2/WEP according to config
-3. DNS: Kaeru WFC servers
-4. Limited but functional support
-```
-
-### Savestates and Backup
-
-#### Using Savestates
-```bash
-# Quick save
-System → Save state → Slot 1-8
-- Instant save of exact state
-- Includes position, inventory, timing
-- 8 slots available per game
-
-# Restore
-System → Load state → Slot X
-- Instant restoration
-- Compatible between melonDS versions
-```
-
-#### Save Management
-```bash
-# Automatic backup
-Config → Emu settings → General
-- Save state autosave: ✅ Enabled
-- Interval: 5-10 minutes
-
-# Export/Import
-Tools → Save data export/import
-- Compatible with other emulators
-- Cloud backup possible
-```
-
-### Cheats and Action Replay Codes
-
-#### Database Installation
-```bash
-# usrcheat.dat
-1. Download complete AR codes database
-2. Place in melonDS/cheats/usrcheat.dat
-3. System → Cheat setup
-4. Enable cheats: ✅ Enabled
-```
-
-#### Custom Codes
-```bash
-# Manual addition
-1. System → Cheat setup → Add cheat
-2. Name: Code description
-3. Code: Standard Action Replay format
-4. Enable: ✅ Check to activate
-
-Pokémon example (infinite money):
-94000130 FCFF0000
-B21C4D28 00000000
-B0000004 00000000
-00000090 000F423F
-D2000000 00000000
+- Connect with RadminVPN, create your own network, and connect with your friend
 ```
 
 ## 🔧 Troubleshooting
 
-### Launch Issues
+### Launch problems
 
 #### melonDS won't start
 ```bash
@@ -523,254 +341,49 @@ System checks:
 #### ROM won't launch
 ```bash
 ROM diagnostics:
-1. Format: Verify valid .nds
+1. Format: Check valid .nds
 2. Size: File not corrupted
 3. BIOS: Files present and valid
 4. Region: PAL/NTSC/JPN compatible
 5. Protection: Some dumps require patches
 ```
 
-### Performance Issues
-
-#### Low FPS/slowdowns
-```bash
-Performance optimizations:
-1. JIT: ✅ All enabled mandatory
-2. 3D Renderer: OpenGL vs Software
-3. Threaded 3D: ✅ Enabled
-4. Scale factor: Reduce to 1x-2x
-5. Anti-aliasing: Disable temporarily
-6. Background apps: Close heavy applications
-```
-
-#### Frequent micro-freezes
-```bash
-Stuttering solutions:
-1. SSD: Move ROMs to SSD
-2. JIT block size: Test 16-64
-3. Fast memory: ✅ Mandatory
-4. Windows Game Mode: Disable
-5. Real-time protection: Antivirus exception
-```
-
-### Graphics Issues
-
-#### Incorrect 3D display
-```bash
-3D corrections:
-1. 3D Renderer: Change OpenGL ↔ Software
-2. GL better polygons: Toggle
-3. Scale factor: Test 1x native
-4. GPU drivers: Mandatory update
-5. OpenGL version: Verify 3.2+ support
-```
-
-#### Misaligned screens
-```bash
-Display adjustments:
-1. Screen layout: Test Natural/Vertical/Horizontal
-2. Screen sizing: Adjust Even/Emphasize
-3. Screen gap: Modify 0-96 pixels
-4. Screen swap: Switch top/bottom if needed
-5. Zoom: Maintain aspect ratio
-```
-
-#### Blurry/pixelated textures
-```bash
-Visual improvements:
-1. GL scale factor: Increase 2x-4x
-2. Screen filtering: Linear vs Nearest
-3. GL anti-aliasing: ✅ Enabled
-4. Better polygons: ✅ Enabled
-5. Native resolution: Respect DS ratio
-```
-
-### Audio Issues
-
-#### No sound
-```bash
-Audio diagnostics:
-1. Audio output: Test different options
-2. Volume: Check level (max 256)
-3. Device: Correct Windows default audio
-4. Exclusive mode: Disable Windows
-5. Sample rate: 44.1/48 kHz compatible
-```
-
-#### Crackling audio
-```bash
-Audio corrections:
-1. Audio buffer: Increase if available
-2. Background apps: Close audio players
-3. Audio drivers: Update drivers
-4. CPU usage: Check processor load
-5. Power management: High performance
-```
-
-### Control Issues
-
-#### Controller not detected
-```bash
-Input configuration:
-1. Reconnect controller
-2. Input settings: Rescan devices
-3. Driver: XInput vs DirectInput
-4. Steam Input: Disable if interfering
-5. Test: Check Windows Game Controllers
-```
-
-#### Touchscreen unresponsive
-```bash
-Touch solutions:
-1. Touch mode: Mouse/Touch/Joystick
-2. Calibration: Windows touch settings
-3. Sensitivity: Adjust if available
-4. Interference: Close other touch apps
-5. Hardware: Test different device
-```
-
-## 📊 Compatibility and Performance
-
-### Compatibility Statistics
-| Status | Percentage | Description |
-|--------|------------|-------------|
-| **Perfect** | ~85% | Works perfectly |
-| **Playable** | ~12% | Acceptable minor bugs |
-| **Ingame** | ~2% | Starts but major issues |
-| **Broken** | ~1% | Doesn't work |
-
-### Perfectly Compatible Games
-
-#### RPG/Adventure
-```bash
-✅ Pokémon Diamond/Pearl/Platinum/HeartGold/SoulSilver
-✅ The Legend of Zelda: Phantom Hourglass/Spirit Tracks
-✅ Dragon Quest IX: Sentinels of the Starry Skies
-✅ Final Fantasy III/IV/Tactics A2
-✅ Chrono Trigger DS
-✅ Radiant Historia
-✅ Phoenix Wright: Ace Attorney series
-✅ Professor Layton series
-```
-
-#### Action/Platform
-```bash
-✅ New Super Mario Bros.
-✅ Super Mario 64 DS
-✅ Kirby Super Star Ultra/Canvas Curse
-✅ Metroid Prime Hunters
-✅ Castlevania: Dawn of Sorrow/Portrait of Ruin/Order of Ecclesia
-✅ Mega Man Zero Collection
-✅ Sonic Rush/Rush Adventure
-```
-
-#### Racing/Sports
-```bash
-✅ Mario Kart DS
-✅ Diddy Kong Racing DS
-✅ TrackMania DS
-✅ Tony Hawk's American Sk8land
-✅ FIFA series
-✅ Madden NFL series
-```
-
-### Performance Benchmarks
-
-#### Test configuration: i5-8400, GTX 1060, 8GB RAM
-
-| Game | Scale Factor | FPS | CPU Usage | Notes |
-|------|--------------|-----|-----------|-------|
-| **Pokémon Platinum** | 3x | 60 | 35% | Perfect |
-| **Mario Kart DS** | 4x | 60 | 45% | Excellent |
-| **Zelda PH** | 3x | 60 | 40% | Perfect |
-| **NSMB** | 4x | 60 | 30% | Excellent |
-| **Ace Attorney** | 2x | 60 | 25% | Perfect |
-
-## 🌐 Resources and Community
-
-### Official Sites
-- [🏠 Official melonDS Site](https://melonds.kuribo64.net/)
-- [📱 melonDS Android](https://play.google.com/store/apps/details?id=me.magnum.melonds)
-- [📚 Documentation](https://melonds.kuribo64.net/faq.php)
-- [🔧 User Wiki](https://melonds.kuribo64.net/board/)
-
-### Active Communities
-- [💬 melonDS Discord](https://discord.gg/AQAhe5S)
-- [🗨️ Reddit r/emulation](https://www.reddit.com/r/emulation/)
-- [🌐 melonDS Forums](https://melonds.kuribo64.net/board/)
-- [📺 YouTube guides](https://www.youtube.com/results?search_query=melonds+tutorial)
-
-### Development and Contribution
-- [💻 GitHub melonDS](https://github.com/melonDS-emu/melonDS)
-- [🐛 Bug reports](https://github.com/melonDS-emu/melonDS/issues)
-- [💰 Donations](https://www.patreon.com/StapleButter)
-- [🔧 Compilation guide](https://github.com/melonDS-emu/melonDS/blob/master/README.md)
-
-### DS Resources
-- [🔧 GodMode9i](https://github.com/DS-Homebrew/GodMode9i) - DS file manager
-- [📁 TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu) - DS homebrew menu
-- [🎮 nds-bootstrap](https://github.com/DS-Homebrew/nds-bootstrap) - DS game launcher
-- [🔍 NDSTokyoTrim](http://www.romhacking.net/utilities/383/) - ROM trimming tool
-
 ## ❓ FAQ - Frequently Asked Questions
 
-### General Questions
+### General questions
 
 **Q: Can melonDS play all DS games?**
 **A:** About 97% of games work perfectly. Excellent overall compatibility.
 
 **Q: Do I need BIOS files?**
-**A:** Yes, mandatory for optimal operation and maximum compatibility.
+**A:** Yes, required for optimal functionality and maximum compatibility.
 
 **Q: Does melonDS support DSi games?**
 **A:** Partial support. Some DSi games work, others not yet.
 
-### Technical Questions
+### Technical questions
 
 **Q: OpenGL or Software renderer?**
-**A:** OpenGL recommended for performance and visual improvement. Software for compatibility.
+**A:** OpenGL recommended for performance and visual enhancement. Software for compatibility.
 
 **Q: What resolution to choose?**
 **A:** 2x-3x for good quality/performance compromise. 4x+ if powerful GPU.
 
 **Q: Is JIT safe?**
-**A:** Yes, mandatory for good performance. No security risk.
+**A:** Yes, required for good performance. No security risk.
 
-### Common Issues
+### Common problems
 
 **Q: Lag despite good PC?**
 **A:** Check JIT enabled, use OpenGL, reduce scale factor if necessary.
 
 **Q: Save doesn't work?**
-**A:** Check write permissions for saves folder, correct ROM format.
+**A:** Check write permission for saves folder, correct ROM format.
 
 **Q: Wi-Fi doesn't work?**
 **A:** Wi-Fi limited to supported games, network configuration required.
 
 ## 🎯 Conclusion
-
-melonDS is the reference Nintendo DS emulator that offers:
-
-- ✅ **Exceptional compatibility** with 97%+ of DS games
-- ✅ **Excellent performance** even on modest hardware  
-- ✅ **Considerable graphical improvement** with upscaling
-- ✅ **Modern features** (savestates, cheats, Wi-Fi)
-- ✅ **Superior emulation accuracy** compared to DeSmuME
-- ✅ **Multiplatform support** (Windows, Linux, macOS, Android)
-- ✅ **Active development** with constant improvements
-- ✅ **Intuitive interface** and simple configuration
-
-With this comprehensive guide, you now master:
-- **Installation** and optimal configuration
-- **BIOS and ROM management**
-- **Graphics and performance optimization**
-- **Using** advanced features
-- **Resolving** common issues
-- **Access** to the entire Nintendo DS library
-
----
-
-> **Legal reminder**: Only use games you legally own. melonDS provides no games or BIOS - you must extract them from your own Nintendo DS consoles.
 
 **Rediscover the Nintendo DS library in high definition with melonDS! 🎮✨**
 ````
