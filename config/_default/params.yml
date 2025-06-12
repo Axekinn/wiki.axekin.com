@@ -95,7 +95,7 @@ preloader:
     en: Loading...
   rotate: true
   animation: pulse
-  logo: "/images/ninho.png"
+  logo: "/images/taichi-fill.png"
 
 # Effet de feu d'artifice sur clic
 firework:
