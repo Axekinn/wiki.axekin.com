@@ -6,7 +6,7 @@
   "objectID": "{{ $page.File.UniqueID }}",
   "title": {{ $page.Title | jsonify }},
   "summary": {{ $page.Summary | truncate 200 | jsonify }},
-  "url": {{ $page.Permalink | jsonify }},
+  "permalink": {{ $page.Permalink | jsonify }},
   "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
   "language": {{ $page.Language.Lang | jsonify }},
   "categories": [
