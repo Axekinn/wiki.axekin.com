@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Optimization on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/optimization/</link>
+    <link>https://wiki.axekin.com/fr/tags/optimization/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/optimization/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/optimization/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
-      <link>http://localhost:1313/fr/post/xenia/</link>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/xenia/</guid>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -478,7 +478,7 @@ Problèmes courants
 <p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

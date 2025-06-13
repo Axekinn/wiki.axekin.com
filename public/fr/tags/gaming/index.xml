@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gaming on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/gaming/</link>
+    <link>https://wiki.axekin.com/fr/tags/gaming/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/gaming/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/gaming/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -392,7 +392,7 @@ Problème : Plantages fréquents
 </span></span><span style="display:flex;"><span>4. Testez avec les paramètres par défaut
 </span></span></code></pre></div>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -404,10 +404,10 @@ Problème : Plantages fréquents
 
     <item>
       <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
-      <link>http://localhost:1313/fr/post/xenia/</link>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/xenia/</guid>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -858,7 +858,7 @@ Problèmes courants
 <p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -870,10 +870,10 @@ Problèmes courants
 
     <item>
       <title>Installation et Configuration de Eden</title>
-      <link>http://localhost:1313/fr/post/yuzu/</link>
+      <link>https://wiki.axekin.com/fr/post/yuzu/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/yuzu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/yuzu/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1246,7 +1246,7 @@ Questions techniques
 <p><strong>Bon jeux avec Yuzu ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -1258,10 +1258,10 @@ Questions techniques
 
     <item>
       <title>Unsteam - Jouer en coopération avec des jeux patch</title>
-      <link>http://localhost:1313/fr/post/unsteam/</link>
+      <link>https://wiki.axekin.com/fr/post/unsteam/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/unsteam/</guid>
+      <guid>https://wiki.axekin.com/fr/post/unsteam/</guid>
       <description>
         <![CDATA[<h1>Unsteam - Jouer en coopération avec des jeux patch</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1499,7 +1499,7 @@ Games/
 <p>💡 <strong>Astuce finale</strong> : Testez toujours avec des jeux gratuits ou que vous possédez légalement avant d&rsquo;utiliser avec d&rsquo;autres titres. La coopération fonctionne mieux avec des connexions stables et des configurations identiques entre joueurs.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>tutorials</category><category>networking</category>
@@ -1511,10 +1511,10 @@ Games/
 
     <item>
       <title>SteamAutoCrack - Patcher automatiquement les jeux Steam</title>
-      <link>http://localhost:1313/fr/post/sac/</link>
+      <link>https://wiki.axekin.com/fr/post/sac/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/sac/</guid>
+      <guid>https://wiki.axekin.com/fr/post/sac/</guid>
       <description>
         <![CDATA[<h1>SteamAutoCrack - Patcher automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1892,7 +1892,7 @@ Approche recommandée
 <p>💡 <strong>Astuce</strong> : SteamAutoCrack est particulièrement utile pour les jeux solo où vous voulez un accès hors ligne. Maintenez toujours des copies légales et utilisez ces connaissances de manière responsable à des fins éducatives.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>tutorials</category><category>automation</category>
@@ -1904,10 +1904,10 @@ Approche recommandée
 
     <item>
       <title>Installation et configuration de RPCS3</title>
-      <link>http://localhost:1313/fr/post/rpcs3/</link>
+      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
+      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2659,7 +2659,7 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -2671,10 +2671,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de melonDS</title>
-      <link>http://localhost:1313/fr/post/melonds/</link>
+      <link>https://wiki.axekin.com/fr/post/melonds/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/melonds/</guid>
+      <guid>https://wiki.axekin.com/fr/post/melonds/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de melonDS</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3120,7 +3120,7 @@ Problèmes courants
 </h2><p><strong>Redécouvrez la bibliothèque Nintendo DS en haute définition avec melonDS ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
@@ -3132,10 +3132,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de Azahar</title>
-      <link>http://localhost:1313/fr/post/citra/</link>
+      <link>https://wiki.axekin.com/fr/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3567,7 +3567,7 @@ Problèmes courants
 <p><strong>Profitez de vos jeux 3DS en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>Tutoriels</category>
@@ -3579,10 +3579,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de Dolphin</title>
-      <link>http://localhost:1313/fr/post/dolphin/</link>
+      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dolphin/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3925,7 +3925,7 @@ Problèmes courants
 <p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Gaming</category><category>Tutoriels</category>
