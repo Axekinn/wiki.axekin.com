@@ -2,7 +2,7 @@
 {
   "objectID": "6083a88ee3411b0d17ce02d738f69d47",
   "title": "À propos",
-  "summary": "\u003ch1 id=\"à-propos-daxekin\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#%c3%a0-propos-daxekin\"\u003e\u003c/a\u003e\r\nÀ propos d\u0026rsquo;Axekin\r\n\u003c/h1\u003e\u003cblockquote class=\"quote\"\u003e\r\n  \u003cp\u003eSi y\u0026rsquo;a un doute, y\u0026rsquo;a pas de doute frère\u003c/p\u003e\r\n  \r\n  \u003ccite\u003e— Axekin\u003c/cite\u003e\r\n  \r\n\u003c/blockquote\u003e\n\u003ch2 id=\"qui-suis-je-\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#qui-suis-je-\"\u003e\u003c/a\u003e\r\nQui suis-je ?\r\n\u003c/h2\u003e\u003cp\u003eSalut ! Je suis \u003cstrong\u003eAxekin\u003c/strong\u003e, passionne de technologie, gaming et surtout …\u003c/p\u003e",
+  "summary": "\u003ch1 id=\"à-propos-daxekin\"\u003e\n\u003ca class=\"header-anchor\" href=\"#%c3%a0-propos-daxekin\"\u003e\u003c/a\u003e\nÀ propos d\u0026rsquo;Axekin\n\u003c/h1\u003e\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003e\u0026ldquo;Si y\u0026rsquo;a un doute, y\u0026rsquo;a pas de doute frère\u0026rdquo;\u003c/em\u003e\u003cbr\u003e\n— \u003cstrong\u003eAxekin\u003c/strong\u003e\u003c/p\u003e\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2 id=\"-qui-suis-je-\"\u003e\n\u003ca class=\"header-anchor\" href=\"#-qui-suis-je-\"\u003e\u003c/a\u003e\n👋 Qui suis-je ?\n\u003c/h2\u003e\u003cp\u003eSalut ! Je suis \u003cstrong\u003eAxekin\u003c/strong\u003e, passionné de technologie, gaming et surtout …\u003c/p\u003e",
   "permalink": "https://wiki.axekin.com/fr/about/",
   "date": "2025-06-02",
   "language": "fr",
@@ -12,7 +12,7 @@
 {
   "objectID": "6083a88ee3411b0d17ce02d738f69d47",
   "title": "About",
-  "summary": "\u003ch1 id=\"about-axekin\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#about-axekin\"\u003e\u003c/a\u003e\r\nAbout Axekin\r\n\u003c/h1\u003e\u003cblockquote class=\"quote\"\u003e\r\n  \u003cp\u003eWhen in doubt, there\u0026rsquo;s no doubt, bro\u003c/p\u003e\r\n  \r\n  \u003ccite\u003e— Axekin\u003c/cite\u003e\r\n  \r\n\u003c/blockquote\u003e\n\u003ch2 id=\"who-am-i\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#who-am-i\"\u003e\u003c/a\u003e\r\nWho am I?\r\n\u003c/h2\u003e\u003cp\u003eHey! I\u0026rsquo;m \u003cstrong\u003eAxekin\u003c/strong\u003e, passionate about technology, gaming and especially anime. This site is my …\u003c/p\u003e",
+  "summary": "\u003ch1 id=\"about-axekin\"\u003e\n\u003ca class=\"header-anchor\" href=\"#about-axekin\"\u003e\u003c/a\u003e\nAbout Axekin\n\u003c/h1\u003e\u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003e\u0026ldquo;If there\u0026rsquo;s doubt, there\u0026rsquo;s no doubt bro\u0026rdquo;\u003c/em\u003e\u003cbr\u003e\n— \u003cstrong\u003eAxekin\u003c/strong\u003e\u003c/p\u003e\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2 id=\"-who-am-i\"\u003e\n\u003ca class=\"header-anchor\" href=\"#-who-am-i\"\u003e\u003c/a\u003e\n👋 Who am I?\n\u003c/h2\u003e\u003cp\u003eHey! I\u0026rsquo;m \u003cstrong\u003eAxekin\u003c/strong\u003e, passionate about technology, gaming and especially anime. This site is …\u003c/p\u003e",
   "permalink": "https://wiki.axekin.com/en/about/",
   "date": "2025-06-02",
   "language": "en",
@@ -332,7 +332,7 @@
 {
   "objectID": "656c9c99a3c161f22342a26167b95afa",
   "title": "Installation et configuration de melonDS",
-  "summary": "\u003ch2 id=\"-introduction-à-melonds\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-melonds\"\u003e\u003c/a\u003e\r\n🎮 Introduction à melonDS\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003emelonDS\u003c/strong\u003e est un émulateur Nintendo DS open-source moderne et précis, développé depuis 2016. Il se distingue par sa compatibilité excellente, sa précision …\u003c/p\u003e",
+  "summary": "\u003ch2 id=\"-introduction-à-melonds\"\u003e\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-melonds\"\u003e\u003c/a\u003e\n🎮 Introduction à melonDS\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003emelonDS\u003c/strong\u003e est un émulateur Nintendo DS open-source moderne et précis, développé depuis 2016. Il se distingue par sa compatibilité excellente, sa précision d\u0026rsquo;émulation, …\u003c/p\u003e",
   "permalink": "https://wiki.axekin.com/fr/post/melonds/",
   "date": "2025-06-02",
   "language": "fr",
@@ -342,7 +342,7 @@
 {
   "objectID": "a4e5330ddcb51238336062b85e82a123",
   "title": "Installation et configuration de RPCS3",
-  "summary": "\u003ch2 id=\"-introduction-à-rpcs3\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-rpcs3\"\u003e\u003c/a\u003e\r\n🎮 Introduction à RPCS3\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e est l\u0026rsquo;émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour …\u003c/p\u003e",
+  "summary": "\u003ch2 id=\"-introduction-à-rpcs3\"\u003e\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-rpcs3\"\u003e\u003c/a\u003e\n🎮 Introduction à RPCS3\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e est l\u0026rsquo;émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour …\u003c/p\u003e",
   "permalink": "https://wiki.axekin.com/fr/post/rpcs3/",
   "date": "2025-06-02",
   "language": "fr",
@@ -352,7 +352,7 @@
 {
   "objectID": "a4e5330ddcb51238336062b85e82a123",
   "title": "RPCS3 Installation and Configuration",
-  "summary": "\u003ch2 id=\"-introduction-to-rpcs3\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-to-rpcs3\"\u003e\u003c/a\u003e\r\n🎮 Introduction to RPCS3\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e is the world\u0026rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to …\u003c/p\u003e",
+  "summary": "\u003ch2 id=\"-introduction-to-rpcs3\"\u003e\n\u003ca class=\"header-anchor\" href=\"#-introduction-to-rpcs3\"\u003e\u003c/a\u003e\n🎮 Introduction to RPCS3\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e is the world\u0026rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to emulate …\u003c/p\u003e",
   "permalink": "https://wiki.axekin.com/en/post/rpcs3/",
   "date": "2025-06-02",
   "language": "en",
