@@ -1,103 +1,361 @@
 [
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/melonds/",
-    "title": "melonDS Installation and Configuration","content": " 🎮 Introduction to melonDS melonDS is a modern and accurate open-source Nintendo DS emulator, developed since 2016. It stands out for its excellent compatibility, emulation precision, and advanced features like local Wi-Fi, savestates, and graphics enhancement. It\u0026amp;rsquo;s the perfect modern alternative to DeSmuME.\n💡 Important note: melonDS is less demanding than most modern emulators thanks to the DS\u0026amp;rsquo;s simple architecture.\n🔧 Step 1: Downloading melonDS Stable Version (Recommended) # Official site https://melonds.kuribo64.net/downloads.php Click on \u0026amp;ldquo;Download Windows x64\u0026amp;rdquo; Download melonds-0.9.5-windows-x64.zip Extract to a dedicated folder (e.g., Documents\\melonDS or at the root of another drive, not C) Development versions # Automatic builds with latest features https://github.com/melonDS-emu/melonDS/releases Advantages: - New improvements - Recent fixes - Experimental features Risks: - Potentially unstable - Possible regressions melonDS Android # Official mobile …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/cheat_citra/",
-    "title": "Complete Guide to Cheats on the Citra Emulator","content": " ⚠️ Important Warning: Using cheats can sometimes corrupt your save files or make certain games unstable. Use them at your own risk!\nIntroduction Using cheats on the Citra emulator can sometimes be confusing for new users. This comprehensive guide will explain step by step how to configure and effectively use cheat codes on your emulated Nintendo 3DS games.\nGeneral Process Launch Citra → Load your game Emulation Menu → Cheats Add Cheat → Enter the code Enable the cheat → Test in-game Check version/region if there\u0026rsquo;s a problem Prerequisites Before starting, make sure you have:\n✅ Citra installed and functional (recommended version: latest stable) ✅ A 3DS game loaded and functional ✅ Cheat codes compatible with your game version ✅ A backup of your progress (strongly recommended) Step 1: Access the cheats menu Initial launch Start Citra and wait for the emulator to list your games Once your game is displayed, Right-click then Properties then go to the last tab Cheats Cheats interface A new window opens with:\nList of available cheats (empty at first) \u0026ldquo;Add Cheat\u0026rdquo; button to add new cheats Checkboxes to enable/disable cheats Edit and delete buttons Step 2: Add a new cheat Creating a cheat Click on \u0026ldquo;Add Cheat\u0026rdquo; in the cheats window A dialog box appears with three fields: Name: Descriptive name of the cheat Notes: Optional description Code: The cheat code itself Naming options Recommended descriptive names:\nInfinite Money Unlimited Lives All Items Useful notes to add:\nCompatible game version Region (EU/US/JP) Code effects Citra code format:\n[Cheat Name]\rADDRESS VALUE Step 3: Code format and syntax Code structure Citra codes follow this specific format:\n[Gold 999999 (Code Offset 1)]\r0808E0E4 000F423F\r[Gold 999999 (Code Offset 2)]\r080900A4 000F423F\r[Gold 999999 (Code Offset 3)]\r08092064 000F423F\r[Max SP (Code Offset 1)]\r08ED0CF8 00000003\r[Max SP (Code Offset 2)]\r08ED2CB8 00000003\r[Max SP (Code Offset 3)]\r08ED4C78 00000003 General structure:\n[Descriptive cheat name]\rMEMORY_ADDRESS HEXADECIMAL_VALUE\r[Another cheat]\rMEMORY_ADDRESS HEXADECIMAL_VALUE 💡 Tip: These example codes come from Bravely Default and are fully functional, but serve here only as demonstration.\nStep 4: Activation and testing Activation procedure Enter the code in the appropriate field Give an explicit name to the cheat Click \u0026ldquo;OK\u0026rdquo; to save Check the box next to the cheat to activate it Return to the game to test Effect verification Once the cheat is activated, you should observe:\nImmediate modifications:\nChange in money values Statistics modification Items added to inventory Effects after restart:\nSome cheats require a restart Save before restarting Check effect persistence Troubleshooting - Problem resolution 🚫 The cheat doesn\u0026rsquo;t work Possible causes:\nIncompatible game version Different region (US vs EU vs JP) Poorly formatted code Incorrect memory address Solutions:\nCheck version/region correspondence Test with other codes from the same game Consult specialized forums Try with a different ROM 💥 The game crashes or becomes unstable Immediate actions:\nImmediately disable all cheats Restart the emulator Restore an earlier save Test cheats one by one to identify the problem Prevention:\nSave before using new cheats Don\u0026rsquo;t activate too many cheats simultaneously Use codes from reliable sources ⚠️ Partially functional codes Symptoms:\nSome effects work, others don\u0026rsquo;t Incorrect values applied Temporary effects only Solutions:\nCheck if the code requires multiple offsets Try applying all code offsets Consult the source code documentation Resources and databases Recommended sites for codes GameHacking.org\nThe largest cheat code database Easy-to-use interface Community-verified codes CodeBreaker Database\nSpecialized codes for Nintendo consoles Dedicated 3DS games section Regular updates Reddit r/Citra\nActive Citra user community Code and tip sharing Community technical support Best practices and advanced tips Security and backup 🛡️ Essential security rules:\nAlways backup before activating new cheats Test one cheat at a time to identify problems Avoid cheats during cutscenes or scripted events Disable cheats before important boss fights Conclusion Using cheats on Citra can greatly enrich your gaming experience, whether to:\nUnlock content quickly Test different strategies without grinding Relive your favorite games with new challenges Bypass difficult passages FAQ - Frequently Asked Questions Q: Do cheats work on all versions of Citra? A: Most cheats work on recent versions of Citra. However, some codes may be specific to certain versions. Preferably use the latest stable version.\nQ: Can I use multiple cheats simultaneously? A: Yes, but with caution. Some cheats may conflict. Start by testing cheats individually before combining them.\nQ: How do I create my own codes? A: Creating codes requires knowledge of memory analysis. Use tools like Cheat Engine or consult reverse engineering tutorials. ","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/yuzu/",
-    "title": "Eden Installation and Configuration","content": " 🎮 Introduction to Yuzu Yuzu is an open-source Nintendo Switch emulator developed by the Citra team. Renowned for its high performance and growing compatibility, Yuzu is one of the most popular Switch emulators in the world.\n⚠️ Legal note: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not (I would have said that if I were myself in legality)\n🔧 Step 1: Eden Download # Official site https://git.eden-emu.dev/eden-emu/eden#download Game Download Step 1: Access the game library Go to 🎮 Axekin Games - Nintendo Switch to access the Nintendo Switch game collection.\nStep 2: Download the game Search for the desired game in the list Click on the download button Wait for the download to complete Step 3: File extraction Once the download is finished, extract the archive with one of these software:\nSoftware Download Link Compatibility 7-Zip Download 7-Zip Windows/Linux WinRAR Download WinRAR Windows 💡 Tip: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.\nResult: You\u0026rsquo;ll get game files ready to be used with Eden! 🎯\n⚙️ Step 2: Installation and configuration First launch Run yuzu.exe as administrator Accept the initial configuration Configure the base folders 🎯 Step 3: Keys and firmware installation Installing encryption keys Automatic method (Homebrew required) Keys version 20.0.1 | 20.1.0 Installation in Yuzu Open Yuzu File → Open Eden Folder Navigate to the keys/ folder Copy prod.keys and title.keys inside Restart Yuzu Installing Nintendo Switch firmware Firmware 20.1.0 Installation in Yuzu Tools → Install Firmware Select the firmware .zip file Wait for complete installation Verify: Tools → Firmware Version ⚙️ Step 5: Optimal configuration General settings Emulation → Configure → General Limit Speed Percent: 100% (for normal speed) Multicore CPU Emulation: ✅ Enabled Extended Memory Layout: ✅ Enabled (if 12GB+ RAM) System configuration Emulation → Configure → System Region: Europe (If you\u0026rsquo;re in Europe, otherwise put where you are) Language: English (If you\u0026rsquo;re in an English-speaking country, otherwise put where you are) RTC Source: System Clock Time Zone: Your timezone Sound Output Mode: Stereo Optimal graphics settings API tab Graphics → API - API: Vulkan (recommended) or OpenGL - Device: Your main GPU - Shader Backend: GLSL (Vulkan) / GLASM (OpenGL) Graphics tab Graphics → Graphics - Use disk pipeline cache: ✅ Enabled - Use asynchronous GPU emulation: ✅ Enabled - Use asynchronous shader building: ✅ Enabled - Accelerate ASTC texture decoding: ✅ Enabled - VSync Mode: FIFO (Recommended) Advanced Graphics tab Graphics → Advanced - Accuracy Level: Normal (High for more precision) - Use Fast GPU Time: ✅ Enabled - Use Vulkan pipeline cache: ✅ Enabled (if Vulkan) - Anisotropic Filtering: 16x - Resolution Scaler: 1x (or higher if powerful GPU) - Anti-Aliasing: None or FXAA Audio configuration Audio - Output Engine: auto (or WASAPI on Windows) - Output Device: Default - Volume: 100% Control configuration Xbox/PlayStation/Switch/Whatever controller you have Controls → Configure 1. Player 1 → Connected Controller: Pro Controller 2. Configure → Automatically map 3. Test all buttons Keyboard (temporary) Controls → Configure 1. Player 1 → Connected Controller: Handheld 2. Configure → Manual mapping 3. Assign keys to buttons 🎮 Step 6: Adding and optimizing games Supported formats .NSP: Nintendo Submission Package (eShop games) .XCI: NX Card Image (Physical cards) .NCA: Nintendo Content Archive (Raw content) .NSZ: Compressed NSP (requires tools) .XCZ: Compressed XCI (requires tools) Game configuration in the emulator Adding the game folder In the emulator menu, double-click then select the folder that contains all your games.\nRecommended folder structure For optimal organization of your library, here\u0026rsquo;s the recommended tree structure:\n","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/reinstall_driver_gpu/",
-    "title": "Clean Graphics Driver Reinstallation","content": " ⚠️ Important Warning: This procedure involves restarting in safe mode and completely uninstalling your drivers. Follow each step carefully and make sure you have downloaded the drivers before starting.\nIntroduction Clean graphics driver reinstallation is often the most effective solution to resolve performance issues, game crashes, or display errors. This process uses DDU (Display Driver Uninstaller) to completely remove old drivers before installing new ones.\nThis method is particularly effective for:\nResolving conflicts between old and new versions Correcting in-game performance issues Eliminating persistent display errors Cleaning up after a graphics card change General process Download new drivers and DDU Disconnect internet and restart in safe mode Completely remove old drivers with DDU Restart and install new drivers Reconnect internet and verify functionality Prerequisites and Downloads Identify your graphics card Before starting, identify your GPU:\nMethod 1: Device Manager …","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/reinstall_yuzu_ryujinx/",
-    "title": "How to Reinstall Yuzu \u0026 Ryujinx While Keeping Your Save Files","content": " ⚠️ Important: Always backup your data before any reinstallation! This guide shows you how to proceed safely.\nIntroduction Sometimes Yuzu or Ryujinx encounter problems requiring a complete reinstallation. File corruption, problematic updates, or simply wanting to start fresh\u0026hellip;\nThis guide explains how to cleanly reinstall these emulators without losing your Nintendo Switch game saves.\nWhy reinstall? Common problems requiring reinstallation:\nEmulator refuses to start Degraded performance after an update Corrupted configuration files Persistent graphics issues Recurring error messages Method for Yuzu Step 1: Backup game data Locate saves Launch Yuzu (if possible) Right-click on the desired game in the list Select \u0026ldquo;Open Save Data Location\u0026rdquo; Backup content Select all content from the folder that opens (Ctrl+A) Copy the files (Ctrl+C) Create a backup folder on your desktop or hard drive Paste the content into this folder (Ctrl+V) Recommended structure for organization:\n📁 Backup_Yuzu_2025-06-04/ ├── 📁 The_Legend_of_Zelda_BOTW/ │ ├── save_data.bin │ └── other_files... ├── 📁 Super_Mario_Odyssey/ │ ├── save_data.bin │ └── other_files... └── 📁 Pokemon_Legends_Arceus/ ├── save_data.bin └── other_files... Repeat for all games Repeat this operation for each game whose save you want to preserve Note the name of each folder to facilitate restoration Step 2: Delete Yuzu data Access configuration folder Press Windows + R Type %appdata% and press Enter Delete Yuzu folder Navigate to the \u0026ldquo;yuzu\u0026rdquo; folder Completely delete this folder Empty the recycle bin to free up space 💡 Tip: If the folder is in use, completely close Yuzu via Task Manager.\nStep 3: Reinstall Yuzu Step 4: Restore saves Put back save files Launch your games once to create save folders Close Yuzu completely Right-click on each game → \u0026ldquo;Open Save Data Location\u0026rdquo; Replace the content with your backed up files Verification:\nLaunch the game to verify the save is properly loaded Check progress, statistics, etc. Method for Ryujinx Step 1: Backup Ryujinx data Locate user saves Launch Ryujinx Right-click on the desired game Select \u0026ldquo;Open User Save Directory\u0026rdquo; Save options in Ryujinx\nBackup additional data If available, also click on \u0026ldquo;Open Device Save Directory\u0026rdquo; and/or BCAT Copy all content to your backup folders Organize by game name like for Yuzu Step 2: Delete Ryujinx Locate configuration folder Press Windows + R Type %appdata% and validate Navigate to the \u0026ldquo;Ryujinx\u0026rdquo; folder Completely delete this folder Step 3: Reinstallation and restoration Reinstall Ryujinx Restore saves Launch each game once Close Ryujinx Replace save files with your backups Test that everything works correctly Important verifications Before reinstallation:\n✅ Complete backups created ✅ Game names noted ✅ Firmware/keys available After reinstallation:\n✅ Emulator starts correctly ✅ Games detected ✅ Saves restored ✅ Satisfactory performance Common problems and solutions 🚫 Saves not recognized Possible causes:\nWrong file location Incompatible emulator versions Corrupted files Solutions:\nCheck the exact file location Try with a similar emulator version Use an older backup Conclusion Reinstalling Yuzu and Ryujinx while preserving your saves is a simple process if you follow the right method. The essential thing is to always backup before acting and proceed step by step.\nKey points to remember 🎯 Procedure summary:\nBackup all important game data Cleanly delete configuration folders Reinstall the emulator with a recent version Restore your saves and test Configure according to your preferences Preventive maintenance To avoid reinstallations:\nRegular but careful updates Weekly automatic backups Performance monitoring Periodic cache cleaning FAQ - Frequently Asked Questions Q: Can I transfer my saves between Yuzu and Ryujinx? A: Yes, there are plenty of tutorials available on the internet\nQ: How long does the complete procedure take? A: It depends completely on the number of games you have\nQ: What to do if I forgot to backup before reinstallation? A: Check Windows recycle bin, use file recovery tools, or restore from a system backup.\nDid this guide help you? Share your experiences and additional tips in the comments!\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/xenia/",
-    "title": "Complete Guide: Xenia Installation and Configuration (Xbox 360 Emulator)","content": " 🎮 Introduction to Xenia Xenia is the most advanced open-source Xbox 360 emulator available. Developed since 2013, it emulates the PowerPC Xenon architecture of the Xbox 360 and offers growing compatibility with many iconic games from Microsoft\u0026amp;rsquo;s console.\n💡 Important note: Xenia requires a powerful CPU with good single-thread performance. Recent GPUs with Vulkan support give the best results.\n💡 Xenia Manager: For better understanding and usage of Xenia, we\u0026amp;rsquo;ll use Xenia Manager. This isn\u0026amp;rsquo;t something official from the Xenia devs, but there\u0026amp;rsquo;s nothing better for beginners on this emulator.\n🔧 Step 1: Download Xenia Manager Master Version (Stable) # Official site https://github.com/xenia-manager/xenia-manager/releases Click on \u0026amp;ldquo;xenia_manager.zip\u0026amp;rdquo; Download xenia_master.zip Extract to a dedicated folder (e.g., Documents\\Xenia or at the root of another drive, not C) Game Download Step 1: Access the game library Go to 🎮 Axekin Games - Xbox 360 to access the …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/dolphin/",
-    "title": "Dolphin Installation and Configuration","content": " 🎮 Introduction to Dolphin Dolphin is the world\u0026amp;rsquo;s most advanced Nintendo GameCube and Wii emulator. Developed since 2003, it offers near-perfect compatibility, spectacular graphics enhancements, and unique features like online gaming and virtual reality.\n🔧 Step 1: Downloading Dolphin Option 1: Stable Version (Recommended) # Official site https://dolphin-emu.org/download/ Click on \u0026amp;ldquo;Download Dolphin 5.0\u0026amp;rdquo; Download dolphin-x64-X.0.zip Extract to a dedicated folder (e.g., Documents\\Dolphin or at the root of another drive, not C) Option 2: Dolphin Android # Optimized mobile version https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu Game Download Step 1: Access the game library Go to 🎮 Axekin Games - Nintendo Wii to access the Nintendo Wii game collection.\nStep 2: Download the game Search for the desired game in the list Click on the download button Wait for the download to complete Step 3: File extraction Once the download is finished, extract the …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/cheat_ryujinx/",
-    "title": "How to Install Cheats and Mods on the Ryujinx Emulator","content": " ⚠️ Important: Always backup your save files before installing cheats or mods. Some modifications can affect game stability.\nIntroduction Ryujinx supports both cheat codes and game modifications (mods) to enhance your Nintendo Switch gaming experience. Whether you want infinite health, unlock all items, or completely transform a game\u0026rsquo;s graphics, this guide will show you exactly how to install them.\nWhat\u0026rsquo;s the difference? Cheats vs Mods:\nCheats: Small code modifications (infinite money, max stats, etc.) Mods: Complete game content modifications (new textures, characters, levels, etc.) Both use different installation methods and folder structures in Ryujinx.\nInstalling Cheats on Ryujinx Step 1: Access the Mod Directory Open Ryujinx and locate your game Launch the Ryujinx emulator Right-click on the game you want to add cheats to Select \u0026ldquo;Open Mods Directory\u0026rdquo; from the context menu Step 2: Understanding the folder structure Directory structure When you open the mods directory, you\u0026rsquo;ll see a path like this:\nRyujinx\\mods\\contents\\XXXXXXXXXXXXXXXX\\ Where XXXXXXXXXXXXXXXX is the unique game ID (Title ID) of your selected game.\nExamples of game IDs:\nThe Legend of Zelda: Breath of the Wild: 01007EF00011E000 Super Mario Odyssey: 0100000000010000 Pokémon Sword: 0100ABF008968000 Step 3: Install cheat files Extract and place cheat files Download your cheat files (usually in .zip format) Extract the archive contents Create the appropriate folder structure: Ryujinx\\mods\\contents\\XXXXXXXXXXXXXXXX\\\r└── Cheat_Name\\\r└── cheats\\\r├── cheat1.txt\r├── cheat2.txt\r└── other_cheats.txt Detailed installation steps Navigate to your game\u0026rsquo;s mod directory Create a new folder with the cheat name (ex: \u0026ldquo;Infinite_Money\u0026rdquo;) Inside this folder, create a subfolder called \u0026ldquo;cheats\u0026rdquo; Place all .txt cheat files in the \u0026ldquo;cheats\u0026rdquo; folder Step 4: Enable cheats Enable cheats in-game Launch your game in Ryujinx Right-click on the game title again Select \u0026ldquo;Manage Cheats\u0026rdquo; or access via the menu Check the boxes next to the cheats you want to enable Apply the changes and restart the game if necessary Installing Mods on Ryujinx Step 1: Access the Mods Directory Same initial process as for cheats Open Ryujinx Right-click on your target game Click on \u0026ldquo;Open Mods Directory\u0026rdquo; This opens: AppData\\Roaming\\Ryujinx\\mods\\contents\\\u0026lt;Game ID\u0026gt;\\\nStep 2: Create mod folder structure Organize your mods correctly Create a new subfolder under the game ID directory Name it descriptively (ex: \u0026ldquo;Infinite_Lives\u0026rdquo;, \u0026ldquo;HD_Textures\u0026rdquo;, \u0026ldquo;Custom_Music\u0026rdquo;) This helps you manage multiple mods easily Example structure:\nRyujinx\\mods\\contents\\01007EF00011E000\\\r├── HD_Graphics_Mod\\\r│ └── romfs\\\r├── Infinite_Lives\\\r│ └── exefs\\\r└── Custom_Soundtrack\\\r└── romfs\\ Step 3: Install mod files Copy mod content Extract your downloaded mod files Locate the romfs or exefs folder from the mod Copy these folders into your newly created mod directory Types of mod folders:\nromfs: Game content modifications (textures, models, audio) exefs: Executable modifications (code patches, gameplay changes) Complete installation Navigate to your mod\u0026rsquo;s extraction folder Copy the entire romfs or exefs folder Paste into your created mod directory Step 4: Enable mods Enable installed mods Launch Ryujinx Right-click on your game Select \u0026ldquo;Manage Mods\u0026rdquo; Enable/disable mods according to your preferences Start the game to see the changes Folder Structure Examples Complete cheat installation Ryujinx\\mods\\contents\\01007EF00011E000\\\r└── BOTW_Cheats\\\r└── cheats\\\r├── infinite_stamina.txt\r├── max_hearts.txt\r├── all_weapons.txt\r└── infinite_rupees.txt Complete mod installation Ryujinx\\mods\\contents\\01007EF00011E000\\\r├── HD_Graphics_Pack\\\r│ └── romfs\\\r│ ├── Model\\\r│ ├── Texture\\\r│ └── Effect\\\r└── Gameplay_Overhaul\\\r├── romfs\\\r│ └── GameData\\\r└── exefs\\\r└── main.npdm Mod compatibility Compatibility testing:\nInstall one mod at a time Test game stability Check for conflicts before adding others Take notes on working combinations Troubleshooting Common Issues Cheats not working Common problems and solutions 🚫 Cheat files not detected:\nCheck folder structure: Game_ID\\Cheat_Name\\cheats\\*.txt Check file extensions (.txt, not .txt.txt) Ensure no extra spaces in folder names ⚠️ Cheats causing crashes:\nDisable all cheats and test them one by one Check cheat compatibility with game version Use cheats from reliable sources MAKE SURE THE CHEAT VERSION MATCHES THE GAME VERSION Mods not loading Debugging mod issues 📁 Incorrect folder structure:\n❌ Incorrect:\rRyujinx\\mods\\contents\\GAME_ID\\romfs\\...\r✅ Correct:\rRyujinx\\mods\\contents\\GAME_ID\\Mod_Name\\romfs\\... 🎮 Game-specific issues:\nCheck mod compatibility with your game version Check if the mod requires a specific firmware version Test with the mod disabled to confirm it\u0026rsquo;s the cause Finding Cheats and Mods Recommended sources Reliable websites for downloads Source Type Description GameBanana Mods Largest modding community NexusMods Mods Professional mod hosting GBAtemp Forums Cheats \u0026amp; Mods Active community discussions Security considerations Download security checklist:\n✅ Only use reputable sources ✅ Read user comments and reviews ✅ Scan files with antivirus ✅ Backup before installing ✅ Test on less important games first Conclusion Installing cheats and mods on Ryujinx is simple once you understand the folder structure. The key is proper organization and testing one modification at a time.\nFAQ - Frequently Asked Questions Q: Can I use cheats and mods simultaneously? A: Yes, but test carefully as some combinations can cause conflicts or crashes.\nQ: Do mods affect game performance? A: It depends on the mod. Graphics mods usually require more resources, while simple cheats have minimal impact.\nQ: Are Ryujinx mods compatible with Yuzu? A: Sometimes, but the folder structure differs. You may need to reorganize files for cross-compatibility.\nQ: Can I create my own cheats? A: Yes, with knowledge of memory addresses and game structure. Tools like Cheat Engine can help identify values to modify.\nQ: What if a mod breaks my game? A: Simply disable or remove the mod from the mods directory. Your original game files remain intact.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/keyboard_mouse_cemu/",
-    "title": "Playing with Keyboard \u0026 Mouse on Cemu Emulator","content": " ⚠️ Important Note: While possible, the keyboard-mouse experience on Cemu won\u0026amp;rsquo;t be as pleasant as with a controller. This solution suits players who don\u0026amp;rsquo;t have a compatible gamepad.\nIntroduction Playing Wii U games on the Cemu emulator with a keyboard and mouse requires using third-party tools to simulate a controller. This guide explains how to configure this solution with Mouse2Joystick and ViGEmBus.\nThis method is particularly useful for:\nPlayers who don\u0026amp;rsquo;t have a compatible controller Quick game testing without investing in a gamepad Certain game genres adapted to keyboard-mouse General Process Download ViGEmBus and Mouse2Joystick Install ViGEmBus (virtual controller driver) Configure Mouse2Joystick according to your preferences Set up Cemu to recognize the controls Test and adjust settings Prerequisites and Downloads Required Software Essential applications:\nViGEmBus: Driver for virtual controllers Mouse2Joystick: Converts keyboard/mouse to controller signals …","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/citra/",
-    "title": "Azahar Installation and Configuration","content": " 🎮 Introduction to Citra Citra is the world\u0026amp;rsquo;s most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphics improvements and near-perfect compatibility.\n🔧 Step 1: Downloading Citra Option 1: Official Azahar # Official site https://github.com/azahar-emu/azahar/releases Click on \u0026amp;ldquo;Download for Windows\u0026amp;rdquo; Download azahar-XXXX-rc1-windows-msvc-installer.exe Extract to a dedicated folder (e.g., Documents\\Azahar or at the root of another drive, not C) Game Download Step 1: Access the game library Go to 🎮 Axekin Games - Nintendo 3DS to access the Nintendo 3DS game collection.\nStep 2: Download the game Search for the desired game in the list Click on the download button Wait for the download to complete Step 3: File extraction Once the download is finished, extract the archive with one of these software:\nSoftware Download Link Compatibility 7-Zip Download 7-Zip Windows/Linux WinRAR Download WinRAR Windows 💡 …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/ryujinx/",
-    "title": "Ryujinx Installation and Configuration","content": " 🎮 Introduction to Ryujinx Ryujinx is an open-source Nintendo Switch emulator written in C#. It allows you to play Nintendo Switch games on PC with excellent performance and constantly improving compatibility.\n🔧 Step 1: Downloading Ryujinx Option 1: Stable Version (Recommended) # Visit the official website https://ryujinx.app/ Click on \u0026amp;ldquo;Download\u0026amp;rdquo; Extract the archive to a dedicated folder (e.g., Documents\\Ryujinx or at the root of another drive, not C) Game Download Step 1: Access the game library Go to 🎮 Axekin Games - Nintendo Switch to access the Nintendo Switch game collection.\nStep 2: Download the game Search for the desired game in the list Click on the download button Wait for the download to complete Step 3: File extraction Once the download is finished, extract the archive with one of these software:\nSoftware Download Link Compatibility 7-Zip Download 7-Zip Windows/Linux WinRAR Download WinRAR Windows 💡 Tip: 7-Zip is free and open-source, while WinRAR requires a …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-07 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/amibo_cemu/",
-    "title": " Using Amiibo on the Cemu Wii U Emulator","content": " Introduction Using Amiibo on the Cemu Wii U emulator allows access to exclusive content and features without needing physical figurines. This guide explains how to configure and use Amiibo .bin files specifically on Cemu for Wii U games.\nThe Amiibo functionality on Cemu is particularly useful for:\nUnlocking exclusive content in Zelda: Breath of the Wild Obtaining rare items and costumes in compatible games Testing Amiibo features without buying figurines Accessing special game modes and challenges General Process Download Amiibo collection files (.bin format) Organize files in a dedicated \u0026ldquo;Amiibo\u0026rdquo; folder Load your Wii U game in Cemu Access the NFC menu during gameplay Scan the desired Amiibo from file Prerequisites and Downloads Required Software Essential Components:\nCemu: Latest stable version (2.6.0 or newer) Amiibo Files: Complete .bin collection Compatible Wii U Games: That support Amiibo functionality Amiibo File Collection Download and Setup 🔗 Download Link: https://vikingfile.com/f/3PsPBKLrJG (Credit: LinkNotZelda08)\nDownload Instructions:\nDownload the complete Amiibo collection Extract the archive on your computer Cemu Configuration Enabling NFC Support Basic Cemu Configuration Prerequisites Check:\nCemu Version: 1.26.0 or newer (NFC support required) Game Compatibility: Verify your game supports Amiibo File Access: Ensure Cemu can access your Amiibo folder NFC Settings in Cemu No special configuration needed:\nCemu has built-in NFC emulation No additional plugins or settings required Works automatically with compatible games Loading Games with Amiibo Support Step-by-Step Amiibo Usage Example: The Legend of Zelda: Breath of the Wild Accessing the Amiibo Rune In-Game Preparation:\nProgress through the game until you obtain the Amiibo rune Equip the Amiibo rune on your Sheikah Slate Find an open area away from buildings and cliffs Position Link in an appropriate location Preparing to Scan Steps before scanning:\nOpen your Amiibo folder on your computer Navigate to the Zelda subfolder Identify the Amiibo you want to use Keep the folder window accessible Scanning Process in Cemu Accessing the NFC Menu Step-by-step scanning:\nActivate the Amiibo rune in-game (hold up on D-pad) Switch to the Cemu window Click on \u0026ldquo;NFC\u0026rdquo; in the top menu bar Select \u0026ldquo;Scan NFC Tag from File\u0026hellip;\u0026rdquo; Selecting Your Amiibo File Selection Process:\nNavigate to your Amiibo folder Choose the desired .bin file (e.g., Link_Archer.bin) Click \u0026ldquo;Open\u0026rdquo; to confirm the selection Return immediately to the game window Finalizing the Scan Finalization Steps:\nReturn to the game window Complete the Amiibo rune activation Watch objects appear from the sky Collect your rewards! Each game has its own method for activating amiibo, check YouTube if you don\u0026rsquo;t know how.\nFAQ - Frequently Asked Questions Q: Can I use Amiibo multiple times per day? A: Depends on the game. Most games have daily limits, but some allow unlimited use.\nQ: Do all Amiibo work with all games? A: No, compatibility varies by game. Check each game\u0026rsquo;s supported Amiibo list.\nQ: Can I create custom Amiibo? A: Yes, with tools like TagMo, but requires technical knowledge and proper encryption keys.\nQ: Why doesn\u0026rsquo;t my Amiibo scan work? A: Check file format (.bin), game compatibility, and ensure proper timing during scan.\nQ: Do Amiibo affect Cemu performance? A: No, Amiibo scanning has minimal impact on emulator performance.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/dlc_update_ryujinx_yuzu/",
-    "title": "How to Install DLC and Updates on Yuzu and Ryujinx","content": " Introduction Installing DLC (downloadable content) and updates on Yuzu and Ryujinx emulators is a simple but essential process to fully enjoy your emulated Nintendo Switch games.\nThis guide explains step by step how to proceed on the two most popular emulators.\nSupported file formats Accepted file types:\nNSP - Nintendo Submission Package (main format) Difference between Update and DLC:\nUpdate: Base game update (fixes, improvements) DLC: Additional paid content (new levels, characters, etc.) Installation on Yuzu Universal method (Update + DLC) Step 1: Access the installation menu Launch Yuzu and wait for the interface to load In the menu bar, click on \u0026ldquo;File\u0026rdquo; Select \u0026ldquo;Install Files to NAND\u0026rdquo; Step 2: Select the file A file selection window opens Navigate to the location of your DLC/Update file Select the file (.nsp) Click on \u0026ldquo;Open\u0026rdquo; Step 3: Confirm installation Yuzu analyzes the file and displays information A dialog box appears asking for confirmation Click on \u0026ldquo;Yes\u0026rdquo; to proceed with installation Wait for installation to complete (progress bar) Step 4: Verification Installation is complete when the success message appears Restart Yuzu to ensure everything is properly recognized Launch your game to verify that the DLC/Update is active Success indicators:\n\u0026ldquo;Installation completed successfully\u0026rdquo; message New content visible in the game Updated version displayed in game properties Installation on Ryujinx For Updates Step 1: Access update management Launch Ryujinx and locate your game in the list Right-click on the game you want to update In the context menu, select \u0026ldquo;Manage Updates\u0026rdquo; Step 2: Add the update The \u0026ldquo;Manage Updates\u0026rdquo; window opens Click on the \u0026ldquo;Add\u0026rdquo; or \u0026ldquo;Browse\u0026rdquo; button Select your update file (.nsp) Click on \u0026ldquo;Open\u0026rdquo; to add it Step 3: Apply the update Your update appears in the list with its version Check the box next to the update to activate it Click on \u0026ldquo;Save\u0026rdquo; to apply changes Update verification Close the management window In the game list, you should see the new version displayed Launch the game to confirm the update is active For DLC Identical procedure to updates The method is exactly the same:\nRight-click on the game → \u0026ldquo;Manage DLC\u0026rdquo; (instead of Manage Updates) Add/Browse → Select the DLC file Check the DLC to activate it Save to apply Check installed versions In Yuzu Right-click on the game → \u0026ldquo;Properties\u0026rdquo; \u0026ldquo;General\u0026rdquo; tab → Check version \u0026ldquo;Installed Content\u0026rdquo; tab → List of DLC In Ryujinx Information visible directly in the game list Right-click → \u0026ldquo;Manage Updates/DLC\u0026rdquo; for details Version displayed next to the game name Troubleshooting Common Issues Installation problems 🚫 File not recognized Possible causes:\nIncompatible file format Corrupted file Missing decryption keys Solutions:\nCheck file format (.nsp, .xci, .nca) Re-download the file if corrupted Install updated prod.keys Check that firmware is compatible ⚠️ Installation fails Common error messages:\n\u0026ldquo;Failed to install to NAND\u0026rdquo; \u0026ldquo;Invalid signature\u0026rdquo; \u0026ldquo;Missing keys\u0026rdquo; Step-by-step solutions:\nCheck available disk space Completely close the emulator and restart Run as administrator if necessary Update the emulator to the latest version Conclusion Installing DLC and updates on Yuzu and Ryujinx is a simple process once mastered. The main difference lies in the approach: Yuzu uses a universal method while Ryujinx offers more granular management.\nFAQ - Frequently Asked Questions Q: Can I install multiple versions of the same DLC? A: No, only one version per DLC. Installing a new version automatically replaces the old one.\nQ: Do DLC work between different game regions? A: Generally no. DLC must match the base game region (EU, US, JP).\nQ: What to do if installation gets stuck? A: Close the emulator, restart as administrator, and try again. Also check available disk space.\nQ: Are saves affected by DLC installation? A: No, existing saves remain intact. Some DLC may add new content to saves.\nQ: How to uninstall a DLC or update? A: In Ryujinx, simply uncheck in Manage DLC/Updates. In Yuzu, you\u0026rsquo;ll need to remove from the emulator\u0026rsquo;s system settings.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/sac/",
-    "title": "SteamAutoCrack - Automatically patch Steam Games","content": " ⚠️ Legal Notice: This guide is for educational purposes only. Use only with games you legally own. Respect copyright laws and terms of service.\n🎮 Introduction to SteamAutoCrack SteamAutoCrack is an automated tool that simplifies the Steam game patching process. It streamlines the entire procedure by automatically applying the necessary modifications to make games work without Steam authentication.\n🔧 Step 1: Obtaining Required Files Game Downloads # You need to create an account to download content https://cs.rin.ru/forum/viewforum.php?f=22 Downloading SteamAutoCrack # You need to create an account to download content https://github.com/SteamAutoCracks/Steam-auto-crack/releases 📁 Step 2: File Preparation Game Extraction Most downloaded games come with password protection:\n# Default password (Base64 encoded) Password: cs.rin.ru Folder Structure After extraction, your game should look like:\nYourGame/ ├── steamapps/ │ └── common/ │ └── GameName/ # Main game directory │ ├── GameName.exe # Game executable │ └── steam_api.dll # Steam API library └── other files... ⚙️ Step 3: Generating Steam API Key Get Your Steam API Key # Steam Web API Key Registration https://steamcommunity.com/dev/apikey Visit the Steam Web API page Log in with your Steam account Register for a new API key Domain Name: Enter any domain (e.g., localhost) Copy the generated API key API Key Example Your API Key: 1234567890ABCDEF1234567890ABCDEF12345678 🚀 Step 4: Using SteamAutoCrack SteamAutoCrack Interface When you launch SteamAutoCrack, you\u0026rsquo;ll see these main fields:\n1. Game Directory Path Field: \u0026#34;Game Path\u0026#34; Purpose: Location of your clean Steam game Example: C:\\Games\\YourGame\\steamapps\\common\\GameName How to fill:\nNavigate to your extracted game Select the path: steamapps/common/GameName/ This should contain the entire game 2. Steam API Key Field: \u0026#34;Steam API Key\u0026#34; Purpose: Your Steam Web API key for authentication Example: 1234567890ABCDEF1234567890ABCDEF12345678 How to fill:\nPaste the API key you generated from Steam This allows the tool to retrieve game information 3. Account Name Field: \u0026#34;Account Name\u0026#34; Purpose: Display name for the patched game Default: Usually auto-filled Example: YourUsername How to fill:\nChange to your preferred name (optional) This name will appear in the game if applicable 4. Steam AppID Field: \u0026#34;Steam AppID\u0026#34; Purpose: Find the Steam AppID Default: Empty, must be filled from https://steamdb.info Example: 221100 (Example for DayZ) Step-by-Step Process Configuration Example Game Path: C:\\Games\\GodOfWar\\steamapps\\common\\GodOfWar API Key: 1234567890ABCDEF1234567890ABCDEF12345678 Account Name: MyGamerTag ⚙️ Advanced Configuration Options 🎯 Category 2: Operating Mode Offline mode recommended Enable offline mode: Since this tutorial is primarily designed for offline gaming, this option avoids any interaction with Steam. User Interface Enable overlay: Can be useful and pleasant for some users who want to keep a familiar interface. 🧪 Category 3: Experimental Features Option Recommendation Reason Experimental Features ✅ Enabled by default Generally harmless In case of problems If you encounter bugs or malfunctions, uncheck this box to return to stable features. 💾 Category 4: Save Management Recommended configuration Use custom save path: Your saves will be stored directly in the game folder, avoiding searching for them all over your computer! Advantages of Custom Path 📁 YourGame/ ├── 🎮 Executable.exe ├── 📄 Game files └── 💾 saves/ # Saves here! ├── save1.dat └── save2.dat 🔧 Goldberg Options Goldberg experimental features Enable if necessary: Same principle as for SteamStub - generally beneficial for compatibility. 📋 Summary of Recommended Options Category Option Status Impact Mode Offline Mode ✅ Enabled Avoids Steam Interface Overlay 🔵 Optional Visual comfort Experimental Advanced features ✅ Enabled Performance Saves Custom path ✅ Enabled Organization Goldberg Experimental 🔵 Optional Compatibility Expert advice These settings optimize the offline experience while keeping your files organized and accessible! 🎯 Execution Fill all three fields correctly Verify that the game path contains the executable Double-check that your API key is valid Click \u0026ldquo;Start\u0026rdquo; to begin the patching process Wait for the process to complete ✅ Step 5: Verification and Testing Successful patch Indicators ✅ Process completed without errors ✅ Steam emulation files created ✅ Game launches without Steam ✅ Save files work correctly Testing Your patched Game Close Steam completely Navigate to the game folder Launch the main game executable Verify that the game works without Steam Common Success Signs Game launches normally No Steam authentication required Save/load functions work Game works offline 🔧 Troubleshooting Common Problems Invalid Game Path ❌ Error: \u0026#34;Game directory not found\u0026#34; ✅ Solution: Make sure the path points to steamapps/common/GameName/ API Key Issues ❌ Error: \u0026#34;Invalid API key\u0026#34; ✅ Solution: Regenerate the API key from the Steam Web API page Permission Errors ❌ Error: \u0026#34;Access denied\u0026#34; ✅ Solution: Run SteamAutoCrack as Administrator Antivirus Interference ❌ Error: Files deleted or quarantined ✅ Solution: Add an exception for the SteamAutoCrack folder 🎯 Best Practices Game Selection ✅ Recommended: Single-player games ✅ Recommended: Older Steam games ❌ Avoid: Online-only games ❌ Avoid: Games with aggressive DRM Security Considerations Use a secondary Steam account for the API key Keep original game files as backup Scan all downloads with antivirus Test in an isolated environment first 📚 Additional Information When to Use SteamAutoCrack Single-player games without Steam dependency Offline gaming scenarios Learning about game protection mechanisms Backup for owned games Limitations Online features may not work Steam Workshop integration lost Achievements may not sync Updates require manual management 🔒 Legal and Ethical Considerations Recommended Approach Purchase games you enjoy Use patch for backup/offline use Support developers through legitimate purchases Share knowledge responsibly 💡 Tip: SteamAutoCrack is particularly useful for single-player games where you want offline access. Always maintain legal copies and use this knowledge responsibly for educational purposes.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/amibo_switch/",
-    "title": "How to Use Amiibo on Switch Emulators (Yuzu \u0026 Ryujinx)","content": " Introduction Amiibo are Nintendo\u0026rsquo;s NFC figurines that unlock special content in many Switch games. Thanks to Yuzu and Ryujinx emulators, it\u0026rsquo;s possible to use virtual amiibo without owning the physical figurines.\nThis guide explains how to configure and use amiibo on the two most popular emulators.\nWhat is a virtual amiibo? Definition:\n.bin file containing NFC data from an amiibo Simulates scanning a physical figurine Compatible with all games supporting amiibo Virtual amiibo advantages:\nAccess to all amiibo without purchase No daily scan limit Easy storage and organization Instant usage Prerequisites and Download Required files Complete amiibo collection:\n📁 Amiibo_Collection/\r├── 📁 Animal_Crossing/\r├── 📁 Legend_of_Zelda/\r├── 📁 Super_Mario/\r├── 📁 Pokemon/\r└── 📁 Fire_Emblem/ 📥 Download: Amiibo are already available in the Ryujinx emulator.\nUsage on Yuzu Step 1: Game preparation Launch and position the game Start Yuzu and launch your amiibo-compatible game Navigate to the amiibo scan area in the game Position yourself where the game asks to scan an amiibo Step 2: Load the amiibo Access amiibo menu Without closing the game, go to Yuzu\u0026rsquo;s menu bar Click on \u0026ldquo;File\u0026rdquo; Select \u0026ldquo;Load Amiibo\u0026rdquo; Select the file A selection window opens Navigate to your amiibo folder Select the desired .bin file Click \u0026ldquo;Open\u0026rdquo; Step 3: In-game activation Scan the virtual amiibo Return to the game (Alt+Tab) Press the amiibo scan button (usually right stick) The amiibo is automatically detected and scanned Enjoy the unlocked content! Success indicators:\nScan animation in the game Unlocked amiibo content (items, costumes, etc.) Game confirmation message Usage on Ryujinx Step 1: Game preparation Launch and position Start Ryujinx and launch your game Navigate to the amiibo scan area Get ready to scan (the game usually displays an amiibo icon) Step 2: Scan the amiibo Access scan menu Without closing the game, go to Ryujinx\u0026rsquo;s menu bar Click on \u0026ldquo;Actions\u0026rdquo; Select \u0026ldquo;Scan Amiibo\u0026rdquo; Select the amiibo A selection window appears Choose your amiibo Click \u0026ldquo;Open\u0026rdquo; Step 3: Confirmation Verify the scan The amiibo is immediately scanned in the game Verify that the content is unlocked Repeat the operation for other amiibo if necessary Conclusion Using virtual amiibo on Switch emulators opens a world of possibilities to enrich your gaming experience. Whether to unlock exclusive content or simply to test features, the presented methods are simple and effective.\nFAQ - Frequently Asked Questions Q: Can I use the same amiibo multiple times per day? A: It depends on the game. Some limit daily usage, others allow unlimited use.\nQ: Do amiibo work on all game versions? A: Generally yes, but check the specific compatibility of your game version.\nQ: Can I create my own custom amiibo? A: Yes, with tools like TagMo or Amiitool, but it requires technical knowledge.\nQ: Do amiibo affect emulator performance? A: No, using amiibo has no impact on performance.\nQ: How do I save my amiibo data? A: Data is automatically saved in the game\u0026rsquo;s save files.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748995200",
-    "permalink": "/en/post/unsteam/",
-    "title": "Unsteam - Playing Co-op with Patched Games","content": " 🎮 Introduction to Unsteam Unsteam is a Steam emulator that allows patched games to function with online multiplayer features. It simulates the Steam API to enable cooperation between players with unofficial versions.\n💡 Important note: Unsteam works ONLY on games with Steam protection, nothing else. So you can\u0026rsquo;t patch Black Myth Wukong because Denuvo anti-cheat is present, same for FC 25 with EA, etc. Don\u0026rsquo;t complain if it doesn\u0026rsquo;t work when you try to patch these games.\n🔧 Step 1: Obtaining Files Game Downloads # You need to create an account to download content https://cs.rin.ru/forum/viewforum.php?f=22 Access the cs.rin.ru forum Download your desired game. If it\u0026rsquo;s not available, go to https://cs.rin.ru/forum/viewforum.php?f=10, search for your desired game in CSF format (CSF = Clean Steam Files) on your game\u0026rsquo;s page. Downloading Unsteam # You need to create an account to download content https://cs.rin.ru/forum/viewtopic.php?f=29\u0026amp;t=134707 Download the latest version of Unsteam Extract the archive to a folder EXCLUDED FROM WINDOWS DEFENDER. Follow this tutorial if you don\u0026rsquo;t know how: https://www.youtube.com/watch?v=BonLkFNnO9w 🔍 Step 2: Finding Game Information Using SteamDB # Reference site https://steamdb.info/ Access SteamDB.info Search for your game by name Note the following information: AppID of the main game AppID of DLCs (if present) Name of DLCs Example for God of War Game name: God of War Main AppID: 1593500 DLC example: Digital Deluxe Edition (AppID: 1593501) ⚙️ Step 3: Configuring Unsteam Unsteam File Structure Unsteam/ ├── unsteam_loader_x64.exe # Main launcher ├── unsteam_x64.dll # Emulation library └── unsteam.ini # Configuration file Configuring the unsteam.ini file Create or modify the unsteam.ini file. It will auto-generate on first launch, and here\u0026rsquo;s its configuration:\n[loader] exe_file= dll_file=unsteam_x64.dll [game] real_app_id=387990 fake_app_id=480 language=english beta_name=public saves_path=saves [dlcs] appid1=DLC Name appid2=DLC Name Detailed Parameter Explanation [loader] Section exe_file=GoW.exe # Path to your game\u0026#39;s EXE dll_file=unsteam_x64.dll # Unsteam DLL (don\u0026#39;t modify) [game] Section real_app_id=1593500 # Real game AppID (from SteamDB) fake_app_id=480 # Fake AppID (leave 480 by default) language=english # Game language (english/french/german/etc.) beta_name=public # Beta version (leave \u0026#34;public\u0026#34;) saves_path=saves # Save folder [dlcs] Section 1593501=Digital Deluxe Edition # AppID=DLC Name 1593502=Season Pass # AppID=DLC Name (example) 📁 Step 4: Installation and Configuration File Placement YourGame/ ├── GoW.exe # Game executable ├── unsteam_loader_x64.exe # ← Copy this file here ├── unsteam_x64.dll # ← Copy this file here ├── unsteam.ini # ← Create this file here └── saves/ # Save folder (auto-created) Example Configuration for God of War [loader] exe_file=GoW.exe dll_file=unsteam_x64.dll [game] real_app_id=1593500 fake_app_id=480 language=english beta_name=public saves_path=saves [dlcs] 1593501=Digital Deluxe Upgrade 🚀 Step 5: Launching the Game Launch Procedure Launch Steam first Log in to your Steam account Navigate to your game folder Execute unsteam_loader_x64.exe (NOT the game\u0026rsquo;s .exe) Wait for loading Verifying Functionality ✅ Steam overlay visible ✅ Steam profile displayed in game ✅ Multiplayer functions active ✅ Steam achievements unlocked (optional) 🌐 Step 6: Co-op Gaming Connecting with Friends Ensure your friends are also using Unsteam Verify you have the same AppID configured Launch the game simultaneously Use normal multiplayer functions 🔧 Common Troubleshooting Frequent Problems Game Won\u0026rsquo;t Launch ❌ Problem: \u0026#34;Failed to load game\u0026#34; ✅ Solution: Check the exe_file= path in unsteam.ini Steam Overlay Missing ❌ Problem: No Steam overlay ✅ Solution: Launch Steam BEFORE unsteam_loader_x64.exe Multiplayer Not Working ❌ Problem: Can\u0026#39;t join friends ✅ Solution: Verify everyone uses the same real_app_id. If it still doesn\u0026#39;t work, online functionality simply isn\u0026#39;t supported DLL Error ❌ Problem: \u0026#34;unsteam_x64.dll not found\u0026#34; ✅ Solution: Place the DLL in the same folder as the EXE Game Still Won\u0026rsquo;t Launch ❌ Problem: \u0026#34;Game won\u0026#39;t launch even after doing all this?\u0026#34; ✅ Solution: Sometimes a game doesn\u0026#39;t only have Steam protection. As mentioned at the beginning, if the game has protection OTHER than Steam, like Denuvo, BattleEye, etc., then it\u0026#39;s impossible. ⚠️ Important Precautions Steam Account Security DON\u0026rsquo;T USE your main Steam account Create a secondary account if necessary Avoid games with aggressive anti-cheat Game Compatibility ✅ Compatible: Steam coop/multiplayer games ✅ Compatible: Games with Steam Workshop ❌ Incompatible: Games with EAC/BattlEye ❌ Incompatible: Games requiring Steam DRM Updates Frequency: Check Unsteam updates monthly Source: cs.rin.ru (official forum) Version: Always use the latest stable version Multi-Game Configuration Create a folder per game with its own configuration: Games/ ├── GoW/ │ ├── unsteam.ini (GoW config) │ └── unsteam_loader_x64.exe └── Elden Ring/ ├── unsteam.ini (Elden Ring config) └── unsteam_loader_x64.exe 💡 Final tip: Always test with free games or games you legally own before using with other titles. Co-op works better with stable connections and identical configurations between players.\n","date": "2025-06-04 00:00:00",
-    "updated": "2025-06-04 00:00:00"
-  }, 
-  {
-    "objectID": "1748822400",
-    "permalink": "/en/post/rpcs3/",
-    "title": "RPCS3 Installation and Configuration","content": " 🎮 Introduction to RPCS3 RPCS3 is the world\u0026amp;rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to emulate the PS3\u0026amp;rsquo;s Cell architecture. After years of development, it now offers impressive compatibility with over 60% of PS3 games.\n⚠️ Legal Notice: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.\n📋 System Requirements Minimum Configuration OS: Windows 10 (64-bit) / Linux / FreeBSD CPU: Intel Core i5-4430 / AMD FX-6300 (4 cores, 3.0 GHz) RAM: 8 GB GPU: DirectX 12 compatible / Vulkan 1.1 compatible Storage: 10 GB free space + game space Recommended Configuration CPU: Intel Core i7-8700 / AMD Ryzen 7 2700 (8 cores, 3.2+ GHz) RAM: 16 GB GPU: NVIDIA GTX 1060 / AMD RX 580 or higher Storage: SSD with 50+ GB free space Optimal Configuration CPU: Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 3.5+ GHz) RAM: …","date": "2025-06-02 00:00:00",
-    "updated": "2025-06-02 00:00:00"
-  }]
+{
+  "objectID": "6083a88ee3411b0d17ce02d738f69d47",
+  "title": "À propos",
+  "summary": "\u003ch1 id=\"à-propos-daxekin\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#%c3%a0-propos-daxekin\"\u003e\u003c/a\u003e\r\nÀ propos d\u0026rsquo;Axekin\r\n\u003c/h1\u003e\u003cblockquote class=\"quote\"\u003e\r\n  \u003cp\u003eSi y\u0026rsquo;a un doute, y\u0026rsquo;a pas de doute frère\u003c/p\u003e\r\n  \r\n  \u003ccite\u003e— Axekin\u003c/cite\u003e\r\n  \r\n\u003c/blockquote\u003e\n\u003ch2 id=\"qui-suis-je-\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#qui-suis-je-\"\u003e\u003c/a\u003e\r\nQui suis-je ?\r\n\u003c/h2\u003e\u003cp\u003eSalut ! Je suis \u003cstrong\u003eAxekin\u003c/strong\u003e, passionne de technologie, gaming et surtout …\u003c/p\u003e",
+  "url": "http://localhost:1313/fr/about/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["Personnel"],
+  "tags": ["présentation","bio","contact"]
+},
+{
+  "objectID": "6083a88ee3411b0d17ce02d738f69d47",
+  "title": "About",
+  "summary": "\u003ch1 id=\"about-axekin\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#about-axekin\"\u003e\u003c/a\u003e\r\nAbout Axekin\r\n\u003c/h1\u003e\u003cblockquote class=\"quote\"\u003e\r\n  \u003cp\u003eWhen in doubt, there\u0026rsquo;s no doubt, bro\u003c/p\u003e\r\n  \r\n  \u003ccite\u003e— Axekin\u003c/cite\u003e\r\n  \r\n\u003c/blockquote\u003e\n\u003ch2 id=\"who-am-i\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#who-am-i\"\u003e\u003c/a\u003e\r\nWho am I?\r\n\u003c/h2\u003e\u003cp\u003eHey! I\u0026rsquo;m \u003cstrong\u003eAxekin\u003c/strong\u003e, passionate about technology, gaming and especially anime. This site is my …\u003c/p\u003e",
+  "url": "http://localhost:1313/en/about/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["Personal"],
+  "tags": ["introduction","bio","contact"]
+},
+{
+  "objectID": "656c9c99a3c161f22342a26167b95afa",
+  "title": "melonDS Installation and Configuration",
+  "summary": "Learn how to install and configure melonDS for optimal Nintendo DS emulation. Complete guide with BIOS, graphics settings and advanced features.",
+  "url": "http://localhost:1313/en/post/melonds/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["melonds","nintendo-ds","emulation","installation","configuration","gaming"]
+},
+{
+  "objectID": "783c3d49f741384322dd276e5508fb5b",
+  "title": "Complete Guide to Cheats on the Citra Emulator",
+  "summary": "Learn to use cheat codes on the Citra emulator for Nintendo 3DS. Complete guide with practical examples, troubleshooting and best practices.",
+  "url": "http://localhost:1313/en/post/cheat_citra/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["citra","cheats","3ds","emulation","nintendo","codes","action-replay"]
+},
+{
+  "objectID": "783c3d49f741384322dd276e5508fb5b",
+  "title": "Guide Complet des Cheats sur l'émulateur Citra",
+  "summary": "Apprenez à utiliser les codes de triche sur l\u0026rsquo;émulateur Citra pour Nintendo 3DS. Guide complet avec exemples pratiques, troubleshooting et bonnes pratiques.",
+  "url": "http://localhost:1313/fr/post/cheat_citra/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["citra","cheats","3ds","emulation","nintendo","codes","action-replay"]
+},
+{
+  "objectID": "a36db5f89011b147522afb7cf1197773",
+  "title": "Eden Installation and Configuration",
+  "summary": "Learn how to install and configure Eden (Yuzu fork) for optimal Nintendo Switch emulation. Complete guide with firmware, keys and optimizations.",
+  "url": "http://localhost:1313/en/post/yuzu/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["eden","yuzu","nintendo-switch","emulation","installation","configuration","gaming","firmware"]
+},
+{
+  "objectID": "a36db5f89011b147522afb7cf1197773",
+  "title": "Installation et Configuration de Eden",
+  "summary": "Apprenez à installer et configurer Eden (fork de Yuzu) pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.",
+  "url": "http://localhost:1313/fr/post/yuzu/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["eden","yuzu","nintendo-switch","emulation","installation","configuration","gaming","firmware"]
+},
+{
+  "objectID": "38f5aee7b08b3b852b65cdb26412444e",
+  "title": "Clean Graphics Driver Reinstallation",
+  "summary": "Learn how to cleanly reinstall your NVIDIA or AMD graphics drivers with DDU. Complete guide to solve performance and stability issues.",
+  "url": "http://localhost:1313/en/post/reinstall_driver_gpu/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["maintenance","tutorials","hardware"],
+  "tags": ["drivers","gpu","nvidia","amd","ddu","drivers","repair","windows"]
+},
+{
+  "objectID": "d9c7f45a61bd53d544619e4b5859cebd",
+  "title": "Comment Réinstaller Yuzu \u0026 Ryujinx en Gardant ses Sauvegardes",
+  "summary": "Apprenez à réinstaller complètement Yuzu et Ryujinx sans perdre vos précieuses sauvegardes. Guide détaillé avec captures d\u0026rsquo;écran et méthodes de sauvegarde.",
+  "url": "http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["yuzu","ryujinx","nintendo-switch","emulation","sauvegarde","backup","reinstallation"]
+},
+{
+  "objectID": "d9c7f45a61bd53d544619e4b5859cebd",
+  "title": "How to Reinstall Yuzu \u0026 Ryujinx While Keeping Your Save Files",
+  "summary": "Learn how to completely reinstall Yuzu and Ryujinx without losing your precious save files. Detailed guide with screenshots and backup methods.",
+  "url": "http://localhost:1313/en/post/reinstall_yuzu_ryujinx/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["yuzu","ryujinx","nintendo-switch","emulation","backup","save","reinstallation"]
+},
+{
+  "objectID": "38f5aee7b08b3b852b65cdb26412444e",
+  "title": "Réinstallation Propre des Pilotes Graphiques",
+  "summary": "Apprenez à réinstaller proprement vos pilotes graphiques NVIDIA ou AMD avec DDU. Guide complet pour résoudre les problèmes de performance et de stabilité.",
+  "url": "http://localhost:1313/fr/post/reinstall_driver_gpu/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["maintenance","tutorials","hardware"],
+  "tags": ["pilotes","gpu","nvidia","amd","ddu","drivers","réparation","windows"]
+},
+{
+  "objectID": "de2536b64898800b387a9484933267e2",
+  "title": "Complete Guide: Xenia Installation and Configuration (Xbox 360 Emulator)",
+  "summary": "Learn how to install and configure Xenia for optimal Xbox 360 emulation. Complete guide with setup, games and troubleshooting.",
+  "url": "http://localhost:1313/en/post/xenia/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["xenia","xbox-360","emulation","installation","configuration","gaming","microsoft","optimization"]
+},
+{
+  "objectID": "8313cea8b9d0ff2a56d2e78cd866e780",
+  "title": "Dolphin Installation and Configuration",
+  "summary": "Learn how to install and configure Dolphin emulator for optimal Nintendo GameCube and Wii gaming. Complete setup guide with performance optimization.",
+  "url": "http://localhost:1313/en/post/dolphin/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["dolphin","nintendo-gamecube","nintendo-wii","emulation","installation","configuration","gaming"]
+},
+{
+  "objectID": "8313cea8b9d0ff2a56d2e78cd866e780",
+  "title": "Installation et configuration de Dolphin",
+  "summary": "Learn how to install and configure Dolphin emulator for optimal Nintendo GameCube and Wii gaming. Complete setup guide with performance optimization.",
+  "url": "http://localhost:1313/fr/post/dolphin/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["Gaming","Tutoriels"],
+  "tags": ["Dolphin","Nintendo Wii","GameCube","Émulation","Gaming"]
+},
+{
+  "objectID": "de2536b64898800b387a9484933267e2",
+  "title": "Installation et Configuration de Xenia (Émulateur Xbox 360)",
+  "summary": "Apprenez à installer et configurer Xenia pour une émulation Xbox 360 optimale. Guide complet avec configuration, jeux et résolution de problèmes.",
+  "url": "http://localhost:1313/fr/post/xenia/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["xenia","xbox-360","emulation","installation","configuration","gaming","microsoft","optimization"]
+},
+{
+  "objectID": "6e630690e33d3fc56d1f21851819dfc6",
+  "title": "Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx",
+  "summary": "Apprenez à installer des codes de triche et modifications de jeux sur l\u0026rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d\u0026rsquo;installation.",
+  "url": "http://localhost:1313/fr/post/cheat_ryujinx/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["ryujinx","cheats","mods","nintendo-switch","emulation","installation","modding"]
+},
+{
+  "objectID": "6e630690e33d3fc56d1f21851819dfc6",
+  "title": "How to Install Cheats and Mods on the Ryujinx Emulator",
+  "summary": "Learn how to install cheat codes and game modifications on the Ryujinx emulator. Detailed tutorial with folder structure and installation steps.",
+  "url": "http://localhost:1313/en/post/cheat_ryujinx/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["ryujinx","cheats","mods","nintendo-switch","emulation","installation","modding"]
+},
+{
+  "objectID": "afb2e0c1bdecf484dd613413c8248a6d",
+  "title": "Jouer Clavier-Souris sur l'Émulateur Cemu",
+  "summary": "Apprenez à jouer aux jeux Wii U sur Cemu avec un clavier et une souris. Guide complet avec Mouse2Joystick et configuration détaillée.",
+  "url": "http://localhost:1313/fr/post/keyboard_mouse_cemu/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["cemu","wiiu","clavier-souris","mouse2joystick","vigembus","emulation","nintendo"]
+},
+{
+  "objectID": "afb2e0c1bdecf484dd613413c8248a6d",
+  "title": "Playing with Keyboard \u0026 Mouse on Cemu Emulator",
+  "summary": "Learn how to play Wii U games on Cemu with keyboard and mouse. Complete guide with Mouse2Joystick and detailed configuration.",
+  "url": "http://localhost:1313/en/post/keyboard_mouse_cemu/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["cemu","wiiu","keyboard-mouse","mouse2joystick","vigembus","emulation","nintendo"]
+},
+{
+  "objectID": "ba64b31ed7f36df88949ec88bc18fcbd",
+  "title": "Azahar Installation and Configuration",
+  "summary": "Learn how to install and configure Azahar emulator for optimal Nintendo 3DS gaming. Complete setup guide with graphics enhancement and performance optimization.",
+  "url": "http://localhost:1313/en/post/citra/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["azahar","citra","nintendo-3ds","emulation","installation","configuration","gaming"]
+},
+{
+  "objectID": "ba64b31ed7f36df88949ec88bc18fcbd",
+  "title": "Installation et configuration de Azahar",
+  "summary": "Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps.",
+  "url": "http://localhost:1313/fr/post/citra/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["gaming","Tutoriels"],
+  "tags": ["Citra","Nintendo 3DS","Émulation","Gaming"]
+},
+{
+  "objectID": "780704bf9aacbc31ef0507bd4ad2e682",
+  "title": "Installation et Configuration de Ryujinx",
+  "summary": "Apprenez à installer et configurer Ryujinx pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.",
+  "url": "http://localhost:1313/fr/post/ryujinx/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["ryujinx","nintendo-switch","emulation","installation","configuration","gaming"]
+},
+{
+  "objectID": "780704bf9aacbc31ef0507bd4ad2e682",
+  "title": "Ryujinx Installation and Configuration",
+  "summary": "Learn how to install and configure Ryujinx for optimal Nintendo Switch emulation. Complete guide with firmware, keys and optimizations.",
+  "url": "http://localhost:1313/en/post/ryujinx/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["ryujinx","nintendo-switch","emulation","installation","configuration","gaming"]
+},
+{
+  "objectID": "3be7deb5f56388ea70ca066dc278cd53",
+  "title": " Using Amiibo on the Cemu Wii U Emulator",
+  "summary": "Learn to use Amiibo files on the Cemu Wii U emulator. Complete guide with .bin configuration and NFC scanning.",
+  "url": "http://localhost:1313/en/post/amibo_cemu/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["amiibo","cemu","wiiu","emulation","nintendo","nfc","figurines","zelda"]
+},
+{
+  "objectID": "3be7deb5f56388ea70ca066dc278cd53",
+  "title": " Utiliser des Amiibo sur l'Émulateur Cemu Wii U",
+  "summary": "Apprenez à utiliser les fichiers Amiibo sur l\u0026rsquo;émulateur Cemu Wii U. Guide complet avec configuration .bin et scan NFC.",
+  "url": "http://localhost:1313/fr/post/amibo_cemu/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["amiibo","cemu","wiiu","emulation","nintendo","nfc","figurines","zelda"]
+},
+{
+  "objectID": "67d26cc94c7f4aedd15bf5d4e3ae0feb",
+  "title": "Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx",
+  "summary": "Apprenez à installer facilement des DLC et mises à jour de jeux sur les émulateurs Yuzu et Ryujinx. Guide simple avec captures d\u0026rsquo;écran pour chaque étape.",
+  "url": "http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["yuzu","ryujinx","nintendo-switch","dlc","updates","emulation","installation"]
+},
+{
+  "objectID": "67d26cc94c7f4aedd15bf5d4e3ae0feb",
+  "title": "How to Install DLC and Updates on Yuzu and Ryujinx",
+  "summary": "Learn how to easily install DLC and game updates on Yuzu and Ryujinx emulators. Simple guide with screenshots for each step.",
+  "url": "http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["yuzu","ryujinx","nintendo-switch","dlc","updates","emulation","installation"]
+},
+{
+  "objectID": "d2fe3e1d882b40fe171947acfaa51467",
+  "title": "SteamAutoCrack - Automatically patch Steam Games",
+  "summary": "Learn how to use SteamAutoCrack to automatically patch Steam games. Complete tutorial with API setup and configuration.",
+  "url": "http://localhost:1313/en/post/sac/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","tutorials","automation"],
+  "tags": ["steamautocrack","steam","gaming","patch","automation"]
+},
+{
+  "objectID": "d2fe3e1d882b40fe171947acfaa51467",
+  "title": "SteamAutoCrack - Patcher automatiquement les jeux Steam",
+  "summary": "Apprenez à utiliser SteamAutoCrack pour automatiquement patch les jeux Steam. Tutoriel complet avec configuration API et installation.",
+  "url": "http://localhost:1313/fr/post/sac/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","tutorials","automation"],
+  "tags": ["steamautocrack","steam","gaming","patch","automatisation"]
+},
+{
+  "objectID": "6665af5e4ce0c8f7552e787f98c65cc4",
+  "title": "Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu \u0026 Ryujinx)",
+  "summary": "Apprenez à utiliser des amiibo virtuels sur les émulateurs Yuzu et Ryujinx. Guide étape par étape avec téléchargement des fichiers et configuration complète.",
+  "url": "http://localhost:1313/fr/post/amibo_switch/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["amiibo","yuzu","ryujinx","nintendo-switch","emulation","nfc","figurines"]
+},
+{
+  "objectID": "6665af5e4ce0c8f7552e787f98c65cc4",
+  "title": "How to Use Amiibo on Switch Emulators (Yuzu \u0026 Ryujinx)",
+  "summary": "Learn to use virtual amiibo on Yuzu and Ryujinx emulators. Step-by-step guide with file download and complete configuration.",
+  "url": "http://localhost:1313/en/post/amibo_switch/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","emulation","tutorials"],
+  "tags": ["amiibo","yuzu","ryujinx","nintendo-switch","emulation","nfc","figurines"]
+},
+{
+  "objectID": "6629dfeb2e75d5121a9a9978185399c8",
+  "title": "Unsteam - Jouer en coopération avec des jeux patch",
+  "summary": "Apprenez à utiliser Unsteam pour jouer en coopération en ligne avec des jeux patch. Guide complet avec émulation Steam API et configuration multijoueur.",
+  "url": "http://localhost:1313/fr/post/unsteam/",
+  "date": "2025-06-04",
+  "language": "fr",
+  "categories": ["gaming","tutorials","networking"],
+  "tags": ["unsteam","steam","coop","gaming","patch","multijoueur","emulation"]
+},
+{
+  "objectID": "6629dfeb2e75d5121a9a9978185399c8",
+  "title": "Unsteam - Playing Co-op with Patched Games",
+  "summary": "Learn how to use Unsteam to play online co-op with patched games. Complete guide with Steam API emulation and multiplayer setup.",
+  "url": "http://localhost:1313/en/post/unsteam/",
+  "date": "2025-06-04",
+  "language": "en",
+  "categories": ["gaming","tutorials","networking"],
+  "tags": ["unsteam","steam","coop","gaming","patch","multiplayer","emulation"]
+},
+{
+  "objectID": "656c9c99a3c161f22342a26167b95afa",
+  "title": "Installation et configuration de melonDS",
+  "summary": "\u003ch2 id=\"-introduction-à-melonds\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-melonds\"\u003e\u003c/a\u003e\r\n🎮 Introduction à melonDS\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003emelonDS\u003c/strong\u003e est un émulateur Nintendo DS open-source moderne et précis, développé depuis 2016. Il se distingue par sa compatibilité excellente, sa précision …\u003c/p\u003e",
+  "url": "http://localhost:1313/fr/post/melonds/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["Gaming","Tutoriels"],
+  "tags": ["melonDS","Nintendo DS","Émulation","Gaming"]
+},
+{
+  "objectID": "a4e5330ddcb51238336062b85e82a123",
+  "title": "Installation et configuration de RPCS3",
+  "summary": "\u003ch2 id=\"-introduction-à-rpcs3\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-%c3%a0-rpcs3\"\u003e\u003c/a\u003e\r\n🎮 Introduction à RPCS3\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e est l\u0026rsquo;émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour …\u003c/p\u003e",
+  "url": "http://localhost:1313/fr/post/rpcs3/",
+  "date": "2025-06-02",
+  "language": "fr",
+  "categories": ["Gaming","Tutoriels"],
+  "tags": ["RPCS3","PlayStation 3","PS3","Émulation","Gaming"]
+},
+{
+  "objectID": "a4e5330ddcb51238336062b85e82a123",
+  "title": "RPCS3 Installation and Configuration",
+  "summary": "\u003ch2 id=\"-introduction-to-rpcs3\"\u003e\r\n\u003ca class=\"header-anchor\" href=\"#-introduction-to-rpcs3\"\u003e\u003c/a\u003e\r\n🎮 Introduction to RPCS3\r\n\u003c/h2\u003e\u003cp\u003e\u003cstrong\u003eRPCS3\u003c/strong\u003e is the world\u0026rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to …\u003c/p\u003e",
+  "url": "http://localhost:1313/en/post/rpcs3/",
+  "date": "2025-06-02",
+  "language": "en",
+  "categories": ["Gaming","Tutorials"],
+  "tags": ["RPCS3","PlayStation 3","PS3","Emulation","Gaming"]
+}]

@@ -1,6 +1,6 @@
 (() => {
   // <stdin>
-  var VERSION = "1749799822";
+  var VERSION = "1749808293";
   var preCache = [
     "/images/gura.png",
     "/css/loader.css",
