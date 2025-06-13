@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/</link>
+    <link>http://localhost:1313/en/algolia.json</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>

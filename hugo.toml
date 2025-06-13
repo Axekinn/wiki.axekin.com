@@ -15,3 +15,12 @@ theme = 'reimu'
     weight = 2
     title = 'Wiki of Axekin'
     contentDir = 'content/en'
+
+[outputs]
+home = ["Algolia", "HTML", "RSS"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true

@@ -51,12 +51,12 @@
   />
   <meta
     property="og:image"
-    content="/images/covers/azahar-emulator-guide.webp"
+    content="/images/covers/azahar.webp"
   />
   <meta property="article:author" content="Axekin" />
   <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
   <meta property="article:modified_time" content="2025-06-07T00:00:00&#43;00:00" /><meta property="article:tag" content="azaharcitranintendo-3dsemulationinstallationconfigurationgaming" /><meta name="twitter:card" content="summary" />
-  <meta name="twitter:image" content="/images/covers/azahar-emulator-guide.webp" />
+  <meta name="twitter:image" content="/images/covers/azahar.webp" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
 <link
     rel="preload"
@@ -136,7 +136,7 @@ This article does not have a corresponding language version
         <a class="main-nav-link" href="https://discord.gg/axekin">Discord</a>
       </span><a id="main-nav-toggle" class="nav-icon"></a>
   </nav>
-  <nav id="sub-nav"></nav><nav id="i18n-nav">
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a></nav><nav id="i18n-nav">
       <div class="custom-dropdown">
         <div class="select-selected" id="select-selected">
           <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
@@ -184,7 +184,7 @@ This article does not have a corresponding language version
       </script>
     </nav></div>
 <header id="header"><picture></picture>
-    <img  fetchpriority="high" src="/images/covers/azahar-emulator-guide.webp" alt="Azahar Installation and Configuration"><div id="header-outer">
+    <img  fetchpriority="high" src="/images/covers/azahar.webp" alt="Azahar Installation and Configuration"><div id="header-outer">
     <div id="header-title"><a href="/en/" id="logo">
             <h1 data-aos="slide-up">Azahar Installation and Configuration</h1>
           </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
@@ -1108,7 +1108,21 @@ Common problems
         <div class="sidebar-toc-btn current"></div>
         <div class="sidebar-common-btn"></div>
       </div></nav>
-</div><script
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
     src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
     integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
     src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
@@ -1126,16 +1140,28 @@ Common problems
     } else {
       aosInit();
     }
-  </script><script src="/js/pjax_main.js" data-pjax></script><script
-    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
-    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
-  if (window.firework) {
-    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}}]}");
-    options.excludeElements = options.excludeelements;
-    delete options.excludeelements;
-    window.firework(options);
-  }
-</script><script
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Search.....',
+          "hits_empty": 'No results found for 「${query}」',
+          "hits_stats": 'Found ${hits} results (in ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-hHJCflT4KBLQyHfKO9vpstIcFKn/Y&#43;KHTORelMMEn7mOp2AVPp&#43;7fr03dLgZiV3J" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
     src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
     integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
     window.quicklink?.listen({
@@ -1153,7 +1179,7 @@ Common problems
           title: "Azahar Installation and Configuration",
           url: "http:\/\/localhost:1313\/en\/post\/citra\/",
           description: "Detailed tutorial for installing, configuring and using the Azahar Nintendo 3DS emulator - Complete setup with graphics optimization and controls",
-          cover: "http:\/\/localhost:1313\/images\/covers\/azahar-emulator-guide.webp",
+          cover: "http:\/\/localhost:1313\/images\/covers\/azahar.webp",
         };
       </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
           if (_$$('.article-entry a.article-gallery-item').length > 0) {

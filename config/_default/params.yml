@@ -99,7 +99,7 @@ preloader:
 
 # Effet de feu d'artifice sur clic
 firework:
-  enable: true
+  enable: false
   options:
     excludeElements: ["a", "button"]
     particles:

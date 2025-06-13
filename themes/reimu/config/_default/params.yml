@@ -358,10 +358,10 @@ giscus:
 ########################################
 
 algolia_search:
-  enable: false
-  appID:
-  apiKey:
-  indexName:
+  enable: true
+  appID: TNLXPO3HD1
+  apiKey: 5f1e65f7434193c7d0acc69f14b424e8
+  indexName: axekin
   hits:
     per_page: 10
 
