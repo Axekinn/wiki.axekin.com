@@ -30,3 +30,7 @@ notAlternative = true
     appId = "TNLXPO3HD1"
     apiKey = "5f1e65f7434193c7d0acc69f14b424e8"
     indexName = "axekin"
+    [params.algolia.fr]
+      indexName = "axekin_fr"
+    [params.algolia.en]
+      indexName = "axekin_en"
