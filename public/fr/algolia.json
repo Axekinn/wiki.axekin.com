@@ -150,6 +150,26 @@
   "tags": ["xenia","xbox-360","emulation","installation","configuration","gaming","microsoft","optimization"]
 },
 {
+  "objectID": "1024916ea489735c778dc2749ea638b2",
+  "title": "Cemu Installation and Configuration",
+  "summary": "Complete guide to install and configure Cemu, the most performant Wii U emulator. Installation, optimal configuration and tips.",
+  "permalink": "https://wiki.axekin.com/en/post/cemu/",
+  "date": "2025-06-14",
+  "language": "en",
+  "categories": ["gaming","Tutorials"],
+  "tags": ["Cemu","Nintendo Wii U","Emulation","Gaming"]
+},
+{
+  "objectID": "1024916ea489735c778dc2749ea638b2",
+  "title": "Installation et configuration de Cemu",
+  "summary": "Guide complet pour installer et configurer Cemu, l\u0026rsquo;émulateur Wii U le plus performant. Installation, configuration optimale et astuces.",
+  "permalink": "https://wiki.axekin.com/fr/post/cemu/",
+  "date": "2025-06-14",
+  "language": "fr",
+  "categories": ["gaming","Tutoriels"],
+  "tags": ["Cemu","Nintendo Wii U","Émulation","Gaming"]
+},
+{
   "objectID": "6e630690e33d3fc56d1f21851819dfc6",
   "title": "Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx",
   "summary": "Apprenez à installer des codes de triche et modifications de jeux sur l\u0026rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d\u0026rsquo;installation.",
@@ -216,7 +236,7 @@
   "permalink": "https://wiki.axekin.com/fr/post/ryujinx/",
   "date": "2025-06-02",
   "language": "fr",
-  "categories": ["gaming","emulation","tutorials"],
+  "categories": ["gaming","emulation","tutorials","ryujinx","guides","nintendo-switch"],
   "tags": ["ryujinx","nintendo-switch","emulation","installation","configuration","gaming"]
 },
 {

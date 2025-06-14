@@ -5,33 +5,51 @@ email: axekinn@proton.me
 
 internal_theme:
   light:
-    --red-0: '#4a00e0'        # Violet principal
-    --red-1: '#6a1b99'        # Violet moyen
-    --red-2: '#8e44ad'        # Violet clair
-    --red-3: '#a569bd'        # Violet très clair
-    --red-4: '#d2b4de'        # Violet pastel
-    --red-5: '#e8daef'        # Violet très pastel
-    --red-5-5: '#f4f1f8'      # Violet quasi transparent
-    --red-6: '#faf8fc'        # Violet background
-    --color-red-6-shadow: 'rgba(106, 27, 153, 0.6)'
-    --color-red-3-shadow: 'rgba(106, 27, 153, 0.3)'
-    --highlight-nav: '#1a1a1a'
-    --highlight-purple: '#8e44ad'
-    # Variables pour le texte Markdown
-    --text-color: '#ffffff'           # Blanc pour le texte
-    --text-emphasis: '#ffffff'        # Blanc pour les éléments emphasés
-    --tag-text-color: '#ffffff'      # Blanc pour les tags
-    --markdown-strong: '#ffffff'      # Blanc pour le texte en gras
-    --markdown-emphasis: '#ffffff'    # Blanc pour le texte italique
-  dark:
-    --red-4: 'rgba(212, 180, 222, 0.5)'
-    --highlight-purple: '#6a1b99'
-    # Variables pour le mode sombre
+    --red-0: '#7c4dff'        # Violet principal éclairci
+    --red-1: '#9575cd'        # Violet moyen plus clair
+    --red-2: '#ba68c8'        # Violet clair lumineux
+    --red-3: '#ce93d8'        # Violet très clair
+    --red-4: '#e1bee7'        # Violet pastel
+    --red-5: '#f3e5f5'        # Violet très pastel
+    --red-5-5: '#faf8fc'      # Violet quasi transparent
+    --red-6: '#fdfdfe'        # Background très clair
+    --color-red-6-shadow: 'rgba(124, 77, 255, 0.4)'
+    --color-red-3-shadow: 'rgba(124, 77, 255, 0.2)'
+    --highlight-nav: '#2d2d2d'
+    --highlight-purple: '#7c4dff'
     --text-color: '#ffffff'
     --text-emphasis: '#ffffff'
     --tag-text-color: '#ffffff'
     --markdown-strong: '#ffffff'
-    --markdown-emphasis: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#f8f9fa'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.2)'
+    --background-content: 'rgba(26, 26, 26, 0.8)'
+  dark:
+    --red-0: '#6a1b99'
+    --red-1: '#8e44ad'
+    --red-2: '#9b59b6'
+    --red-3: '#bb8fce'
+    --red-4: 'rgba(187, 143, 206, 0.5)'
+    --highlight-purple: '#8e44ad'
+    --color-red-6-shadow: 'rgba(142, 68, 173, 0.4)'
+    --color-red-3-shadow: 'rgba(142, 68, 173, 0.2)'
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#d2b4de'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.15)'
+    --background-content: 'rgba(20, 20, 20, 0.9)'
 
 # Configuration de base améliorée
 banner: "images/banner.webp"
@@ -289,9 +307,6 @@ share:
   - twitter
   - linkedin
   - reddit
-  - telegram
-  - whatsapp
-  - pocket
   - email
 
 # Système de commentaires multi-plateforme

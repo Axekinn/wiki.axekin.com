@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo Wii U on Wiki of Axekin</title>
+    <link>https://wiki.axekin.com/en/tags/nintendo-wii-u/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/en/tags/nintendo-wii-u/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Cemu Installation and Configuration</title>
+      <link>https://wiki.axekin.com/en/post/cemu/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/cemu/</guid>
+      <description>
+        <![CDATA[<h1>Cemu Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-cemu">
+<a class="header-anchor" href="#-introduction-to-cemu"></a>
+🎮 Introduction to Cemu
+</h2><p><strong>Cemu</strong> is the most performant and accomplished Nintendo Wii U emulator available. Developed since 2015, it allows you to play Wii U exclusives on PC with spectacular graphical improvements, mods and excellent compatibility.</p>
+<h2 id="-step-1-downloading-cemu">
+<a class="header-anchor" href="#-step-1-downloading-cemu"></a>
+🔧 Step 1: Downloading Cemu
+</h2><h3 id="recommended-option-official-version">
+<a class="header-anchor" href="#recommended-option-official-version"></a>
+Recommended option: Official version
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://github.com/cemu-project/Cemu/releases
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on your OS</li>
+<li><strong>Download</strong> <code>cemu_X.X.X.zip</code> (latest version)</li>
+<li><strong>Extract</strong> to a dedicated folder (e.g.: <code>Emulators\Cemu</code> or at the root of a secondary drive)</li>
+</ol>
+<h2 id="-downloading-your-games">
+<a class="header-anchor" href="#-downloading-your-games"></a>
+📦 Downloading your games
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/search?platform=wiiu">🎮 Axekin Games - Nintendo Wii U</a></strong> to access the Nintendo Wii U game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-extract-the-file">
+<a class="header-anchor" href="#step-3-extract-the-file"></a>
+Step 3: Extract the file
+</h3><p>Once the download is complete, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You will get game files ready to be used with Cemu! 🎯</p>
+<h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder structure
+</h2><p>For optimal organization of your library, here&rsquo;s the recommended file tree:</p>
+<pre tabindex="0"><code>Wii U Games/
+    Super Mario 3D World/
+   ├── BASE
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)   
+    Zelda Breath Of The Wild/
+   ├── BASE
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Game code (main .rpx file)
+   │   ├── content/   # 📁 Game content (textures, audio, etc.)
+   │   └── meta/      # 📋 Metadata (icon, title, etc.)    
+            
+</code></pre><h3 id="content-types">
+<a class="header-anchor" href="#content-types"></a>
+Content types
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Understanding folders
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>code/</strong> 📁: Contains the main .rpx file of the game</li>
+<li><strong>content/</strong> 📁: Game assets (textures, sounds, videos)</li>
+<li><strong>meta/</strong> 📁: Metadata and icons</li>
+<li><strong>Updates/</strong> 📁: Game updates (important for compatibility)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advantages of this organization
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Automatic detection</strong>: Cemu scans and automatically adds games<br>
+✅ <strong>Simplified management</strong>: Clear interface in Cemu<br>
+✅ <strong>Easy updates</strong>: Dedicated folder for updates and DLC
+✅ <strong>Maximum compatibility</strong>: Structure respecting the official Wii U format
+  </div>
+</div>
+<h2 id="-portable-configuration-recommended">
+<a class="header-anchor" href="#-portable-configuration-recommended"></a>
+💡 Portable configuration (Recommended)
+</h2><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Portable installation
+  </div>
+  <div class="admonition-content">
+    Cemu is portable by default. All configurations are stored in the <code>mlc01</code> installation folder, facilitating backups and portability.
+  </div>
+</div>
+<h3 id="portable-installation-structure">
+<a class="header-anchor" href="#portable-installation-structure"></a>
+Portable installation structure
+</h3><pre tabindex="0"><code>📁 Cemu/
+├── 🎮 Cemu.exe
+├── 📁 gameProfiles/      # Game profiles
+├── 📁 graphicPacks/      # Graphic packs and mods
+├── 📁 memorySearcher/    # Memory search tools
+├── 📁 mlc01/            # Virtual Wii U system data
+├── 📁 shaderCache/      # Compiled shader cache
+└── 📄 settings.xml      # Main configuration
+</code></pre><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advantages of portable mode
+  </div>
+  <div class="admonition-content">
+    <strong>✅ Easy backup</strong>: Only one folder to backup<br>
+<strong>✅ Total portability</strong>: Movable to any PC<br>
+<strong>✅ Preserved configurations</strong>: No loss during reinstallation<br>
+<strong>✅ Simplified sharing</strong>: Easily shareable configuration
+  </div>
+</div>
+<h2 id="-step-3-installation-and-first-launch">
+<a class="header-anchor" href="#-step-3-installation-and-first-launch"></a>
+⚙️ Step 3: Installation and first launch
+</h2><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First launch
+</h3><ol>
+<li><strong>Execute</strong> <code>Cemu.exe</code> as administrator (first launch only)</li>
+<li><strong>Set</strong> the games folder in <code>Game paths</code></li>
+<li><strong>Add</strong> your &ldquo;Wii U Games&rdquo; folder</li>
+<li><strong>Download</strong> graphic packs</li>
+<li><strong>Verify</strong> that games appear in the library</li>
+</ol>
+<ul>
+<li>Then click on Close, we&rsquo;ll configure the controller later</li>
+</ul>
+<h2 id="-step-4-optimal-configuration">
+<a class="header-anchor" href="#-step-4-optimal-configuration"></a>
+⚙️ Step 4: Optimal configuration
+</h2><h3 id="general-settings">
+<a class="header-anchor" href="#general-settings"></a>
+General settings
+</h3><pre tabindex="0"><code>Options → General settings
+</code></pre><p><strong>General tab:</strong></p>
+<ul>
+<li><strong>Interface language</strong>: English</li>
+<li><strong>Discord Presence</strong>: ✅ Enabled (optional)</li>
+<li><strong>Check for updates</strong>: ✅ Enabled</li>
+</ul>
+<h3 id="optimal-graphics-configuration">
+<a class="header-anchor" href="#optimal-graphics-configuration"></a>
+Optimal graphics configuration
+</h3><pre tabindex="0"><code>Options → General settings → Graphics
+</code></pre><h4 id="general-tab">
+<a class="header-anchor" href="#general-tab"></a>
+General tab
+</h4><table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Recommended value</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Graphics API</strong></td>
+          <td>Vulkan</td>
+          <td>Best performance (OpenGL if issues)</td>
+      </tr>
+      <tr>
+          <td><strong>Graphics Device</strong></td>
+          <td>Your main GPU</td>
+          <td>Most powerful available GPU</td>
+      </tr>
+      <tr>
+          <td><strong>VSync</strong></td>
+          <td>✅ Enabled</td>
+          <td>Prevents screen tearing</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Leave the rest of the parameters as default, that&rsquo;s enough</li>
+</ul>
+<h3 id="audio-configuration">
+<a class="header-anchor" href="#audio-configuration"></a>
+Audio configuration
+</h3><pre tabindex="0"><code>Options → General settings → Audio
+</code></pre><ul>
+<li><strong>Audio API</strong>: XAudio2 (Windows) or DirectSound</li>
+<li><strong>Audio channels</strong>: Stereo or 5.1 according to your configuration</li>
+</ul>
+<h3 id="controls-configuration">
+<a class="header-anchor" href="#controls-configuration"></a>
+Controls configuration
+</h3><h4 id="automatic-method-for-controller">
+<a class="header-anchor" href="#automatic-method-for-controller"></a>
+Automatic method for controller
+</h4><pre tabindex="0"><code>Options → Input settings
+</code></pre><ol>
+<li><strong>Emulated controller</strong>: Wii U GamePad</li>
+<li><strong>Controller API</strong>: XInput (Xbox controllers) or DirectInput</li>
+<li><strong>Click</strong> on &ldquo;Calibrate&rdquo;</li>
+<li><strong>Follow</strong> the on-screen instructions</li>
+<li><strong>Test</strong> all buttons and joysticks</li>
+</ol>
+<h2 id="-step-5-graphics-packs-and-mods">
+<a class="header-anchor" href="#-step-5-graphics-packs-and-mods"></a>
+🎨 Step 5: Graphics Packs and mods
+</h2><h3 id="installing-graphics-packs">
+<a class="header-anchor" href="#installing-graphics-packs"></a>
+Installing Graphics Packs
+</h3><ol>
+<li><strong>Download</strong> Graphics Packs: <code>Options → Download community graphic packs</code></li>
+<li><strong>Restart</strong> Cemu</li>
+<li><strong>Configure</strong> per game: Right-click on a game → <code>Edit graphic packs</code></li>
+</ol>
+<p><strong>Recommended sites for mods:</strong></p>
+<ul>
+<li><strong>GameBanana</strong>: <a href="https://gamebanana.com">gamebanana.com</a></li>
+<li><strong>NexusMods</strong>: <a href="https://nexusmods.com">nexusmods.com</a></li>
+<li><strong>Reddit r/cemu</strong>: Active community and support</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General questions
+</h3><p><strong>Q: Do all Wii U games work on Cemu?</strong>
+<strong>A:</strong> About 95% of games are perfectly playable. Check the official compatibility list on Cemu&rsquo;s website.</p>
+<p><strong>Q: Can I use my real Wii U saves?</strong>
+<strong>A:</strong> Yes, with Saviine or dedicated homebrew, you can transfer your saves.</p>
+<p><strong>Q: Does the GamePad really work?</strong>
+<strong>A:</strong> Yes, the touch screen is emulated with the mouse and the GamePad interface is perfectly functional.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical questions
+</h3><p><strong>Q: Vulkan or OpenGL?</strong>
+<strong>A:</strong> Vulkan generally offers better performance. Use OpenGL in case of compatibility issues.</p>
+<p><strong>Q: Why do shaders take time to compile?</strong>
+<strong>A:</strong> This is normal during the first launch of a game. Shaders are then cached for subsequent sessions.</p>
+<h3 id="common-problems">
+<a class="header-anchor" href="#common-problems"></a>
+Common problems
+</h3><p><strong>Q: The game crashes abruptly?</strong>
+<strong>A:</strong> Check activated Graphics Packs, update Cemu and your GPU drivers.</p>
+<p><strong>Q: Audio is choppy?</strong>
+<strong>A:</strong> Increase audio latency to 64ms or change audio API (XAudio2/DirectSound).</p>
+<p><strong>Q: Textures are blurry?</strong>
+<strong>A:</strong> Enable 16x anisotropic filtering and verify that resolution is correctly configured.</p>
+<h3 id="game-formats">
+<a class="header-anchor" href="#game-formats"></a>
+Game formats
+</h3><p><strong>Q: What&rsquo;s the difference between .wud and .wux?</strong>
+<strong>A:</strong> .wux is a compressed version of .wud. Both work perfectly, .wux saves disk space.</p>
+<p><strong>Q: How to install DLC and updates?</strong>
+<strong>A:</strong> Place them in the Updates/ folder with the same structure as base games.</p>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Final result
+  </div>
+  <div class="admonition-content">
+    <strong>🎉 Congratulations!</strong> You now have a perfectly configured Cemu to enjoy Wii U exclusives in high definition with optimal performance!
+  </div>
+</div>
+<p><strong>Enjoy your Wii U games in 4K with incredible mods! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-06-14 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-14</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>gaming</category><category>Tutorials</category>
+      
+    </item>
+    
+  </channel>
+</rss>

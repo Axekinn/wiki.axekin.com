@@ -40,7 +40,7 @@ banner: "images/banner.webp"
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: false
+  enable: true
   srcset:
     - src: "images/banner-600w.webp"
       media: "(max-width: 479px)"
@@ -616,48 +616,44 @@ material_theme:
 
 internal_theme:
   light:
-    --red-0: '#ff0000'
-    --red-1: '#ff5252'
-    --red-2: '#ff7c7c'
-    --red-3: '#ffafaf'
-    --red-4: '#ffd0d0'
-    --red-5: '#ffecec'
-    --red-5-5: '#fff3f3'
-    --red-6: '#fff7f7'
-    --color-red-6-shadow: 'rgba(255, 78, 78, 0.6)'
-    --color-red-3-shadow: 'rgba(255, 78, 78, 0.3)'
-
-    --highlight-nav: '#e6e6e6'
-    --highlight-scrollbar: '#d6d6d6'
-    --highlight-background: '#f7f7f7'
-    --highlight-current-line: '#dadada'
-    --highlight-selection: '#e9e9e9'
-    --highlight-foreground: '#4d4d4d'
-    --highlight-comment: '#7d7d7d'
-    --highlight-red: '#c8362b'
-    --highlight-orange: '#b66014'
-    --highlight-yellow: '#cb911d'
-    --highlight-green: '#2ea52e'
-    --highlight-aqua: '#479d9d'
-    --highlight-blue: '#1973b8'
-    --highlight-purple: '#7135ac'
+    --red-0: '#4a00e0'        # Violet principal
+    --red-1: '#6a1b99'        # Violet moyen
+    --red-2: '#8e44ad'        # Violet clair
+    --red-3: '#a569bd'        # Violet très clair
+    --red-4: '#d2b4de'        # Violet pastel
+    --red-5: '#e8daef'        # Violet très pastel
+    --red-5-5: '#f4f1f8'      # Violet quasi transparent
+    --red-6: '#faf8fc'        # Violet background
+    --color-red-6-shadow: 'rgba(106, 27, 153, 0.6)'
+    --color-red-3-shadow: 'rgba(106, 27, 153, 0.3)'
+    --highlight-nav: '#1a1a1a'
+    --highlight-purple: '#8e44ad'
+    # Variables pour le texte Markdown - AMÉLIORÉES
+    --text-color: '#f8f9fa'                    # Blanc cassé plus visible
+    --text-emphasis: '#ffffff'                 # Blanc pur pour les éléments emphasés
+    --tag-text-color: '#ffffff'               # Blanc pour les tags
+    --markdown-strong: '#ffffff'               # Blanc pour le texte en gras
+    --markdown-emphasis: '#e9ecef'             # Gris très clair pour l'italique
+    --text-secondary: '#dee2e6'               # Texte secondaire plus visible
+    --text-muted: '#ced4da'                   # Texte atténué mais lisible
+    --link-color: '#ffffff'                   # Liens en blanc
+    --link-hover: '#f8f9fa'                   # Liens au survol
+    --heading-color: '#ffffff'                # Titres en blanc pur
+    --border-color: 'rgba(255, 255, 255, 0.2)' # Bordures subtiles
+    --background-content: 'rgba(26, 26, 26, 0.8)' # Fond de contenu semi-transparent
   dark:
-    --red-4: 'rgba(255, 208, 208, 0.5)'
-    --red-5: 'rgba(255,228,228,0.15)'
-    --red-5-5: 'rgba(255,236,236,0.05)'
-    --red-6: 'rgba(255, 243, 243, 0.2)'
-
-    --highlight-nav: '#2e353f'
-    --highlight-scrollbar: '#454d59'
-    --highlight-background: '#22272e'
-    --highlight-current-line: '#393939'
-    --highlight-selection: '#515151'
-    --highlight-foreground: '#cccccc'
-    --highlight-comment: '#999999'
-    --highlight-red: '#f47067'
-    --highlight-orange: '#f69d50'
-    --highlight-yellow: '#ffcc66'
-    --highlight-green: '#99cc99'
-    --highlight-aqua: '#66cccc'
-    --highlight-blue: '#54b6ff'
-    --highlight-purple: '#dcbdfb'
+    --red-4: 'rgba(212, 180, 222, 0.5)'
+    --highlight-purple: '#6a1b99'
+    # Variables pour le mode sombre - AMÉLIORÉES
+    --text-color: '#f8f9fa'                   # Blanc cassé
+    --text-emphasis: '#ffffff'                # Blanc pur
+    --tag-text-color: '#ffffff'              # Tags en blanc
+    --markdown-strong: '#ffffff'              # Gras en blanc pur
+    --markdown-emphasis: '#e9ecef'            # Italique visible
+    --text-secondary: '#dee2e6'              # Texte secondaire
+    --text-muted: '#adb5bd'                  # Texte atténué mais lisible
+    --link-color: '#ffffff'                  # Liens blancs
+    --link-hover: '#d2b4de'                  # Liens violets au survol
+    --heading-color: '#ffffff'               # Titres blancs
+    --border-color: 'rgba(255, 255, 255, 0.15)' # Bordures plus visibles
+    --background-content: 'rgba(20, 20, 20, 0.9)' # Fond plus contrasté
