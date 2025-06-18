@@ -2,7 +2,7 @@
 title: "Installation et configuration de RPCS3"
 date: 2025-06-02
 draft: false
-categories: ["Gaming", "Tutoriels"]
+categories: ["RPCS3"]
 tags: ["RPCS3", "PlayStation 3", "PS3", "Émulation", "Gaming"]
 author: "Axekin"
 description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur PlayStation 3 RPCS3"

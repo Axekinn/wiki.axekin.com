@@ -2,10 +2,10 @@
 title: "Cemu Installation and Configuration"
 date: 2025-06-14
 draft: false
-categories: ["gaming", "Tutorials"]
+categories: ["Cemu"]
 tags: ["Cemu", "Nintendo Wii U", "Emulation", "Gaming"]
 author: "Axekin"
-description: "Detailed tutorial to install, configure and use the Nintendo Wii U emulator Cemu"
+description: "Detailed tutorial for installing, configuring and using Nintendo Wii U emulator Cemu"
 series: ["Emulation Guides"]
 toc: true
 math: false
@@ -14,7 +14,7 @@ weight: 20
 aliases: 
   - /en/cemu-guide/
   - /en/guides/cemu-setup/
-summary: "Complete guide to install and configure Cemu, the most performant Wii U emulator. Installation, optimal configuration and tips."
+summary: "Complete guide for installing and configuring Cemu, the most performant Wii U emulator. Installation, optimal configuration and tips."
 cover: "/images/covers/cemu.webp"
 image: "/images/covers/cemu.webp"
 showtoc: true
@@ -263,4 +263,3 @@ Options → Input settings
 {{< /admonition >}}
 
 **Enjoy your Wii U games in 4K with incredible mods! 🎮✨**
-````

@@ -2,7 +2,7 @@
 title: "Installation et configuration de Cemu"
 date: 2025-06-14
 draft: false
-categories: ["gaming", "Tutoriels"]
+categories: ["Cemu"]
 tags: ["Cemu", "Nintendo Wii U", "Émulation", "Gaming"]
 author: "Axekin"
 description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur Nintendo Wii U Cemu"

@@ -1,9 +1,9 @@
 ---
-title: "Eden Installation and Configuration"
-description: "Detailed tutorial for installing, configuring and optimizing the Eden Nintendo Switch emulator - Complete setup with keys, firmware and settings"
+title: "Eden Installation and Configuration Guide"
+description: "Detailed tutorial for installing, configuring and optimizing Eden Nintendo Switch emulator - Complete setup with keys, firmware and settings"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Yuzu"]
 tags: ["eden", "yuzu", "nintendo-switch", "emulation", "installation", "configuration", "gaming", "firmware"]
 series: ["Emulation Guides"]
 author: "Axekin"

@@ -3,7 +3,7 @@ title: "Jouer Clavier-Souris sur l'Émulateur Cemu"
 description: "Tutoriel détaillé pour configurer le contrôle clavier-souris sur Cemu avec Mouse2Joystick et ViGEmBus - Configuration étape par étape"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Cemu"]
 tags: ["cemu", "wiiu", "clavier-souris", "mouse2joystick", "vigembus", "emulation", "nintendo"]
 series: ["Guides Émulation"]
 author: "Axekin"

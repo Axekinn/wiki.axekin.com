@@ -1,11 +1,10 @@
 ---
 title: "Dolphin Installation and Configuration"
-description: "Detailed tutorial for installing, configuring and using the Dolphin Nintendo GameCube/Wii emulator - Complete setup with performance optimization"
+description: "Detailed tutorial for installing, configuring and using Nintendo Wii/GameCube emulator Dolphin"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
-tags: ["dolphin", "nintendo-gamecube", "nintendo-wii", "emulation", "installation", "configuration", "gaming"]
-series: ["Emulation Guides"]
+categories: ["Dolphin"]
+tags: ["Dolphin", "Nintendo Wii", "GameCube", "Emulation", "Gaming"]
 author: "Axekin"
 draft: false
 toc: true
@@ -288,4 +287,3 @@ Graphics:
 **A:** Check Bluetooth adapter, use "Continuous Scanning", pair via Dolphin.
 
 **Rediscover your GameCube/Wii classics in high definition! 🎮✨**
-````

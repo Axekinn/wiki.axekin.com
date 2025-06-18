@@ -1,9 +1,9 @@
 ---
-title: "SteamAutoCrack - Automatically patch Steam Games"
-description: "Detailed tutorial for using SteamAutoCrack to automatically patch Steam games - Complete guide with setup and configuration"
+title: "SteamAutoCrack - Automatically Patch Steam Games"
+description: "Detailed tutorial for using SteamAutoCrack to automatically patch Steam games - Complete guide with API configuration and installation"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "tutorials", "automation"]
+categories: ["PC"]
 tags: ["steamautocrack", "steam", "gaming", "patch", "automation"]
 series: ["Gaming Guides"]
 author: "Axekin"
@@ -15,7 +15,7 @@ weight: 25
 aliases: 
   - /en/steamautocrack-guide/
   - /en/guides/sac-tutorial/
-summary: "Learn how to use SteamAutoCrack to automatically patch Steam games. Complete tutorial with API setup and configuration."
+summary: "Learn how to use SteamAutoCrack to automatically patch Steam games. Complete tutorial with API configuration and installation."
 cover: "/images/covers/sac.png"
 image: "/images/covers/sac.png"
 showtoc: true

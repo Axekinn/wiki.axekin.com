@@ -3,7 +3,7 @@ title: "Installation et Configuration de Eden"
 description: "Tutoriel détaillé pour installer, configurer et optimiser l'émulateur Nintendo Switch Eden - Configuration complète avec clés, firmware et paramètres"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Yuzu"]
 tags: ["eden", "yuzu", "nintendo-switch", "emulation", "installation", "configuration", "gaming", "firmware"]
 series: ["Guides Émulation"]
 author: "Axekin"

@@ -3,7 +3,7 @@ title: "Unsteam - Jouer en coopération avec des jeux patch"
 description: "Tutoriel détaillé pour utiliser Unsteam et jouer en ligne avec des jeux patch - Guide complet d'installation et configuration de l'émulation Steam API"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "tutorials", "networking"]
+categories: ["PC"]
 tags: ["unsteam", "steam", "coop", "gaming", "patch", "multijoueur", "emulation"]
 series: ["Guides Gaming"]
 author: "Axekin"

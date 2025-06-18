@@ -3,7 +3,7 @@ title: "Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx"
 description: "Guide complet étape par étape pour installer des codes de triche et modifications de jeux sur l'émulateur Nintendo Switch Ryujinx"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Ryujinx"]
 tags: ["ryujinx", "cheats", "mods", "nintendo-switch", "emulation", "installation", "modding"]
 series: ["Guides Émulation"]
 author: "Axekin"

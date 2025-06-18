@@ -3,7 +3,7 @@ title: "Guide Complet des Cheats sur l'émulateur Citra"
 description: "Tutoriel détaillé pour maîtriser les codes de triche sur l'émulateur Citra Nintendo 3DS - Installation, configuration et utilisation"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Citra"]
 tags: ["citra", "cheats", "3ds", "emulation", "nintendo", "codes", "action-replay"]
 series: ["Guides Émulation"]
 author: "Axekin"

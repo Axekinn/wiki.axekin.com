@@ -3,7 +3,7 @@ title: "Installation et Configuration de Xenia (Émulateur Xbox 360)"
 description: "Tutoriel détaillé pour installer, configurer et optimiser l'émulateur Xbox 360 Xenia - Configuration complète avec jeux, paramètres et optimisations"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Xenia"]
 tags: ["xenia", "xbox-360", "emulation", "installation", "configuration", "gaming", "microsoft", "optimization"]
 series: ["Guides Émulation"]
 author: "Axekin"

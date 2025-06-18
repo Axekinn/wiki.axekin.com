@@ -2,7 +2,7 @@
 title: "Installation et configuration de melonDS"
 date: 2025-06-02
 draft: false
-categories: ["Gaming", "Tutoriels"]
+categories: ["MelonDS"]
 tags: ["melonDS", "Nintendo DS", "Émulation", "Gaming"]
 author: "Axekin"
 description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur Nintendo DS melonDS"

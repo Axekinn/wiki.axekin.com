@@ -2,7 +2,7 @@
 title: "Installation et configuration de Dolphin"
 date: 2025-06-02
 draft: false
-categories: ["Gaming", "Tutoriels"]
+categories: ["Dolphin"]
 tags: ["Dolphin", "Nintendo Wii", "GameCube", "Émulation", "Gaming"]
 description: "Tutoriel détaillé pour installer, configurer et utiliser l'émulateur Nintendo Wii/GameCube Dolphin"
 author: "Axekin"

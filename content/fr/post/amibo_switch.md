@@ -3,7 +3,7 @@ title: "Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)"
 description: "Guide complet pour utiliser des amiibo virtuels sur les émulateurs Nintendo Switch Yuzu et Ryujinx - Configuration et utilisation détaillée"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Ryujinx", "Yuzu"]
 tags: ["amiibo", "yuzu", "ryujinx", "nintendo-switch", "emulation", "nfc", "figurines"]
 series: ["Guides Émulation"]
 author: "Axekin"

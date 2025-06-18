@@ -1,21 +1,20 @@
 ---
 title: "Azahar Installation and Configuration"
-description: "Detailed tutorial for installing, configuring and using the Azahar Nintendo 3DS emulator - Complete setup with graphics optimization and controls"
 date: 2025-06-02
-lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
-tags: ["azahar", "citra", "nintendo-3ds", "emulation", "installation", "configuration", "gaming"]
-series: ["Emulation Guides"]
-author: "Axekin"
 draft: false
+categories: ["Citra"]
+tags: ["Citra", "Nintendo 3DS", "Emulation", "Gaming"]
+author: "Axekin"
+description: "Detailed tutorial for installing, configuring and using Nintendo 3DS emulator Azahar"
+series: ["Emulation Guides"]
 toc: true
 math: false
 featured: false
 weight: 20
 aliases: 
-  - /en/azahar-installation-guide/
-  - /en/guides/azahar-setup/
-summary: "Learn how to install and configure Azahar emulator for optimal Nintendo 3DS gaming. Complete setup guide with graphics enhancement and performance optimization."
+  - /en/citra-cheats-mods/
+  - /en/guides/citra-modding/
+summary: "Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps."
 cover: "/images/covers/azahar.webp"
 image: "/images/covers/azahar.webp"
 showtoc: true
@@ -322,4 +321,3 @@ Controls → Configure
 **A:** Use Citra MMJ, reduce resolution, enable frame skip if necessary.
 
 **Enjoy your 3DS games in high definition! 🎮✨**
-````

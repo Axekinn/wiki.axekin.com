@@ -3,9 +3,8 @@ title: "melonDS Installation and Configuration"
 description: "Detailed tutorial for installing, configuring and using the melonDS Nintendo DS emulator - Complete setup with BIOS, graphics and controls"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
-tags: ["melonds", "nintendo-ds", "emulation", "installation", "configuration", "gaming"]
-series: ["Emulation Guides"]
+categories: ["MelonDS"]
+tags: ["melonDS", "Nintendo DS", "Emulation", "Gaming"]
 author: "Axekin"
 draft: false
 toc: true
@@ -386,4 +385,3 @@ ROM diagnostics:
 ## 🎯 Conclusion
 
 **Rediscover the Nintendo DS library in high definition with melonDS! 🎮✨**
-````

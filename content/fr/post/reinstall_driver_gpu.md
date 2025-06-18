@@ -3,7 +3,7 @@ title: "Réinstallation Propre des Pilotes Graphiques"
 description: "Tutoriel détaillé pour réinstaller proprement les drivers GPU NVIDIA et AMD avec DDU - Guide étape par étape pour résoudre les problèmes graphiques"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["maintenance", "tutorials", "hardware"]
+categories: ["PC"]
 tags: ["pilotes", "gpu", "nvidia", "amd", "ddu", "drivers", "réparation", "windows"]
 series: ["Guides Maintenance PC"]
 author: "Axekin"

@@ -3,7 +3,7 @@ title: "SteamAutoCrack - Patcher automatiquement les jeux Steam"
 description: "Tutoriel détaillé pour utiliser SteamAutoCrack et patcher automatiquement les jeux Steam - Guide complet avec configuration et installation"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "tutorials", "automation"]
+categories: ["PC"]
 tags: ["steamautocrack", "steam", "gaming", "patch", "automatisation"]
 series: ["Guides Gaming"]
 author: "Axekin"

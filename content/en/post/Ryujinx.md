@@ -1,9 +1,9 @@
 ---
 title: "Ryujinx Installation and Configuration"
-description: "Detailed tutorial for installing, configuring and optimizing the Ryujinx Nintendo Switch emulator - Complete setup with firmware, keys and settings"
+description: "Detailed tutorial for installing, configuring and optimizing Ryujinx Nintendo Switch emulator - Complete setup with firmware, keys and settings"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Ryujinx"]
 tags: ["ryujinx", "nintendo-switch", "emulation", "installation", "configuration", "gaming"]
 series: ["Emulation Guides"]
 author: "Axekin"
@@ -312,4 +312,3 @@ With this complete guide, you now have all the keys to:
 > **Reminder**: Always respect copyrights and support developers by buying their games.
 
 **Have fun with Ryujinx! 🎮✨**
-````
