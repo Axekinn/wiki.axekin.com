@@ -68,7 +68,10 @@
     as="style"
     href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
     integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
-  /><script
+  /><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css"
+    integrity="sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy&#43;Ub9QgnxUYJmwOhYCK" crossorigin="anonymous"/><script
     src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
     integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
     rel="stylesheet"
@@ -654,7 +657,28 @@ Games/
             itemprop="commentCount"
           ></span>
           Comments
-        </a><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+        </a><a
+          data-aos="slide-up"
+          href="/en/post/unsteam/#comments"
+          class="article-comment-link"
+        >
+          <span
+            class="post-comments-count waline-comment-count"
+            data-path="http//localhost1313/en/post/unsteam/"
+            itemprop="commentCount"
+          ></span>
+          Comments
+        </a><span
+          data-aos="fade-left"
+          class="article-visitor-link"
+        >
+          <span
+            class="waline-pageview-count"
+            data-path="/en/post/unsteam/"
+            >0</span
+          >
+          <em class="post-meta-item-text">Readings</em>
+        </span><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
       <a
         class="article-tag-list-link"
         href="/en/tags/unsteam"
@@ -729,11 +753,15 @@ Games/
   <div class="comment-selector">
     <div class="comment-selector-wrap"><div class="selector-item" data-selector="valine">
           <span>valine</span>
+        </div><div class="selector-item" data-selector="waline">
+          <span>waline</span>
         </div></div>
   </div>
 </div>
 
 <div class="comment-content"><div class="comment valine-comment" data-aos="fade-up"
+     >
+    </div><div class="comment waline-comment" data-aos="fade-up"
      >
     </div></div>
 </section></section>
@@ -1068,7 +1096,7 @@ Games/
       }
     },
     waline: {
-      enable: false,
+      enable: true,
       load: async () => {
         const container = document.querySelector('.waline-comment');
         if (!container) return;
@@ -1092,10 +1120,10 @@ Games/
         
         window.walineInstance = walineInit({
           el: '.waline-comment',
-          serverURL: '',
+          serverURL: 'comment-wikiaxekincom.vercel.app',
           lang: document.documentElement.lang || 'en',
           locale: JSON.parse("{}"),
-          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\",\"https://unpkg.com/@waline/emojis@1.2.0/bmoji\"]"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
           meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
           requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
           wordLimit:  0 ,

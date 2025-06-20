@@ -68,7 +68,10 @@
     as="style"
     href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
     integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
-  /><script
+  /><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css"
+    integrity="sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy&#43;Ub9QgnxUYJmwOhYCK" crossorigin="anonymous"/><script
     src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
     integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
     rel="stylesheet"
@@ -1584,7 +1587,7 @@ This article does not have a corresponding language version
       }
     },
     waline: {
-      enable: false,
+      enable: true,
       load: async () => {
         const container = document.querySelector('.waline-comment');
         if (!container) return;
@@ -1608,10 +1611,10 @@ This article does not have a corresponding language version
         
         window.walineInstance = walineInit({
           el: '.waline-comment',
-          serverURL: '',
+          serverURL: 'comment-wikiaxekincom.vercel.app',
           lang: document.documentElement.lang || 'en',
           locale: JSON.parse("{}"),
-          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\",\"https://unpkg.com/@waline/emojis@1.2.0/bmoji\"]"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
           meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
           requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
           wordLimit:  0 ,
