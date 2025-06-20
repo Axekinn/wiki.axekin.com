@@ -485,61 +485,6 @@ params:
   customJS: ["js/custom.js"]
 
 
-  ########################################
-# Comment system
-########################################
-
-# global control of the comment system
-# you can use multiple comment systems at the same time
-# load order: localStorage(user manually selects) -> default
-# -> valine -> waline -> twikoo -> gitalk -> giscus
-comment:
-  # comment system title
-  title:
-    en: Leave a comment
-  default: waline # default comment system, when you enable multiple comment systems
-
-  # valine comment system. https://valine.js.org
-# version 1.5.1
-# notify and verify have been deprecated
-valine:
-  enable: false # if you want to use valine,please set this value is true
-  appId: 94mEltR4RiEn3EWZZfaCmr9b-MdYXbMMI # leancloud application app id
-  appKey: IXfLB4N2besVBCcm7MKJOvkd # leancloud application app key
-  pageSize: 10 # comment list page size
-  avatar: mp # gravatar style https://valine.js.org/#/avatar
-  # lang: zh-cn # deprecated, use html.lang instead
-  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
-  recordIP: true # whether to record the IP address of the commenters
-  highlight: true # whether to highlight the code blocks
-  visitor: false # whether to display the number of visitors
-  serverURLs: # leancloud server url
-
-
-# https://waline.js.org/
-waline:
-  enable: true
-  serverURL: comment-wikiaxekincom.vercel.app
-  # lang: zh-CN # deprecated, use html.lang instead
-  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
-  emoji:
-    - https://unpkg.com/@waline/emojis@1.2.0/weibo
-    - https://unpkg.com/@waline/emojis@1.2.0/alus
-    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
-    - https://unpkg.com/@waline/emojis@1.2.0/qq
-    - https://unpkg.com/@waline/emojis@1.2.0/tieba
-    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
-  meta:
-    - nick
-    - mail
-    - link
-  requiredMeta:
-    - nick
-  wordLimit: 0
-  pageSize: 10
-  pageview: true
-
 # see https://github.com/D-Sketon/aos.js
 animation:
   enable: true
