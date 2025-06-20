@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3ds on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/3ds/</link>
+    <link>https://wiki.axekin.com/fr/tags/3ds/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/3ds/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/3ds/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
-      <link>http://localhost:1313/fr/post/cheat_citra/</link>
+      <link>https://wiki.axekin.com/fr/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cheat_citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -284,7 +284,7 @@ R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commence
 R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.
 </h2><pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Citra</category>

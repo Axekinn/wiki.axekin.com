@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installation on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/installation/</link>
+    <link>https://wiki.axekin.com/fr/tags/installation/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/installation/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/installation/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -392,7 +392,7 @@ Problème : Plantages fréquents
 </span></span><span style="display:flex;"><span>4. Testez avec les paramètres par défaut
 </span></span></code></pre></div>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -404,10 +404,10 @@ Problème : Plantages fréquents
 
     <item>
       <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
-      <link>http://localhost:1313/fr/post/xenia/</link>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/xenia/</guid>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -858,7 +858,7 @@ Problèmes courants
 <p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Xenia</category>
@@ -870,10 +870,10 @@ Problèmes courants
 
     <item>
       <title>Installation et Configuration de Eden</title>
-      <link>http://localhost:1313/fr/post/yuzu/</link>
+      <link>https://wiki.axekin.com/fr/post/yuzu/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/yuzu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/yuzu/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1246,7 +1246,7 @@ Questions techniques
 <p><strong>Bon jeux avec Yuzu ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Yuzu</category>
@@ -1258,10 +1258,10 @@ Questions techniques
 
     <item>
       <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
-      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <link>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1457,7 +1457,7 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -1469,10 +1469,10 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 
     <item>
       <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
-      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1772,7 +1772,7 @@ R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu.
 R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
