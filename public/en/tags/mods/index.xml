@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mods on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/mods/</link>
+    <link>http://localhost:1313/en/tags/mods/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/mods/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/mods/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>How to Install Cheats and Mods on the Ryujinx Emulator</title>
-      <link>https://wiki.axekin.com/en/post/cheat_ryujinx/</link>
+      <link>http://localhost:1313/en/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/cheat_ryujinx/</guid>
+      <guid>http://localhost:1313/en/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>How to Install Cheats and Mods on the Ryujinx Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -327,7 +327,7 @@ A: Yes, with knowledge of memory addresses and game structure. Tools like Cheat 
 A: Simply disable or remove the mod from the mods directory. Your original game files remain intact.</p>
 
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

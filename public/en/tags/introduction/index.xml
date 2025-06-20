@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/introduction/</link>
+    <link>http://localhost:1313/en/tags/introduction/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate></lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/introduction/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/introduction/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     

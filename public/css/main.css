@@ -2634,31 +2634,29 @@ mjx-container::-webkit-scrollbar {
   background-color: var(--red-1);
 }
 
-.vcontent {
-  padding-left: 10px;
-  padding-right: 10px;
+.wl-emoji-popup {
+  max-width: calc(100vw - 90px) !important;
 }
 
-[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.night .v[data-class="v"] .vcards .vcard .vcontent.expand::after {
-  background: var(--color-wrap) !important;
+.wl-count {
+  color: var(--color-default);
 }
 
-[data-theme="dark"]
-.v[data-class="v"]
-.vcards
-.vcard
-.vcontent.expand::before,
-.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-.night .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--color-wrap) 10%, transparent), var(--color-wrap)) !important;
+.wl-panel {
+  margin: 0.5em 0 !important;
 }
 
-.v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
-  color: var(--red-1) !important;
+.wl-header input {
+  font-size: revert !important;
+}
+
+.wl-action,
+.wl-sort li {
+  cursor: var(--cursor-pointer) !important;
+}
+
+.wl-header label {
+  cursor: var(--cursor-default) !important;
 }
 
 .wl-content,

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xenia on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/xenia/</link>
+    <link>http://localhost:1313/en/tags/xenia/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/xenia/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/xenia/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Xenia Installation and Configuration (Xbox 360 Emulator)</title>
-      <link>https://wiki.axekin.com/en/post/xenia/</link>
+      <link>http://localhost:1313/en/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/xenia/</guid>
+      <guid>http://localhost:1313/en/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Xenia Installation and Configuration (Xbox 360 Emulator)</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -478,7 +478,7 @@ Common problems
 <p><strong>Rediscover Xbox 360 exclusives with Xenia! 🎮✨</strong></p>
 
         
-        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>Xenia</category>

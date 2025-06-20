@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PlayStation 3 on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/playstation-3/</link>
+    <link>http://localhost:1313/fr/tags/playstation-3/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/playstation-3/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/playstation-3/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et configuration de RPCS3</title>
-      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
+      <link>http://localhost:1313/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
+      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -779,7 +779,7 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>RPCS3</category>

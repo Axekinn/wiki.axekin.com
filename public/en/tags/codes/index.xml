@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Codes on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/codes/</link>
+    <link>http://localhost:1313/en/tags/codes/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/codes/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/codes/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Complete Guide to Cheats on the Citra Emulator</title>
-      <link>https://wiki.axekin.com/en/post/cheat_citra/</link>
+      <link>http://localhost:1313/en/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/cheat_citra/</guid>
+      <guid>http://localhost:1313/en/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Complete Guide to Cheats on the Citra Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -284,7 +284,7 @@ A: Yes, but with caution. Some cheats may conflict. Start by testing cheats indi
 A: Creating codes requires knowledge of memory analysis. Use tools like Cheat Engine or consult reverse engineering tutorials.
 </h2>
         
-        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>

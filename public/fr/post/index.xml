@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/post/</link>
+    <link>http://localhost:1313/fr/post/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et configuration de Cemu</title>
-      <link>https://wiki.axekin.com/fr/post/cemu/</link>
+      <link>http://localhost:1313/fr/post/cemu/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cemu/</guid>
+      <guid>http://localhost:1313/fr/post/cemu/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -339,7 +339,7 @@ Formats de jeux
 <p><strong>Profitez de vos jeux Wii U en 4K avec des mods incroyables ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-14 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Cemu</category>
@@ -351,10 +351,10 @@ Formats de jeux
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
+      <link>http://localhost:1313/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -719,7 +719,7 @@ Problème : Plantages fréquents
 </span></span><span style="display:flex;"><span>4. Testez avec les paramètres par défaut
 </span></span></code></pre></div>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -731,10 +731,10 @@ Problème : Plantages fréquents
 
     <item>
       <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
-      <link>https://wiki.axekin.com/fr/post/xenia/</link>
+      <link>http://localhost:1313/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
+      <guid>http://localhost:1313/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1185,7 +1185,7 @@ Problèmes courants
 <p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Xenia</category>
@@ -1197,10 +1197,10 @@ Problèmes courants
 
     <item>
       <title>Installation et Configuration de Eden</title>
-      <link>https://wiki.axekin.com/fr/post/yuzu/</link>
+      <link>http://localhost:1313/fr/post/yuzu/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/yuzu/</guid>
+      <guid>http://localhost:1313/fr/post/yuzu/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1573,7 +1573,7 @@ Questions techniques
 <p><strong>Bon jeux avec Yuzu ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Yuzu</category>
@@ -1585,10 +1585,10 @@ Questions techniques
 
     <item>
       <title>Unsteam - Jouer en coopération avec des jeux patch</title>
-      <link>https://wiki.axekin.com/fr/post/unsteam/</link>
+      <link>http://localhost:1313/fr/post/unsteam/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/unsteam/</guid>
+      <guid>http://localhost:1313/fr/post/unsteam/</guid>
       <description>
         <![CDATA[<h1>Unsteam - Jouer en coopération avec des jeux patch</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1826,7 +1826,7 @@ Games/
 <p>💡 <strong>Astuce finale</strong> : Testez toujours avec des jeux gratuits ou que vous possédez légalement avant d&rsquo;utiliser avec d&rsquo;autres titres. La coopération fonctionne mieux avec des connexions stables et des configurations identiques entre joueurs.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>PC</category>
@@ -1838,10 +1838,10 @@ Games/
 
     <item>
       <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
-      <link>https://wiki.axekin.com/fr/post/amibo_switch/</link>
+      <link>http://localhost:1313/fr/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/amibo_switch/</guid>
+      <guid>http://localhost:1313/fr/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1997,7 +1997,7 @@ R : Les données sont sauvegardées automatiquement dans les fichiers de sauvega
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category><category>Yuzu</category>
@@ -2009,10 +2009,10 @@ R : Les données sont sauvegardées automatiquement dans les fichiers de sauvega
 
     <item>
       <title>SteamAutoCrack - Patcher automatiquement les jeux Steam</title>
-      <link>https://wiki.axekin.com/fr/post/sac/</link>
+      <link>http://localhost:1313/fr/post/sac/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/sac/</guid>
+      <guid>http://localhost:1313/fr/post/sac/</guid>
       <description>
         <![CDATA[<h1>SteamAutoCrack - Patcher automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2390,7 +2390,7 @@ Approche recommandée
 <p>💡 <strong>Astuce</strong> : SteamAutoCrack est particulièrement utile pour les jeux solo où vous voulez un accès hors ligne. Maintenez toujours des copies légales et utilisez ces connaissances de manière responsable à des fins éducatives.</p></blockquote>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>PC</category>
@@ -2402,10 +2402,10 @@ Approche recommandée
 
     <item>
       <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2601,7 +2601,7 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -2613,10 +2613,10 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 
     <item>
       <title> Utiliser des Amiibo sur l&#39;Émulateur Cemu Wii U</title>
-      <link>https://wiki.axekin.com/fr/post/amibo_cemu/</link>
+      <link>http://localhost:1313/fr/post/amibo_cemu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/amibo_cemu/</guid>
+      <guid>http://localhost:1313/fr/post/amibo_cemu/</guid>
       <description>
         <![CDATA[<h1> Utiliser des Amiibo sur l'Émulateur Cemu Wii U</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2754,7 +2754,7 @@ Finalisation du scan
 <p>Chaque jeux à sa propre méthode pour activer les amibo, regardez sur youtube si vous ne savez pas.</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Cemu</category>
@@ -2766,10 +2766,10 @@ Finalisation du scan
 
     <item>
       <title>Jouer Clavier-Souris sur l&#39;Émulateur Cemu</title>
-      <link>https://wiki.axekin.com/fr/post/keyboard_mouse_cemu/</link>
+      <link>http://localhost:1313/fr/post/keyboard_mouse_cemu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/keyboard_mouse_cemu/</guid>
+      <guid>http://localhost:1313/fr/post/keyboard_mouse_cemu/</guid>
       <description>
         <![CDATA[<h1>Jouer Clavier-Souris sur l'Émulateur Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3378,7 +3378,7 @@ R : L&rsquo;impact est minimal, Mouse2Joystick étant très léger en ressources
 </ul>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Cemu</category>
@@ -3390,10 +3390,10 @@ R : L&rsquo;impact est minimal, Mouse2Joystick étant très léger en ressources
 
     <item>
       <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/cheat_ryujinx/</link>
+      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cheat_ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -3693,7 +3693,7 @@ R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu.
 R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -3705,10 +3705,10 @@ R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers
 
     <item>
       <title>Réinstallation Propre des Pilotes Graphiques</title>
-      <link>https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</link>
+      <link>http://localhost:1313/fr/post/reinstall_driver_gpu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</guid>
+      <guid>http://localhost:1313/fr/post/reinstall_driver_gpu/</guid>
       <description>
         <![CDATA[<h1>Réinstallation Propre des Pilotes Graphiques</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -4228,7 +4228,7 @@ R : Comptez 30-45 minutes pour l&rsquo;ensemble du processus, incluant les tél�
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>PC</category>
@@ -4240,10 +4240,10 @@ R : Comptez 30-45 minutes pour l&rsquo;ensemble du processus, incluant les tél�
 
     <item>
       <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
-      <link>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
+      <link>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -4470,7 +4470,7 @@ R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fic
 <p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Yuzu</category><category>Ryujinx</category>
@@ -4482,10 +4482,10 @@ R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fic
 
     <item>
       <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
-      <link>https://wiki.axekin.com/fr/post/cheat_citra/</link>
+      <link>http://localhost:1313/fr/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cheat_citra/</guid>
+      <guid>http://localhost:1313/fr/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -4742,7 +4742,7 @@ R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commence
 R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.
 </h2><pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Citra</category>
@@ -4754,10 +4754,10 @@ R : La création de codes nécessite des connaissances en analyse mémoire. Util
 
     <item>
       <title>Installation et configuration de RPCS3</title>
-      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
+      <link>http://localhost:1313/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
+      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -5509,7 +5509,7 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>RPCS3</category>
@@ -5521,10 +5521,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de melonDS</title>
-      <link>https://wiki.axekin.com/fr/post/melonds/</link>
+      <link>http://localhost:1313/fr/post/melonds/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/melonds/</guid>
+      <guid>http://localhost:1313/fr/post/melonds/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de melonDS</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -5970,7 +5970,7 @@ Problèmes courants
 </h2><p><strong>Redécouvrez la bibliothèque Nintendo DS en haute définition avec melonDS ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>MelonDS</category>
@@ -5982,10 +5982,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de Azahar</title>
-      <link>https://wiki.axekin.com/fr/post/citra/</link>
+      <link>http://localhost:1313/fr/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
+      <guid>http://localhost:1313/fr/post/citra/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -6417,7 +6417,7 @@ Problèmes courants
 <p><strong>Profitez de vos jeux 3DS en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>gaming</category><category>Tutoriels</category>
@@ -6429,10 +6429,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de Dolphin</title>
-      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
+      <link>http://localhost:1313/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
+      <guid>http://localhost:1313/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -6775,7 +6775,7 @@ Problèmes courants
 <p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Dolphin</category>

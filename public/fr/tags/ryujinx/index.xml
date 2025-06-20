@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryujinx on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/ryujinx/</link>
+    <link>http://localhost:1313/fr/tags/ryujinx/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
+      <link>http://localhost:1313/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -392,7 +392,7 @@ Problème : Plantages fréquents
 </span></span><span style="display:flex;"><span>4. Testez avec les paramètres par défaut
 </span></span></code></pre></div>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -404,10 +404,10 @@ Problème : Plantages fréquents
 
     <item>
       <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
-      <link>https://wiki.axekin.com/fr/post/amibo_switch/</link>
+      <link>http://localhost:1313/fr/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/amibo_switch/</guid>
+      <guid>http://localhost:1313/fr/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -563,7 +563,7 @@ R : Les données sont sauvegardées automatiquement dans les fichiers de sauvega
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category><category>Yuzu</category>
@@ -575,10 +575,10 @@ R : Les données sont sauvegardées automatiquement dans les fichiers de sauvega
 
     <item>
       <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -774,7 +774,7 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -786,10 +786,10 @@ R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous 
 
     <item>
       <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
-      <link>https://wiki.axekin.com/fr/post/cheat_ryujinx/</link>
+      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cheat_ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1089,7 +1089,7 @@ R : Oui, avec des connaissances des adresses mémoire et de la structure du jeu.
 R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers de jeu originaux restent intacts.</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -1101,10 +1101,10 @@ R : Désactivez ou supprimez simplement le mod du répertoire mods. Vos fichiers
 
     <item>
       <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
-      <link>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
+      <link>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <guid>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1331,7 +1331,7 @@ R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fic
 <p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
         <category>Yuzu</category><category>Ryujinx</category>
