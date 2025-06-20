@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuzu on Wiki of Axekin</title>
+    <link>http://localhost:1313/en/categories/yuzu/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/en/categories/yuzu/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Eden Installation and Configuration Guide</title>
+      <link>http://localhost:1313/en/post/yuzu/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Eden Installation and Configuration Guide</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-yuzu">
+<a class="header-anchor" href="#-introduction-to-yuzu"></a>
+🎮 Introduction to Yuzu
+</h2><p><strong>Yuzu</strong> is an open-source Nintendo Switch emulator developed by the Citra team. Renowned for its high performance and growing compatibility, Yuzu is one of the most popular Switch emulators in the world.</p>
+<blockquote>
+<p>⚠️ <strong>Legal note</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not (I would have said that if I were myself in legality)</p></blockquote>
+<h2 id="-step-1-eden-download">
+<a class="header-anchor" href="#-step-1-eden-download"></a>
+🔧 Step 1: Eden Download
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official site</span>
+</span></span><span style="display:flex;"><span>https://git.eden-emu.dev/eden-emu/eden#download
+</span></span></code></pre></div><h2 id="game-download">
+<a class="header-anchor" href="#game-download"></a>
+Game Download
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/search?platform=switch">🎮 Axekin Games - Nintendo Switch</a></strong> to access the Nintendo Switch game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-file-extraction">
+<a class="header-anchor" href="#step-3-file-extraction"></a>
+Step 3: File extraction
+</h3><p>Once the download is finished, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You&rsquo;ll get game files ready to be used with Eden! 🎯</p>
+<h2 id="-step-2-installation-and-configuration">
+<a class="header-anchor" href="#-step-2-installation-and-configuration"></a>
+⚙️ Step 2: Installation and configuration
+</h2><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First launch
+</h3><ol>
+<li><strong>Run</strong> <code>yuzu.exe</code> as administrator</li>
+<li><strong>Accept</strong> the initial configuration</li>
+<li><strong>Configure</strong> the base folders</li>
+</ol>
+<h2 id="-step-3-keys-and-firmware-installation">
+<a class="header-anchor" href="#-step-3-keys-and-firmware-installation"></a>
+🎯 Step 3: Keys and firmware installation
+</h2><h3 id="installing-encryption-keys">
+<a class="header-anchor" href="#installing-encryption-keys"></a>
+Installing encryption keys
+</h3><h4 id="automatic-method-homebrew-required">
+<a class="header-anchor" href="#automatic-method-homebrew-required"></a>
+Automatic method (Homebrew required)
+</h4><ul>
+<li><a href="https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&amp;is=68432fd3&amp;hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&amp;">Keys version 20.0.1 | 20.1.0</a></li>
+</ul>
+<h4 id="installation-in-yuzu">
+<a class="header-anchor" href="#installation-in-yuzu"></a>
+Installation in Yuzu
+</h4><ol>
+<li><strong>Open</strong> Yuzu</li>
+<li><code>File → Open Eden Folder</code></li>
+<li><strong>Navigate</strong> to the <code>keys/</code> folder</li>
+<li><strong>Copy</strong> <code>prod.keys</code> and <code>title.keys</code> inside</li>
+<li><strong>Restart</strong> Yuzu</li>
+</ol>
+<h3 id="installing-nintendo-switch-firmware">
+<a class="header-anchor" href="#installing-nintendo-switch-firmware"></a>
+Installing Nintendo Switch firmware
+</h3><ul>
+<li><a href="https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&amp;is=68432fd3&amp;hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&amp;">Firmware 20.1.0</a></li>
+</ul>
+<h4 id="installation-in-yuzu-1">
+<a class="header-anchor" href="#installation-in-yuzu-1"></a>
+Installation in Yuzu
+</h4><ol>
+<li><code>Tools → Install Firmware</code></li>
+<li><strong>Select</strong> the firmware .zip file</li>
+<li><strong>Wait</strong> for complete installation</li>
+<li><strong>Verify</strong>: <code>Tools → Firmware Version</code></li>
+</ol>
+<h2 id="-step-5-optimal-configuration">
+<a class="header-anchor" href="#-step-5-optimal-configuration"></a>
+⚙️ Step 5: Optimal configuration
+</h2><h3 id="general-settings">
+<a class="header-anchor" href="#general-settings"></a>
+General settings
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Limit Speed Percent</strong>: 100% (for normal speed)</li>
+<li><strong>Multicore CPU Emulation</strong>: ✅ Enabled</li>
+<li><strong>Extended Memory Layout</strong>: ✅ Enabled (if 12GB+ RAM)</li>
+</ul>
+<h3 id="system-configuration">
+<a class="header-anchor" href="#system-configuration"></a>
+System configuration
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong>: Europe (If you&rsquo;re in Europe, otherwise put where you are)</li>
+<li><strong>Language</strong>: English (If you&rsquo;re in an English-speaking country, otherwise put where you are)</li>
+<li><strong>RTC Source</strong>: System Clock</li>
+<li><strong>Time Zone</strong>: Your timezone</li>
+<li><strong>Sound Output Mode</strong>: Stereo</li>
+</ul>
+<h3 id="optimal-graphics-settings">
+<a class="header-anchor" href="#optimal-graphics-settings"></a>
+Optimal graphics settings
+</h3><h4 id="api-tab">
+<a class="header-anchor" href="#api-tab"></a>
+API tab
+</h4><pre tabindex="0"><code>Graphics → API
+- API: Vulkan (recommended) or OpenGL
+- Device: Your main GPU
+- Shader Backend: GLSL (Vulkan) / GLASM (OpenGL)
+</code></pre><h4 id="graphics-tab">
+<a class="header-anchor" href="#graphics-tab"></a>
+Graphics tab
+</h4><pre tabindex="0"><code>Graphics → Graphics
+- Use disk pipeline cache: ✅ Enabled
+- Use asynchronous GPU emulation: ✅ Enabled
+- Use asynchronous shader building: ✅ Enabled
+- Accelerate ASTC texture decoding: ✅ Enabled
+- VSync Mode: FIFO (Recommended)
+</code></pre><h4 id="advanced-graphics-tab">
+<a class="header-anchor" href="#advanced-graphics-tab"></a>
+Advanced Graphics tab
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Accuracy Level: Normal (High for more precision)
+- Use Fast GPU Time: ✅ Enabled
+- Use Vulkan pipeline cache: ✅ Enabled (if Vulkan)
+- Anisotropic Filtering: 16x
+- Resolution Scaler: 1x (or higher if powerful GPU)
+- Anti-Aliasing: None or FXAA
+</code></pre><h3 id="audio-configuration">
+<a class="header-anchor" href="#audio-configuration"></a>
+Audio configuration
+</h3><pre tabindex="0"><code>Audio
+- Output Engine: auto (or WASAPI on Windows)
+- Output Device: Default
+- Volume: 100%
+</code></pre><h3 id="control-configuration">
+<a class="header-anchor" href="#control-configuration"></a>
+Control configuration
+</h3><h4 id="xboxplaystationswitchwhatever-controller-you-have">
+<a class="header-anchor" href="#xboxplaystationswitchwhatever-controller-you-have"></a>
+Xbox/PlayStation/Switch/Whatever controller you have
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Pro Controller
+2. Configure → Automatically map
+3. Test all buttons
+</code></pre><h4 id="keyboard-temporary">
+<a class="header-anchor" href="#keyboard-temporary"></a>
+Keyboard (temporary)
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Player 1 → Connected Controller: Handheld
+2. Configure → Manual mapping
+3. Assign keys to buttons
+</code></pre><h2 id="-step-6-adding-and-optimizing-games">
+<a class="header-anchor" href="#-step-6-adding-and-optimizing-games"></a>
+🎮 Step 6: Adding and optimizing games
+</h2><h3 id="supported-formats">
+<a class="header-anchor" href="#supported-formats"></a>
+Supported formats
+</h3><ul>
+<li><strong>.NSP</strong>: Nintendo Submission Package (eShop games)</li>
+<li><strong>.XCI</strong>: NX Card Image (Physical cards)</li>
+<li><strong>.NCA</strong>: Nintendo Content Archive (Raw content)</li>
+<li><strong>.NSZ</strong>: Compressed NSP (requires tools)</li>
+<li><strong>.XCZ</strong>: Compressed XCI (requires tools)</li>
+</ul>
+<h2 id="game-configuration-in-the-emulator">
+<a class="header-anchor" href="#game-configuration-in-the-emulator"></a>
+Game configuration in the emulator
+</h2><h3 id="adding-the-game-folder">
+<a class="header-anchor" href="#adding-the-game-folder"></a>
+Adding the game folder
+</h3><p>In the emulator menu, <strong>double-click</strong> then select the folder that contains all your games.</p>
+<h3 id="recommended-folder-structure">
+<a class="header-anchor" href="#recommended-folder-structure"></a>
+Recommended folder structure
+</h3><p>For optimal organization of your library, here&rsquo;s the recommended tree structure:</p>
+
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>Yuzu</category>
+      
+    </item>
+    
+  </channel>
+</rss>

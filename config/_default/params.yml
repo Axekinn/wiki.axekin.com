@@ -222,7 +222,7 @@ top:
 
 # Notification article obsolète
 outdate:
-  enable: true
+  enable: false
   daysAgo: 180
   warning_days: 90
   message:
@@ -249,7 +249,7 @@ pwa:
   enable: true
   name: "Axekin Wiki"
   short_name: "AxekinWiki"
-  description: "Wiki technique d'Axekin"
+  description: "Wiki d'Axekin"
   theme_color: "#6a1b99"
   background_color: "#1a1a1a"
   display: "standalone"
@@ -364,11 +364,18 @@ pace:
   color: "var(--red-2)"
   theme: "minimal"
 
+# Experimental
+# https://github.com/GoogleChromeLabs/quicklink
 quicklink:
   enable: true
+  # The `requestIdleCallback` timeout, in milliseconds.
   timeout: 3000
+  # Whether or not the URLs within the options.el container should be treated as high priority.
+  # When true, quicklink will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
-  ignores: ["#", "/admin"]
+  # Determine if a URL should be prefetched.
+  # Only support string
+  ignores: []
 
 # Compression et optimisation
 compression:
@@ -476,3 +483,74 @@ development:
 params:
   customCSS: ["css/custom.css"]
   customJS: ["js/custom.js"]
+
+
+  ########################################
+# Comment system
+########################################
+
+# global control of the comment system
+# you can use multiple comment systems at the same time
+# load order: localStorage(user manually selects) -> default
+# -> valine -> waline -> twikoo -> gitalk -> giscus
+comment:
+  # comment system title
+  title:
+    en: Leave a comment
+  default: waline # default comment system, when you enable multiple comment systems
+
+# https://waline.js.org/
+waline:
+  enable: true
+  serverURL: comment-wikiaxekincom.vercel.app
+  # lang: zh-CN # deprecated, use html.lang instead
+  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.2.0/weibo
+    - https://unpkg.com/@waline/emojis@1.2.0/alus
+    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
+    - https://unpkg.com/@waline/emojis@1.2.0/qq
+    - https://unpkg.com/@waline/emojis@1.2.0/tieba
+    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+  meta:
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+  wordLimit: 0
+  pageSize: 10
+  pageview: true
+
+# see https://github.com/D-Sketon/aos.js
+animation:
+  enable: true
+  options:
+    # Animations d'en-tête plus dynamiques
+    header:
+      title: fade-down
+      subTitle: fade-up
+    
+    # Page d'accueil avec des effets échelonnés
+    home:
+      post: fade-up-right
+      widget: slide-left
+      sidebar: slide-right
+    
+    # Articles avec plus de variété
+    article:
+      whole: fade-up
+      date: flip-left
+      category: zoom-in-up
+      tag: zoom-in-down
+      comment: slide-up
+      reading: fade-left
+      nav: slide-down
+    
+    # Archives avec effets de profondeur
+    archive:
+      whole: fade-up
+      tag: flip-up
+      category: flip-down
+      section: zoom-in
+      nav: slide-up

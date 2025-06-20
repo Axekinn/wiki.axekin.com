@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eden on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/eden/</link>
+    <link>http://localhost:1313/en/tags/eden/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/eden/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/eden/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,13 +23,13 @@
     
 
     <item>
-      <title>Eden Installation and Configuration</title>
-      <link>https://wiki.axekin.com/en/post/yuzu/</link>
+      <title>Eden Installation and Configuration Guide</title>
+      <link>http://localhost:1313/en/post/yuzu/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/yuzu/</guid>
+      <guid>http://localhost:1313/en/post/yuzu/</guid>
       <description>
-        <![CDATA[<h1>Eden Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        <![CDATA[<h1>Eden Installation and Configuration Guide</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           <h2 id="-introduction-to-yuzu">
 <a class="header-anchor" href="#-introduction-to-yuzu"></a>
@@ -235,10 +235,10 @@ Recommended folder structure
 </h3><p>For optimal organization of your library, here&rsquo;s the recommended tree structure:</p>
 
         
-        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
-        <category>gaming</category><category>emulation</category><category>tutorials</category>
+        <category>Yuzu</category>
       
     </item>
     

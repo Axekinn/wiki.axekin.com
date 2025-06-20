@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cemu on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/categories/cemu/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/categories/cemu/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Installation et configuration de Cemu</title>
+      <link>http://localhost:1313/fr/post/cemu/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/cemu/</guid>
+      <description>
+        <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-cemu">
+<a class="header-anchor" href="#-introduction-%c3%a0-cemu"></a>
+🎮 Introduction à Cemu
+</h2><p><strong>Cemu</strong> est l&rsquo;émulateur Nintendo Wii U le plus performant et abouti disponible. Développé depuis 2015, il permet de jouer aux exclusivités Wii U sur PC avec des améliorations graphiques spectaculaires, des mods et une compatibilité excellente.</p>
+<h2 id="-étape-1--téléchargement-de-cemu">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-cemu"></a>
+🔧 Étape 1 : Téléchargement de Cemu
+</h2><h3 id="option-recommandée--version-officielle">
+<a class="header-anchor" href="#option-recommand%c3%a9e--version-officielle"></a>
+Option recommandée : Version officielle
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://github.com/cemu-project/Cemu/releases
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur l&rsquo;OS où vous êtes</li>
+<li><strong>Téléchargez</strong> <code>cemu_X.X.X. zip</code> (version la plus récente)</li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>Emulateurs\Cemu</code> ou à la racine d&rsquo;un disque secondaire)</li>
+</ol>
+<h2 id="-téléchargement-de-vos-jeux">
+<a class="header-anchor" href="#-t%c3%a9l%c3%a9chargement-de-vos-jeux"></a>
+📦 Téléchargement de vos jeux
+</h2><h3 id="étape-1--accéder-à-la-bibliothèque-de-jeux">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-biblioth%c3%a8que-de-jeux"></a>
+Étape 1 : Accéder à la bibliothèque de jeux
+</h3><p>Rendez-vous sur <strong><a href="https://www.axekin.com/search?platform=wiiu">🎮 Axekin Games - Nintendo Wii U</a></strong> pour accéder à la collection de jeux Nintendo Wii U.</p>
+<h3 id="étape-2--télécharger-le-jeu">
+<a class="header-anchor" href="#%c3%a9tape-2--t%c3%a9l%c3%a9charger-le-jeu"></a>
+Étape 2 : Télécharger le jeu
+</h3><ol>
+<li><strong>Recherchez</strong> le jeu désiré dans la liste</li>
+<li><strong>Cliquez</strong> sur le bouton de téléchargement</li>
+<li><strong>Attendez</strong> la fin du téléchargement</li>
+</ol>
+<h3 id="étape-3--extraction-du-fichier">
+<a class="header-anchor" href="#%c3%a9tape-3--extraction-du-fichier"></a>
+Étape 3 : Extraction du fichier
+</h3><p>Une fois le téléchargement terminé, <strong>extrayez</strong> l&rsquo;archive avec l&rsquo;un de ces logiciels :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Logiciel</th>
+          <th>Lien de téléchargement</th>
+          <th>Compatibilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Télécharger 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Télécharger WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Astuce</strong> : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d&rsquo;essai.</p></blockquote>
+<p><strong>Résultat</strong> : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec Cemu ! 🎯</p>
+<h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Pour une organisation optimale de votre bibliothèque, voici l&rsquo;arborescence conseillée :</p>
+<pre tabindex="0"><code>Jeux Wii U/
+    Super Mario 3D World/
+   ├── BASE
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)   
+    Zelda Breath Of The Wild/
+   ├── BASE
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)    
+            
+</code></pre><h3 id="types-de-contenu">
+<a class="header-anchor" href="#types-de-contenu"></a>
+Types de contenu
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Comprendre les dossiers
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>code/</strong> 📁 : Contient le fichier .rpx principal du jeu</li>
+<li><strong>content/</strong> 📁 : Assets du jeu (textures, sons, vidéos)</li>
+<li><strong>meta/</strong> 📁 : Métadonnées et icônes</li>
+<li><strong>Updates/</strong> 📁 : Mises à jour des jeux (importantes pour la compatibilité)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Avantages de cette organisation
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Détection automatique</strong> : Cemu scanne et ajoute automatiquement les jeux<br>
+✅ <strong>Gestion simplifiée</strong> : Interface claire dans Cemu<br>
+✅ <strong>Mises à jour faciles</strong> : Dossier dédié pour les updates et DLC
+✅ <strong>Compatibilité maximale</strong> : Structure respectant le format Wii U officiel
+  </div>
+</div>
+<h2 id="-configuration-portable-recommandé">
+<a class="header-anchor" href="#-configuration-portable-recommand%c3%a9"></a>
+💡 Configuration portable (Recommandé)
+</h2><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Installation portable
+  </div>
+  <div class="admonition-content">
+    Cemu est portable par défaut. Toutes les configurations sont stockées dans le dossier <code>mlc01</code> d&rsquo;installation, facilitant les sauvegardes et la portabilité.
+  </div>
+</div>
+<h3 id="structure-dinstallation-portable">
+<a class="header-anchor" href="#structure-dinstallation-portable"></a>
+Structure d&rsquo;installation portable
+</h3><pre tabindex="0"><code>📁 Cemu/
+├── 🎮 Cemu.exe
+├── 📁 gameProfiles/      # Profils de jeux
+├── 📁 graphicPacks/      # Packs graphiques et mods
+├── 📁 memorySearcher/    # Outils de recherche mémoire
+├── 📁 mlc01/            # Données système Wii U virtuelles
+├── 📁 shaderCache/      # Cache des shaders compilés
+└── 📄 settings.xml      # Configuration principale
+</code></pre><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Avantages du mode portable
+  </div>
+  <div class="admonition-content">
+    <strong>✅ Facilité de sauvegarde</strong> : Un seul dossier à sauvegarder<br>
+<strong>✅ Portabilité totale</strong> : Déplaçable sur n&rsquo;importe quel PC<br>
+<strong>✅ Configurations préservées</strong> : Aucune perte lors de réinstallation<br>
+<strong>✅ Partage simplifié</strong> : Configuration facilement partageable
+  </div>
+</div>
+<h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>Cemu.exe</code> en tant qu&rsquo;administrateur (premier lancement uniquement)</li>
+<li><strong>Définissez</strong> le dossier des jeux dans <code>Game paths</code></li>
+<li><strong>Ajoutez</strong> votre dossier &ldquo;Jeux Wii U&rdquo;</li>
+<li><strong>Téléchargez</strong> les packs graphiques</li>
+<li><strong>Vérifiez</strong> que les jeux apparaissent dans la bibliothèque</li>
+</ol>
+<ul>
+<li>Cliquez ensuite sur Close, on vas configurer la manette plus tard</li>
+</ul>
+<h2 id="-étape-4--configuration-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-optimale"></a>
+⚙️ Étape 4 : Configuration optimale
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Options → General settings
+</code></pre><p><strong>Onglet General :</strong></p>
+<ul>
+<li><strong>Interface language</strong> : Français</li>
+<li><strong>Discord Presence</strong> : ✅ Activé (optionnel)</li>
+<li><strong>Check for updates</strong> : ✅ Activé</li>
+</ul>
+<h3 id="configuration-graphique-optimale">
+<a class="header-anchor" href="#configuration-graphique-optimale"></a>
+Configuration graphique optimale
+</h3><pre tabindex="0"><code>Options → General settings → Graphics
+</code></pre><h4 id="onglet-general">
+<a class="header-anchor" href="#onglet-general"></a>
+Onglet General
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur recommandée</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Graphics API</strong></td>
+          <td>Vulkan</td>
+          <td>Meilleures performances (OpenGL si problèmes)</td>
+      </tr>
+      <tr>
+          <td><strong>Graphics Device</strong></td>
+          <td>Votre GPU principal</td>
+          <td>GPU le plus puissant disponible</td>
+      </tr>
+      <tr>
+          <td><strong>VSync</strong></td>
+          <td>✅ Activé</td>
+          <td>Évite le screen tearing</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Laissez le reste des paramètres par défaut, ça suffit</li>
+</ul>
+<h3 id="configuration-audio">
+<a class="header-anchor" href="#configuration-audio"></a>
+Configuration audio
+</h3><pre tabindex="0"><code>Options → General settings → Audio
+</code></pre><ul>
+<li><strong>Audio API</strong> : XAudio2 (Windows) ou DirectSound</li>
+<li><strong>Audio channels</strong> : Stereo ou 5.1 selon votre configuration</li>
+</ul>
+<h3 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h3><h4 id="méthode-automatique-pour-manette">
+<a class="header-anchor" href="#m%c3%a9thode-automatique-pour-manette"></a>
+Méthode automatique pour manette
+</h4><pre tabindex="0"><code>Options → Input settings
+</code></pre><ol>
+<li><strong>Emulated controller</strong> : Wii U GamePad</li>
+<li><strong>Controller API</strong> : XInput (manettes Xbox) ou DirectInput</li>
+<li><strong>Cliquez</strong> sur &ldquo;Calibrate&rdquo;</li>
+<li><strong>Suivez</strong> les instructions à l&rsquo;écran</li>
+<li><strong>Testez</strong> tous les boutons et joysticks</li>
+</ol>
+<h2 id="-étape-5--graphics-packs-et-mods">
+<a class="header-anchor" href="#-%c3%a9tape-5--graphics-packs-et-mods"></a>
+🎨 Étape 5 : Graphics Packs et mods
+</h2><h3 id="installation-des-graphics-packs">
+<a class="header-anchor" href="#installation-des-graphics-packs"></a>
+Installation des Graphics Packs
+</h3><ol>
+<li><strong>Téléchargez</strong> les Graphics Packs : <code>Options → Download community graphic packs</code></li>
+<li><strong>Redémarrez</strong> Cemu</li>
+<li><strong>Configurez</strong> par jeu : Clic droit sur un jeu → <code>Edit graphic packs</code></li>
+</ol>
+<p><strong>Sites recommandés pour les mods :</strong></p>
+<ul>
+<li><strong>GameBanana</strong> : <a href="https://gamebanana.com">gamebanana.com</a></li>
+<li><strong>NexusMods</strong> : <a href="https://nexusmods.com">nexusmods.com</a></li>
+<li><strong>Reddit r/cemu</strong> : Communauté active et support</li>
+</ul>
+<h2 id="-faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+❓ FAQ - Questions fréquemment posées
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Tous les jeux Wii U fonctionnent-ils sur Cemu ?</strong>
+<strong>R :</strong> Environ 95% des jeux sont parfaitement jouables. Consultez la liste de compatibilité officielle sur le site de Cemu.</p>
+<p><strong>Q : Puis-je utiliser mes sauvegardes de vraie Wii U ?</strong>
+<strong>R :</strong> Oui, avec Saviine ou des homebrew dédiés, vous pouvez transférer vos sauvegardes.</p>
+<p><strong>Q : Le GamePad fonctionne-t-il vraiment ?</strong>
+<strong>R :</strong> Oui, l&rsquo;écran tactile est émulé avec la souris et l&rsquo;interface GamePad est parfaitement fonctionnelle.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou OpenGL ?</strong>
+<strong>R :</strong> Vulkan offre généralement de meilleures performances. Utilisez OpenGL en cas de problèmes de compatibilité.</p>
+<p><strong>Q : Pourquoi les shaders mettent-ils du temps à compiler ?</strong>
+<strong>R :</strong> C&rsquo;est normal lors du premier lancement d&rsquo;un jeu. Les shaders sont ensuite mis en cache pour les sessions suivantes.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu se ferme brutalement ?</strong>
+<strong>R :</strong> Vérifiez les Graphics Packs activés, mettez à jour Cemu et vos pilotes GPU.</p>
+<p><strong>Q : L&rsquo;audio est saccadé ?</strong>
+<strong>R :</strong> Augmentez la latence audio à 64ms ou changez d&rsquo;API audio (XAudio2/DirectSound).</p>
+<p><strong>Q : Les textures sont floues ?</strong>
+<strong>R :</strong> Activez le filtrage anisotrope 16x et vérifiez que la résolution est correctement configurée.</p>
+<h3 id="formats-de-jeux">
+<a class="header-anchor" href="#formats-de-jeux"></a>
+Formats de jeux
+</h3><p><strong>Q : Quelle est la différence entre .wud et .wux ?</strong>
+<strong>R :</strong> .wux est une version compressée de .wud. Les deux fonctionnent parfaitement, .wux économise l&rsquo;espace disque.</p>
+<p><strong>Q : Comment installer des DLC et mises à jour ?</strong>
+<strong>R :</strong> Placez-les dans le dossier Updates/ avec la même structure que les jeux de base.</p>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Résultat final
+  </div>
+  <div class="admonition-content">
+    <strong>🎉 Félicitations !</strong> Vous avez maintenant un Cemu parfaitement configuré pour profiter des exclusivités Wii U en haute définition avec des performances optimales !
+  </div>
+</div>
+<p><strong>Profitez de vos jeux Wii U en 4K avec des mods incroyables ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title> Utiliser des Amiibo sur l&#39;Émulateur Cemu Wii U</title>
+      <link>http://localhost:1313/fr/post/amibo_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/amibo_cemu/</guid>
+      <description>
+        <![CDATA[<h1> Utiliser des Amiibo sur l'Émulateur Cemu Wii U</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;utilisation d&rsquo;<strong>Amiibo</strong> sur l&rsquo;émulateur <strong>Cemu</strong> Wii U permet d&rsquo;accéder au contenu exclusif et aux fonctionnalités sans avoir besoin des figurines physiques. Ce guide explique comment configurer et utiliser les fichiers Amiibo .bin spécifiquement sur Cemu pour les jeux Wii U.</p>
+<p>La fonctionnalité Amiibo sur Cemu est particulièrement utile pour :</p>
+<ul>
+<li>Débloquer du contenu exclusif dans Zelda: Breath of the Wild</li>
+<li>Obtenir des objets rares et des costumes dans les jeux compatibles</li>
+<li>Tester les fonctionnalités Amiibo sans acheter de figurines</li>
+<li>Accéder aux modes de jeu et défis spéciaux</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> les fichiers de collection Amiibo (format .bin)</li>
+<li><strong>Organiser</strong> les fichiers dans un dossier dédié &ldquo;Amiibo&rdquo;</li>
+<li><strong>Charger</strong> votre jeu Wii U dans Cemu</li>
+<li><strong>Accéder</strong> au menu NFC pendant le jeu</li>
+<li><strong>Scanner</strong> l&rsquo;Amiibo désiré depuis le fichier</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-requis">
+<a class="header-anchor" href="#logiciels-requis"></a>
+Logiciels requis
+</h3><p><strong>Composants essentiels :</strong></p>
+<ul>
+<li><strong>Cemu</strong> : Dernière version stable (2.6.0 ou plus récent)</li>
+<li><strong>Fichiers Amiibo</strong> : Collection complète .bin</li>
+<li><strong>Jeux Wii U compatibles</strong> : Qui supportent la fonctionnalité Amiibo</li>
+</ul>
+<h3 id="collection-de-fichiers-amiibo">
+<a class="header-anchor" href="#collection-de-fichiers-amiibo"></a>
+Collection de fichiers Amiibo
+</h3><h4 id="téléchargement-et-configuration">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-et-configuration"></a>
+Téléchargement et configuration
+</h4><p><strong>🔗 Lien de téléchargement</strong> : <code>https://vikingfile.com/f/3PsPBKLrJG</code> (Crédit : LinkNotZelda08)</p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Téléchargez</strong> la collection Amiibo complète</li>
+<li><strong>Extrayez</strong> l&rsquo;archive sur votre ordinateur</li>
+</ol>
+<h2 id="configuration-de-cemu">
+<a class="header-anchor" href="#configuration-de-cemu"></a>
+Configuration de Cemu
+</h2><h3 id="activation-du-support-nfc">
+<a class="header-anchor" href="#activation-du-support-nfc"></a>
+Activation du support NFC
+</h3><h4 id="configuration-de-base-de-cemu">
+<a class="header-anchor" href="#configuration-de-base-de-cemu"></a>
+Configuration de base de Cemu
+</h4><p><strong>Vérification des prérequis :</strong></p>
+<ol>
+<li><strong>Version Cemu</strong> : 1.26.0 ou plus récent (support NFC requis)</li>
+<li><strong>Compatibilité jeu</strong> : Vérifiez que votre jeu supporte les Amiibo</li>
+<li><strong>Accès fichier</strong> : Assurez-vous que Cemu peut accéder à votre dossier Amiibo</li>
+</ol>
+<h4 id="paramètres-nfc-dans-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-nfc-dans-cemu"></a>
+Paramètres NFC dans Cemu
+</h4><p><strong>Aucune configuration spéciale nécessaire :</strong></p>
+<ul>
+<li>Cemu a une émulation NFC intégrée</li>
+<li>Aucun plugin ou paramètre supplémentaire requis</li>
+<li>Fonctionne automatiquement avec les jeux compatibles</li>
+</ul>
+<h3 id="chargement-des-jeux-avec-support-amiibo">
+<a class="header-anchor" href="#chargement-des-jeux-avec-support-amiibo"></a>
+Chargement des jeux avec support Amiibo
+</h3><h2 id="utilisation-amiibo-étape-par-étape">
+<a class="header-anchor" href="#utilisation-amiibo-%c3%a9tape-par-%c3%a9tape"></a>
+Utilisation Amiibo étape par étape
+</h2><h3 id="exemple--the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#exemple--the-legend-of-zelda-breath-of-the-wild"></a>
+Exemple : The Legend of Zelda: Breath of the Wild
+</h3><h4 id="accès-à-la-rune-amiibo">
+<a class="header-anchor" href="#acc%c3%a8s-%c3%a0-la-rune-amiibo"></a>
+Accès à la rune Amiibo
+</h4><p><strong>Préparation en jeu :</strong></p>
+<ol>
+<li><strong>Progressez</strong> dans le jeu jusqu&rsquo;à obtenir la rune Amiibo</li>
+<li><strong>Équipez</strong> la rune Amiibo sur votre Tablette Sheikah</li>
+<li><strong>Trouvez</strong> une zone ouverte loin des bâtiments et falaises</li>
+<li><strong>Positionnez</strong> Link dans un endroit approprié</li>
+</ol>
+<h4 id="préparation-pour-scanner">
+<a class="header-anchor" href="#pr%c3%a9paration-pour-scanner"></a>
+Préparation pour scanner
+</h4><p><strong>Étapes avant le scan :</strong></p>
+<ol>
+<li><strong>Ouvrez</strong> votre dossier Amiibo sur votre ordinateur</li>
+<li><strong>Naviguez</strong> vers le sous-dossier Zelda</li>
+<li><strong>Identifiez</strong> l&rsquo;Amiibo que vous voulez utiliser</li>
+<li><strong>Gardez</strong> la fenêtre du dossier accessible</li>
+</ol>
+<h3 id="processus-de-scan-dans-cemu">
+<a class="header-anchor" href="#processus-de-scan-dans-cemu"></a>
+Processus de scan dans Cemu
+</h3><h4 id="accès-au-menu-nfc">
+<a class="header-anchor" href="#acc%c3%a8s-au-menu-nfc"></a>
+Accès au menu NFC
+</h4><p><strong>Scan étape par étape :</strong></p>
+<ol>
+<li><strong>Activez</strong> la rune Amiibo en jeu (maintenez haut sur le D-pad)</li>
+<li><strong>Basculez</strong> vers la fenêtre Cemu</li>
+<li><strong>Cliquez</strong> sur &ldquo;NFC&rdquo; dans la barre de menu supérieure</li>
+<li><strong>Sélectionnez</strong> &ldquo;Scan NFC Tag from File&hellip;&rdquo;</li>
+</ol>
+<h4 id="sélection-de-votre-amiibo">
+<a class="header-anchor" href="#s%c3%a9lection-de-votre-amiibo"></a>
+Sélection de votre Amiibo
+</h4><p><strong>Processus de sélection de fichier :</strong></p>
+<ol>
+<li><strong>Naviguez</strong> vers votre dossier Amiibo</li>
+<li><strong>Choisissez</strong> le fichier .bin désiré (ex: Link_Archer.bin)</li>
+<li><strong>Cliquez</strong> &ldquo;Ouvrir&rdquo; pour confirmer la sélection</li>
+<li><strong>Retournez</strong> immédiatement à la fenêtre de jeu</li>
+</ol>
+<h4 id="finalisation-du-scan">
+<a class="header-anchor" href="#finalisation-du-scan"></a>
+Finalisation du scan
+</h4><p><strong>Étapes de finalisation :</strong></p>
+<ol>
+<li><strong>Revenez</strong> à la fenêtre de jeu</li>
+<li><strong>Terminez</strong> l&rsquo;activation de la rune Amiibo</li>
+<li><strong>Regardez</strong> les objets apparaître du ciel</li>
+<li><strong>Collectez</strong> vos récompenses !</li>
+</ol>
+<p>Chaque jeux à sa propre méthode pour activer les amibo, regardez sur youtube si vous ne savez pas.</p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Jouer Clavier-Souris sur l&#39;Émulateur Cemu</title>
+      <link>http://localhost:1313/fr/post/keyboard_mouse_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/keyboard_mouse_cemu/</guid>
+      <description>
+        <![CDATA[<h1>Jouer Clavier-Souris sur l'Émulateur Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Note Importante</strong> : Bien que possible, l&rsquo;expérience clavier-souris sur Cemu ne sera pas aussi agréable qu&rsquo;avec une manette. Cette solution convient aux joueurs n&rsquo;ayant pas de manette compatible.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur l&rsquo;émulateur <strong>Cemu</strong> avec un <strong>clavier et une souris</strong> nécessite l&rsquo;utilisation d&rsquo;outils tiers pour simuler une manette. Ce guide vous explique comment configurer cette solution avec <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>.</p>
+<p>Cette méthode est particulièrement utile pour :</p>
+<ul>
+<li>Les joueurs n&rsquo;ayant pas de manette compatible</li>
+<li>Tester rapidement des jeux sans investir dans un contrôleur</li>
+<li>Certains genres de jeux adaptés au clavier-souris</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> ViGEmBus et Mouse2Joystick</li>
+<li><strong>Installer</strong> ViGEmBus (pilote de manette virtuelle)</li>
+<li><strong>Configurer</strong> Mouse2Joystick selon vos préférences</li>
+<li><strong>Paramétrer</strong> Cemu pour reconnaître les contrôles</li>
+<li><strong>Tester</strong> et ajuster les paramètres</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-nécessaires">
+<a class="header-anchor" href="#logiciels-n%c3%a9cessaires"></a>
+Logiciels nécessaires
+</h3><p><strong>Applications requises :</strong></p>
+<ul>
+<li><strong>ViGEmBus</strong> : Pilote pour manettes virtuelles</li>
+<li><strong>Mouse2Joystick</strong> : Convertit clavier/souris en signaux manette</li>
+<li><strong>Cemu</strong> : Émulateur Wii U (dernière version stable)</li>
+</ul>
+<h3 id="téléchargements">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargements"></a>
+Téléchargements
+</h3><h4 id="vigembus-pilote-de-manette-virtuelle">
+<a class="header-anchor" href="#vigembus-pilote-de-manette-virtuelle"></a>
+ViGEmBus (Pilote de manette virtuelle)
+</h4><p><strong>🔗 <a href="https://github.com/ViGEm/ViGEmBus/releases">Télécharger ViGEmBus</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Accédez</strong> à la page des releases</li>
+<li><strong>Téléchargez</strong> le fichier <code>.msi</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>ViGEmBus_Setup_1.17.333.msi</code></li>
+</ol>
+<p><img src="/images/vigembus-download.png" alt="ViGEmBus Download">
+<em>Page de téléchargement ViGEmBus</em></p>
+<p><strong>Caractéristiques ViGEmBus :</strong></p>
+<ul>
+<li><strong>Gratuit</strong> et open-source</li>
+<li><strong>Compatible</strong> Windows 10/11</li>
+<li><strong>Stable</strong> et régulièrement mis à jour</li>
+<li><strong>Nécessaire</strong> pour simuler des manettes Xbox</li>
+</ul>
+<h4 id="mouse2joystick-convertisseur-de-contrôles">
+<a class="header-anchor" href="#mouse2joystick-convertisseur-de-contr%c3%b4les"></a>
+Mouse2Joystick (Convertisseur de contrôles)
+</h4><p><strong>🔗 <a href="https://github.com/memethyl/Mouse2Joystick/releases">Télécharger Mouse2Joystick</a></strong></p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Téléchargez</strong> le fichier <code>.zip</code> le plus récent</li>
+<li><strong>Exemple</strong> : <code>Mouse2Joystick_v2.3.1.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+</ol>
+<p><img src="/images/mouse2joystick-download.png" alt="Mouse2Joystick Download">
+<em>Page de téléchargement Mouse2Joystick</em></p>
+<p><strong>Caractéristiques Mouse2Joystick :</strong></p>
+<ul>
+<li><strong>Portable</strong> : aucune installation requise</li>
+<li><strong>Personnalisable</strong> : mappage des touches configurable</li>
+<li><strong>Léger</strong> : faible impact sur les performances</li>
+<li><strong>Temps réel</strong> : conversion instantanée des mouvements</li>
+</ul>
+<h2 id="étape-1--installation-de-vigembus">
+<a class="header-anchor" href="#%c3%a9tape-1--installation-de-vigembus"></a>
+Étape 1 : Installation de ViGEmBus
+</h2><h3 id="processus-dinstallation">
+<a class="header-anchor" href="#processus-dinstallation"></a>
+Processus d&rsquo;installation
+</h3><h4 id="lancement-de-linstallateur">
+<a class="header-anchor" href="#lancement-de-linstallateur"></a>
+Lancement de l&rsquo;installateur
+</h4><ol>
+<li><strong>Localisez</strong> le fichier <code>.msi</code> téléchargé</li>
+<li><strong>Double-cliquez</strong> pour lancer l&rsquo;installation</li>
+<li><strong>Acceptez</strong> les permissions administrateur si demandées</li>
+</ol>
+<p><img src="/images/vigembus-installer.png" alt="ViGEmBus Installer">
+<em>Assistant d&rsquo;installation ViGEmBus</em></p>
+<h4 id="configuration-de-linstallation">
+<a class="header-anchor" href="#configuration-de-linstallation"></a>
+Configuration de l&rsquo;installation
+</h4><p><strong>Étapes d&rsquo;installation :</strong></p>
+<ol>
+<li><strong>Welcome</strong> → Cliquez &ldquo;Next&rdquo;</li>
+<li><strong>License Agreement</strong> → Acceptez et cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Destination Folder</strong> → Laissez par défaut, cliquez &ldquo;Next&rdquo;</li>
+<li><strong>Ready to Install</strong> → Cliquez &ldquo;Install&rdquo;</li>
+<li><strong>Completed</strong> → Cliquez &ldquo;Finish&rdquo;</li>
+</ol>
+<p><strong>Composants installés :</strong></p>
+<ul>
+<li>Pilote de bus virtuel</li>
+<li>Bibliothèques système nécessaires</li>
+<li>Interface de gestion des périphériques</li>
+</ul>
+<h3 id="vérification-de-linstallation">
+<a class="header-anchor" href="#v%c3%a9rification-de-linstallation"></a>
+Vérification de l&rsquo;installation
+</h3><h4 id="contrôle-dans-le-gestionnaire-de-périphériques">
+<a class="header-anchor" href="#contr%c3%b4le-dans-le-gestionnaire-de-p%c3%a9riph%c3%a9riques"></a>
+Contrôle dans le Gestionnaire de périphériques
+</h4><ol>
+<li><strong>Clic droit</strong> sur &ldquo;Ce PC&rdquo; → <strong>Gestionnaire de périphériques</strong></li>
+<li><strong>Développez</strong> &ldquo;Périphériques système&rdquo;</li>
+<li><strong>Vérifiez</strong> la présence de &ldquo;ViGEmBus Device&rdquo;</li>
+</ol>
+<p><img src="/images/vigembus-device-manager.png" alt="ViGEmBus Device Manager">
+<em>ViGEmBus dans le Gestionnaire de périphériques</em></p>
+<h2 id="étape-2--configuration-de-mouse2joystick">
+<a class="header-anchor" href="#%c3%a9tape-2--configuration-de-mouse2joystick"></a>
+Étape 2 : Configuration de Mouse2Joystick
+</h2><h3 id="extraction-et-première-utilisation">
+<a class="header-anchor" href="#extraction-et-premi%c3%a8re-utilisation"></a>
+Extraction et première utilisation
+</h3><h4 id="préparation-du-logiciel">
+<a class="header-anchor" href="#pr%c3%a9paration-du-logiciel"></a>
+Préparation du logiciel
+</h4><ol>
+<li><strong>Naviguez</strong> vers le fichier <code>.zip</code> téléchargé</li>
+<li><strong>Clic droit</strong> → <strong>Extraire tout</strong></li>
+<li><strong>Choisissez</strong> un dossier permanent (ex: <code>C:\Tools\Mouse2Joystick\</code>)</li>
+<li><strong>Lancez</strong> <code>Mouse2Joystick.exe</code></li>
+</ol>
+<p><img src="/images/mouse2joystick-extraction.png" alt="Mouse2Joystick Extraction">
+<em>Extraction de Mouse2Joystick</em></p>
+<h3 id="interface-et-configuration-de-base">
+<a class="header-anchor" href="#interface-et-configuration-de-base"></a>
+Interface et configuration de base
+</h3><h4 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h4><p>Une fois lancé, Mouse2Joystick affiche une interface simple :</p>
+<p><img src="/images/mouse2joystick-interface.png" alt="Mouse2Joystick Interface">
+<em>Interface principale de Mouse2Joystick</em></p>
+<h4 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h4><p><strong>Paramètres de base suggérés :</strong></p>
+<p><strong>Section &ldquo;Mouse Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Mouse Sensitivity X: 3.0
+Mouse Sensitivity Y: 3.0
+Mouse Deadzone: 0.1
+Invert Y-axis: Selon préférence
+</code></pre><p><strong>Section &ldquo;Controller Settings&rdquo; :</strong></p>
+<pre tabindex="0"><code>Controller Type: Xbox 360 Controller
+Vibration: Disabled (pas nécessaire)
+</code></pre><h3 id="mappage-des-touches">
+<a class="header-anchor" href="#mappage-des-touches"></a>
+Mappage des touches
+</h3><h4 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h4><p><strong>Mappage standard recommandé :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Action Wii U</th>
+          <th>Touche Clavier</th>
+          <th>Fonction</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Stick gauche</strong></td>
+          <td>WASD</td>
+          <td>Déplacement</td>
+      </tr>
+      <tr>
+          <td><strong>Stick droit</strong></td>
+          <td>Souris</td>
+          <td>Caméra</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton A</strong></td>
+          <td>Espace</td>
+          <td>Action principale</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton B</strong></td>
+          <td>Ctrl gauche</td>
+          <td>Action secondaire</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton X</strong></td>
+          <td>E</td>
+          <td>Interaction</td>
+      </tr>
+      <tr>
+          <td><strong>Bouton Y</strong></td>
+          <td>Q</td>
+          <td>Menu/Inventaire</td>
+      </tr>
+      <tr>
+          <td><strong>L/R</strong></td>
+          <td>Shift/Tab</td>
+          <td>Gâchettes</td>
+      </tr>
+      <tr>
+          <td><strong>ZL/ZR</strong></td>
+          <td>Clic gauche/droit</td>
+          <td>Gâchettes numériques</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/mouse2joystick-mapping.png" alt="Mouse2Joystick Mapping">
+<em>Configuration du mappage des touches</em></p>
+<h4 id="paramètres-avancés">
+<a class="header-anchor" href="#param%c3%a8tres-avanc%c3%a9s"></a>
+Paramètres avancés
+</h4><p><strong>Sensibilité de la souris :</strong></p>
+<ul>
+<li><strong>Jeux FPS</strong> : Sensibilité élevée (4.0-5.0)</li>
+<li><strong>Jeux d&rsquo;aventure</strong> : Sensibilité moyenne (2.5-3.5)</li>
+<li><strong>Jeux de plateforme</strong> : Sensibilité faible (1.5-2.5)</li>
+</ul>
+<p><strong>Dead zones :</strong></p>
+<ul>
+<li><strong>Souris</strong> : 0.05-0.15 (évite les micro-mouvements)</li>
+<li><strong>Clavier</strong> : 0.0 (réponse instantanée)</li>
+</ul>
+<h2 id="étape-3--configuration-de-cemu">
+<a class="header-anchor" href="#%c3%a9tape-3--configuration-de-cemu"></a>
+Étape 3 : Configuration de Cemu
+</h2><h3 id="accès-aux-paramètres-de-contrôle">
+<a class="header-anchor" href="#acc%c3%a8s-aux-param%c3%a8tres-de-contr%c3%b4le"></a>
+Accès aux paramètres de contrôle
+</h3><h4 id="navigation-dans-cemu">
+<a class="header-anchor" href="#navigation-dans-cemu"></a>
+Navigation dans Cemu
+</h4><ol>
+<li><strong>Lancez</strong> Cemu</li>
+<li><strong>Menu</strong> &ldquo;Options&rdquo; → <strong>&ldquo;Paramètres de la manette&rdquo;</strong> (Input Settings)</li>
+<li><strong>Supprimez</strong> toutes les manettes existantes avec le bouton <strong>&quot;-&quot;</strong></li>
+</ol>
+<p><img src="/images/cemu-input-settings.png" alt="Cemu Input Settings">
+<em>Paramètres de contrôle dans Cemu</em></p>
+<h3 id="suppression-des-contrôleurs-existants">
+<a class="header-anchor" href="#suppression-des-contr%c3%b4leurs-existants"></a>
+Suppression des contrôleurs existants
+</h3><h4 id="nettoyage-des-configurations">
+<a class="header-anchor" href="#nettoyage-des-configurations"></a>
+Nettoyage des configurations
+</h4><p><strong>Étapes de suppression :</strong></p>
+<ol>
+<li><strong>Identifiez</strong> tous les contrôleurs listés</li>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;-&quot;</strong> pour chaque contrôleur</li>
+<li><strong>Confirmez</strong> la suppression si demandé</li>
+<li><strong>Vérifiez</strong> que la liste est vide</li>
+</ol>
+<p><img src="/images/cemu-remove-controllers.png" alt="Cemu Remove Controllers">
+<em>Suppression des contrôleurs existants</em></p>
+<h3 id="ajout-des-nouveaux-contrôleurs">
+<a class="header-anchor" href="#ajout-des-nouveaux-contr%c3%b4leurs"></a>
+Ajout des nouveaux contrôleurs
+</h3><h4 id="configuration-xinput-mouse2joystick">
+<a class="header-anchor" href="#configuration-xinput-mouse2joystick"></a>
+Configuration XInput (Mouse2Joystick)
+</h4><p><strong>Avec Mouse2Joystick ouvert :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> sur le bouton <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;XInput&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo; qui devrait apparaître</li>
+<li><strong>Confirmez</strong> la sélection</li>
+</ol>
+<p><img src="/images/cemu-add-xinput.png" alt="Cemu Add XInput">
+<em>Ajout du contrôleur XInput</em></p>
+<h4 id="configuration-keyboard-touches-supplémentaires">
+<a class="header-anchor" href="#configuration-keyboard-touches-suppl%c3%a9mentaires"></a>
+Configuration Keyboard (Touches supplémentaires)
+</h4><p><strong>Pour les touches non mappées :</strong></p>
+<ol>
+<li><strong>Cliquez</strong> à nouveau sur <strong>&quot;+&quot;</strong></li>
+<li><strong>Sélectionnez</strong> &ldquo;Keyboard&rdquo; comme API</li>
+<li><strong>Choisissez</strong> &ldquo;Controller 1&rdquo;</li>
+<li><strong>Configurez</strong> les touches spécifiques Wii U</li>
+</ol>
+<p><img src="/images/cemu-add-keyboard.png" alt="Cemu Add Keyboard">
+<em>Ajout du contrôleur clavier</em></p>
+<h3 id="configuration-finale-des-touches">
+<a class="header-anchor" href="#configuration-finale-des-touches"></a>
+Configuration finale des touches
+</h3><h4 id="mappage-dans-cemu">
+<a class="header-anchor" href="#mappage-dans-cemu"></a>
+Mappage dans Cemu
+</h4><p><strong>Configuration recommandée :</strong></p>
+<p><strong>Contrôleur XInput (Mouse2Joystick) :</strong></p>
+<pre tabindex="0"><code>Left Stick: Mouvement du personnage
+Right Stick: Contrôle de la caméra
+A Button: Action principale
+B Button: Retour/Annuler
+X Button: Action secondaire
+Y Button: Menu
+L/R Bumper: Gâchettes rapides
+L/R Trigger: Gâchettes analogiques
+</code></pre><p><strong>Contrôleur Keyboard (touches spéciales) :</strong></p>
+<pre tabindex="0"><code>Plus: Entrée (Menu principal)
+Minus: Échap (Pause)
+Home: Tab (Menu Home)
+Screenshot: F12
+</code></pre><p><img src="/images/cemu-final-config.png" alt="Cemu Final Configuration">
+<em>Configuration finale des contrôles</em></p>
+<h2 id="tests-et-ajustements">
+<a class="header-anchor" href="#tests-et-ajustements"></a>
+Tests et ajustements
+</h2><h3 id="test-de-fonctionnement">
+<a class="header-anchor" href="#test-de-fonctionnement"></a>
+Test de fonctionnement
+</h3><h4 id="vérification-de-base">
+<a class="header-anchor" href="#v%c3%a9rification-de-base"></a>
+Vérification de base
+</h4><p><strong>Checklist de test :</strong></p>
+<pre tabindex="0"><code>☑ Mouse2Joystick fonctionne en arrière-plan
+☑ Mouvements de souris = rotation caméra
+☑ WASD = déplacement du personnage
+☑ Clics souris = gâchettes
+☑ Touches clavier = boutons manette
+</code></pre><h4 id="test-en-jeu">
+<a class="header-anchor" href="#test-en-jeu"></a>
+Test en jeu
+</h4><p><strong>Jeux recommandés pour tester :</strong></p>
+<ul>
+<li><strong>The Legend of Zelda: Breath of the Wild</strong> : Test complet des contrôles</li>
+<li><strong>Super Mario 3D World</strong> : Test de précision</li>
+<li><strong>Mario Kart 8</strong> : Test de réactivité</li>
+</ul>
+<h3 id="optimisations-et-ajustements">
+<a class="header-anchor" href="#optimisations-et-ajustements"></a>
+Optimisations et ajustements
+</h3><h4 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h4><p><strong>🚫 La souris ne contrôle pas la caméra</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> que Mouse2Joystick est ouvert</li>
+<li><strong>Redémarrez</strong> Mouse2Joystick</li>
+<li><strong>Reconfigurez</strong> le stick droit dans Cemu</li>
+</ol>
+<p><strong>⚠️ Mouvements saccadés</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Réduisez</strong> la sensibilité de la souris</li>
+<li><strong>Augmentez</strong> la dead zone</li>
+<li><strong>Fermez</strong> les applications consommatrices de ressources</li>
+</ol>
+<p><strong>💻 Latence importante</strong></p>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Mode plein écran</strong> dans Cemu</li>
+<li><strong>Désactivez</strong> la synchronisation verticale</li>
+<li><strong>Augmentez</strong> la priorité de processus de Mouse2Joystick</li>
+</ol>
+<h3 id="profils-personnalisés">
+<a class="header-anchor" href="#profils-personnalis%c3%a9s"></a>
+Profils personnalisés
+</h3><h4 id="sauvegarde-des-configurations">
+<a class="header-anchor" href="#sauvegarde-des-configurations"></a>
+Sauvegarde des configurations
+</h4><p><strong>Création de profils par jeu :</strong></p>
+<ol>
+<li><strong>Configurez</strong> les contrôles pour un jeu spécifique</li>
+<li><strong>Sauvegardez</strong> la configuration Mouse2Joystick</li>
+<li><strong>Exportez</strong> les paramètres Cemu</li>
+<li><strong>Nommez</strong> clairement chaque profil</li>
+</ol>
+<p><strong>Exemples de profils :</strong></p>
+<ul>
+<li><code>Zelda_BOTW_KBM.xml</code></li>
+<li><code>Mario3D_KBM.xml</code></li>
+<li><code>MarioKart8_KBM.xml</code></li>
+</ul>
+<h2 id="jeux-recommandés-et-incompatibles">
+<a class="header-anchor" href="#jeux-recommand%c3%a9s-et-incompatibles"></a>
+Jeux recommandés et incompatibles
+</h2><h3 id="jeux-adaptés-au-clavier-souris">
+<a class="header-anchor" href="#jeux-adapt%c3%a9s-au-clavier-souris"></a>
+Jeux adaptés au clavier-souris
+</h3><h4 id="excellente-compatibilité">
+<a class="header-anchor" href="#excellente-compatibilit%c3%a9"></a>
+Excellente compatibilité
+</h4><p><strong>Jeux fonctionnant bien :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Raison</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zelda: Breath of the Wild</strong></td>
+          <td>Contrôle libre de caméra</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Xenoblade Chronicles X</strong></td>
+          <td>Gameplay lent, RPG</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Assassin&rsquo;s Creed 4</strong></td>
+          <td>Port PC-like</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Call of Duty: Ghosts</strong></td>
+          <td>FPS natif</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="compatibilité-moyenne">
+<a class="header-anchor" href="#compatibilit%c3%a9-moyenne"></a>
+Compatibilité moyenne
+</h4><p><strong>Jeux jouables avec adaptations :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Jeu</th>
+          <th>Défis</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Super Mario 3D World</strong></td>
+          <td>Précision requise</td>
+          <td>⭐⭐⭐⭐☆</td>
+      </tr>
+      <tr>
+          <td><strong>Donkey Kong Country</strong></td>
+          <td>Timing important</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+      <tr>
+          <td><strong>New Super Mario Bros. U</strong></td>
+          <td>Contrôles rapides</td>
+          <td>⭐⭐⭐☆☆</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="jeux-non-recommandés">
+<a class="header-anchor" href="#jeux-non-recommand%c3%a9s"></a>
+Jeux non recommandés
+</h3><h4 id="mauvaise-compatibilité">
+<a class="header-anchor" href="#mauvaise-compatibilit%c3%a9"></a>
+Mauvaise compatibilité
+</h4><p><strong>Jeux difficiles au clavier-souris :</strong></p>
+<ul>
+<li><strong>Mario Kart 8</strong> : Contrôles analogiques cruciaux</li>
+<li><strong>Super Smash Bros.</strong> : Précision et rapidité extrêmes</li>
+<li><strong>Pokken Tournament</strong> : Combats complexes</li>
+<li><strong>Splatoon</strong> : Gyroscope nécessaire</li>
+</ul>
+<h2 id="troubleshooting-avancé">
+<a class="header-anchor" href="#troubleshooting-avanc%c3%a9"></a>
+Troubleshooting avancé
+</h2><h3 id="problèmes-de-détection">
+<a class="header-anchor" href="#probl%c3%a8mes-de-d%c3%a9tection"></a>
+Problèmes de détection
+</h3><h4 id="mouse2joystick-non-reconnu">
+<a class="header-anchor" href="#mouse2joystick-non-reconnu"></a>
+Mouse2Joystick non reconnu
+</h4><p><strong>Diagnostic :</strong></p>
+<ol>
+<li><strong>Vérifiez</strong> l&rsquo;installation de ViGEmBus</li>
+<li><strong>Redémarrez</strong> Windows</li>
+<li><strong>Relancez</strong> Mouse2Joystick en administrateur</li>
+<li><strong>Vérifiez</strong> les processus en arrière-plan</li>
+</ol>
+<p><strong>Solutions avancées :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span># Vérifier les services ViGEmBus
+</span></span><span style="display:flex;"><span>sc query ViGEmBus
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Redémarrer le service si nécessaire
+</span></span><span style="display:flex;"><span>sc stop ViGEmBus
+</span></span><span style="display:flex;"><span>sc start ViGEmBus
+</span></span></code></pre></div><h4 id="conflits-avec-dautres-logiciels">
+<a class="header-anchor" href="#conflits-avec-dautres-logiciels"></a>
+Conflits avec d&rsquo;autres logiciels
+</h4><p><strong>Logiciels potentiellement conflictuels :</strong></p>
+<ul>
+<li><strong>Steam Input</strong> : Désactivez pour Cemu</li>
+<li><strong>Xbox Game Bar</strong> : Peut interférer</li>
+<li><strong>Discord Overlay</strong> : Parfois problématique</li>
+<li><strong>GeForce Experience</strong> : Désactivez l&rsquo;overlay</li>
+</ul>
+<h3 id="optimisations-de-performance">
+<a class="header-anchor" href="#optimisations-de-performance"></a>
+Optimisations de performance
+</h3><h4 id="paramètres-windows">
+<a class="header-anchor" href="#param%c3%a8tres-windows"></a>
+Paramètres Windows
+</h4><p><strong>Optimisations système :</strong></p>
+<pre tabindex="0"><code>Mode de jeu Windows: Activé
+Priorité haute pour Cemu: Recommandée
+Fermer applications inutiles: Obligatoire
+Antivirus en mode jeu: Si disponible
+</code></pre><h4 id="paramètres-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-cemu"></a>
+Paramètres Cemu
+</h4><p><strong>Configuration optimale :</strong></p>
+<pre tabindex="0"><code>Async Shader Compilation: Activé
+Precompiled Shaders: Utilisez si disponibles
+GPU Buffer Cache Accuracy: Medium
+CPU Mode: Triple-core recompiler
+</code></pre><h2 id="ressources-et-aide-supplémentaire">
+<a class="header-anchor" href="#ressources-et-aide-suppl%c3%a9mentaire"></a>
+Ressources et aide supplémentaire
+</h2><h3 id="tutoriel-vidéo">
+<a class="header-anchor" href="#tutoriel-vid%c3%a9o"></a>
+Tutoriel vidéo
+</h3><p><strong>🎥 <a href="https://youtu.be/UAtG_UEbESI">Tutoriel complet en vidéo</a></strong></p>
+<p>Le tutoriel vidéo couvre :</p>
+<ul>
+<li>Installation complète étape par étape</li>
+<li>Configuration en temps réel</li>
+<li>Démonstration sur plusieurs jeux</li>
+<li>Résolution des problèmes courants</li>
+</ul>
+<h3 id="communauté-et-support">
+<a class="header-anchor" href="#communaut%c3%a9-et-support"></a>
+Communauté et support
+</h3><h4 id="forums-et-ressources">
+<a class="header-anchor" href="#forums-et-ressources"></a>
+Forums et ressources
+</h4><p><strong>Sites utiles :</strong></p>
+<ul>
+<li><strong>Reddit</strong> : r/cemu pour l&rsquo;aide communautaire</li>
+<li><strong>Discord Cemu</strong> : Support en temps réel</li>
+<li><strong>GitHub</strong> : Rapports de bugs et améliorations</li>
+<li><strong>YouTube</strong> : Tutoriels spécialisés</li>
+</ul>
+<h4 id="documentation-officielle">
+<a class="header-anchor" href="#documentation-officielle"></a>
+Documentation officielle
+</h4><p><strong>Ressources officielles :</strong></p>
+<ul>
+<li><strong>Cemu Wiki</strong> : Guide complet de l&rsquo;émulateur</li>
+<li><strong>ViGEmBus Docs</strong> : Documentation technique</li>
+<li><strong>Mouse2Joystick GitHub</strong> : Issues et mises à jour</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Jouer aux jeux <strong>Wii U</strong> sur <strong>Cemu</strong> avec un clavier et une souris est possible grâce à <strong>Mouse2Joystick</strong> et <strong>ViGEmBus</strong>. Bien que l&rsquo;expérience ne soit pas optimale pour tous les jeux, cette solution permet de découvrir l&rsquo;excellent catalogue Wii U sans investir dans une manette.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Configuration essentielle :</strong></p>
+<ol>
+<li><strong>ViGEmBus</strong> installé et fonctionnel</li>
+<li><strong>Mouse2Joystick</strong> configuré et actif</li>
+<li><strong>Cemu</strong> configuré avec XInput + Keyboard</li>
+<li><strong>Tests</strong> et ajustements par jeu</li>
+<li><strong>Patience</strong> pour l&rsquo;adaptation</li>
+</ol></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une meilleure expérience :</strong></p>
+<ul>
+<li>Commencez par des jeux adaptés (Zelda, RPG)</li>
+<li>Prenez le temps d&rsquo;ajuster les sensibilités</li>
+<li>Sauvegardez vos configurations</li>
+<li>Considérez l&rsquo;achat d&rsquo;une manette à terme</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Cette méthode fonctionne-t-elle avec tous les jeux Wii U ?</strong>
+R : Non, certains jeux nécessitent absolument une manette pour une expérience correcte (Mario Kart, Smash Bros, etc.).</p>
+<p><strong>Q : Puis-je utiliser cette configuration pour d&rsquo;autres émulateurs ?</strong>
+R : Oui, Mouse2Joystick fonctionne avec la plupart des émulateurs supportant XInput.</p>
+<p><strong>Q : La latence est-elle importante ?</strong>
+R : La latence est généralement faible, mais peut varier selon votre configuration matérielle.</p>
+<p><strong>Q : Dois-je laisser Mouse2Joystick ouvert en permanence ?</strong>
+R : Oui, Mouse2Joystick doit rester ouvert tant que vous jouez pour maintenir la simulation de manette.</p>
+<p><strong>Q : Cette méthode affecte-t-elle les performances de Cemu ?</strong>
+R : L&rsquo;impact est minimal, Mouse2Joystick étant très léger en ressources.</p>
+<hr>
+<p><strong>Ce guide vous a aidé à configurer vos contrôles ?</strong> Partagez vos configurations optimales et vos retours d&rsquo;expérience en commentaires !</p>
+<p><strong>Articles connexes :</strong></p>
+<ul>
+<li><a href="/fr/post/cemu-complete-guide/">Guide Complet de l&rsquo;Émulateur Cemu</a></li>
+<li><a href="/fr/post/cemu-performance-optimization/">Optimiser les Performances sur Cemu</a></li>
+<li><a href="/fr/post/best-controllers-emulation/">Meilleures Manettes pour Émulation</a></li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+  </channel>
+</rss>

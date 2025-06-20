@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nintendo Wii U on Wiki of Axekin</title>
-    <link>https://wiki.axekin.com/en/tags/nintendo-wii-u/</link>
+    <link>http://localhost:1313/en/tags/nintendo-wii-u/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/en/tags/nintendo-wii-u/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/en/tags/nintendo-wii-u/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Cemu Installation and Configuration</title>
-      <link>https://wiki.axekin.com/en/post/cemu/</link>
+      <link>http://localhost:1313/en/post/cemu/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/en/post/cemu/</guid>
+      <guid>http://localhost:1313/en/post/cemu/</guid>
       <description>
         <![CDATA[<h1>Cemu Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -337,12 +337,12 @@ Game formats
   </div>
 </div>
 <p><strong>Enjoy your Wii U games in 4K with incredible mods! 🎮✨</strong></p>
-<pre tabindex="0"><code></code></pre>
+
         
-        <hr><p>Published on 2025-06-14 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-14</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-14 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-14</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
-        <category>gaming</category><category>Tutorials</category>
+        <category>Cemu</category>
       
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Émulation on Wiki de Axekin</title>
-    <link>https://wiki.axekin.com/fr/tags/%C3%A9mulation/</link>
+    <link>http://localhost:1313/fr/tags/%C3%A9mulation/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="https://wiki.axekin.com/fr/tags/%C3%A9mulation/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/fr/tags/%C3%A9mulation/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Installation et configuration de Cemu</title>
-      <link>https://wiki.axekin.com/fr/post/cemu/</link>
+      <link>http://localhost:1313/fr/post/cemu/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/cemu/</guid>
+      <guid>http://localhost:1313/fr/post/cemu/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -339,10 +339,10 @@ Formats de jeux
 <p><strong>Profitez de vos jeux Wii U en 4K avec des mods incroyables ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-14 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>gaming</category><category>Tutoriels</category>
+        <category>Cemu</category>
       
     </item>
     
@@ -351,10 +351,10 @@ Formats de jeux
 
     <item>
       <title>Installation et configuration de RPCS3</title>
-      <link>https://wiki.axekin.com/fr/post/rpcs3/</link>
+      <link>http://localhost:1313/fr/post/rpcs3/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/rpcs3/</guid>
+      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1106,10 +1106,10 @@ Problèmes courants
 <p><strong>Redécouvrez les chefs-d&rsquo;œuvre PS3 avec RPCS3 ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>Gaming</category><category>Tutoriels</category>
+        <category>RPCS3</category>
       
     </item>
     
@@ -1118,10 +1118,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de melonDS</title>
-      <link>https://wiki.axekin.com/fr/post/melonds/</link>
+      <link>http://localhost:1313/fr/post/melonds/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/melonds/</guid>
+      <guid>http://localhost:1313/fr/post/melonds/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de melonDS</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -1567,457 +1567,10 @@ Problèmes courants
 </h2><p><strong>Redécouvrez la bibliothèque Nintendo DS en haute définition avec melonDS ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>Gaming</category><category>Tutoriels</category>
-      
-    </item>
-    
-      
-    
-
-    <item>
-      <title>Installation et configuration de Azahar</title>
-      <link>https://wiki.axekin.com/fr/post/citra/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
-      <description>
-        <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
-        
-          <h2 id="-introduction-à-citra">
-<a class="header-anchor" href="#-introduction-%c3%a0-citra"></a>
-🎮 Introduction à Citra
-</h2><p><strong>Citra</strong> est l&rsquo;émulateur Nintendo 3DS open-source le plus abouti au monde. Développé depuis 2013, il permet de jouer aux jeux 3DS sur PC avec des améliorations graphiques significatives et une compatibilité quasi-parfaite.</p>
-<h2 id="-étape-1--téléchargement-de-citra">
-<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-citra"></a>
-🔧 Étape 1 : Téléchargement de Citra
-</h2><h3 id="option-1--azahar-officiam">
-<a class="header-anchor" href="#option-1--azahar-officiam"></a>
-Option 1 : Azahar Officiam
-</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
-</span></span><span style="display:flex;"><span>https://github.com/azahar-emu/azahar/releases
-</span></span></code></pre></div><ol>
-<li><strong>Cliquez</strong> sur &ldquo;Download for Windows&rdquo;</li>
-<li><strong>Téléchargez</strong> <code>azahar-XXXX-rc1-windows-msvc-installer.exe</code></li>
-<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>Dolphin\Citra</code> ou à la racine d&rsquo;un de vos autre disque, pas le C)</li>
-</ol>
-<h2 id="téléchargement-de-votre-jeu">
-<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-de-votre-jeu"></a>
-Téléchargement de votre jeu
-</h2><h3 id="étape-1--accéder-à-la-bibliothèque-de-jeux">
-<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-biblioth%c3%a8que-de-jeux"></a>
-Étape 1 : Accéder à la bibliothèque de jeux
-</h3><p>Rendez-vous sur <strong><a href="https://www.axekin.com/search?platform=3ds">🎮 Axekin Games - Nintendo 3DS</a></strong> pour accéder à la collection de jeux Nintendo 3DS.</p>
-<h3 id="étape-2--télécharger-le-jeu">
-<a class="header-anchor" href="#%c3%a9tape-2--t%c3%a9l%c3%a9charger-le-jeu"></a>
-Étape 2 : Télécharger le jeu
-</h3><ol>
-<li><strong>Recherchez</strong> le jeu désiré dans la liste</li>
-<li><strong>Cliquez</strong> sur le bouton de téléchargement</li>
-<li><strong>Attendez</strong> la fin du téléchargement</li>
-</ol>
-<h3 id="étape-3--extraction-du-fichier">
-<a class="header-anchor" href="#%c3%a9tape-3--extraction-du-fichier"></a>
-Étape 3 : Extraction du fichier
-</h3><p>Une fois le téléchargement terminé, <strong>extrayez</strong> l&rsquo;archive avec l&rsquo;un de ces logiciels :</p>
-<table>
-  <thead>
-      <tr>
-          <th>Logiciel</th>
-          <th>Lien de téléchargement</th>
-          <th>Compatibilité</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>7-Zip</strong></td>
-          <td><a href="https://www.7-zip.org/">Télécharger 7-Zip</a></td>
-          <td>Windows/Linux</td>
-      </tr>
-      <tr>
-          <td><strong>WinRAR</strong></td>
-          <td><a href="https://www.win-rar.com/">Télécharger WinRAR</a></td>
-          <td>Windows</td>
-      </tr>
-  </tbody>
-</table>
-<blockquote>
-<p><strong>💡 Astuce</strong> : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d&rsquo;essai.</p></blockquote>
-<p><strong>Résultat</strong> : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec 3DS ! 🎯</p>
-<h2 id="-étape-2--structure-des-dossiers">
-<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
-📁 Étape 2 : Structure des dossiers
-</h2><p>Créez cette structure de dossiers pour organiser vos fichiers :</p>
-<p>Pour une organisation optimale de votre bibliothèque, voici l&rsquo;arborescence conseillée :</p>
-<pre tabindex="0"><code>Jeux 3DS/
-├── Animal Crossing - Happy Home Designer/
-│   ├── BASE/                # 🎮 Le jeu de base (fichier principal)
-│   ├── UPDATE/              # 🔄 Mise à jour du jeu (recommandé)
-│   └── DLC/                 # 📦 Contenu téléchargeable (optionnel)
-├── Dead or Alive - Dimensions/
-│   ├── BASE/                # 🎮 Le jeu de base
-│   ├── UPDATE/              # 🔄 Mise à jour du jeu
-│   └── DLC/                 # 📦 DLC supplémentaires
-├── Ben 10 - Galactic Racing/
-│   ├── BASE/
-│   ├── UPDATE/
-│   └── DLC/
-└── Captain America - Super Soldier/
-    ├── BASE/
-    └── UPDATE/              # (Pas de DLC pour ce jeu)
-</code></pre><h3 id="types-de-contenu">
-<a class="header-anchor" href="#types-de-contenu"></a>
-Types de contenu
-</h3><div class="admonition admonition-tip">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Comprendre les dossiers
-  </div>
-  <div class="admonition-content">
-    <ul>
-<li><strong>BASE</strong> 📁 : Le jeu principal que vous téléchargez</li>
-<li><strong>UPDATE</strong> 📁 : Mises à jour et correctifs (recommandé)</li>
-<li><strong>DLC</strong> 📁 : Contenu supplémentaire payant (optionnel mais recommandé)</li>
-</ul>
-
-  </div>
-</div>
-<div class="admonition admonition-success">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Avantages de cette organisation
-  </div>
-  <div class="admonition-content">
-    ✅ <strong>Détection automatique</strong> : Les jeux s&rsquo;ajoutent automatiquement dans l&rsquo;émulateur<br>
-✅ <strong>Gestion simplifiée</strong> : Plus besoin de sélectionner manuellement chaque ROM<br>
-✅ <strong>Organisation claire</strong> : Facile de voir quel contenu vous avez pour chaque jeu<br>
-✅ <strong>Maintenance aisée</strong> : Ajout/suppression de contenu simplifié
-  </div>
-</div>
-<blockquote>
-<p><strong>📝 Remarque importante</strong> : Si un jeu n&rsquo;a pas de mise à jour ou de DLC, inutile de créer les dossiers correspondants. Créez uniquement les dossiers pour le contenu que vous possédez.</p></blockquote>
-<h3 id="résultat">
-<a class="header-anchor" href="#r%c3%a9sultat"></a>
-Résultat
-</h3><p>Une fois cette structure mise en place, votre émulateur détectera automatiquement tous les jeux présents dans le dossier &ldquo;Jeux 3DS&rdquo; et les organisera proprement dans votre bibliothèque ! 🎯</p>
-<h2 id="-configuration-portable-recommandé">
-<a class="header-anchor" href="#-configuration-portable-recommand%c3%a9"></a>
-💡 Configuration portable (Recommandé)
-</h2><div class="admonition admonition-tip">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Installation portable
-  </div>
-  <div class="admonition-content">
-    <strong>Avant le premier lancement</strong>, créez un dossier nommé <code>user</code> à la racine du répertoire Azahar. Cette manipulation rendra l&rsquo;installation entièrement portable.
-  </div>
-</div>
-<h3 id="avantages-du-mode-portable">
-<a class="header-anchor" href="#avantages-du-mode-portable"></a>
-Avantages du mode portable
-</h3><table>
-  <thead>
-      <tr>
-          <th>Aspect</th>
-          <th>Mode normal</th>
-          <th>Mode portable</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Configurations</strong></td>
-          <td>Stockées dans le système</td>
-          <td>Stockées dans le dossier</td>
-      </tr>
-      <tr>
-          <td><strong>Sauvegardes</strong></td>
-          <td>Dispersées sur l&rsquo;ordinateur</td>
-          <td>Centralisées dans un dossier</td>
-      </tr>
-      <tr>
-          <td><strong>Portabilité</strong></td>
-          <td>❌ Liée au système</td>
-          <td>✅ Déplaçable facilement</td>
-      </tr>
-      <tr>
-          <td><strong>Sauvegarde</strong></td>
-          <td>Difficile à localiser</td>
-          <td>Simple à sauvegarder</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="structure-après-création-du-dossier-portable">
-<a class="header-anchor" href="#structure-apr%c3%a8s-cr%c3%a9ation-du-dossier-portable"></a>
-Structure après création du dossier portable
-</h3><pre tabindex="0"><code>📁 Azahar/
-├── 🎮 Azahar.exe
-├── 📁 user/              # ← Créez ce dossier !
-│   ├── 📁 bis/
-│   ├── 📁 games/
-│   ├── 📁 profiles/
-│   └── 📁 system/
-└── 📄 Autres fichiers...
-</code></pre><div class="admonition admonition-success">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Résultat
-  </div>
-  <div class="admonition-content">
-    <strong>Toutes vos données</strong> (configurations, sauvegardes, profils) seront stockées dans le dossier <code>user</code>, facilitant grandement la gestion et les sauvegardes !
-  </div>
-</div>
-<h3 id="instructions-de-création">
-<a class="header-anchor" href="#instructions-de-cr%c3%a9ation"></a>
-Instructions de création
-</h3><ol>
-<li><strong>Naviguez</strong> vers le dossier d&rsquo;installation de Azahar</li>
-<li><strong>Créez</strong> un nouveau dossier nommé exactement <code>user</code></li>
-<li><strong>Lancez</strong> Azahar - il détectera automatiquement le mode portable</li>
-</ol>
-<blockquote>
-<p><strong>📝 Note</strong> : Cette opération doit être effectuée <strong>avant</strong> le premier lancement pour être prise en compte !</p></blockquote>
-<h2 id="-étape-3--installation-et-premier-lancement">
-<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
-⚙️ Étape 3 : Installation et premier lancement
-</h2><h3 id="installation-des-prérequis-windows">
-<a class="header-anchor" href="#installation-des-pr%c3%a9requis-windows"></a>
-Installation des prérequis Windows
-</h3><h3 id="premier-lancement">
-<a class="header-anchor" href="#premier-lancement"></a>
-Premier lancement
-</h3><ol>
-<li><strong>Exécutez</strong> <code>azahar.exe</code></li>
-<li><strong>Définissez</strong> le dossier des jeux (double cliquer sur le menu, ajouter le dossier &ldquo;Jeux 3DS&rdquo;)</li>
-</ol>
-<h2 id="-étape-3--configuration-optimale">
-<a class="header-anchor" href="#-%c3%a9tape-3--configuration-optimale"></a>
-⚙️ Étape 3 : Configuration optimale
-</h2><h3 id="paramètres-généraux">
-<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
-Paramètres généraux
-</h3><pre tabindex="0"><code>Emulation → Configure → General
-</code></pre><ul>
-<li><strong>Confirm exit while emulation is running</strong> : ✅ Activé</li>
-<li><strong>Pause emulation when in background</strong> : ✅ Activé (optionnel)</li>
-<li><strong>Enable Discord Presence</strong> : ✅ Activé (optionnel)</li>
-</ul>
-<h3 id="configuration-système">
-<a class="header-anchor" href="#configuration-syst%c3%a8me"></a>
-Configuration système
-</h3><pre tabindex="0"><code>Emulation → Configure → System
-</code></pre><ul>
-<li><strong>Region</strong> : Europe (ou votre région)</li>
-<li><strong>Language</strong> : Votre language</li>
-<li><strong>Console ID</strong> : Random (généré automatiquement)</li>
-<li><strong>Enable New 3DS</strong> : ✅ Activé (pour de meilleures performances)</li>
-</ul>
-<h3 id="paramètres-graphiques-optimaux">
-<a class="header-anchor" href="#param%c3%a8tres-graphiques-optimaux"></a>
-Paramètres graphiques optimaux
-</h3><h4 id="onglet-graphismes">
-<a class="header-anchor" href="#onglet-graphismes"></a>
-Onglet Graphismes
-</h4><pre tabindex="0"><code>Graphics → General
-- Internal Resolution: 2x Native (400x480) ou plus. Plus vous mettrez la valeure haute, plus ça consommera en GPU
-- Enable Linear Filtering: ✅ Activé
-→ General
-</code></pre><h4 id="onglet-disposition">
-<a class="header-anchor" href="#onglet-disposition"></a>
-Onglet Disposition
-</h4><pre tabindex="0"><code>Graphics → Disposition
-</code></pre><div class="admonition admonition-tip">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Interface de disposition des écrans
-  </div>
-  <div class="admonition-content">
-    Cette section vous permet de personnaliser l&rsquo;affichage des deux écrans de la 3DS selon vos préférences visuelles et votre configuration matérielle.
-  </div>
-</div>
-<h3 id="disposition-des-écrans">
-<a class="header-anchor" href="#disposition-des-%c3%a9crans"></a>
-Disposition des écrans
-</h3><p><strong>Options de disposition prédéfinies :</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>Mode</th>
-          <th>Description</th>
-          <th>Recommandation</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Défaut</strong></td>
-          <td>Configuration standard Nintendo</td>
-          <td>✅ <strong>Débutants</strong></td>
-      </tr>
-      <tr>
-          <td><strong>Un seul écran</strong></td>
-          <td>Affiche seulement l&rsquo;écran actif</td>
-          <td>Gameplay focus</td>
-      </tr>
-      <tr>
-          <td><strong>Écran large</strong></td>
-          <td>Étire sur toute la largeur</td>
-          <td>Écrans larges</td>
-      </tr>
-      <tr>
-          <td><strong>Côte à côte</strong></td>
-          <td>Écrans horizontaux</td>
-          <td><strong>Recommandé gaming</strong></td>
-      </tr>
-      <tr>
-          <td><strong>Fenêtres séparées</strong></td>
-          <td>Deux fenêtres indépendantes</td>
-          <td>Multi-moniteurs</td>
-      </tr>
-      <tr>
-          <td><strong>Écran hybride</strong></td>
-          <td>Écrans superposés</td>
-          <td>Économie d&rsquo;espace</td>
-      </tr>
-      <tr>
-          <td><strong>Disposition personnalisée</strong></td>
-          <td>Configuration manuelle</td>
-          <td>⭐ <strong>Plus flexible</strong></td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="configuration-personnalisée">
-<a class="header-anchor" href="#configuration-personnalis%c3%a9e"></a>
-Configuration personnalisée
-</h3><div class="admonition admonition-success">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Disposition personnalisée avancée
-  </div>
-  <div class="admonition-content">
-    <p><strong>Écran supérieur :</strong></p>
-<ul>
-<li><strong>Position X/Y</strong> : <code>0px, 0px</code> (coin supérieur gauche)</li>
-<li><strong>Largeur/Hauteur</strong> : <code>800px, 480px</code> (ratio 4:3 optimal)</li>
-</ul>
-<p><strong>Écran inférieur :</strong></p>
-<ul>
-<li><strong>Position X/Y</strong> : <code>80px, 500px</code> (légèrement centré)</li>
-<li><strong>Largeur/Hauteur</strong> : <code>640px, 480px</code> (proportionnel)</li>
-</ul>
-<p><strong>Opacité écran inférieur</strong> : <code>100%</code> (pleine visibilité)</p>
-
-  </div>
-</div>
-<h3 id="paramètres-daffichage">
-<a class="header-anchor" href="#param%c3%a8tres-daffichage"></a>
-Paramètres d&rsquo;affichage
-</h3><h4 id="options-générales">
-<a class="header-anchor" href="#options-g%c3%a9n%c3%a9rales"></a>
-Options générales
-</h4><pre tabindex="0"><code>Écrans → Configuration
-</code></pre><p><strong>Réglages recommandés :</strong></p>
-<ul>
-<li><strong>Permuter les écrans</strong> : ❌ Désactivé (garde la logique DS)</li>
-<li><strong>Rotation des écrans vers le haut</strong> : ❌ Désactivé</li>
-<li><strong>Écart d&rsquo;écran</strong> : <code>0.00</code> à <code>4.00</code> selon préférence</li>
-<li><strong>Proportion du grand écran</strong> : <code>4.00</code> (écran principal plus grand)</li>
-<li><strong>Proportion du petit écran</strong> : <code>En bas à droite</code> (position tactile)</li>
-</ul>
-<h4 id="disposition-avec-un-seul-écran">
-<a class="header-anchor" href="#disposition-avec-un-seul-%c3%a9cran"></a>
-Disposition avec un seul écran
-</h4><div class="admonition admonition-note">
-  <div class="admonition-title">
-    <i class="admonition-icon"></i>
-    Mode un seul écran
-  </div>
-  <div class="admonition-content">
-    <p><strong>Utilisation :</strong></p>
-<ul>
-<li>Jeux n&rsquo;utilisant qu&rsquo;un écran principal</li>
-<li>Économie de ressources d&rsquo;affichage</li>
-<li>Concentration sur l&rsquo;action principale</li>
-</ul>
-<p><strong>Configuration :</strong></p>
-<ul>
-<li><strong>Étiré</strong> : ☑️ Coché pour les deux écrans</li>
-<li><strong>Marge Gauche/Droite</strong> : <code>0px</code> (plein écran)</li>
-<li><strong>Marge Haut/Bas</strong> : <code>0px</code> (utilisation maximale)</li>
-</ul>
-
-  </div>
-</div>
-<blockquote>
-<p><strong>💡 Conseil pratique</strong> : Testez différentes dispositions selon le jeu. Les RPG fonctionnent mieux en disposition personnalisée, tandis que les jeux d&rsquo;action préfèrent souvent le mode côte à côte.</p></blockquote>
-<h4 id="onglet-avancé">
-<a class="header-anchor" href="#onglet-avanc%c3%a9"></a>
-Onglet Avancé
-</h4><pre tabindex="0"><code>Graphics → Advanced
-- Graphics API: OpenGL (recommandé) ou Vulkan
-- Enable Hardware Renderer: ✅ Activé
-- Enable Hardware Shader: ✅ Activé
-- Enable Accurate Multiplication: ✅ Activé
-- Use Disk Shader Cache: ✅ Activé
-- Enable VSync: ✅ Activé
-</code></pre><h3 id="configuration-audio">
-<a class="header-anchor" href="#configuration-audio"></a>
-Configuration audio
-</h3><pre tabindex="0"><code>Audio
-- Emulation: HLE
-</code></pre><h3 id="configuration-des-contrôles">
-<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
-Configuration des contrôles
-</h3><h4 id="méthode-automatique">
-<a class="header-anchor" href="#m%c3%a9thode-automatique"></a>
-Méthode automatique
-</h4><pre tabindex="0"><code>Controls → Configure
-1. Cliquez sur &#34;Configuration Auto&#34;
-2. Appuyez sur les boutons de votre manette
-3. Testez tous les contrôles
-</code></pre><h3 id="formats-supportés">
-<a class="header-anchor" href="#formats-support%c3%a9s"></a>
-Formats supportés
-</h3><ul>
-<li><strong>.CCI</strong> : Seul format supporté avec mes roms avec Azahar, dû à leurs restrictions anti piracy</li>
-</ul>
-<h2 id="-faq---questions-fréquemment-posées">
-<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
-❓ FAQ - Questions fréquemment posées
-</h2><h3 id="questions-générales">
-<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
-Questions générales
-</h3><p><strong>Q : Azahar peut-il faire fonctionner tous les jeux 3DS ?</strong>
-<strong>R :</strong> Environ 90% des jeux 3DS fonctionnent bien à parfaitement. Consultez la base de compatibilité pour votre jeu spécifique.</p>
-<p><strong>Q : La 3D stéréoscopique fonctionne-t-elle ?</strong>
-<strong>R :</strong> Oui, avec des lunettes 3D ou un écran 3D. Mode Side-by-Side également disponible pour VR.</p>
-<p><strong>Q : Puis-je utiliser mes sauvegardes de vraie 3DS ?</strong>
-<strong>R :</strong> Oui, avec Checkpoint ou JKSM vous pouvez transférer vos sauvegardes dans les deux sens.</p>
-<h3 id="questions-techniques">
-<a class="header-anchor" href="#questions-techniques"></a>
-Questions techniques
-</h3><p><strong>Q : Pourquoi certains jeux sont-ils lents ?</strong>
-<strong>R :</strong> Les jeux 3DS sont optimisés pour un hardware spécifique. L&rsquo;émulation demande plus de puissance, surtout pour les jeux complexes.</p>
-<p><strong>Q : OpenGL ou Vulkan ?</strong>
-<strong>R :</strong> OpenGL est plus stable et compatible. Vulkan peut offrir de meilleures performances sur GPU récents.</p>
-<p><strong>Q : New 3DS Mode améliore-t-il tous les jeux ?</strong>
-<strong>R :</strong> Principalement les jeux qui l&rsquo;utilisent nativement (Xenoblade, Monster Hunter, etc.) et certains homebrews.</p>
-<h3 id="problèmes-courants">
-<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
-Problèmes courants
-</h3><p><strong>Q : &ldquo;Could not determine the system region&rdquo; ?</strong>
-<strong>R :</strong> Installez les fichiers système (aes_keys.txt) et configurez la région dans les paramètres.</p>
-<p><strong>Q : Les textures HD ne s&rsquo;affichent pas ?</strong>
-<strong>R :</strong> Vérifiez que &ldquo;Custom Textures&rdquo; est activé et que le Title ID correspond au dossier.</p>
-<p><strong>Q : Comment améliorer les performances sur Android ?</strong>
-<strong>R :</strong> Utilisez Citra MMJ, réduisez la résolution, activez le frame skip si nécessaire.</p>
-<p><strong>Profitez de vos jeux 3DS en haute définition ! 🎮✨</strong></p>
-<pre tabindex="0"><code></code></pre>
-        
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
-      </description>
-      
-        <category>gaming</category><category>Tutoriels</category>
+        <category>MelonDS</category>
       
     </item>
     
@@ -2026,10 +1579,10 @@ Problèmes courants
 
     <item>
       <title>Installation et configuration de Dolphin</title>
-      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
+      <link>http://localhost:1313/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
+      <guid>http://localhost:1313/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -2372,10 +1925,10 @@ Problèmes courants
 <p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
       </description>
       
-        <category>Gaming</category><category>Tutoriels</category>
+        <category>Dolphin</category>
       
     </item>
     
