@@ -116,7 +116,7 @@ $dark-highlight-blue: {{ default "#54b6ff" (index $params.internal_theme.dark "-
 $dark-highlight-purple: {{ default "#dcbdfb" (index $params.internal_theme.dark "--highlight-purple") }};
 
 $waline: {{ (cond (and $params.valine.enable $params.valine.appId $params.valine.appKey) true false) }};
-$valine: {{ (cond (and $params.waline.enable $params.waline.serverURL) true false) }};
+$waline: {{ (cond $params.waline.enable true false) }};
 $gitalk: {{ (cond (and $params.gitalk.enable $params.gitalk.clientID $params.gitalk.clientSecret) true false) }};
 $giscus: {{ (cond $params.giscus.enable true false) }};
 
