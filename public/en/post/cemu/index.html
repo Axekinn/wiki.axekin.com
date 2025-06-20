@@ -715,17 +715,6 @@ Game formats
           class="article-comment-link"
         >
           <span
-            class="post-comments-count valine-comment-count"
-            data-xid="http//localhost1313/en/post/cemu/"
-            itemprop="commentCount"
-          ></span>
-          Comments
-        </a><a
-          data-aos="slide-up"
-          href="/en/post/cemu/#comments"
-          class="article-comment-link"
-        >
-          <span
             class="post-comments-count waline-comment-count"
             data-path="http//localhost1313/en/post/cemu/"
             itemprop="commentCount"
@@ -793,17 +782,13 @@ Game formats
       </div></nav></article><section id="comments" data-aos="fade-up">
 <div class="comment-header"><h2 class="comment-title">Leave a comment</h2>
   <div class="comment-selector">
-    <div class="comment-selector-wrap"><div class="selector-item" data-selector="valine">
-          <span>valine</span>
-        </div><div class="selector-item" data-selector="waline">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="waline">
           <span>waline</span>
         </div></div>
   </div>
 </div>
 
-<div class="comment-content"><div class="comment valine-comment" data-aos="fade-up"
-     >
-    </div><div class="comment waline-comment" data-aos="fade-up"
+<div class="comment-content"><div class="comment waline-comment" data-aos="fade-up"
      >
     </div></div>
 </section></section>
@@ -1097,7 +1082,7 @@ Game formats
   var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
   var commentConfig = {
     valine: {
-      enable: true,
+      enable: false,
       load: () => {
         const container = document.querySelector('.valine-comment');
         if (!container) return;
