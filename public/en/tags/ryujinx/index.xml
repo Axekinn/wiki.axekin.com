@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryujinx on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/tags/ryujinx/</link>
+    <link>https://wiki.axekin.com/en/tags/ryujinx/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/en/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/en/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -24,10 +24,10 @@
 
     <item>
       <title>Ryujinx Installation and Configuration</title>
-      <link>http://localhost:1313/en/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/en/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/en/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Ryujinx Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -427,7 +427,7 @@ Technical questions
 <p><strong>Have fun with Ryujinx! 🎮✨</strong></p>
 
         
-        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-07</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -439,10 +439,10 @@ Technical questions
 
     <item>
       <title>How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</title>
-      <link>http://localhost:1313/en/post/amibo_switch/</link>
+      <link>https://wiki.axekin.com/en/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/amibo_switch/</guid>
+      <guid>https://wiki.axekin.com/en/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>How to Use Amiibo on Switch Emulators (Yuzu & Ryujinx)</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -598,7 +598,7 @@ A: Data is automatically saved in the game&rsquo;s save files.</p>
 <hr>
 
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -610,10 +610,10 @@ A: Data is automatically saved in the game&rsquo;s save files.</p>
 
     <item>
       <title>How to Install DLC and Updates on Yuzu and Ryujinx</title>
-      <link>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</link>
+      <link>https://wiki.axekin.com/en/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>https://wiki.axekin.com/en/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>How to Install DLC and Updates on Yuzu and Ryujinx</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -809,7 +809,7 @@ FAQ - Frequently Asked Questions
 <hr>
 <pre tabindex="0"><code></code></pre>
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -821,10 +821,10 @@ FAQ - Frequently Asked Questions
 
     <item>
       <title>How to Install Cheats and Mods on the Ryujinx Emulator</title>
-      <link>http://localhost:1313/en/post/cheat_ryujinx/</link>
+      <link>https://wiki.axekin.com/en/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/cheat_ryujinx/</guid>
+      <guid>https://wiki.axekin.com/en/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>How to Install Cheats and Mods on the Ryujinx Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -1124,7 +1124,7 @@ A: Yes, with knowledge of memory addresses and game structure. Tools like Cheat 
 A: Simply disable or remove the mod from the mods directory. Your original game files remain intact.</p>
 
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
@@ -1136,10 +1136,10 @@ A: Simply disable or remove the mod from the mods directory. Your original game 
 
     <item>
       <title>How to Reinstall Yuzu &amp; Ryujinx While Keeping Your Save Files</title>
-      <link>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</link>
+      <link>https://wiki.axekin.com/en/post/reinstall_yuzu_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</guid>
+      <guid>https://wiki.axekin.com/en/post/reinstall_yuzu_ryujinx/</guid>
       <description>
         <![CDATA[<h1>How to Reinstall Yuzu & Ryujinx While Keeping Your Save Files</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -1366,7 +1366,7 @@ FAQ - Frequently Asked Questions
 <p><strong>Did this guide help you?</strong> Share your experiences and additional tips in the comments!</p>
 
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
       </description>
       
         <category>gaming</category><category>emulation</category><category>tutorials</category>
