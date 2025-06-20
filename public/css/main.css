@@ -2634,33 +2634,6 @@ mjx-container::-webkit-scrollbar {
   background-color: var(--red-1);
 }
 
-.vcontent {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-[data-theme="dark"] .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::after,
-.night .v[data-class="v"] .vcards .vcard .vcontent.expand::after {
-  background: var(--color-wrap) !important;
-}
-
-[data-theme="dark"]
-.v[data-class="v"]
-.vcards
-.vcard
-.vcontent.expand::before,
-.dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-.theme__dark .v[data-class="v"] .vcards .vcard .vcontent.expand::before,
-.night .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--color-wrap) 10%, transparent), var(--color-wrap)) !important;
-}
-
-.v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
-  color: var(--red-1) !important;
-}
-
 .wl-content,
 .vcontent,
 .gt-header-preview.markdown-body,

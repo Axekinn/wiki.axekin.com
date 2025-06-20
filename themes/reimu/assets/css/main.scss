@@ -115,8 +115,8 @@ $dark-highlight-aqua: {{ default "#66cccc" (index $params.internal_theme.dark "-
 $dark-highlight-blue: {{ default "#54b6ff" (index $params.internal_theme.dark "--highlight-blue") }};
 $dark-highlight-purple: {{ default "#dcbdfb" (index $params.internal_theme.dark "--highlight-purple") }};
 
-$valine: {{ (cond (and $params.valine.enable $params.valine.appId $params.valine.appKey) true false) }};
-$waline: {{ (cond (and $params.waline.enable $params.waline.serverURL) true false) }};
+$waline: {{ (cond (and $params.valine.enable $params.valine.appId $params.valine.appKey) true false) }};
+$valine: {{ (cond (and $params.waline.enable $params.waline.serverURL) true false) }};
 $gitalk: {{ (cond (and $params.gitalk.enable $params.gitalk.clientID $params.gitalk.clientSecret) true false) }};
 $giscus: {{ (cond $params.giscus.enable true false) }};
 

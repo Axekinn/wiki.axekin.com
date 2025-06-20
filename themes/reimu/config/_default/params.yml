@@ -285,7 +285,7 @@ comment:
 # version 1.5.1
 # notify and verify have been deprecated
 valine:
-  enable: true # if you want to use valine,please set this value is true
+  enable: false # if you want to use valine,please set this value is true
   appId: 94mEltR4RiEn3EWZZfaCmr9b-MdYXbMMI # leancloud application app id
   appKey: IXfLB4N2besVBCcm7MKJOvkd # leancloud application app key
   pageSize: 10 # comment list page size
