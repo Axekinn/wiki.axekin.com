@@ -317,7 +317,7 @@ utterances:
 
 # Statistiques Busuanzi améliorées
 busuanzi:
-  enable: false
+  enable: true
   site_pv:
     enable: true
     text:
