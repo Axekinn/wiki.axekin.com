@@ -3,7 +3,7 @@ title: "Azahar Installation and Configuration"
 date: 2025-06-02
 draft: false
 categories: ["Citra"]
-tags: ["Citra", "Nintendo 3DS", "Emulation", "Gaming"]
+tags: ["Citra"]
 author: "Axekin"
 description: "Detailed tutorial for installing, configuring and using Nintendo 3DS emulator Azahar"
 series: ["Emulation Guides"]

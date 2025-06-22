@@ -3,7 +3,7 @@ title: "How to Install DLC and Updates on Yuzu and Ryujinx"
 description: "Complete guide for installing DLC and updates on Nintendo Switch emulators Yuzu and Ryujinx - Detailed step-by-step procedure"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Ryujinx","Yuzu"]
 tags: ["yuzu", "ryujinx", "nintendo-switch", "dlc", "updates", "emulation", "installation"]
 series: ["Emulation Guides"]
 author: "Axekin"

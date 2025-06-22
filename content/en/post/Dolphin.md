@@ -4,7 +4,7 @@ description: "Detailed tutorial for installing, configuring and using Nintendo W
 date: 2025-06-02
 lastmod: 2025-06-07
 categories: ["Dolphin"]
-tags: ["Dolphin", "Nintendo Wii", "GameCube", "Emulation", "Gaming"]
+tags: ["Dolphin"]
 author: "Axekin"
 draft: false
 toc: true

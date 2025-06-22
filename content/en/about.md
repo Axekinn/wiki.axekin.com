@@ -19,7 +19,6 @@ readingTime: true
 showFullContent: false
 layout: "about"
 aliases: ["/about-me", "/aboutme"]
-categories: ["Personal"]
 tags: ["introduction", "bio", "contact"]
 ---
 

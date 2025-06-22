@@ -3,7 +3,7 @@ title: "Playing with Keyboard & Mouse on Cemu Emulator"
 description: "Detailed tutorial for configuring keyboard-mouse controls on Cemu with Mouse2Joystick and ViGEmBus - Step-by-step configuration guide"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["PC"]
 tags: ["cemu", "wiiu", "keyboard-mouse", "mouse2joystick", "vigembus", "emulation", "nintendo"]
 series: ["Emulation Guides"]
 author: "Axekin"

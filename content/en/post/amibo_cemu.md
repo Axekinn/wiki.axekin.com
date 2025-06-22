@@ -3,7 +3,7 @@ title: " Using Amiibo on the Cemu Wii U Emulator"
 description: "Detailed tutorial to use Amiibo .bin files on the Cemu emulator - NFC configuration and step-by-step usage"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["Cemu"]
 tags: ["amiibo", "cemu", "wiiu", "emulation", "nintendo", "nfc", "figurines", "zelda"]
 series: ["Emulation Guides"]
 author: "Axekin"

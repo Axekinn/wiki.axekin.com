@@ -3,7 +3,7 @@ title: "How to Reinstall Yuzu & Ryujinx While Keeping Your Save Files"
 description: "Complete guide to cleanly reinstall Nintendo Switch emulators Yuzu and Ryujinx while preserving your game saves"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "emulation", "tutorials"]
+categories: ["PC"]
 tags: ["yuzu", "ryujinx", "nintendo-switch", "emulation", "backup", "save", "reinstallation"]
 series: ["Emulation Guides"]
 author: "Axekin"

@@ -3,7 +3,7 @@ title: "Unsteam - Playing Co-op with Patched Games"
 description: "Detailed tutorial for using Unsteam and playing online with patched games - Complete setup guide for Steam API emulation"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["gaming", "tutorials", "networking"]
+categories: ["PC"]
 tags: ["unsteam", "steam", "coop", "gaming", "patch", "multiplayer", "emulation"]
 series: ["Gaming Guides"]
 author: "Axekin"

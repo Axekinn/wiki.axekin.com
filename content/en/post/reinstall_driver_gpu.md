@@ -3,9 +3,8 @@ title: "Clean Graphics Driver Reinstallation"
 description: "Detailed tutorial for cleanly reinstalling NVIDIA and AMD GPU drivers with DDU - Step-by-step guide to solve graphics problems"
 date: 2025-06-04
 lastmod: 2025-06-04
-categories: ["maintenance", "tutorials", "hardware"]
+categories: ["PC"]
 tags: ["drivers", "gpu", "nvidia", "amd", "ddu", "drivers", "repair", "windows"]
-series: ["PC Maintenance Guides"]
 author: "Axekin"
 draft: false
 toc: true
