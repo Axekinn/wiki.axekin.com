@@ -63,9 +63,6 @@ This method is particularly useful for:
 2. **Download** the latest `.msi` file
 3. **Example**: `ViGEmBus_Setup_1.17.333.msi`
 
-![ViGEmBus Download](/images/vigembus-download.png)
-*ViGEmBus download page*
-
 **ViGEmBus features:**
 - **Free** and open-source
 - **Compatible** with Windows 10/11
@@ -80,9 +77,6 @@ This method is particularly useful for:
 1. **Download** the latest `.zip` file
 2. **Example**: `Mouse2Joystick_v2.3.1.zip`
 3. **Extract** to a dedicated folder (e.g., `C:\Tools\Mouse2Joystick\`)
-
-![Mouse2Joystick Download](/images/mouse2joystick-download.png)
-*Mouse2Joystick download page*
 
 **Mouse2Joystick features:**
 - **Portable**: no installation required
@@ -99,9 +93,6 @@ This method is particularly useful for:
 1. **Locate** the downloaded `.msi` file
 2. **Double-click** to start installation
 3. **Accept** administrator permissions if prompted
-
-![ViGEmBus Installer](/images/vigembus-installer.png)
-*ViGEmBus installation wizard*
 
 #### Installation Configuration
 
@@ -125,8 +116,6 @@ This method is particularly useful for:
 2. **Expand** "System devices"
 3. **Verify** presence of "ViGEmBus Device"
 
-![ViGEmBus Device Manager](/images/vigembus-device-manager.png)
-*ViGEmBus in Device Manager*
 
 ## Step 2: Mouse2Joystick Configuration
 
@@ -139,17 +128,12 @@ This method is particularly useful for:
 3. **Choose** a permanent folder (e.g., `C:\Tools\Mouse2Joystick\`)
 4. **Launch** `Mouse2Joystick.exe`
 
-![Mouse2Joystick Extraction](/images/mouse2joystick-extraction.png)
-*Mouse2Joystick extraction*
-
 ### Interface and Basic Configuration
 
 #### First Launch
 
 Once launched, Mouse2Joystick displays a simple interface:
 
-![Mouse2Joystick Interface](/images/mouse2joystick-interface.png)
-*Mouse2Joystick main interface*
 
 #### Recommended Configuration
 
@@ -186,9 +170,6 @@ Vibration: Disabled (not necessary)
 | **L/R** | Shift/Tab | Bumpers |
 | **ZL/ZR** | Left/Right Click | Digital triggers |
 
-![Mouse2Joystick Mapping](/images/mouse2joystick-mapping.png)
-*Key mapping configuration*
-
 #### Advanced Settings
 
 **Mouse sensitivity:**
@@ -210,8 +191,6 @@ Vibration: Disabled (not necessary)
 2. **Menu** "Options" → **"Input Settings"**
 3. **Remove** all existing controllers with the **"-"** button
 
-![Cemu Input Settings](/images/cemu-input-settings.png)
-*Control settings in Cemu*
 
 ### Removing Existing Controllers
 
@@ -223,8 +202,6 @@ Vibration: Disabled (not necessary)
 3. **Confirm** removal if prompted
 4. **Verify** the list is empty
 
-![Cemu Remove Controllers](/images/cemu-remove-controllers.png)
-*Removing existing controllers*
 
 ### Adding New Controllers
 
@@ -236,8 +213,6 @@ Vibration: Disabled (not necessary)
 3. **Choose** "Controller 1" which should appear
 4. **Confirm** selection
 
-![Cemu Add XInput](/images/cemu-add-xinput.png)
-*Adding XInput controller*
 
 #### Keyboard Configuration (Additional Keys)
 
@@ -247,8 +222,6 @@ Vibration: Disabled (not necessary)
 3. **Choose** "Controller 1"
 4. **Configure** specific Wii U keys
 
-![Cemu Add Keyboard](/images/cemu-add-keyboard.png)
-*Adding keyboard controller*
 
 ### Final Key Configuration
 
@@ -276,198 +249,10 @@ Home: Tab (Home menu)
 Screenshot: F12
 ```
 
-![Cemu Final Configuration](/images/cemu-final-config.png)
-*Final control configuration*
-
-## Testing and Adjustments
-
-### Functionality Test
-
-#### Basic Verification
-
-**Test checklist:**
-```
-☑ Mouse2Joystick running in background
-☑ Mouse movements = camera rotation
-☑ WASD = character movement
-☑ Mouse clicks = triggers
-☑ Keyboard keys = controller buttons
-```
-
-#### In-Game Testing
-
-**Recommended games for testing:**
-- **The Legend of Zelda: Breath of the Wild**: Complete control test
-- **Super Mario 3D World**: Precision test
-- **Mario Kart 8**: Responsiveness test
-
-### Optimizations and Adjustments
-
-#### Common Issues and Solutions
-
-**🚫 Mouse doesn't control camera**
-
-**Solutions:**
-1. **Verify** Mouse2Joystick is open
-2. **Restart** Mouse2Joystick
-3. **Reconfigure** right stick in Cemu
-
-**⚠️ Jerky movements**
-
-**Solutions:**
-1. **Reduce** mouse sensitivity
-2. **Increase** dead zone
-3. **Close** resource-intensive applications
-
-**💻 High latency**
-
-**Solutions:**
-1. **Fullscreen mode** in Cemu
-2. **Disable** vertical sync
-3. **Increase** Mouse2Joystick process priority
-
-### Custom Profiles
-
-#### Configuration Backup
-
-**Creating per-game profiles:**
-1. **Configure** controls for a specific game
-2. **Save** Mouse2Joystick configuration
-3. **Export** Cemu settings
-4. **Name** each profile clearly
-
-**Profile examples:**
-- `Zelda_BOTW_KBM.xml`
-- `Mario3D_KBM.xml`
-- `MarioKart8_KBM.xml`
-
-## Recommended and Incompatible Games
-
-### Keyboard-Mouse Adapted Games
-
-#### Excellent Compatibility
-
-**Well-functioning games:**
-| Game | Reason | Rating |
-|------|--------|--------|
-| **Zelda: Breath of the Wild** | Free camera control | ⭐⭐⭐⭐⭐ |
-| **Xenoblade Chronicles X** | Slow gameplay, RPG | ⭐⭐⭐⭐⭐ |
-| **Assassin's Creed 4** | PC-like port | ⭐⭐⭐⭐⭐ |
-| **Call of Duty: Ghosts** | Native FPS | ⭐⭐⭐⭐⭐ |
-
-#### Average Compatibility
-
-**Playable games with adaptations:**
-| Game | Challenges | Rating |
-|------|------------|--------|
-| **Super Mario 3D World** | Precision required | ⭐⭐⭐⭐☆ |
-| **Donkey Kong Country** | Important timing | ⭐⭐⭐☆☆ |
-| **New Super Mario Bros. U** | Fast controls | ⭐⭐⭐☆☆ |
-
-### Non-Recommended Games
-
-#### Poor Compatibility
-
-**Difficult keyboard-mouse games:**
-- **Mario Kart 8**: Analog controls crucial
-- **Super Smash Bros.**: Extreme precision and speed
-- **Pokken Tournament**: Complex fighting
-- **Splatoon**: Gyroscope required
-
-## Advanced Troubleshooting
-
-### Detection Issues
-
-#### Mouse2Joystick Not Recognized
-
-**Diagnosis:**
-1. **Check** ViGEmBus installation
-2. **Restart** Windows
-3. **Relaunch** Mouse2Joystick as administrator
-4. **Check** background processes
-
-**Advanced solutions:**
-```cmd
-# Check ViGEmBus services
-sc query ViGEmBus
-
-# Restart service if necessary
-sc stop ViGEmBus
-sc start ViGEmBus
-```
-
-#### Conflicts with Other Software
-
-**Potentially conflicting software:**
-- **Steam Input**: Disable for Cemu
-- **Xbox Game Bar**: May interfere
-- **Discord Overlay**: Sometimes problematic
-- **GeForce Experience**: Disable overlay
-
-### Performance Optimizations
-
-#### Windows Settings
-
-**System optimizations:**
-```
-Windows Game Mode: Enabled
-High priority for Cemu: Recommended
-Close unnecessary applications: Mandatory
-Antivirus game mode: If available
-```
-
-#### Cemu Settings
-
-**Optimal configuration:**
-```
-Async Shader Compilation: Enabled
-Precompiled Shaders: Use if available
-GPU Buffer Cache Accuracy: Medium
-CPU Mode: Triple-core recompiler
-```
-
-## Additional Resources and Help
-
-### Video Tutorial
-
-**🎥 [Complete video tutorial](https://youtu.be/UAtG_UEbESI)**
-
-The video tutorial covers:
-- Complete step-by-step installation
-- Real-time configuration
-- Demonstration on multiple games
-- Common problem resolution
-
-### Community and Support
-
-#### Forums and Resources
-
-**Useful sites:**
-- **Reddit**: r/cemu for community help
-- **Discord Cemu**: Real-time support
-- **GitHub**: Bug reports and improvements
-- **YouTube**: Specialized tutorials
-
-#### Official Documentation
-
-**Official resources:**
-- **Cemu Wiki**: Complete emulator guide
-- **ViGEmBus Docs**: Technical documentation
-- **Mouse2Joystick GitHub**: Issues and updates
-
 ## Conclusion
 
 Playing **Wii U** games on **Cemu** with keyboard and mouse is possible thanks to **Mouse2Joystick** and **ViGEmBus**. While the experience isn't optimal for all games, this solution allows discovering the excellent Wii U catalog without investing in a controller.
 
-### Key Points to Remember
-
-> **🎯 Essential configuration:**
-> 
-> 1. **ViGEmBus** installed and functional
-> 2. **Mouse2Joystick** configured and active
-> 3. **Cemu** configured with XInput + Keyboard
-> 4. **Testing** and per-game adjustments
-> 5. **Patience** for adaptation
 
 ### Final Tips
 
@@ -493,13 +278,4 @@ A: Yes, Mouse2Joystick must remain open while you play to maintain controller si
 
 **Q: Does this method affect Cemu performance?**
 A: Impact is minimal, as Mouse2Joystick is very resource-light.
-
----
-
-**Did this guide help you configure your controls?** Share your optimal configurations and feedback in the comments!
-
-**Related articles:**
-- [Complete Cemu Emulator Guide](/en/post/cemu-complete-guide/)
-- [Optimize Cemu Performance](/en/post/cemu-performance-optimization/)
-- [Best Controllers for Emulation](/en/post/best-controllers-emulation/)
 ````
