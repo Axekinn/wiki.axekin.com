@@ -136,6 +136,25 @@ social:
   # discord: https://discordapp.com/users/yourname
   # steam: https://steamcommunity.com/id/yourname
 
+# Statistiques Busuanzi améliorées
+busuanzi:
+  enable: true
+  site_pv:
+    enable: true
+    text:
+      fr: "Vues totales: "
+      en: "Total views: "
+  site_uv:
+    enable: true
+    text:
+      fr: "Visiteurs uniques: "
+      en: "Unique visitors: "
+  page_pv:
+    enable: true
+    text:
+      fr: "Vues: "
+      en: "Views: "
+      
 widgets:
   - category
   - tag
