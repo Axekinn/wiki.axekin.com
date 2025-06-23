@@ -5,7 +5,7 @@
 {{- $commentSystems := dict 
   "valine" (cond (and $params.valine.enable $params.valine.appId $params.valine.appKey) true false)
   "waline" (cond (and $params.waline.enable $params.waline.serverURL) true false)
-  "twikoo" (cond (and $params.twikoo.enable $params.twikoo.envId) true false)
+  "twikoo" (cond (and $params.twikoo.enable (ne $params.twikoo.envId "")) true false)
   "gitalk" (cond (and $params.gitalk.enable $params.gitalk.clientID $params.gitalk.clientSecret) true false)
   "giscus" (cond $params.giscus.enable true false)
 -}}
