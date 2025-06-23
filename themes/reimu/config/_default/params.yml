@@ -344,8 +344,44 @@ waline:
 # https://twikoo.js.org
 twikoo:
   enable: true
-  envId: "https://comment-wikiaxekincom.vercel.app" # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  envId: "https://comment-wikiaxekincom.vercel.app"
   region:
+  # Configuration personnalisée avancée
+  lang: auto # ou 'fr', 'en', 'zh-CN', etc.
+  path: window.location.pathname # Chemin personnalisé pour les commentaires
+  
+  # Interface utilisateur
+  placeholder: "Write ur best comment  !" # Texte d'invite personnalisé
+  requiredMeta: ['nick'] # Seul le pseudo est requis (email optionnel)
+  
+  # Modération et sécurité
+  commentCount: true # Afficher le nombre de commentaires
+  visitor: true # Compteur de visiteurs
+  highlight: true # Coloration syntaxique du code
+  mathJax: true # Support LaTeX/MathJax
+  
+  # Limites et validation
+  wordLimit: [10, 1000] # Min 10, max 1000 caractères
+  requiredMeta: ['nick'] # Seul le nickname est obligatoire
+  
+  # Apparence et thème
+  avatar: 'robohash' # Type d'avatar : 'gravatar', 'robohash', 'hide', etc.
+  avatarCDN: 'https://cravatar.cn/avatar/' # CDN personnalisé pour avatars
+  
+  # Fonctionnalités avancées
+  imageUpload: true # Upload d'images
+  imageUploadMethod: 'POST' # Méthode d'upload
+  
+  # Notifications
+  mailNotify: true # Notifications par email
+  mailTemplate: 'default' # Template d'email personnalisé
+  
+  # Anti-spam et sécurité
+  akismetKey: '' # Clé Akismet pour l'anti-spam
+  isOwner: false # Marquer automatiquement comme propriétaire
+  
+  # Configuration du serveur (optionnel)
+  serverURL: "https://comment-wikiaxekincom.vercel.app"
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 gitalk:
