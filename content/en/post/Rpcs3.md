@@ -65,32 +65,76 @@ Risks:
 - Possible regressions
 ```
 
+## Game Download
+
+### Step 1: Access the game library
+
+Go to **[🎮 Axekin Games - Playstation 3](https://www.axekin.com/search?platform=ps3)** (Coming soon ^_^ ) to access the Playstation 3 game collection.
+
+### Step 2: Download the game
+
+1. **Search** for the desired game in the list
+2. **Click** on the download button
+3. **Wait** for the download to complete
+
+### Step 3: File extraction
+
+Once the download is finished, **extract** the archive with one of these software:
+
+| Software | Download Link | Compatibility |
+|----------|---------------|---------------|
+| **7-Zip** | [Download 7-Zip](https://www.7-zip.org/) | Windows/Linux |
+| **WinRAR** | [Download WinRAR](https://www.win-rar.com/) | Windows |
+
+> **💡 Tip**: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.
+
+**Result**: You'll get game files ready to be used with Ryujinx! 🎯
+
 ## 📁 Step 2: Folder Structure
 
-Organize your files with this structure:
+Create this folder structure to organize your files:
 
-```
-RPCS3/
-├── rpcs3.exe                # Main executable
-├── firmware/                # PS3 firmware (required)
-│   └── PS3UPDAT.PUP        # Official firmware file
-├── games/                   # Your PS3 games
-│   ├── disc/               # Disc games .iso/.bin/.img
-│   ├── psn/                # PSN games .pkg/.rap
-│   └── homebrew/           # Homebrew applications
-├── dev_hdd0/               # PS3 virtual hard drive
-│   ├── game/               # Installed games
-│   ├── savedata/           # Save data
-│   ├── trophy/             # PlayStation trophies
-│   └── home/               # User profiles
-├── saves/                  # Exported saves
-├── screenshots/            # Screenshots
-├── cache/                  # PPU/SPU cache
-│   ├── ppu/               # PPU module cache
-│   └── spu/               # SPU shader cache
-└── patches/                # Game patches
-    └── [Title-ID]/         # Patches per game
-```
+For optimal organization of your library, here's the recommended tree structure:
+
+````
+PS3 Games/
+├── GTA V/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── TLOU/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── BOII/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── CoD BO1/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game (its a example))
+````
+
+### Content types
+
+{{< admonition tip "Understanding folders" >}}
+- **BASE** 📁: The main game you download
+- **UPDATE** 📁: Updates and patches (recommended)
+- **DLC** 📁: Additional paid content (optional but recommended)
+{{< /admonition >}}
+
+{{< admonition success "Advantages of this organization" >}}
+✅ **Automatic detection**: Games are automatically added to the emulator  
+✅ **Simplified management**: No need to manually select each ROM  
+✅ **Clear organization**: Easy to see what content you have for each game  
+✅ **Easy maintenance**: Simplified content addition/removal
+{{< /admonition >}}
+
+> **📝 Important note**: If a game doesn't have updates or DLC, there's no need to create the corresponding folders. Only create folders for content you actually have.
+
+### Result
+
+Once this structure is in place, your emulator will automatically detect all games present in the "PS3 Games" folder and organize them properly in your library! 🎯
 
 ## ⚙️ Step 3: Installing PS3 Firmware
 
@@ -112,87 +156,101 @@ https://www.playstation.com/en-us/support/hardware/ps3/system-software/
 2. **Accept** terms of use on first launch
 3. `File → Install Firmware`
 4. **Select** the `PS3UPDAT.PUP` file
-5. **Wait** for complete installation (5-10 minutes)
+5. **Wait** for complete installation (1 minute)
 6. **Restart** RPCS3
-
-**Installation verification:**
-- `Help → About` should display firmware version
-- XMB (PS3 menu) should be accessible
 
 ## ⚙️ Step 4: Optimal CPU Configuration
 
-### PPU (PowerPC Processing Unit) Settings
+### CPU Settings
 ```
-Configuration → CPU → PPU
+Configuration → CPU
 ```
 
 **Recommended configuration:**
-- **PPU Decoder**: Recompiler (LLVM) [fastest]
-- **PPU Threads**: 2 (optimal for most games)
-- **Enable thread scheduler**: ✅ Enabled
-- **Enable SPU loop detection**: ✅ Enabled
-
-### SPU (Synergistic Processing Unit) Settings
-```
-Configuration → CPU → SPU
-```
-
-**Optimal configuration:**
-- **SPU Decoder**: Recompiler (LLVM) [maximum performance]
-- **SPU Block Size**: Safe (recommended)
-- **Preferred SPU Threads**: Auto (let RPCS3 decide)
-- **SPU delay penalty**: 3µs (default)
-- **Enable SPU cache**: ✅ Enabled
-- **Enable SPU verification**: ✅ Enabled
+- **PPU Decoder**: Recompiler (LLVM) [fastest, recommended for all games]
+- **SPU Decoder**: Recompiler (LLVM) [fastest, recommended for all games]
+- **Additional Settings**:
+  - **Enable thread scheduler**: ✅ Enabled (improves performance)
+  - **Enable SPU loop detection**: ✅ Enabled (prevents infinite loops)
+  - **Enable SPU cache**: ✅ Enabled (improves loading times)
+  - **Enable SPU Block Size**: Safe (recommended for compatibility)
 
 ### Advanced CPU Options
 ```
 Configuration → CPU → Additional Settings
 ```
 
-- **Enable accurate LLVM dfma**: ✅ Enabled (improved accuracy)
-- **SPU LLVM precompilation**: ✅ Enabled (reduces stuttering)
-- **TSX instructions**: Auto (if supported by your Intel CPU)
+- **SPU Block Size**: Safe (recommended for most games)
+- **Preferred SPU Threads**: Auto (let RPCS3 optimize automatically)
+- **Enable accurate GETLLAR**: ❌ Disabled (unless required by specific games)
+- **Enable accurate PUTLLUC**: ❌ Disabled (unless required by specific games)
+- **Enable accurate RSX reservation access**: ❌ Disabled (unless required by specific games)
+- **SPU verification**: ❌ Disabled (enable only for debugging)
+- **SPU cache**: ✅ Enabled (significantly improves performance)
+- **Enable thread scheduler**: ✅ Enabled (better thread management)
 
 ## ⚙️ Step 5: Optimal GPU Configuration
 
-### General Graphics Settings
+### Graphics Settings
 ```
-Configuration → GPU → Renderer
+Configuration → GPU
 ```
 
-**Recommended backend:**
-- **Renderer**: Vulkan (performance + compatibility) or D3D12
-- **Graphics Device**: Your main GPU
-- **Aspect Ratio**: 16:9 (or Auto)
-- **Frame limit**: Auto (60 FPS for most games)
+**Recommended configuration:**
+- **Renderer**: Vulkan (best performance and compatibility)
+- **Graphics Device**: Select your dedicated GPU
+- **Aspect Ratio**: 16:9 (or Auto for original aspect ratio)
+- **Frame limit**: Off (let games run at their intended speed)
+- **ZCULL Accuracy**: Relaxed (balance between performance and accuracy)
 
-### Resolution and Quality
+### Resolution and Rendering
 ```
 Configuration → GPU → Resolution
 ```
 
 **Optimal settings:**
-- **Resolution**: 1280x720 (native 720p) or 1920x1080 (upscale)
-- **Resolution Scale**: 100% (or 150%-200% if powerful GPU)
-- **Anisotropic Filter**: Auto or 16x
-- **Anti-Aliasing**: Auto (or MSAA if sufficient performance)
+- **Resolution**: 1280x720 (native PS3 resolution)
+- **Resolution Scale**: 100% (increase only if you have a powerful GPU)
+- **Resolution Scale Threshold**: 16x16 (default)
+- **Anti-Aliasing**: Disabled (enable only if you have headroom)
+- **Anisotropic Filter**: Automatic (or 16x if performance allows)
 
-### Advanced GPU Options
+### Advanced Graphics Options
 ```
 Configuration → GPU → Advanced
 ```
 
 **Performance configuration:**
-- **Write Color Buffers**: ✅ Enabled
-- **Write Depth Buffer**: ✅ Enabled
-- **Read Color Buffers**: ✅ Enabled
-- **Read Depth Buffer**: ✅ Enabled
-- **VSync**: ✅ Enabled (reduces screen tearing)
-- **GPU texture scaling**: ✅ Enabled
-- **Strict Rendering Mode**: ✅ Enabled (better compatibility)
+- **Default Shader Type**: Vertex (recommended)
+- **Shader Mode**: Async (better performance)
+- **Shader Precision**: Auto (let RPCS3 decide)
+- **Write Color Buffers**: ❌ Disabled (enable only if required by game)
+- **Write Depth Buffer**: ❌ Disabled (enable only if required by game)
+- **Read Color Buffers**: ❌ Disabled (enable only if required by game)
+- **Read Depth Buffer**: ❌ Disabled (enable only if required by game)
+- **VSync**: ❌ Disabled (reduces input lag)
+- **GPU texture scaling**: ❌ Disabled (enable only if needed)
+- **Stretch to display area**: ❌ Disabled
+- **Force CPU blit**: ❌ Disabled (use GPU for better performance)
+- **Disable ZCull Occlusion Queries**: ❌ Disabled
+- **Disable vertex cache**: ❌ Disabled
+- **Disable FIFO Reordering**: ❌ Disabled
+- **Enable Frame Skip**: ❌ Disabled
+- **Disable On-Disk Shader Cache**: ❌ Disabled (keep cache enabled)
+- **Disable Vulkan Memory Allocator**: ❌ Disabled
+- **Use GPU Render Thread**: ✅ Enabled (improves performance)
 
-## ⚙️ Step 6: Audio and Control Configuration
+### Shader Loading
+```
+Configuration → GPU → Shader Loading
+```
+
+- **Shader Compilation Hint**: Use Async (reduces stuttering)
+- **Shader Loading Dialog**: Show (helpful for first-time loading)
+- **Warn before creating PPU recompiler cache**: ✅ Enabled
+- **Warn before creating SPU recompiler cache**: ✅ Enabled
+
+## ⚙️ Step 6: Audio Configuration
 
 ### Audio Settings
 ```
@@ -200,38 +258,136 @@ Configuration → Audio
 ```
 
 **Recommended configuration:**
-- **Audio Out**: XAudio2 (Windows) / PulseAudio (Linux)
-- **Audio Format**: Linear PCM 48 kHz
-- **Audio Device**: Default
+- **Audio Out**: Cubeb (cross-platform, recommended)
+- **Audio Settings**:
+  - **Dump to file**: ❌ Disabled
+  - **Convert to 16-bit**: ❌ Disabled
+  - **Audio Buffer Duration**: 100ms (default, adjust if needed)
+  - **Enable Buffering**: ✅ Enabled
+  - **Audio Backend**: Cubeb (most stable)
+- **Audio Device**: @default (use system default)
 - **Master Volume**: 100%
-- **Enable Buffering**: ✅ Enabled
-- **Audio Buffer Duration**: 100ms (adjust if issues)
+- **Audio Renderer**: XAudio2 (Windows) / ALSA (Linux)
 
-### Controller Configuration
+### Audio Quality
+```
+Configuration → Audio → Advanced
+```
+
+- **Audio Buffer**: 0.1 seconds (100ms - good balance)
+- **Audio Backend**: Cubeb (recommended for stability)
+- **Enable Time Stretching**: ❌ Disabled (unless audio sync issues)
+
+## ⚙️ Step 7: Input/Output Configuration
+
+### Controller Settings
 ```
 Configuration → Input/Output
 ```
 
-**Recommended controller:**
-- **Handler**: XInput (Xbox controllers) / MMJoystick (others)
-- **Device**: Your connected controller
+**Recommended configuration:**
+- **Keyboard Handler**: Null (unless using keyboard as controller)
+- **Mouse Handler**: Basic (for basic mouse support)
+- **Camera Handler**: Null (unless using camera games)
+- **Camera Type**: Unknown
+- **Music Handler**: Null
+- **Pad Handler**: 
+  - **XInput** (for Xbox controllers)
+  - **DualShock 4** (for PS4 controllers)
+  - **evdev** (Linux generic controllers)
 
-**DualShock 3 Mapping:**
-```bash
-# Automatic configuration
-1. Connect your controller
-2. Select type: "DualShock 3"
-3. Click "Auto Configure"
-4. Test all buttons
-
-# Manual mapping if necessary
-Left Stick → Left Stick
-Right Stick → Right Stick
-D-Pad → D-Pad
-X, O, ▢, △ → A, B, X, Y (Xbox)
-L1/R1 → LB/RB
-L2/R2 → LT/RT
+### Controller Mapping
 ```
+Configuration → Input/Output → Pad Settings
+```
+
+**Standard DualShock 3 mapping:**
+- **Device**: Select your connected controller
+- **Profile**: Default (or create custom)
+- **Player 1**: Connected Controller Type → DualShock 3
+- **Button Configuration**: Use "Auto Configure" for quick setup
+
+**Manual mapping if needed:**
+```bash
+Left Analog Stick → Left Stick
+Right Analog Stick → Right Stick
+D-Pad → D-Pad
+Cross (X) → A (Xbox) / Cross (PlayStation)
+Circle (O) → B (Xbox) / Circle (PlayStation)
+Square (▢) → X (Xbox) / Square (PlayStation)
+Triangle (△) → Y (Xbox) / Triangle (PlayStation)
+L1 → LB (Xbox) / L1 (PlayStation)
+R1 → RB (Xbox) / R1 (PlayStation)
+L2 → LT (Xbox) / L2 (PlayStation)
+R2 → RT (Xbox) / R2 (PlayStation)
+L3 → LS (Xbox) / L3 (PlayStation)
+R3 → RS (Xbox) / R3 (PlayStation)
+Start → Menu (Xbox) / Options (PlayStation)
+Select → View (Xbox) / Share (PlayStation)
+PS Button → Guide (Xbox) / PS Button (PlayStation)
+```
+
+## ⚙️ Step 8: Advanced System Configuration
+
+### System Settings
+```
+Configuration → System
+```
+
+**Recommended configuration:**
+- **System Language**: System Default (or your preferred language)
+- **Keyboard Type**: English keyboard (or your layout)
+- **Enter button assignment**: Cross (Japanese) / Circle (Western)
+- **Console Language**: English (US) or your region
+- **Console Region**: Auto (or your specific region)
+
+### Network Settings
+```
+Configuration → Network
+```
+
+**Network configuration:**
+- **Network Status**: Connected
+- **Network Interface**: Default
+- **PSN Status**: RPCN (for homebrew online features)
+- **DNS**: Auto (or custom DNS if needed)
+
+### Advanced System Options
+```
+Configuration → Advanced
+```
+
+**System tweaks:**
+- **Debug Console Mode**: ❌ Disabled (unless debugging)
+- **Accurate xfloat**: ❌ Disabled (enable only if required)
+- **Approximate xfloat**: ✅ Enabled (better performance)
+- **Relaxed xfloat**: ❌ Disabled
+- **Force CPU blit**: ❌ Disabled
+- **Disable native float16 support**: ❌ Disabled
+- **Accurate GETLLAR**: ❌ Disabled (enable only if required)
+- **Accurate PUTLLUC**: ❌ Disabled (enable only if required)
+- **Accurate RSX reservation access**: ❌ Disabled (enable only if required)
+- **Sleep Timers Accuracy**: As Host (recommended)
+
+## ⚙️ Game-Specific Settings Override
+
+### Per-Game Configuration
+```
+Right-click game → Configure → Custom Configuration
+```
+
+**When to use custom settings:**
+- Game has specific requirements
+- Default settings cause issues
+- Need specific patches or workarounds
+- Want to optimize for specific titles
+
+**Common per-game overrides:**
+- **Write Color Buffers**: Enable for games with graphical issues
+- **Read Color Buffers**: Enable for games with missing effects
+- **Resolution Scale**: Increase for less demanding games
+- **SPU Block Size**: Change to Mega for specific games
+- **Renderer**: Switch to OpenGL for problematic Vulkan games
 
 ## 🎮 Step 7: Game Installation and Management
 
@@ -239,13 +395,9 @@ L2/R2 → LT/RT
 
 #### Physical Disc Games
 - **.iso**: Blu-ray disc image (most common)
-- **.bin/.img**: Alternative disc images
-- **JB Folder**: Extracted file structure
 
 #### PSN (PlayStation Network) Games
 - **.pkg**: PlayStation package (game + DLC)
-- **.rap**: License file (required for .pkg)
-- **.edat/.sdat**: Encrypted game data
 
 ### Installing Disc Games
 
@@ -276,376 +428,6 @@ L2/R2 → LT/RT
 
 # Note: .rap files are essential for .pkg files
 ```
-
-### Dumping Your Own Games
-
-#### From PS3 with CFW (Custom Firmware)
-```bash
-# With multiMAN or webMAN
-1. Install CFW (HEN/CFW) on your PS3
-2. Use multiMAN to create backups:
-   - Insert disc
-   - File Manager → Copy Game
-   - Select destination (USB/HDD)
-3. Transfer files to PC
-```
-
-#### JB Structure Extraction
-```bash
-# For games requiring complete installation
-1. Copy PS3 disc content
-2. Structure: PS3_GAME/, PS3_UPDATE/, etc.
-3. Place in dev_hdd0/game/[GAMEID]/
-```
-
-## 🚀 Optimization by Popular Games
-
-### The Last of Us
-```bash
-# Special configuration required
-CPU:
-- PPU Decoder: Recompiler (LLVM)
-- SPU Decoder: Recompiler (LLVM)
-- Preferred SPU Threads: Auto
-
-GPU:
-- Renderer: Vulkan
-- Resolution Scale: 100% (very demanding game)
-- Write Color/Depth Buffers: ✅ Enabled
-
-Required patches:
-- 60 FPS patch (optional)
-- Performance improvements
-```
-
-### Persona 5
-```bash
-# Excellent RPCS3 support
-CPU:
-- Standard configuration
-- SPU cache: ✅ Essential for this game
-
-GPU:
-- Resolution Scale: 150%-200% possible
-- Anti-Aliasing: MSAA 2x-4x
-- Anisotropic Filtering: 16x
-
-Performance: Generally stable 60 FPS
-```
-
-### Metal Gear Solid 4
-```bash
-# Optimized configuration
-CPU:
-- PPU/SPU: Recompiler (LLVM)
-- SPU Block Size: Safe
-- Thread Scheduler: ✅ Enabled
-
-GPU:
-- Renderer: Vulkan recommended
-- Resolution: 720p (native) for stability
-- Strict Rendering: ✅ Mandatory
-
-Notes: Very demanding game, may have slowdowns
-```
-
-### Demon's Souls
-```bash
-# Stable configuration
-CPU:
-- Standard LLVM configuration
-- SPU Threads: Auto
-
-GPU:
-- Resolution Scale: 150% possible
-- Write Buffers: All enabled
-- VSync: ✅ Recommended
-
-Available mods:
-- 60 FPS unlock
-- Texture improvements
-```
-
-### Gran Turismo 6
-```bash
-# Racing game settings
-CPU:
-- SPU Decoder: Recompiler (LLVM)
-- SPU cache: ✅ Critical for this game
-
-GPU:
-- Renderer: Vulkan or D3D12
-- Resolution Scale: 100%-150%
-- Frame Limit: 60 FPS
-
-Audio:
-- Buffer: 100ms (prevents desynchronization)
-```
-
-### God of War Collection
-```bash
-# Special hacks required
-Configuration:
-- Write Color Buffers: ✅ Enabled
-- Read Color Buffers: ✅ Enabled
-- GPU texture scaling: ✅ Enabled
-
-Patches:
-- Search for specific GoW patches
-- 60 FPS mods available
-
-Performance: Variable depending on scenes
-```
-
-## 🛠️ Patches and Mods
-
-### Available Patch Types
-
-#### Official RPCS3 Patches
-```bash
-# Auto-application
-1. Configuration → Patches
-2. Check patches for your game
-3. Common types:
-   - 60 FPS unlock
-   - Performance improvements
-   - Bug fixes
-   - Resolution scaling fixes
-```
-
-#### Community Patches
-```bash
-# Manual installation
-1. Download from RPCS3 patches GitHub
-2. Place in: patches/[Title-ID]/
-3. Format: .yml (YAML configuration)
-
-Example 60 FPS patch:
-PPU-xxxxxxxxxxxx: # Title ID
-  "60 FPS":
-    Games:
-      "Game Name [Region]":
-        xxxxxxxx: # Version hash
-    Author: "Community"
-    Patch Version: 1.0
-    Patch:
-      - [ be32, 0x????????, 0x???????? ] # Memory patches
-```
-
-### Installing Mods
-
-#### Texture Mods
-```bash
-# Not yet natively supported
-- RPCS3 doesn't yet support texture packs
-- Feature in development
-- Alternatives: ReShade for post-processing
-```
-
-#### Gameplay Mods
-```bash
-# Via memory patches
-1. Search for RPCS3-compatible mods
-2. Convert to .yml patch format
-3. Apply via patch system
-
-Popular examples:
-- 60 FPS unlocks
-- Resolution fixes
-- Performance improvements
-```
-
-## 🔧 Troubleshooting
-
-### Performance Issues
-
-#### Very Low FPS
-```bash
-Priority solutions:
-1. Verify SPU/PPU are in Recompiler (LLVM) mode
-2. Enable SPU cache and precompilation
-3. Reduce resolution scale to 100%
-4. Close background applications
-5. Check CPU temperatures (throttling)
-6. Use SSD for RPCS3 cache
-```
-
-#### Micro-freezes/Stuttering
-```bash
-Stuttering optimizations:
-1. SPU LLVM precompilation: ✅ Enabled
-2. Increase PPU/SPU cache size
-3. Disable Windows Game Mode
-4. RPCS3 process priority: High
-5. Disable real-time antivirus on RPCS3 folder
-```
-
-#### 100% CPU Usage
-```bash
-CPU management:
-1. Check Preferred SPU Threads (don't exceed physical cores)
-2. Disable hyperthreading if unstable
-3. SPU Thread Scheduler: ✅ Enabled
-4. Close browsers and heavy apps
-5. Monitoring: use HWiNFO64
-```
-
-### Graphics Issues
-
-#### Black Screen/Won't Start
-```bash
-Display diagnostics:
-1. Change renderer (Vulkan ↔ D3D12 ↔ OpenGL)
-2. Disable GPU texture scaling
-3. Resolution: 720p native
-4. Update GPU drivers
-5. Verify Vulkan/D3D12 support
-```
-
-#### Corrupted Graphics
-```bash
-Visual corrections:
-1. Write Color/Depth Buffers: ✅ All enabled
-2. Read Color/Depth Buffers: ✅ Enable if required
-3. Strict Rendering Mode: ✅ Enabled
-4. GPU texture scaling: ❌ Temporarily disabled
-5. Test different renderers
-```
-
-#### Missing Textures/Transparency
-```bash
-Specific fixes:
-1. Read Color Buffers: ✅ Mandatory
-2. Write Color Buffers: ✅ Mandatory
-3. Resolution Scale: Reduce to 100%
-4. Anisotropic Filter: Temporarily disabled
-5. Search for game-specific patch
-```
-
-### Audio Issues
-
-#### No Sound
-```bash
-Audio diagnostics:
-1. Change Audio Out (XAudio2, OpenAL, etc.)
-2. Check Device (Default or specific)
-3. Audio Format: Linear PCM 48 kHz
-4. Restart RPCS3 after changes
-5. Test with other games
-```
-
-#### Distorted/Crackling Audio
-```bash
-Audio solutions:
-1. Increase Audio Buffer: 200ms+
-2. Close other audio applications
-3. Disable Windows audio effects
-4. Change system sample rate (48 kHz)
-5. Audio Backend: test different options
-```
-
-### Compatibility Issues
-
-#### Game Crashes on Start
-```bash
-Compatibility checks:
-1. Consult RPCS3 Compatibility List
-2. Firmware: latest version installed
-3. Patches: search for mandatory patches
-4. Title ID: verify patch correspondence
-5. Game version: some versions problematic
-```
-
-#### Random Crashes
-```bash
-Stabilization:
-1. SPU verification: ✅ Enabled
-2. Accurate LLVM dfma: ✅ Enabled
-3. Disable CPU/GPU overclocking
-4. RAM: test with MemTest86
-5. Logs: analyze rpcs3.log for errors
-```
-
-## 📊 Compatibility Database and Performance
-
-### Current Statistics (2025)
-| Status | Percentage | Description |
-|--------|------------|-------------|
-| **Playable** | ~65% | Playable from start to finish |
-| **Ingame** | ~25% | Starts, major issues |
-| **Intro** | ~7% | Menus/intro only |
-| **Loadable** | ~2% | Starts but crashes quickly |
-| **Nothing** | ~1% | Doesn't start |
-
-### Perfectly Compatible Games
-
-#### Action/Adventure
-```bash
-✅ The Last of Us (with patches)
-✅ Uncharted 1, 2, 3
-✅ God of War Collection
-✅ Metal Gear Solid 4 (demanding)
-✅ Red Dead Redemption (60 FPS mod)
-✅ GTA IV Complete Edition
-✅ Assassin's Creed series
-```
-
-#### RPG/JRPG
-```bash
-✅ Persona 5 (excellent)
-✅ Demon's Souls (perfect)
-✅ Tales of series (Vesperia, Xillia)
-✅ Ni No Kuni (with patches)
-✅ Final Fantasy XIII trilogy
-✅ Disgaea series
-```
-
-#### Racing/Sports
-```bash
-✅ Gran Turismo 5/6 (good)
-✅ F1 series
-✅ Need for Speed series
-✅ FIFA series (most)
-✅ NBA 2K series
-```
-
-### Performance Benchmarks
-
-#### Test configuration: Ryzen 7 3700X, RTX 3070, 32GB RAM
-
-| Game | Resolution | Average FPS | CPU Usage | Notes |
-|------|------------|-------------|-----------|-------|
-| **Persona 5** | 1080p | 60 | 45% | Excellent |
-| **Demon's Souls** | 1080p | 60 | 55% | Perfect |
-| **The Last of Us** | 720p | 45-60 | 85% | With patches |
-| **MGS4** | 720p | 30-50 | 90% | Variable |
-| **Gran Turismo 6** | 1080p | 55-60 | 70% | Good |
-
-## 🌐 Resources and Community
-
-### Official Sites
-- [🏠 Official RPCS3 Site](https://rpcs3.net/)
-- [📊 Compatibility List](https://rpcs3.net/compatibility)
-- [📚 RPCS3 Wiki](https://wiki.rpcs3.net/)
-- [🔧 Configuration Guide](https://wiki.rpcs3.net/index.php?title=Help:Installing_RPCS3)
-
-### Active Communities
-- [💬 RPCS3 Discord](https://discord.gg/a6zm2T8)
-- [🗨️ Reddit r/rpcs3](https://www.reddit.com/r/rpcs3/)
-- [🌐 Official Forums](https://forums.rpcs3.net/)
-- [📺 YouTube guides](https://www.youtube.com/c/RPCS3Official)
-
-### Development and Contribution
-- [💻 GitHub RPCS3](https://github.com/RPCS3/rpcs3)
-- [🐛 Bug reports](https://github.com/RPCS3/rpcs3/issues)
-- [🔧 Patches database](https://github.com/RPCS3/rpcs3-patches)
-- [💰 Patreon support](https://www.patreon.com/Nekotekina)
-
-### PS3 Tools
-- [🔧 multiMAN](https://store.brewology.com/ahomebrew.php?brewid=24) - PS3 manager
-- [📁 webMAN MOD](https://github.com/aldostools/webMAN-MOD) - Advanced manager
-- [🎮 PSN Patch](https://www.psx-place.com/) - PSN patches
-- [🔍 PARAM.SFO Editor](https://www.psx-place.com/resources/param-sfo-editor.632/) - Metadata editing
 
 ## ❓ FAQ - Frequently Asked Questions
 
@@ -702,7 +484,5 @@ With this comprehensive guide, you now master:
 - **Access** to legendary PS3 exclusives
 
 ---
-
-> **Legal reminder**: Only use games you legally own. RPCS3 provides no games - you must dump your own PS3 discs.
 
 **Rediscover PS3 masterpieces with RPCS3! 🎮✨**

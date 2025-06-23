@@ -1,6 +1,6 @@
 ---
-title: "Eden Installation and Configuration Guide"
-description: "Detailed tutorial for installing, configuring and optimizing Eden Nintendo Switch emulator - Complete setup with keys, firmware and settings"
+title: "Eden Installation and Configuration"
+description: "Detailed tutorial to install, configure and optimize the Nintendo Switch emulator Eden - Complete setup with keys, firmware and settings"
 date: 2025-06-02
 lastmod: 2025-06-07
 categories: ["Yuzu"]
@@ -26,22 +26,22 @@ searchHidden: false
 
 ## 🎮 Introduction to Yuzu
 
-**Yuzu** is an open-source Nintendo Switch emulator developed by the Citra team. Renowned for its high performance and growing compatibility, Yuzu is one of the most popular Switch emulators in the world.
+**Yuzu** is an open-source Nintendo Switch emulator developed by the Citra team. Renowned for its high performance and growing compatibility, Yuzu is one of the most popular Switch emulators worldwide.
 
-> ⚠️ **Legal note**: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not (I would have said that if I were myself in legality)
+> ⚠️ **Legal notice**: This emulator is intended to play only games you legally own. Emulation for backup and research purposes is legal, but piracy is not (I would have said that if I were myself in legality)
 
 ## 🔧 Step 1: Eden Download
 
 ```bash
-# Official site
+# Official website
 https://git.eden-emu.dev/eden-emu/eden#download
 ```
 
-## Game Download
+## Downloading your game
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** to access the Nintendo Switch game collection.
+Visit **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** to access the Nintendo Switch game collection.
 
 ### Step 2: Download the game
 
@@ -51,7 +51,7 @@ Go to **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?plat
 
 ### Step 3: File extraction
 
-Once the download is finished, **extract** the archive with one of these software:
+Once the download is complete, **extract** the archive with one of these software:
 
 | Software | Download Link | Compatibility |
 |----------|---------------|---------------|
@@ -60,21 +60,20 @@ Once the download is finished, **extract** the archive with one of these softwar
 
 > **💡 Tip**: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.
 
-**Result**: You'll get game files ready to be used with Eden! 🎯
+**Result**: You will get game files ready to be used with Eden! 🎯
 
 ## ⚙️ Step 2: Installation and configuration
 
 ### First launch
 1. **Run** `yuzu.exe` as administrator
-2. **Accept** the initial configuration
-3. **Configure** the base folders
+2. **Accept** the initial setup
+3. **Configure** the basic folders
 
 ## 🎯 Step 3: Keys and firmware installation
 
 ### Installing encryption keys
 
-#### Automatic method (Homebrew required)
-
+#### Automatic method
 - [Keys version 20.0.1 | 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
 
 #### Installation in Yuzu
@@ -94,7 +93,7 @@ Once the download is finished, **extract** the archive with one of these softwar
 3. **Wait** for complete installation
 4. **Verify**: `Tools → Firmware Version`
 
-## ⚙️ Step 5: Optimal configuration
+## ⚙️ Step 4: Optimal configuration
 
 ### General settings
 ```
@@ -108,15 +107,15 @@ Emulation → Configure → General
 ```
 Emulation → Configure → System
 ```
-- **Region**: Europe (If you're in Europe, otherwise put where you are)
-- **Language**: English (If you're in an English-speaking country, otherwise put where you are)
+- **Region**: Europe (If you're in Europe, otherwise set your location)
+- **Language**: English (If you're English-speaking, otherwise set your language)
 - **RTC Source**: System Clock
 - **Time Zone**: Your timezone
 - **Sound Output Mode**: Stereo
 
 ### Optimal graphics settings
 
-#### API tab
+#### API Tab
 ```
 Graphics → API
 - API: Vulkan (recommended) or OpenGL
@@ -124,7 +123,7 @@ Graphics → API
 - Shader Backend: GLSL (Vulkan) / GLASM (OpenGL)
 ```
 
-#### Graphics tab
+#### Graphics Tab
 ```
 Graphics → Graphics
 - Use disk pipeline cache: ✅ Enabled
@@ -134,7 +133,7 @@ Graphics → Graphics
 - VSync Mode: FIFO (Recommended)
 ```
 
-#### Advanced Graphics tab
+#### Advanced Graphics Tab
 ```
 Graphics → Advanced
 - Accuracy Level: Normal (High for more precision)
@@ -153,9 +152,9 @@ Audio
 - Volume: 100%
 ```
 
-### Control configuration
+### Controls configuration
 
-#### Xbox/PlayStation/Switch/Whatever controller you have
+#### Xbox/PlayStation/Switch/Any controller
 ```
 Controls → Configure
 1. Player 1 → Connected Controller: Pro Controller
@@ -171,7 +170,7 @@ Controls → Configure
 3. Assign keys to buttons
 ```
 
-## 🎮 Step 6: Adding and optimizing games
+## 🎮 Step 5: Adding and optimizing games
 
 ### Supported formats
 - **.NSP**: Nintendo Submission Package (eShop games)
@@ -180,12 +179,173 @@ Controls → Configure
 - **.NSZ**: Compressed NSP (requires tools)
 - **.XCZ**: Compressed XCI (requires tools)
 
-## Game configuration in the emulator
+## Configuring games in the emulator
 
-### Adding the game folder
+### Adding the games folder
 
 In the emulator menu, **double-click** then select the folder that contains all your games.
 
 ### Recommended folder structure
 
-For optimal organization of your library, here's the recommended tree structure:
+For optimal library organization, here's the recommended directory structure:
+
+````
+Switch Games/
+├── Mario Kart 8 Deluxe/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── New Super Mario Bros U Deluxe/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── The Legend of Zelda BOTW/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Super Mario Odyssey/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game)
+````
+
+### Content types
+
+{{< admonition tip "Understanding folders" >}}
+- **BASE** 📁: The main game you download
+- **UPDATE** 📁: Updates and patches (recommended)
+- **DLC** 📁: Additional paid content (optional but recommended)
+{{< /admonition >}}
+
+{{< admonition success "Benefits of this organization" >}}
+✅ **Automatic detection**: Games are automatically added to the emulator  
+✅ **Simplified management**: No need to manually select each ROM  
+✅ **Clear organization**: Easy to see what content you have for each game  
+✅ **Easy maintenance**: Simplified adding/removing content
+{{< /admonition >}}
+
+> **📝 Important note**: If a game has no update or DLC, there's no need to create the corresponding folders. Only create folders for content you own.
+
+### Result
+
+Once this structure is in place, your emulator will automatically detect all games present in the "Switch Games" folder and organize them properly in your library! 🎯
+
+### Installing updates
+```bash
+# In Yuzu
+File → Install Files to NAND
+→ Select the update .nsp file
+```
+
+### Installing DLC
+```bash
+# In Yuzu
+File → Install Files to NAND
+→ Select the DLC .nsp file
+```
+
+## 🔧 Troubleshooting
+
+### Common problems and solutions
+
+#### Game won't launch
+```bash
+Solutions in order of priority:
+1. Check firmware installation
+2. Check keys (prod.keys/title.keys)
+3. Test with default settings
+4. Reinstall Visual C++ Redistributables
+5. Update Eden to the latest version
+```
+
+#### Poor performance
+```bash
+Immediate optimizations:
+1. Reduce Resolution Scaler to 1x
+2. Enable Multicore CPU Emulation
+3. Use Vulkan instead of OpenGL
+4. Close background applications
+5. Check CPU/GPU temperatures
+
+Final note: installing a mod to increase FPS will NOT increase your FPS. If a game is made to run at 30fps, but on your PC runs at 15-20fps (hello Pokémon Scarlet), adding a mod will do NOTHING. Get a better PC, and those who tell you I'm lying, I'm already laughing at their competence to talk nonsense
+```
+
+#### Frequent crashes
+```bash
+Diagnostics:
+1. Check game integrity (SHA256)
+2. Test without mods
+3. Reduce accuracy level
+4. Disable overclocking
+5. Test with an earlier version of Yuzu
+```
+
+#### Desynchronized audio
+```bash
+Solutions:
+1. Change Output Engine (auto → WASAPI)
+2. Adjust audio buffer
+3. Check audio drivers
+4. Disable Windows audio effects
+```
+
+#### Corrupted graphics
+```bash
+Corrections:
+1. Delete shader cache
+2. Change graphics API (Vulkan ↔ OpenGL)
+3. Update GPU drivers
+4. Reduce Accuracy Level
+5. Temporarily disable ASTC decoding
+```
+
+## 🎯 Advanced tips and tricks
+
+### Save management
+
+#### Save location
+```bash
+# Windows
+%APPDATA%\yuzu\nand\user\save\account\[user-id]\[title-id]\
+
+# Linux
+~/.local/share/yuzu/nand/user/save/account/[user-id]/[title-id]/
+
+# Android
+Android/data/org.yuzu.yuzu_emu/files/nand/user/save/
+```
+
+## ❓ FAQ - Frequently Asked Questions
+
+### General questions
+
+**Q: Is Eden legal?**
+**A:** Yes, emulation is legal. However, you must legally own all games and firmware you use.
+
+**Q: Can I play online with Eden?**
+**A:** Yes
+
+### Technical questions
+
+**Q: Vulkan or OpenGL?**
+**A:** Vulkan is generally more performant on recent GPUs. OpenGL can be more stable on some systems.
+
+**Q: How much RAM minimum?**
+**A:** 8GB minimum, 16GB recommended, 32GB for the heaviest games with mods.
+
+**Q: Is my GPU compatible?**
+**A:** Vulkan: GTX 1060/RX 580 minimum. OpenGL: Any GPU supporting OpenGL 4.6.
+
+## 🎯 Conclusion
+
+With this complete guide, you now have all the keys to:
+- **Install** and configure Yuzu optimally
+- **Optimize** performance according to your hardware
+- **Solve** common problems
+- **Enjoy** your Nintendo Switch games with superior quality
+
+---
+
+> **Reminder**: Always respect copyright and support developers by buying their games.
+
+**Have fun with Yuzu! 🎮✨**
+````

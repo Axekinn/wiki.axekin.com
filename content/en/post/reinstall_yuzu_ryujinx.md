@@ -206,5 +206,3 @@ Reinstalling **Yuzu** and **Ryujinx** while preserving your saves is a simple pr
 **A:** Check Windows recycle bin, use file recovery tools, or restore from a system backup.
 
 ---
-
-**Did this guide help you?** Share your experiences and additional tips in the comments!

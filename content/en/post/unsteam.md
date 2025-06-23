@@ -252,5 +252,5 @@ Games/
 
 ---
 
-> **💡 Final tip**: Always test with free games or games you legally own before using with other titles. Co-op works better with stable connections and identical configurations between players.
+> **💡 Final tip**: Always test with free games or games you legally own before using with other titles.
 ````
