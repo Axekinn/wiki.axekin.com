@@ -298,7 +298,7 @@ comment:
     zh-CN: 说些什么吧！
     zh-TW: 說些什麼吧！
     ja: コメントを残す
-  default: waline # default comment system, when you enable multiple comment systems
+  default: twikoo # default comment system, when you enable multiple comment systems
 
 # valine comment system. https://valine.js.org
 # version 1.5.1
@@ -343,8 +343,8 @@ waline:
 
 # https://twikoo.js.org
 twikoo:
-  enable: false
-  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  enable: true
+  envId: https://comment-wikiaxekincom.vercel.app # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
   region:
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
@@ -426,7 +426,7 @@ animation:
 
 # see https://github.com/D-Sketon/mouse-firework
 firework:
-  enable: true
+  enable: false
   options:
     excludeElements: ["a", "button"]
     particles:
