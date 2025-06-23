@@ -343,7 +343,7 @@ waline:
 
 # https://twikoo.js.org
 twikoo:
-  enable: true
+  enable: false
   envId: "https://comment-wikiaxekincom.vercel.app"
   region:
   # Configuration personnalisée avancée
@@ -351,7 +351,7 @@ twikoo:
   path: window.location.pathname # Chemin personnalisé pour les commentaires
   
   # Interface utilisateur
-  placeholder: "Write ur best comment  !" # Texte d'invite personnalisé
+  placeholder: "Write ur best comment !" # Texte d'invite personnalisé
   requiredMeta: ['nick'] # Seul le pseudo est requis (email optionnel)
   
   # Modération et sécurité
