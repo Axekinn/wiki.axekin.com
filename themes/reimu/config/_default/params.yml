@@ -344,7 +344,7 @@ waline:
 # https://twikoo.js.org
 twikoo:
   enable: true
-  envId: https://comment-wikiaxekincom.vercel.app # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  envId: "https://comment-wikiaxekincom.vercel.app" # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
   region:
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
