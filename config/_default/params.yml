@@ -69,7 +69,7 @@ menu:
     url: "about"
     icon: e613
   - name: discord
-    url: "https://discord.gg/axekin"
+    url: "https://discord.gg/CUpf57y5Vg"
     icon: e60d
 
 # Format des dates
@@ -297,7 +297,7 @@ rss:
 # Réseaux sociaux étendus
 social:
   email: mailto:axekinn@proton.me
-  discord: https://discord.gg/axekin
+  discord: https://discord.gg/CUpf57y5Vg
   github: https://github.com/axekinn
   youtube: https://youtube.com/@axekinn
 

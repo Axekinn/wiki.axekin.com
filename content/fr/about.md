@@ -40,7 +40,7 @@ Salut ! Je suis **Axekin**, passionné de technologie, gaming et surtout d'anime
 HTML/CSS, JavaScript, Python - toujours en train d'apprendre de nouvelles technologies
 
 **🎮 Gaming**  
-Retrouvez-moi sur [Discord](https://discord.gg/axekin) pour des sessions gaming !
+Retrouvez-moi sur [Discord](https://discord.gg/CUpf57y5Vg) pour des sessions gaming !
 
 **📚 Apprentissage continu**  
 Toujours en quête de nouvelles connaissances et compétences
@@ -71,7 +71,7 @@ Manga, anime, et tout l'univers nippon me passionnent
 **Vous voulez discuter, collaborer ou simplement dire bonjour ?**
 
 - 📧 **Email** : [axekinn@proton.me](mailto:axekinn@proton.me)
-- 💬 **Discord** : [Rejoignez notre serveur](https://discord.gg/axekin)
+- 💬 **Discord** : [Rejoignez notre serveur](https://discord.gg/CUpf57y5Vg)
 - 🌐 **Site web** : [axekin.com](https://axekin.com)
 - 🐙 **GitHub** : [@axekin](https://github.com/axekinn)
 
