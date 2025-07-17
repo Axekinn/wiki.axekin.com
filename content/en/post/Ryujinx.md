@@ -43,7 +43,7 @@ https://ryujinx.app/
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** to access the Nintendo Switch game collection.
+Go to **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/games?platform=switch)** to access the Nintendo Switch game collection.
 
 ### Step 2: Download the game
 
@@ -155,7 +155,9 @@ Once this structure is in place, your emulator will automatically detect all gam
 ### First launch
 1. **Execute** `ryujinx.exe`
 2. **Install keys**
-- [Keys version 20.0.1 | 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+- [Keys version 18.X.X](https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.-1-0.zip)
+- [Keys version 19.X.X](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+- [Keys version 20.X.X](https://files.prodkeys.net/ProdKeys.net-v20.0.1.zip)
 
 #### Installation in Ryujinx
 1. **Open** Ryujinx
@@ -166,7 +168,9 @@ Once this structure is in place, your emulator will automatically detect all gam
 
 ### Installing Nintendo Switch firmware
 
-- [Firmware 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+- [Firmware 18.1.0](https://github.com/THZoria/NX_Firmware/releases/download/18.1.0/Firmware.18.1.0.zip)
+- [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
+- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/20.1.5/Firmware.20.1.5.zip)
 
 #### Installation in Ryujinx
 1. `Action → Install Firmware → Install Firmware from a XCI or ZIP`

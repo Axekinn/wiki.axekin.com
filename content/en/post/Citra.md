@@ -43,7 +43,7 @@ https://github.com/azahar-emu/azahar/releases
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Nintendo 3DS](https://www.axekin.com/search?platform=3ds)** to access the Nintendo 3DS game collection.
+Go to **[🎮 Axekin Games - Nintendo 3DS](https://www.axekin.com/games?platform=3ds)** to access the Nintendo 3DS game collection.
 
 ### Step 2: Download the game
 

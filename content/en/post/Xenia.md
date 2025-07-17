@@ -48,7 +48,7 @@ https://github.com/xenia-manager/xenia-manager/releases
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Xbox 360](https://www.axekin.com/search?platform=xbox360)** to access the Xbox 360 game collection.
+Go to **[🎮 Axekin Games - Xbox 360](https://www.axekin.com/games?platform=xbox360)** to access the Xbox 360 game collection.
 
 ### Step 2: Download the game
 

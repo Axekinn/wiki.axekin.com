@@ -69,7 +69,7 @@ Risques :
 
 ### Étape 1 : Accès à la bibliothèque de jeux
 
-Rendez-vous sur **[🎮 Axekin Games - Playstation 3](https://www.axekin.com/search?platform=ps3)** (Bientôt disponible ^_^ ) pour accéder à la collection de jeux Playstation 3.
+Rendez-vous sur **[🎮 Axekin Games - Playstation 3](https://www.axekin.com/games?platform=ps3)** (Bientôt disponible ^_^ ) pour accéder à la collection de jeux Playstation 3.
 
 ### Étape 2 : Téléchargement du jeu
 

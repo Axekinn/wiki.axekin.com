@@ -69,7 +69,7 @@ Risks:
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Playstation 3](https://www.axekin.com/search?platform=ps3)** (Coming soon ^_^ ) to access the Playstation 3 game collection.
+Go to **[🎮 Axekin Games - Playstation 3](https://www.axekin.com/games?platform=ps3)** (Coming soon ^_^ ) to access the Playstation 3 game collection.
 
 ### Step 2: Download the game
 

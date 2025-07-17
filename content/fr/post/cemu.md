@@ -43,7 +43,7 @@ https://github.com/cemu-project/Cemu/releases
 
 ### Étape 1 : Accéder à la bibliothèque de jeux
 
-Rendez-vous sur **[🎮 Axekin Games - Nintendo Wii U](https://www.axekin.com/search?platform=wiiu)** pour accéder à la collection de jeux Nintendo Wii U.
+Rendez-vous sur **[🎮 Axekin Games - Nintendo Wii U](https://www.axekin.com/games?platform=wiiu)** pour accéder à la collection de jeux Nintendo Wii U.
 
 ### Étape 2 : Télécharger le jeu
 

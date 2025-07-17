@@ -71,7 +71,7 @@ Features:
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Nintendo DS](https://www.axekin.com/search?platform=ds)** to access the Nintendo DS game collection.
+Go to **[🎮 Axekin Games - Nintendo DS](https://www.axekin.com/games?platform=ds)** to access the Nintendo DS game collection.
 
 ### Step 2: Download the game
 

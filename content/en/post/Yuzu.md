@@ -41,7 +41,7 @@ https://git.eden-emu.dev/eden-emu/eden#download
 
 ### Step 1: Access the game library
 
-Visit **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** to access the Nintendo Switch game collection.
+Visit **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/games?platform=switch)** to access the Nintendo Switch game collection.
 
 ### Step 2: Download the game
 

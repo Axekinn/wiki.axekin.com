@@ -61,7 +61,7 @@ Organisez vos fichiers avec cette structure :
 
 ### Étape 1 : Accéder à la bibliothèque de jeux
 
-Rendez-vous sur **[🎮 Axekin Games - Nintendo DS](https://www.axekin.com/search?platform=ds)** pour accéder à la collection de jeux Nintendo DS.
+Rendez-vous sur **[🎮 Axekin Games - Nintendo DS](https://www.axekin.com/games?platform=ds)** pour accéder à la collection de jeux Nintendo DS.
 
 ### Étape 2 : Télécharger le jeu
 

@@ -49,7 +49,7 @@ https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu
 
 ### Step 1: Access the game library
 
-Go to **[🎮 Axekin Games - Nintendo Wii](https://www.axekin.com/search?platform=wii)** to access the Nintendo Wii game collection.
+Go to **[🎮 Axekin Games - Nintendo Wii](https://www.axekin.com/games?platform=wii)** to access the Nintendo Wii game collection.
 
 ### Step 2: Download the game
 

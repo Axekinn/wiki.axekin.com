@@ -43,7 +43,7 @@ https://ryujinx.app/
 
 ### Étape 1 : Accéder à la bibliothèque de jeux
 
-Rendez-vous sur **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/search?platform=switch)** pour accéder à la collection de jeux Nintendo Switch.
+Rendez-vous sur **[🎮 Axekin Games - Nintendo Switch](https://www.axekin.com/games?platform=switch)** pour accéder à la collection de jeux Nintendo Switch.
 
 ### Étape 2 : Télécharger le jeu
 
