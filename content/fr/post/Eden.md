@@ -26,7 +26,7 @@ searchHidden: false
 
 ## 🎮 Introduction à Yuzu
 
-**Yuzu** est un émulateur Nintendo Switch open-source développé par l'équipe de Citra. Réputé pour ses performances élevées et sa compatibilité croissante, Yuzu est l'un des émulateurs Switch les plus populaires au monde.
+**Eden** est un émulateur Nintendo Switch open-source développé par l'équipe de Citra. Réputé pour ses performances élevées et sa compatibilité croissante, Eden est l'un des émulateurs Switch les plus populaires au monde.
 
 > ⚠️ **Note légale** : Cet émulateur est destiné à jouer uniquement aux jeux que vous possédez légalement. L'émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l'est pas (j'aurais dit ça si j'étais moi même dans la légalité)
 
@@ -34,7 +34,7 @@ searchHidden: false
 
 ```bash
 # Site officiel
-https://git.eden-emu.dev/eden-emu/eden#download
+https://eden-emu.dev/download
 ```
 
 ## Téléchargement de votre jeu
@@ -65,7 +65,7 @@ Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces l
 ## ⚙️ Étape 2 : Installation et configuration
 
 ### Premier lancement
-1. **Exécutez** `yuzu.exe` en tant qu'administrateur
+1. **Exécutez** `eden.exe` en tant qu'administrateur
 2. **Acceptez** la configuration initiale
 3. **Configurez** les dossiers de base
 
@@ -74,21 +74,21 @@ Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces l
 ### Installation des clés de chiffrement
 
 #### Méthode automatique
-- [Clé version 20.0.1 | 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+- [Clé version 19.0.1](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
 
 
-#### Installation dans Yuzu
-1. **Ouvrez** Yuzu
+#### Installation dans Eden
+1. **Ouvrez** Eden
 2. `File → Open Eden Folder`
 3. **Naviguez** vers le dossier `keys/`
 4. **Copiez** `prod.keys` et `title.keys` à l'intérieur
-5. **Redémarrez** Yuzu
+5. **Redémarrez** Eden
 
 ### Installation du firmware Nintendo Switch
 
-- [Firmware 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+- [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
 
-#### Installation dans Yuzu
+#### Installation dans Eden
 1. `Tools → Install Firmware`
 2. **Sélectionnez** le fichier firmware .zip
 3. **Attendez** l'installation complète
@@ -119,56 +119,56 @@ Emulation → Configure → System
 #### Onglet API
 ```
 Graphics → API
-- API: Vulkan (recommandé) ou OpenGL
-- Device: Votre GPU principal
-- Shader Backend: GLSL (Vulkan) / GLASM (OpenGL)
+- API : Vulkan (recommandé) ou OpenGL
+- Périphérique : Votre GPU principal
+- Backend des shaders : GLSL (Vulkan) / GLASM (OpenGL)
 ```
 
-#### Onglet Graphics
+#### Onglet Graphiques
 ```
 Graphics → Graphics
-- Use disk pipeline cache: ✅ Activé
-- Use asynchronous GPU emulation: ✅ Activé
-- Use asynchronous shader building: ✅ Activé
-- Accelerate ASTC texture decoding: ✅ Activé
-- VSync Mode: FIFO (Recommended)
+- Utiliser le cache de pipeline sur disque : ✅ Activé
+- Utiliser l’émulation GPU asynchrone : ✅ Activé
+- Utiliser la compilation asynchrone des shaders : ✅ Activé
+- Accélérer le décodage des textures ASTC : ✅ Activé
+- Mode VSync : FIFO (Recommandé)
 ```
 
-#### Onglet Advanced Graphics
+#### Onglet Graphiques avancés
 ```
 Graphics → Advanced
-- Accuracy Level: Normal (High pour plus de précision)
-- Use Fast GPU Time: ✅ Activé
-- Use Vulkan pipeline cache: ✅ Activé (si Vulkan)
-- Anisotropic Filtering: 16x
-- Resolution Scaler: 1x (ou plus si GPU puissant)
-- Anti-Aliasing: None ou FXAA
+- Niveau de précision : Normal (Haut pour plus de précision)
+- Utiliser le temps GPU rapide : ✅ Activé
+- Utiliser le cache de pipeline Vulkan : ✅ Activé (si Vulkan)
+- Filtrage anisotrope : 16x
+- Mise à l’échelle de la résolution : 1x (ou plus si votre GPU est puissant)
+- Anti-crénelage : Aucun ou FXAA
 ```
 
 ### Configuration audio
 ```
 Audio
-- Output Engine: auto (ou WASAPI sur Windows)
-- Output Device: Default
-- Volume: 100%
+- Moteur de sortie : auto
+- Périphérique de sortie : Par défaut
+- Volume : 100 %
 ```
 
 ### Configuration des contrôles
 
-#### Manette Xbox/PlayStation/Switch/Tout ce que vous avez
+#### Manette Xbox/PlayStation/Switch/Toute manette compatible
 ```
 Controls → Configure
-1. Player 1 → Connected Controller: Pro Controller
-2. Configure → Automatically map
-3. Test all buttons
+1. Joueur 1 → Manette connectée : Pro Controller
+2. Configurer → Mappage automatique
+3. Tester tous les boutons
 ```
 
 #### Clavier (temporaire)
 ```
 Controls → Configure
-1. Player 1 → Connected Controller: Handheld
-2. Configure → Manual mapping
-3. Assign keys to buttons
+1. Joueur 1 → Manette connectée : Handheld
+2. Configurer → Mappage manuel
+3. Assigner les touches aux boutons
 ```
 
 ## 🎮 Étape 5 : Ajout et optimisation des jeux
@@ -176,9 +176,6 @@ Controls → Configure
 ### Formats supportés
 - **.NSP** : Nintendo Submission Package (eShop games)
 - **.XCI** : NX Card Image (Physical cards)
-- **.NCA** : Nintendo Content Archive (Raw content)
-- **.NSZ** : Compressed NSP (requires tools)
-- **.XCZ** : Compressed XCI (requires tools)
 
 ## Configuration des jeux dans l'émulateur
 
@@ -300,28 +297,12 @@ Corrections:
 5. Désactivez ASTC decoding temporairement
 ```
 
-## 🎯 Conseils avancés et astuces
-
-### Gestion des sauvegardes
-
-#### Localisation des sauvegardes
-```bash
-# Windows
-%APPDATA%\yuzu\nand\user\save\account\[user-id]\[title-id]\
-
-# Linux
-~/.local/share/yuzu/nand/user/save/account/[user-id]/[title-id]/
-
-# Android
-Android/data/org.yuzu.yuzu_emu/files/nand/user/save/
-```
-
 ## ❓ FAQ - Questions fréquemment posées
 
 ### Questions générales
 
 **Q : Eden est-il légal ?**
-**R :** Oui, l'émulation est légale. Cependant, vous devez posséder légalement tous les jeux et firmware que vous utilisez.
+**R :** Oui, l'émulation est légale. Cependant, vous devez posséder légalement tous les jeux, clés et firmware que vous utilisez.
 
 **Q : Puis-je jouer en ligne avec Eden ?**
 **R :** Oui
@@ -349,5 +330,5 @@ Avec ce guide complet, vous avez maintenant toutes les clés pour :
 
 > **Reminder** : Respectez toujours les droits d'auteur et soutenez les développeurs en achetant leurs jeux.
 
-**Bon jeux avec Yuzu ! 🎮✨**
+**Bon jeux avec Eden   ! 🎮✨**
 ```
