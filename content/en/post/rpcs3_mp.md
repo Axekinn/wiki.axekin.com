@@ -26,7 +26,7 @@ searchHidden: false
 > Play PS3 games online via RPCN with a smooth, reliable setup. Follow the quick checklist, then dive deeper when needed.
 
 > 📝 Author’s note  
-> RPCS3 n'a jamais été autant facile à configurer pour jouer en multijoueur. Pour les plus perspicaces d'entre vous, j'ai repris le tutoriel de RPCS3 qui est super bien expliqué.
+> RPCS3 has never been easier to set up for multiplayer gaming. For those of you who are more tech-savvy, I've included the RPCS3 tutorial, which is very well explained.
 
 ## ⚡ Quick Start Checklist
 
