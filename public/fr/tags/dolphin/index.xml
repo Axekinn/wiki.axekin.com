@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dolphin on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/dolphin/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/dolphin/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Installation et configuration de Dolphin</title>
+      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
+      <description>
+        <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-dolphin">
+<a class="header-anchor" href="#-introduction-%c3%a0-dolphin"></a>
+🎮 Introduction à Dolphin
+</h2><p><strong>Dolphin</strong> est l&rsquo;émulateur Nintendo GameCube et Wii le plus avancé au monde. Développé depuis 2003, il offre une compatibilité quasi-parfaite, des améliorations graphiques spectaculaires et des fonctionnalités uniques comme le jeu en ligne et la réalité virtuelle.</p>
+<h2 id="-étape-1--téléchargement-de-dolphin">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-dolphin"></a>
+🔧 Étape 1 : Téléchargement de Dolphin
+</h2><h3 id="option-1--version-stable-recommandée">
+<a class="header-anchor" href="#option-1--version-stable-recommand%c3%a9e"></a>
+Option 1 : Version Stable (Recommandée)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://dolphin-emu.org/download/
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Download Dolphin 5.0&rdquo;</li>
+<li><strong>Téléchargez</strong> <code>dolphin-x64-X.0.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>Documents\Dolphin</code> ou à la racine d&rsquo;un de vos autre disque, pas le C)</li>
+</ol>
+<h3 id="option-2--dolphin-android">
+<a class="header-anchor" href="#option-2--dolphin-android"></a>
+Option 2 : Dolphin Android
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Version mobile optimisée</span>
+</span></span><span style="display:flex;"><span>https://play.google.com/store/apps/details?id<span style="color:#f92672">=</span>org.dolphinemu.dolphinemu
+</span></span></code></pre></div><h2 id="téléchargement-de-votre-jeu">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-de-votre-jeu"></a>
+Téléchargement de votre jeu
+</h2><h3 id="étape-1--accéder-à-la-bibliothèque-de-jeux">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-biblioth%c3%a8que-de-jeux"></a>
+Étape 1 : Accéder à la bibliothèque de jeux
+</h3><p>Rendez-vous sur <strong><a href="https://www.axekin.com/games?platform=wii">🎮 Axekin Games - Nintendo Switch</a></strong> pour accéder à la collection de jeux Nintendo Switch.</p>
+<h3 id="étape-2--télécharger-le-jeu">
+<a class="header-anchor" href="#%c3%a9tape-2--t%c3%a9l%c3%a9charger-le-jeu"></a>
+Étape 2 : Télécharger le jeu
+</h3><ol>
+<li><strong>Recherchez</strong> le jeu désiré dans la liste</li>
+<li><strong>Cliquez</strong> sur le bouton de téléchargement</li>
+<li><strong>Attendez</strong> la fin du téléchargement</li>
+</ol>
+<h3 id="étape-3--extraction-du-fichier">
+<a class="header-anchor" href="#%c3%a9tape-3--extraction-du-fichier"></a>
+Étape 3 : Extraction du fichier
+</h3><p>Une fois le téléchargement terminé, <strong>extrayez</strong> l&rsquo;archive avec l&rsquo;un de ces logiciels :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Logiciel</th>
+          <th>Lien de téléchargement</th>
+          <th>Compatibilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Télécharger 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Télécharger WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Astuce</strong> : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d&rsquo;essai.</p></blockquote>
+<p><strong>Résultat</strong> : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec Dolphin ! 🎯</p>
+<h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Créez cette structure de dossiers pour organiser vos fichiers :</p>
+<p>Pour une organisation optimale de votre bibliothèque, voici l&rsquo;arborescence conseillée :</p>
+<pre tabindex="0"><code>Jeux Wii/
+├── Alice in Wonderland/
+│   ├── BASE/                # 🎮 Le jeu de base (fichier principal)
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu (recommandé)
+│   └── DLC/                 # 📦 Contenu téléchargeable (optionnel)
+├── Alvin and the Chipmunks: Chipwrecked/
+│   ├── BASE/                # 🎮 Le jeu de base
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu
+│   └── DLC/                 # 📦 DLC supplémentaires
+├── Animal Crossing: City Folk/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+</code></pre><h3 id="types-de-contenu">
+<a class="header-anchor" href="#types-de-contenu"></a>
+Types de contenu
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Comprendre les dossiers
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>BASE</strong> 📁 : Le jeu principal que vous téléchargez</li>
+<li><strong>UPDATE</strong> 📁 : Mises à jour et correctifs (recommandé)</li>
+<li><strong>DLC</strong> 📁 : Contenu supplémentaire payant (optionnel mais recommandé)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Avantages de cette organisation
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Détection automatique</strong> : Les jeux s&rsquo;ajoutent automatiquement dans l&rsquo;émulateur<br>
+✅ <strong>Gestion simplifiée</strong> : Plus besoin de sélectionner manuellement chaque ROM<br>
+✅ <strong>Organisation claire</strong> : Facile de voir quel contenu vous avez pour chaque jeu<br>
+✅ <strong>Maintenance aisée</strong> : Ajout/suppression de contenu simplifié
+  </div>
+</div>
+<blockquote>
+<p><strong>📝 Remarque importante</strong> : Si un jeu n&rsquo;a pas de mise à jour ou de DLC, inutile de créer les dossiers correspondants. Créez uniquement les dossiers pour le contenu que vous possédez.</p></blockquote>
+<h3 id="résultat">
+<a class="header-anchor" href="#r%c3%a9sultat"></a>
+Résultat
+</h3><p>Une fois cette structure mise en place, votre émulateur détectera automatiquement tous les jeux présents dans le dossier &ldquo;Jeux Wii&rdquo; et les organisera proprement dans votre bibliothèque ! 🎯</p>
+<h2 id="-configuration-portable-recommandé">
+<a class="header-anchor" href="#-configuration-portable-recommand%c3%a9"></a>
+💡 Configuration portable (Recommandé)
+</h2><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Installation portable
+  </div>
+  <div class="admonition-content">
+    <strong>Avant le premier lancement</strong>, créez un fichier nommé <code>portable.txt</code> à la racine du répertoire Dolphin. Cette manipulation rendra l&rsquo;installation entièrement portable.
+  </div>
+</div>
+<h3 id="avantages-du-mode-portable">
+<a class="header-anchor" href="#avantages-du-mode-portable"></a>
+Avantages du mode portable
+</h3><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Mode normal</th>
+          <th>Mode portable</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Configurations</strong></td>
+          <td>Stockées dans le système</td>
+          <td>Stockées dans le dossier</td>
+      </tr>
+      <tr>
+          <td><strong>Sauvegardes</strong></td>
+          <td>Dispersées sur l&rsquo;ordinateur</td>
+          <td>Centralisées dans un dossier</td>
+      </tr>
+      <tr>
+          <td><strong>Portabilité</strong></td>
+          <td>❌ Liée au système</td>
+          <td>✅ Déplaçable facilement</td>
+      </tr>
+      <tr>
+          <td><strong>Sauvegarde</strong></td>
+          <td>Difficile à localiser</td>
+          <td>Simple à sauvegarder</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="structure-après-création-du-dossier-portable">
+<a class="header-anchor" href="#structure-apr%c3%a8s-cr%c3%a9ation-du-dossier-portable"></a>
+Structure après création du dossier portable
+</h3><pre tabindex="0"><code>📁 Dolphin/
+├── 🎮 Dolphin.exe
+├── 📄 portable/              # ← Créez ce dossier !
+│   ├── 📁 bis/
+│   ├── 📁 games/
+│   ├── 📁 profiles/
+│   └── 📁 system/
+└── 📄 Autres fichiers...
+</code></pre><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Résultat
+  </div>
+  <div class="admonition-content">
+    <strong>Toutes vos données</strong> (configurations, sauvegardes, profils) seront stockées dans le fichier <code>portable.txt</code>, facilitant grandement la gestion et les sauvegardes !
+  </div>
+</div>
+<h3 id="instructions-de-création">
+<a class="header-anchor" href="#instructions-de-cr%c3%a9ation"></a>
+Instructions de création
+</h3><ol>
+<li><strong>Naviguez</strong> vers le dossier d&rsquo;installation de Dolphin</li>
+<li><strong>Créez</strong> un nouveau fichier nommé exactement <code>portable.txt</code></li>
+<li><strong>Lancez</strong> Dolphin - il détectera automatiquement le mode portable</li>
+</ol>
+<blockquote>
+<p><strong>📝 Note</strong> : Cette opération doit être effectuée <strong>avant</strong> le premier lancement pour être prise en compte !</p></blockquote>
+<h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>Dolphin.exe</code></li>
+<li><strong>Acceptez (ou pas)</strong> l&rsquo;envoie des données</li>
+<li><strong>Configurez</strong> le dossier des jeux : <code>Option → Configuation → Dossiers</code></li>
+<li><strong>Ajoutez</strong> votre dossier de ROMs vu précédemment</li>
+</ol>
+<h2 id="-étape-4--configuration-système-de-base">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-syst%c3%a8me-de-base"></a>
+🎯 Étape 4 : Configuration système de base
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Config → General
+</code></pre><h4 id="onglet-general">
+<a class="header-anchor" href="#onglet-general"></a>
+Onglet General
+</h4><ul>
+<li><strong>Enable Dual Core</strong> : ✅ Activé (améliore grandement les performances)</li>
+<li><strong>Enable Cheats</strong> : ✅ Activé (si vous voulez utiliser des codes)</li>
+</ul>
+<h4 id="onglet-interface">
+<a class="header-anchor" href="#onglet-interface"></a>
+Onglet Interface
+</h4><ul>
+<li><strong>Langue</strong> : Choisir le language voulu</li>
+<li><strong>Thème</strong> : Choisir le thème voulu</li>
+<li><strong>Style</strong> : Choisir le style voulu</li>
+<li><strong>Télécharger les jaquettes des jeux blabla</strong> : ✅ Activé (c&rsquo;est pour avoir les icônes)</li>
+</ul>
+<p>Le reste par défaut, on laisse.</p>
+<h3 id="configuration-des-contrôleurs">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4leurs"></a>
+Configuration des contrôleurs
+</h3><blockquote>
+<p>Pour le coup, il y a plusieurs configurations qui marcheront mieux dans certains jeux qui disposnet du gyro, je laisse ça aux youtubeurs, ils laissent généralement le fichier de config dans les bio youtube. J&rsquo;ai mis Mario Galaxy, mais vous pouvez mettre votre jeux et vous aurez la bonne configuratio pour votre jeux (si ça existe) : <a href="https://www.youtube.com/results?search_query=configuration&#43;manette&#43;gyro&#43;dolphin&#43;mario&#43;galaxy">Tuto pour votre manette</a></p></blockquote>
+<h2 id="-étape-5--configuration-graphique-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-5--configuration-graphique-optimale"></a>
+⚙️ Étape 5 : Configuration graphique optimale
+</h2><h3 id="paramètres-graphiques-de-base">
+<a class="header-anchor" href="#param%c3%a8tres-graphiques-de-base"></a>
+Paramètres graphiques de base
+</h3><pre tabindex="0"><code>Graphics → General
+</code></pre><h4 id="backend-graphics">
+<a class="header-anchor" href="#backend-graphics"></a>
+Backend Graphics
+</h4><ul>
+<li><strong>Backend</strong> : Vulkan (recommandé) ou Direct3D 11/12</li>
+<li><strong>Carte</strong> : Votre GPU principal</li>
+<li><strong>Aspect Ratio</strong> : Auto ou Force 16:9</li>
+<li><strong>Synchro Vertical</strong> : Activé, idem pour plein écran</li>
+</ul>
+<h4 id="améliorations-visuelles">
+<a class="header-anchor" href="#am%c3%a9liorations-visuelles"></a>
+Améliorations visuelles
+</h4><p><strong>Améliorations essentielles :</strong></p>
+<ul>
+<li><strong>Internal Resolution</strong> : Celle que vous voulez, plus la valeure est haute, plus ça consomme des performances</li>
+<li><strong>Anti-Aliasing</strong> : Pareil qu&rsquo;au dessus</li>
+<li><strong>Anisotropic Filtering</strong> : Pareil qu&rsquo;au dessus</li>
+</ul>
+<p>Tout le reste, on laisse les paramètres par défaut</p>
+<h3 id="paramètres-avancés">
+<a class="header-anchor" href="#param%c3%a8tres-avanc%c3%a9s"></a>
+Paramètres avancés
+</h3><pre tabindex="0"><code>Graphics → Advanced
+</code></pre><p><strong>Configuration optimale :</strong></p>
+<ul>
+<li><strong>Show FPS</strong> : ✅ Activé (monitoring performance)</li>
+<li><strong>Enable Progressive Scan</strong> : ✅ Activé</li>
+<li><strong>Backend Multithreading</strong> : ✅ Activé</li>
+<li><strong>Prefer Exclusive Fullscreen</strong> : ✅ Activé (réduit la latence)</li>
+</ul>
+<h2 id="-fonctionnalités-avancées">
+<a class="header-anchor" href="#-fonctionnalit%c3%a9s-avanc%c3%a9es"></a>
+🌐 Fonctionnalités avancées
+</h2><h3 id="netplay-jeu-en-ligne">
+<a class="header-anchor" href="#netplay-jeu-en-ligne"></a>
+Netplay (Jeu en ligne)
+</h3><h4 id="configuration-du-netplay">
+<a class="header-anchor" href="#configuration-du-netplay"></a>
+Configuration du netplay
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Host une session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay
+</span></span><span style="display:flex;"><span>2. Host tab → Configure settings:
+</span></span><span style="display:flex;"><span>   - Game: Sélectionnez votre jeu
+</span></span><span style="display:flex;"><span>   - Players: Nombre de joueurs
+</span></span><span style="display:flex;"><span>   - Buffer: 4-8 <span style="color:#f92672">(</span>selon ping<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>3. Start → Partagez le code de session
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Rejoindre une session</span>
+</span></span><span style="display:flex;"><span>1. Tools → Start NetPlay  
+</span></span><span style="display:flex;"><span>2. Connect tab → Entrez le code
+</span></span><span style="display:flex;"><span>3. Connect et attendez la synchronisation
+</span></span></code></pre></div><h4 id="paramètres-netplay-optimaux">
+<a class="header-anchor" href="#param%c3%a8tres-netplay-optimaux"></a>
+Paramètres netplay optimaux
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Pour une expérience stable</span>
+</span></span><span style="display:flex;"><span>General:
+</span></span><span style="display:flex;"><span>- Dual Core: ❌ Désactivé
+</span></span><span style="display:flex;"><span>- Idle Skipping: ❌ Désactivé
+</span></span><span style="display:flex;"><span>- Audio: DSP HLE <span style="color:#f92672">(</span>plus stable<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Graphics:
+</span></span><span style="display:flex;"><span>- Backend: Direct3D <span style="color:#ae81ff">11</span> <span style="color:#f92672">(</span>plus stable que Vulkan<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Resolution: 1x Native <span style="color:#f92672">(</span>réduit charge réseau<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- Enhancements: Minimales
+</span></span></code></pre></div><h2 id="-faq---questions-fréquentes">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quentes"></a>
+❓ FAQ - Questions fréquentes
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Dolphin peut-il jouer tous les jeux GameCube/Wii ?</strong>
+<strong>R :</strong> Environ 95% des jeux fonctionnent parfaitement ou avec des bugs mineurs. Consultez la liste de compatibilité.</p>
+<p><strong>Q : Puis-je utiliser mes vraies manettes GameCube ?</strong>
+<strong>R :</strong> Oui, avec un adaptateur GameCube-USB officiel Nintendo ou compatible Mayflash.</p>
+<p><strong>Q : Les sauvegardes de vraie console fonctionnent-elles ?</strong>
+<strong>R :</strong> Oui, vous pouvez importer/exporter vos sauvegardes avec des homebrew comme GCMM.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou Direct3D ?</strong>
+<strong>R :</strong> Vulkan offre généralement de meilleures performances sur GPU récents. D3D11 est plus stable sur systèmes plus anciens.</p>
+<p><strong>Q : Dois-je activer Dual Core ?</strong>
+<strong>R :</strong> Oui pour de meilleures performances, sauf pour le netplay où il faut le désactiver.</p>
+<p><strong>Q : Quelle résolution interne choisir ?</strong>
+<strong>R :</strong> 2x Native (856x528) est un bon compromis. 4x+ pour GPU puissants.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu lag malgré un PC puissant ?</strong>
+<strong>R :</strong> Certains jeux sont plus exigeants. Activez Dual Core, réduisez résolution, changez de backend.</p>
+<p><strong>Q : Audio crachotant ?</strong>
+<strong>R :</strong> Changez backend audio, augmentez latency, fermez autres apps audio.</p>
+<p><strong>Q : Wiimote ne se connecte pas ?</strong>
+<strong>R :</strong> Vérifiez adaptateur Bluetooth, utilisez &ldquo;Continuous Scanning&rdquo;, appairez via Dolphin.</p>
+<p><strong>Redécouvrez vos classiques GameCube/Wii en haute définition ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Dolphin</category>
+      
+    </item>
+    
+  </channel>
+</rss>

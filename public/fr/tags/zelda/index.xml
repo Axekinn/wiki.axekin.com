@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zelda on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/zelda/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/zelda/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title> Utiliser des Amiibo sur l&#39;Émulateur Cemu Wii U</title>
+      <link>https://wiki.axekin.com/fr/post/amibo_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/amibo_cemu/</guid>
+      <description>
+        <![CDATA[<h1> Utiliser des Amiibo sur l'Émulateur Cemu Wii U</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;utilisation d&rsquo;<strong>Amiibo</strong> sur l&rsquo;émulateur <strong>Cemu</strong> Wii U permet d&rsquo;accéder au contenu exclusif et aux fonctionnalités sans avoir besoin des figurines physiques. Ce guide explique comment configurer et utiliser les fichiers Amiibo .bin spécifiquement sur Cemu pour les jeux Wii U.</p>
+<p>La fonctionnalité Amiibo sur Cemu est particulièrement utile pour :</p>
+<ul>
+<li>Débloquer du contenu exclusif dans Zelda: Breath of the Wild</li>
+<li>Obtenir des objets rares et des costumes dans les jeux compatibles</li>
+<li>Tester les fonctionnalités Amiibo sans acheter de figurines</li>
+<li>Accéder aux modes de jeu et défis spéciaux</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> les fichiers de collection Amiibo (format .bin)</li>
+<li><strong>Organiser</strong> les fichiers dans un dossier dédié &ldquo;Amiibo&rdquo;</li>
+<li><strong>Charger</strong> votre jeu Wii U dans Cemu</li>
+<li><strong>Accéder</strong> au menu NFC pendant le jeu</li>
+<li><strong>Scanner</strong> l&rsquo;Amiibo désiré depuis le fichier</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et téléchargements
+</h2><h3 id="logiciels-requis">
+<a class="header-anchor" href="#logiciels-requis"></a>
+Logiciels requis
+</h3><p><strong>Composants essentiels :</strong></p>
+<ul>
+<li><strong>Cemu</strong> : Dernière version stable (2.6.0 ou plus récent)</li>
+<li><strong>Fichiers Amiibo</strong> : Collection complète .bin</li>
+<li><strong>Jeux Wii U compatibles</strong> : Qui supportent la fonctionnalité Amiibo</li>
+</ul>
+<h3 id="collection-de-fichiers-amiibo">
+<a class="header-anchor" href="#collection-de-fichiers-amiibo"></a>
+Collection de fichiers Amiibo
+</h3><h4 id="téléchargement-et-configuration">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-et-configuration"></a>
+Téléchargement et configuration
+</h4><p><strong>🔗 Lien de téléchargement</strong> : <code>https://vikingfile.com/f/3PsPBKLrJG</code> (Crédit : LinkNotZelda08)</p>
+<p><strong>Instructions de téléchargement :</strong></p>
+<ol>
+<li><strong>Téléchargez</strong> la collection Amiibo complète</li>
+<li><strong>Extrayez</strong> l&rsquo;archive sur votre ordinateur</li>
+</ol>
+<h2 id="configuration-de-cemu">
+<a class="header-anchor" href="#configuration-de-cemu"></a>
+Configuration de Cemu
+</h2><h3 id="activation-du-support-nfc">
+<a class="header-anchor" href="#activation-du-support-nfc"></a>
+Activation du support NFC
+</h3><h4 id="configuration-de-base-de-cemu">
+<a class="header-anchor" href="#configuration-de-base-de-cemu"></a>
+Configuration de base de Cemu
+</h4><p><strong>Vérification des prérequis :</strong></p>
+<ol>
+<li><strong>Version Cemu</strong> : 1.26.0 ou plus récent (support NFC requis)</li>
+<li><strong>Compatibilité jeu</strong> : Vérifiez que votre jeu supporte les Amiibo</li>
+<li><strong>Accès fichier</strong> : Assurez-vous que Cemu peut accéder à votre dossier Amiibo</li>
+</ol>
+<h4 id="paramètres-nfc-dans-cemu">
+<a class="header-anchor" href="#param%c3%a8tres-nfc-dans-cemu"></a>
+Paramètres NFC dans Cemu
+</h4><p><strong>Aucune configuration spéciale nécessaire :</strong></p>
+<ul>
+<li>Cemu a une émulation NFC intégrée</li>
+<li>Aucun plugin ou paramètre supplémentaire requis</li>
+<li>Fonctionne automatiquement avec les jeux compatibles</li>
+</ul>
+<h3 id="chargement-des-jeux-avec-support-amiibo">
+<a class="header-anchor" href="#chargement-des-jeux-avec-support-amiibo"></a>
+Chargement des jeux avec support Amiibo
+</h3><h2 id="utilisation-amiibo-étape-par-étape">
+<a class="header-anchor" href="#utilisation-amiibo-%c3%a9tape-par-%c3%a9tape"></a>
+Utilisation Amiibo étape par étape
+</h2><h3 id="exemple--the-legend-of-zelda-breath-of-the-wild">
+<a class="header-anchor" href="#exemple--the-legend-of-zelda-breath-of-the-wild"></a>
+Exemple : The Legend of Zelda: Breath of the Wild
+</h3><h4 id="accès-à-la-rune-amiibo">
+<a class="header-anchor" href="#acc%c3%a8s-%c3%a0-la-rune-amiibo"></a>
+Accès à la rune Amiibo
+</h4><p><strong>Préparation en jeu :</strong></p>
+<ol>
+<li><strong>Progressez</strong> dans le jeu jusqu&rsquo;à obtenir la rune Amiibo</li>
+<li><strong>Équipez</strong> la rune Amiibo sur votre Tablette Sheikah</li>
+<li><strong>Trouvez</strong> une zone ouverte loin des bâtiments et falaises</li>
+<li><strong>Positionnez</strong> Link dans un endroit approprié</li>
+</ol>
+<h4 id="préparation-pour-scanner">
+<a class="header-anchor" href="#pr%c3%a9paration-pour-scanner"></a>
+Préparation pour scanner
+</h4><p><strong>Étapes avant le scan :</strong></p>
+<ol>
+<li><strong>Ouvrez</strong> votre dossier Amiibo sur votre ordinateur</li>
+<li><strong>Naviguez</strong> vers le sous-dossier Zelda</li>
+<li><strong>Identifiez</strong> l&rsquo;Amiibo que vous voulez utiliser</li>
+<li><strong>Gardez</strong> la fenêtre du dossier accessible</li>
+</ol>
+<h3 id="processus-de-scan-dans-cemu">
+<a class="header-anchor" href="#processus-de-scan-dans-cemu"></a>
+Processus de scan dans Cemu
+</h3><h4 id="accès-au-menu-nfc">
+<a class="header-anchor" href="#acc%c3%a8s-au-menu-nfc"></a>
+Accès au menu NFC
+</h4><p><strong>Scan étape par étape :</strong></p>
+<ol>
+<li><strong>Activez</strong> la rune Amiibo en jeu (maintenez haut sur le D-pad)</li>
+<li><strong>Basculez</strong> vers la fenêtre Cemu</li>
+<li><strong>Cliquez</strong> sur &ldquo;NFC&rdquo; dans la barre de menu supérieure</li>
+<li><strong>Sélectionnez</strong> &ldquo;Scan NFC Tag from File&hellip;&rdquo;</li>
+</ol>
+<h4 id="sélection-de-votre-amiibo">
+<a class="header-anchor" href="#s%c3%a9lection-de-votre-amiibo"></a>
+Sélection de votre Amiibo
+</h4><p><strong>Processus de sélection de fichier :</strong></p>
+<ol>
+<li><strong>Naviguez</strong> vers votre dossier Amiibo</li>
+<li><strong>Choisissez</strong> le fichier .bin désiré (ex: Link_Archer.bin)</li>
+<li><strong>Cliquez</strong> &ldquo;Ouvrir&rdquo; pour confirmer la sélection</li>
+<li><strong>Retournez</strong> immédiatement à la fenêtre de jeu</li>
+</ol>
+<h4 id="finalisation-du-scan">
+<a class="header-anchor" href="#finalisation-du-scan"></a>
+Finalisation du scan
+</h4><p><strong>Étapes de finalisation :</strong></p>
+<ol>
+<li><strong>Revenez</strong> à la fenêtre de jeu</li>
+<li><strong>Terminez</strong> l&rsquo;activation de la rune Amiibo</li>
+<li><strong>Regardez</strong> les objets apparaître du ciel</li>
+<li><strong>Collectez</strong> vos récompenses !</li>
+</ol>
+<p>Chaque jeux à sa propre méthode pour activer les amibo, regardez sur youtube si vous ne savez pas.</p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+  </channel>
+</rss>

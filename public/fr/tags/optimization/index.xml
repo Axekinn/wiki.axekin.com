@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/optimization/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/optimization/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-xenia">
+<a class="header-anchor" href="#-introduction-%c3%a0-xenia"></a>
+🎮 Introduction à Xenia
+</h2><p><strong>Xenia</strong> est l&rsquo;émulateur Xbox 360 open-source le plus avancé disponible. Développé depuis 2013, il émule l&rsquo;architecture PowerPC Xenon de la Xbox 360 et offre une compatibilité croissante avec de nombreux jeux emblématiques de la console Microsoft.</p>
+<blockquote>
+<p>💡 <strong>Note importante</strong> : Xenia nécessite un CPU puissant avec de bonnes performances single-thread. Les GPU récents avec support Vulkan donnent les meilleurs résultats.</p></blockquote>
+<blockquote>
+<p>💡 <strong>Xenia Manager</strong> : Pour une meilleure compréhension, utilisation de Xenia, on vas utiliser Xenia Manager. Ce n&rsquo;est pas quelque chose d&rsquo;officiel de la part des devs de Xenia, néanmoins il n&rsquo;y a pas mieux pour débuter sur cet émulateur</p></blockquote>
+<h2 id="-étape-1--téléchargement-de-xenia-manager">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-xenia-manager"></a>
+🔧 Étape 1 : Téléchargement de Xenia Manager
+</h2><h3 id="version-master-stable">
+<a class="header-anchor" href="#version-master-stable"></a>
+Version Master (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://github.com/xenia-manager/xenia-manager/releases
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur &ldquo;xenia_manager.zip &quot;</li>
+<li><strong>Téléchargez</strong> <code>xenia_master.zip</code></li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>Documents\Xenia</code> ou à la racine d&rsquo;un de vos autre disque, pas le C)</li>
+</ol>
+<h2 id="téléchargement-de-votre-jeu">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-de-votre-jeu"></a>
+Téléchargement de votre jeu
+</h2><h3 id="étape-1--accéder-à-la-bibliothèque-de-jeux">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-biblioth%c3%a8que-de-jeux"></a>
+Étape 1 : Accéder à la bibliothèque de jeux
+</h3><p>Rendez-vous sur <strong><a href="https://www.axekin.com/games?platform=xbox360">🎮 Axekin Games - Xbox 360</a></strong> pour accéder à la collection de jeux Xbox 360.</p>
+<h3 id="étape-2--télécharger-le-jeu">
+<a class="header-anchor" href="#%c3%a9tape-2--t%c3%a9l%c3%a9charger-le-jeu"></a>
+Étape 2 : Télécharger le jeu
+</h3><ol>
+<li><strong>Recherchez</strong> le jeu désiré dans la liste</li>
+<li><strong>Cliquez</strong> sur le bouton de téléchargement</li>
+<li><strong>Attendez</strong> la fin du téléchargement</li>
+</ol>
+<h3 id="étape-3--extraction-du-fichier">
+<a class="header-anchor" href="#%c3%a9tape-3--extraction-du-fichier"></a>
+Étape 3 : Extraction du fichier
+</h3><p>Une fois le téléchargement terminé, <strong>extrayez</strong> l&rsquo;archive avec l&rsquo;un de ces logiciels :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Logiciel</th>
+          <th>Lien de téléchargement</th>
+          <th>Compatibilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Télécharger 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Télécharger WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Astuce</strong> : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d&rsquo;essai.</p></blockquote>
+<p><strong>Résultat</strong> : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec Xenia ! 🎯</p>
+<h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Organisez vos jeux avec cette structure :</p>
+<pre tabindex="0"><code>Jeux Xbox 360/
+├── Forza Horizon/
+│   ├── BASE/                # 🎮 Le jeu de base (fichier principal)
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu (recommandé)
+│   └── DLC/                 # 📦 Contenu téléchargeable (optionnel)
+├── Skate 3/
+│   ├── BASE/                # 🎮 Le jeu de base
+│   ├── UPDATE/              # 🔄 Mise à jour du jeu
+│   └── DLC/                 # 📦 DLC supplémentaires
+├── Juju/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Gears of War/
+    ├── BASE/
+    └── UPDATE/              # (Pas de DLC pour ce jeu)
+</code></pre><h3 id="types-de-contenu">
+<a class="header-anchor" href="#types-de-contenu"></a>
+Types de contenu
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Comprendre les dossiers
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>BASE</strong> 📁 : Le jeu principal que vous téléchargez</li>
+<li><strong>UPDATE</strong> 📁 : Mises à jour et correctifs (recommandé)</li>
+<li><strong>DLC</strong> 📁 : Contenu supplémentaire payant (optionnel mais recommandé)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Avantages de cette organisation
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Détection automatique</strong> : Les jeux s&rsquo;ajoutent automatiquement dans l&rsquo;émulateur<br>
+✅ <strong>Gestion simplifiée</strong> : Plus besoin de sélectionner manuellement chaque ROM<br>
+✅ <strong>Organisation claire</strong> : Facile de voir quel contenu vous avez pour chaque jeu<br>
+✅ <strong>Maintenance aisée</strong> : Ajout/suppression de contenu simplifié
+  </div>
+</div>
+<blockquote>
+<p><strong>📝 Remarque importante</strong> : Si un jeu n&rsquo;a pas de mise à jour ou de DLC, inutile de créer les dossiers correspondants. Créez uniquement les dossiers pour le contenu que vous possédez.</p></blockquote>
+<h2 id="-étape-3--premier-lancement-et-configuration">
+<a class="header-anchor" href="#-%c3%a9tape-3--premier-lancement-et-configuration"></a>
+⚙️ Étape 3 : Premier lancement et configuration
+</h2><h2 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h2><h3 id="étape-1--mise-à-jour-automatique">
+<a class="header-anchor" href="#%c3%a9tape-1--mise-%c3%a0-jour-automatique"></a>
+Étape 1 : Mise à jour automatique
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Mise à jour Xenia
+  </div>
+  <div class="admonition-content">
+    <strong>Exécutez</strong> <code>XeniaManager.Updater.exe</code> pour mettre à jour automatiquement vers le dernier build de Xenia.
+  </div>
+</div>
+<p>En théorie, on pourrait s&rsquo;arrêter là, mais allons plus loin ! Généralement, la version stable suffit, mais la <strong>version Canary</strong> de Xenia apporte de meilleurs rendus/résultats avec moins de bugs comparé à la mainline.</p>
+<h3 id="étape-2--installation-de-xenia-canary">
+<a class="header-anchor" href="#%c3%a9tape-2--installation-de-xenia-canary"></a>
+Étape 2 : Installation de Xenia Canary
+</h3><ol>
+<li><strong>Cliquez</strong> sur <code>Install Xenia Canary</code></li>
+<li>Une fenêtre va apparaître → <strong>Cliquez</strong> sur &ldquo;Créer un profil&rdquo;</li>
+<li><strong>Entrez</strong> votre pseudo (servira pour le mode en ligne)</li>
+<li><strong>Fermez</strong> la fenêtre</li>
+</ol>
+<div class="admonition admonition-note">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Options supplémentaires
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>Xenia MouseHook</strong> : Installez seulement si vous voulez jouer clavier/souris</li>
+<li><strong>Xenia Netplay</strong> : Pour jouer en ligne (nécessite aussi la création d&rsquo;un profil)</li>
+</ul>
+
+  </div>
+</div>
+<ol start="5">
+<li><strong>Fermez</strong> la fenêtre &ldquo;Welcome to Xenia Manager&rdquo;</li>
+</ol>
+<h3 id="étape-3--configuration-de-linterface">
+<a class="header-anchor" href="#%c3%a9tape-3--configuration-de-linterface"></a>
+Étape 3 : Configuration de l&rsquo;interface
+</h3><p>Activons le mode sombre car on n&rsquo;est pas des tarés ! 🌙</p>
+<p><strong>Navigation</strong> : <code>Settings</code> (à gauche) → <code>Theme Switcher</code> → <strong>Dark</strong></p>
+<h3 id="étape-4--configuration-générale">
+<a class="header-anchor" href="#%c3%a9tape-4--configuration-g%c3%a9n%c3%a9rale"></a>
+Étape 4 : Configuration générale
+</h3><p>Dans la même fenêtre, <strong>cochez</strong> les options suivantes :</p>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Options recommandées
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Automatic Game Parsing and Selection</strong><br>
+✅ <strong>Automatic Save Backup</strong>
+  </div>
+</div>
+<h3 id="étape-5--configuration-de-lémulateur">
+<a class="header-anchor" href="#%c3%a9tape-5--configuration-de-l%c3%a9mulateur"></a>
+Étape 5 : Configuration de l&rsquo;émulateur
+</h3><p>Rendez-vous dans <code>Xenia Settings</code> et configurez :</p>
+<h4 id="-audio-et-affichage">
+<a class="header-anchor" href="#-audio-et-affichage"></a>
+🔊 Audio et Affichage
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur recommandée</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Audio System</strong></td>
+          <td><code>SDL</code></td>
+          <td>Compatible avec tous les systèmes</td>
+      </tr>
+      <tr>
+          <td><strong>Full Screen</strong></td>
+          <td><code>On</code></td>
+          <td>Laissez <code>Off</code> si vous préférez en fenêtré</td>
+      </tr>
+      <tr>
+          <td><strong>Internal Display Resolution</strong></td>
+          <td><code>1920x1080</code></td>
+          <td>⚠️ Plus élevé = plus de performances requises</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-graphiques">
+<a class="header-anchor" href="#-graphiques"></a>
+🎮 Graphiques
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur recommandée</th>
+          <th>Alternative</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Graphics API</strong></td>
+          <td><code>Vulkan</code></td>
+          <td><code>OpenGL</code> si problèmes/matériel ancien</td>
+      </tr>
+      <tr>
+          <td><strong>Anti Aliasing</strong></td>
+          <td>Valeur max supportée</td>
+          <td>Ne pas toucher si config limitée</td>
+      </tr>
+      <tr>
+          <td><strong>Scaling and Sharpening</strong></td>
+          <td>Valeur max supportée</td>
+          <td>Idem qu&rsquo;au-dessus</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-expérience-de-jeu">
+<a class="header-anchor" href="#-exp%c3%a9rience-de-jeu"></a>
+🏆 Expérience de jeu
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Show Achievement Notifications</strong></td>
+          <td><code>On</code></td>
+          <td>Pour les souvenirs de l&rsquo;époque !</td>
+      </tr>
+      <tr>
+          <td><strong>User Country</strong></td>
+          <td>Votre pays</td>
+          <td>Selon votre localisation</td>
+      </tr>
+      <tr>
+          <td><strong>User Language</strong></td>
+          <td>Votre langue</td>
+          <td>Selon votre localisation</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-contrôles">
+<a class="header-anchor" href="#-contr%c3%b4les"></a>
+🎯 Contrôles
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Usage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>XInput</strong></td>
+          <td>Manettes Xbox/compatibles</td>
+          <td>Standard pour la plupart des manettes</td>
+      </tr>
+      <tr>
+          <td><strong>SDL2</strong></td>
+          <td>Manettes non reconnues</td>
+          <td>Si XInput ne fonctionne pas</td>
+      </tr>
+      <tr>
+          <td><strong>Keyboard</strong></td>
+          <td>Clavier/souris</td>
+          <td>Pour les joueurs PC</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="étape-6--sauvegarde">
+<a class="header-anchor" href="#%c3%a9tape-6--sauvegarde"></a>
+Étape 6 : Sauvegarde
+</h3><div class="admonition admonition-warning">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Important !
+  </div>
+  <div class="admonition-content">
+    <strong>Cliquez</strong> sur le bouton <code>Save</code> en haut à droite pour sauvegarder tous vos paramètres.
+  </div>
+</div>
+<h2 id="ajout-des-jeux-dans-xenia">
+<a class="header-anchor" href="#ajout-des-jeux-dans-xenia"></a>
+Ajout des jeux dans Xenia
+</h2><h3 id="méthode-rapide-avec-larborescence">
+<a class="header-anchor" href="#m%c3%a9thode-rapide-avec-larborescence"></a>
+Méthode rapide avec l&rsquo;arborescence
+</h3><p>Si vous avez suivi l&rsquo;organisation de dossiers recommandée précédemment :</p>
+<div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Ajout automatique de jeux
+  </div>
+  <div class="admonition-content">
+    <ol>
+<li><strong>Cliquez</strong> sur le petit <code>+</code> en haut à droite</li>
+<li><strong>Ajoutez</strong> votre jeu souhaité</li>
+<li><strong>Cliquez</strong> sur <code>Full Auto</code></li>
+<li><strong>Votre jeu apparaît</strong> automatiquement dans le menu !</li>
+</ol>
+
+  </div>
+</div>
+<p><strong>Répétez</strong> cette action pour tous les jeux que vous souhaitez ajouter.</p>
+<h3 id="vous-voulez-jouer-maintenant-">
+<a class="header-anchor" href="#vous-voulez-jouer-maintenant-"></a>
+Vous voulez jouer maintenant ?
+</h3><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Impatient ? 😄
+  </div>
+  <div class="admonition-content">
+    Si vous voulez jouer tout de suite car vous êtes impatient, vous pouvez ! Sinon, on continue pour optimiser l&rsquo;expérience&hellip; 🎮
+  </div>
+</div>
+<h2 id="installation-des-dlc-et-mises-à-jour">
+<a class="header-anchor" href="#installation-des-dlc-et-mises-%c3%a0-jour"></a>
+Installation des DLC et mises à jour
+</h2><h3 id="méthode-dinstallation">
+<a class="header-anchor" href="#m%c3%a9thode-dinstallation"></a>
+Méthode d&rsquo;installation
+</h3><div class="admonition admonition-info">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Installation du contenu additionnel
+  </div>
+  <div class="admonition-content">
+    <ol>
+<li><strong>Clic droit</strong> sur votre jeu → <code>Content</code> → <code>Install DLC/Updates</code></li>
+<li><strong>Sélectionnez</strong> les fichiers DLC/Update</li>
+<li><strong>Installation automatique</strong> dans <code>content/[TitleID]/</code></li>
+<li><strong>Relancez</strong> le jeu pour activer le contenu</li>
+</ol>
+
+  </div>
+</div>
+<h3 id="structure-après-installation">
+<a class="header-anchor" href="#structure-apr%c3%a8s-installation"></a>
+Structure après installation
+</h3><pre tabindex="0"><code>📁 Xenia/
+├── 📁 content/
+│   └── 📁 [TitleID]/
+│       ├── 📄 Base Game
+│       ├── 📄 Update Files
+│       └── 📄 DLC Content
+</code></pre><h3 id="types-de-contenu-1">
+<a class="header-anchor" href="#types-de-contenu-1"></a>
+Types de contenu
+</h3><table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Extension</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Jeu de base</strong></td>
+          <td><code>.iso</code>, <code>.xex</code></td>
+          <td>Fichier principal du jeu</td>
+      </tr>
+      <tr>
+          <td><strong>Mises à jour</strong></td>
+          <td><code>.xbla</code></td>
+          <td>Correctifs et améliorations</td>
+      </tr>
+      <tr>
+          <td><strong>DLC</strong></td>
+          <td><code>.xbla</code></td>
+          <td>Contenu téléchargeable</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-warning">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Important
+  </div>
+  <div class="admonition-content">
+    <strong>Redémarrez</strong> le jeu après l&rsquo;installation pour que le nouveau contenu soit pris en compte !
+  </div>
+</div>
+<p>🎯 <strong>Résultat</strong> : Vos jeux sont maintenant enrichis avec toutes les mises à jour et DLC disponibles !</p>
+<h2 id="-faq---questions-fréquentes">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quentes"></a>
+❓ FAQ - Questions fréquentes
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Xenia fonctionne-t-il sur Linux/Mac ?</strong>
+<strong>R :</strong> Non, Xenia est exclusivement Windows 10/11 64-bit. Aucun port prévu officiellement.</p>
+<p><strong>Q : Puis-je jouer en ligne avec Xenia ?</strong>
+<strong>R :</strong> Oui</p>
+<p><strong>Q : Xenia peut-il jouer aux jeux Xbox originale ?</strong>
+<strong>R :</strong> Non, Xenia émule uniquement Xbox 360. Utilisez xemu pour Xbox originale.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou D3D12 ?</strong>
+<strong>R :</strong> Vulkan généralement plus performant, D3D12 parfois plus stable. Testez selon le jeu.</p>
+<p><strong>Q : Combien de RAM minimum ?</strong>
+<strong>R :</strong> 8GB minimum absolu, 16GB fortement recommandé, 32GB pour les gros jeux.</p>
+<p><strong>Q : Mon GPU est-il suffisant ?</strong>
+<strong>R :</strong> DirectX 12 ou Vulkan 1.1 minimum requis. GTX 1060/RX 580 pour performances correctes.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu plante au lancement ?</strong>
+<strong>R :</strong> Vérifiez compatibilité officielle, testez différents APIs, vérifiez intégrité fichier.</p>
+<p><strong>Q : Performance très faible ?</strong>
+<strong>R :</strong> CPU factor limitant principal. Fermez  le plus d&rsquo;apps possible, utilisez un SSD.</p>
+<p><strong>Q : Audio désynchronisé ?</strong>
+<strong>R :</strong> Augmentez buffer audio, changez sample rate, fermez autres apps audio.</p>
+<p><strong>Redécouvrez les exclusivités Xbox 360 avec Xenia ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Xenia</category>
+      
+    </item>
+    
+  </channel>
+</rss>

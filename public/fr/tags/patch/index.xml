@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patch on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/patch/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/patch/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Unsteam - Jouer en coopération avec des jeux patch</title>
+      <link>https://wiki.axekin.com/fr/post/unsteam/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/unsteam/</guid>
+      <description>
+        <![CDATA[<h1>Unsteam - Jouer en coopération avec des jeux patch</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-unsteam">
+<a class="header-anchor" href="#-introduction-%c3%a0-unsteam"></a>
+🎮 Introduction à Unsteam
+</h2><p><strong>Unsteam</strong> est un émulateur Steam qui permet de faire fonctionner les jeux patchés avec les fonctionnalités multijoueur en ligne. Il simule l&rsquo;API Steam pour permettre la coopération entre joueurs ayant des versions non-officielles.</p>
+<blockquote>
+<p>💡 <strong>Note importante</strong> : Unsteam est possible sur les jeux UNIQUEMENT avec la protection steam, pas autre chose. Donc vous ne pouvez pas patch Black Myth Wukong car à ce jourl, l&rsquo;anti cheat Denuvo est présent, pareil pour FC 25 avec EA, etc etc. Donc ne venez pas me dire si ça marche pas, si vous essayez de patch ces jeux la</p></blockquote>
+<h2 id="-étape-1--obtention-des-fichiers">
+<a class="header-anchor" href="#-%c3%a9tape-1--obtention-des-fichiers"></a>
+🔧 Étape 1 : Obtention des fichiers
+</h2><h3 id="téléchargement-des-jeux">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-des-jeux"></a>
+Téléchargement des jeux
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewforum.php?f<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
+</span></span></code></pre></div><ol>
+<li><strong>Accédez</strong> au forum cs.rin.ru</li>
+<li><strong>Téléchargez</strong> votre jeu souhaité. Si il n&rsquo;est pas disponible, aller dans <a href="https://cs.rin.ru/forum/viewforum.php?f=10">https://cs.rin.ru/forum/viewforum.php?f=10</a>, rechercher votre jeux voulu au format CSF (CSF = Clean Steam Files) dans la page de votre jeux.</li>
+</ol>
+<h3 id="téléchargement-dunsteam">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-dunsteam"></a>
+Téléchargement d&rsquo;Unsteam
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewtopic.php?f<span style="color:#f92672">=</span>29&amp;t<span style="color:#f92672">=</span><span style="color:#ae81ff">134707</span>
+</span></span></code></pre></div><ol>
+<li><strong>Téléchargez</strong> la dernière version d&rsquo;Unsteam</li>
+<li><strong>Extrayez</strong> l&rsquo;archive dans un dossier EXCLU DE WINDOWS DEFENDER. Suivre ce tutoriel si vous ne savez pas comment : <a href="https://www.youtube.com/watch?v=BonLkFNnO9w">https://www.youtube.com/watch?v=BonLkFNnO9w</a></li>
+</ol>
+<h2 id="-étape-2--recherche-des-informations-du-jeu">
+<a class="header-anchor" href="#-%c3%a9tape-2--recherche-des-informations-du-jeu"></a>
+🔍 Étape 2 : Recherche des informations du jeu
+</h2><h3 id="utilisation-de-steamdb">
+<a class="header-anchor" href="#utilisation-de-steamdb"></a>
+Utilisation de SteamDB
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site de référence</span>
+</span></span><span style="display:flex;"><span>https://steamdb.info/
+</span></span></code></pre></div><ol>
+<li><strong>Accédez</strong> à SteamDB.info</li>
+<li><strong>Recherchez</strong> votre jeu par nom</li>
+<li><strong>Notez</strong> les informations suivantes :
+<ul>
+<li><strong>AppID</strong> du jeu principal</li>
+<li><strong>AppID</strong> des DLC (si présents)</li>
+<li><strong>Nom</strong> des DLC</li>
+</ul>
+</li>
+</ol>
+<h3 id="exemple-pour-god-of-war">
+<a class="header-anchor" href="#exemple-pour-god-of-war"></a>
+Exemple pour God of War
+</h3><pre tabindex="0"><code>Nom du jeu : God of War
+AppID principal : 1593500
+DLC exemple : Digital Deluxe Edition (AppID: 1593501)
+</code></pre><h2 id="-étape-3--configuration-dunsteam">
+<a class="header-anchor" href="#-%c3%a9tape-3--configuration-dunsteam"></a>
+⚙️ Étape 3 : Configuration d&rsquo;Unsteam
+</h2><h3 id="structure-des-fichiers-unsteam">
+<a class="header-anchor" href="#structure-des-fichiers-unsteam"></a>
+Structure des fichiers Unsteam
+</h3><pre tabindex="0"><code>Unsteam/
+├── unsteam_loader_x64.exe    # Lanceur principal
+├── unsteam_x64.dll          # Bibliothèque d&#39;émulation
+└── unsteam.ini              # Fichier de configuration
+</code></pre><h3 id="configuration-du-fichier-unsteamini">
+<a class="header-anchor" href="#configuration-du-fichier-unsteamini"></a>
+Configuration du fichier unsteam.ini
+</h3><p>Créez ou modifiez le fichier <code>unsteam.ini</code>. Il vas s&rsquo;auto générer au premier lancement, et voici sa configuration :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[loader]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">exe_file</span><span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dll_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">unsteam_x64.dll</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[game]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">real_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">387990</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fake_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">480</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">english</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">beta_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">public</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saves_path</span><span style="color:#f92672">=</span><span style="color:#e6db74">saves</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[dlcs]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">appid1</span><span style="color:#f92672">=</span><span style="color:#e6db74">DLC Name</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">appid2</span><span style="color:#f92672">=</span><span style="color:#e6db74">DLC Name</span>
+</span></span></code></pre></div><h3 id="explication-détaillée-des-paramètres">
+<a class="header-anchor" href="#explication-d%c3%a9taill%c3%a9e-des-param%c3%a8tres"></a>
+Explication détaillée des paramètres
+</h3><h4 id="section-loader">
+<a class="header-anchor" href="#section-loader"></a>
+Section [loader]
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">exe_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">GoW.exe                # Chemin vers l&#39;EXE de votre jeu</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dll_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">unsteam_x64.dll       # DLL d&#39;Unsteam (ne pas modifier)</span>
+</span></span></code></pre></div><h4 id="section-game">
+<a class="header-anchor" href="#section-game"></a>
+Section [game]
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">real_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">1593500            # AppID réel du jeu (depuis SteamDB)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fake_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">480                # AppID factice (laisser 480 par défaut)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">english               # Langue du jeu (english/french/german/etc.)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">beta_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">public               # Version beta (laisser &#34;public&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saves_path</span><span style="color:#f92672">=</span><span style="color:#e6db74">saves               # Dossier des sauvegardes</span>
+</span></span></code></pre></div><h4 id="section-dlcs">
+<a class="header-anchor" href="#section-dlcs"></a>
+Section [dlcs]
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">1593501</span><span style="color:#f92672">=</span><span style="color:#e6db74">Digital Deluxe Edition # AppID=Nom du DLC</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">1593502</span><span style="color:#f92672">=</span><span style="color:#e6db74">Season Pass            # AppID=Nom du DLC (exemple)</span>
+</span></span></code></pre></div><h2 id="-étape-4--installation-et-configuration">
+<a class="header-anchor" href="#-%c3%a9tape-4--installation-et-configuration"></a>
+📁 Étape 4 : Installation et configuration
+</h2><h3 id="placement-des-fichiers">
+<a class="header-anchor" href="#placement-des-fichiers"></a>
+Placement des fichiers
+</h3><pre tabindex="0"><code>VotreJeu/
+├── GoW.exe                    # Exécutable du jeu
+├── unsteam_loader_x64.exe     # ← Copiez ce fichier ici
+├── unsteam_x64.dll           # ← Copiez ce fichier ici
+├── unsteam.ini               # ← Créez ce fichier ici
+└── saves/                    # Dossier des sauvegardes (créé auto)
+</code></pre><h3 id="configuration-exemple-pour-god-of-war">
+<a class="header-anchor" href="#configuration-exemple-pour-god-of-war"></a>
+Configuration exemple pour God of War
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[loader]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">exe_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">GoW.exe</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dll_file</span><span style="color:#f92672">=</span><span style="color:#e6db74">unsteam_x64.dll</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[game]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">real_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">1593500</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fake_app_id</span><span style="color:#f92672">=</span><span style="color:#e6db74">480</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">french</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">beta_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">public</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saves_path</span><span style="color:#f92672">=</span><span style="color:#e6db74">saves</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[dlcs]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">1593501</span><span style="color:#f92672">=</span><span style="color:#e6db74">Digital Deluxe Upgrade</span>
+</span></span></code></pre></div><h2 id="-étape-5--lancement-du-jeu">
+<a class="header-anchor" href="#-%c3%a9tape-5--lancement-du-jeu"></a>
+🚀 Étape 5 : Lancement du jeu
+</h2><h3 id="procédure-de-lancement">
+<a class="header-anchor" href="#proc%c3%a9dure-de-lancement"></a>
+Procédure de lancement
+</h3><ol>
+<li><strong>Lancez Steam</strong> en premier</li>
+<li><strong>Connectez-vous</strong> à votre compte Steam</li>
+<li><strong>Naviguez</strong> vers le dossier de votre jeu</li>
+<li><strong>Exécutez</strong> <code>unsteam_loader_x64.exe</code> (PAS le .exe du jeu)</li>
+<li><strong>Attendez</strong> le chargement</li>
+</ol>
+<h3 id="vérification-du-fonctionnement">
+<a class="header-anchor" href="#v%c3%a9rification-du-fonctionnement"></a>
+Vérification du fonctionnement
+</h3><pre tabindex="0"><code>✅ Steam overlay visible
+✅ Profil Steam affiché dans le jeu
+✅ Fonctions multijoueur actives
+✅ Succès Steam débloqués (optionnel)
+</code></pre><h2 id="-étape-6--jeu-en-coopération">
+<a class="header-anchor" href="#-%c3%a9tape-6--jeu-en-coop%c3%a9ration"></a>
+🌐 Étape 6 : Jeu en coopération
+</h2><h3 id="connexion-avec-des-amis">
+<a class="header-anchor" href="#connexion-avec-des-amis"></a>
+Connexion avec des amis
+</h3><ol>
+<li><strong>Assurez-vous</strong> que vos amis utilisent aussi Unsteam</li>
+<li><strong>Vérifiez</strong> que vous avez le même AppID configuré</li>
+<li><strong>Lancez</strong> le jeu simultanément</li>
+<li><strong>Utilisez</strong> les fonctions multijoueur normales</li>
+</ol>
+<h2 id="-dépannage-courant">
+<a class="header-anchor" href="#-d%c3%a9pannage-courant"></a>
+🔧 Dépannage courant
+</h2><h3 id="problèmes-fréquents">
+<a class="header-anchor" href="#probl%c3%a8mes-fr%c3%a9quents"></a>
+Problèmes fréquents
+</h3><h4 id="le-jeu-ne-se-lance-pas">
+<a class="header-anchor" href="#le-jeu-ne-se-lance-pas"></a>
+Le jeu ne se lance pas
+</h4><pre tabindex="0"><code>❌ Problème: &#34;Failed to load game&#34;
+✅ Solution: Vérifiez le chemin exe_file= dans unsteam.ini
+</code></pre><h4 id="steam-overlay-absent">
+<a class="header-anchor" href="#steam-overlay-absent"></a>
+Steam overlay absent
+</h4><pre tabindex="0"><code>❌ Problème: Pas d&#39;overlay Steam
+✅ Solution: Lancez Steam AVANT unsteam_loader_x64.exe
+</code></pre><h4 id="multijoueur-non-fonctionnel">
+<a class="header-anchor" href="#multijoueur-non-fonctionnel"></a>
+Multijoueur non fonctionnel
+</h4><pre tabindex="0"><code>❌ Problème: Impossible de rejoindre des amis
+✅ Solution: Vérifiez que tous utilisent le même real_app_id. Sinon, si ça marche toujours pas,
+la fonctionnalité online n&#39;est tout simplement pas supporté
+</code></pre><h4 id="erreur-de-dll">
+<a class="header-anchor" href="#erreur-de-dll"></a>
+Erreur de DLL
+</h4><pre tabindex="0"><code>❌ Problème: &#34;unsteam_x64.dll not found&#34;
+✅ Solution: Placez la DLL dans le même dossier que l&#39;EXE
+</code></pre><h4 id="le-jeux-se-lance-toujours-pas">
+<a class="header-anchor" href="#le-jeux-se-lance-toujours-pas"></a>
+Le jeux se lance toujours pas
+</h4><pre tabindex="0"><code>❌ Problème: &#34;Le jeux ne se lance pas même après avoir fait tout ça ?&#34;
+✅ Solution: Des fois, un jeux n&#39;a pas que la protection steam. Comme dit au début, si le jeux a une autre 
+protection AUTRE que steam, par exemple Denuvo, BattleEye, etc etc, bah c&#39;est mort, vous pouvez pas.
+</code></pre><h2 id="-précautions-importantes">
+<a class="header-anchor" href="#-pr%c3%a9cautions-importantes"></a>
+⚠️ Précautions importantes
+</h2><h3 id="sécurité-du-compte-steam">
+<a class="header-anchor" href="#s%c3%a9curit%c3%a9-du-compte-steam"></a>
+Sécurité du compte Steam
+</h3><ul>
+<li><strong>N&rsquo;utilisez PAS</strong> votre compte Steam principal</li>
+<li><strong>Créez</strong> un compte secondaire si nécessaire</li>
+<li><strong>Évitez</strong> les jeux avec anti-cheat agressif</li>
+</ul>
+<h3 id="compatibilité-des-jeux">
+<a class="header-anchor" href="#compatibilit%c3%a9-des-jeux"></a>
+Compatibilité des jeux
+</h3><pre tabindex="0"><code>✅ Compatible: Jeux coop/multijoueur Steam
+✅ Compatible: Jeux avec Steam Workshop
+❌ Incompatible: Jeux avec EAC/BattlEye
+❌ Incompatible: Jeux nécessitant Steam DRM
+</code></pre><h3 id="mise-à-jour">
+<a class="header-anchor" href="#mise-%c3%a0-jour"></a>
+Mise à jour
+</h3><pre tabindex="0"><code>Fréquence: Vérifiez les mises à jour d&#39;Unsteam mensuellement
+Source: cs.rin.ru (forum officiel)
+Version: Utilisez toujours la dernière version stable
+</code></pre><h3 id="configuration-multi-jeux">
+<a class="header-anchor" href="#configuration-multi-jeux"></a>
+Configuration multi-jeux
+</h3><pre tabindex="0"><code>Créez un dossier par jeu avec sa propre configuration :
+Games/
+├── GoW/
+│   ├── unsteam.ini (config GoW)
+│   └── unsteam_loader_x64.exe
+└── Elden Ring/
+    ├── unsteam.ini (config Elden Ring)
+    └── unsteam_loader_x64.exe
+</code></pre><hr>
+<blockquote>
+<p>💡 <strong>Astuce finale</strong> : Testez toujours avec des jeux gratuits ou que vous possédez légalement avant d&rsquo;utiliser avec d&rsquo;autres titres. La coopération fonctionne mieux avec des connexions stables et des configurations identiques entre joueurs.</p></blockquote>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>SteamAutoCrack - Patcher automatiquement les jeux Steam</title>
+      <link>https://wiki.axekin.com/fr/post/sac/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/sac/</guid>
+      <description>
+        <![CDATA[<h1>SteamAutoCrack - Patcher automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-steamautocrack">
+<a class="header-anchor" href="#-introduction-%c3%a0-steamautocrack"></a>
+🎮 Introduction à SteamAutoCrack
+</h2><p><strong>SteamAutoCrack</strong> est un outil automatisé qui simplifie le processus de patch des jeux Steam. Il rationalise toute la procédure en appliquant automatiquement les modifications nécessaires pour faire fonctionner les jeux sans authentification Steam.</p>
+<h2 id="-étape-1--obtention-des-fichiers-requis">
+<a class="header-anchor" href="#-%c3%a9tape-1--obtention-des-fichiers-requis"></a>
+🔧 Étape 1 : Obtention des fichiers requis
+</h2><h3 id="téléchargement-des-jeux">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-des-jeux"></a>
+Téléchargement des jeux
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://cs.rin.ru/forum/viewforum.php?f<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
+</span></span></code></pre></div><h3 id="téléchargement-de-steamautocrack">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargement-de-steamautocrack"></a>
+Téléchargement de SteamAutoCrack
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Il faut se créer un compte pour pouvoir télécharger le contenu</span>
+</span></span><span style="display:flex;"><span>https://github.com/SteamAutoCracks/Steam-auto-crack/releases
+</span></span></code></pre></div><h2 id="-étape-2--préparation-des-fichiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--pr%c3%a9paration-des-fichiers"></a>
+📁 Étape 2 : Préparation des fichiers
+</h2><h3 id="extraction-des-jeux">
+<a class="header-anchor" href="#extraction-des-jeux"></a>
+Extraction des jeux
+</h3><p>La plupart des jeux téléchargés viennent avec une protection par mot de passe :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mot de passe par défaut (encodé en Base64)</span>
+</span></span><span style="display:flex;"><span>Password: cs.rin.ru
+</span></span></code></pre></div><h3 id="structure-des-dossiers">
+<a class="header-anchor" href="#structure-des-dossiers"></a>
+Structure des dossiers
+</h3><p>Après extraction, votre jeu devrait ressembler à :</p>
+<pre tabindex="0"><code>VotreJeu/
+├── steamapps/
+│   └── common/
+│       └── NomDuJeu/          # Répertoire principal du jeu
+│           ├── NomDuJeu.exe   # Exécutable du jeu
+│           └── steam_api.dll  # Bibliothèque API Steam
+└── autres fichiers...
+</code></pre><h2 id="-étape-3--génération-de-la-clé-api-steam">
+<a class="header-anchor" href="#-%c3%a9tape-3--g%c3%a9n%c3%a9ration-de-la-cl%c3%a9-api-steam"></a>
+⚙️ Étape 3 : Génération de la clé API Steam
+</h2><h3 id="obtenir-votre-clé-api-steam">
+<a class="header-anchor" href="#obtenir-votre-cl%c3%a9-api-steam"></a>
+Obtenir votre clé API Steam
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Enregistrement de la clé API Web Steam</span>
+</span></span><span style="display:flex;"><span>https://steamcommunity.com/dev/apikey
+</span></span></code></pre></div><ol>
+<li><strong>Visitez</strong> la page Steam Web API</li>
+<li><strong>Connectez-vous</strong> avec votre compte Steam</li>
+<li><strong>Enregistrez-vous</strong> pour une nouvelle clé API</li>
+<li><strong>Nom de domaine</strong> : Entrez n&rsquo;importe quel domaine (ex: <code>localhost</code>)</li>
+<li><strong>Copiez</strong> la clé API générée</li>
+</ol>
+<h3 id="exemple-de-clé-api">
+<a class="header-anchor" href="#exemple-de-cl%c3%a9-api"></a>
+Exemple de clé API
+</h3><pre tabindex="0"><code>Votre clé API : 1234567890ABCDEF1234567890ABCDEF12345678
+</code></pre><h2 id="-étape-4--utilisation-de-steamautocrack">
+<a class="header-anchor" href="#-%c3%a9tape-4--utilisation-de-steamautocrack"></a>
+🚀 Étape 4 : Utilisation de SteamAutoCrack
+</h2><h3 id="interface-steamautocrack">
+<a class="header-anchor" href="#interface-steamautocrack"></a>
+Interface SteamAutoCrack
+</h3><p>Quand vous lancez <strong>SteamAutoCrack</strong>, vous verrez ces champs principaux :</p>
+<h4 id="1-chemin-du-répertoire-du-jeu">
+<a class="header-anchor" href="#1-chemin-du-r%c3%a9pertoire-du-jeu"></a>
+1. Chemin du répertoire du jeu
+</h4><pre tabindex="0"><code>Champ : &#34;Game Path&#34;
+But : Emplacement de votre jeu Steam propre
+Exemple : C:\Games\VotreJeu\steamapps\common\NomDuJeu
+</code></pre><p><strong>Comment remplir :</strong></p>
+<ul>
+<li>Naviguez vers votre jeu extrait</li>
+<li>Sélectionnez le chemin : <code>steamapps/common/NomDuJeu/</code></li>
+<li>Ceci devra contenir l&rsquo;ensemble du jeux</li>
+</ul>
+<h4 id="2-clé-api-steam">
+<a class="header-anchor" href="#2-cl%c3%a9-api-steam"></a>
+2. Clé API Steam
+</h4><pre tabindex="0"><code>Champ : &#34;Steam API Key&#34;
+But : Votre clé API Web Steam pour l&#39;authentification
+Exemple : 1234567890ABCDEF1234567890ABCDEF12345678
+</code></pre><p><strong>Comment remplir :</strong></p>
+<ul>
+<li>Collez la clé API que vous avez générée depuis Steam</li>
+<li>Ceci permet à l&rsquo;outil de récupérer les informations du jeu</li>
+</ul>
+<h4 id="3-nom-du-compte">
+<a class="header-anchor" href="#3-nom-du-compte"></a>
+3. Nom du compte
+</h4><pre tabindex="0"><code>Champ : &#34;Account Name&#34;
+But : Nom d&#39;affichage pour le jeu patché
+Défaut : Généralement auto-rempli
+Exemple : VotreNomUtilisateur
+</code></pre><p><strong>Comment remplir :</strong></p>
+<ul>
+<li>Changez pour votre nom préféré (optionnel)</li>
+<li>Ce nom apparaîtra dans le jeu si applicable</li>
+</ul>
+<h4 id="4-steam-appid">
+<a class="header-anchor" href="#4-steam-appid"></a>
+4. Steam AppID
+</h4><pre tabindex="0"><code>Champ : &#34;Steam AppID&#34;
+But : Trouver l&#39;AppID de steam
+Défaut : Vide, il faut le remplir depuis https://steamdb.info
+Exemple : 221100 (Exemple pour DayZ)
+</code></pre><h3 id="processus-étape-par-étape">
+<a class="header-anchor" href="#processus-%c3%a9tape-par-%c3%a9tape"></a>
+Processus étape par étape
+</h3><h4 id="exemple-de-configuration">
+<a class="header-anchor" href="#exemple-de-configuration"></a>
+Exemple de configuration
+</h4><pre tabindex="0"><code>Game Path : C:\Games\GodOfWar\steamapps\common\GodOfWar
+API Key : 1234567890ABCDEF1234567890ABCDEF12345678
+Account Name : MonGamerTag
+</code></pre><h2 id="-options-de-configuration-avancées">
+<a class="header-anchor" href="#-options-de-configuration-avanc%c3%a9es"></a>
+⚙️ Options de configuration avancées
+</h2><h3 id="-catégorie-2--mode-de-fonctionnement">
+<a class="header-anchor" href="#-cat%c3%a9gorie-2--mode-de-fonctionnement"></a>
+🎯 Catégorie 2 : Mode de fonctionnement
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Mode hors ligne recommandé
+  </div>
+  <div class="admonition-content">
+    <strong>Activez le mode offline</strong> : Ce tutoriel étant principalement conçu pour le jeu hors ligne, cette option évite toute interaction avec Steam.
+  </div>
+</div>
+<div class="admonition admonition-info">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Interface utilisateur
+  </div>
+  <div class="admonition-content">
+    <strong>Activez l&rsquo;overlay</strong> : Peut être utile et agréable pour certains utilisateurs qui souhaitent garder une interface familière.
+  </div>
+</div>
+<h3 id="-catégorie-3--fonctionnalités-expérimentales">
+<a class="header-anchor" href="#-cat%c3%a9gorie-3--fonctionnalit%c3%a9s-exp%c3%a9rimentales"></a>
+🧪 Catégorie 3 : Fonctionnalités expérimentales
+</h3><table>
+  <thead>
+      <tr>
+          <th>Option</th>
+          <th>Recommandation</th>
+          <th>Raison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fonctionnalités expérimentales</strong></td>
+          <td>✅ Activé par défaut</td>
+          <td>Généralement sans danger</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-warning">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    En cas de problèmes
+  </div>
+  <div class="admonition-content">
+    Si vous rencontrez des <strong>bugs</strong> ou des <strong>dysfonctionnements</strong>, décochez cette case pour revenir aux fonctionnalités stables.
+  </div>
+</div>
+<h3 id="-catégorie-4--gestion-des-sauvegardes">
+<a class="header-anchor" href="#-cat%c3%a9gorie-4--gestion-des-sauvegardes"></a>
+💾 Catégorie 4 : Gestion des sauvegardes
+</h3><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Configuration recommandée
+  </div>
+  <div class="admonition-content">
+    <strong>Utilisez le chemin de sauvegarde personnalisé</strong> : Vos sauvegardes seront stockées directement dans le dossier du jeu, évitant de les chercher partout sur votre ordinateur !
+  </div>
+</div>
+<h4 id="avantages-du-chemin-personnalisé">
+<a class="header-anchor" href="#avantages-du-chemin-personnalis%c3%a9"></a>
+Avantages du chemin personnalisé
+</h4><pre tabindex="0"><code>📁 VotreJeu/
+├── 🎮 Executable.exe
+├── 📄 Fichiers du jeu
+└── 💾 saves/                 # Sauvegardes ici !
+    ├── save1.dat
+    └── save2.dat
+</code></pre><h3 id="-options-goldberg">
+<a class="header-anchor" href="#-options-goldberg"></a>
+🔧 Options Goldberg
+</h3><div class="admonition admonition-note">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Fonctionnalités expérimentales Goldberg
+  </div>
+  <div class="admonition-content">
+    <strong>Activez si nécessaire</strong> : Même principe que pour SteamStub - généralement bénéfique pour la compatibilité.
+  </div>
+</div>
+<h3 id="-récapitulatif-des-options-recommandées">
+<a class="header-anchor" href="#-r%c3%a9capitulatif-des-options-recommand%c3%a9es"></a>
+📋 Récapitulatif des options recommandées
+</h3><table>
+  <thead>
+      <tr>
+          <th>Catégorie</th>
+          <th>Option</th>
+          <th>Status</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Mode</strong></td>
+          <td>Offline Mode</td>
+          <td>✅ Activé</td>
+          <td>Évite Steam</td>
+      </tr>
+      <tr>
+          <td><strong>Interface</strong></td>
+          <td>Overlay</td>
+          <td>🔵 Optionnel</td>
+          <td>Confort visuel</td>
+      </tr>
+      <tr>
+          <td><strong>Expérimental</strong></td>
+          <td>Fonctionnalités avancées</td>
+          <td>✅ Activé</td>
+          <td>Performance</td>
+      </tr>
+      <tr>
+          <td><strong>Sauvegardes</strong></td>
+          <td>Chemin personnalisé</td>
+          <td>✅ Activé</td>
+          <td>Organisation</td>
+      </tr>
+      <tr>
+          <td><strong>Goldberg</strong></td>
+          <td>Expérimental</td>
+          <td>🔵 Optionnel</td>
+          <td>Compatibilité</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Conseil d&#39;expert
+  </div>
+  <div class="admonition-content">
+    Ces réglages optimisent l&rsquo;expérience hors ligne tout en gardant vos fichiers organisés et accessibles ! 🎯
+  </div>
+</div>
+<h4 id="exécution">
+<a class="header-anchor" href="#ex%c3%a9cution"></a>
+Exécution
+</h4><ol>
+<li><strong>Remplissez</strong> tous les trois champs correctement</li>
+<li><strong>Vérifiez</strong> que le chemin du jeu contient l&rsquo;exécutable</li>
+<li><strong>Double-vérifiez</strong> que votre clé API est valide</li>
+<li><strong>Cliquez</strong> sur &ldquo;Start&rdquo; pour commencer le processus de patch</li>
+<li><strong>Attendez</strong> que le processus se termine</li>
+</ol>
+<h2 id="-étape-5--vérification-et-test">
+<a class="header-anchor" href="#-%c3%a9tape-5--v%c3%a9rification-et-test"></a>
+✅ Étape 5 : Vérification et test
+</h2><h3 id="indicateurs-de-crack-réussi">
+<a class="header-anchor" href="#indicateurs-de-crack-r%c3%a9ussi"></a>
+Indicateurs de crack réussi
+</h3><pre tabindex="0"><code>✅ Processus terminé sans erreurs
+✅ Fichiers d&#39;émulation Steam créés
+✅ Le jeu se lance sans Steam
+✅ Les fichiers de sauvegarde fonctionnent correctement
+</code></pre><h3 id="tester-votre-jeu-patché">
+<a class="header-anchor" href="#tester-votre-jeu-patch%c3%a9"></a>
+Tester votre jeu patché
+</h3><ol>
+<li><strong>Fermez Steam</strong> complètement</li>
+<li><strong>Naviguez</strong> vers le dossier du jeu</li>
+<li><strong>Lancez</strong> l&rsquo;exécutable principal du jeu</li>
+<li><strong>Vérifiez</strong> que le jeu fonctionne sans Steam</li>
+</ol>
+<h3 id="signes-de-succès-courants">
+<a class="header-anchor" href="#signes-de-succ%c3%a8s-courants"></a>
+Signes de succès courants
+</h3><ul>
+<li>Le jeu se lance normalement</li>
+<li>Aucune authentification Steam requise</li>
+<li>Les fonctions de sauvegarde/chargement marchent</li>
+<li>Le jeu fonctionne hors ligne</li>
+</ul>
+<h2 id="-dépannage">
+<a class="header-anchor" href="#-d%c3%a9pannage"></a>
+🔧 Dépannage
+</h2><h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><h4 id="chemin-de-jeu-invalide">
+<a class="header-anchor" href="#chemin-de-jeu-invalide"></a>
+Chemin de jeu invalide
+</h4><pre tabindex="0"><code>❌ Erreur : &#34;Game directory not found&#34;
+✅ Solution : Assurez-vous que le chemin pointe vers steamapps/common/NomDuJeu/
+</code></pre><h4 id="problèmes-de-clé-api">
+<a class="header-anchor" href="#probl%c3%a8mes-de-cl%c3%a9-api"></a>
+Problèmes de clé API
+</h4><pre tabindex="0"><code>❌ Erreur : &#34;Invalid API key&#34;
+✅ Solution : Régénérez la clé API depuis la page Steam Web API
+</code></pre><h4 id="erreurs-de-permission">
+<a class="header-anchor" href="#erreurs-de-permission"></a>
+Erreurs de permission
+</h4><pre tabindex="0"><code>❌ Erreur : &#34;Access denied&#34;
+✅ Solution : Exécutez SteamAutoCrack en tant qu&#39;Administrateur
+</code></pre><h4 id="interférence-antivirus">
+<a class="header-anchor" href="#interf%c3%a9rence-antivirus"></a>
+Interférence antivirus
+</h4><pre tabindex="0"><code>❌ Erreur : Fichiers supprimés ou mis en quarantaine
+✅ Solution : Ajoutez une exception pour le dossier SteamAutoCrack
+</code></pre><h2 id="-bonnes-pratiques">
+<a class="header-anchor" href="#-bonnes-pratiques"></a>
+🎯 Bonnes pratiques
+</h2><h3 id="sélection-de-jeux">
+<a class="header-anchor" href="#s%c3%a9lection-de-jeux"></a>
+Sélection de jeux
+</h3><pre tabindex="0"><code>✅ Recommandé : Jeux solo
+✅ Recommandé : Anciens jeux Steam
+❌ Éviter : Jeux en ligne uniquement
+❌ Éviter : Jeux avec DRM agressif
+</code></pre><h3 id="considérations-de-sécurité">
+<a class="header-anchor" href="#consid%c3%a9rations-de-s%c3%a9curit%c3%a9"></a>
+Considérations de sécurité
+</h3><ul>
+<li><strong>Utilisez</strong> un compte Steam secondaire pour la clé API</li>
+<li><strong>Gardez</strong> les fichiers de jeu originaux comme sauvegarde</li>
+<li><strong>Scannez</strong> tous les téléchargements avec un antivirus</li>
+<li><strong>Testez</strong> dans un environnement isolé d&rsquo;abord</li>
+</ul>
+<h2 id="-informations-additionnelles">
+<a class="header-anchor" href="#-informations-additionnelles"></a>
+📚 Informations additionnelles
+</h2><h3 id="quand-utiliser-steamautocrack">
+<a class="header-anchor" href="#quand-utiliser-steamautocrack"></a>
+Quand utiliser SteamAutoCrack
+</h3><ul>
+<li><strong>Jeu solo</strong> sans dépendance Steam</li>
+<li><strong>Scénarios de jeu hors ligne</strong></li>
+<li><strong>Apprentissage</strong> des mécanismes de protection des jeux</li>
+<li><strong>Sauvegarde</strong> pour des jeux possédés</li>
+</ul>
+<h3 id="limitations">
+<a class="header-anchor" href="#limitations"></a>
+Limitations
+</h3><ul>
+<li><strong>Fonctionnalités en ligne</strong> peuvent ne pas marcher</li>
+<li><strong>Intégration Steam Workshop</strong> perdue</li>
+<li><strong>Succès</strong> peuvent ne pas se synchroniser</li>
+<li><strong>Mises à jour</strong> nécessitent une gestion manuelle</li>
+</ul>
+<h2 id="-considérations-légales-et-éthiques">
+<a class="header-anchor" href="#-consid%c3%a9rations-l%c3%a9gales-et-%c3%a9thiques"></a>
+🔒 Considérations légales et éthiques
+</h2><h3 id="approche-recommandée">
+<a class="header-anchor" href="#approche-recommand%c3%a9e"></a>
+Approche recommandée
+</h3><ol>
+<li><strong>Achetez</strong> les jeux que vous appréciez</li>
+<li><strong>Utilisez le patch</strong> pour la sauvegarde/usage hors ligne</li>
+<li><strong>Soutenez les développeurs</strong> via des achats légitimes</li>
+<li><strong>Partagez les connaissances</strong> de manière responsable</li>
+</ol>
+<hr>
+<blockquote>
+<p>💡 <strong>Astuce</strong> : SteamAutoCrack est particulièrement utile pour les jeux solo où vous voulez un accès hors ligne. Maintenez toujours des copies légales et utilisez ces connaissances de manière responsable à des fins éducatives.</p></blockquote>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1304 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Réinstallation Propre des Pilotes Graphiques | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour réinstaller proprement les drivers GPU NVIDIA et AMD avec DDU - Guide étape par étape pour résoudre les problèmes graphiques"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://wiki.axekin.com/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_0khxww3tj3q9\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.min.53e0ad562a74aa9fcc0e6388a7c5112b4777e79f1bdd62bab614c40201d157e9.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Réinstallation Propre des Pilotes Graphiques | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour réinstaller proprement les drivers GPU NVIDIA et AMD avec DDU - Guide étape par étape pour résoudre les problèmes graphiques"
+  />
+  <meta property="og:url" content="https://wiki.axekin.com/fr/post/reinstall_driver_gpu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/gpu-driver-reinstall.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-04T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-04T00:00:00&#43;00:00" /><meta property="article:tag" content="pilotesgpunvidiaamdddudriversréparationwindows" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/gpu-driver-reinstall.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.a36c6187f23224f5fa4f8de0506c97e041814126e564fbd75350b72e5e914e78.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css"
+    integrity="sha384-4NN3fZ5AokFyHuoihl7A9qWaCt&#43;HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg">Discord</a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Rechercher"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/reinstall_driver_gpu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/gpu-driver-reinstall.webp" alt="Réinstallation Propre des Pilotes Graphiques"><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="fade-down">Réinstallation Propre des Pilotes Graphiques</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper wrap-sticky">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#processus-général">Processus général</a></li>
+      </ul>
+    </li>
+    <li><a href="#prérequis-et-téléchargements">Prérequis et Téléchargements</a>
+      <ul>
+        <li><a href="#identifier-votre-carte-graphique">Identifier votre carte graphique</a></li>
+        <li><a href="#téléchargements-nécessaires">Téléchargements nécessaires</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-1--préparation-du-système">Étape 1 : Préparation du système</a>
+      <ul>
+        <li><a href="#sauvegarde-importante">Sauvegarde importante</a></li>
+        <li><a href="#fermeture-des-programmes">Fermeture des programmes</a></li>
+        <li><a href="#déconnexion-internet-crucial">Déconnexion internet (CRUCIAL)</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-2--accès-au-mode-sans-échec">Étape 2 : Accès au mode sans échec</a>
+      <ul>
+        <li><a href="#pour-windows-10">Pour Windows 10</a></li>
+        <li><a href="#pour-windows-11">Pour Windows 11</a></li>
+        <li><a href="#navigation-dans-le-menu-de-démarrage-avancé">Navigation dans le menu de démarrage avancé</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-3--utilisation-de-ddu">Étape 3 : Utilisation de DDU</a>
+      <ul>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+        <li><a href="#configuration-de-ddu">Configuration de DDU</a></li>
+        <li><a href="#processus-de-désinstallation">Processus de désinstallation</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-4--installation-des-nouveaux-pilotes">Étape 4 : Installation des nouveaux pilotes</a>
+      <ul>
+        <li><a href="#vérification-post-ddu">Vérification post-DDU</a></li>
+        <li><a href="#installation-des-pilotes-nvidia">Installation des pilotes NVIDIA</a></li>
+        <li><a href="#installation-des-pilotes-amd">Installation des pilotes AMD</a></li>
+        <li><a href="#finalisation-de-linstallation">Finalisation de l&rsquo;installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#vérification-et-configuration-post-installation">Vérification et configuration post-installation</a>
+      <ul>
+        <li><a href="#test-des-fonctionnalités">Test des fonctionnalités</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#restauration-des-profils">Restauration des profils</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-avancé">Troubleshooting avancé</a>
+      <ul>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+        <li><a href="#surveillance-des-performances">Surveillance des performances</a></li>
+        <li><a href="#signaux-dalerte">Signaux d&rsquo;alerte</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-et-conseils-dexpert">Best Practices et conseils d&rsquo;expert</a>
+      <ul>
+        <li><a href="#avant-chaque-réinstallation">Avant chaque réinstallation</a></li>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#conseils-finaux">Conseils finaux</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">21</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      13
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">66</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label="Discord"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link">Discord</div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div>
+
+  <div class="sidebar-widget"></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-04</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-04</time
+    >
+  </span>
+</div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/pc"
+      data-aos="zoom-in"
+      >PC</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><blockquote>
+<p><strong>⚠️ Avertissement Important</strong> : Cette procédure implique de redémarrer en mode sans échec et de désinstaller complètement vos pilotes. Suivez attentivement chaque étape et assurez-vous d&rsquo;avoir téléchargé les drivers avant de commencer.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>La <strong>réinstallation propre des pilotes graphiques</strong> est souvent la solution la plus efficace pour résoudre les problèmes de performance, les crashs de jeux, ou les erreurs d&rsquo;affichage. Ce processus utilise <strong>DDU (Display Driver Uninstaller)</strong> pour supprimer complètement les anciens pilotes avant d&rsquo;installer les nouveaux.</p>
+<p>Cette méthode est particulièrement efficace pour :</p>
+<ul>
+<li>Résoudre les conflits entre anciennes et nouvelles versions</li>
+<li>Corriger les problèmes de performance en jeu</li>
+<li>Éliminer les erreurs d&rsquo;affichage persistantes</li>
+<li>Nettoyer après un changement de carte graphique</li>
+</ul>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Télécharger</strong> les nouveaux drivers et DDU</li>
+<li><strong>Débrancher</strong> internet et redémarrer en mode sans échec</li>
+<li><strong>Supprimer</strong> complètement les anciens pilotes avec DDU</li>
+<li><strong>Redémarrer</strong> et installer les nouveaux drivers</li>
+<li><strong>Reconnecter</strong> internet et vérifier le fonctionnement</li>
+</ol>
+<h2 id="prérequis-et-téléchargements">
+<a class="header-anchor" href="#pr%c3%a9requis-et-t%c3%a9l%c3%a9chargements"></a>
+Prérequis et Téléchargements
+</h2><h3 id="identifier-votre-carte-graphique">
+<a class="header-anchor" href="#identifier-votre-carte-graphique"></a>
+Identifier votre carte graphique
+</h3><p>Avant de commencer, identifiez votre GPU :</p>
+<p><strong>Méthode 1 : Gestionnaire de périphériques</strong></p>
+<ol>
+<li><strong>Clic droit</strong> sur &ldquo;Ce PC&rdquo; → <strong>Propriétés</strong></li>
+<li><strong>Gestionnaire de périphériques</strong> → <strong>Cartes graphiques</strong></li>
+<li><strong>Notez</strong> le modèle exact de votre carte</li>
+</ol>
+<p><strong>Méthode 2 : Commande système</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dxdiag
+</span></span></code></pre></div><p>Regardez dans l&rsquo;onglet <strong>&ldquo;Affichage&rdquo;</strong> pour voir votre GPU.</p>
+<h3 id="téléchargements-nécessaires">
+<a class="header-anchor" href="#t%c3%a9l%c3%a9chargements-n%c3%a9cessaires"></a>
+Téléchargements nécessaires
+</h3><h4 id="pour-cartes-nvidia">
+<a class="header-anchor" href="#pour-cartes-nvidia"></a>
+Pour cartes NVIDIA
+</h4><p><strong>🔗 <a href="https://www.nvidia.fr/Download/index.aspx?lang=fr">Site officiel NVIDIA</a></strong></p>
+<p><strong>Procédure de téléchargement :</strong></p>
+<ol>
+<li><strong>Sélectionnez</strong> votre série de carte (RTX 40, RTX 30, GTX 16, etc.)</li>
+<li><strong>Choisissez</strong> votre modèle exact</li>
+<li><strong>Téléchargez</strong> le driver <strong>&ldquo;Game Ready&rdquo;</strong> le plus récent</li>
+<li><strong>Sauvegardez</strong> le fichier sur votre bureau</li>
+</ol>
+<p><strong>Types de drivers NVIDIA :</strong></p>
+<ul>
+<li><strong>Game Ready Driver</strong> : Optimisé pour les jeux (recommandé)</li>
+<li><strong>Studio Driver</strong> : Optimisé pour la création de contenu</li>
+</ul>
+<h4 id="pour-cartes-amd">
+<a class="header-anchor" href="#pour-cartes-amd"></a>
+Pour cartes AMD
+</h4><p><strong>🔗 <a href="https://www.amd.com/fr/support">Site officiel AMD</a></strong></p>
+<p><strong>Procédure de téléchargement :</strong></p>
+<ol>
+<li><strong>Sélectionnez</strong> &ldquo;Cartes graphiques&rdquo; → Votre série (RX 7000, RX 6000, etc.)</li>
+<li><strong>Choisissez</strong> votre modèle exact</li>
+<li><strong>Téléchargez</strong> le package <strong>&ldquo;Adrenalin&rdquo;</strong> complet</li>
+<li><strong>Sauvegardez</strong> le fichier sur votre bureau</li>
+</ol>
+<h4 id="display-driver-uninstaller-ddu">
+<a class="header-anchor" href="#display-driver-uninstaller-ddu"></a>
+Display Driver Uninstaller (DDU)
+</h4><p><strong>🔗 <a href="https://www.guru3d.com/download/display-driver-uninstaller-download/">Télécharger DDU</a></strong></p>
+<p><strong>Informations importantes :</strong></p>
+<ul>
+<li><strong>Gratuit</strong> et sûr d&rsquo;utilisation</li>
+<li><strong>Portable</strong> : aucune installation requise</li>
+<li><strong>Compatible</strong> avec toutes les versions Windows récentes</li>
+<li><strong>Mis à jour</strong> régulièrement</li>
+</ul>
+<h2 id="étape-1--préparation-du-système">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-du-syst%c3%a8me"></a>
+Étape 1 : Préparation du système
+</h2><h3 id="sauvegarde-importante">
+<a class="header-anchor" href="#sauvegarde-importante"></a>
+Sauvegarde importante
+</h3><p>Avant de commencer :</p>
+<p><strong>🛡️ Points de sauvegarde essentiels :</strong></p>
+<ul>
+<li><strong>Profils jeux</strong> (paramètres NVIDIA GeForce Experience, AMD Software)</li>
+<li><strong>Paramètres d&rsquo;affichage</strong> personnalisés</li>
+<li><strong>Overclocking</strong> appliqué (notez les valeurs)</li>
+</ul>
+<h3 id="fermeture-des-programmes">
+<a class="header-anchor" href="#fermeture-des-programmes"></a>
+Fermeture des programmes
+</h3><p><strong>Fermez tous les logiciels liés au GPU :</strong></p>
+<ul>
+<li>GeForce Experience / AMD Software</li>
+<li>MSI Afterburner / GPU-Z</li>
+<li>Jeux et applications 3D</li>
+<li>Logiciels de streaming (OBS, etc.)</li>
+</ul>
+<h3 id="déconnexion-internet-crucial">
+<a class="header-anchor" href="#d%c3%a9connexion-internet-crucial"></a>
+Déconnexion internet (CRUCIAL)
+</h3><blockquote>
+<p><strong>🔥 ÉTAPE CRITIQUE</strong> : Débranchez physiquement le câble Ethernet OU désactivez le Wi-Fi avant de redémarrer en mode sans échec.</p></blockquote>
+<p><strong>Pourquoi débrancher internet ?</strong></p>
+<ul>
+<li>Empêche Windows d&rsquo;installer automatiquement des pilotes génériques</li>
+<li>Évite les conflits pendant la réinstallation</li>
+<li>Garantit un environnement propre pour DDU</li>
+</ul>
+<h2 id="étape-2--accès-au-mode-sans-échec">
+<a class="header-anchor" href="#%c3%a9tape-2--acc%c3%a8s-au-mode-sans-%c3%a9chec"></a>
+Étape 2 : Accès au mode sans échec
+</h2><h3 id="pour-windows-10">
+<a class="header-anchor" href="#pour-windows-10"></a>
+Pour Windows 10
+</h3><h4 id="via-les-paramètres">
+<a class="header-anchor" href="#via-les-param%c3%a8tres"></a>
+Via les Paramètres
+</h4><ol>
+<li><strong>Ouvrez</strong> &ldquo;Paramètres&rdquo; (Windows + I)</li>
+<li><strong>Cliquez</strong> sur &ldquo;Mise à jour et sécurité&rdquo;</li>
+<li><strong>Sélectionnez</strong> &ldquo;Récupération&rdquo; dans le menu gauche</li>
+<li>Sous <strong>&ldquo;Démarrage avancé&rdquo;</strong>, cliquez sur <strong>&ldquo;Redémarrer maintenant&rdquo;</strong></li>
+</ol>
+<h3 id="pour-windows-11">
+<a class="header-anchor" href="#pour-windows-11"></a>
+Pour Windows 11
+</h3><h4 id="via-les-paramètres-1">
+<a class="header-anchor" href="#via-les-param%c3%a8tres-1"></a>
+Via les Paramètres
+</h4><ol>
+<li><strong>Ouvrez</strong> &ldquo;Paramètres&rdquo; (Windows + I)</li>
+<li><strong>Cliquez</strong> sur &ldquo;Windows Update&rdquo; dans le menu gauche</li>
+<li><strong>Sélectionnez</strong> &ldquo;Options avancées&rdquo;</li>
+<li><strong>Cliquez</strong> sur &ldquo;Récupération&rdquo;</li>
+<li>Sous <strong>&ldquo;Démarrage avancé&rdquo;</strong>, cliquez sur <strong>&ldquo;Redémarrer maintenant&rdquo;</strong></li>
+</ol>
+<h3 id="navigation-dans-le-menu-de-démarrage-avancé">
+<a class="header-anchor" href="#navigation-dans-le-menu-de-d%c3%a9marrage-avanc%c3%a9"></a>
+Navigation dans le menu de démarrage avancé
+</h3><p>Une fois le PC redémarré, vous verrez un écran bleu avec des options :</p>
+<h4 id="séquence-de-navigation">
+<a class="header-anchor" href="#s%c3%a9quence-de-navigation"></a>
+Séquence de navigation
+</h4><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Dépannage&rdquo;</li>
+<li><strong>Cliquez</strong> sur &ldquo;Options avancées&rdquo;</li>
+<li><strong>Cliquez</strong> sur &ldquo;Paramètres de démarrage&rdquo;</li>
+<li><strong>Cliquez</strong> sur &ldquo;Redémarrer&rdquo;</li>
+</ol>
+<h4 id="menu-des-paramètres-de-démarrage">
+<a class="header-anchor" href="#menu-des-param%c3%a8tres-de-d%c3%a9marrage"></a>
+Menu des paramètres de démarrage
+</h4><p>Après le redémarrage, vous verrez une liste numérotée :</p>
+<p><strong>Options disponibles :</strong></p>
+<pre tabindex="0"><code>1) Activer le débogage
+2) Activer la journalisation du démarrage
+3) Activer la vidéo basse résolution
+4) Activer le mode sans échec          ← CHOISIR CETTE OPTION
+5) Activer le mode sans échec avec prise en charge réseau
+6) Activer le mode sans échec avec invite de commandes
+7) Désactiver le redémarrage automatique après échec
+8) Désactiver le contrôle obligatoire des signatures de pilotes
+9) Désactiver la protection contre les logiciels malveillants à lancement anticipé
+</code></pre><p><strong>Appuyez sur la touche &ldquo;4&rdquo;</strong> pour le mode sans échec standard.</p>
+<h2 id="étape-3--utilisation-de-ddu">
+<a class="header-anchor" href="#%c3%a9tape-3--utilisation-de-ddu"></a>
+Étape 3 : Utilisation de DDU
+</h2><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><p>Une fois en mode sans échec :</p>
+<ol>
+<li><strong>Naviguez</strong> vers le dossier où vous avez extrait DDU</li>
+<li><strong>Clic droit</strong> sur &ldquo;Display Driver Uninstaller.exe&rdquo;</li>
+<li><strong>Sélectionnez</strong> &ldquo;Exécuter en tant qu&rsquo;administrateur&rdquo;</li>
+</ol>
+<h3 id="configuration-de-ddu">
+<a class="header-anchor" href="#configuration-de-ddu"></a>
+Configuration de DDU
+</h3><h4 id="sélection-du-type-de-périphérique">
+<a class="header-anchor" href="#s%c3%a9lection-du-type-de-p%c3%a9riph%c3%a9rique"></a>
+Sélection du type de périphérique
+</h4><p>Dans le menu déroulant <strong>&ldquo;Select device type&rdquo;</strong> :</p>
+<ul>
+<li><strong>Sélectionnez</strong> &ldquo;GPU&rdquo;</li>
+</ul>
+<h4 id="sélection-du-fabricant">
+<a class="header-anchor" href="#s%c3%a9lection-du-fabricant"></a>
+Sélection du fabricant
+</h4><p>Dans le menu <strong>&ldquo;Select device&rdquo;</strong> :</p>
+<ul>
+<li><strong>Pour NVIDIA</strong> : Sélectionnez &ldquo;NVIDIA&rdquo;</li>
+<li><strong>Pour AMD</strong> : Sélectionnez &ldquo;AMD&rdquo;</li>
+<li><strong>Pour Intel</strong> : Sélectionnez &ldquo;INTEL&rdquo; (si applicable)</li>
+</ul>
+<h3 id="processus-de-désinstallation">
+<a class="header-anchor" href="#processus-de-d%c3%a9sinstallation"></a>
+Processus de désinstallation
+</h3><h4 id="lancement-de-la-désinstallation">
+<a class="header-anchor" href="#lancement-de-la-d%c3%a9sinstallation"></a>
+Lancement de la désinstallation
+</h4><ol>
+<li><strong>Cliquez</strong> sur &ldquo;Clean and restart&rdquo; (Nettoyer et redémarrer)</li>
+<li><strong>Confirmez</strong> l&rsquo;action si demandé</li>
+<li><strong>Attendez</strong> que DDU termine le processus (2-5 minutes)</li>
+</ol>
+<h4 id="progression-du-nettoyage">
+<a class="header-anchor" href="#progression-du-nettoyage"></a>
+Progression du nettoyage
+</h4><p>DDU va :</p>
+<ul>
+<li><strong>Supprimer</strong> tous les fichiers de pilotes</li>
+<li><strong>Nettoyer</strong> le registre Windows</li>
+<li><strong>Retirer</strong> les services liés aux pilotes</li>
+<li><strong>Supprimer</strong> les dossiers temporaires</li>
+<li><strong>Redémarrer</strong> automatiquement</li>
+</ul>
+<p><strong>Indicateurs de progression :</strong></p>
+<ul>
+<li>Barre de progression verte</li>
+<li>Messages de statut en temps réel</li>
+<li>Liste des éléments supprimés</li>
+</ul>
+<h2 id="étape-4--installation-des-nouveaux-pilotes">
+<a class="header-anchor" href="#%c3%a9tape-4--installation-des-nouveaux-pilotes"></a>
+Étape 4 : Installation des nouveaux pilotes
+</h2><h3 id="vérification-post-ddu">
+<a class="header-anchor" href="#v%c3%a9rification-post-ddu"></a>
+Vérification post-DDU
+</h3><p>Après le redémarrage automatique :</p>
+<p><strong>Signes d&rsquo;une désinstallation réussie :</strong></p>
+<ul>
+<li>Résolution d&rsquo;écran basique (1024x768 ou similaire)</li>
+<li>Absence de pilotes GPU dans le Gestionnaire de périphériques</li>
+<li>Windows utilise le pilote d&rsquo;affichage de base</li>
+</ul>
+<h3 id="installation-des-pilotes-nvidia">
+<a class="header-anchor" href="#installation-des-pilotes-nvidia"></a>
+Installation des pilotes NVIDIA
+</h3><h4 id="geforce-game-ready-driver">
+<a class="header-anchor" href="#geforce-game-ready-driver"></a>
+GeForce Game Ready Driver
+</h4><ol>
+<li><strong>Localisez</strong> le fichier .exe téléchargé</li>
+<li><strong>Clic droit</strong> → &ldquo;Exécuter en tant qu&rsquo;administrateur&rdquo;</li>
+<li><strong>Suivez</strong> l&rsquo;assistant d&rsquo;installation</li>
+</ol>
+<p><strong>Options d&rsquo;installation recommandées :</strong></p>
+<pre tabindex="0"><code>☑ Pilote graphique
+☑ Pilote audio HD
+☑ PhysX System Software
+☑ GeForce Experience (optionnel)
+</code></pre><p><strong>Type d&rsquo;installation :</strong></p>
+<ul>
+<li><strong>Express</strong> : Installation rapide avec paramètres par défaut</li>
+<li><strong>Personnalisée</strong> : Contrôle total des composants (recommandé)</li>
+</ul>
+<h4 id="installation-personnalisée-recommandée">
+<a class="header-anchor" href="#installation-personnalis%c3%a9e-recommand%c3%a9e"></a>
+Installation personnalisée (recommandée)
+</h4><p><strong>Composants essentiels :</strong></p>
+<ul>
+<li><strong>Display Driver</strong> : Pilote principal (obligatoire)</li>
+<li><strong>PhysX</strong> : Physique avancée dans les jeux</li>
+<li><strong>NVIDIA HD Audio</strong> : Son via HDMI/DisplayPort</li>
+</ul>
+<p><strong>Composants optionnels :</strong></p>
+<ul>
+<li><strong>GeForce Experience</strong> : Optimisation automatique des jeux</li>
+</ul>
+<p><strong>Options d&rsquo;installation :</strong></p>
+<ul>
+<li><strong>Installation propre</strong> : ☑ (recommandé)</li>
+<li><strong>Factory Reset</strong> : ☑ (remet les paramètres à zéro)</li>
+</ul>
+<h3 id="installation-des-pilotes-amd">
+<a class="header-anchor" href="#installation-des-pilotes-amd"></a>
+Installation des pilotes AMD
+</h3><h4 id="amd-adrenalin-software">
+<a class="header-anchor" href="#amd-adrenalin-software"></a>
+AMD Adrenalin Software
+</h4><ol>
+<li><strong>Localisez</strong> le fichier .exe téléchargé</li>
+<li><strong>Clic droit</strong> → &ldquo;Exécuter en tant qu&rsquo;administrateur&rdquo;</li>
+<li><strong>Choisissez</strong> le type d&rsquo;installation</li>
+</ol>
+<p><strong>Types d&rsquo;installation AMD :</strong></p>
+<ul>
+<li><strong>Install</strong> : Installation complète (recommandé)</li>
+<li><strong>Minimal Install</strong> : Pilotes seulement</li>
+<li><strong>Factory Reset</strong> : Réinitialisation complète</li>
+</ul>
+<h4 id="composants-amd-adrenalin">
+<a class="header-anchor" href="#composants-amd-adrenalin"></a>
+Composants AMD Adrenalin
+</h4><p><strong>Composants principaux :</strong></p>
+<pre tabindex="0"><code>☑ AMD Display Driver
+☑ AMD Audio Driver
+☑ AMD Software Adrenalin Edition
+☑ AMD Chipset Software (si applicable)
+</code></pre><p><strong>Fonctionnalités incluses :</strong></p>
+<ul>
+<li><strong>Radeon Software</strong> : Interface de contrôle principale</li>
+<li><strong>ReLive</strong> : Enregistrement et streaming de gameplay</li>
+<li><strong>Radeon Image Sharpening</strong> : Amélioration de la netteté</li>
+</ul>
+<h3 id="finalisation-de-linstallation">
+<a class="header-anchor" href="#finalisation-de-linstallation"></a>
+Finalisation de l&rsquo;installation
+</h3><h4 id="redémarrage-final">
+<a class="header-anchor" href="#red%c3%a9marrage-final"></a>
+Redémarrage final
+</h4><ol>
+<li><strong>Redémarrez</strong> le PC une fois l&rsquo;installation terminée</li>
+<li><strong>Reconnectez</strong> internet (câble Ethernet ou Wi-Fi)</li>
+<li><strong>Vérifiez</strong> que la résolution d&rsquo;écran est correcte</li>
+</ol>
+<h4 id="vérification-du-bon-fonctionnement">
+<a class="header-anchor" href="#v%c3%a9rification-du-bon-fonctionnement"></a>
+Vérification du bon fonctionnement
+</h4><p><strong>Tests de base :</strong></p>
+<ul>
+<li>Résolution native détectée automatiquement</li>
+<li>Pilotes visibles dans le Gestionnaire de périphériques</li>
+<li>Logiciel de contrôle fonctionnel (GeForce Experience / AMD Software)</li>
+</ul>
+<h2 id="vérification-et-configuration-post-installation">
+<a class="header-anchor" href="#v%c3%a9rification-et-configuration-post-installation"></a>
+Vérification et configuration post-installation
+</h2><h3 id="test-des-fonctionnalités">
+<a class="header-anchor" href="#test-des-fonctionnalit%c3%a9s"></a>
+Test des fonctionnalités
+</h3><h4 id="test-de-performance-de-base">
+<a class="header-anchor" href="#test-de-performance-de-base"></a>
+Test de performance de base
+</h4><p><strong>Utilisation du GPU :</strong></p>
+<ol>
+<li><strong>Ouvrez</strong> le Gestionnaire des tâches (Ctrl+Shift+Échap)</li>
+<li><strong>Onglet</strong> &ldquo;Performance&rdquo; → <strong>GPU</strong></li>
+<li><strong>Lancez</strong> une application 3D simple pour tester</li>
+</ol>
+<h4 id="test-daffichage">
+<a class="header-anchor" href="#test-daffichage"></a>
+Test d&rsquo;affichage
+</h4><p><strong>Vérifications d&rsquo;affichage :</strong></p>
+<ul>
+<li><strong>Résolution</strong> : Native de votre écran</li>
+<li><strong>Taux de rafraîchissement</strong> : Maximum supporté</li>
+<li><strong>Couleurs</strong> : Profondeur 32 bits</li>
+<li><strong>Écrans multiples</strong> : Détection automatique</li>
+</ul>
+<h3 id="configuration-recommandée">
+<a class="header-anchor" href="#configuration-recommand%c3%a9e"></a>
+Configuration recommandée
+</h3><h4 id="paramètres-nvidia-via-panneau-de-configuration-nvidia">
+<a class="header-anchor" href="#param%c3%a8tres-nvidia-via-panneau-de-configuration-nvidia"></a>
+Paramètres NVIDIA (via Panneau de configuration NVIDIA)
+</h4><p><strong>Paramètres 3D optimaux :</strong></p>
+<pre tabindex="0"><code>Gestion de l&#39;alimentation : Performances maximales
+Mode de synchronisation verticale : Utiliser le paramètre d&#39;application 3D
+</code></pre><h3 id="restauration-des-profils">
+<a class="header-anchor" href="#restauration-des-profils"></a>
+Restauration des profils
+</h3><h4 id="profils-de-jeux">
+<a class="header-anchor" href="#profils-de-jeux"></a>
+Profils de jeux
+</h4><p><strong>NVIDIA GeForce Experience :</strong></p>
+<ol>
+<li><strong>Connectez-vous</strong> à votre compte NVIDIA</li>
+<li><strong>Synchronisez</strong> vos paramètres cloud</li>
+<li><strong>Restaurez</strong> les profils de jeux</li>
+</ol>
+<p><strong>AMD Software :</strong></p>
+<ol>
+<li><strong>Importez</strong> vos profils sauvegardés</li>
+<li><strong>Reconfigurez</strong> les paramètres par jeu</li>
+<li><strong>Activez</strong> les fonctionnalités désirées</li>
+</ol>
+<h2 id="troubleshooting-avancé">
+<a class="header-anchor" href="#troubleshooting-avanc%c3%a9"></a>
+Troubleshooting avancé
+</h2><h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><h4 id="-linstallation-échoue">
+<a class="header-anchor" href="#-linstallation-%c3%a9choue"></a>
+🚫 L&rsquo;installation échoue
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Restes de l&rsquo;ancien pilote non supprimés</li>
+<li>Antivirus bloquant l&rsquo;installation</li>
+<li>Fichier d&rsquo;installation corrompu</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li><strong>Relancez</strong> DDU en mode sans échec</li>
+<li><strong>Re-téléchargez</strong> le pilote</li>
+<li><strong>Tentez</strong> l&rsquo;installation en mode compatibilité</li>
+</ol>
+<h4 id="-écran-noir-après-installation">
+<a class="header-anchor" href="#-%c3%a9cran-noir-apr%c3%a8s-installation"></a>
+⚠️ Écran noir après installation
+</h4><p><strong>Actions d&rsquo;urgence :</strong></p>
+<ol>
+<li><strong>Redémarrez</strong> en mode sans échec (F8 au démarrage)</li>
+<li><strong>Relancez</strong> DDU pour nettoyer à nouveau</li>
+<li><strong>Installez</strong> une version antérieure stable</li>
+<li><strong>Vérifiez</strong> la compatibilité GPU/driver</li>
+</ol>
+<h4 id="-performance-dégradée">
+<a class="header-anchor" href="#-performance-d%c3%a9grad%c3%a9e"></a>
+💻 Performance dégradée
+</h4><p><strong>Vérifications :</strong></p>
+<ul>
+<li><strong>Température</strong> GPU (MSI Afterburner / HWMonitor)</li>
+<li><strong>Utilisation</strong> GPU dans le Gestionnaire des tâches</li>
+<li><strong>Paramètres d&rsquo;alimentation</strong> Windows (Performance maximale)</li>
+</ul>
+<h3 id="surveillance-des-performances">
+<a class="header-anchor" href="#surveillance-des-performances"></a>
+Surveillance des performances
+</h3><p><strong>Outils de monitoring :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Outil</th>
+          <th>Fonction</th>
+          <th>Utilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>MSI Afterburner</strong></td>
+          <td>Monitoring complet</td>
+          <td>Températures, usage, FPS</td>
+      </tr>
+      <tr>
+          <td><strong>GPU-Z</strong></td>
+          <td>Informations détaillées</td>
+          <td>Spécifications, capteurs</td>
+      </tr>
+      <tr>
+          <td><strong>HWiNFO64</strong></td>
+          <td>Surveillance système</td>
+          <td>Diagnostics avancés</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="signaux-dalerte">
+<a class="header-anchor" href="#signaux-dalerte"></a>
+Signaux d&rsquo;alerte
+</h3><p><strong>Indicateurs nécessitant une réinstallation :</strong></p>
+<ul>
+<li>Crashs fréquents de jeux</li>
+<li>Artefacts graphiques</li>
+<li>Performance en baisse inexpliquée</li>
+</ul>
+<h2 id="best-practices-et-conseils-dexpert">
+<a class="header-anchor" href="#best-practices-et-conseils-dexpert"></a>
+Best Practices et conseils d&rsquo;expert
+</h2><h3 id="avant-chaque-réinstallation">
+<a class="header-anchor" href="#avant-chaque-r%c3%a9installation"></a>
+Avant chaque réinstallation
+</h3><p><strong>Checklist pré-installation :</strong></p>
+<pre tabindex="0"><code>☑ Sauvegarde des profils de jeux
+☑ Notes des paramètres d&#39;overclocking
+☑ Téléchargement des derniers drivers
+☑ Point de restauration système
+☑ Fermeture de tous les programmes
+☑ Déconnexion internet
+</code></pre><p>La <strong>réinstallation propre des pilotes graphiques</strong> avec DDU est une procédure essentielle dans la maintenance d&rsquo;un PC gaming ou professionnel. Cette méthode résout la majorité des problèmes liés aux pilotes et garantit des performances optimales.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Étapes essentielles :</strong></p>
+<ol>
+<li><strong>Téléchargement</strong> préalable des pilotes et DDU</li>
+<li><strong>Déconnexion</strong> internet obligatoire</li>
+<li><strong>Mode sans échec</strong> pour utiliser DDU</li>
+<li><strong>&ldquo;Clean and restart&rdquo;</strong> pour supprimer proprement</li>
+<li><strong>Installation</strong> des nouveaux pilotes</li>
+<li><strong>Reconnexion</strong> internet et vérification</li>
+</ol></blockquote>
+<h3 id="conseils-finaux">
+<a class="header-anchor" href="#conseils-finaux"></a>
+Conseils finaux
+</h3><p><strong>Pour une procédure optimale :</strong></p>
+<ul>
+<li>Planifiez l&rsquo;intervention (30-45 minutes)</li>
+<li>Gardez les fichiers d&rsquo;installation à portée</li>
+<li>Notez vos paramètres personnalisés avant</li>
+<li>Testez les performances après installation</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Dois-je utiliser DDU à chaque mise à jour de pilote ?</strong>
+R : Non, DDU n&rsquo;est nécessaire qu&rsquo;en cas de problèmes ou lors d&rsquo;un changement majeur (nouveau GPU, version corrompue, etc.).</p>
+<p><strong>Q : Puis-je utiliser DDU sans mode sans échec ?</strong>
+R : Fortement déconseillé. Le mode sans échec garantit qu&rsquo;aucun processus n&rsquo;interfère avec la désinstallation.</p>
+<p><strong>Q : Que faire si DDU ne détecte pas ma carte graphique ?</strong>
+R : Vérifiez que votre GPU est correctement installé et reconnu dans le Gestionnaire de périphériques avant d&rsquo;utiliser DDU.</p>
+<p><strong>Q : Les paramètres de mes jeux seront-ils perdus ?</strong>
+R : Non, les paramètres de jeux sont généralement stockés séparément. Seuls les profils du panneau de contrôle GPU seront perdus.</p>
+<p><strong>Q : Combien de temps prend la procédure complète ?</strong>
+R : Comptez 30-45 minutes pour l&rsquo;ensemble du processus, incluant les téléchargements et redémarrages.</p>
+<hr>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="https://wiki.axekin.com/fr/post/reinstall_driver_gpu/">https://wiki.axekin.com/fr/post/reinstall_driver_gpu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Réinstallation Propre des Pilotes Graphiques</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-04 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-04 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://wiki.axekin.com/fr/post/reinstall_driver_gpu/" target="_blank" rel="noopener noreferrer" title="Réinstallation Propre des Pilotes Graphiques">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://wiki.axekin.com/fr/post/reinstall_driver_gpu/&amp;text=R%c3%a9installation%20Propre%20des%20Pilotes%20Graphiques&amp;via=https://wiki.axekin.com/" target="_blank" rel="noopener noreferrer" title="Réinstallation Propre des Pilotes Graphiques">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://wiki.axekin.com/fr/post/reinstall_driver_gpu/&amp;title=R%c3%a9installation%20Propre%20des%20Pilotes%20Graphiques&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20r%c3%a9installer%20proprement%20les%20drivers%20GPU%20NVIDIA%20et%20AMD%20avec%20DDU%20-%20Guide%20%c3%a9tape%20par%20%c3%a9tape%20pour%20r%c3%a9soudre%20les%20probl%c3%a8mes%20graphiques&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Réinstallation Propre des Pilotes Graphiques">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://wiki.axekin.com/fr/post/reinstall_driver_gpu/&amp;title=R%c3%a9installation%20Propre%20des%20Pilotes%20Graphiques" target="_blank" rel="noopener noreferrer" title="Réinstallation Propre des Pilotes Graphiques">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Réinstallation Propre des Pilotes Graphiques">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/pilotes"
+        rel="tag"
+        >PILOTES</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/gpu"
+        rel="tag"
+        >GPU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nvidia"
+        rel="tag"
+        >NVIDIA</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/amd"
+        rel="tag"
+        >AMD</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/ddu"
+        rel="tag"
+        >DDU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/drivers"
+        rel="tag"
+        >DRIVERS</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/r%c3%a9paration"
+        rel="tag"
+        >RÉPARATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/windows"
+        rel="tag"
+        >WINDOWS</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/dolphin-emulator-guide.webp"
+            data-sizes="auto"
+            alt="Installation et configuration de Dolphin"
+            class="lazyload"
+          /><a href="/fr/post/dolphin/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Installation et configuration de Dolphin</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/yuzu-ryujinx-backup.webp"
+            data-sizes="auto"
+            alt="Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes"
+            class="lazyload"
+          /><a href="/fr/post/reinstall_yuzu_ryujinx/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</h3>
+      </div></nav></article></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;22.9k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:57</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div><div class="footer-custom-text">Fait avec ❤️ par Axekin</div></div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Sommaire</h3>
+  <div class="sidebar-toc-wrapper toc-div-class">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#processus-général">Processus général</a></li>
+      </ul>
+    </li>
+    <li><a href="#prérequis-et-téléchargements">Prérequis et Téléchargements</a>
+      <ul>
+        <li><a href="#identifier-votre-carte-graphique">Identifier votre carte graphique</a></li>
+        <li><a href="#téléchargements-nécessaires">Téléchargements nécessaires</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-1--préparation-du-système">Étape 1 : Préparation du système</a>
+      <ul>
+        <li><a href="#sauvegarde-importante">Sauvegarde importante</a></li>
+        <li><a href="#fermeture-des-programmes">Fermeture des programmes</a></li>
+        <li><a href="#déconnexion-internet-crucial">Déconnexion internet (CRUCIAL)</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-2--accès-au-mode-sans-échec">Étape 2 : Accès au mode sans échec</a>
+      <ul>
+        <li><a href="#pour-windows-10">Pour Windows 10</a></li>
+        <li><a href="#pour-windows-11">Pour Windows 11</a></li>
+        <li><a href="#navigation-dans-le-menu-de-démarrage-avancé">Navigation dans le menu de démarrage avancé</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-3--utilisation-de-ddu">Étape 3 : Utilisation de DDU</a>
+      <ul>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+        <li><a href="#configuration-de-ddu">Configuration de DDU</a></li>
+        <li><a href="#processus-de-désinstallation">Processus de désinstallation</a></li>
+      </ul>
+    </li>
+    <li><a href="#étape-4--installation-des-nouveaux-pilotes">Étape 4 : Installation des nouveaux pilotes</a>
+      <ul>
+        <li><a href="#vérification-post-ddu">Vérification post-DDU</a></li>
+        <li><a href="#installation-des-pilotes-nvidia">Installation des pilotes NVIDIA</a></li>
+        <li><a href="#installation-des-pilotes-amd">Installation des pilotes AMD</a></li>
+        <li><a href="#finalisation-de-linstallation">Finalisation de l&rsquo;installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#vérification-et-configuration-post-installation">Vérification et configuration post-installation</a>
+      <ul>
+        <li><a href="#test-des-fonctionnalités">Test des fonctionnalités</a></li>
+        <li><a href="#configuration-recommandée">Configuration recommandée</a></li>
+        <li><a href="#restauration-des-profils">Restauration des profils</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting-avancé">Troubleshooting avancé</a>
+      <ul>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+        <li><a href="#surveillance-des-performances">Surveillance des performances</a></li>
+        <li><a href="#signaux-dalerte">Signaux d&rsquo;alerte</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices-et-conseils-dexpert">Best Practices et conseils d&rsquo;expert</a>
+      <ul>
+        <li><a href="#avant-chaque-réinstallation">Avant chaque réinstallation</a></li>
+        <li><a href="#points-clés-à-retenir">Points clés à retenir</a></li>
+        <li><a href="#conseils-finaux">Conseils finaux</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq---questions-fréquentes">FAQ - Questions fréquentes</a></li>
+  </ul>
+</nav>
+  </div>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">21</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      13
+    </div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tags</div>
+    <div class="sidebar-state-number">66</div>
+  </div>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label="Discord"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link">Discord</div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" integrity="" crossorigin="anonymous" ></script><script src="/js/aos.js" integrity="" crossorigin="anonymous" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Rechercher.....',
+          "hits_empty": 'Aucun résultat trouvé pour 「${query}」',
+          "hits_stats": '${hits} résultats trouvés (en ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-hHJCflT4KBLQyHfKO9vpstIcFKn/Y&#43;KHTORelMMEn7mOp2AVPp&#43;7fr03dLgZiV3J" crossorigin="anonymous"></script><script src="/js/algolia_search.js" integrity="" crossorigin="anonymous" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Réinstallation Propre des Pilotes Graphiques",
+          url: "https:\/\/wiki.axekin.com\/fr\/post\/reinstall_driver_gpu\/",
+          description: "Tutoriel détaillé pour réinstaller proprement les drivers GPU NVIDIA et AMD avec DDU - Guide étape par étape pour résoudre les problèmes graphiques",
+          cover: "https:\/\/wiki.axekin.com\/images\/covers\/gpu-driver-reinstall.webp",
+        };
+      </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" integrity="" crossorigin="anonymous" ></script></body>
+</html>

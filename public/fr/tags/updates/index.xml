@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updates on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/updates/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/updates/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
+      <link>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;installation de <strong>DLC</strong> (contenu téléchargeable) et de <strong>mises à jour</strong> sur les émulateurs <strong>Yuzu</strong> et <strong>Ryujinx</strong> est un processus simple mais essentiel pour profiter pleinement de vos jeux Nintendo Switch émulés.</p>
+<p>Ce guide vous explique <strong>étape par étape</strong> comment procéder sur les deux émulateurs les plus populaires.</p>
+<h3 id="formats-de-fichiers-supportés">
+<a class="header-anchor" href="#formats-de-fichiers-support%c3%a9s"></a>
+Formats de fichiers supportés
+</h3><p><strong>Types de fichiers acceptés :</strong></p>
+<ul>
+<li><strong>NSP</strong> - Nintendo Submission Package (format principal)</li>
+</ul>
+<p><strong>Différence entre Update et DLC :</strong></p>
+<ul>
+<li><strong>Update</strong> : Mise à jour du jeu de base (corrections, améliorations)</li>
+<li><strong>DLC</strong> : Contenu additionnel payant (nouveaux niveaux, personnages, etc.)</li>
+</ul>
+<h2 id="installation-sur-yuzu">
+<a class="header-anchor" href="#installation-sur-yuzu"></a>
+Installation sur Yuzu
+</h2><h3 id="méthode-universelle-update--dlc">
+<a class="header-anchor" href="#m%c3%a9thode-universelle-update--dlc"></a>
+Méthode universelle (Update + DLC)
+</h3><h4 id="étape-1--accéder-au-menu-dinstallation">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-menu-dinstallation"></a>
+Étape 1 : Accéder au menu d&rsquo;installation
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> et attendez que l&rsquo;interface soit chargée</li>
+<li>Dans la barre de menu, cliquez sur <strong>&ldquo;File&rdquo;</strong> (Fichier)</li>
+<li>Sélectionnez <strong>&ldquo;Install Files to NAND&rdquo;</strong> (Installer des fichiers sur la NAND)</li>
+</ol>
+<h4 id="étape-2--sélectionner-le-fichier">
+<a class="header-anchor" href="#%c3%a9tape-2--s%c3%a9lectionner-le-fichier"></a>
+Étape 2 : Sélectionner le fichier
+</h4><ol start="4">
+<li>Une <strong>fenêtre de sélection</strong> de fichiers s&rsquo;ouvre</li>
+<li><strong>Naviguez</strong> vers l&rsquo;emplacement de votre fichier DLC/Update</li>
+<li><strong>Sélectionnez</strong> le fichier (.nsp)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> (Ouvrir)</li>
+</ol>
+<h4 id="étape-3--confirmer-linstallation">
+<a class="header-anchor" href="#%c3%a9tape-3--confirmer-linstallation"></a>
+Étape 3 : Confirmer l&rsquo;installation
+</h4><ol start="8">
+<li>Yuzu <strong>analyse le fichier</strong> et affiche les informations</li>
+<li>Une boîte de dialogue apparaît demandant confirmation</li>
+<li>Cliquez sur <strong>&ldquo;Yes&rdquo;</strong> (Oui) pour procéder à l&rsquo;installation</li>
+<li><strong>Attendez</strong> que l&rsquo;installation se termine (barre de progression)</li>
+</ol>
+<h4 id="étape-4--vérification">
+<a class="header-anchor" href="#%c3%a9tape-4--v%c3%a9rification"></a>
+Étape 4 : Vérification
+</h4><ol start="12">
+<li>L&rsquo;installation est <strong>terminée</strong> quand le message de succès apparaît</li>
+<li><strong>Redémarrez</strong> Yuzu pour s&rsquo;assurer que tout est bien pris en compte</li>
+<li>Lancez votre jeu pour vérifier que le DLC/Update est actif</li>
+</ol>
+<p><strong>Indicateurs de réussite :</strong></p>
+<ul>
+<li>Message &ldquo;Installation completed successfully&rdquo;</li>
+<li>Nouveau contenu visible dans le jeu</li>
+<li>Version mise à jour affichée dans les propriétés du jeu</li>
+</ul>
+<h2 id="installation-sur-ryujinx">
+<a class="header-anchor" href="#installation-sur-ryujinx"></a>
+Installation sur Ryujinx
+</h2><h3 id="pour-les-updates-mises-à-jour">
+<a class="header-anchor" href="#pour-les-updates-mises-%c3%a0-jour"></a>
+Pour les Updates (Mises à jour)
+</h3><h4 id="étape-1--accéder-à-la-gestion-des-updates">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-gestion-des-updates"></a>
+Étape 1 : Accéder à la gestion des updates
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong> et localisez votre jeu dans la liste</li>
+<li><strong>Clic droit</strong> sur le jeu que vous souhaitez mettre à jour</li>
+<li>Dans le menu contextuel, sélectionnez <strong>&ldquo;Manage Updates&rdquo;</strong></li>
+</ol>
+<h4 id="étape-2--ajouter-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-2--ajouter-lupdate"></a>
+Étape 2 : Ajouter l&rsquo;update
+</h4><ol start="4">
+<li>La fenêtre <strong>&ldquo;Manage Updates&rdquo;</strong> s&rsquo;ouvre</li>
+<li>Cliquez sur le bouton <strong>&ldquo;Add&rdquo;</strong> ou <strong>&ldquo;Browse&rdquo;</strong></li>
+<li><strong>Sélectionnez</strong> votre fichier d&rsquo;update (.nsp)</li>
+<li>Cliquez sur <strong>&ldquo;Open&rdquo;</strong> pour l&rsquo;ajouter</li>
+</ol>
+<h4 id="étape-3--appliquer-lupdate">
+<a class="header-anchor" href="#%c3%a9tape-3--appliquer-lupdate"></a>
+Étape 3 : Appliquer l&rsquo;update
+</h4><ol start="8">
+<li>Votre update apparaît dans la liste avec <strong>sa version</strong></li>
+<li><strong>Cochez</strong> la case à côté de l&rsquo;update pour l&rsquo;activer</li>
+<li>Cliquez sur <strong>&ldquo;Save&rdquo;</strong> pour appliquer les changements</li>
+</ol>
+<h4 id="vérification-de-lupdate">
+<a class="header-anchor" href="#v%c3%a9rification-de-lupdate"></a>
+Vérification de l&rsquo;update
+</h4><ol start="11">
+<li><strong>Fermez</strong> la fenêtre de gestion</li>
+<li>Dans la liste des jeux, vous devriez voir la <strong>nouvelle version</strong> affichée</li>
+<li><strong>Lancez le jeu</strong> pour confirmer que l&rsquo;update est active</li>
+</ol>
+<h3 id="pour-les-dlc">
+<a class="header-anchor" href="#pour-les-dlc"></a>
+Pour les DLC
+</h3><h4 id="procédure-identique-aux-updates">
+<a class="header-anchor" href="#proc%c3%a9dure-identique-aux-updates"></a>
+Procédure identique aux updates
+</h4><p><strong>La méthode est exactement la même :</strong></p>
+<ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Manage DLC&rdquo;</strong> (au lieu de Manage Updates)</li>
+<li><strong>Add/Browse</strong> → Sélectionner le fichier DLC</li>
+<li><strong>Cocher</strong> le DLC pour l&rsquo;activer</li>
+<li><strong>Save</strong> pour appliquer</li>
+</ol>
+<h3 id="vérifier-les-versions-installées">
+<a class="header-anchor" href="#v%c3%a9rifier-les-versions-install%c3%a9es"></a>
+Vérifier les versions installées
+</h3><h4 id="dans-yuzu">
+<a class="header-anchor" href="#dans-yuzu"></a>
+Dans Yuzu
+</h4><ol>
+<li><strong>Clic droit</strong> sur le jeu → <strong>&ldquo;Properties&rdquo;</strong></li>
+<li>Onglet <strong>&ldquo;General&rdquo;</strong> → Vérifier la version</li>
+<li>Onglet <strong>&ldquo;Installed Content&rdquo;</strong> → Liste des DLC</li>
+</ol>
+<h4 id="dans-ryujinx">
+<a class="header-anchor" href="#dans-ryujinx"></a>
+Dans Ryujinx
+</h4><ol>
+<li><strong>Informations</strong> visibles directement dans la liste des jeux</li>
+<li><strong>Clic droit</strong> → <strong>&ldquo;Manage Updates/DLC&rdquo;</strong> pour les détails</li>
+<li>Version affichée à côté du nom du jeu</li>
+</ol>
+<h2 id="dépannage-des-problèmes-courants">
+<a class="header-anchor" href="#d%c3%a9pannage-des-probl%c3%a8mes-courants"></a>
+Dépannage des Problèmes Courants
+</h2><h3 id="problèmes-dinstallation">
+<a class="header-anchor" href="#probl%c3%a8mes-dinstallation"></a>
+Problèmes d&rsquo;installation
+</h3><h4 id="-fichier-non-reconnu">
+<a class="header-anchor" href="#-fichier-non-reconnu"></a>
+🚫 Fichier non reconnu
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Format de fichier incompatible</li>
+<li>Fichier corrompu</li>
+<li>Clés de déchiffrement manquantes</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez le format du fichier (.nsp, .xci, .nca)</li>
+<li>Re-téléchargez le fichier si corrompu</li>
+<li>Installez les clés prod.keys à jour</li>
+<li>Vérifiez que le firmware est compatible</li>
+</ol>
+<h4 id="-installation-échoue">
+<a class="header-anchor" href="#-installation-%c3%a9choue"></a>
+⚠️ Installation échoue
+</h4><p><strong>Messages d&rsquo;erreur courants :</strong></p>
+<ul>
+<li>&ldquo;Failed to install to NAND&rdquo;</li>
+<li>&ldquo;Invalid signature&rdquo;</li>
+<li>&ldquo;Missing keys&rdquo;</li>
+</ul>
+<p><strong>Solutions étape par étape :</strong></p>
+<ol>
+<li><strong>Vérifiez l&rsquo;espace disque</strong> disponible</li>
+<li><strong>Fermez complètement</strong> l&rsquo;émulateur et relancez</li>
+<li><strong>Exécutez en tant qu&rsquo;administrateur</strong> si nécessaire</li>
+<li><strong>Mettez à jour</strong> l&rsquo;émulateur vers la dernière version</li>
+</ol>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;installation de <strong>DLC et mises à jour</strong> sur Yuzu et Ryujinx est un processus simple une fois maîtrisé. La différence principale réside dans l&rsquo;approche : Yuzu utilise une méthode universelle tandis que Ryujinx offre une gestion plus granulaire.</p>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions Fréquentes
+</h2><p><strong>Q : Puis-je installer plusieurs versions d&rsquo;un même DLC ?</strong>
+R : Non, une seule version par DLC. L&rsquo;installation d&rsquo;une nouvelle version remplace automatiquement l&rsquo;ancienne.</p>
+<p><strong>Q : Les DLC fonctionnent-ils entre différentes régions de jeu ?</strong>
+R : Généralement non. Les DLC doivent correspondre à la région du jeu de base (EU, US, JP).</p>
+<p><strong>Q : Que faire si l&rsquo;installation reste bloquée ?</strong>
+R : Fermez l&rsquo;émulateur, redémarrez en tant qu&rsquo;administrateur, et réessayez. Vérifiez aussi l&rsquo;espace disque disponible.</p>
+<p><strong>Q : Les sauvegardes sont-elles affectées par l&rsquo;installation de DLC ?</strong>
+R : Non, les sauvegardes existantes restent intactes. Certains DLC peuvent ajouter du nouveau contenu aux sauvegardes.</p>
+<p><strong>Q : Comment désinstaller un DLC ou une update ?</strong>
+R : Dans Ryujinx, décochez simplement dans Manage DLC/Updates. Dans Yuzu, vous devrez supprimer depuis les paramètres système de l&rsquo;émulateur.</p>
+<hr>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+  </channel>
+</rss>

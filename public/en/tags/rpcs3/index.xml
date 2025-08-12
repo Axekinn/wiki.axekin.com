@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RPCS3 on Wiki of Axekin</title>
+    <link>https://wiki.axekin.com/en/tags/rpcs3/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/en/tags/rpcs3/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>RPCS3 Netplay (RPCN) Guide</title>
+      <link>https://wiki.axekin.com/en/post/rpcs3_mp/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/rpcs3_mp/</guid>
+      <description>
+        <![CDATA[<h1>RPCS3 Netplay (RPCN) Guide</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p>Play PS3 games online via RPCN with a smooth, reliable setup. Follow the quick checklist, then dive deeper when needed.</p></blockquote>
+<blockquote>
+<p>📝 Author’s note<br>
+RPCS3 has never been easier to set up for multiplayer gaming. For those of you who are more tech-savvy, I&rsquo;ve included the RPCS3 tutorial, which is very well explained.</p></blockquote>
+<h2 id="-quick-start-checklist">
+<a class="header-anchor" href="#-quick-start-checklist"></a>
+⚡ Quick Start Checklist
+</h2><ul>
+<li>Update to the latest RPCS3 build</li>
+<li>Create and verify an RPCN account</li>
+<li>Per‑game: Network = Connected, PSN = RPCN</li>
+<li>DNS 8.8.8.8 (unless the game needs another)</li>
+<li>UPnP enabled on PC/router or forward UDP 3658</li>
+<li>Test Account in RPCN window</li>
+</ul>
+<h2 id="ℹ-what-is-rpcn">
+<a class="header-anchor" href="#%e2%84%b9-what-is-rpcn"></a>
+ℹ️ What is RPCN?
+</h2><p>RPCN is a community‑made replacement for PSN used by RPCS3 to enable online features in supported games.</p>
+<blockquote>
+<p>⚠️ Disclaimer<br>
+In 99% of cases you do not need to change firewall, NAT/UPnP, or port‑forwarding settings. RPCS3 + RPCN should work out of the box on most networks. Only touch these settings if online connectivity with the other player fails after following the steps below.</p></blockquote>
+<h2 id="-requirements">
+<a class="header-anchor" href="#-requirements"></a>
+✅ Requirements
+</h2><table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Recommendation</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RPCS3</td>
+          <td>Latest build</td>
+          <td>Auto-updater or fresh download</td>
+      </tr>
+      <tr>
+          <td>Ports</td>
+          <td>UDP 3658</td>
+          <td>UPnP or manual port forwarding</td>
+      </tr>
+      <tr>
+          <td>NAT</td>
+          <td>Open/Type A</td>
+          <td>Avoid double NAT/CGNAT</td>
+      </tr>
+      <tr>
+          <td>Firewall</td>
+          <td>Allow RPCS3</td>
+          <td>OS and security suite</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-global-configuration">
+<a class="header-anchor" href="#-global-configuration"></a>
+🔧 Global configuration
+</h2><ol>
+<li>Open RPCS3 → Configuration → <strong>RPCN</strong></li>
+<li>Click <strong>Account</strong></li>
+<li>Select server: <strong>Official RPCN Server</strong></li>
+<li>Click <strong>Create Account</strong></li>
+<li>Set a <strong>Username</strong> → OK</li>
+<li>Enter <strong>Password</strong> twice → OK</li>
+<li>Enter <strong>Email</strong> twice → OK</li>
+<li>Confirm summary → <strong>Yes</strong></li>
+<li>Success message → an “RPCN: Username” window appears</li>
+<li>Check mailbox for the RPCN <strong>token</strong> → paste in <strong>Token</strong> → OK</li>
+<li>Click <strong>Test Account</strong></li>
+</ol>
+<blockquote>
+<p>💡 Pro tip<br>
+Keep your token private. If you lose it, use “Resend Token” in Edit Account.</p></blockquote>
+<hr>
+<h2 id="-game-specific-configuration">
+<a class="header-anchor" href="#-game-specific-configuration"></a>
+🎯 Game-specific configuration
+</h2><ol>
+<li>In the game list, right‑click the title → <strong>Create Custom Configuration</strong></li>
+<li>Go to <strong>Network</strong></li>
+<li><strong>Network Status</strong>: Connected</li>
+<li><strong>PSN Status</strong>: RPCN</li>
+<li><strong>DNS</strong>: <code>8.8.8.8</code> (unless the game requires another)</li>
+<li>If the game needs a custom server, enter the IP/Host switches provided by the community</li>
+</ol>
+<blockquote>
+<p>💡 Per‑game overrides<br>
+These settings apply only to this game and won’t change your global configuration.</p></blockquote>
+<p><img src="/images/covers/rpcs3_mp.png" alt="RPCS3 RPCN netplay proof (Assault Heroes)"><br>
+<em>Proof it works: Online Multiplayer running via RPCN on RPCS3.</em></p>
+<hr>
+<h2 id="-connectivity-essentials">
+<a class="header-anchor" href="#-connectivity-essentials"></a>
+🌐 Connectivity essentials
+</h2><ul>
+<li>Enable UPnP in RPCS3: Configuration → Network → <strong>Enable UPnP</strong></li>
+<li>Enable UPnP on your router (manual varies by model)</li>
+<li>Or forward port <strong>3658/UDP</strong> to your PC’s local IP</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Forward: UDP 3658 → your PC IP (reserve via DHCP)</li>
+<li>Avoid double NAT (bridge ISP modem if needed)</li>
+<li>VPNs may block inbound UDP; either configure port forwarding on the VPN or disable it while playing</li>
+</ul>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>🚧 NAT &amp; ISP constraints<br>
+Strict NAT or CGNAT can break peer connectivity. Ask your ISP for a public IPv4 or use a VPN supporting port forwarding.</p></blockquote>
+<hr>
+<h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🛠️ Troubleshooting
+</h2><h3 id="cant-connect-to-other-players">
+<a class="header-anchor" href="#cant-connect-to-other-players"></a>
+Can’t connect to other players
+</h3><ul>
+<li>UPnP enabled in RPCS3 and on the router</li>
+<li>Or forward UDP 3658 to your PC</li>
+<li>Allow RPCS3 through firewall/security suite</li>
+<li>Disable or reconfigure VPN</li>
+<li>RPCN → Account → <strong>Test Account</strong></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Confirm your PC’s IP didn’t change (DHCP reservation)</li>
+<li>Detect double NAT (modem + router both routing)</li>
+<li>Router NAT test should target Open/Type A</li>
+</ul>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="-recover-rpcn-account">
+<a class="header-anchor" href="#-recover-rpcn-account"></a>
+🔐 Recover RPCN Account
+</h2><h3 id="resend-rpcn-token">
+<a class="header-anchor" href="#resend-rpcn-token"></a>
+Resend RPCN Token
+</h3><ol>
+<li>RPCS3 → Configuration → RPCN → <strong>Account</strong></li>
+<li><strong>Edit Account</strong> → <strong>Resend Token</strong></li>
+<li>Confirm → OK → check email “Your token for RPCN”</li>
+<li>Paste token into <strong>Token</strong> field → OK → <strong>Save</strong></li>
+</ol>
+<h3 id="reset-rpcn-password">
+<a class="header-anchor" href="#reset-rpcn-password"></a>
+Reset RPCN Password
+</h3><ol>
+<li>RPCS3 → Configuration → RPCN → <strong>Account</strong></li>
+<li><strong>Edit Account</strong> → <strong>Change Password</strong></li>
+<li>Confirm username → OK</li>
+<li>When asked “Do you already have a reset password token?” → <strong>No</strong></li>
+<li>Enter signup email twice → OK</li>
+<li>Check email “Your password reset code for RPCN”</li>
+<li>Paste token → OK</li>
+<li>Enter new password twice → OK</li>
+<li>Back in Edit Account → <strong>Set Password</strong> → enter new password → OK → <strong>Save</strong></li>
+<li>RPCN: <strong>Test account</strong></li>
+</ol>
+<hr>
+<h3 id="good-practice">
+<a class="header-anchor" href="#good-practice"></a>
+Good practice
+</h3><ul>
+<li>Use strong, unique passwords</li>
+<li>Don’t share your token</li>
+<li>Keep RPCS3 updated for the latest RPCN fixes</li>
+</ul>
+<blockquote>
+<p>Respect game licenses and online terms of service. Support developers by purchasing their games.</p></blockquote>
+<p>🎯 Result: You’re ready to play online via RPCN!</p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Published on 2025-08-12 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-08-12</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>RPCS3</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>RPCS3 Installation and Configuration</title>
+      <link>https://wiki.axekin.com/en/post/rpcs3/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/rpcs3/</guid>
+      <description>
+        <![CDATA[<h1>RPCS3 Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-rpcs3">
+<a class="header-anchor" href="#-introduction-to-rpcs3"></a>
+🎮 Introduction to RPCS3
+</h2><p><strong>RPCS3</strong> is the world&rsquo;s most advanced open-source PlayStation 3 emulator. Written in C++, it uses a hybrid approach combining interpretation and recompilation to emulate the PS3&rsquo;s Cell architecture. After years of development, it now offers impressive compatibility with over 60% of PS3 games.</p>
+<blockquote>
+<p>⚠️ <strong>Legal Notice</strong>: This emulator is intended for playing only games you legally own. Emulation for backup and research purposes is legal, but piracy is not.</p></blockquote>
+<h2 id="-system-requirements">
+<a class="header-anchor" href="#-system-requirements"></a>
+📋 System Requirements
+</h2><h3 id="minimum-configuration">
+<a class="header-anchor" href="#minimum-configuration"></a>
+Minimum Configuration
+</h3><ul>
+<li><strong>OS</strong>: Windows 10 (64-bit) / Linux / FreeBSD</li>
+<li><strong>CPU</strong>: Intel Core i5-4430 / AMD FX-6300 (4 cores, 3.0 GHz)</li>
+<li><strong>RAM</strong>: 8 GB</li>
+<li><strong>GPU</strong>: DirectX 12 compatible / Vulkan 1.1 compatible</li>
+<li><strong>Storage</strong>: 10 GB free space + game space</li>
+</ul>
+<h3 id="recommended-configuration">
+<a class="header-anchor" href="#recommended-configuration"></a>
+Recommended Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i7-8700 / AMD Ryzen 7 2700 (8 cores, 3.2+ GHz)</li>
+<li><strong>RAM</strong>: 16 GB</li>
+<li><strong>GPU</strong>: NVIDIA GTX 1060 / AMD RX 580 or higher</li>
+<li><strong>Storage</strong>: SSD with 50+ GB free space</li>
+</ul>
+<h3 id="optimal-configuration">
+<a class="header-anchor" href="#optimal-configuration"></a>
+Optimal Configuration
+</h3><ul>
+<li><strong>CPU</strong>: Intel Core i9-12900K / AMD Ryzen 9 5900X (12+ cores, 3.5+ GHz)</li>
+<li><strong>RAM</strong>: 32 GB DDR4-3200+</li>
+<li><strong>GPU</strong>: NVIDIA RTX 3070 / AMD RX 6700 XT or higher</li>
+<li><strong>Storage</strong>: NVMe SSD with 100+ GB free space</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Important Note</strong>: RPCS3 is extremely CPU demanding. A powerful processor with many cores is essential.</p></blockquote>
+<h2 id="-step-1-downloading-rpcs3">
+<a class="header-anchor" href="#-step-1-downloading-rpcs3"></a>
+🔧 Step 1: Downloading RPCS3
+</h2><h3 id="official-version-recommended">
+<a class="header-anchor" href="#official-version-recommended"></a>
+Official Version (Recommended)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official website</span>
+</span></span><span style="display:flex;"><span>https://rpcs3.net/download
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Download</strong> <code>rpcs3-v0.0.XX-windows_x64.7z</code></li>
+<li><strong>Extract</strong> with 7-Zip to a dedicated folder (e.g., <code>C:\RPCS3</code>)</li>
+</ol>
+<h3 id="development-builds">
+<a class="header-anchor" href="#development-builds"></a>
+Development Builds
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Versions with latest improvements</span>
+</span></span><span style="display:flex;"><span>https://github.com/RPCS3/rpcs3-binaries-win/releases
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Advantages:
+</span></span><span style="display:flex;"><span>- Recent bug fixes
+</span></span><span style="display:flex;"><span>- New optimizations
+</span></span><span style="display:flex;"><span>- Improved compatibility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Risks:
+</span></span><span style="display:flex;"><span>- Potentially unstable
+</span></span><span style="display:flex;"><span>- Possible regressions
+</span></span></code></pre></div><h2 id="game-download">
+<a class="header-anchor" href="#game-download"></a>
+Game Download
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/games?platform=ps3">🎮 Axekin Games - Playstation 3</a></strong> (Coming soon ^_^ ) to access the Playstation 3 game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-file-extraction">
+<a class="header-anchor" href="#step-3-file-extraction"></a>
+Step 3: File extraction
+</h3><p>Once the download is finished, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You&rsquo;ll get game files ready to be used with Ryujinx! 🎯</p>
+<h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Create this folder structure to organize your files:</p>
+<p>For optimal organization of your library, here&rsquo;s the recommended tree structure:</p>
+<pre tabindex="0"><code>PS3 Games/
+├── GTA V/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── TLOU/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── BOII/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── CoD BO1/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game (its a example))
+</code></pre><h3 id="content-types">
+<a class="header-anchor" href="#content-types"></a>
+Content types
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Understanding folders
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>BASE</strong> 📁: The main game you download</li>
+<li><strong>UPDATE</strong> 📁: Updates and patches (recommended)</li>
+<li><strong>DLC</strong> 📁: Additional paid content (optional but recommended)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advantages of this organization
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Automatic detection</strong>: Games are automatically added to the emulator<br>
+✅ <strong>Simplified management</strong>: No need to manually select each ROM<br>
+✅ <strong>Clear organization</strong>: Easy to see what content you have for each game<br>
+✅ <strong>Easy maintenance</strong>: Simplified content addition/removal
+  </div>
+</div>
+<blockquote>
+<p><strong>📝 Important note</strong>: If a game doesn&rsquo;t have updates or DLC, there&rsquo;s no need to create the corresponding folders. Only create folders for content you actually have.</p></blockquote>
+<h3 id="result">
+<a class="header-anchor" href="#result"></a>
+Result
+</h3><p>Once this structure is in place, your emulator will automatically detect all games present in the &ldquo;PS3 Games&rdquo; folder and organize them properly in your library! 🎯</p>
+<h2 id="-step-3-installing-ps3-firmware">
+<a class="header-anchor" href="#-step-3-installing-ps3-firmware"></a>
+⚙️ Step 3: Installing PS3 Firmware
+</h2><h3 id="downloading-official-firmware">
+<a class="header-anchor" href="#downloading-official-firmware"></a>
+Downloading Official Firmware
+</h3><blockquote>
+<p>⚠️ <strong>Mandatory</strong>: Official Sony PS3 firmware is required to run RPCS3.</p></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official Sony site</span>
+</span></span><span style="display:flex;"><span>https://www.playstation.com/en-us/support/hardware/ps3/system-software/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>1. Download the latest version <span style="color:#f92672">(</span>PS3UPDAT.PUP<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>2. Place in: RPCS3/firmware/
+</span></span></code></pre></div><h3 id="installing-in-rpcs3">
+<a class="header-anchor" href="#installing-in-rpcs3"></a>
+Installing in RPCS3
+</h3><ol>
+<li><strong>Launch</strong> <code>rpcs3.exe</code></li>
+<li><strong>Accept</strong> terms of use on first launch</li>
+<li><code>File → Install Firmware</code></li>
+<li><strong>Select</strong> the <code>PS3UPDAT.PUP</code> file</li>
+<li><strong>Wait</strong> for complete installation (1 minute)</li>
+<li><strong>Restart</strong> RPCS3</li>
+</ol>
+<h2 id="-step-4-optimal-cpu-configuration">
+<a class="header-anchor" href="#-step-4-optimal-cpu-configuration"></a>
+⚙️ Step 4: Optimal CPU Configuration
+</h2><h3 id="cpu-settings">
+<a class="header-anchor" href="#cpu-settings"></a>
+CPU Settings
+</h3><pre tabindex="0"><code>Configuration → CPU
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>PPU Decoder</strong>: Recompiler (LLVM) [fastest, recommended for all games]</li>
+<li><strong>SPU Decoder</strong>: Recompiler (LLVM) [fastest, recommended for all games]</li>
+<li><strong>Additional Settings</strong>:
+<ul>
+<li><strong>Enable thread scheduler</strong>: ✅ Enabled (improves performance)</li>
+<li><strong>Enable SPU loop detection</strong>: ✅ Enabled (prevents infinite loops)</li>
+<li><strong>Enable SPU cache</strong>: ✅ Enabled (improves loading times)</li>
+<li><strong>Enable SPU Block Size</strong>: Safe (recommended for compatibility)</li>
+</ul>
+</li>
+</ul>
+<h3 id="advanced-cpu-options">
+<a class="header-anchor" href="#advanced-cpu-options"></a>
+Advanced CPU Options
+</h3><pre tabindex="0"><code>Configuration → CPU → Additional Settings
+</code></pre><ul>
+<li><strong>SPU Block Size</strong>: Safe (recommended for most games)</li>
+<li><strong>Preferred SPU Threads</strong>: Auto (let RPCS3 optimize automatically)</li>
+<li><strong>Enable accurate GETLLAR</strong>: ❌ Disabled (unless required by specific games)</li>
+<li><strong>Enable accurate PUTLLUC</strong>: ❌ Disabled (unless required by specific games)</li>
+<li><strong>Enable accurate RSX reservation access</strong>: ❌ Disabled (unless required by specific games)</li>
+<li><strong>SPU verification</strong>: ❌ Disabled (enable only for debugging)</li>
+<li><strong>SPU cache</strong>: ✅ Enabled (significantly improves performance)</li>
+<li><strong>Enable thread scheduler</strong>: ✅ Enabled (better thread management)</li>
+</ul>
+<h2 id="-step-5-optimal-gpu-configuration">
+<a class="header-anchor" href="#-step-5-optimal-gpu-configuration"></a>
+⚙️ Step 5: Optimal GPU Configuration
+</h2><h3 id="graphics-settings">
+<a class="header-anchor" href="#graphics-settings"></a>
+Graphics Settings
+</h3><pre tabindex="0"><code>Configuration → GPU
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>Renderer</strong>: Vulkan (best performance and compatibility)</li>
+<li><strong>Graphics Device</strong>: Select your dedicated GPU</li>
+<li><strong>Aspect Ratio</strong>: 16:9 (or Auto for original aspect ratio)</li>
+<li><strong>Frame limit</strong>: Off (let games run at their intended speed)</li>
+<li><strong>ZCULL Accuracy</strong>: Relaxed (balance between performance and accuracy)</li>
+</ul>
+<h3 id="resolution-and-rendering">
+<a class="header-anchor" href="#resolution-and-rendering"></a>
+Resolution and Rendering
+</h3><pre tabindex="0"><code>Configuration → GPU → Resolution
+</code></pre><p><strong>Optimal settings:</strong></p>
+<ul>
+<li><strong>Resolution</strong>: 1280x720 (native PS3 resolution)</li>
+<li><strong>Resolution Scale</strong>: 100% (increase only if you have a powerful GPU)</li>
+<li><strong>Resolution Scale Threshold</strong>: 16x16 (default)</li>
+<li><strong>Anti-Aliasing</strong>: Disabled (enable only if you have headroom)</li>
+<li><strong>Anisotropic Filter</strong>: Automatic (or 16x if performance allows)</li>
+</ul>
+<h3 id="advanced-graphics-options">
+<a class="header-anchor" href="#advanced-graphics-options"></a>
+Advanced Graphics Options
+</h3><pre tabindex="0"><code>Configuration → GPU → Advanced
+</code></pre><p><strong>Performance configuration:</strong></p>
+<ul>
+<li><strong>Default Shader Type</strong>: Vertex (recommended)</li>
+<li><strong>Shader Mode</strong>: Async (better performance)</li>
+<li><strong>Shader Precision</strong>: Auto (let RPCS3 decide)</li>
+<li><strong>Write Color Buffers</strong>: ❌ Disabled (enable only if required by game)</li>
+<li><strong>Write Depth Buffer</strong>: ❌ Disabled (enable only if required by game)</li>
+<li><strong>Read Color Buffers</strong>: ❌ Disabled (enable only if required by game)</li>
+<li><strong>Read Depth Buffer</strong>: ❌ Disabled (enable only if required by game)</li>
+<li><strong>VSync</strong>: ❌ Disabled (reduces input lag)</li>
+<li><strong>GPU texture scaling</strong>: ❌ Disabled (enable only if needed)</li>
+<li><strong>Stretch to display area</strong>: ❌ Disabled</li>
+<li><strong>Force CPU blit</strong>: ❌ Disabled (use GPU for better performance)</li>
+<li><strong>Disable ZCull Occlusion Queries</strong>: ❌ Disabled</li>
+<li><strong>Disable vertex cache</strong>: ❌ Disabled</li>
+<li><strong>Disable FIFO Reordering</strong>: ❌ Disabled</li>
+<li><strong>Enable Frame Skip</strong>: ❌ Disabled</li>
+<li><strong>Disable On-Disk Shader Cache</strong>: ❌ Disabled (keep cache enabled)</li>
+<li><strong>Disable Vulkan Memory Allocator</strong>: ❌ Disabled</li>
+<li><strong>Use GPU Render Thread</strong>: ✅ Enabled (improves performance)</li>
+</ul>
+<h3 id="shader-loading">
+<a class="header-anchor" href="#shader-loading"></a>
+Shader Loading
+</h3><pre tabindex="0"><code>Configuration → GPU → Shader Loading
+</code></pre><ul>
+<li><strong>Shader Compilation Hint</strong>: Use Async (reduces stuttering)</li>
+<li><strong>Shader Loading Dialog</strong>: Show (helpful for first-time loading)</li>
+<li><strong>Warn before creating PPU recompiler cache</strong>: ✅ Enabled</li>
+<li><strong>Warn before creating SPU recompiler cache</strong>: ✅ Enabled</li>
+</ul>
+<h2 id="-step-6-audio-configuration">
+<a class="header-anchor" href="#-step-6-audio-configuration"></a>
+⚙️ Step 6: Audio Configuration
+</h2><h3 id="audio-settings">
+<a class="header-anchor" href="#audio-settings"></a>
+Audio Settings
+</h3><pre tabindex="0"><code>Configuration → Audio
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>Audio Out</strong>: Cubeb (cross-platform, recommended)</li>
+<li><strong>Audio Settings</strong>:
+<ul>
+<li><strong>Dump to file</strong>: ❌ Disabled</li>
+<li><strong>Convert to 16-bit</strong>: ❌ Disabled</li>
+<li><strong>Audio Buffer Duration</strong>: 100ms (default, adjust if needed)</li>
+<li><strong>Enable Buffering</strong>: ✅ Enabled</li>
+<li><strong>Audio Backend</strong>: Cubeb (most stable)</li>
+</ul>
+</li>
+<li><strong>Audio Device</strong>: @default (use system default)</li>
+<li><strong>Master Volume</strong>: 100%</li>
+<li><strong>Audio Renderer</strong>: XAudio2 (Windows) / ALSA (Linux)</li>
+</ul>
+<h3 id="audio-quality">
+<a class="header-anchor" href="#audio-quality"></a>
+Audio Quality
+</h3><pre tabindex="0"><code>Configuration → Audio → Advanced
+</code></pre><ul>
+<li><strong>Audio Buffer</strong>: 0.1 seconds (100ms - good balance)</li>
+<li><strong>Audio Backend</strong>: Cubeb (recommended for stability)</li>
+<li><strong>Enable Time Stretching</strong>: ❌ Disabled (unless audio sync issues)</li>
+</ul>
+<h2 id="-step-7-inputoutput-configuration">
+<a class="header-anchor" href="#-step-7-inputoutput-configuration"></a>
+⚙️ Step 7: Input/Output Configuration
+</h2><h3 id="controller-settings">
+<a class="header-anchor" href="#controller-settings"></a>
+Controller Settings
+</h3><pre tabindex="0"><code>Configuration → Input/Output
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>Keyboard Handler</strong>: Null (unless using keyboard as controller)</li>
+<li><strong>Mouse Handler</strong>: Basic (for basic mouse support)</li>
+<li><strong>Camera Handler</strong>: Null (unless using camera games)</li>
+<li><strong>Camera Type</strong>: Unknown</li>
+<li><strong>Music Handler</strong>: Null</li>
+<li><strong>Pad Handler</strong>:
+<ul>
+<li><strong>XInput</strong> (for Xbox controllers)</li>
+<li><strong>DualShock 4</strong> (for PS4 controllers)</li>
+<li><strong>evdev</strong> (Linux generic controllers)</li>
+</ul>
+</li>
+</ul>
+<h3 id="controller-mapping">
+<a class="header-anchor" href="#controller-mapping"></a>
+Controller Mapping
+</h3><pre tabindex="0"><code>Configuration → Input/Output → Pad Settings
+</code></pre><p><strong>Standard DualShock 3 mapping:</strong></p>
+<ul>
+<li><strong>Device</strong>: Select your connected controller</li>
+<li><strong>Profile</strong>: Default (or create custom)</li>
+<li><strong>Player 1</strong>: Connected Controller Type → DualShock 3</li>
+<li><strong>Button Configuration</strong>: Use &ldquo;Auto Configure&rdquo; for quick setup</li>
+</ul>
+<p><strong>Manual mapping if needed:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Left Analog Stick → Left Stick
+</span></span><span style="display:flex;"><span>Right Analog Stick → Right Stick
+</span></span><span style="display:flex;"><span>D-Pad → D-Pad
+</span></span><span style="display:flex;"><span>Cross <span style="color:#f92672">(</span>X<span style="color:#f92672">)</span> → A <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Cross <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Circle <span style="color:#f92672">(</span>O<span style="color:#f92672">)</span> → B <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Circle <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Square <span style="color:#f92672">(</span>▢<span style="color:#f92672">)</span> → X <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Square <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Triangle <span style="color:#f92672">(</span>△<span style="color:#f92672">)</span> → Y <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Triangle <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>L1 → LB <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / L1 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>R1 → RB <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / R1 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>L2 → LT <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / L2 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>R2 → RT <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / R2 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>L3 → LS <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / L3 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>R3 → RS <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / R3 <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Start → Menu <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Options <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Select → View <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / Share <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>PS Button → Guide <span style="color:#f92672">(</span>Xbox<span style="color:#f92672">)</span> / PS Button <span style="color:#f92672">(</span>PlayStation<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="-step-8-advanced-system-configuration">
+<a class="header-anchor" href="#-step-8-advanced-system-configuration"></a>
+⚙️ Step 8: Advanced System Configuration
+</h2><h3 id="system-settings">
+<a class="header-anchor" href="#system-settings"></a>
+System Settings
+</h3><pre tabindex="0"><code>Configuration → System
+</code></pre><p><strong>Recommended configuration:</strong></p>
+<ul>
+<li><strong>System Language</strong>: System Default (or your preferred language)</li>
+<li><strong>Keyboard Type</strong>: English keyboard (or your layout)</li>
+<li><strong>Enter button assignment</strong>: Cross (Japanese) / Circle (Western)</li>
+<li><strong>Console Language</strong>: English (US) or your region</li>
+<li><strong>Console Region</strong>: Auto (or your specific region)</li>
+</ul>
+<h3 id="network-settings">
+<a class="header-anchor" href="#network-settings"></a>
+Network Settings
+</h3><pre tabindex="0"><code>Configuration → Network
+</code></pre><p><strong>Network configuration:</strong></p>
+<ul>
+<li><strong>Network Status</strong>: Connected</li>
+<li><strong>Network Interface</strong>: Default</li>
+<li><strong>PSN Status</strong>: RPCN (for homebrew online features)</li>
+<li><strong>DNS</strong>: Auto (or custom DNS if needed)</li>
+</ul>
+<h3 id="advanced-system-options">
+<a class="header-anchor" href="#advanced-system-options"></a>
+Advanced System Options
+</h3><pre tabindex="0"><code>Configuration → Advanced
+</code></pre><p><strong>System tweaks:</strong></p>
+<ul>
+<li><strong>Debug Console Mode</strong>: ❌ Disabled (unless debugging)</li>
+<li><strong>Accurate xfloat</strong>: ❌ Disabled (enable only if required)</li>
+<li><strong>Approximate xfloat</strong>: ✅ Enabled (better performance)</li>
+<li><strong>Relaxed xfloat</strong>: ❌ Disabled</li>
+<li><strong>Force CPU blit</strong>: ❌ Disabled</li>
+<li><strong>Disable native float16 support</strong>: ❌ Disabled</li>
+<li><strong>Accurate GETLLAR</strong>: ❌ Disabled (enable only if required)</li>
+<li><strong>Accurate PUTLLUC</strong>: ❌ Disabled (enable only if required)</li>
+<li><strong>Accurate RSX reservation access</strong>: ❌ Disabled (enable only if required)</li>
+<li><strong>Sleep Timers Accuracy</strong>: As Host (recommended)</li>
+</ul>
+<h2 id="-game-specific-settings-override">
+<a class="header-anchor" href="#-game-specific-settings-override"></a>
+⚙️ Game-Specific Settings Override
+</h2><h3 id="per-game-configuration">
+<a class="header-anchor" href="#per-game-configuration"></a>
+Per-Game Configuration
+</h3><pre tabindex="0"><code>Right-click game → Configure → Custom Configuration
+</code></pre><p><strong>When to use custom settings:</strong></p>
+<ul>
+<li>Game has specific requirements</li>
+<li>Default settings cause issues</li>
+<li>Need specific patches or workarounds</li>
+<li>Want to optimize for specific titles</li>
+</ul>
+<p><strong>Common per-game overrides:</strong></p>
+<ul>
+<li><strong>Write Color Buffers</strong>: Enable for games with graphical issues</li>
+<li><strong>Read Color Buffers</strong>: Enable for games with missing effects</li>
+<li><strong>Resolution Scale</strong>: Increase for less demanding games</li>
+<li><strong>SPU Block Size</strong>: Change to Mega for specific games</li>
+<li><strong>Renderer</strong>: Switch to OpenGL for problematic Vulkan games</li>
+</ul>
+<h2 id="-step-7-game-installation-and-management">
+<a class="header-anchor" href="#-step-7-game-installation-and-management"></a>
+🎮 Step 7: Game Installation and Management
+</h2><h3 id="supported-game-formats">
+<a class="header-anchor" href="#supported-game-formats"></a>
+Supported Game Formats
+</h3><h4 id="physical-disc-games">
+<a class="header-anchor" href="#physical-disc-games"></a>
+Physical Disc Games
+</h4><ul>
+<li><strong>.iso</strong>: Blu-ray disc image (most common)</li>
+</ul>
+<h4 id="psn-playstation-network-games">
+<a class="header-anchor" href="#psn-playstation-network-games"></a>
+PSN (PlayStation Network) Games
+</h4><ul>
+<li><strong>.pkg</strong>: PlayStation package (game + DLC)</li>
+</ul>
+<h3 id="installing-disc-games">
+<a class="header-anchor" href="#installing-disc-games"></a>
+Installing Disc Games
+</h3><h4 id="method-1-iso-file">
+<a class="header-anchor" href="#method-1-iso-file"></a>
+Method 1: ISO File
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. File → Boot Game
+</span></span><span style="display:flex;"><span>2. Navigate to your .iso file
+</span></span><span style="display:flex;"><span>3. Select and open
+</span></span><span style="display:flex;"><span>4. Game starts directly
+</span></span></code></pre></div><h4 id="method-2-installation-to-virtual-hdd">
+<a class="header-anchor" href="#method-2-installation-to-virtual-hdd"></a>
+Method 2: Installation to Virtual HDD
+</h4><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. File → Install Packages/Raps/Edats
+</span></span><span style="display:flex;"><span>2. Select your .iso file
+</span></span><span style="display:flex;"><span>3. Installation to dev_hdd0/game/
+</span></span><span style="display:flex;"><span>4. Launch from XMB <span style="color:#f92672">(</span>Game → Game Data Utility<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="installing-psn-games-pkg">
+<a class="header-anchor" href="#installing-psn-games-pkg"></a>
+Installing PSN Games (.pkg)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installing PSN packages</span>
+</span></span><span style="display:flex;"><span>1. File → Install Packages/Raps/Edats
+</span></span><span style="display:flex;"><span>2. Select both .pkg AND corresponding .rap files
+</span></span><span style="display:flex;"><span>3. Wait <span style="color:#66d9ef">for</span> installation
+</span></span><span style="display:flex;"><span>4. Games appear in Game → Game Data Utility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: .rap files are essential for .pkg files</span>
+</span></span></code></pre></div><h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Can RPCS3 run all PS3 games?</strong>
+<strong>A:</strong> About 65% of games are playable, 90% start. Compatibility improves constantly.</p>
+<p><strong>Q: Do I need a PS3 to use RPCS3?</strong>
+<strong>A:</strong> No for firmware (legally downloadable). Yes to dump your games legally.</p>
+<p><strong>Q: Why is RPCS3 so demanding?</strong>
+<strong>A:</strong> PS3&rsquo;s Cell architecture is complex to emulate. 1 PPU + 6 SPU require lots of CPU power.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: Vulkan or D3D12?</strong>
+<strong>A:</strong> Vulkan generally more performant. D3D12 more stable on some systems. Test both.</p>
+<p><strong>Q: How much RAM minimum?</strong>
+<strong>A:</strong> 8GB minimum, 16GB recommended, 32GB for heaviest games.</p>
+<p><strong>Q: Is my CPU sufficient?</strong>
+<strong>A:</strong> 6 cores minimum recommended. 8+ cores optimal. Single-thread performance important.</p>
+<h3 id="common-issues">
+<a class="header-anchor" href="#common-issues"></a>
+Common Issues
+</h3><p><strong>Q: Game lags despite powerful PC?</strong>
+<strong>A:</strong> Normal for some games. RPCS3 emulates complex architecture. Check available patches.</p>
+<p><strong>Q: How to improve performance?</strong>
+<strong>A:</strong> SPU cache + precompilation, SSD for cache, close background apps, moderate CPU overclock.</p>
+<p><strong>Q: Audio desynchronized?</strong>
+<strong>A:</strong> Increase audio buffer, change audio backend, check frame pacing.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p>RPCS3 is a revolutionary PS3 emulator that offers:</p>
+<ul>
+<li>✅ <strong>Impressive compatibility</strong> with 65% of games playable</li>
+<li>✅ <strong>Graphics improvement</strong> up to 4K for some titles</li>
+<li>✅ <strong>Constantly improving performance</strong> through active development</li>
+<li>✅ <strong>PS3 exclusive support</strong> impossible to play elsewhere</li>
+<li>✅ <strong>Modern features</strong> (savestates, patches, mods)</li>
+<li>✅ <strong>PlayStation 3 preservation</strong></li>
+<li>✅ <strong>Passionate community</strong> and open-source development</li>
+</ul>
+<p>With this comprehensive guide, you now master:</p>
+<ul>
+<li><strong>Installation</strong> and optimal configuration</li>
+<li><strong>Optimization</strong> according to your hardware</li>
+<li><strong>Resolving</strong> common issues</li>
+<li><strong>Using</strong> patches and improvements</li>
+<li><strong>Access</strong> to legendary PS3 exclusives</li>
+</ul>
+<hr>
+<p><strong>Rediscover PS3 masterpieces with RPCS3! 🎮✨</strong></p>
+
+        
+        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-02</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>RPCS3</category>
+      
+    </item>
+    
+  </channel>
+</rss>

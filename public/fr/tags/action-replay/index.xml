@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Action-Replay on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/action-replay/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/action-replay/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
+      <link>https://wiki.axekin.com/fr/post/cheat_citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/cheat_citra/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Avertissement Important</strong> : L&rsquo;utilisation de cheats peut parfois corrompre vos sauvegardes ou rendre certains jeux instables. Utilisez-les à vos risques et périls !</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;utilisation de cheats sur l&rsquo;émulateur <strong>Citra</strong> peut parfois être déroutante pour les nouveaux utilisateurs. Ce guide complet vous expliquera <strong>étape par étape</strong> comment configurer et utiliser efficacement les codes de triche sur vos jeux Nintendo 3DS émulés.</p>
+<h3 id="processus-général">
+<a class="header-anchor" href="#processus-g%c3%a9n%c3%a9ral"></a>
+Processus général
+</h3><ol>
+<li><strong>Lancer Citra</strong> → Charger votre jeu</li>
+<li><strong>Menu Emulation</strong> → Cheats</li>
+<li><strong>Add Cheat</strong> → Entrer le code</li>
+<li><strong>Activer le cheat</strong> → Tester en jeu</li>
+<li><strong>Vérifier</strong> version/région si problème</li>
+</ol>
+<h2 id="prérequis">
+<a class="header-anchor" href="#pr%c3%a9requis"></a>
+Prérequis
+</h2><p>Avant de commencer, assurez-vous d&rsquo;avoir :</p>
+<ul>
+<li>✅ <strong>Citra</strong> installé et fonctionnel (version recommandée : dernière stable)</li>
+<li>✅ Un <strong>jeu 3DS</strong> chargé et fonctionnel</li>
+<li>✅ Les <strong>codes de triche</strong> compatibles avec votre version de jeu</li>
+<li>✅ Une <strong>sauvegarde</strong> de votre progression (fortement recommandé)</li>
+</ul>
+<h2 id="étape-1--accéder-au-menu-des-cheats">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-au-menu-des-cheats"></a>
+Étape 1 : Accéder au menu des cheats
+</h2><h3 id="lancement-initial">
+<a class="header-anchor" href="#lancement-initial"></a>
+Lancement initial
+</h3><ol>
+<li><strong>Démarrez Citra</strong> et attendez que l&rsquo;émulateur liste le reste de vos jeux</li>
+<li>Une fois votre jeux affiché, faites <strong>Clique Droit</strong> puis <strong>Propriété</strong> puis allez dans le dernier onglet <strong>Cheats</strong></li>
+</ol>
+<h3 id="interface-des-cheats">
+<a class="header-anchor" href="#interface-des-cheats"></a>
+Interface des cheats
+</h3><p>Une nouvelle fenêtre s&rsquo;ouvre avec :</p>
+<ul>
+<li><strong>Liste des cheats</strong> disponibles (vide au début)</li>
+<li><strong>Bouton &ldquo;Add Cheat&rdquo;</strong> pour ajouter de nouveaux cheats</li>
+<li><strong>Cases à cocher</strong> pour activer/désactiver les cheats</li>
+<li><strong>Boutons d&rsquo;édition</strong> et de suppression</li>
+</ul>
+<h2 id="étape-2--ajouter-un-nouveau-cheat">
+<a class="header-anchor" href="#%c3%a9tape-2--ajouter-un-nouveau-cheat"></a>
+Étape 2 : Ajouter un nouveau cheat
+</h2><h3 id="création-dun-cheat">
+<a class="header-anchor" href="#cr%c3%a9ation-dun-cheat"></a>
+Création d&rsquo;un cheat
+</h3><ol>
+<li>Cliquez sur <strong>&ldquo;Add Cheat&rdquo;</strong> dans la fenêtre des cheats</li>
+<li>Une boîte de dialogue apparaît avec trois champs :
+<ul>
+<li><strong>Name</strong> : Nom descriptif du cheat</li>
+<li><strong>Notes</strong> : Description optionnelle</li>
+<li><strong>Code</strong> : Le code de triche lui-même</li>
+</ul>
+</li>
+</ol>
+<h3 id="options-de-nommage">
+<a class="header-anchor" href="#options-de-nommage"></a>
+Options de nommage
+</h3><p><strong>Noms descriptifs recommandés :</strong></p>
+<ul>
+<li><code>Argent Infini</code></li>
+<li><code>Vies Illimitées</code></li>
+<li><code>Tous les objets</code></li>
+</ul>
+<p><strong>Notes utiles à ajouter :</strong></p>
+<ul>
+<li>Version du jeu compatible</li>
+<li>Région (EU/US/JP)</li>
+<li>Effets du code</li>
+</ul>
+<p><strong>Format des codes Citra :</strong></p>
+<pre tabindex="0"><code>[Nom du cheat]
+ADRESSE VALEUR
+</code></pre><h2 id="étape-3--format-et-syntaxe-des-codes">
+<a class="header-anchor" href="#%c3%a9tape-3--format-et-syntaxe-des-codes"></a>
+Étape 3 : Format et syntaxe des codes
+</h2><h3 id="structure-des-codes">
+<a class="header-anchor" href="#structure-des-codes"></a>
+Structure des codes
+</h3><p>Les codes Citra suivent ce format spécifique :</p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Gold 999999 (Code Offset 1)]
+0808E0E4 000F423F
+
+[Or 999999 (Code Offset 2)]
+080900A4 000F423F
+
+[Or 999999 (Code Offset 3)]
+08092064 000F423F
+
+[Max SP (Décalage de code 1)]
+08ED0CF8 00000003
+
+[Max SP (Code Offset 2)]
+08ED2CB8 00000003
+
+[Max SP (Code Offset 3)]
+08ED4C78 00000003
+</code></pre><p><strong>Structure générale :</strong></p>
+<pre tabindex="0"><code>[Nom descriptif du cheat]
+ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
+
+[Autre cheat]
+ADRESSE_MEMOIRE VALEUR_HEXADECIMALE
+</code></pre><blockquote>
+<p><strong>💡 Astuce</strong> : Ces codes d&rsquo;exemple proviennent de <em>Bravely Default</em> et sont pleinement fonctionnels, mais servent ici uniquement de démonstration.</p></blockquote>
+<h2 id="étape-4--activation-et-test">
+<a class="header-anchor" href="#%c3%a9tape-4--activation-et-test"></a>
+Étape 4 : Activation et test
+</h2><h3 id="procédure-dactivation">
+<a class="header-anchor" href="#proc%c3%a9dure-dactivation"></a>
+Procédure d&rsquo;activation
+</h3><ol>
+<li><strong>Saisissez le code</strong> dans le champ approprié</li>
+<li><strong>Donnez un nom</strong> explicite au cheat</li>
+<li>Cliquez sur <strong>&ldquo;OK&rdquo;</strong> pour sauvegarder</li>
+<li><strong>Cochez la case</strong> à côté du cheat pour l&rsquo;activer</li>
+<li><strong>Retournez dans le jeu</strong> pour tester</li>
+</ol>
+<h3 id="vérification-des-effets">
+<a class="header-anchor" href="#v%c3%a9rification-des-effets"></a>
+Vérification des effets
+</h3><p>Une fois le cheat activé, vous devriez observer :</p>
+<p><strong>Modifications immédiates :</strong></p>
+<ul>
+<li>Changement des valeurs d&rsquo;argent</li>
+<li>Modification des statistiques</li>
+<li>Objets ajoutés à l&rsquo;inventaire</li>
+</ul>
+<p><strong>Effets après redémarrage :</strong></p>
+<ul>
+<li>Certains cheats nécessitent un redémarrage</li>
+<li>Sauvegardez avant de relancer</li>
+<li>Vérifiez la persistance des effets</li>
+</ul>
+<h2 id="troubleshooting---résolution-des-problèmes">
+<a class="header-anchor" href="#troubleshooting---r%c3%a9solution-des-probl%c3%a8mes"></a>
+Troubleshooting - Résolution des problèmes
+</h2><h3 id="-le-cheat-ne-fonctionne-pas">
+<a class="header-anchor" href="#-le-cheat-ne-fonctionne-pas"></a>
+🚫 Le cheat ne fonctionne pas
+</h3><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Version de jeu incompatible</li>
+<li>Région différente (US vs EU vs JP)</li>
+<li>Code mal formaté</li>
+<li>Adresse mémoire incorrecte</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez la correspondance version/région</li>
+<li>Testez avec d&rsquo;autres codes du même jeu</li>
+<li>Consultez les forums spécialisés</li>
+<li>Essayez avec une ROM différente</li>
+</ol>
+<h3 id="-le-jeu-plante-ou-devient-instable">
+<a class="header-anchor" href="#-le-jeu-plante-ou-devient-instable"></a>
+💥 Le jeu plante ou devient instable
+</h3><p><strong>Actions immédiates :</strong></p>
+<ol>
+<li><strong>Désactivez immédiatement</strong> tous les cheats</li>
+<li><strong>Redémarrez</strong> l&rsquo;émulateur</li>
+<li><strong>Restaurez</strong> une sauvegarde antérieure</li>
+<li><strong>Testez les cheats un par un</strong> pour identifier le problème</li>
+</ol>
+<p><strong>Prévention :</strong></p>
+<ul>
+<li>Sauvegardez avant d&rsquo;utiliser de nouveaux cheats</li>
+<li>N&rsquo;activez pas trop de cheats simultanément</li>
+<li>Utilisez des codes de sources fiables</li>
+</ul>
+<h3 id="-codes-partiellement-fonctionnels">
+<a class="header-anchor" href="#-codes-partiellement-fonctionnels"></a>
+⚠️ Codes partiellement fonctionnels
+</h3><p><strong>Symptômes :</strong></p>
+<ul>
+<li>Certains effets marchent, d&rsquo;autres non</li>
+<li>Valeurs incorrectes appliquées</li>
+<li>Effets temporaires seulement</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ul>
+<li>Vérifiez si le code nécessite plusieurs offsets</li>
+<li>Essayez d&rsquo;appliquer tous les offsets du code</li>
+<li>Consultez la documentation du code source</li>
+</ul>
+<h2 id="ressources-et-bases-de-données">
+<a class="header-anchor" href="#ressources-et-bases-de-donn%c3%a9es"></a>
+Ressources et bases de données
+</h2><h3 id="sites-recommandés-pour-les-codes">
+<a class="header-anchor" href="#sites-recommand%c3%a9s-pour-les-codes"></a>
+Sites recommandés pour les codes
+</h3><p><strong><a href="https://gamehacking.org/">GameHacking.org</a></strong></p>
+<ul>
+<li>La plus grande base de données de codes de triche</li>
+<li>Interface facile à utiliser</li>
+<li>Codes vérifiés par la communauté</li>
+</ul>
+<p><strong><a href="https://www.codebreaker.net/">CodeBreaker Database</a></strong></p>
+<ul>
+<li>Codes spécialisés pour consoles Nintendo</li>
+<li>Section dédiée aux jeux 3DS</li>
+<li>Mise à jour régulière</li>
+</ul>
+<p><strong><a href="https://reddit.com/r/Citra">Reddit r/Citra</a></strong></p>
+<ul>
+<li>Communauté active d&rsquo;utilisateurs Citra</li>
+<li>Partage de codes et conseils</li>
+<li>Support technique communautaire</li>
+</ul>
+<h2 id="bonnes-pratiques-et-conseils-avancés">
+<a class="header-anchor" href="#bonnes-pratiques-et-conseils-avanc%c3%a9s"></a>
+Bonnes pratiques et conseils avancés
+</h2><h3 id="sécurité-et-sauvegarde">
+<a class="header-anchor" href="#s%c3%a9curit%c3%a9-et-sauvegarde"></a>
+Sécurité et sauvegarde
+</h3><blockquote>
+<p><strong>🛡️ Règles de sécurité essentielles :</strong></p>
+<ol>
+<li><strong>Toujours sauvegarder</strong> avant d&rsquo;activer de nouveaux cheats</li>
+<li><strong>Tester un cheat à la fois</strong> pour identifier les problèmes</li>
+<li><strong>Éviter les cheats durant les cutscenes</strong> ou événements scriptés</li>
+<li><strong>Désactiver les cheats</strong> avant les combats de boss importants</li>
+</ol></blockquote>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;utilisation des cheats sur Citra peut grandement enrichir votre expérience de jeu, que ce soit pour :</p>
+<ul>
+<li><strong>Débloquer du contenu</strong> rapidement</li>
+<li><strong>Tester différentes stratégies</strong> sans grinding</li>
+<li><strong>Revivre vos jeux favoris</strong> avec de nouveaux défis</li>
+<li><strong>Contourner des passages difficiles</strong></li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Les cheats fonctionnent-ils sur toutes les versions de Citra ?</strong>
+R : La plupart des cheats fonctionnent sur les versions récentes de Citra. Cependant, certains codes peuvent être spécifiques à certaines versions. Utilisez de préférence la dernière version stable.</p>
+<p><strong>Q : Puis-je utiliser plusieurs cheats simultanément ?</strong>
+R : Oui, mais avec prudence. Certains cheats peuvent entrer en conflit. Commencez par tester les cheats individuellement avant de les combiner.</p>
+<h2 id="r--la-création-de-codes-nécessite-des-connaissances-en-analyse-mémoire-utilisez-des-outils-comme-cheat-engine-ou-consultez-les-tutoriels-de-reverse-engineering">
+<a class="header-anchor" href="#r--la-cr%c3%a9ation-de-codes-n%c3%a9cessite-des-connaissances-en-analyse-m%c3%a9moire-utilisez-des-outils-comme-cheat-engine-ou-consultez-les-tutoriels-de-reverse-engineering"></a>
+<strong>Q : Comment créer mes propres codes ?</strong>
+R : La création de codes nécessite des connaissances en analyse mémoire. Utilisez des outils comme Cheat Engine ou consultez les tutoriels de reverse engineering.
+</h2><pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+  </channel>
+</rss>

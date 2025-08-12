@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinstallation on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/reinstallation/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/reinstallation/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
+      <link>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important</strong> : Toujours sauvegarder vos données avant toute réinstallation ! Ce guide vous montre comment procéder en sécurité.</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Il arrive parfois que <strong>Yuzu</strong> ou <strong>Ryujinx</strong> rencontrent des problèmes nécessitant une réinstallation complète. Corruption de fichiers, mises à jour problématiques, ou simplement envie de repartir sur des bases saines&hellip;</p>
+<p>Ce guide vous explique <strong>comment réinstaller proprement</strong> ces émulateurs <strong>sans perdre vos sauvegardes</strong> de jeux Nintendo Switch.</p>
+<h3 id="pourquoi-réinstaller-">
+<a class="header-anchor" href="#pourquoi-r%c3%a9installer-"></a>
+Pourquoi réinstaller ?
+</h3><p><strong>Problèmes courants nécessitant une réinstallation :</strong></p>
+<ul>
+<li>Émulateur qui refuse de démarrer</li>
+<li>Performances dégradées après une mise à jour</li>
+<li>Fichiers de configuration corrompus</li>
+<li>Problèmes graphiques persistants</li>
+<li>Messages d&rsquo;erreur récurrents</li>
+</ul>
+<h2 id="méthode-pour-yuzu">
+<a class="header-anchor" href="#m%c3%a9thode-pour-yuzu"></a>
+Méthode pour Yuzu
+</h2><h3 id="étape-1--sauvegarder-les-données-de-jeu">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-de-jeu"></a>
+Étape 1 : Sauvegarder les données de jeu
+</h3><h4 id="localiser-les-sauvegardes">
+<a class="header-anchor" href="#localiser-les-sauvegardes"></a>
+Localiser les sauvegardes
+</h4><ol>
+<li><strong>Lancez Yuzu</strong> (si possible)</li>
+<li><strong>Clic droit</strong> sur le jeu souhaité dans la liste</li>
+<li>Sélectionnez <strong>&ldquo;Open Save Data Location&rdquo;</strong> (ou &ldquo;Ouvrir l&rsquo;emplacement des données de sauvegarde&rdquo;)</li>
+</ol>
+<h4 id="sauvegarder-le-contenu">
+<a class="header-anchor" href="#sauvegarder-le-contenu"></a>
+Sauvegarder le contenu
+</h4><ol start="4">
+<li><strong>Sélectionnez tout le contenu</strong> du dossier qui s&rsquo;ouvre (Ctrl+A)</li>
+<li><strong>Copiez</strong> les fichiers (Ctrl+C)</li>
+<li><strong>Créez un dossier</strong> de sauvegarde sur votre bureau ou disque dur</li>
+<li><strong>Collez</strong> le contenu dans ce dossier (Ctrl+V)</li>
+</ol>
+<p><strong>Structure recommandée pour l&rsquo;organisation :</strong></p>
+<pre tabindex="0"><code>📁 Backup_Yuzu_2025-06-04/
+├── 📁 The_Legend_of_Zelda_BOTW/
+│   ├── save_data.bin
+│   └── other_files...
+├── 📁 Super_Mario_Odyssey/
+│   ├── save_data.bin
+│   └── other_files...
+└── 📁 Pokemon_Legends_Arceus/
+    ├── save_data.bin
+    └── other_files...
+</code></pre><h4 id="répéter-pour-tous-les-jeux">
+<a class="header-anchor" href="#r%c3%a9p%c3%a9ter-pour-tous-les-jeux"></a>
+Répéter pour tous les jeux
+</h4><ol start="8">
+<li><strong>Répétez cette opération</strong> pour chaque jeu dont vous voulez conserver la sauvegarde</li>
+<li><strong>Notez le nom</strong> de chaque dossier pour faciliter la restauration</li>
+</ol>
+<h3 id="étape-2--supprimer-les-données-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-les-donn%c3%a9es-yuzu"></a>
+Étape 2 : Supprimer les données Yuzu
+</h3><h4 id="accéder-au-dossier-de-configuration">
+<a class="header-anchor" href="#acc%c3%a9der-au-dossier-de-configuration"></a>
+Accéder au dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et appuyez sur <strong>Entrée</strong></li>
+</ol>
+<h4 id="supprimer-le-dossier-yuzu">
+<a class="header-anchor" href="#supprimer-le-dossier-yuzu"></a>
+Supprimer le dossier Yuzu
+</h4><ol start="3">
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;yuzu&rdquo;</strong></li>
+<li><strong>Supprimez complètement</strong> ce dossier</li>
+<li><strong>Videz la corbeille</strong> pour libérer l&rsquo;espace</li>
+</ol>
+<blockquote>
+<p><strong>💡 Conseil</strong> : Si le dossier est en cours d&rsquo;utilisation, fermez complètement Yuzu via le gestionnaire des tâches.</p></blockquote>
+<h3 id="étape-3--réinstaller-yuzu">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installer-yuzu"></a>
+Étape 3 : <a href="http://localhost:1313/fr/post/yuzu/">Réinstaller Yuzu</a>
+</h3><h3 id="étape-4--restaurer-les-sauvegardes">
+<a class="header-anchor" href="#%c3%a9tape-4--restaurer-les-sauvegardes"></a>
+Étape 4 : Restaurer les sauvegardes
+</h3><h4 id="remettre-les-fichiers-de-sauvegarde">
+<a class="header-anchor" href="#remettre-les-fichiers-de-sauvegarde"></a>
+Remettre les fichiers de sauvegarde
+</h4><ol>
+<li><strong>Lancez</strong> vos jeux une première fois pour créer les dossiers de sauvegarde</li>
+<li><strong>Fermez</strong> Yuzu complètement</li>
+<li><strong>Clic droit</strong> sur chaque jeu → &ldquo;Open Save Data Location&rdquo;</li>
+<li><strong>Remplacez</strong> le contenu par vos fichiers sauvegardés</li>
+</ol>
+<p><strong>Vérification :</strong></p>
+<ul>
+<li>Lancez le jeu pour vérifier que la sauvegarde est bien chargée</li>
+<li>Vérifiez la progression, les statistiques, etc.</li>
+</ul>
+<h2 id="méthode-pour-ryujinx">
+<a class="header-anchor" href="#m%c3%a9thode-pour-ryujinx"></a>
+Méthode pour Ryujinx
+</h2><h3 id="étape-1--sauvegarder-les-données-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-1--sauvegarder-les-donn%c3%a9es-ryujinx"></a>
+Étape 1 : Sauvegarder les données Ryujinx
+</h3><h4 id="localiser-les-sauvegardes-utilisateur">
+<a class="header-anchor" href="#localiser-les-sauvegardes-utilisateur"></a>
+Localiser les sauvegardes utilisateur
+</h4><ol>
+<li><strong>Lancez Ryujinx</strong></li>
+<li><strong>Clic droit</strong> sur le jeu souhaité</li>
+<li>Sélectionnez <strong>&ldquo;Open User Save Directory&rdquo;</strong></li>
+</ol>
+<p><img src="/images/path_save_1.png" alt="Menu Ryujinx">
+<em>Options de sauvegarde dans Ryujinx</em></p>
+<h4 id="sauvegarder-les-données-additionnelles">
+<a class="header-anchor" href="#sauvegarder-les-donn%c3%a9es-additionnelles"></a>
+Sauvegarder les données additionnelles
+</h4><ol start="4">
+<li>Si disponible, cliquez aussi sur <strong>&ldquo;Open Device Save Directory&rdquo;</strong> et/ou BCAT</li>
+<li><strong>Copiez</strong> tout le contenu dans vos dossiers de sauvegarde</li>
+<li><strong>Organisez</strong> par nom de jeu comme pour Yuzu</li>
+</ol>
+<h3 id="étape-2--supprimer-ryujinx">
+<a class="header-anchor" href="#%c3%a9tape-2--supprimer-ryujinx"></a>
+Étape 2 : Supprimer Ryujinx
+</h3><h4 id="localiser-le-dossier-de-configuration">
+<a class="header-anchor" href="#localiser-le-dossier-de-configuration"></a>
+Localiser le dossier de configuration
+</h4><ol>
+<li>Appuyez sur <strong>Windows + R</strong></li>
+<li>Tapez <code>%appdata%</code> et validez</li>
+<li>Naviguez jusqu&rsquo;au dossier <strong>&ldquo;Ryujinx&rdquo;</strong></li>
+<li><strong>Supprimez</strong> complètement ce dossier</li>
+</ol>
+<h3 id="étape-3--réinstallation-et-restauration">
+<a class="header-anchor" href="#%c3%a9tape-3--r%c3%a9installation-et-restauration"></a>
+Étape 3 : Réinstallation et restauration
+</h3><h4 id="réinstaller-ryujinx">
+<a class="header-anchor" href="#r%c3%a9installer-ryujinx"></a>
+<a href="http://localhost:1313/fr/post/ryujinx/">Réinstaller Ryujinx</a>
+</h4><h4 id="restaurer-les-sauvegardes">
+<a class="header-anchor" href="#restaurer-les-sauvegardes"></a>
+Restaurer les sauvegardes
+</h4><ol start="4">
+<li><strong>Lancez chaque jeu</strong> une première fois</li>
+<li><strong>Fermez</strong> Ryujinx</li>
+<li><strong>Remplacez</strong> les fichiers de sauvegarde par vos backups</li>
+<li><strong>Testez</strong> que tout fonctionne correctement</li>
+</ol>
+<h3 id="vérifications-importantes">
+<a class="header-anchor" href="#v%c3%a9rifications-importantes"></a>
+Vérifications importantes
+</h3><p><strong>Avant la réinstallation :</strong></p>
+<ul>
+<li>✅ Sauvegardes complètes créées</li>
+<li>✅ Noms des jeux notés</li>
+<li>✅ Firmware/clés disponibles</li>
+</ul>
+<p><strong>Après la réinstallation :</strong></p>
+<ul>
+<li>✅ Émulateur démarre correctement</li>
+<li>✅ Jeux détectés</li>
+<li>✅ Sauvegardes restaurées</li>
+<li>✅ Performances satisfaisantes</li>
+</ul>
+<h3 id="problèmes-courants-et-solutions">
+<a class="header-anchor" href="#probl%c3%a8mes-courants-et-solutions"></a>
+Problèmes courants et solutions
+</h3><h4 id="-sauvegardes-non-reconnues">
+<a class="header-anchor" href="#-sauvegardes-non-reconnues"></a>
+🚫 Sauvegardes non reconnues
+</h4><p><strong>Causes possibles :</strong></p>
+<ul>
+<li>Mauvais emplacement de fichiers</li>
+<li>Versions d&rsquo;émulateur incompatibles</li>
+<li>Fichiers corrompus</li>
+</ul>
+<p><strong>Solutions :</strong></p>
+<ol>
+<li>Vérifiez l&rsquo;emplacement exact des fichiers</li>
+<li>Essayez avec une version similaire de l&rsquo;émulateur</li>
+<li>Utilisez une sauvegarde plus ancienne</li>
+</ol>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>La réinstallation de <strong>Yuzu</strong> et <strong>Ryujinx</strong> tout en préservant vos sauvegardes est un processus simple si vous suivez la bonne méthode. L&rsquo;essentiel est de <strong>toujours sauvegarder avant d&rsquo;agir</strong> et de procéder étape par étape.</p>
+<h3 id="points-clés-à-retenir">
+<a class="header-anchor" href="#points-cl%c3%a9s-%c3%a0-retenir"></a>
+Points clés à retenir
+</h3><blockquote>
+<p><strong>🎯 Résumé de la procédure :</strong></p>
+<ol>
+<li><strong>Sauvegardez</strong> toutes les données de jeu importantes</li>
+<li><strong>Supprimez</strong> proprement les dossiers de configuration</li>
+<li><strong>Réinstallez</strong> l&rsquo;émulateur avec une version récente</li>
+<li><strong>Restaurez</strong> vos sauvegardes et testez</li>
+<li><strong>Configurez</strong> selon vos préférences</li>
+</ol></blockquote>
+<h3 id="maintenance-préventive">
+<a class="header-anchor" href="#maintenance-pr%c3%a9ventive"></a>
+Maintenance préventive
+</h3><p><strong>Pour éviter les réinstallations :</strong></p>
+<ul>
+<li>Mises à jour régulières mais prudentes</li>
+<li>Sauvegardes automatiques hebdomadaires</li>
+<li>Surveillance des performances</li>
+<li>Nettoyage périodique des caches</li>
+</ul>
+<h2 id="faq---questions-fréquentes">
+<a class="header-anchor" href="#faq---questions-fr%c3%a9quentes"></a>
+FAQ - Questions fréquentes
+</h2><p><strong>Q : Puis-je transférer mes sauvegardes entre Yuzu et Ryujinx ?</strong>
+R : Oui, y&rsquo;a pleins de tuto disponible sur internet
+<strong>Q : Combien de temps faut-il pour la procédure complète ?</strong>
+R : Ca dépend complètement du nombre de jeux que vous avez</p>
+<p><strong>Q : Que faire si j&rsquo;ai oublié de sauvegarder avant la réinstallation ?</strong>
+R : Vérifiez la corbeille Windows, utilisez des outils de récupération de fichiers, ou restaurez depuis une sauvegarde système.</p>
+<hr>
+<p><strong>Ce guide vous a aidé ?</strong> Partagez vos expériences et astuces supplémentaires en commentaires !</p>
+<pre tabindex="0"><code></code></pre>
+        
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Yuzu</category><category>Ryujinx</category>
+      
+    </item>
+    
+  </channel>
+</rss>

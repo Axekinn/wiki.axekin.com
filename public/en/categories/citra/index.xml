@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citra on Wiki of Axekin</title>
+    <link>https://wiki.axekin.com/en/categories/citra/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/en/categories/citra/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Installing Texture Packs on Azahar Emulator</title>
+      <link>https://wiki.axekin.com/en/post/texture_pack_azahar/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/texture_pack_azahar/</guid>
+      <description>
+        <![CDATA[<h1>Installing Texture Packs on Azahar Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h1 id="complete-guide-installing-texture-packs-on-azahar-emulator">
+<a class="header-anchor" href="#complete-guide-installing-texture-packs-on-azahar-emulator"></a>
+Complete Guide: Installing Texture Packs on Azahar Emulator
+</h1><h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>The <strong>Azahar</strong> emulator, based on Citra, allows you to significantly improve the visual experience of Nintendo 3DS games through texture packs. These packs replace original textures with high-definition versions, offering noticeably enhanced graphics.</p>
+<h2 id="step-1-emulator-preparation">
+<a class="header-anchor" href="#step-1-emulator-preparation"></a>
+Step 1: Emulator Preparation
+</h2><h3 id="11-enabling-texture-pack-support">
+<a class="header-anchor" href="#11-enabling-texture-pack-support"></a>
+1.1 Enabling Texture Pack Support
+</h3><ol>
+<li>In Azahar, go to <strong>Emulation</strong> → <strong>Configure</strong></li>
+<li>Select the <strong>Graphics</strong> tab</li>
+<li>Check <strong>Use Custom Textures</strong></li>
+<li>Check <strong>Preload Custom Textures</strong> (optional, improves performance)</li>
+<li>Click <strong>OK</strong></li>
+</ol>
+<h2 id="step-2-obtaining-texture-packs">
+<a class="header-anchor" href="#step-2-obtaining-texture-packs"></a>
+Step 2: Obtaining Texture Packs
+</h2><h3 id="21-recommended-sources">
+<a class="header-anchor" href="#21-recommended-sources"></a>
+2.1 Recommended Sources
+</h3><ul>
+<li><strong>Texture Pack Compilation</strong>: <a href="https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk">https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk</a> (Temporary link, will update soon)</li>
+</ul>
+<h3 id="22-compatibility-verification">
+<a class="header-anchor" href="#22-compatibility-verification"></a>
+2.2 Compatibility Verification
+</h3><p>Make sure the texture pack matches:</p>
+<ul>
+<li>Your ROM region (EUR, USA, JPN)</li>
+<li>Game version</li>
+<li>Azahar/Citra compatibility</li>
+</ul>
+<h2 id="step-3-texture-pack-installation">
+<a class="header-anchor" href="#step-3-texture-pack-installation"></a>
+Step 3: Texture Pack Installation
+</h2><h3 id="31-accessing-the-games-texture-folder">
+<a class="header-anchor" href="#31-accessing-the-games-texture-folder"></a>
+3.1 Accessing the Game&rsquo;s Texture Folder
+</h3><ol>
+<li>In Azahar&rsquo;s game list, <strong>right-click</strong> on the desired game</li>
+<li>Select <strong>Open</strong> from the context menu</li>
+<li>Click on <strong>Custom Texture Location</strong></li>
+<li>A folder will automatically open with the correct Game ID (e.g., 0004000000055D00)</li>
+</ol>
+<h3 id="32-installing-the-texture-pack">
+<a class="header-anchor" href="#32-installing-the-texture-pack"></a>
+3.2 Installing the Texture Pack
+</h3><ol>
+<li><strong>Download</strong> the texture pack (usually a .zip or .7z file)</li>
+<li><strong>Extract</strong> the contents directly into the opened folder</li>
+<li><strong>Verify</strong> that the texture files (.png) are properly placed in this folder</li>
+</ol>
+<h3 id="33-final-folder-structure">
+<a class="header-anchor" href="#33-final-folder-structure"></a>
+3.3 Final Folder Structure
+</h3><p>After extraction, your folder should contain:</p>
+<pre tabindex="0"><code>0004000000055D00/
+├── tex1_0x12345678_14.png
+├── tex1_0x87654321_14.png
+└── ... (other files)
+</code></pre><h3 id="correct-folder-structure">
+<a class="header-anchor" href="#correct-folder-structure"></a>
+Correct Folder Structure
+</h3><pre tabindex="0"><code>textures/
+└── 0004000000055D00/
+    ├── tex1_0x12345678_14.png
+    ├── tex1_0x87654321_14.png
+    └── ... (other texture files)
+</code></pre><h3 id="texture-pack-organization">
+<a class="header-anchor" href="#texture-pack-organization"></a>
+Texture Pack Organization
+</h3><p>Create an organized structure:</p>
+<pre tabindex="0"><code>textures/
+├── Pokemon_X_Y/
+├── Mario_Kart_7/
+├── Zelda_ALBW/
+└── backup/
+</code></pre><h2 id="tips-and-best-practices">
+<a class="header-anchor" href="#tips-and-best-practices"></a>
+Tips and Best Practices
+</h2><h3 id="performance">
+<a class="header-anchor" href="#performance"></a>
+Performance
+</h3><ul>
+<li><strong>SSD recommended</strong> for faster loading times</li>
+<li><strong>16 GB RAM</strong> for preloading without impact</li>
+<li><strong>Modern GPU</strong> for high resolutions</li>
+</ul>
+<h3 id="compatibility">
+<a class="header-anchor" href="#compatibility"></a>
+Compatibility
+</h3><ul>
+<li>Always test with a backup of your save progress</li>
+</ul>
+<h3 id="maintenance">
+<a class="header-anchor" href="#maintenance"></a>
+Maintenance
+</h3><ul>
+<li>Update Azahar regularly</li>
+<li>Check for new texture pack versions</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Installing texture packs on Azahar completely transforms the visual experience of Nintendo 3DS games. By following this step-by-step guide, you should be able to enjoy your favorite games with improved graphics.</p>
+<p>Feel free to experiment with different texture packs and configurations to find the perfect setup for your system</p>
+
+        
+        <hr><p>Published on 2025-08-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-08-02</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Complete Guide to Cheats on the Citra Emulator</title>
+      <link>https://wiki.axekin.com/en/post/cheat_citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/cheat_citra/</guid>
+      <description>
+        <![CDATA[<h1>Complete Guide to Cheats on the Citra Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <blockquote>
+<p><strong>⚠️ Important Warning</strong>: Using cheats can sometimes corrupt your save files or make certain games unstable. Use them at your own risk!</p></blockquote>
+<h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>Using cheats on the <strong>Citra</strong> emulator can sometimes be confusing for new users. This comprehensive guide will explain <strong>step by step</strong> how to configure and effectively use cheat codes on your emulated Nintendo 3DS games.</p>
+<h3 id="general-process">
+<a class="header-anchor" href="#general-process"></a>
+General Process
+</h3><ol>
+<li><strong>Launch Citra</strong> → Load your game</li>
+<li><strong>Emulation Menu</strong> → Cheats</li>
+<li><strong>Add Cheat</strong> → Enter the code</li>
+<li><strong>Enable the cheat</strong> → Test in-game</li>
+<li><strong>Check</strong> version/region if there&rsquo;s a problem</li>
+</ol>
+<h2 id="prerequisites">
+<a class="header-anchor" href="#prerequisites"></a>
+Prerequisites
+</h2><p>Before starting, make sure you have:</p>
+<ul>
+<li>✅ <strong>Citra</strong> installed and functional (recommended version: latest stable)</li>
+<li>✅ A <strong>3DS game</strong> loaded and functional</li>
+<li>✅ <strong>Cheat codes</strong> compatible with your game version</li>
+<li>✅ A <strong>backup</strong> of your progress (strongly recommended)</li>
+</ul>
+<h2 id="step-1-access-the-cheats-menu">
+<a class="header-anchor" href="#step-1-access-the-cheats-menu"></a>
+Step 1: Access the cheats menu
+</h2><h3 id="initial-launch">
+<a class="header-anchor" href="#initial-launch"></a>
+Initial launch
+</h3><ol>
+<li><strong>Start Citra</strong> and wait for the emulator to list your games</li>
+<li>Once your game is displayed, <strong>Right-click</strong> then <strong>Properties</strong> then go to the last tab <strong>Cheats</strong></li>
+</ol>
+<h3 id="cheats-interface">
+<a class="header-anchor" href="#cheats-interface"></a>
+Cheats interface
+</h3><p>A new window opens with:</p>
+<ul>
+<li><strong>List of available cheats</strong> (empty at first)</li>
+<li><strong>&ldquo;Add Cheat&rdquo; button</strong> to add new cheats</li>
+<li><strong>Checkboxes</strong> to enable/disable cheats</li>
+<li><strong>Edit and delete buttons</strong></li>
+</ul>
+<h2 id="step-2-add-a-new-cheat">
+<a class="header-anchor" href="#step-2-add-a-new-cheat"></a>
+Step 2: Add a new cheat
+</h2><h3 id="creating-a-cheat">
+<a class="header-anchor" href="#creating-a-cheat"></a>
+Creating a cheat
+</h3><ol>
+<li>Click on <strong>&ldquo;Add Cheat&rdquo;</strong> in the cheats window</li>
+<li>A dialog box appears with three fields:
+<ul>
+<li><strong>Name</strong>: Descriptive name of the cheat</li>
+<li><strong>Notes</strong>: Optional description</li>
+<li><strong>Code</strong>: The cheat code itself</li>
+</ul>
+</li>
+</ol>
+<h3 id="naming-options">
+<a class="header-anchor" href="#naming-options"></a>
+Naming options
+</h3><p><strong>Recommended descriptive names:</strong></p>
+<ul>
+<li><code>Infinite Money</code></li>
+<li><code>Unlimited Lives</code></li>
+<li><code>All Items</code></li>
+</ul>
+<p><strong>Useful notes to add:</strong></p>
+<ul>
+<li>Compatible game version</li>
+<li>Region (EU/US/JP)</li>
+<li>Code effects</li>
+</ul>
+<p><strong>Citra code format:</strong></p>
+<pre tabindex="0"><code>[Cheat Name]
+ADDRESS VALUE
+</code></pre><h2 id="step-3-code-format-and-syntax">
+<a class="header-anchor" href="#step-3-code-format-and-syntax"></a>
+Step 3: Code format and syntax
+</h2><h3 id="code-structure">
+<a class="header-anchor" href="#code-structure"></a>
+Code structure
+</h3><p>Citra codes follow this specific format:</p>
+<pre tabindex="0"><code class="language-cheat" data-lang="cheat">[Gold 999999 (Code Offset 1)]
+0808E0E4 000F423F
+
+[Gold 999999 (Code Offset 2)]
+080900A4 000F423F
+
+[Gold 999999 (Code Offset 3)]
+08092064 000F423F
+
+[Max SP (Code Offset 1)]
+08ED0CF8 00000003
+
+[Max SP (Code Offset 2)]
+08ED2CB8 00000003
+
+[Max SP (Code Offset 3)]
+08ED4C78 00000003
+</code></pre><p><strong>General structure:</strong></p>
+<pre tabindex="0"><code>[Descriptive cheat name]
+MEMORY_ADDRESS HEXADECIMAL_VALUE
+
+[Another cheat]
+MEMORY_ADDRESS HEXADECIMAL_VALUE
+</code></pre><blockquote>
+<p><strong>💡 Tip</strong>: These example codes come from <em>Bravely Default</em> and are fully functional, but serve here only as demonstration.</p></blockquote>
+<h2 id="step-4-activation-and-testing">
+<a class="header-anchor" href="#step-4-activation-and-testing"></a>
+Step 4: Activation and testing
+</h2><h3 id="activation-procedure">
+<a class="header-anchor" href="#activation-procedure"></a>
+Activation procedure
+</h3><ol>
+<li><strong>Enter the code</strong> in the appropriate field</li>
+<li><strong>Give an explicit name</strong> to the cheat</li>
+<li>Click <strong>&ldquo;OK&rdquo;</strong> to save</li>
+<li><strong>Check the box</strong> next to the cheat to activate it</li>
+<li><strong>Return to the game</strong> to test</li>
+</ol>
+<h3 id="effect-verification">
+<a class="header-anchor" href="#effect-verification"></a>
+Effect verification
+</h3><p>Once the cheat is activated, you should observe:</p>
+<p><strong>Immediate modifications:</strong></p>
+<ul>
+<li>Change in money values</li>
+<li>Statistics modification</li>
+<li>Items added to inventory</li>
+</ul>
+<p><strong>Effects after restart:</strong></p>
+<ul>
+<li>Some cheats require a restart</li>
+<li>Save before restarting</li>
+<li>Check effect persistence</li>
+</ul>
+<h2 id="troubleshooting---problem-resolution">
+<a class="header-anchor" href="#troubleshooting---problem-resolution"></a>
+Troubleshooting - Problem resolution
+</h2><h3 id="-the-cheat-doesnt-work">
+<a class="header-anchor" href="#-the-cheat-doesnt-work"></a>
+🚫 The cheat doesn&rsquo;t work
+</h3><p><strong>Possible causes:</strong></p>
+<ul>
+<li>Incompatible game version</li>
+<li>Different region (US vs EU vs JP)</li>
+<li>Poorly formatted code</li>
+<li>Incorrect memory address</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>Check version/region correspondence</li>
+<li>Test with other codes from the same game</li>
+<li>Consult specialized forums</li>
+<li>Try with a different ROM</li>
+</ol>
+<h3 id="-the-game-crashes-or-becomes-unstable">
+<a class="header-anchor" href="#-the-game-crashes-or-becomes-unstable"></a>
+💥 The game crashes or becomes unstable
+</h3><p><strong>Immediate actions:</strong></p>
+<ol>
+<li><strong>Immediately disable</strong> all cheats</li>
+<li><strong>Restart</strong> the emulator</li>
+<li><strong>Restore</strong> an earlier save</li>
+<li><strong>Test cheats one by one</strong> to identify the problem</li>
+</ol>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Save before using new cheats</li>
+<li>Don&rsquo;t activate too many cheats simultaneously</li>
+<li>Use codes from reliable sources</li>
+</ul>
+<h3 id="-partially-functional-codes">
+<a class="header-anchor" href="#-partially-functional-codes"></a>
+⚠️ Partially functional codes
+</h3><p><strong>Symptoms:</strong></p>
+<ul>
+<li>Some effects work, others don&rsquo;t</li>
+<li>Incorrect values applied</li>
+<li>Temporary effects only</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Check if the code requires multiple offsets</li>
+<li>Try applying all code offsets</li>
+<li>Consult the source code documentation</li>
+</ul>
+<h2 id="resources-and-databases">
+<a class="header-anchor" href="#resources-and-databases"></a>
+Resources and databases
+</h2><h3 id="recommended-sites-for-codes">
+<a class="header-anchor" href="#recommended-sites-for-codes"></a>
+Recommended sites for codes
+</h3><p><strong><a href="https://gamehacking.org/">GameHacking.org</a></strong></p>
+<ul>
+<li>The largest cheat code database</li>
+<li>Easy-to-use interface</li>
+<li>Community-verified codes</li>
+</ul>
+<p><strong><a href="https://www.codebreaker.net/">CodeBreaker Database</a></strong></p>
+<ul>
+<li>Specialized codes for Nintendo consoles</li>
+<li>Dedicated 3DS games section</li>
+<li>Regular updates</li>
+</ul>
+<p><strong><a href="https://reddit.com/r/Citra">Reddit r/Citra</a></strong></p>
+<ul>
+<li>Active Citra user community</li>
+<li>Code and tip sharing</li>
+<li>Community technical support</li>
+</ul>
+<h2 id="best-practices-and-advanced-tips">
+<a class="header-anchor" href="#best-practices-and-advanced-tips"></a>
+Best practices and advanced tips
+</h2><h3 id="security-and-backup">
+<a class="header-anchor" href="#security-and-backup"></a>
+Security and backup
+</h3><blockquote>
+<p><strong>🛡️ Essential security rules:</strong></p>
+<ol>
+<li><strong>Always backup</strong> before activating new cheats</li>
+<li><strong>Test one cheat at a time</strong> to identify problems</li>
+<li><strong>Avoid cheats during cutscenes</strong> or scripted events</li>
+<li><strong>Disable cheats</strong> before important boss fights</li>
+</ol></blockquote>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>Using cheats on Citra can greatly enrich your gaming experience, whether to:</p>
+<ul>
+<li><strong>Unlock content</strong> quickly</li>
+<li><strong>Test different strategies</strong> without grinding</li>
+<li><strong>Relive your favorite games</strong> with new challenges</li>
+<li><strong>Bypass difficult passages</strong></li>
+</ul>
+<h2 id="faq---frequently-asked-questions">
+<a class="header-anchor" href="#faq---frequently-asked-questions"></a>
+FAQ - Frequently Asked Questions
+</h2><p><strong>Q: Do cheats work on all versions of Citra?</strong>
+A: Most cheats work on recent versions of Citra. However, some codes may be specific to certain versions. Preferably use the latest stable version.</p>
+<p><strong>Q: Can I use multiple cheats simultaneously?</strong>
+A: Yes, but with caution. Some cheats may conflict. Start by testing cheats individually before combining them.</p>
+<h2 id="a-creating-codes-requires-knowledge-of-memory-analysis-use-tools-like-cheat-engine-or-consult-reverse-engineering-tutorials">
+<a class="header-anchor" href="#a-creating-codes-requires-knowledge-of-memory-analysis-use-tools-like-cheat-engine-or-consult-reverse-engineering-tutorials"></a>
+<strong>Q: How do I create my own codes?</strong>
+A: Creating codes requires knowledge of memory analysis. Use tools like Cheat Engine or consult reverse engineering tutorials.
+</h2>
+        
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>Azahar Installation and Configuration</title>
+      <link>https://wiki.axekin.com/en/post/citra/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/en/post/citra/</guid>
+      <description>
+        <![CDATA[<h1>Azahar Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-to-citra">
+<a class="header-anchor" href="#-introduction-to-citra"></a>
+🎮 Introduction to Citra
+</h2><p><strong>Citra</strong> is the world&rsquo;s most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphics improvements and near-perfect compatibility.</p>
+<h2 id="-step-1-downloading-citra">
+<a class="header-anchor" href="#-step-1-downloading-citra"></a>
+🔧 Step 1: Downloading Citra
+</h2><h3 id="option-1-official-azahar">
+<a class="header-anchor" href="#option-1-official-azahar"></a>
+Option 1: Official Azahar
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official site</span>
+</span></span><span style="display:flex;"><span>https://github.com/azahar-emu/azahar/releases
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;Download for Windows&rdquo;</li>
+<li><strong>Download</strong> <code>azahar-XXXX-rc1-windows-msvc-installer.exe</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>Documents\Azahar</code> or at the root of another drive, not C)</li>
+</ol>
+<h2 id="game-download">
+<a class="header-anchor" href="#game-download"></a>
+Game Download
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/games?platform=3ds">🎮 Axekin Games - Nintendo 3DS</a></strong> to access the Nintendo 3DS game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-file-extraction">
+<a class="header-anchor" href="#step-3-file-extraction"></a>
+Step 3: File extraction
+</h3><p>Once the download is finished, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You&rsquo;ll get game files ready to be used with 3DS! 🎯</p>
+<h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Create this folder structure to organize your files:</p>
+<p>For optimal organization of your library, here&rsquo;s the recommended tree structure:</p>
+<pre tabindex="0"><code>3DS Games/
+├── Animal Crossing - Happy Home Designer/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── Dead or Alive - Dimensions/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── Ben 10 - Galactic Racing/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Captain America - Super Soldier/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game)
+</code></pre><h3 id="content-types">
+<a class="header-anchor" href="#content-types"></a>
+Content types
+</h3><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Understanding folders
+  </div>
+  <div class="admonition-content">
+    <ul>
+<li><strong>BASE</strong> 📁: The main game you download</li>
+<li><strong>UPDATE</strong> 📁: Updates and patches (recommended)</li>
+<li><strong>DLC</strong> 📁: Additional paid content (optional but recommended)</li>
+</ul>
+
+  </div>
+</div>
+<div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advantages of this organization
+  </div>
+  <div class="admonition-content">
+    ✅ <strong>Automatic detection</strong>: Games are automatically added to the emulator<br>
+✅ <strong>Simplified management</strong>: No need to manually select each ROM<br>
+✅ <strong>Clear organization</strong>: Easy to see what content you have for each game<br>
+✅ <strong>Easy maintenance</strong>: Simplified content addition/removal
+  </div>
+</div>
+<blockquote>
+<p><strong>📝 Important note</strong>: If a game doesn&rsquo;t have updates or DLC, there&rsquo;s no need to create the corresponding folders. Only create folders for content you actually have.</p></blockquote>
+<h3 id="result">
+<a class="header-anchor" href="#result"></a>
+Result
+</h3><p>Once this structure is in place, your emulator will automatically detect all games present in the &ldquo;3DS Games&rdquo; folder and organize them properly in your library! 🎯</p>
+<h2 id="-portable-configuration-recommended">
+<a class="header-anchor" href="#-portable-configuration-recommended"></a>
+💡 Portable Configuration (Recommended)
+</h2><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Portable installation
+  </div>
+  <div class="admonition-content">
+    <strong>Before the first launch</strong>, create a folder named <code>user</code> at the root of the Azahar directory. This operation will make the installation entirely portable.
+  </div>
+</div>
+<h3 id="advantages-of-portable-mode">
+<a class="header-anchor" href="#advantages-of-portable-mode"></a>
+Advantages of portable mode
+</h3><table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Normal mode</th>
+          <th>Portable mode</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Configurations</strong></td>
+          <td>Stored in system</td>
+          <td>Stored in folder</td>
+      </tr>
+      <tr>
+          <td><strong>Saves</strong></td>
+          <td>Scattered on computer</td>
+          <td>Centralized in folder</td>
+      </tr>
+      <tr>
+          <td><strong>Portability</strong></td>
+          <td>❌ Tied to system</td>
+          <td>✅ Easily movable</td>
+      </tr>
+      <tr>
+          <td><strong>Backup</strong></td>
+          <td>Hard to locate</td>
+          <td>Simple to backup</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="structure-after-creating-portable-folder">
+<a class="header-anchor" href="#structure-after-creating-portable-folder"></a>
+Structure after creating portable folder
+</h3><pre tabindex="0"><code>📁 Azahar/
+├── 🎮 Azahar.exe
+├── 📁 user/              # ← Create this folder!
+│   ├── 📁 bis/
+│   ├── 📁 games/
+│   ├── 📁 profiles/
+│   └── 📁 system/
+└── 📄 Other files...
+</code></pre><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Result
+  </div>
+  <div class="admonition-content">
+    <strong>All your data</strong> (configurations, saves, profiles) will be stored in the <code>user</code> folder, greatly facilitating management and backups!
+  </div>
+</div>
+<h3 id="creation-instructions">
+<a class="header-anchor" href="#creation-instructions"></a>
+Creation instructions
+</h3><ol>
+<li><strong>Navigate</strong> to the Azahar installation folder</li>
+<li><strong>Create</strong> a new folder named exactly <code>user</code></li>
+<li><strong>Launch</strong> Azahar - it will automatically detect portable mode</li>
+</ol>
+<blockquote>
+<p><strong>📝 Note</strong>: This operation must be performed <strong>before</strong> the first launch to be taken into account!</p></blockquote>
+<h2 id="-step-3-installation-and-first-launch">
+<a class="header-anchor" href="#-step-3-installation-and-first-launch"></a>
+⚙️ Step 3: Installation and first launch
+</h2><h3 id="windows-prerequisites-installation">
+<a class="header-anchor" href="#windows-prerequisites-installation"></a>
+Windows Prerequisites Installation
+</h3><h3 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First launch
+</h3><ol>
+<li><strong>Execute</strong> <code>azahar.exe</code></li>
+<li><strong>Set</strong> the games folder (double click on the menu, add the &ldquo;3DS Games&rdquo; folder)</li>
+</ol>
+<h2 id="-step-3-optimal-configuration">
+<a class="header-anchor" href="#-step-3-optimal-configuration"></a>
+⚙️ Step 3: Optimal Configuration
+</h2><h3 id="general-settings">
+<a class="header-anchor" href="#general-settings"></a>
+General settings
+</h3><pre tabindex="0"><code>Emulation → Configure → General
+</code></pre><ul>
+<li><strong>Confirm exit while emulation is running</strong>: ✅ Enabled</li>
+<li><strong>Pause emulation when in background</strong>: ✅ Enabled (optional)</li>
+<li><strong>Enable Discord Presence</strong>: ✅ Enabled (optional)</li>
+</ul>
+<h3 id="system-configuration">
+<a class="header-anchor" href="#system-configuration"></a>
+System configuration
+</h3><pre tabindex="0"><code>Emulation → Configure → System
+</code></pre><ul>
+<li><strong>Region</strong>: Europe (or your region)</li>
+<li><strong>Language</strong>: Your language</li>
+<li><strong>Console ID</strong>: Random (generated automatically)</li>
+<li><strong>Enable New 3DS</strong>: ✅ Enabled (for better performance)</li>
+</ul>
+<h3 id="optimal-graphics-settings">
+<a class="header-anchor" href="#optimal-graphics-settings"></a>
+Optimal graphics settings
+</h3><h4 id="graphics-tab">
+<a class="header-anchor" href="#graphics-tab"></a>
+Graphics tab
+</h4><pre tabindex="0"><code>Graphics → General
+- Internal Resolution: 2x Native (400x480) or higher. The higher the value, the more GPU it will consume
+- Enable Linear Filtering: ✅ Enabled
+→ General
+</code></pre><h4 id="layout-tab">
+<a class="header-anchor" href="#layout-tab"></a>
+Layout tab
+</h4><pre tabindex="0"><code>Graphics → Layout
+</code></pre><div class="admonition admonition-tip">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Screen layout interface
+  </div>
+  <div class="admonition-content">
+    This section allows you to customize the display of the two 3DS screens according to your visual preferences and hardware configuration.
+  </div>
+</div>
+<h3 id="screen-layout">
+<a class="header-anchor" href="#screen-layout"></a>
+Screen layout
+</h3><p><strong>Predefined layout options:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Mode</th>
+          <th>Description</th>
+          <th>Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Default</strong></td>
+          <td>Standard Nintendo configuration</td>
+          <td>✅ <strong>Beginners</strong></td>
+      </tr>
+      <tr>
+          <td><strong>Single Screen</strong></td>
+          <td>Shows only the active screen</td>
+          <td>Gameplay focus</td>
+      </tr>
+      <tr>
+          <td><strong>Large Screen</strong></td>
+          <td>Stretches across full width</td>
+          <td>Wide screens</td>
+      </tr>
+      <tr>
+          <td><strong>Side by Side</strong></td>
+          <td>Horizontal screens</td>
+          <td><strong>Recommended gaming</strong></td>
+      </tr>
+      <tr>
+          <td><strong>Separate Windows</strong></td>
+          <td>Two independent windows</td>
+          <td>Multi-monitors</td>
+      </tr>
+      <tr>
+          <td><strong>Hybrid Screen</strong></td>
+          <td>Overlapped screens</td>
+          <td>Space saving</td>
+      </tr>
+      <tr>
+          <td><strong>Custom Layout</strong></td>
+          <td>Manual configuration</td>
+          <td>⭐ <strong>Most flexible</strong></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="custom-configuration">
+<a class="header-anchor" href="#custom-configuration"></a>
+Custom configuration
+</h3><div class="admonition admonition-success">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Advanced custom layout
+  </div>
+  <div class="admonition-content">
+    <p><strong>Top screen:</strong></p>
+<ul>
+<li><strong>Position X/Y</strong>: <code>0px, 0px</code> (top left corner)</li>
+<li><strong>Width/Height</strong>: <code>800px, 480px</code> (optimal 4:3 ratio)</li>
+</ul>
+<p><strong>Bottom screen:</strong></p>
+<ul>
+<li><strong>Position X/Y</strong>: <code>80px, 500px</code> (slightly centered)</li>
+<li><strong>Width/Height</strong>: <code>640px, 480px</code> (proportional)</li>
+</ul>
+<p><strong>Bottom screen opacity</strong>: <code>100%</code> (full visibility)</p>
+
+  </div>
+</div>
+<h3 id="display-settings">
+<a class="header-anchor" href="#display-settings"></a>
+Display settings
+</h3><h4 id="general-options">
+<a class="header-anchor" href="#general-options"></a>
+General options
+</h4><pre tabindex="0"><code>Screens → Configuration
+</code></pre><p><strong>Recommended settings:</strong></p>
+<ul>
+<li><strong>Swap Screens</strong>: ❌ Disabled (keeps DS logic)</li>
+<li><strong>Upright Screens</strong>: ❌ Disabled</li>
+<li><strong>Screen Gap</strong>: <code>0.00</code> to <code>4.00</code> according to preference</li>
+<li><strong>Large Screen Proportion</strong>: <code>4.00</code> (main screen larger)</li>
+<li><strong>Small Screen Proportion</strong>: <code>Bottom Right</code> (touch position)</li>
+</ul>
+<h4 id="single-screen-layout">
+<a class="header-anchor" href="#single-screen-layout"></a>
+Single screen layout
+</h4><div class="admonition admonition-note">
+  <div class="admonition-title">
+    <i class="admonition-icon"></i>
+    Single screen mode
+  </div>
+  <div class="admonition-content">
+    <p><strong>Usage:</strong></p>
+<ul>
+<li>Games using only one main screen</li>
+<li>Display resource saving</li>
+<li>Focus on main action</li>
+</ul>
+<p><strong>Configuration:</strong></p>
+<ul>
+<li><strong>Stretched</strong>: ☑️ Checked for both screens</li>
+<li><strong>Left/Right Margin</strong>: <code>0px</code> (full screen)</li>
+<li><strong>Top/Bottom Margin</strong>: <code>0px</code> (maximum usage)</li>
+</ul>
+
+  </div>
+</div>
+<blockquote>
+<p><strong>💡 Practical tip</strong>: Test different layouts according to the game. RPGs work better with custom layout, while action games often prefer side-by-side mode.</p></blockquote>
+<h4 id="advanced-tab">
+<a class="header-anchor" href="#advanced-tab"></a>
+Advanced tab
+</h4><pre tabindex="0"><code>Graphics → Advanced
+- Graphics API: OpenGL (recommended) or Vulkan
+- Enable Hardware Renderer: ✅ Enabled
+- Enable Hardware Shader: ✅ Enabled
+- Enable Accurate Multiplication: ✅ Enabled
+- Use Disk Shader Cache: ✅ Enabled
+- Enable VSync: ✅ Enabled
+</code></pre><h3 id="audio-configuration">
+<a class="header-anchor" href="#audio-configuration"></a>
+Audio configuration
+</h3><pre tabindex="0"><code>Audio
+- Emulation: HLE
+</code></pre><h3 id="controls-configuration">
+<a class="header-anchor" href="#controls-configuration"></a>
+Controls configuration
+</h3><h4 id="automatic-method">
+<a class="header-anchor" href="#automatic-method"></a>
+Automatic method
+</h4><pre tabindex="0"><code>Controls → Configure
+1. Click on &#34;Auto Configuration&#34;
+2. Press the buttons on your controller
+3. Test all controls
+</code></pre><h3 id="supported-formats">
+<a class="header-anchor" href="#supported-formats"></a>
+Supported formats
+</h3><ul>
+<li><strong>.CCI</strong>: Only format supported with my ROMs with Azahar, due to their anti-piracy restrictions</li>
+</ul>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General questions
+</h3><p><strong>Q: Can Azahar run all 3DS games?</strong>
+<strong>A:</strong> About 90% of 3DS games work well to perfectly. Check the compatibility database for your specific game.</p>
+<p><strong>Q: Does stereoscopic 3D work?</strong>
+<strong>A:</strong> Yes, with 3D glasses or a 3D screen. Side-by-Side mode also available for VR.</p>
+<p><strong>Q: Can I use my real 3DS saves?</strong>
+<strong>A:</strong> Yes, with Checkpoint or JKSM you can transfer your saves both ways.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical questions
+</h3><p><strong>Q: Why are some games slow?</strong>
+<strong>A:</strong> 3DS games are optimized for specific hardware. Emulation requires more power, especially for complex games.</p>
+<p><strong>Q: OpenGL or Vulkan?</strong>
+<strong>A:</strong> OpenGL is more stable and compatible. Vulkan can offer better performance on recent GPUs.</p>
+<p><strong>Q: Does New 3DS Mode improve all games?</strong>
+<strong>A:</strong> Mainly games that use it natively (Xenoblade, Monster Hunter, etc.) and some homebrews.</p>
+<h3 id="common-problems">
+<a class="header-anchor" href="#common-problems"></a>
+Common problems
+</h3><p><strong>Q: &ldquo;Could not determine the system region&rdquo;?</strong>
+<strong>A:</strong> Install system files (aes_keys.txt) and configure the region in settings.</p>
+<p><strong>Q: HD textures don&rsquo;t display?</strong>
+<strong>A:</strong> Check that &ldquo;Custom Textures&rdquo; is enabled and that the Title ID matches the folder.</p>
+<p><strong>Q: How to improve performance on Android?</strong>
+<strong>A:</strong> Use Citra MMJ, reduce resolution, enable frame skip if necessary.</p>
+<p><strong>Enjoy your 3DS games in high definition! 🎮✨</strong></p>
+
+        
+        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-02</p><p>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+  </channel>
+</rss>

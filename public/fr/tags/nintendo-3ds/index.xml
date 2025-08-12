@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo 3DS on Wiki de Axekin</title>
+    <link>https://wiki.axekin.com/fr/tags/nintendo-3ds/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="https://wiki.axekin.com/fr/tags/nintendo-3ds/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Installation de Texture Packs sur l&#39;Émulateur Azahar</title>
+      <link>https://wiki.axekin.com/fr/post/texture_pack_azahar/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>https://wiki.axekin.com/fr/post/texture_pack_azahar/</guid>
+      <description>
+        <![CDATA[<h1>Installation de Texture Packs sur l'Émulateur Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h1 id="guide-complet--installation-de-texture-packs-sur-lémulateur-azahar">
+<a class="header-anchor" href="#guide-complet--installation-de-texture-packs-sur-l%c3%a9mulateur-azahar"></a>
+Guide Complet : Installation de Texture Packs sur l&rsquo;Émulateur Azahar
+</h1><h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;émulateur <strong>Azahar</strong>, basé sur Citra, permet d&rsquo;améliorer considérablement l&rsquo;expérience visuelle des jeux Nintendo 3DS grâce aux texture packs. Ces packs remplacent les textures originales par des versions haute définition, offrant des graphismes nettement améliorés.</p>
+<h2 id="étape-1--préparation-de-lémulateur">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-de-l%c3%a9mulateur"></a>
+Étape 1 : Préparation de l&rsquo;Émulateur
+</h2><h3 id="11-activation-du-support-des-texture-packs">
+<a class="header-anchor" href="#11-activation-du-support-des-texture-packs"></a>
+1.1 Activation du Support des Texture Packs
+</h3><ol>
+<li>Dans Azahar, allez dans <strong>Emulation</strong> → <strong>Configure</strong></li>
+<li>Sélectionnez l&rsquo;onglet <strong>Graphics</strong></li>
+<li>Cochez <strong>Use Custom Textures</strong></li>
+<li>Cochez <strong>Preload Custom Textures</strong> (optionnel, améliore les performances)</li>
+<li>Cliquez sur <strong>OK</strong></li>
+</ol>
+<h2 id="étape-2--obtention-des-texture-packs">
+<a class="header-anchor" href="#%c3%a9tape-2--obtention-des-texture-packs"></a>
+Étape 2 : Obtention des Texture Packs
+</h2><h3 id="31-sources-recommandées">
+<a class="header-anchor" href="#31-sources-recommand%c3%a9es"></a>
+3.1 Sources Recommandées
+</h3><ul>
+<li><strong>Compilation Pack de Texture</strong> : <a href="https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk">https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk</a> (Lien temporaire, je le mettrais à jour soon)</li>
+</ul>
+<h3 id="32-vérification-de-la-compatibilité">
+<a class="header-anchor" href="#32-v%c3%a9rification-de-la-compatibilit%c3%a9"></a>
+3.2 Vérification de la Compatibilité
+</h3><p>Assurez-vous que le texture pack correspond à :</p>
+<ul>
+<li>La région de votre ROM (EUR, USA, JPN)</li>
+<li>La version du jeu</li>
+<li>La compatibilité avec Azahar/Citra</li>
+</ul>
+<h2 id="étape-3--installation-du-texture-pack">
+<a class="header-anchor" href="#%c3%a9tape-3--installation-du-texture-pack"></a>
+Étape 3 : Installation du Texture Pack
+</h2><h3 id="41-accès-au-dossier-de-texture-du-jeu">
+<a class="header-anchor" href="#41-acc%c3%a8s-au-dossier-de-texture-du-jeu"></a>
+4.1 Accès au Dossier de Texture du Jeu
+</h3><ol>
+<li>Dans la liste des jeux d&rsquo;Azahar, <strong>faites un clic droit</strong> sur le jeu souhaité</li>
+<li>Sélectionnez <strong>Open</strong> dans le menu contextuel</li>
+<li>Cliquez sur <strong>Custom Texture Location</strong></li>
+<li>Un dossier s&rsquo;ouvrira automatiquement avec le Game ID correct (ex: 0004000000055D00)</li>
+</ol>
+<h3 id="42-installation-du-texture-pack">
+<a class="header-anchor" href="#42-installation-du-texture-pack"></a>
+4.2 Installation du Texture Pack
+</h3><ol>
+<li><strong>Téléchargez</strong> le texture pack (généralement un fichier .zip ou .7z)</li>
+<li><strong>Extrayez</strong> le contenu directement dans le dossier qui s&rsquo;est ouvert</li>
+<li><strong>Vérifiez</strong> que les fichiers de textures (.png) sont bien placés dans ce dossier</li>
+</ol>
+<h3 id="43-structure-de-dossier-finale">
+<a class="header-anchor" href="#43-structure-de-dossier-finale"></a>
+4.3 Structure de Dossier Finale
+</h3><p>Après extraction, votre dossier devrait contenir :</p>
+<p>0004000000055D00/
+├── tex1_0x12345678_14.png
+├── tex1_0x87654321_14.png
+└── &hellip; (autres fichiers)</p>
+<h3 id="structure-de-dossier-correcte">
+<a class="header-anchor" href="#structure-de-dossier-correcte"></a>
+Structure de Dossier Correcte
+</h3><p>textures/
+└── 0004000000055D00/
+├── tex1_0x12345678_14.png
+├── tex1_0x87654321_14.png
+└── &hellip; (autres fichiers de textures)</p>
+<h3 id="organisation-des-texture-packs">
+<a class="header-anchor" href="#organisation-des-texture-packs"></a>
+Organisation des Texture Packs
+</h3><p>Créez une structure organisée :</p>
+<pre tabindex="0"><code>textures/
+├── Pokemon_X_Y/
+├── Mario_Kart_7/
+├── Zelda_ALBW/
+└── backup/
+</code></pre><h2 id="conseils-et-bonnes-pratiques">
+<a class="header-anchor" href="#conseils-et-bonnes-pratiques"></a>
+Conseils et Bonnes Pratiques
+</h2><h3 id="performance">
+<a class="header-anchor" href="#performance"></a>
+Performance
+</h3><ul>
+<li><strong>SSD recommandé</strong> pour des temps de chargement plus rapides</li>
+<li><strong>16 GB RAM</strong> pour le préchargement sans impact</li>
+<li><strong>GPU moderne</strong> pour les hautes résolutions</li>
+</ul>
+<h3 id="compatibilité">
+<a class="header-anchor" href="#compatibilit%c3%a9"></a>
+Compatibilité
+</h3><ul>
+<li>Testez toujours avec une sauvegarde de votre progression</li>
+</ul>
+<h3 id="maintenance">
+<a class="header-anchor" href="#maintenance"></a>
+Maintenance
+</h3><ul>
+<li>Mettez à jour Azahar régulièrement</li>
+<li>Vérifiez les nouvelles versions des texture packs</li>
+</ul>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>L&rsquo;installation de texture packs sur Azahar transforme complètement l&rsquo;expérience visuelle des jeux Nintendo 3DS. En suivant ce guide étape par étape, vous devriez pouvoir profiter de vos jeux préférés avec des graphismes améliorés.</p>
+<p>N&rsquo;hésitez pas à expérimenter avec différents texture packs et configurations pour trouver le réglage parfait pour votre système et vos préférences visuelles.</p>
+
+        
+        <hr><p>Publié le 2025-08-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p><p>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+  </channel>
+</rss>
