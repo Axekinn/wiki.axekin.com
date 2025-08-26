@@ -175,11 +175,16 @@
           "#content",
           ".sidebar-widget",
           ".sidebar-wrapper",
+          ".sidebar-wrapper-container",
           "#mobile-nav",
           "#lazy-script",
           '#i18n-nav'
         ],
         switches: {
+          ".sidebar-wrapper-container": function(oldEl, newEl) {
+            oldEl.className = newEl.className;
+            this.onSwitch();
+          },
           "#content": function(oldEl, newEl) {
             // for sidebar change
             oldEl.className = newEl.className;
@@ -375,7 +380,7 @@
       {{- partial "post/comment.html" . -}}
       {{- if and (reflect.IsSlice .Site.Params.share) (in .Site.Params.share "weixin") -}}
         {{- partial "helpers/js.html" (dict "raw" $js.qrcode "src" (index (partial "helpers/vendorCdn.html" (dict "item" $js.qrcode "ctx" $site)) 0) "pjax" true "defer" true "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $js.qrcode)) 0)) -}}
-        {{- partial "helpers/js.html" (dict "raw" $js.html2image "src" (index (partial "helpers/vendorCdn.html" (dict "item" $js.html2image "ctx" $site)) 0) "pjax" true "defer" true "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $js.html2image)) 0)) -}}
+        {{- partial "helpers/js.html" (dict "raw" $js.snapdom "src" (index (partial "helpers/vendorCdn.html" (dict "item" $js.snapdom "ctx" $site)) 0) "pjax" true "defer" true "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $js.snapdom)) 0)) -}}
       {{- end -}}
     {{- end -}}
     {{- if .Params.math -}}
@@ -461,7 +466,22 @@
   </script>
 {{- end -}}
 
-
+<script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script>
 
 {{- if $params.player.aplayer.enable -}}
   {{- partial "helpers/js.html" (dict "raw" $js.aplayer "src" (index (partial "helpers/vendorCdn.html" (dict "item" $js.aplayer "ctx" $site)) 0) "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $js.aplayer)) 0)) -}}

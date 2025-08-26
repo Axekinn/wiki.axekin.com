@@ -72,7 +72,7 @@ A Hakurei Reimu style Hugo theme. Migrated from [hexo-theme-reimu](https://githu
 
 ### Navigation & Structure
 
-- 📑 Table of Contents (TOC)
+- 📑 Table of Contents
 - 🔄 PJAX support
 - 🔧 ServiceWorker implementation
 - 📰 RSS feed
@@ -81,12 +81,14 @@ A Hakurei Reimu style Hugo theme. Migrated from [hexo-theme-reimu](https://githu
 
 - 🎨 Icon support:
   - Iconfont
-  - FontAwesome
+  - FontAwesome7
 - 🔗 Custom shortcodes for:
   - Internal links
   - External links
   - Friend links
   - Heatmap
+  - Tag Roulette
+  - Alert Blockquote
 - 🎨 Dynamic theme color adaptation
 - ©️ Article copyright declaration
 - 🌐 Custom CDN source / local source configuration
@@ -243,6 +245,44 @@ banner: "images/banner.webp"
 #### Favicon
 
 The favicon is saved at `themes/hugo-theme-reimu/static/favicon.ico`. You can replace it with your own file.
+
+</details>
+<details>
+<summary>Footer</summary>
+
+### Footer
+
+#### Basic Information
+
+The footer section allows you to configure basic display information and statistics.
+
+```yaml
+footer:
+  since: 2020 # The starting year displayed in the copyright information (e.g., 2020-current year)
+  powered: true # Whether to display copyright information
+  count: true # Whether to display word count and reading time statistics
+  busuanzi: true # Whether to enable Busuanzi visitor counting statistics
+```
+
+#### ICP Filing
+
+For websites hosted in mainland China, you can display ICP filing information as required by regulations.
+
+```yaml
+icp:
+  icpnumber: # ICP filing number
+  beian: # Public Security Bureau filing number
+  recordcode: # Record code parameter from the Public Security Bureau filing link
+```
+
+#### Moe ICP Filing (v0.12.1+)
+
+[Moe ICP Filing](https://icp.gov.moe/)
+
+```yaml
+moe_icp:
+  icpnumber: # Moe ICP filing number
+```
 
 </details>
 <details>
@@ -688,7 +728,7 @@ sponsor:
     en: Buy me a coffee
     ja: コーヒーを買ってください
   icon:
-    url: "../images/gura.png" # Sponsor icon path relative to css/main.css
+    url: "../images/taichi.png" # Sponsor icon path relative to css/main.css
     rotate: true # Rotate icon?
     mask: true # Use image as mask (only show PNG image outline)?
   qr:
@@ -709,6 +749,15 @@ sponsor: true # Show sponsorship QR codes?
 > Recommended to enable PJAX first, otherwise the player may automatically pause
 
 Uses Aplayer + Meting (optional), disabled by default
+
+##### Music Player Position (v0.12.1+)
+
+Default is after sidebar
+
+```yml
+player:
+  position: before_sidebar # before_sidebar / after_sidebar / after_widget
+```
 
 ##### Pure Aplayer
 
@@ -791,6 +840,20 @@ home_categories:
       cover:
 ```
 
+#### Injector (v0.6.3+)
+
+Used to inject custom code, similar to [Hexo#Injector](https://hexo.io/api/injector), supports `head`, `body` and `sidebar` injection
+
+```yaml
+injector:
+  head_begin: # Inject code snippet right after <head>
+  head_end: # Inject code snippet right before </head>
+  body_begin: # Inject code snippet right after <body>
+  body_end: # Inject code snippet right before </body>
+  sidebar_begin: # Inject code snippet right after <aside>
+  sidebar_end: # Inject code snippet right before </aside>
+```
+
 </details>
 
 <details>
@@ -822,13 +885,36 @@ The first parameter is the article's `path`; the second parameter (optional) is 
 
 The first parameter is the article's title; the second parameter is the external link to the article; the third parameter (optional) is the cover image shown on the card - if set to `auto`, it will automatically use the default cover
 
-#### Heat Map Card Article Heatmap (Experimental Feature in v0.8.0+)
+#### Heat Map Card Article Heatmap (v0.8.0+)
 
 ```yaml
 {{< heatMapCard levelStandard="?" >}}
 ```
 
 The first parameter is the level standard for the heatmap (graded based on the word count of the articles), with the default value being `"1000,5000,10000"`.
+
+#### tagRoulette (v0.12.0+)
+
+```yaml
+{{< tagRoulette tags="?" icon="?" >}}
+```
+
+tagRoulette is an interactive element that provides a random tag display feature. When the button is clicked, a tag is randomly selected and displayed from a predefined pool of tags.
+
+- tags: Optional parameter specifying the tag pool. Multiple tags should be separated by English commas (,). If not provided, a few example tags will be used by default. Example: `tags="memory decline, loss of expression, increased laziness, numbness, so sleepy"`
+- icon: Optional parameter to customize the trigger button's icon. Default: 🕹️ (game controller emoji), can be replaced with any emoji or text, such as 🎲, 🎯, 🔄, etc.
+
+#### alertBlockquote (v0.12.1+)
+
+```yaml
+{{< alertBlockquote type="?" >}}
+Your content here
+{{</alertBlockquote>}}
+```
+
+It is applicable to scenarios where Hugo v0.132.0 or lower cannot use Hugo Blockquote render hooks.
+
+The first parameter is the type of block quote, with the following optional parameters: `note`, `tip`, `important`, `warning`, `danger`
 
 </details>
 
@@ -983,19 +1069,19 @@ v0.1.0 added `icon` configuration to `footer`, `top`, and `sponsor` for customiz
 ```yaml
 footer:
   icon:
-    url: "../images/gura.png" # Path relative to css/main.css
+    url: "../images/taichi.png" # Path relative to css/main.css
     rotate: true
     mask: true
 
 top:
   icon:
-    url: "../images/gura.png"
+    url: "../images/taichi.png"
     rotate: true
     mask: true
 
 sponsor:
   icon:
-    url: "../images/gura.png"
+    url: "../images/taichi.png"
     rotate: true
     mask: true
 ```
@@ -1014,7 +1100,7 @@ preloader:
     zh-TW: 少女祈禱中...
     en: Loading...
     ja: 少女祈祷中...
-  icon: # Default uses inline SVG when empty, you can enter a link like '/images/gura.png'
+  icon: # Default uses inline SVG when empty, you can enter a link like '/images/taichi.png'
   rotate: true
 ```
 

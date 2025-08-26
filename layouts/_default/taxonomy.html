@@ -1,5 +1,23 @@
 {{- define "main" -}}
-  {{- $paginator := .Paginator.Pages.GroupByDate .Site.Params.yearFormat -}}
+  {{- $type := .Type -}}
+
+  {{- $sort_config := "date-reverse" -}}
+  {{- if eq $type "categories" -}}
+    {{- $sort_config = .Site.Params.sort_order.taxonomy.category -}}
+  {{- else if eq $type "tags" -}}
+    {{- $sort_config = .Site.Params.sort_order.taxonomy.tag -}}
+  {{- end -}}
+
+  {{- $paginator := .Paginator.Pages.GroupByDate .Site.Params.yearFormat "desc" -}}
+  {{- if eq $sort_config "weight" -}}
+    {{- $paginator = .Paginator.Pages.ByWeight -}}
+  {{- else if eq $sort_config "weight-reverse" -}}
+    {{- $paginator = .Paginator.Pages.ByWeight.Reverse -}}
+  {{- else if eq $sort_config "date" -}}
+    {{- $paginator = .Paginator.Pages.GroupByDate .Site.Params.yearFormat "asc" -}}
+  {{- else if eq $sort_config "default" -}}
+    {{- $paginator = .Paginator.Pages -}}
+  {{- end -}}
   <div
     class="archives-outer-wrap"
     data-aos="{{ .Site.Params.animation.options.archive.whole }}"

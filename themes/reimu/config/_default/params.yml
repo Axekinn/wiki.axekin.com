@@ -13,16 +13,13 @@ menu:
     icon: e60c
   - name: about
     url: "about"
-    icon:
-  - name: friend
-    url: "friend"
-    icon:
+    icon: e613
   - name: discord
     url: "https://discord.gg/CUpf57y5Vg"
     icon: e60d
-    
 
-mainSections: ["fr/post", "en/post"]
+mainSections: ["post"]
+# 年，月，日及时间的格式化样式
 # Format style for year,month,date & time
 yearFormat: "2006"
 monthFormat: "2006-01"
@@ -31,8 +28,6 @@ timeFormat: "2006-01-02 15:04:05"
 
 author: Axekin
 email: axekinn@proton.me
-description:
-subtitle:
 
 banner: "images/banner.webp"
 # You can also write it in the form of the following url
@@ -40,7 +35,7 @@ banner: "images/banner.webp"
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: true
+  enable: false
   srcset:
     - src: "images/banner-600w.webp"
       media: "(max-width: 479px)"
@@ -96,29 +91,35 @@ copyright:
 #   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 #   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
 
+# Configuration du footer améliorée
 footer:
-  since: 2020 # 2020-current year
+  since: 2020
   powered: true
   count: true
   busuanzi: true
   icon:
-    url: "../images/gura.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    url: "../images/gura.png"
     rotate: true
-    mask: true # whether to use the images as a mask
+    mask: false
+  custom_text:
+    fr: "Fait avec ❤️ par Axekin"
+    en: "Made with ❤️ by Axekin"
+  social_links: true
+  beian: false
 
 # Sidebar
 sidebar: right
 
 social:
-  # email: mailto:xxx@gmail.com
-  # github: https://github.com/yourname
+  email: mailto:axekinn@proton.me
+  github: https://github.com/axekinn
   # google: https://plus.google.com/yourname
   # twitter: https://twitter.com/yourname
   # facebook: https://www.facebook.com/yourname
   # instagram: https://www.instagram.com/yourname
   # linkedin: https://www.linkedin.com/in/yourname
   # pinterest: https://www.pinterest.com/yourname
-  # youtube: https://www.youtube.com/channel/yourname
+  youtube: https://youtube.com/@axekinn
   # vimeo: https://vimeo.com/yourname
   # flickr: https://www.flickr.com/photos/yourname
   # dribbble: https://dribbble.com/yourname
@@ -133,28 +134,9 @@ social:
   # stackoverflow: https://stackoverflow.com/users/yourname
   # keybase: https://keybase.io/yourname
   # telegram: https://t.me/yourname
-  # discord: https://discordapp.com/users/yourname
+  discord: https://discord.gg/CUpf57y5Vg
   # steam: https://steamcommunity.com/id/yourname
 
-# Statistiques Busuanzi améliorées
-busuanzi:
-  enable: true
-  site_pv:
-    enable: true
-    text:
-      fr: "Vues totales: "
-      en: "Total views: "
-  site_uv:
-    enable: true
-    text:
-      fr: "Visiteurs uniques: "
-      en: "Unique visitors: "
-  page_pv:
-    enable: true
-    text:
-      fr: "Vues: "
-      en: "Views: "
-      
 widgets:
   - category
   - tag
@@ -162,19 +144,35 @@ widgets:
   - recent_posts
 
 # Widget behavior
-category_limits: 10
-tag_limits: 10
-recent_posts_limits: 5
-tagcloud_limits: 20
+category_limits: 15
+tag_limits: 15
+recent_posts_limits: 8
+tagcloud_limits: 30
 
 # Archive behavior
 only_show_capsule_in_index: false # If you have hugo amounts of tags and categories, you can set this to true to only show the capsule in the index page for better performance
+
+show_update_time: false # If you want to show the update time, please set this to true
 
 # RSS output
 rss:
   limit: 10             # The number of recent articles to be output, write -1 to output all
   showFullContent: false # output full content or description
   showCopyright: false   # If true, add copyright to the end of article.
+
+# Sort order configuration
+# Available values: default, date, date-reverse, weight, weight-reverse
+# default: hugo's default sort order for page collections, see https://gohugo.io/quick-reference/page-collections/#sort
+# date: sorted by date in ascending order (oldest first)
+# date-reverse: sorted by date in descending order (newest first)
+# weight: sorted by weight in ascending order
+# weight-reverse: sorted by weight in descending order
+sort_order:
+  taxonomy:
+    category: date-reverse # controlled by categories_weight
+    tag: date-reverse # controlled by tags_weight
+  archive: date-reverse # controlled by weight
+  home: default # controlled by weight
 
 ########################################
 # CSS
@@ -185,11 +183,11 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/reimu-cursor-pointer.png
+    default: ../images/cursor/Gawr-Gura-Cursor.png
+    pointer: ../images/cursor/gawr-gura-pointer.png
     text: ../images/cursor/reimu-cursor-text.png
 
-icon_font: 4552607_0khxww3tj3q9
+icon_font: 4552607_4k4bc36ef96
 
 # Font loading strategy
 # Custom Font -> Google Fonts -> Local FallBack Font
@@ -207,12 +205,16 @@ custom_font:
 font:
   enable: true
   article:
-    - Mulish
-    - Noto Serif SC
+    - family: "Mulish"
+      weights: [300, 400, 600, 700]
+    - family: "Noto Serif SC"
+      weights: [400, 500, 700]
   code:
-    # - Ubuntu Mono
-    # - Source Code Pro
-    # - JetBrains Mono
+    - family: "JetBrains Mono"
+      weights: [400, 500, 700]
+    - family: "Ubuntu Mono"
+      weights: [400, 700]
+  display: "swap"
 
 # Local FallBack Font
 local_font:
@@ -232,6 +234,8 @@ dark_mode:
   # false means that the dark mode is disabled by default
   # auto means that the dark mode is automatically switched according to the system settings
   enable: auto # true | false | auto
+  transition: smooth
+  duration: 300
 
 ########################################
 # Analytics
@@ -251,6 +255,10 @@ code_block:
   # false means collapse all code blocks by default
   # number means collapse the code block by default when the number of lines exceeds the specified value
   expand: true
+  copy_button: true
+  line_numbers: true
+  highlight_lines: true
+  theme: "dracula"
 
 math:
   katex:
@@ -298,15 +306,16 @@ comment:
     zh-CN: 说些什么吧！
     zh-TW: 說些什麼吧！
     ja: コメントを残す
-  default: twikoo # default comment system, when you enable multiple comment systems
+    pt-BR: Deixe um comentário
+  default: waline # default comment system, when you enable multiple comment systems
 
 # valine comment system. https://valine.js.org
 # version 1.5.1
 # notify and verify have been deprecated
 valine:
   enable: false # if you want to use valine,please set this value is true
-  appId: 94mEltR4RiEn3EWZZfaCmr9b-MdYXbMMI # leancloud application app id
-  appKey: IXfLB4N2besVBCcm7MKJOvkd # leancloud application app key
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: mp # gravatar style https://valine.js.org/#/avatar
   # lang: zh-cn # deprecated, use html.lang instead
@@ -320,7 +329,7 @@ valine:
 # https://waline.js.org/
 waline:
   enable: false
-  serverURL: https://comment-wikiaxekincom.vercel.app
+  serverURL:
   # lang: zh-CN # deprecated, use html.lang instead
   locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
   emoji:
@@ -344,44 +353,8 @@ waline:
 # https://twikoo.js.org
 twikoo:
   enable: false
-  envId: "https://comment-wikiaxekincom.vercel.app"
+  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
   region:
-  # Configuration personnalisée avancée
-  lang: auto # ou 'fr', 'en', 'zh-CN', etc.
-  path: window.location.pathname # Chemin personnalisé pour les commentaires
-  
-  # Interface utilisateur
-  placeholder: "Write ur best comment !" # Texte d'invite personnalisé
-  requiredMeta: ['nick'] # Seul le pseudo est requis (email optionnel)
-  
-  # Modération et sécurité
-  commentCount: true # Afficher le nombre de commentaires
-  visitor: true # Compteur de visiteurs
-  highlight: true # Coloration syntaxique du code
-  mathJax: true # Support LaTeX/MathJax
-  
-  # Limites et validation
-  wordLimit: [10, 1000] # Min 10, max 1000 caractères
-  requiredMeta: ['nick'] # Seul le nickname est obligatoire
-  
-  # Apparence et thème
-  avatar: 'robohash' # Type d'avatar : 'gravatar', 'robohash', 'hide', etc.
-  avatarCDN: 'https://cravatar.cn/avatar/' # CDN personnalisé pour avatars
-  
-  # Fonctionnalités avancées
-  imageUpload: true # Upload d'images
-  imageUploadMethod: 'POST' # Méthode d'upload
-  
-  # Notifications
-  mailNotify: true # Notifications par email
-  mailTemplate: 'default' # Template d'email personnalisé
-  
-  # Anti-spam et sécurité
-  akismetKey: '' # Clé Akismet pour l'anti-spam
-  isOwner: false # Marquer automatiquement comme propriétaire
-  
-  # Configuration du serveur (optionnel)
-  serverURL: "https://comment-wikiaxekincom.vercel.app"
 
 # https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 gitalk:
@@ -427,38 +400,43 @@ algolia_search:
 preloader:
   enable: true
   text: 
-    zh-CN: 少女祈祷中...
-    zh-TW: 少女祈禱中...
+    fr: Chargement en cours...
     en: Loading...
-    ja: 少女祈祷中...
-  icon: # default use inline svg for fast speed, you can use a image url, like '/images/gura.png'
-  rotate: true # whether to rotate the icon
-
+  rotate: true
+  animation: pulse
+  logo: "/images/taichi-fill.png"
 # see https://github.com/D-Sketon/aos.js
 animation:
   enable: true
   options:
+    # Animations d'en-tête plus dynamiques
     header:
-      title: slide-up
-      subTitle: slide-down
+      title: fade-down
+      subTitle: fade-up
+    
+    # Page d'accueil avec des effets échelonnés
     home:
-      post: fade-up
-      widget: fade-up
-      sidebar: fade-up
+      post: fade-up-right
+      widget: slide-left
+      sidebar: slide-right
+    
+    # Articles avec plus de variété
     article:
       whole: fade-up
-      date: zoom-in
-      category: zoom-in
-      tag: zoom-in
-      comment: zoom-in
-      reading: zoom-in
-      nav: fade-up
+      date: flip-left
+      category: zoom-in-up
+      tag: zoom-in-down
+      comment: slide-up
+      reading: fade-left
+      nav: slide-down
+    
+    # Archives avec effets de profondeur
     archive:
       whole: fade-up
-      tag: zoom-in
-      category: zoom-in
-      section: fade-up
-      nav: fade-up
+      tag: flip-up
+      category: flip-down
+      section: zoom-in
+      nav: slide-up
 
 # see https://github.com/D-Sketon/mouse-firework
 firework:
@@ -490,59 +468,67 @@ firework:
 # Extended features
 ########################################
 
-# show the copyright below each article
+# Copyright des articles amélioré
 article_copyright:
-  enable: false
+  enable: true
   content:
     author: true
     link: true
-    title: false
-    date: false
-    updated: false
+    title: true
+    date: true
+    updated: true
     license: true
-    license_type: by-nc-sa # https://creativecommons.org/licenses
+    license_type: by-nc-sa
+  custom_text:
+    fr: "Cet article est protégé par les droits d'auteur. Reproduction autorisée avec attribution."
+    en: "This article is protected by copyright. Reproduction allowed with attribution."
 
-# Clipboard configuration
+# Configuration du clipboard améliorée
 clipboard:
   success: 
+    fr: Copie réussie (*^▽^*)
     en: Copy successfully (*^▽^*)
-    zh-CN: 复制成功 (*^▽^*)
-    zh-TW: 複製成功 (*^▽^*)
-    ja: コピー成功 (*^▽^*)
   fail: 
+    fr: Échec de la copie (ﾟ⊿ﾟ)ﾂ
     en: Copy failed (ﾟ⊿ﾟ)ﾂ
-    zh-CN: 复制失败 (ﾟ⊿ﾟ)ﾂ
-    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
-    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
   copyright:
-    enable: false
-    count: 50 # The number of characters when the copyright is displayed
-    license_type: by-nc-sa # https://creativecommons.org/licenses
+    enable: true
+    count: 50
+    license_type: by-nc-sa
+  auto_copy_selector: "pre code"
 
-# Back To Top
+# Bouton retour en haut amélioré
 top:
   enable: true
-  position: right # left or right
+  position: right
   icon:
-    url: "../images/gura.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    url: "../images/gura.png"
     rotate: true
-    mask: true # whether to use the images as a mask
+    mask: false
+  threshold: 100
+  smooth_scroll: true
 
-# whether to display the notification when the article is outdated
+# Notification article obsolète
 outdate:
   enable: false
-  daysAgo: 180 # The number of days after which the article is considered outdated
+  daysAgo: 180
+  warning_days: 90
   message:
+    fr: Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.
     en: This article was last updated on {time}. Please note that the content may no longer be applicable.
-    zh-CN: 本文最后更新于 {time}，请注意文中内容可能已不适用。
-    zh-TW: 本文最後更新於 {time}，請注意文中內容可能已不適用。
-    ja: この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。
+  warning_message:
+    fr: "⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes."
+    en: "⚠️ This article is over 3 months old. Some information may be outdated."
 
 # ICP 备案
 icp:
   icpnumber: # ICP备案号
   beian: # 网安备案号
   recordcode: # 网安备案链接中的recordcode参数
+
+# 萌国 ICP 备案
+moe_icp:
+  icpnumber: # 萌国ICP备案号
 
 # Sponsor
 sponsor:
@@ -552,8 +538,9 @@ sponsor:
     zh-TW: 請作者喝杯咖啡吧
     en: Buy me a coffee
     ja: コーヒーを買ってください
+    pt-BR: Compre-me um café
   icon:
-    url: "../images/gura.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
     rotate: true
     mask: true # whether to use the images as a mask
   qr:
@@ -564,10 +551,11 @@ sponsor:
 
 # Share
 share:
-  # - facebook
-  # - twitter
-  # - linkedin
-  # - reddit
+  - facebook
+  - twitter
+  - linkedin
+  - reddit
+  - email
   # - weibo
   # - qq
   # - weixin
@@ -576,10 +564,15 @@ share:
 home_categories:
   enable: false
   content:
-    - categories: # string (single-layer category) or array (multi-layer category)
-      cover: # empty means random cover
-    - categories:
-      cover:
+    - categories: "tutorials"        
+      icon: "📚"
+      cover: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=400&fit=crop"
+    - categories: "gaming"
+      icon: "🎮"
+      cover: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=400&fit=crop"
+    - categories: "tech"
+      icon: "⚡"
+      cover: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop"
 
 ########################################
 # Experimental features
@@ -592,7 +585,7 @@ pjax:
 # Experimental
 # https://github.com/GoogleChromeLabs/quicklink
 quicklink:
-  enable: false
+  enable: falstruee
   # The `requestIdleCallback` timeout, in milliseconds.
   timeout: 3000
   # Whether or not the URLs within the options.el container should be treated as high priority.
@@ -602,9 +595,19 @@ quicklink:
   # Only support string
   ignores: []
 
-# Experimental
+# Service Worker
 service_worker:
-  enable: false
+  enable: true
+  cache_version: "v1.0.0"
+  cache_strategy: "cache_first"
+  update_notification:
+    enable: true
+    title:
+      fr: Nouvelle version disponible
+      en: New version available
+    content:
+      fr: Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?
+      en: The website seems to have new content, do you want to update?
 
 # Experimental
 live2d:
@@ -619,10 +622,13 @@ live2d_widgets:
 # https://github.com/CodeByZach/pace
 pace:
   enable: true
+  color: "var(--red-2)"
+  theme: "minimal"
 
 # Experimental
 # Please turn on pjax to use this feature
 player:
+  position: before_sidebar # before_sidebar | after_sidebar | after_widget
   # if you enable meting, you must enable aplayer first
   aplayer:
     # https://github.com/DIYgod/APlayer
@@ -671,44 +677,151 @@ material_theme:
 
 internal_theme:
   light:
-    --red-0: '#4a00e0'        # Violet principal
-    --red-1: '#6a1b99'        # Violet moyen
-    --red-2: '#8e44ad'        # Violet clair
-    --red-3: '#a569bd'        # Violet très clair
-    --red-4: '#d2b4de'        # Violet pastel
-    --red-5: '#e8daef'        # Violet très pastel
-    --red-5-5: '#f4f1f8'      # Violet quasi transparent
-    --red-6: '#faf8fc'        # Violet background
-    --color-red-6-shadow: 'rgba(106, 27, 153, 0.6)'
-    --color-red-3-shadow: 'rgba(106, 27, 153, 0.3)'
-    --highlight-nav: '#1a1a1a'
-    --highlight-purple: '#8e44ad'
-    # Variables pour le texte Markdown - AMÉLIORÉES
-    --text-color: '#f8f9fa'                    # Blanc cassé plus visible
-    --text-emphasis: '#ffffff'                 # Blanc pur pour les éléments emphasés
-    --tag-text-color: '#ffffff'               # Blanc pour les tags
-    --markdown-strong: '#ffffff'               # Blanc pour le texte en gras
-    --markdown-emphasis: '#e9ecef'             # Gris très clair pour l'italique
-    --text-secondary: '#dee2e6'               # Texte secondaire plus visible
-    --text-muted: '#ced4da'                   # Texte atténué mais lisible
-    --link-color: '#ffffff'                   # Liens en blanc
-    --link-hover: '#f8f9fa'                   # Liens au survol
-    --heading-color: '#ffffff'                # Titres en blanc pur
-    --border-color: 'rgba(255, 255, 255, 0.2)' # Bordures subtiles
-    --background-content: 'rgba(26, 26, 26, 0.8)' # Fond de contenu semi-transparent
+    --red-0: '#7c4dff'        # Violet principal éclairci
+    --red-1: '#9575cd'        # Violet moyen plus clair
+    --red-2: '#ba68c8'        # Violet clair lumineux
+    --red-3: '#ce93d8'        # Violet très clair
+    --red-4: '#e1bee7'        # Violet pastel
+    --red-5: '#f3e5f5'        # Violet très pastel
+    --red-5-5: '#faf8fc'      # Violet quasi transparent
+    --red-6: '#fdfdfe'        # Background très clair
+    --color-red-6-shadow: 'rgba(124, 77, 255, 0.4)'
+    --color-red-3-shadow: 'rgba(124, 77, 255, 0.2)'
+    --highlight-nav: '#2d2d2d'
+    --highlight-purple: '#7c4dff'
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#f8f9fa'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.2)'
+    --background-content: 'rgba(26, 26, 26, 0.8)'
   dark:
-    --red-4: 'rgba(212, 180, 222, 0.5)'
-    --highlight-purple: '#6a1b99'
-    # Variables pour le mode sombre - AMÉLIORÉES
-    --text-color: '#f8f9fa'                   # Blanc cassé
-    --text-emphasis: '#ffffff'                # Blanc pur
-    --tag-text-color: '#ffffff'              # Tags en blanc
-    --markdown-strong: '#ffffff'              # Gras en blanc pur
-    --markdown-emphasis: '#e9ecef'            # Italique visible
-    --text-secondary: '#dee2e6'              # Texte secondaire
-    --text-muted: '#adb5bd'                  # Texte atténué mais lisible
-    --link-color: '#ffffff'                  # Liens blancs
-    --link-hover: '#d2b4de'                  # Liens violets au survol
-    --heading-color: '#ffffff'               # Titres blancs
-    --border-color: 'rgba(255, 255, 255, 0.15)' # Bordures plus visibles
-    --background-content: 'rgba(20, 20, 20, 0.9)' # Fond plus contrasté
+    --red-0: '#6a1b99'
+    --red-1: '#8e44ad'
+    --red-2: '#9b59b6'
+    --red-3: '#bb8fce'
+    --red-4: 'rgba(187, 143, 206, 0.5)'
+    --highlight-purple: '#8e44ad'
+    --color-red-6-shadow: 'rgba(142, 68, 173, 0.4)'
+    --color-red-3-shadow: 'rgba(142, 68, 173, 0.2)'
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#d2b4de'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.15)'
+    --background-content: 'rgba(20, 20, 20, 0.9)'
+
+
+# Smooth Scrolling
+smooth_scroll:
+  enable: true
+  duration: 500
+
+  # Lazy Loading avancé
+lazy_loading:
+  enable: true
+  placeholder: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f5f5f5' width='400' height='300'/%3E%3C/svg%3E"
+  fade_in: true
+
+mermaid:
+  enable: true
+  theme: "dark"
+  startOnLoad: true
+
+  # Charts avec Chart.js
+charts:
+  enable: true
+  theme: "purple"
+
+# PWA (Progressive Web App)
+pwa:
+  enable: true
+  name: "Axekin Wiki"
+  short_name: "AxekinWiki"
+  description: "Wiki d'Axekin"
+  theme_color: "#6a1b99"
+  background_color: "#1a1a1a"
+  display: "standalone"
+  start_url: "/"
+
+utterances:
+  enable: false
+  repo: "axekin/wiki-comments"
+  issue_term: "pathname"
+  theme: "github-dark"
+
+  # Compression et optimisation
+compression:
+  enable: true
+  level: 6
+
+  # Image optimization
+image_processing:
+  enable: true
+  quality: 85
+  formats: ["webp", "avif"]
+  lazy_loading: true
+
+  # Widgets personnalisés
+custom_widgets:
+  - name: "weather"
+    enable: false
+    api_key: "YOUR_WEATHER_API_KEY"
+    city: "Paris"
+  - name: "hitokoto"
+    enable: false
+    api: "https://v1.hitokoto.cn/"
+  - name: "music_player"
+    enable: false
+    playlist: "YOUR_PLAYLIST_ID"
+
+    # Easter Eggs
+easter_eggs:
+  enable: true
+  konami_code: true
+  click_effects: true
+  typing_effects: false
+
+  # Accessibilité
+accessibility:
+  enable: true
+  high_contrast: false
+  font_size_adjuster: true
+  screen_reader_improvements: true
+
+  # Multi-langue avancée
+i18n:
+  date_format:
+    fr: "02 January 2006"
+    en: "January 02, 2006"
+  reading_time:
+    fr: "min de lecture"
+    en: "min read"
+
+    # Sécurité
+security:
+  content_security_policy: true
+  referrer_policy: "strict-origin-when-cross-origin"
+  permissions_policy: true
+
+  # Développement
+development:
+  live_reload: true
+  debug_mode: false
+  error_pages: true
+
+params:
+  customCSS: ["css/custom.css"]
+  customJS: ["js/custom.js"]

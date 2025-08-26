@@ -29,9 +29,7 @@
       >
       </a>
     {{- end -}}
-{{- if .Params.featured -}}
-  <div class="post-sticky">{{ i18n "sticky" }}</div>
-{{- end -}}
+
     <div
       class="{{ if mod $index 2 }}
         post-cover-right
@@ -71,6 +69,12 @@
           ><span class="icon-calendar"></span
           >{{ $page.Date.Format $ctx.Site.Params.dateFormat }}</span
         >
+        {{- if $ctx.Site.Params.show_update_time -}}
+          <span
+            ><span class="icon-calendar-plus"></span
+            >{{ $page.Lastmod.Format $ctx.Site.Params.dateFormat }}</span
+          >
+        {{- end -}}
         <span
           ><span class="icon-pencil"></span
           >{{ i18n "post.count" $page.WordCount }}</span

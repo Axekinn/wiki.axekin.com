@@ -1,3 +1,189 @@
+## v0.12.1
+
+**2025-08-24**
+
+### 修复
+
+- 修复热力图未来日期的处理逻辑，确保只统计过去的文章数据
+- 修复热力图日期标签重叠的问题
+
+### 特性
+
+- 新增 `player.position` 配置用于控制播放器的位置，可选择在 sidebar 之前、之后或 widget 之后，默认在 sidebar 之后
+  ```yaml
+  player:
+    position: before_sidebar # before_sidebar / after_sidebar / after_widget
+  ```
+- 新增 `show_update_time` 配置用于控制是否展示文章更新时间，默认关闭
+  ```yaml
+  show_update_time: true # true | false
+  ```
+- 新增 `moe_icp` 配置用于控制是否展示萌 ICP 备案信息，默认关闭
+  ```yaml
+  moe_icp:
+    icpnumber: # 萌国ICP备案号
+  ```
+- 对于 Hugo v0.132.0 以下版本，新增 `alertBlockquote` shortcode 用于展示块引用，支持多种类型
+  ```yaml
+  {{< alertBlockquote type="?" >}}
+  Your content here
+  {{</alertBlockquote>}}
+  ```
+  - type：块引用的类型，可选参数为：`note`、`tip`、`important`、`warning`、`danger`
+- 对于 Hugo v0.132.0 及以上版本 支持使用 Hugo Blockquote render hooks 展示 Alert 块引用
+  ```markdown
+  > [!NOTE]
+  > Useful information that users should know, even when skimming content.
+  ```
+- 多语言增加对葡萄牙语（巴西）的支持
+- 使用 snapdom 替代 html2image 生成截图
+
+### 杂项
+
+- 更新 mermaid 至 v11.10.1
+- 更新 qrcode 至 v1.5.1
+- 更新 dompurify 至 v3.2.6
+- 更新 fontawesome 至 v7.0.0
+
+---
+
+### Fixes
+
+- Fixed the issue where future dates were incorrectly processed in the heatmap, ensuring that only past article data is counted.
+- Fixed the issue of overlapping date labels in the heatmap.
+
+### Features
+
+- Added `player.position` configuration to control the player's position, which can be placed before the sidebar, after the sidebar, or after the widget. Defaults to after the sidebar.
+  ```yaml
+  player:
+    position: before_sidebar # before_sidebar / after_sidebar / after_widget
+  ```
+- Added `show_update_time` configuration to control whether to display the article update time. Disabled by default.
+  ```yaml
+  show_update_time: true # true | false
+  ```
+- Added `moe_icp` configuration to control whether to display Moe ICP filing information. Disabled by default.
+  ```yaml
+  moe_icp:
+    icpnumber: # Moe ICP filing number
+  ```
+- For Hugo versions below v0.132.0, a new `alertBlockquote` shortcode has been added to display blockquotes, supporting multiple types  
+  ```yaml  
+  {{< alertBlockquote type="?" >}}  
+  Your content here  
+  {{</alertBlockquote>}}  
+  ```  
+  - type: specifies the type of blockquote. Available options: `note`, `tip`, `important`, `warning`, `danger`  
+- For Hugo v0.132.0 and above, support for using Hugo Blockquote render hooks to display Alert blockquotes  
+  ```markdown  
+  > [!NOTE]  
+  > Useful information that users should know, even when skimming content.  
+  ```
+- Added support for Portuguese (Brazil) in multilingual settings.
+- Replaced html2image with snapdom for generating screenshots.
+
+### Miscellaneous
+
+- Updated mermaid to v11.10.1
+- Updated qrcode to v1.5.1
+- Updated dompurify to v3.2.6
+- Updated fontawesome to v7.0.0
+
+## v0.12.0
+
+**2025-07-06**
+
+### 修复
+
+- 修复标签云权重计算逻辑，确保在没有文章时构建不报错
+- 修复 giscus 多语言兜底逻辑
+
+### 特性
+
+- 统一 css 阴影样式，新增以下 token:
+  - `--shadow-meta`
+  - `--shadow-meta-hover`
+  - `--shadow-card`
+  - `--shadow-card-hover`
+  - `--shadow-red-6-shadow`
+- Algolia 使用 SHA1 哈希作为 objectID
+- 侧边栏支持 tag 和 category 的页面跳转
+- 实验性新增 `sort_order` 配置，用于控制分类、标签、归档和首页的排序方式，未来可能会有重大变化
+  - 支持的排序方式：`default`、`date`、`date-reverse`、`weight`、`weight-reverse`
+  - `default` 为 hugo 默认排序方式，详见 [Hugo 文档](https://gohugo.io/quick-reference/page-collections/#sort)
+  - `date` 为按日期排序，`date-reverse` 为按日期倒序排序
+  - `weight` 为按权重排序，`weight-reverse` 为按权重倒序排序
+  - 默认情况下，`home` 使用 `default` 排序，`archive` 使用 `date-reverse` 排序，`taxonomy` 使用 `date-reverse` 排序
+  - 可以通过 `categories_weight` 和 `tags_weight` 配置来控制分类页和标签页的文章权重
+  - 可以通过 `weight` 配置来控制归档和首页的文章权重
+  ```yaml
+  sort_order:
+    taxonomy:
+      category: date-reverse # controlled by categories_weight
+      tag: date-reverse # controlled by tags_weight
+    archive: date-reverse # controlled by weight
+    home: default # controlled by weight
+  ```
+- `heatMapCard` 热力图新增自定义 tooltip 内容，支持点击显示文章列表
+- 新增 `tagRoulette` shortcode 用于展示标签轮盘，提供随机标签展示功能，点击按钮后会从预定义的标签池中随机抽取并展示一个标签。
+  ```yaml
+  {{< tagRoulette tags="?" icon="?" >}}
+  ```
+  - tags：可选参数，指定标签池，多个标签用英文逗号(,)分隔；未提供时默认使用几个示例标签，例如：tags="记忆衰退,表达欲丧失,更加怠惰,无感,好想睡觉"  
+  - icon：可选参数，自定义触发按钮的图标，默认使用 🕹️（游戏手柄emoji），可替换为任何emoji或文字，如 🎲、🎯、🔄 等
+
+### 性能
+
+- CSS 持续性 tree-shaking，现在评论相关样式会按需打包
+- `instantsearch.js` 替换为 `@reimujs/instantsearch.js`，以减少包体积
+
+---
+
+### Fixes
+
+- Fixed the tag cloud weight calculation logic to ensure no errors occur when building without articles  
+- Improved the giscus multilingual fallback logic  
+
+### Features  
+
+- Unified CSS shadow styles and added the following tokens:  
+  - `--shadow-meta`  
+  - `--shadow-meta-hover`  
+  - `--shadow-card`  
+  - `--shadow-card-hover`  
+  - `--shadow-red-6-shadow`  
+- Algolia now uses SHA1 hash as objectID  
+- Sidebar now supports page navigation for tags and categories  
+- Added `sort_order` configuration to control the sorting method for categories, tags, archives, and the homepage (Experimental Feature, may be majorly changed in the future):  
+  - Supported sorting methods: `default`, `date`, `date-reverse`, `weight`, `weight-reverse`  
+  - `default` follows Hugo's default sorting method. Refer to the [Hugo documentation](https://gohugo.io/quick-reference/page-collections/#sort) for details.  
+  - `date` sorts by date, while `date-reverse` sorts by date in reverse order.  
+  - `weight` sorts by weight, while `weight-reverse` sorts by weight in reverse order.  
+  - By default, `home` uses `default` sorting, `archive` uses `date-reverse`, and `taxonomy` uses `date-reverse`.  
+  - The `categories_weight` and `tags_weight` configurations can be used to control article weights for category and tag pages.  
+  - The `weight` configuration can be used to control article weights for archives and the homepage.  
+  ```yaml  
+  sort_order:  
+    taxonomy:  
+      category: date-reverse # controlled by categories_weight  
+      tag: date-reverse # controlled by tags_weight  
+    archive: date-reverse # controlled by weight  
+    home: default # controlled by weight  
+  ```  
+- Added custom tooltip content for the `heatMapCard` heatmap, supporting click-to-show article lists.  
+- Added the `tagRoulette` shortcode to display a tag roulette, providing a random tag display feature. Clicking the button randomly selects and displays a tag from a predefined tag pool.  
+  ```yaml  
+  {{< tagRoulette tags="?" icon="?" >}}  
+  ```  
+  - `tags`: Optional parameter specifying the tag pool, with multiple tags separated by commas (`,`). If not provided, default example tags are used, e.g., `tags="memory decline,lost desire to express,more lazy,indifferent,want to sleep"`.  
+  - `icon`: Optional parameter for customizing the trigger button icon. Defaults to 🕹️ (gamepad emoji), which can be replaced with any emoji or text, such as 🎲, 🎯, 🔄, etc.  
+
+### Performance  
+
+- Continuous CSS tree-shaking; comment-related styles are now bundled on-demand.  
+- Replaced `instantsearch.js` with `@reimujs/instantsearch.js` to reduce bundle size.
+
 ## v0.11.0
 
 **2025-05-31**
@@ -1000,20 +1186,20 @@ math:
   ```yaml
   footer:
     icon:
-      url: "../images/gura.png" # 相对于 css/style.css 的路径，所以需要向上一级才能找到 images 文件夹
+      url: "../images/taichi.png" # 相对于 css/style.css 的路径，所以需要向上一级才能找到 images 文件夹
       rotate: true
       mask: true
 
   top: # 这是新增配置
     enable: true # true | false
     icon:
-      url: "../images/gura.png"
+      url: "../images/taichi.png"
       rotate: true
       mask: true
 
   sponsor:
     icon:
-      url: "../images/gura.png"
+      url: "../images/taichi.png"
       rotate: true
       mask: true
   ```
@@ -1023,7 +1209,7 @@ math:
   preloader:
     enable: true
     text: 少女祈祷中...
-    icon: # 不填默认使用内链的svg（保证首屏加载速度），你可以填入一个链接来自定义加载图标，如 '/images/gura.png'
+    icon: # 不填默认使用内链的svg（保证首屏加载速度），你可以填入一个链接来自定义加载图标，如 '/images/taichi.png'
   ```
 - 新增了 `anchor_icon` 配置，现在支持自定义锚点 icon
   ```yaml

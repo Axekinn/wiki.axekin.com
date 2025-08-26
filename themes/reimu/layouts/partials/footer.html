@@ -72,8 +72,26 @@
         />
         <a
           target="_blank"
+          rel="noopener"
           href="https://beian.mps.gov.cn/#/query/webSearch?code={{ .Site.Params.icp.recordcode }}"
           >{{ .Site.Params.icp.beian }}</a
+        >
+      </div>
+    {{- end -}}
+    {{- if .Site.Params.moe_icp.icpnumber -}}
+      <div class="footer-beian">
+        <img
+          style="object-fit: contain;margin-right: 2px;"
+          src="https://icp.gov.moe/images/ico64.png"
+          alt=""
+          width="24"
+          height="24"
+        />
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://icp.gov.moe/?keyword={{ .Site.Params.moe_icp.icpnumber }}"
+          >萌ICP备{{ .Site.Params.moe_icp.icpnumber }}号</a
         >
       </div>
     {{- end -}}

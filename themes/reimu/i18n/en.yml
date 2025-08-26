@@ -11,8 +11,8 @@ archive_a: Archives
 archive_b: "Archives: {{ . -}}"
 page: "Page {{ . -}}"
 recent_posts: Recent Posts
-newer: Newer
-older: Older
+newer: Prev
+older: Next
 share: Share
 powered_by: Powered by
 rss_feed: RSS Feed
@@ -25,7 +25,6 @@ home: Home
 about: About
 friend: Friend
 archives: Archives
-discord : Discord
 
 sidebar:
   post: Posts
@@ -83,3 +82,8 @@ algolia:
   input_placeholder: "Search....."
   hits_empty: "No results found for 「${query}」"
   hits_stats: "Found ${hits} results (in ${time} ms)"
+
+heat_map_card:
+  no_articles: No articles
+  words: word(s)
+  total_articles: "$1 article(s), $2 word(s)"

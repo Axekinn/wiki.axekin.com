@@ -1,6 +1,7 @@
 {{- define "main" -}}
   {{- $ctx := . -}}
   {{- $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) -}}
+  {{- $sort_config := .Site.Params.sort_order.home -}}
   {{- if and (eq 1 $paginator.PageNumber) ($ctx.Site.Params.home_categories.enable) -}}
     <div class="post-categories-wrapper" data-aos="{{ $ctx.Site.Params.animation.options.home.post }}">
       {{- range $k, $v := $ctx.Site.Params.home_categories.content -}}
@@ -41,8 +42,26 @@
       {{- end -}}
     </div>
   {{- end -}}
-  {{- range $k, $v := $paginator.Pages -}}
-    {{- partial "post.html"  (dict "index" $k "ctx" . "page" $v ) -}}
+  {{- if eq $sort_config "weight" -}}
+    {{- range $k, $v := $paginator.Pages.ByWeight -}}
+      {{- partial "post.html"  (dict "index" $k "ctx" . "page" $v ) -}}
+    {{- end -}}
+  {{- else if eq $sort_config "weight-reverse" -}}
+    {{- range $k, $v := $paginator.Pages.ByWeight.Reverse -}}
+      {{- partial "post.html"  (dict "index" $k "ctx" . "page" $v ) -}}
+    {{- end -}}
+  {{- else if eq $sort_config "date" -}}
+    {{- range $k, $v := $paginator.Pages.ByDate -}}
+      {{- partial "post.html" (dict "index" $k "ctx" . "page" $v ) -}}
+    {{- end -}}
+  {{- else if eq $sort_config "date-reverse" -}}
+    {{- range $k, $v := $paginator.Pages.ByDate.Reverse -}}
+      {{- partial "post.html" (dict "index" $k "ctx" . "page" $v ) -}}
+    {{- end -}}
+  {{- else if eq $sort_config "default" -}}
+    {{- range $k, $v := $paginator.Pages -}}
+      {{- partial "post.html"  (dict "index" $k "ctx" . "page" $v ) -}}
+    {{- end -}}
   {{- end -}}
   {{- partial "pagination.html" . -}}
 {{- end -}}

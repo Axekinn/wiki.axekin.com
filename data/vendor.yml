@@ -1,4 +1,4 @@
-cdn_jsdelivr_gh: https://cdn.jsdelivr.net/gh/user/repo@version/file.js
+cdn_jsdelivr_gh: https://cdn.jsdelivr.net/gh/
 cdn_jsdelivr_npm: https://cdn.jsdelivr.net/npm/
 fastly_jsdelivr_gh: https://fastly.jsdelivr.net/gh/
 fastly_jsdelivr_npm: https://fastly.jsdelivr.net/npm/
@@ -39,14 +39,14 @@ js:
     src: webcache|algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
     integrity: sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S+jQz7ZBtQXnsXmD+9jDOOY4cL6dCPzlrk
   instantsearch:
-    src: webcache|instantsearch.js@4.56.1/dist/instantsearch.production.min.js
-    integrity: sha384-hHJCflT4KBLQyHfKO9vpstIcFKn/Y+KHTORelMMEn7mOp2AVPp+7fr03dLgZiV3J
+    src: webcache|@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js
+    integrity: sha384-aagKMe8nkqaP2DYQc8kkYOL5l+M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK
   pace:
     src: webcache|pace-js@1.2.4/pace.min.js
     integrity: sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8
   mermaid:
-    src: webcache|mermaid@11.6.0/dist/mermaid.min.js
-    integrity: sha384-zkWMJO4sgpPUzyuOgDx8HB/K55glbAwajEpk1Go2NWRuPkPA/wIhoEJTuSkmOYrV
+    src: webcache|mermaid@11.10.1/dist/mermaid.min.js
+    integrity: sha384-7nxfNsXzOEcSwk+tzfq6tbjmfg0P2Gqmi7JTnRjv9Ll3gFWNro6lI7hPtZPM5ZLD
   firework:
     src: webcache|mouse-firework@0.1.1/dist/index.umd.js
     integrity: sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d
@@ -84,14 +84,14 @@ js:
     src: webcache|meting@2.0.1/dist/Meting.min.js
     integrity: sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S/IyB+Y4JG+ZDU7GpKE8
   qrcode:
-    src: webcache|qrcode@1.4.4/build/qrcode.min.js
-    integrity: sha384-0RsG1yo/crf/1Qc14sho26SXXOTngNCjgJw7fuvXBt9W/OChF/Ijx+aUuBDqQwEk
-  html2image:
-    src: webcache|html-to-image@1.11.11/dist/html-to-image.js
-    integrity: sha384-UbfRVKN3/elS1r7JcK2FhmPP+KlJ4CvYwbyYD7tH+uTkbT9bNJr9eJeQ0FoFbAgz
+    src: webcache|qrcode@1.5.1/build/qrcode.js
+    integrity: sha384-VT1EeewTCEXgndcPMQ0PzV+uVFYjxFIjmAA7s5gcMX9t4Dt5TD+OVQIn7NJWIXn7
+  snapdom:
+    src: webcache|@zumer/snapdom@1.9.9/dist/snapdom.min.js
+    integrity: sha384-taz9Bq0wPqLsuiB4ix4blTozt/y84cjbMX5ZWkfPPjpVBme8M/jWopanNBcdH/qp
   dompurify:
-    src: webcache|dompurify@3.2.4/dist/purify.min.js
-    integrity: sha384-eEu5CTj3qGvu9PdJuS+YlkNi7d2XxQROAFYOr59zgObtlcux1ae1Il3u7jvdCSWu
+    src: webcache|dompurify@3.2.6/dist/purify.min.js
+    integrity: sha384-JEyTNhjM6R1ElGoJns4U2Ln4ofPcqzSsynQkmEc/KGy6336qAZl70tDLufbkla+3
   material_theme:
     src: webcache|material-theme@1.0.0/dist/material-theme.umd.js
     integrity: sha384-vLev0II0HKFaxkcm+/7kX5IGwVFBASkGchU311wmU/veIj2bB0UcBkQbW6yw2asK
@@ -110,20 +110,20 @@ css:
     integrity: sha384-X7z7PUv2B67D8sPJyzDyGZSco1ADwmdI7ed4eCGtTKkClfyDFpPL9WgAn9XVr/Io
   fontawesome:
     high_priority:
-      - src: webcache|@fortawesome/fontawesome-free@6.5.1/css/regular.min.css
-        integrity: sha384-k5640LgghgAohDLPwSqVWa96yQwWouT6wsAL+J1g0CFJVITNKYkIh1XpPLYKQe7Y
-      - src: webcache|@fortawesome/fontawesome-free@6.5.1/css/solid.min.css
-        integrity: sha384-8yO/A/BtltnG0hDxdwmmkza8UAleyDoAD1FhXiH6rsOQQsCho1P6WZP9TpBBH3YP
+      - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/regular.min.css
+        integrity: sha384-PmxfVzUpFiyj5ZqzN3upnv7G4x9YAlMQar/qCBLEYSaWr/DUQ9f/8ITCT0aN7byC
+      - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/solid.min.css
+        integrity: sha384-HMy1VqP4zke4zzaS+hmFgbW3QXDYD+qtueW3unq30MTgdOnarIgANSya8s5qKRh5
     low_priority:
-      - src: webcache|@fortawesome/fontawesome-free@6.5.1/css/brands.min.css
-        integrity: sha384-/BRyRRN0wxxRgh/DAXU621go9pdoMHl6LFPiX5Pp8PZYZlKBQCDXj9X9DHx6LOud
-      - src: webcache|@fortawesome/fontawesome-free@6.5.1/css/v5-font-face.min.css
-        integrity: sha384-/mBKnLlGtog8q2qQrgugURRDV+iHWHAPvM5KulYXT1C2ErKOKkBI0vbff8ZPq7rL
-      - src: webcache|@fortawesome/fontawesome-free@6.5.1/css/v4-font-face.min.css
-        integrity: sha384-d2Yn1/9Iw78r3oqwk5B+EcpRcmepXR5LyhmRF2a+WoSe9mpRGvVk0ZviFwDGDOTO
+      - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/brands.min.css
+        integrity: sha384-IzIkDWjFFaoFz413tu2x9R4cMiJ3EGuxOf/7Q8X0LFhqz9fU5zT2go7BgenYdKgN
+      - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/v5-font-face.min.css
+        integrity: sha384-691KBFHHuy2pnDTyR36VZ90jy7dXWBfC5D1nzy5rkDlqQQ/vRs/nmmK++LBfAp/C
+      - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/v4-font-face.min.css
+        integrity: sha384-7c0mz5ReY2wCEDKNNEdrKdbtS/6+5dEgNsz/dU3e9m7xldAdTFwNTAuX+s4sJHJl
   aos:
-    src: webcache|@reimujs/aos@0.1.0/dist/aos.css
-    integrity: sha384-4NN3fZ5AokFyHuoihl7A9qWaCt+HsAtOaUsXwJGRb4/SMBtFr2vcNSHR5E8dg0Wk
+    src: webcache|@reimujs/aos@0.1.2/dist/aos.css
+    integrity: sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa
   aplayer:
     src: webcache|aplayer@1.10.1/dist/APlayer.min.css
     integrity: sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU/voDBY5XE2lVh
