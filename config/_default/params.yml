@@ -374,8 +374,8 @@ giscus:
   strict: "0"
   reactions_enabled: "1"
   emit_metadata: "0"
-  input_position: "top"
-  theme: "dark_tritanopia"
+  input_position: "bottom"
+  theme: "dark"
   lang: "en"
   loading: "lazy"
 
