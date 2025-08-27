@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citra on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/citra/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/tags/citra/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Installation de Texture Packs sur l&#39;Émulateur Azahar</title>
+      <link>http://localhost:1313/fr/post/texture_pack_azahar/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/texture_pack_azahar/</guid>
+      <description>
+        <![CDATA[<h1>Installation de Texture Packs sur l'Émulateur Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h1 id="guide-complet--installation-de-texture-packs-sur-lémulateur-azahar">
+<a class="header-anchor" href="#guide-complet--installation-de-texture-packs-sur-l%c3%a9mulateur-azahar"></a>
+Guide Complet : Installation de Texture Packs sur l&rsquo;Émulateur Azahar
+</h1><h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p>L&rsquo;émulateur <strong>Azahar</strong>, basé sur Citra, permet d&rsquo;améliorer considérablement l&rsquo;expérience visuelle des jeux Nintendo 3DS grâce aux texture packs. Ces packs remplacent les textures originales par des versions haute définition, offrant des graphismes nettement améliorés.</p>
+<h2 id="étape-1--préparation-de-lémulateur">
+<a class="header-anchor" href="#%c3%a9tape-1--pr%c3%a9paration-de-l%c3%a9mulateur"></a>
+Étape 1 : Préparation de l&rsquo;Émulateur
+</h2><h3 id="11-activation-du-support-des-texture-packs">
+<a class="header-anchor" href="#11-activation-du-support-des-texture-packs"></a>
+1.1 Activation du Support des Texture Packs
+</h3><ol>
+<li>Dans Azahar, allez dans <strong>Emulation</strong> → <strong>Configure</strong></li>
+<li>Sélectionnez l&rsquo;onglet <strong>Graphics</strong></li>
+<li>Cochez <strong>Use Custom Textures</strong></li>
+<li>Cochez <strong>Preload Custom Textures</strong> (optionnel, améliore les performances)</li>
+<li>Cliquez sur <strong>OK</strong></li>
+</ol>
+<h2 id="étape-2--obtention-des-texture-packs">
+<a class="header-anchor" href="#%c3%a9tape-2--obtention-des-texture-packs"></a>
+Étape 2 : Obtention des Texture Packs
+</h2><h3 id="31-sources-recommandées">
+<a class="header-anchor" href="#31-sources-recommand%c3%a9es"></a>
+3.1 Sources Recommandées
+</h3><ul>
+<li><strong>Compilation Pack de Texture</strong> : <a href="https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk">https://vikingfile.com/folder/-ryt9sVCLmtmdMo4zGrv5NfgK2MeJHIc_Y_2uVDYaYk</a> (Lien temporaire, je le mettrais à jour soon)</li>
+</ul>
+<h3 id="32-vérification-de-la-compatibilité">
+<a class="header-anchor" href="#32-v%c3%a9rification-de-la-compatibilit%c3%a9"></a>
+3.2 Vérification de la Compatibilité
+</h3><p>Assurez-vous que le texture pack correspond à :</p>
+        
+        <hr><p>Publié le 2025-08-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
+      <link>http://localhost:1313/fr/post/cheat_citra/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/cheat_citra/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à utiliser les codes de triche sur l&rsquo;émulateur Citra pour Nintendo 3DS. Guide complet avec exemples pratiques, troubleshooting et bonnes pratiques.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Citra</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation et configuration de Azahar</title>
+      <link>http://localhost:1313/fr/post/citra/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/citra/</guid>
+      <description>
+        <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+      </description>
+      
+        <category>gaming</category><category>Tutoriels</category>
+      
+    </item>
+    
+  </channel>
+</rss>

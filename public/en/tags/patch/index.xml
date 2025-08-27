@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patch on Wiki of Axekin</title>
+    <link>http://localhost:1313/en/tags/patch/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/en/tags/patch/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Unsteam - Playing Co-op with Patched Games</title>
+      <link>http://localhost:1313/en/post/unsteam/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/unsteam/</guid>
+      <description>
+        <![CDATA[<h1>Unsteam - Playing Co-op with Patched Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to use Unsteam to play online co-op with patched games. Complete guide with Steam API emulation and multiplayer setup.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>SteamAutoCrack - Automatically Patch Steam Games</title>
+      <link>http://localhost:1313/en/post/sac/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/sac/</guid>
+      <description>
+        <![CDATA[<h1>SteamAutoCrack - Automatically Patch Steam Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to use SteamAutoCrack to automatically patch Steam games. Complete tutorial with API configuration and installation.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+  </channel>
+</rss>

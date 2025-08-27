@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RPCS3 on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/rpcs3/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/tags/rpcs3/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Guide Netplay (RPCN) pour RPCS3</title>
+      <link>http://localhost:1313/fr/post/rpcs3_mp/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/rpcs3_mp/</guid>
+      <description>
+        <![CDATA[<h1>Guide Netplay (RPCN) pour RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à configurer et utiliser le Netplay de RPCS3 (RPCN). Ce guide couvre la configuration globale, les réglages par jeu, les correctifs de connectivité et la récupération de compte RPCN.
+        
+        <hr><p>Publié le 2025-08-12 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-12</p>]]>
+      </description>
+      
+        <category>RPCS3</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation et Configuration de RPCS3</title>
+      <link>http://localhost:1313/fr/post/rpcs3/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/rpcs3/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-rpcs3">
+<a class="header-anchor" href="#-introduction-%c3%a0-rpcs3"></a>
+🎮 Introduction à RPCS3
+</h2><p><strong>RPCS3</strong> est l&rsquo;émulateur PlayStation 3 open-source le plus avancé au monde. Écrit en C++, il utilise une approche hybride combinant interprétation et recompilation pour émuler l&rsquo;architecture Cell de la PS3. Après des années de développement, il offre maintenant une compatibilité impressionnante avec plus de 60% des jeux PS3.</p>
+<blockquote>
+<p>⚠️ <strong>Avis légal</strong> : Cet émulateur est destiné à jouer uniquement les jeux que vous possédez légalement. L&rsquo;émulation à des fins de sauvegarde et de recherche est légale, mais le piratage ne l&rsquo;est pas.</p>
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+      </description>
+      
+        <category>RPCS3</category>
+      
+    </item>
+    
+  </channel>
+</rss>

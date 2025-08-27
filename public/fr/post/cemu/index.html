@@ -1,0 +1,2084 @@
+<!doctype html>
+<html
+  lang="fr" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Installation et configuration de Cemu | Axekin
+</title>
+<meta
+  name="description"
+  content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo Wii U Cemu"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Installation et configuration de Cemu | Axekin" />
+  <meta
+    property="og:description"
+    content="Tutoriel détaillé pour installer, configurer et utiliser l&#39;émulateur Nintendo Wii U Cemu"
+  />
+  <meta property="og:url" content="http://localhost:1313/fr/post/cemu/" />
+  <meta
+    property="og:site_name"
+    content="Wiki de Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/cemu.webp"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-14T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-14T00:00:00&#43;00:00" /><meta property="article:tag" content="CemuNintendo Wii UÉmulationGaming" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/cemu.webp" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Chargement en cours...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+Cet article n&#39;a pas de version linguistique correspondante
+</div>
+<div id="heatmap-tooltip"></div><div class="notification-wrapper">
+    <h1>Nouvelle version disponible</h1>
+    <p>Le site semble avoir du nouveau contenu, voulez-vous mettre à jour ?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Mettre à jour</button>
+      <button id="notification-close-btn">Annuler</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/fr/">Accueil</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/fr/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/fr/about">À propos</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Rechercher"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">Français</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr" class="selected" >Français</li><li data-value="en"  >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['en'] = '\/en\/post\/cemu\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'fr') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/cemu.webp" alt="Installation et configuration de Cemu"><div id="header-outer">
+    <div id="header-title"><a href="/fr/" id="logo">
+            <h1 data-aos="fade-down">Installation et configuration de Cemu</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Sommaire</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-cemu">🎮 Introduction à Cemu</a></li>
+    <li><a href="#-étape-1--téléchargement-de-cemu">🔧 Étape 1 : Téléchargement de Cemu</a>
+      <ul>
+        <li><a href="#option-recommandée--version-officielle">Option recommandée : Version officielle</a></li>
+      </ul>
+    </li>
+    <li><a href="#-téléchargement-de-vos-jeux">📦 Téléchargement de vos jeux</a>
+      <ul>
+        <li><a href="#étape-1--accéder-à-la-bibliothèque-de-jeux">Étape 1 : Accéder à la bibliothèque de jeux</a></li>
+        <li><a href="#étape-2--télécharger-le-jeu">Étape 2 : Télécharger le jeu</a></li>
+        <li><a href="#étape-3--extraction-du-fichier">Étape 3 : Extraction du fichier</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a>
+      <ul>
+        <li><a href="#types-de-contenu">Types de contenu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-configuration-portable-recommandé">💡 Configuration portable (Recommandé)</a>
+      <ul>
+        <li><a href="#structure-dinstallation-portable">Structure d&rsquo;installation portable</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-optimale">⚙️ Étape 4 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-graphique-optimale">Configuration graphique optimale</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--graphics-packs-et-mods">🎨 Étape 5 : Graphics Packs et mods</a>
+      <ul>
+        <li><a href="#installation-des-graphics-packs">Installation des Graphics Packs</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+        <li><a href="#formats-de-jeux">Formats de jeux</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/fr/categories/" aria-label="sidebar-state-category-link">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      13
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/fr/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">66</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-06-14 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-14</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-14</time
+    >
+  </span></div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/fr/categories/cemu"
+      data-aos="zoom-in"
+      >CEMU</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="-introduction-à-cemu">
+<a class="header-anchor" href="#-introduction-%c3%a0-cemu"></a>
+🎮 Introduction à Cemu
+</h2><p><strong>Cemu</strong> est l&rsquo;émulateur Nintendo Wii U le plus performant et abouti disponible. Développé depuis 2015, il permet de jouer aux exclusivités Wii U sur PC avec des améliorations graphiques spectaculaires, des mods et une compatibilité excellente.</p>
+<h2 id="-étape-1--téléchargement-de-cemu">
+<a class="header-anchor" href="#-%c3%a9tape-1--t%c3%a9l%c3%a9chargement-de-cemu"></a>
+🔧 Étape 1 : Téléchargement de Cemu
+</h2><h3 id="option-recommandée--version-officielle">
+<a class="header-anchor" href="#option-recommand%c3%a9e--version-officielle"></a>
+Option recommandée : Version officielle
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Site officiel</span>
+</span></span><span style="display:flex;"><span>https://github.com/cemu-project/Cemu/releases
+</span></span></code></pre></div><ol>
+<li><strong>Cliquez</strong> sur l&rsquo;OS où vous êtes</li>
+<li><strong>Téléchargez</strong> <code>cemu_X.X.X. zip</code> (version la plus récente)</li>
+<li><strong>Extrayez</strong> dans un dossier dédié (ex: <code>Emulateurs\Cemu</code> ou à la racine d&rsquo;un disque secondaire)</li>
+</ol>
+<h2 id="-téléchargement-de-vos-jeux">
+<a class="header-anchor" href="#-t%c3%a9l%c3%a9chargement-de-vos-jeux"></a>
+📦 Téléchargement de vos jeux
+</h2><h3 id="étape-1--accéder-à-la-bibliothèque-de-jeux">
+<a class="header-anchor" href="#%c3%a9tape-1--acc%c3%a9der-%c3%a0-la-biblioth%c3%a8que-de-jeux"></a>
+Étape 1 : Accéder à la bibliothèque de jeux
+</h3><p>Rendez-vous sur <strong><a href="https://www.axekin.com/games?platform=wiiu">🎮 Axekin Games - Nintendo Wii U</a></strong> pour accéder à la collection de jeux Nintendo Wii U.</p>
+<h3 id="étape-2--télécharger-le-jeu">
+<a class="header-anchor" href="#%c3%a9tape-2--t%c3%a9l%c3%a9charger-le-jeu"></a>
+Étape 2 : Télécharger le jeu
+</h3><ol>
+<li><strong>Recherchez</strong> le jeu désiré dans la liste</li>
+<li><strong>Cliquez</strong> sur le bouton de téléchargement</li>
+<li><strong>Attendez</strong> la fin du téléchargement</li>
+</ol>
+<h3 id="étape-3--extraction-du-fichier">
+<a class="header-anchor" href="#%c3%a9tape-3--extraction-du-fichier"></a>
+Étape 3 : Extraction du fichier
+</h3><p>Une fois le téléchargement terminé, <strong>extrayez</strong> l&rsquo;archive avec l&rsquo;un de ces logiciels :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Logiciel</th>
+          <th>Lien de téléchargement</th>
+          <th>Compatibilité</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Télécharger 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Télécharger WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Astuce</strong> : 7-Zip est gratuit et open-source, tandis que WinRAR nécessite une licence après la période d&rsquo;essai.</p></blockquote>
+<p><strong>Résultat</strong> : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec Cemu ! 🎯</p>
+<h2 id="-étape-2--structure-des-dossiers">
+<a class="header-anchor" href="#-%c3%a9tape-2--structure-des-dossiers"></a>
+📁 Étape 2 : Structure des dossiers
+</h2><p>Pour une organisation optimale de votre bibliothèque, voici l&rsquo;arborescence conseillée :</p>
+<pre tabindex="0"><code>Jeux Wii U/
+    Super Mario 3D World/
+   ├── BASE
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)   
+    Zelda Breath Of The Wild/
+   ├── BASE
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)
+   ├── UPDATE     
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)            
+   ├── DLC   
+   │   ├── code/      # 🎮 Code du jeu (fichier .rpx principal)
+   │   ├── content/   # 📁 Contenu du jeu (textures, audio, etc.)
+   │   └── meta/      # 📋 Métadonnées (icône, titre, etc.)    
+            
+</code></pre><h3 id="types-de-contenu">
+<a class="header-anchor" href="#types-de-contenu"></a>
+Types de contenu
+</h3><div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Comprendre les dossiers
+    </p>
+    <div class="admonition-content">
+        <ul>
+<li><strong>code/</strong> 📁 : Contient le fichier .rpx principal du jeu</li>
+<li><strong>content/</strong> 📁 : Assets du jeu (textures, sons, vidéos)</li>
+<li><strong>meta/</strong> 📁 : Métadonnées et icônes</li>
+<li><strong>Updates/</strong> 📁 : Mises à jour des jeux (importantes pour la compatibilité)</li>
+</ul>
+
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Avantages de cette organisation
+    </p>
+    <div class="admonition-content">
+        ✅ <strong>Détection automatique</strong> : Cemu scanne et ajoute automatiquement les jeux<br>
+✅ <strong>Gestion simplifiée</strong> : Interface claire dans Cemu<br>
+✅ <strong>Mises à jour faciles</strong> : Dossier dédié pour les updates et DLC
+✅ <strong>Compatibilité maximale</strong> : Structure respectant le format Wii U officiel
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h2 id="-configuration-portable-recommandé">
+<a class="header-anchor" href="#-configuration-portable-recommand%c3%a9"></a>
+💡 Configuration portable (Recommandé)
+</h2><div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Installation portable
+    </p>
+    <div class="admonition-content">
+        Cemu est portable par défaut. Toutes les configurations sont stockées dans le dossier <code>mlc01</code> d&rsquo;installation, facilitant les sauvegardes et la portabilité.
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h3 id="structure-dinstallation-portable">
+<a class="header-anchor" href="#structure-dinstallation-portable"></a>
+Structure d&rsquo;installation portable
+</h3><pre tabindex="0"><code>📁 Cemu/
+├── 🎮 Cemu.exe
+├── 📁 gameProfiles/      # Profils de jeux
+├── 📁 graphicPacks/      # Packs graphiques et mods
+├── 📁 memorySearcher/    # Outils de recherche mémoire
+├── 📁 mlc01/            # Données système Wii U virtuelles
+├── 📁 shaderCache/      # Cache des shaders compilés
+└── 📄 settings.xml      # Configuration principale
+</code></pre><div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Avantages du mode portable
+    </p>
+    <div class="admonition-content">
+        <strong>✅ Facilité de sauvegarde</strong> : Un seul dossier à sauvegarder<br>
+<strong>✅ Portabilité totale</strong> : Déplaçable sur n&rsquo;importe quel PC<br>
+<strong>✅ Configurations préservées</strong> : Aucune perte lors de réinstallation<br>
+<strong>✅ Partage simplifié</strong> : Configuration facilement partageable
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h2 id="-étape-3--installation-et-premier-lancement">
+<a class="header-anchor" href="#-%c3%a9tape-3--installation-et-premier-lancement"></a>
+⚙️ Étape 3 : Installation et premier lancement
+</h2><h3 id="premier-lancement">
+<a class="header-anchor" href="#premier-lancement"></a>
+Premier lancement
+</h3><ol>
+<li><strong>Exécutez</strong> <code>Cemu.exe</code> en tant qu&rsquo;administrateur (premier lancement uniquement)</li>
+<li><strong>Définissez</strong> le dossier des jeux dans <code>Game paths</code></li>
+<li><strong>Ajoutez</strong> votre dossier &ldquo;Jeux Wii U&rdquo;</li>
+<li><strong>Téléchargez</strong> les packs graphiques</li>
+<li><strong>Vérifiez</strong> que les jeux apparaissent dans la bibliothèque</li>
+</ol>
+<ul>
+<li>Cliquez ensuite sur Close, on vas configurer la manette plus tard</li>
+</ul>
+<h2 id="-étape-4--configuration-optimale">
+<a class="header-anchor" href="#-%c3%a9tape-4--configuration-optimale"></a>
+⚙️ Étape 4 : Configuration optimale
+</h2><h3 id="paramètres-généraux">
+<a class="header-anchor" href="#param%c3%a8tres-g%c3%a9n%c3%a9raux"></a>
+Paramètres généraux
+</h3><pre tabindex="0"><code>Options → General settings
+</code></pre><p><strong>Onglet General :</strong></p>
+<ul>
+<li><strong>Interface language</strong> : Français</li>
+<li><strong>Discord Presence</strong> : ✅ Activé (optionnel)</li>
+<li><strong>Check for updates</strong> : ✅ Activé</li>
+</ul>
+<h3 id="configuration-graphique-optimale">
+<a class="header-anchor" href="#configuration-graphique-optimale"></a>
+Configuration graphique optimale
+</h3><pre tabindex="0"><code>Options → General settings → Graphics
+</code></pre><h4 id="onglet-general">
+<a class="header-anchor" href="#onglet-general"></a>
+Onglet General
+</h4><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur recommandée</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Graphics API</strong></td>
+          <td>Vulkan</td>
+          <td>Meilleures performances (OpenGL si problèmes)</td>
+      </tr>
+      <tr>
+          <td><strong>Graphics Device</strong></td>
+          <td>Votre GPU principal</td>
+          <td>GPU le plus puissant disponible</td>
+      </tr>
+      <tr>
+          <td><strong>VSync</strong></td>
+          <td>✅ Activé</td>
+          <td>Évite le screen tearing</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Laissez le reste des paramètres par défaut, ça suffit</li>
+</ul>
+<h3 id="configuration-audio">
+<a class="header-anchor" href="#configuration-audio"></a>
+Configuration audio
+</h3><pre tabindex="0"><code>Options → General settings → Audio
+</code></pre><ul>
+<li><strong>Audio API</strong> : XAudio2 (Windows) ou DirectSound</li>
+<li><strong>Audio channels</strong> : Stereo ou 5.1 selon votre configuration</li>
+</ul>
+<h3 id="configuration-des-contrôles">
+<a class="header-anchor" href="#configuration-des-contr%c3%b4les"></a>
+Configuration des contrôles
+</h3><h4 id="méthode-automatique-pour-manette">
+<a class="header-anchor" href="#m%c3%a9thode-automatique-pour-manette"></a>
+Méthode automatique pour manette
+</h4><pre tabindex="0"><code>Options → Input settings
+</code></pre><ol>
+<li><strong>Emulated controller</strong> : Wii U GamePad</li>
+<li><strong>Controller API</strong> : XInput (manettes Xbox) ou DirectInput</li>
+<li><strong>Cliquez</strong> sur &ldquo;Calibrate&rdquo;</li>
+<li><strong>Suivez</strong> les instructions à l&rsquo;écran</li>
+<li><strong>Testez</strong> tous les boutons et joysticks</li>
+</ol>
+<h2 id="-étape-5--graphics-packs-et-mods">
+<a class="header-anchor" href="#-%c3%a9tape-5--graphics-packs-et-mods"></a>
+🎨 Étape 5 : Graphics Packs et mods
+</h2><h3 id="installation-des-graphics-packs">
+<a class="header-anchor" href="#installation-des-graphics-packs"></a>
+Installation des Graphics Packs
+</h3><ol>
+<li><strong>Téléchargez</strong> les Graphics Packs : <code>Options → Download community graphic packs</code></li>
+<li><strong>Redémarrez</strong> Cemu</li>
+<li><strong>Configurez</strong> par jeu : Clic droit sur un jeu → <code>Edit graphic packs</code></li>
+</ol>
+<p><strong>Sites recommandés pour les mods :</strong></p>
+<ul>
+<li><strong>GameBanana</strong> : <a href="https://gamebanana.com">gamebanana.com</a></li>
+<li><strong>NexusMods</strong> : <a href="https://nexusmods.com">nexusmods.com</a></li>
+<li><strong>Reddit r/cemu</strong> : Communauté active et support</li>
+</ul>
+<h2 id="-faq---questions-fréquemment-posées">
+<a class="header-anchor" href="#-faq---questions-fr%c3%a9quemment-pos%c3%a9es"></a>
+❓ FAQ - Questions fréquemment posées
+</h2><h3 id="questions-générales">
+<a class="header-anchor" href="#questions-g%c3%a9n%c3%a9rales"></a>
+Questions générales
+</h3><p><strong>Q : Tous les jeux Wii U fonctionnent-ils sur Cemu ?</strong>
+<strong>R :</strong> Environ 95% des jeux sont parfaitement jouables. Consultez la liste de compatibilité officielle sur le site de Cemu.</p>
+<p><strong>Q : Puis-je utiliser mes sauvegardes de vraie Wii U ?</strong>
+<strong>R :</strong> Oui, avec Saviine ou des homebrew dédiés, vous pouvez transférer vos sauvegardes.</p>
+<p><strong>Q : Le GamePad fonctionne-t-il vraiment ?</strong>
+<strong>R :</strong> Oui, l&rsquo;écran tactile est émulé avec la souris et l&rsquo;interface GamePad est parfaitement fonctionnelle.</p>
+<h3 id="questions-techniques">
+<a class="header-anchor" href="#questions-techniques"></a>
+Questions techniques
+</h3><p><strong>Q : Vulkan ou OpenGL ?</strong>
+<strong>R :</strong> Vulkan offre généralement de meilleures performances. Utilisez OpenGL en cas de problèmes de compatibilité.</p>
+<p><strong>Q : Pourquoi les shaders mettent-ils du temps à compiler ?</strong>
+<strong>R :</strong> C&rsquo;est normal lors du premier lancement d&rsquo;un jeu. Les shaders sont ensuite mis en cache pour les sessions suivantes.</p>
+<h3 id="problèmes-courants">
+<a class="header-anchor" href="#probl%c3%a8mes-courants"></a>
+Problèmes courants
+</h3><p><strong>Q : Le jeu se ferme brutalement ?</strong>
+<strong>R :</strong> Vérifiez les Graphics Packs activés, mettez à jour Cemu et vos pilotes GPU.</p>
+<p><strong>Q : L&rsquo;audio est saccadé ?</strong>
+<strong>R :</strong> Augmentez la latence audio à 64ms ou changez d&rsquo;API audio (XAudio2/DirectSound).</p>
+<p><strong>Q : Les textures sont floues ?</strong>
+<strong>R :</strong> Activez le filtrage anisotrope 16x et vérifiez que la résolution est correctement configurée.</p>
+<h3 id="formats-de-jeux">
+<a class="header-anchor" href="#formats-de-jeux"></a>
+Formats de jeux
+</h3><p><strong>Q : Quelle est la différence entre .wud et .wux ?</strong>
+<strong>R :</strong> .wux est une version compressée de .wud. Les deux fonctionnent parfaitement, .wux économise l&rsquo;espace disque.</p>
+<p><strong>Q : Comment installer des DLC et mises à jour ?</strong>
+<strong>R :</strong> Placez-les dans le dossier Updates/ avec la même structure que les jeux de base.</p>
+<div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Résultat final
+    </p>
+    <div class="admonition-content">
+        <strong>🎉 Félicitations !</strong> Vous avez maintenant un Cemu parfaitement configuré pour profiter des exclusivités Wii U en haute définition avec des performances optimales !
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<p><strong>Profitez de vos jeux Wii U en 4K avec des mods incroyables ! 🎮✨</strong></p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Auteur : </strong>Axekin @ Wiki de Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Lien permanent : </strong><a href="http://localhost:1313/fr/post/cemu/">http://localhost:1313/fr/post/cemu/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Titre : </strong>Installation et configuration de Cemu</p><p><strong><span class="icon-calendar icon"></span>Publié le : </strong>2025-06-14 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Mis à jour le : </strong>2025-06-14 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>Licence : </strong>
+      Tous les articles de ce blog sont sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> sauf mention contraire. Veuillez indiquer la source lors de la reproduction !
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/fr/post/cemu/" target="_blank" rel="noopener noreferrer" title="Installation et configuration de Cemu">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=http://localhost:1313/fr/post/cemu/&amp;text=Installation%20et%20configuration%20de%20Cemu&amp;via=http://localhost:1313/" target="_blank" rel="noopener noreferrer" title="Installation et configuration de Cemu">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=http://localhost:1313/fr/post/cemu/&amp;title=Installation%20et%20configuration%20de%20Cemu&amp;summary=Tutoriel%20d%c3%a9taill%c3%a9%20pour%20installer,%20configurer%20et%20utiliser%20l%27%c3%a9mulateur%20Nintendo%20Wii%20U%20Cemu&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Installation et configuration de Cemu">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=http://localhost:1313/fr/post/cemu/&amp;title=Installation%20et%20configuration%20de%20Cemu" target="_blank" rel="noopener noreferrer" title="Installation et configuration de Cemu">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Installation et configuration de Cemu">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/cemu"
+        rel="tag"
+        >CEMU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/nintendo-wii-u"
+        rel="tag"
+        >NINTENDO WII U</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/%c3%a9mulation"
+        rel="tag"
+        >ÉMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/fr/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/ryujinx-cheats-mods.webp"
+            data-sizes="auto"
+            alt="Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx"
+            class="lazyload"
+          /><a href="/fr/post/cheat_ryujinx/"></a>
+        <div class="article-nav-caption">Plus récent</div>
+        <h3 class="article-nav-title">Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/rpcs3.png"
+            data-sizes="auto"
+            alt="Guide Netplay (RPCN) pour RPCS3"
+            class="lazyload"
+          /><a href="/fr/post/rpcs3_mp/"></a>
+        <div class="article-nav-caption">Plus ancien</div>
+        <h3 class="article-nav-title">Guide Netplay (RPCN) pour RPCS3</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">Laisser un commentaire</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     >
+    </div></div>
+</section></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        Propulsé par&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;22.9k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:57</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Vues totales&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Visiteurs uniques&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Sommaire</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-à-cemu">🎮 Introduction à Cemu</a></li>
+    <li><a href="#-étape-1--téléchargement-de-cemu">🔧 Étape 1 : Téléchargement de Cemu</a>
+      <ul>
+        <li><a href="#option-recommandée--version-officielle">Option recommandée : Version officielle</a></li>
+      </ul>
+    </li>
+    <li><a href="#-téléchargement-de-vos-jeux">📦 Téléchargement de vos jeux</a>
+      <ul>
+        <li><a href="#étape-1--accéder-à-la-bibliothèque-de-jeux">Étape 1 : Accéder à la bibliothèque de jeux</a></li>
+        <li><a href="#étape-2--télécharger-le-jeu">Étape 2 : Télécharger le jeu</a></li>
+        <li><a href="#étape-3--extraction-du-fichier">Étape 3 : Extraction du fichier</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-2--structure-des-dossiers">📁 Étape 2 : Structure des dossiers</a>
+      <ul>
+        <li><a href="#types-de-contenu">Types de contenu</a></li>
+      </ul>
+    </li>
+    <li><a href="#-configuration-portable-recommandé">💡 Configuration portable (Recommandé)</a>
+      <ul>
+        <li><a href="#structure-dinstallation-portable">Structure d&rsquo;installation portable</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-3--installation-et-premier-lancement">⚙️ Étape 3 : Installation et premier lancement</a>
+      <ul>
+        <li><a href="#premier-lancement">Premier lancement</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-4--configuration-optimale">⚙️ Étape 4 : Configuration optimale</a>
+      <ul>
+        <li><a href="#paramètres-généraux">Paramètres généraux</a></li>
+        <li><a href="#configuration-graphique-optimale">Configuration graphique optimale</a></li>
+        <li><a href="#configuration-audio">Configuration audio</a></li>
+        <li><a href="#configuration-des-contrôles">Configuration des contrôles</a></li>
+      </ul>
+    </li>
+    <li><a href="#-étape-5--graphics-packs-et-mods">🎨 Étape 5 : Graphics Packs et mods</a>
+      <ul>
+        <li><a href="#installation-des-graphics-packs">Installation des Graphics Packs</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---questions-fréquemment-posées">❓ FAQ - Questions fréquemment posées</a>
+      <ul>
+        <li><a href="#questions-générales">Questions générales</a></li>
+        <li><a href="#questions-techniques">Questions techniques</a></li>
+        <li><a href="#problèmes-courants">Problèmes courants</a></li>
+        <li><a href="#formats-de-jeux">Formats de jeux</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Articles</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/fr/categories/" aria-label="sidebar-state-category-link">
+    <div>Catégories</div>
+    <div class="sidebar-state-number">
+      13
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/fr/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">66</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/"
+        aria-label="Accueil"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Accueil</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/fr/about"
+        aria-label="À propos"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">À propos</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Rechercher.....',
+          "hits_empty": 'Aucun résultat trouvé pour 「${query}」',
+          "hits_stats": '${hits} résultats trouvés (en ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-aagKMe8nkqaP2DYQc8kkYOL5l&#43;M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Installation et configuration de Cemu",
+          url: "http:\/\/localhost:1313\/fr\/post\/cemu\/",
+          description: "Tutoriel détaillé pour installer, configurer et utiliser l\u0027émulateur Nintendo Wii U Cemu",
+          cover: "http:\/\/localhost:1313\/images\/covers\/cemu.webp",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/valine@1.5.1\/dist\/Valine.min.js',
+          !'webcache|valine@1.5.1\/dist\/Valine.min.js'.startsWith('local') ? 'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE\u002bs5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn' : undefined
+        );
+        script.onload = () => {
+          const GUEST_INFO = ['nick', 'mail', 'link'];
+          const guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          const recordIP = JSON.parse('true');
+          const highlight = JSON.parse('true');
+          const visitor = JSON.parse('false');
+          const serverURLs = undefined;
+
+          new Valine({
+            el: '.valine-comment',
+            appId: "",
+            appKey: "",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: document.documentElement.lang || 'en',
+            recordIP: recordIP,
+            highlight: highlight,
+            visitor: visitor,
+            requiredFields: guest_info,
+            path: window.location.pathname,
+            serverURLs,
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: false,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: '',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/twikoo@1.6.44\/dist\/twikoo.all.min.js',
+          !'webcache|twikoo@1.6.44\/dist\/twikoo.all.min.js'.startsWith('local') ? 'sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk\u002bkQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K' : undefined
+        );
+        script.onload = () => {
+          twikoo.init({
+            envId: '',
+            el: '.twikoo-comment',
+            region: '',
+            lang: document.documentElement.lang || 'en',
+          });
+          twikoo.getCommentsCount({
+            envId: '',
+            region: '',
+            urls: [
+              'http\/\/localhost1313\/fr\/post\/cemu\/'
+            ],
+            includeReply: false
+          }).then((res) => {
+            document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+          }).catch((err) => {
+            console.error(err);
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/gitalk@1.8.0\/dist\/gitalk.min.js',
+          !'webcache|gitalk@1.8.0\/dist\/gitalk.min.js'.startsWith('local') ? 'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU\/lcEH5O8eVbSDhbPwsiVUTp\/aGX\/z\/5EuMA' : undefined
+        );
+        script.onload = () => {
+          if ( false ) {
+            
+            const md5Script = loadScript(
+              'https:\/\/npm.webcache.cn\/blueimp-md5@2.19.0\/js\/md5.min.js',
+              !'webcache|blueimp-md5@2.19.0\/js\/md5.min.js'.startsWith('local') ? 'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr\/gZlbkHkL6vTthxH' : undefined
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            
+            initGitalk();
+          }
+        };
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          let gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: JSON.parse("null"),
+            id: location.pathname,
+            distractionFreeMode: false,
+            language: document.documentElement.lang || 'en',
+          });
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: true,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+
+        const docLang = document.documentElement.lang || 'en';
+        const langBase = docLang.split('-')[0];
+        const supportedLangs = ['ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'en', 
+        'eo', 'es', 'eu', 'fa', 'fr', 'gr', 'hbs', 'he', 'hu', 'id', 'it', 'ja', 
+        'kh', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'th', 'tr', 'uk', 'uz', 'vi', 'zh-CN', 'zh-HK', 'zh-TW'];
+        const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
+
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', 'Announcements');
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '');
+        giscusScript.setAttribute('data-emit-metadata', '');
+        giscusScript.setAttribute('data-input-position', '');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', giscusLang);
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  };
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'giscus';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" ></script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>

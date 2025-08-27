@@ -1,0 +1,1468 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Setting up XLink Kai with Ryujinx | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for configuring XLink Kai with the Nintendo Switch emulator Ryujinx for multiplayer gaming"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Setting up XLink Kai with Ryujinx | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for configuring XLink Kai with the Nintendo Switch emulator Ryujinx for multiplayer gaming"
+  />
+  <meta property="og:url" content="http://localhost:1313/en/post/ryujinx_lan/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/ryujinx.png"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-03T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-03T00:00:00&#43;00:00" /><meta property="article:tag" content="RyujinxXLink KaiNintendo SwitchEmulationMultiplayer" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/ryujinx.png" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/ryujinx_lan\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/ryujinx.png" alt="Setting up XLink Kai with Ryujinx"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="fade-down">Setting up XLink Kai with Ryujinx</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xlink-kai--ryujinx">🎮 Introduction to XLink Kai + Ryujinx</a></li>
+    <li><a href="#-what-works">📋 What works</a></li>
+    <li><a href="#-what-doesnt-work">❌ What doesn&rsquo;t work</a></li>
+    <li><a href="#-connection-types">🌐 Connection types</a>
+      <ul>
+        <li><a href="#lan-games">LAN Games</a></li>
+        <li><a href="#local-wireless-games">Local Wireless Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-network-configuration">🔧 Network Configuration</a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+      </ul>
+    </li>
+    <li><a href="#-installing-and-configuring-ryujinx">⚙️ Installing and Configuring Ryujinx</a>
+      <ul>
+        <li><a href="#network-settings">Network settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#-playing-a-game-on-xlink-kai">🎮 Playing a game on XLink Kai</a></li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      10
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">62</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-06-03 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-03</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-03</time
+    >
+  </span></div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/ryujinx"
+      data-aos="zoom-in"
+      >RYUJINX</a
+    ><a
+      class="article-category-link"
+      href="/en/categories/xlink-kai"
+      data-aos="zoom-in"
+      >XLINK KAI</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="-introduction-to-xlink-kai--ryujinx">
+<a class="header-anchor" href="#-introduction-to-xlink-kai--ryujinx"></a>
+🎮 Introduction to XLink Kai + Ryujinx
+</h2><p><strong>XLink Kai + Ryujinx</strong> allows players to emulate Nintendo Switch games over a network. This experimental integration enables you to play multiplayer with other Ryujinx users or even with real Nintendo Switch consoles.</p>
+<blockquote>
+<p>⚠️ <strong>Important note</strong>: XLink Kai + Ryujinx support is experimental and currently only available on Windows.</p></blockquote>
+<h2 id="-what-works">
+<a class="header-anchor" href="#-what-works"></a>
+📋 What works
+</h2><ul>
+<li>Nintendo Switch games with LAN support</li>
+<li>Nintendo Switch games with Local Wireless support</li>
+<li>Ryujinx playing against other Ryujinx players</li>
+<li>Ryujinx playing against players on Switch (CFW required for Local Wireless games)</li>
+<li>Ryujinx and local Switch playing together</li>
+<li>Mixing any combination of the above!</li>
+</ul>
+<h2 id="-what-doesnt-work">
+<a class="header-anchor" href="#-what-doesnt-work"></a>
+❌ What doesn&rsquo;t work
+</h2><ul>
+<li>macOS support not yet available</li>
+<li>Linux support not yet available</li>
+</ul>
+<h2 id="-connection-types">
+<a class="header-anchor" href="#-connection-types"></a>
+🌐 Connection types
+</h2><h3 id="lan-games">
+<a class="header-anchor" href="#lan-games"></a>
+LAN Games
+</h3><p>LAN games are the most widely supported and the following configurations can play together:</p>
+<ul>
+<li>Players using unmodified &ldquo;OFW&rdquo; Nintendo Switch and Nintendo Switch Lite systems</li>
+<li>Players using modified &ldquo;CFW&rdquo; Nintendo Switch systems</li>
+<li>Players using Ryujinx</li>
+</ul>
+<h3 id="local-wireless-games">
+<a class="header-anchor" href="#local-wireless-games"></a>
+Local Wireless Games
+</h3><p>Local Wireless games are a bit more restricted, but the following configurations can play together:</p>
+<ul>
+<li>Players using modified &ldquo;CFW&rdquo; Nintendo Switch systems with the ldn_mitm system module</li>
+<li>Players using Ryujinx</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: Unmodified &ldquo;OFW&rdquo; Nintendo Switch and Nintendo Switch Lite systems are not supported for Local Wireless games.</p></blockquote>
+<h2 id="-network-configuration">
+<a class="header-anchor" href="#-network-configuration"></a>
+🔧 Network Configuration
+</h2><h3 id="windows">
+<a class="header-anchor" href="#windows"></a>
+Windows
+</h3><p>These instructions are specific to Windows 10 and Windows 11. Older versions of Windows should follow a similar process.</p>
+<h4 id="installing-npcap">
+<a class="header-anchor" href="#installing-npcap"></a>
+Installing NPCAP
+</h4><p>Due to licensing issues, XLink Kai ships with WinPCAP which unfortunately is not compatible with loopback adapters. To solve this problem, you will need to install NPCAP. Version 1.31 is known to be stable.</p>
+<ol>
+<li><strong>Download</strong> NPCAP from <a href="https://npcap.com/#download">the official website</a></li>
+<li><strong>Install</strong> NPCAP with the default options (simply click &ldquo;Next&rdquo; until the end)</li>
+</ol>
+<h4 id="running-kailoopbackbridge">
+<a class="header-anchor" href="#running-kailoopbackbridge"></a>
+Running kaiLoopbackBridge
+</h4><ol>
+<li><strong>Open</strong> Windows Explorer and navigate to <code>C:\Program Files (x86)\XLink Kai\</code></li>
+<li><strong>Find</strong> <code>kaiLoopbackBridge64.exe</code>, right-click, <strong>Run as Administrator</strong></li>
+<li><strong>Read</strong> the warning, press any key to continue</li>
+<li><strong>Select</strong> Nintendo Switch as the emulator type</li>
+<li>The loopback adapter will now be automatically configured</li>
+<li><strong>Close</strong> kaiLoopbackBridge. We will use it again later.</li>
+</ol>
+<h2 id="-installing-and-configuring-ryujinx">
+<a class="header-anchor" href="#-installing-and-configuring-ryujinx"></a>
+⚙️ Installing and Configuring Ryujinx
+</h2><p>Ryujinx setup is quite simple, check the <a href="https://wiki.axekin.com/en/post/ryujinx/">Ryujinx Guide</a> for basic installation.</p>
+<h3 id="network-settings">
+<a class="header-anchor" href="#network-settings"></a>
+Network settings
+</h3><h4 id="for-lan-games">
+<a class="header-anchor" href="#for-lan-games"></a>
+For LAN Games
+</h4><ol>
+<li>Once Ryujinx is running, access the configuration by clicking <strong>Options</strong> then <strong>Settings</strong></li>
+<li>Click the <strong>System</strong> tab</li>
+<li>Check the <strong>Enable VSync</strong> box</li>
+<li>Check the <strong>Enable Guest Internet Access</strong> box</li>
+<li>Click the <strong>Multiplayer</strong> tab</li>
+<li>Under the LAN heading, set <strong>Network Interface</strong> to <strong>XLink Kai Loopback Switch XXXX</strong></li>
+<li><strong>Save</strong> the configuration and exit Ryujinx</li>
+</ol>
+<h4 id="for-local-wireless-games">
+<a class="header-anchor" href="#for-local-wireless-games"></a>
+For Local Wireless Games
+</h4><ol>
+<li>Once Ryujinx is running, access the configuration by clicking <strong>Options</strong> then <strong>Settings</strong></li>
+<li>Click the <strong>System</strong> tab</li>
+<li>Check the <strong>Enable VSync</strong> box</li>
+<li>Click the <strong>Network</strong> tab</li>
+<li>Uncheck the <strong>Enable Guest Internet Access</strong> box</li>
+<li>Under the Multiplayer heading, set <strong>Mode</strong> to <strong>ldn_mitm</strong></li>
+<li>Under the LAN heading, set <strong>Network Interface</strong> to <strong>XLink Kai Loopback Switch XXXX</strong></li>
+<li><strong>Save</strong> the configuration and exit Ryujinx</li>
+</ol>
+<h2 id="-playing-a-game-on-xlink-kai">
+<a class="header-anchor" href="#-playing-a-game-on-xlink-kai"></a>
+🎮 Playing a game on XLink Kai
+</h2><p>Since Ryujinx and XLink Kai cannot communicate directly with each other (yet), kaiLoopbackBridge is used as a &ldquo;bridge&rdquo; between them.</p>
+<ol>
+<li><strong>Start</strong> XLink Kai and log in</li>
+<li><strong>Start</strong> kaiLoopbackBridge, navigate through the prompts and keep it open for the entire duration of your gaming session. After a few seconds, XLink Kai will see a Nintendo Switch under the Metrics tab.</li>
+<li><strong>Start</strong> Ryujinx and launch your game. Ryujinx must not be running before you launch kaiLoopbackBridge.</li>
+<li><strong>Navigate</strong> to a game arena and play!</li>
+</ol>
+<div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Important advice
+    </p>
+    <div class="admonition-content">
+        <p>Make sure to always launch the applications in this order:</p>
+<ol>
+<li>XLink Kai</li>
+<li>kaiLoopbackBridge</li>
+<li>Ryujinx</li>
+</ol>
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<div class="admonition warning">
+    <p class="admonition-title"><i class="fas fa-exclamation-triangle fa-fw"></i>Troubleshooting
+    </p>
+    <div class="admonition-content">
+        <p>If you encounter connection problems:</p>
+<ul>
+<li>Check that all firewalls allow XLink Kai and Ryujinx</li>
+<li>Make sure the loopback adapter is properly configured</li>
+<li>Restart all applications in the correct order</li>
+</ul>
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<hr>
+<blockquote>
+<p><strong>Reminder</strong>: Emulation is legal if you legally own the games you emulate. Always support developers by buying their games.</p></blockquote>
+<p><strong>Enjoy multiplayer gaming with Ryujinx and XLink Kai! 🎮✨</strong>
+(This tutorial is based entirely on the official X Link Kai tutorial; I have simply updated it.)</p>
+<pre tabindex="0"><code></code></pre></div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="http://localhost:1313/en/post/ryujinx_lan/">http://localhost:1313/en/post/ryujinx_lan/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Setting up XLink Kai with Ryujinx</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-03 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-03 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/ryujinx_lan/" target="_blank" rel="noopener noreferrer" title="Setting up XLink Kai with Ryujinx">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=http://localhost:1313/en/post/ryujinx_lan/&amp;text=Setting%20up%20XLink%20Kai%20with%20Ryujinx&amp;via=http://localhost:1313/" target="_blank" rel="noopener noreferrer" title="Setting up XLink Kai with Ryujinx">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=http://localhost:1313/en/post/ryujinx_lan/&amp;title=Setting%20up%20XLink%20Kai%20with%20Ryujinx&amp;summary=Detailed%20tutorial%20for%20configuring%20XLink%20Kai%20with%20the%20Nintendo%20Switch%20emulator%20Ryujinx%20for%20multiplayer%20gaming&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Setting up XLink Kai with Ryujinx">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=http://localhost:1313/en/post/ryujinx_lan/&amp;title=Setting%20up%20XLink%20Kai%20with%20Ryujinx" target="_blank" rel="noopener noreferrer" title="Setting up XLink Kai with Ryujinx">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Setting up XLink Kai with Ryujinx">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/ryujinx"
+        rel="tag"
+        >RYUJINX</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/xlink-kai"
+        rel="tag"
+        >XLINK KAI</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/nintendo-switch"
+        rel="tag"
+        >NINTENDO SWITCH</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/multiplayer"
+        rel="tag"
+        >MULTIPLAYER</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/rpcs3.png"
+            data-sizes="auto"
+            alt="RPCS3 Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/rpcs3/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">RPCS3 Installation and Configuration</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Installing Texture Packs on Azahar Emulator"
+              class="lazyload"
+            /><a href="/en/post/texture_pack_azahar/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Installing Texture Packs on Azahar Emulator</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">Leave a comment</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     >
+    </div></div>
+</section></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        Powered by&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;19.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:43</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xlink-kai--ryujinx">🎮 Introduction to XLink Kai + Ryujinx</a></li>
+    <li><a href="#-what-works">📋 What works</a></li>
+    <li><a href="#-what-doesnt-work">❌ What doesn&rsquo;t work</a></li>
+    <li><a href="#-connection-types">🌐 Connection types</a>
+      <ul>
+        <li><a href="#lan-games">LAN Games</a></li>
+        <li><a href="#local-wireless-games">Local Wireless Games</a></li>
+      </ul>
+    </li>
+    <li><a href="#-network-configuration">🔧 Network Configuration</a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+      </ul>
+    </li>
+    <li><a href="#-installing-and-configuring-ryujinx">⚙️ Installing and Configuring Ryujinx</a>
+      <ul>
+        <li><a href="#network-settings">Network settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#-playing-a-game-on-xlink-kai">🎮 Playing a game on XLink Kai</a></li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      10
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">62</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Search.....',
+          "hits_empty": 'No results found for 「${query}」',
+          "hits_stats": 'Found ${hits} results (in ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-aagKMe8nkqaP2DYQc8kkYOL5l&#43;M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Setting up XLink Kai with Ryujinx",
+          url: "http:\/\/localhost:1313\/en\/post\/ryujinx_lan\/",
+          description: "Detailed tutorial for configuring XLink Kai with the Nintendo Switch emulator Ryujinx for multiplayer gaming",
+          cover: "http:\/\/localhost:1313\/images\/covers\/ryujinx.png",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/valine@1.5.1\/dist\/Valine.min.js',
+          !'webcache|valine@1.5.1\/dist\/Valine.min.js'.startsWith('local') ? 'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE\u002bs5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn' : undefined
+        );
+        script.onload = () => {
+          const GUEST_INFO = ['nick', 'mail', 'link'];
+          const guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          const recordIP = JSON.parse('true');
+          const highlight = JSON.parse('true');
+          const visitor = JSON.parse('false');
+          const serverURLs = undefined;
+
+          new Valine({
+            el: '.valine-comment',
+            appId: "",
+            appKey: "",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: document.documentElement.lang || 'en',
+            recordIP: recordIP,
+            highlight: highlight,
+            visitor: visitor,
+            requiredFields: guest_info,
+            path: window.location.pathname,
+            serverURLs,
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: false,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: '',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/twikoo@1.6.44\/dist\/twikoo.all.min.js',
+          !'webcache|twikoo@1.6.44\/dist\/twikoo.all.min.js'.startsWith('local') ? 'sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk\u002bkQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K' : undefined
+        );
+        script.onload = () => {
+          twikoo.init({
+            envId: '',
+            el: '.twikoo-comment',
+            region: '',
+            lang: document.documentElement.lang || 'en',
+          });
+          twikoo.getCommentsCount({
+            envId: '',
+            region: '',
+            urls: [
+              'http\/\/localhost1313\/en\/post\/ryujinx_lan\/'
+            ],
+            includeReply: false
+          }).then((res) => {
+            document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+          }).catch((err) => {
+            console.error(err);
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/gitalk@1.8.0\/dist\/gitalk.min.js',
+          !'webcache|gitalk@1.8.0\/dist\/gitalk.min.js'.startsWith('local') ? 'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU\/lcEH5O8eVbSDhbPwsiVUTp\/aGX\/z\/5EuMA' : undefined
+        );
+        script.onload = () => {
+          if ( false ) {
+            
+            const md5Script = loadScript(
+              'https:\/\/npm.webcache.cn\/blueimp-md5@2.19.0\/js\/md5.min.js',
+              !'webcache|blueimp-md5@2.19.0\/js\/md5.min.js'.startsWith('local') ? 'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr\/gZlbkHkL6vTthxH' : undefined
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            
+            initGitalk();
+          }
+        };
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          let gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: JSON.parse("null"),
+            id: location.pathname,
+            distractionFreeMode: false,
+            language: document.documentElement.lang || 'en',
+          });
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: true,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+
+        const docLang = document.documentElement.lang || 'en';
+        const langBase = docLang.split('-')[0];
+        const supportedLangs = ['ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'en', 
+        'eo', 'es', 'eu', 'fa', 'fr', 'gr', 'hbs', 'he', 'hu', 'id', 'it', 'ja', 
+        'kh', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'th', 'tr', 'uk', 'uz', 'vi', 'zh-CN', 'zh-HK', 'zh-TW'];
+        const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
+
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', 'Announcements');
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '');
+        giscusScript.setAttribute('data-emit-metadata', '');
+        giscusScript.setAttribute('data-input-position', '');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', giscusLang);
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  };
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'giscus';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" ></script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>

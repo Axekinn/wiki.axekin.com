@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo Switch on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/nintendo-switch/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/tags/nintendo-switch/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Installation et Configuration de Ryujinx</title>
+      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer et configurer Ryujinx pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation et Configuration de Eden</title>
+      <link>http://localhost:1313/fr/post/eden/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/eden/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer et configurer Eden (fork de Yuzu) pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+      </description>
+      
+        <category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
+      <link>http://localhost:1313/fr/post/amibo_switch/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/amibo_switch/</guid>
+      <description>
+        <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à utiliser des amiibo virtuels sur les émulateurs Yuzu et Ryujinx. Guide étape par étape avec téléchargement des fichiers et configuration complète.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category><category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
+      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer facilement des DLC et mises à jour de jeux sur les émulateurs Yuzu et Ryujinx. Guide simple avec captures d&rsquo;écran pour chaque étape.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
+      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer des codes de triche et modifications de jeux sur l&rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d&rsquo;installation.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
+      <link>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à réinstaller complètement Yuzu et Ryujinx sans perdre vos précieuses sauvegardes. Guide détaillé avec captures d&rsquo;écran et méthodes de sauvegarde.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Yuzu</category><category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Configuration de XLink Kai avec Ryujinx</title>
+      <link>http://localhost:1313/fr/post/ryujinx_lan/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ryujinx_lan/</guid>
+      <description>
+        <![CDATA[<h1>Configuration de XLink Kai avec Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-xlink-kai--ryujinx">
+<a class="header-anchor" href="#-introduction-%c3%a0-xlink-kai--ryujinx"></a>
+🎮 Introduction à XLink Kai + Ryujinx
+</h2><p><strong>XLink Kai + Ryujinx</strong> permet aux joueurs d&rsquo;émuler des jeux Nintendo Switch en réseau. Cette intégration expérimentale vous permet de jouer en multijoueur avec d&rsquo;autres utilisateurs de Ryujinx ou même avec des consoles Nintendo Switch réelles.</p>
+<blockquote>
+<p>⚠️ <strong>Note importante</strong> : Le support XLink Kai + Ryujinx est expérimental et actuellement disponible uniquement sur Windows.</p></blockquote>
+<h2 id="-ce-qui-fonctionne">
+<a class="header-anchor" href="#-ce-qui-fonctionne"></a>
+📋 Ce qui fonctionne
+</h2><ul>
+<li>Jeux Nintendo Switch avec support LAN</li>
+<li>Jeux Nintendo Switch avec support sans fil local</li>
+<li>Ryujinx jouant contre d&rsquo;autres joueurs Ryujinx</li>
+<li>Ryujinx jouant contre des joueurs sur Switch (CFW requis pour les jeux sans fil local)</li>
+<li>Ryujinx et Switch locale jouant ensemble</li>
+<li>Mélange de n&rsquo;importe quelle combinaison des options ci-dessus !</li>
+</ul>
+<h2 id="-ce-qui-ne-fonctionne-pas">
+<a class="header-anchor" href="#-ce-qui-ne-fonctionne-pas"></a>
+❌ Ce qui ne fonctionne pas
+</h2><ul>
+<li>Support macOS pas encore disponible</li>
+<li>Support Linux pas encore disponible</li>
+</ul>
+<h2 id="-types-de-connexions">
+<a class="header-anchor" href="#-types-de-connexions"></a>
+🌐 Types de connexions
+</h2><h3 id="jeux-lan">
+<a class="header-anchor" href="#jeux-lan"></a>
+Jeux LAN
+</h3><p>Les jeux LAN sont les plus largement supportés et les configurations suivantes peuvent jouer ensemble :</p>
+        
+        <hr><p>Publié le 2025-06-03 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
+      </description>
+      
+        <category>Ryujinx</category><category>XLink Kai</category>
+      
+    </item>
+    
+  </channel>
+</rss>

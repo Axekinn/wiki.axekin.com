@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XLink Kai on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/categories/xlink-kai/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/categories/xlink-kai/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Configuration de XLink Kai avec Ryujinx</title>
+      <link>http://localhost:1313/fr/post/ryujinx_lan/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ryujinx_lan/</guid>
+      <description>
+        <![CDATA[<h1>Configuration de XLink Kai avec Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          <h2 id="-introduction-à-xlink-kai--ryujinx">
+<a class="header-anchor" href="#-introduction-%c3%a0-xlink-kai--ryujinx"></a>
+🎮 Introduction à XLink Kai + Ryujinx
+</h2><p><strong>XLink Kai + Ryujinx</strong> permet aux joueurs d&rsquo;émuler des jeux Nintendo Switch en réseau. Cette intégration expérimentale vous permet de jouer en multijoueur avec d&rsquo;autres utilisateurs de Ryujinx ou même avec des consoles Nintendo Switch réelles.</p>
+<blockquote>
+<p>⚠️ <strong>Note importante</strong> : Le support XLink Kai + Ryujinx est expérimental et actuellement disponible uniquement sur Windows.</p></blockquote>
+<h2 id="-ce-qui-fonctionne">
+<a class="header-anchor" href="#-ce-qui-fonctionne"></a>
+📋 Ce qui fonctionne
+</h2><ul>
+<li>Jeux Nintendo Switch avec support LAN</li>
+<li>Jeux Nintendo Switch avec support sans fil local</li>
+<li>Ryujinx jouant contre d&rsquo;autres joueurs Ryujinx</li>
+<li>Ryujinx jouant contre des joueurs sur Switch (CFW requis pour les jeux sans fil local)</li>
+<li>Ryujinx et Switch locale jouant ensemble</li>
+<li>Mélange de n&rsquo;importe quelle combinaison des options ci-dessus !</li>
+</ul>
+<h2 id="-ce-qui-ne-fonctionne-pas">
+<a class="header-anchor" href="#-ce-qui-ne-fonctionne-pas"></a>
+❌ Ce qui ne fonctionne pas
+</h2><ul>
+<li>Support macOS pas encore disponible</li>
+<li>Support Linux pas encore disponible</li>
+</ul>
+<h2 id="-types-de-connexions">
+<a class="header-anchor" href="#-types-de-connexions"></a>
+🌐 Types de connexions
+</h2><h3 id="jeux-lan">
+<a class="header-anchor" href="#jeux-lan"></a>
+Jeux LAN
+</h3><p>Les jeux LAN sont les plus largement supportés et les configurations suivantes peuvent jouer ensemble :</p>
+        
+        <hr><p>Publié le 2025-06-03 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
+      </description>
+      
+        <category>Ryujinx</category><category>XLink Kai</category>
+      
+    </item>
+    
+  </channel>
+</rss>

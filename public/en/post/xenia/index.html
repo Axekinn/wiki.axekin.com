@@ -1,0 +1,2936 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Xenia Installation and Configuration (Xbox 360 Emulator) | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial for installing, configuring and optimizing Xbox 360 Xenia emulator - Complete setup with games, settings and optimizations"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Xenia Installation and Configuration (Xbox 360 Emulator) | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial for installing, configuring and optimizing Xbox 360 Xenia emulator - Complete setup with games, settings and optimizations"
+  />
+  <meta property="og:url" content="http://localhost:1313/en/post/xenia/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/xenia.jpg"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-06-02T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-06-07T00:00:00&#43;00:00" /><meta property="article:tag" content="xeniaxbox-360emulationinstallationconfigurationgamingmicrosoftoptimization" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/xenia.jpg" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/xenia\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/xenia.jpg" alt="Xenia Installation and Configuration (Xbox 360 Emulator)"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="fade-down">Xenia Installation and Configuration (Xbox 360 Emulator)</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xenia">🎮 Introduction to Xenia</a></li>
+    <li><a href="#-step-1-download-xenia-manager">🔧 Step 1: Download Xenia Manager</a>
+      <ul>
+        <li><a href="#master-version-stable">Master Version (Stable)</a></li>
+      </ul>
+    </li>
+    <li><a href="#game-download">Game Download</a>
+      <ul>
+        <li><a href="#step-1-access-the-game-library">Step 1: Access the game library</a></li>
+        <li><a href="#step-2-download-the-game">Step 2: Download the game</a></li>
+        <li><a href="#step-3-file-extraction">Step 3: File extraction</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a>
+      <ul>
+        <li><a href="#content-types">Content types</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-3-first-launch-and-configuration">⚙️ Step 3: First launch and configuration</a></li>
+    <li><a href="#first-launch">First launch</a>
+      <ul>
+        <li><a href="#step-1-automatic-update">Step 1: Automatic update</a></li>
+        <li><a href="#step-2-installing-xenia-canary">Step 2: Installing Xenia Canary</a></li>
+        <li><a href="#step-3-interface-configuration">Step 3: Interface configuration</a></li>
+        <li><a href="#step-4-general-configuration">Step 4: General configuration</a></li>
+        <li><a href="#step-5-emulator-configuration">Step 5: Emulator configuration</a></li>
+        <li><a href="#step-6-save">Step 6: Save</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-games-to-xenia">Adding games to Xenia</a>
+      <ul>
+        <li><a href="#quick-method-with-folder-structure">Quick method with folder structure</a></li>
+        <li><a href="#want-to-play-now">Want to play now?</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing-dlc-and-updates">Installing DLC and updates</a>
+      <ul>
+        <li><a href="#installation-method">Installation method</a></li>
+        <li><a href="#structure-after-installation">Structure after installation</a></li>
+        <li><a href="#content-types-1">Content types</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General questions</a></li>
+        <li><a href="#technical-questions">Technical questions</a></li>
+        <li><a href="#common-problems">Common problems</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      10
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">62</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-06-02 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-06-02</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-06-07</time
+    >
+  </span></div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/xenia"
+      data-aos="zoom-in"
+      >XENIA</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="-introduction-to-xenia">
+<a class="header-anchor" href="#-introduction-to-xenia"></a>
+🎮 Introduction to Xenia
+</h2><p><strong>Xenia</strong> is the most advanced open-source Xbox 360 emulator available. Developed since 2013, it emulates the PowerPC Xenon architecture of the Xbox 360 and offers growing compatibility with many iconic games from Microsoft&rsquo;s console.</p>
+<blockquote>
+<p>💡 <strong>Important note</strong>: Xenia requires a powerful CPU with good single-thread performance. Recent GPUs with Vulkan support give the best results.</p></blockquote>
+<blockquote>
+<p>💡 <strong>Xenia Manager</strong>: For better understanding and usage of Xenia, we&rsquo;ll use Xenia Manager. This isn&rsquo;t something official from the Xenia devs, but there&rsquo;s nothing better for beginners on this emulator.</p></blockquote>
+<h2 id="-step-1-download-xenia-manager">
+<a class="header-anchor" href="#-step-1-download-xenia-manager"></a>
+🔧 Step 1: Download Xenia Manager
+</h2><h3 id="master-version-stable">
+<a class="header-anchor" href="#master-version-stable"></a>
+Master Version (Stable)
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Official site</span>
+</span></span><span style="display:flex;"><span>https://github.com/xenia-manager/xenia-manager/releases
+</span></span></code></pre></div><ol>
+<li><strong>Click</strong> on &ldquo;xenia_manager.zip&rdquo;</li>
+<li><strong>Download</strong> <code>xenia_master.zip</code></li>
+<li><strong>Extract</strong> to a dedicated folder (e.g., <code>Documents\Xenia</code> or at the root of another drive, not C)</li>
+</ol>
+<h2 id="game-download">
+<a class="header-anchor" href="#game-download"></a>
+Game Download
+</h2><h3 id="step-1-access-the-game-library">
+<a class="header-anchor" href="#step-1-access-the-game-library"></a>
+Step 1: Access the game library
+</h3><p>Go to <strong><a href="https://www.axekin.com/games?platform=xbox360">🎮 Axekin Games - Xbox 360</a></strong> to access the Xbox 360 game collection.</p>
+<h3 id="step-2-download-the-game">
+<a class="header-anchor" href="#step-2-download-the-game"></a>
+Step 2: Download the game
+</h3><ol>
+<li><strong>Search</strong> for the desired game in the list</li>
+<li><strong>Click</strong> on the download button</li>
+<li><strong>Wait</strong> for the download to complete</li>
+</ol>
+<h3 id="step-3-file-extraction">
+<a class="header-anchor" href="#step-3-file-extraction"></a>
+Step 3: File extraction
+</h3><p>Once the download is finished, <strong>extract</strong> the archive with one of these software:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Software</th>
+          <th>Download Link</th>
+          <th>Compatibility</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>7-Zip</strong></td>
+          <td><a href="https://www.7-zip.org/">Download 7-Zip</a></td>
+          <td>Windows/Linux</td>
+      </tr>
+      <tr>
+          <td><strong>WinRAR</strong></td>
+          <td><a href="https://www.win-rar.com/">Download WinRAR</a></td>
+          <td>Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>💡 Tip</strong>: 7-Zip is free and open-source, while WinRAR requires a license after the trial period.</p></blockquote>
+<p><strong>Result</strong>: You&rsquo;ll get game files ready to be used with Xenia! 🎯</p>
+<h2 id="-step-2-folder-structure">
+<a class="header-anchor" href="#-step-2-folder-structure"></a>
+📁 Step 2: Folder Structure
+</h2><p>Organize your games with this structure:</p>
+<pre tabindex="0"><code>Xbox 360 Games/
+├── Forza Horizon/
+│   ├── BASE/                # 🎮 Base game (main file)
+│   ├── UPDATE/              # 🔄 Game update (recommended)
+│   └── DLC/                 # 📦 Downloadable content (optional)
+├── Skate 3/
+│   ├── BASE/                # 🎮 Base game
+│   ├── UPDATE/              # 🔄 Game update
+│   └── DLC/                 # 📦 Additional DLC
+├── Juju/
+│   ├── BASE/
+│   ├── UPDATE/
+│   └── DLC/
+└── Gears of War/
+    ├── BASE/
+    └── UPDATE/              # (No DLC for this game)
+</code></pre><h3 id="content-types">
+<a class="header-anchor" href="#content-types"></a>
+Content types
+</h3><div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Understanding folders
+    </p>
+    <div class="admonition-content">
+        <ul>
+<li><strong>BASE</strong> 📁: The main game you download</li>
+<li><strong>UPDATE</strong> 📁: Updates and patches (recommended)</li>
+<li><strong>DLC</strong> 📁: Additional paid content (optional but recommended)</li>
+</ul>
+
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Advantages of this organization
+    </p>
+    <div class="admonition-content">
+        ✅ <strong>Automatic detection</strong>: Games are automatically added to the emulator<br>
+✅ <strong>Simplified management</strong>: No need to manually select each ROM<br>
+✅ <strong>Clear organization</strong>: Easy to see what content you have for each game<br>
+✅ <strong>Easy maintenance</strong>: Simplified content addition/removal
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<blockquote>
+<p><strong>📝 Important note</strong>: If a game doesn&rsquo;t have updates or DLC, there&rsquo;s no need to create the corresponding folders. Only create folders for content you actually have.</p></blockquote>
+<h2 id="-step-3-first-launch-and-configuration">
+<a class="header-anchor" href="#-step-3-first-launch-and-configuration"></a>
+⚙️ Step 3: First launch and configuration
+</h2><h2 id="first-launch">
+<a class="header-anchor" href="#first-launch"></a>
+First launch
+</h2><h3 id="step-1-automatic-update">
+<a class="header-anchor" href="#step-1-automatic-update"></a>
+Step 1: Automatic update
+</h3><div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Xenia update
+    </p>
+    <div class="admonition-content">
+        <strong>Run</strong> <code>XeniaManager.Updater.exe</code> to automatically update to the latest Xenia build.
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<p>In theory, we could stop there, but let&rsquo;s go further! Generally, the stable version is sufficient, but the <strong>Canary version</strong> of Xenia brings better rendering/results with fewer bugs compared to mainline.</p>
+<h3 id="step-2-installing-xenia-canary">
+<a class="header-anchor" href="#step-2-installing-xenia-canary"></a>
+Step 2: Installing Xenia Canary
+</h3><ol>
+<li><strong>Click</strong> on <code>Install Xenia Canary</code></li>
+<li>A window will appear → <strong>Click</strong> on &ldquo;Create profile&rdquo;</li>
+<li><strong>Enter</strong> your username (will be used for online mode)</li>
+<li><strong>Close</strong> the window</li>
+</ol>
+<div class="admonition note">
+    <p class="admonition-title"><i class="fas fa-pencil-alt fa-fw"></i>Additional options
+    </p>
+    <div class="admonition-content">
+        <ul>
+<li><strong>Xenia MouseHook</strong>: Install only if you want to play with keyboard/mouse</li>
+<li><strong>Xenia Netplay</strong>: For online play (also requires profile creation)</li>
+</ul>
+
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<ol start="5">
+<li><strong>Close</strong> the &ldquo;Welcome to Xenia Manager&rdquo; window</li>
+</ol>
+<h3 id="step-3-interface-configuration">
+<a class="header-anchor" href="#step-3-interface-configuration"></a>
+Step 3: Interface configuration
+</h3><p>Let&rsquo;s enable dark mode because we&rsquo;re not crazy! 🌙</p>
+<p><strong>Navigation</strong>: <code>Settings</code> (on the left) → <code>Theme Switcher</code> → <strong>Dark</strong></p>
+<h3 id="step-4-general-configuration">
+<a class="header-anchor" href="#step-4-general-configuration"></a>
+Step 4: General configuration
+</h3><p>In the same window, <strong>check</strong> the following options:</p>
+<div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Recommended options
+    </p>
+    <div class="admonition-content">
+        ✅ <strong>Automatic Game Parsing and Selection</strong><br>
+✅ <strong>Automatic Save Backup</strong>
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h3 id="step-5-emulator-configuration">
+<a class="header-anchor" href="#step-5-emulator-configuration"></a>
+Step 5: Emulator configuration
+</h3><p>Go to <code>Xenia Settings</code> and configure:</p>
+<h4 id="-audio-and-display">
+<a class="header-anchor" href="#-audio-and-display"></a>
+🔊 Audio and Display
+</h4><table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Recommended Value</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Audio System</strong></td>
+          <td><code>SDL</code></td>
+          <td>Compatible with all systems</td>
+      </tr>
+      <tr>
+          <td><strong>Full Screen</strong></td>
+          <td><code>On</code></td>
+          <td>Leave <code>Off</code> if you prefer windowed</td>
+      </tr>
+      <tr>
+          <td><strong>Internal Display Resolution</strong></td>
+          <td><code>1920x1080</code></td>
+          <td>⚠️ Higher = more performance required</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-graphics">
+<a class="header-anchor" href="#-graphics"></a>
+🎮 Graphics
+</h4><table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Recommended Value</th>
+          <th>Alternative</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Graphics API</strong></td>
+          <td><code>Vulkan</code></td>
+          <td><code>OpenGL</code> if problems/old hardware</td>
+      </tr>
+      <tr>
+          <td><strong>Anti Aliasing</strong></td>
+          <td>Maximum supported value</td>
+          <td>Don&rsquo;t touch if limited config</td>
+      </tr>
+      <tr>
+          <td><strong>Scaling and Sharpening</strong></td>
+          <td>Maximum supported value</td>
+          <td>Same as above</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-gaming-experience">
+<a class="header-anchor" href="#-gaming-experience"></a>
+🏆 Gaming Experience
+</h4><table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Value</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Show Achievement Notifications</strong></td>
+          <td><code>On</code></td>
+          <td>For memories of the old days!</td>
+      </tr>
+      <tr>
+          <td><strong>User Country</strong></td>
+          <td>Your country</td>
+          <td>According to your location</td>
+      </tr>
+      <tr>
+          <td><strong>User Language</strong></td>
+          <td>Your language</td>
+          <td>According to your location</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-controls">
+<a class="header-anchor" href="#-controls"></a>
+🎯 Controls
+</h4><table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Usage</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>XInput</strong></td>
+          <td>Xbox/compatible controllers</td>
+          <td>Standard for most controllers</td>
+      </tr>
+      <tr>
+          <td><strong>SDL2</strong></td>
+          <td>Unrecognized controllers</td>
+          <td>If XInput doesn&rsquo;t work</td>
+      </tr>
+      <tr>
+          <td><strong>Keyboard</strong></td>
+          <td>Keyboard/mouse</td>
+          <td>For PC players</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="step-6-save">
+<a class="header-anchor" href="#step-6-save"></a>
+Step 6: Save
+</h3><div class="admonition warning">
+    <p class="admonition-title"><i class="fas fa-exclamation-triangle fa-fw"></i>Important!
+    </p>
+    <div class="admonition-content">
+        <strong>Click</strong> the <code>Save</code> button at the top right to save all your settings.
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h2 id="adding-games-to-xenia">
+<a class="header-anchor" href="#adding-games-to-xenia"></a>
+Adding games to Xenia
+</h2><h3 id="quick-method-with-folder-structure">
+<a class="header-anchor" href="#quick-method-with-folder-structure"></a>
+Quick method with folder structure
+</h3><p>If you followed the recommended folder organization:</p>
+<div class="admonition tip">
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Automatic game addition
+    </p>
+    <div class="admonition-content">
+        <ol>
+<li><strong>Click</strong> the small <code>+</code> at the top right</li>
+<li><strong>Add</strong> your desired game</li>
+<li><strong>Click</strong> on <code>Full Auto</code></li>
+<li><strong>Your game appears</strong> automatically in the menu!</li>
+</ol>
+
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<p><strong>Repeat</strong> this action for all games you want to add.</p>
+<h3 id="want-to-play-now">
+<a class="header-anchor" href="#want-to-play-now"></a>
+Want to play now?
+</h3><div class="admonition success">
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Impatient? 😄
+    </p>
+    <div class="admonition-content">
+        If you want to play right away because you&rsquo;re impatient, you can! Otherwise, let&rsquo;s continue to optimize the experience&hellip; 🎮
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h2 id="installing-dlc-and-updates">
+<a class="header-anchor" href="#installing-dlc-and-updates"></a>
+Installing DLC and updates
+</h2><h3 id="installation-method">
+<a class="header-anchor" href="#installation-method"></a>
+Installation method
+</h3><div class="admonition info">
+    <p class="admonition-title"><i class="fas fa-info-circle fa-fw"></i>Additional content installation
+    </p>
+    <div class="admonition-content">
+        <ol>
+<li><strong>Right-click</strong> on your game → <code>Content</code> → <code>Install DLC/Updates</code></li>
+<li><strong>Select</strong> DLC/Update files</li>
+<li><strong>Automatic installation</strong> in <code>content/[TitleID]/</code></li>
+<li><strong>Restart</strong> the game to activate content</li>
+</ol>
+
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<h3 id="structure-after-installation">
+<a class="header-anchor" href="#structure-after-installation"></a>
+Structure after installation
+</h3><pre tabindex="0"><code>📁 Xenia/
+├── 📁 content/
+│   └── 📁 [TitleID]/
+│       ├── 📄 Base Game
+│       ├── 📄 Update Files
+│       └── 📄 DLC Content
+</code></pre><h3 id="content-types-1">
+<a class="header-anchor" href="#content-types-1"></a>
+Content types
+</h3><table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Extension</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Base game</strong></td>
+          <td><code>.iso</code>, <code>.xex</code></td>
+          <td>Main game file</td>
+      </tr>
+      <tr>
+          <td><strong>Updates</strong></td>
+          <td><code>.xbla</code></td>
+          <td>Patches and improvements</td>
+      </tr>
+      <tr>
+          <td><strong>DLC</strong></td>
+          <td><code>.xbla</code></td>
+          <td>Downloadable content</td>
+      </tr>
+  </tbody>
+</table>
+<div class="admonition warning">
+    <p class="admonition-title"><i class="fas fa-exclamation-triangle fa-fw"></i>Important
+    </p>
+    <div class="admonition-content">
+        <strong>Restart</strong> the game after installation for new content to be recognized!
+    </div>
+</div>
+
+<style>
+ 
+.admonition {
+    margin: 1.5rem 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    page-break-inside: avoid;
+}
+
+.admonition p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+}
+
+.admonition-title {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.admonition-title i {
+    margin-right: 0.5rem;
+}
+
+.admonition-content {
+    padding: 0.5rem 1rem;
+}
+
+ 
+.admonition.note {
+    border-left: 0.25rem solid #448aff;
+}
+.admonition.note .admonition-title {
+    background-color: rgba(68, 138, 255, 0.1);
+    color: #448aff;
+}
+
+.admonition.abstract {
+    border-left: 0.25rem solid #00b0ff;
+}
+.admonition.abstract .admonition-title {
+    background-color: rgba(0, 176, 255, 0.1);
+    color: #00b0ff;
+}
+
+.admonition.info {
+    border-left: 0.25rem solid #00b8d4;
+}
+.admonition.info .admonition-title {
+    background-color: rgba(0, 184, 212, 0.1);
+    color: #00b8d4;
+}
+
+.admonition.tip {
+    border-left: 0.25rem solid #00bfa5;
+}
+.admonition.tip .admonition-title {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+
+.admonition.success {
+    border-left: 0.25rem solid #00c853;
+}
+.admonition.success .admonition-title {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: #00c853;
+}
+
+.admonition.question {
+    border-left: 0.25rem solid #64dd17;
+}
+.admonition.question .admonition-title {
+    background-color: rgba(100, 221, 23, 0.1);
+    color: #64dd17;
+}
+
+.admonition.warning {
+    border-left: 0.25rem solid #ff9100;
+}
+.admonition.warning .admonition-title {
+    background-color: rgba(255, 145, 0, 0.1);
+    color: #ff9100;
+}
+
+.admonition.failure {
+    border-left: 0.25rem solid #ff5252;
+}
+.admonition.failure .admonition-title {
+    background-color: rgba(255, 82, 82, 0.1);
+    color: #ff5252;
+}
+
+.admonition.danger {
+    border-left: 0.25rem solid #ff1744;
+}
+.admonition.danger .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+    color: #ff1744;
+}
+
+.admonition.bug {
+    border-left: 0.25rem solid #f50057;
+}
+.admonition.bug .admonition-title {
+    background-color: rgba(245, 0, 87, 0.1);
+    color: #f50057;
+}
+
+.admonition.example {
+    border-left: 0.25rem solid #651fff;
+}
+.admonition.example .admonition-title {
+    background-color: rgba(101, 31, 255, 0.1);
+    color: #651fff;
+}
+
+.admonition.quote {
+    border-left: 0.25rem solid #9e9e9e;
+}
+.admonition.quote .admonition-title {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: #9e9e9e;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+    .admonition {
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+    }
+}
+</style>
+
+<p>🎯 <strong>Result</strong>: Your games are now enriched with all available updates and DLC!</p>
+<h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General questions
+</h3><p><strong>Q: Does Xenia work on Linux/Mac?</strong>
+<strong>A:</strong> No, Xenia is exclusively Windows 10/11 64-bit. No official port planned.</p>
+<p><strong>Q: Can I play online with Xenia?</strong>
+<strong>A:</strong> Yes</p>
+<p><strong>Q: Can Xenia play original Xbox games?</strong>
+<strong>A:</strong> No, Xenia only emulates Xbox 360. Use xemu for original Xbox.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical questions
+</h3><p><strong>Q: Vulkan or D3D12?</strong>
+<strong>A:</strong> Vulkan generally more performant, D3D12 sometimes more stable. Test depending on the game.</p>
+<p><strong>Q: How much RAM minimum?</strong>
+<strong>A:</strong> 8GB absolute minimum, 16GB strongly recommended, 32GB for large games.</p>
+<p><strong>Q: Is my GPU sufficient?</strong>
+<strong>A:</strong> DirectX 12 or Vulkan 1.1 minimum required. GTX 1060/RX 580 for decent performance.</p>
+<h3 id="common-problems">
+<a class="header-anchor" href="#common-problems"></a>
+Common problems
+</h3><p><strong>Q: Game crashes at launch?</strong>
+<strong>A:</strong> Check official compatibility, test different APIs, verify file integrity.</p>
+<p><strong>Q: Very poor performance?</strong>
+<strong>A:</strong> CPU is the main limiting factor. Close as many apps as possible, use an SSD.</p>
+<p><strong>Q: Audio out of sync?</strong>
+<strong>A:</strong> Increase audio buffer, change sample rate, close other audio apps.</p>
+<p><strong>Rediscover Xbox 360 exclusives with Xenia! 🎮✨</strong></p>
+</div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="http://localhost:1313/en/post/xenia/">http://localhost:1313/en/post/xenia/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Xenia Installation and Configuration (Xbox 360 Emulator)</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-06-02 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-06-07 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/xenia/" target="_blank" rel="noopener noreferrer" title="Xenia Installation and Configuration (Xbox 360 Emulator)">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=http://localhost:1313/en/post/xenia/&amp;text=Xenia%20Installation%20and%20Configuration%20%28Xbox%20360%20Emulator%29&amp;via=http://localhost:1313/" target="_blank" rel="noopener noreferrer" title="Xenia Installation and Configuration (Xbox 360 Emulator)">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=http://localhost:1313/en/post/xenia/&amp;title=Xenia%20Installation%20and%20Configuration%20%28Xbox%20360%20Emulator%29&amp;summary=Detailed%20tutorial%20for%20installing,%20configuring%20and%20optimizing%20Xbox%20360%20Xenia%20emulator%20-%20Complete%20setup%20with%20games,%20settings%20and%20optimizations&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Xenia Installation and Configuration (Xbox 360 Emulator)">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=http://localhost:1313/en/post/xenia/&amp;title=Xenia%20Installation%20and%20Configuration%20%28Xbox%20360%20Emulator%29" target="_blank" rel="noopener noreferrer" title="Xenia Installation and Configuration (Xbox 360 Emulator)">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Xenia Installation and Configuration (Xbox 360 Emulator)">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/xenia"
+        rel="tag"
+        >XENIA</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/xbox-360"
+        rel="tag"
+        >XBOX-360</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/installation"
+        rel="tag"
+        >INSTALLATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/configuration"
+        rel="tag"
+        >CONFIGURATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/gaming"
+        rel="tag"
+        >GAMING</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/microsoft"
+        rel="tag"
+        >MICROSOFT</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/optimization"
+        rel="tag"
+        >OPTIMIZATION</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/rpcs3.png"
+            data-sizes="auto"
+            alt="RPCS3 Netplay (RPCN) Guide"
+            class="lazyload"
+          /><a href="/en/post/rpcs3_mp/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">RPCS3 Netplay (RPCN) Guide</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/dolphin-emulator-guide.webp"
+            data-sizes="auto"
+            alt="Dolphin Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/dolphin/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">Dolphin Installation and Configuration</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">Leave a comment</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     >
+    </div></div>
+</section></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        Powered by&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;19.4k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:43</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-xenia">🎮 Introduction to Xenia</a></li>
+    <li><a href="#-step-1-download-xenia-manager">🔧 Step 1: Download Xenia Manager</a>
+      <ul>
+        <li><a href="#master-version-stable">Master Version (Stable)</a></li>
+      </ul>
+    </li>
+    <li><a href="#game-download">Game Download</a>
+      <ul>
+        <li><a href="#step-1-access-the-game-library">Step 1: Access the game library</a></li>
+        <li><a href="#step-2-download-the-game">Step 2: Download the game</a></li>
+        <li><a href="#step-3-file-extraction">Step 3: File extraction</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-2-folder-structure">📁 Step 2: Folder Structure</a>
+      <ul>
+        <li><a href="#content-types">Content types</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step-3-first-launch-and-configuration">⚙️ Step 3: First launch and configuration</a></li>
+    <li><a href="#first-launch">First launch</a>
+      <ul>
+        <li><a href="#step-1-automatic-update">Step 1: Automatic update</a></li>
+        <li><a href="#step-2-installing-xenia-canary">Step 2: Installing Xenia Canary</a></li>
+        <li><a href="#step-3-interface-configuration">Step 3: Interface configuration</a></li>
+        <li><a href="#step-4-general-configuration">Step 4: General configuration</a></li>
+        <li><a href="#step-5-emulator-configuration">Step 5: Emulator configuration</a></li>
+        <li><a href="#step-6-save">Step 6: Save</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-games-to-xenia">Adding games to Xenia</a>
+      <ul>
+        <li><a href="#quick-method-with-folder-structure">Quick method with folder structure</a></li>
+        <li><a href="#want-to-play-now">Want to play now?</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing-dlc-and-updates">Installing DLC and updates</a>
+      <ul>
+        <li><a href="#installation-method">Installation method</a></li>
+        <li><a href="#structure-after-installation">Structure after installation</a></li>
+        <li><a href="#content-types-1">Content types</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General questions</a></li>
+        <li><a href="#technical-questions">Technical questions</a></li>
+        <li><a href="#common-problems">Common problems</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">21</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      10
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">62</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Search.....',
+          "hits_empty": 'No results found for 「${query}」',
+          "hits_stats": 'Found ${hits} results (in ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-aagKMe8nkqaP2DYQc8kkYOL5l&#43;M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Xenia Installation and Configuration (Xbox 360 Emulator)",
+          url: "http:\/\/localhost:1313\/en\/post\/xenia\/",
+          description: "Detailed tutorial for installing, configuring and optimizing Xbox 360 Xenia emulator - Complete setup with games, settings and optimizations",
+          cover: "http:\/\/localhost:1313\/images\/covers\/xenia.jpg",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/valine@1.5.1\/dist\/Valine.min.js',
+          !'webcache|valine@1.5.1\/dist\/Valine.min.js'.startsWith('local') ? 'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE\u002bs5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn' : undefined
+        );
+        script.onload = () => {
+          const GUEST_INFO = ['nick', 'mail', 'link'];
+          const guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          const recordIP = JSON.parse('true');
+          const highlight = JSON.parse('true');
+          const visitor = JSON.parse('false');
+          const serverURLs = undefined;
+
+          new Valine({
+            el: '.valine-comment',
+            appId: "",
+            appKey: "",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: document.documentElement.lang || 'en',
+            recordIP: recordIP,
+            highlight: highlight,
+            visitor: visitor,
+            requiredFields: guest_info,
+            path: window.location.pathname,
+            serverURLs,
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: false,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: '',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/twikoo@1.6.44\/dist\/twikoo.all.min.js',
+          !'webcache|twikoo@1.6.44\/dist\/twikoo.all.min.js'.startsWith('local') ? 'sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk\u002bkQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K' : undefined
+        );
+        script.onload = () => {
+          twikoo.init({
+            envId: '',
+            el: '.twikoo-comment',
+            region: '',
+            lang: document.documentElement.lang || 'en',
+          });
+          twikoo.getCommentsCount({
+            envId: '',
+            region: '',
+            urls: [
+              'http\/\/localhost1313\/en\/post\/xenia\/'
+            ],
+            includeReply: false
+          }).then((res) => {
+            document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+          }).catch((err) => {
+            console.error(err);
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/gitalk@1.8.0\/dist\/gitalk.min.js',
+          !'webcache|gitalk@1.8.0\/dist\/gitalk.min.js'.startsWith('local') ? 'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU\/lcEH5O8eVbSDhbPwsiVUTp\/aGX\/z\/5EuMA' : undefined
+        );
+        script.onload = () => {
+          if ( false ) {
+            
+            const md5Script = loadScript(
+              'https:\/\/npm.webcache.cn\/blueimp-md5@2.19.0\/js\/md5.min.js',
+              !'webcache|blueimp-md5@2.19.0\/js\/md5.min.js'.startsWith('local') ? 'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr\/gZlbkHkL6vTthxH' : undefined
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            
+            initGitalk();
+          }
+        };
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          let gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: JSON.parse("null"),
+            id: location.pathname,
+            distractionFreeMode: false,
+            language: document.documentElement.lang || 'en',
+          });
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: true,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+
+        const docLang = document.documentElement.lang || 'en';
+        const langBase = docLang.split('-')[0];
+        const supportedLangs = ['ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'en', 
+        'eo', 'es', 'eu', 'fa', 'fr', 'gr', 'hbs', 'he', 'hu', 'id', 'it', 'ja', 
+        'kh', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'th', 'tr', 'uk', 'uz', 'vi', 'zh-CN', 'zh-HK', 'zh-TW'];
+        const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
+
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', 'Announcements');
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '');
+        giscusScript.setAttribute('data-emit-metadata', '');
+        giscusScript.setAttribute('data-input-position', '');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', giscusLang);
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  };
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'giscus';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" ></script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>

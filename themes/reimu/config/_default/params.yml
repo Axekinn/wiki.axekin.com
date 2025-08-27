@@ -303,11 +303,8 @@ comment:
   # comment system title
   title:
     en: Leave a comment
-    zh-CN: 说些什么吧！
-    zh-TW: 說些什麼吧！
-    ja: コメントを残す
-    pt-BR: Deixe um comentário
-  default: waline # default comment system, when you enable multiple comment systems
+    fr: Laisser un commentaire
+  default: giscus # default comment system, when you enable multiple comment systems
 
 # valine comment system. https://valine.js.org
 # version 1.5.1
@@ -368,18 +365,19 @@ gitalk:
 
 # https://giscus.app/zh-CN
 giscus:
-  enable: false
-  repo:
-  repoId:
-  category:
-  categoryId:
-  mapping: mapping
-  strict: 0
-  reactionsEnabled: 1
-  emitMetadata: 0
-  inputPosition: bottom
-  # commentTheme: preferred_color_scheme invalid
-  # lang: zh-CN # deprecated, use html.lang instead
+  enable: true
+  repo: "Axekinn/wiki.axekin.com"
+  repo_id: "R_kgDOO6CQAQ"
+  category: "Announcements"
+  category_id: "DIC_kwDOO6CQAc4CurE6"
+  mapping: "url"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "dark"
+  lang: "en"
+  loading: "lazy"
 
 ########################################
 # Search

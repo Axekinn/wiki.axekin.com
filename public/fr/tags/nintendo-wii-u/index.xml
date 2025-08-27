@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo Wii U on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/nintendo-wii-u/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/tags/nintendo-wii-u/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Installation et configuration de Cemu</title>
+      <link>http://localhost:1313/fr/post/cemu/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/cemu/</guid>
+      <description>
+        <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Guide complet pour installer et configurer Cemu, l&rsquo;émulateur Wii U le plus performant. Installation, configuration optimale et astuces.
+        
+        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+  </channel>
+</rss>

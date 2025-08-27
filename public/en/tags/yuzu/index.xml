@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuzu on Wiki of Axekin</title>
+    <link>http://localhost:1313/en/tags/yuzu/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/en/tags/yuzu/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Installation and Configuration of Eden</title>
+      <link>http://localhost:1313/en/post/eden/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/eden/</guid>
+      <description>
+        <![CDATA[<h1>Installation and Configuration of Eden</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install and configure Eden (Yuzu fork) for optimal Nintendo Switch emulation. Complete guide with firmware, keys, and optimizations.
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p>]]>
+      </description>
+      
+        <category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</title>
+      <link>http://localhost:1313/en/post/amibo_switch/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/amibo_switch/</guid>
+      <description>
+        <![CDATA[<h1>How to Use Amiibo on Switch Emulators (Yuzu & Ryujinx)</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn to use virtual amiibo on Yuzu and Ryujinx emulators. Step-by-step guide with file download and complete configuration.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>Yuzu</category><category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>How to Install DLC and Updates on Yuzu and Ryujinx</title>
+      <link>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>How to Install DLC and Updates on Yuzu and Ryujinx</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to easily install DLC and game updates on Yuzu and Ryujinx emulators. Simple guide with screenshots for each step.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category><category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>How to Reinstall Yuzu &amp; Ryujinx While Keeping Your Save Files</title>
+      <link>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/reinstall_yuzu_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>How to Reinstall Yuzu & Ryujinx While Keeping Your Save Files</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to completely reinstall Yuzu and Ryujinx without losing your precious save files. Detailed guide with screenshots and backup methods.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+  </channel>
+</rss>

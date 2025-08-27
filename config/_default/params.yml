@@ -325,6 +325,7 @@ valine:
 
 # https://waline.js.org/
 waline:
+
   enable: false
   serverURL:
   # lang: zh-CN # deprecated, use html.lang instead
@@ -370,7 +371,7 @@ giscus:
   repo_id: "R_kgDOO6CQAQ"
   category: "Announcements"
   category_id: "DIC_kwDOO6CQAc4CurE6"
-  mapping: "pathname"
+  mapping: "url"
   strict: "0"
   reactions_enabled: "1"
   emit_metadata: "0"

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cemu on Wiki of Axekin</title>
+    <link>http://localhost:1313/en/tags/cemu/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/en/tags/cemu/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Cemu Installation and Configuration</title>
+      <link>http://localhost:1313/en/post/cemu/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/cemu/</guid>
+      <description>
+        <![CDATA[<h1>Cemu Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Complete guide for installing and configuring Cemu, the most performant Wii U emulator. Installation, optimal configuration and tips.
+        
+        <hr><p>Published on 2025-06-14 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-14</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title> Using Amiibo on the Cemu Wii U Emulator</title>
+      <link>http://localhost:1313/en/post/amibo_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/amibo_cemu/</guid>
+      <description>
+        <![CDATA[<h1> Using Amiibo on the Cemu Wii U Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn to use Amiibo files on the Cemu Wii U emulator. Complete guide with .bin configuration and NFC scanning.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Playing with Keyboard &amp; Mouse on Cemu Emulator</title>
+      <link>http://localhost:1313/en/post/keyboard_mouse_cemu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/keyboard_mouse_cemu/</guid>
+      <description>
+        <![CDATA[<h1>Playing with Keyboard & Mouse on Cemu Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to play Wii U games on Cemu with keyboard and mouse. Complete guide with Mouse2Joystick and detailed configuration.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Wiki de Axekin</title>
+    <link>http://localhost:1313/fr/tags/installation/</link>
+    <description>Recent content from Wiki de Axekin</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
+    
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/fr/tags/installation/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Installation et Configuration de Ryujinx</title>
+      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer et configurer Ryujinx pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
+      <link>http://localhost:1313/fr/post/xenia/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/xenia/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer et configurer Xenia pour une émulation Xbox 360 optimale. Guide complet avec configuration, jeux et résolution de problèmes.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+      </description>
+      
+        <category>Xenia</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation et Configuration de Eden</title>
+      <link>http://localhost:1313/fr/post/eden/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/eden/</guid>
+      <description>
+        <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer et configurer Eden (fork de Yuzu) pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
+        
+        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+      </description>
+      
+        <category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
+      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer facilement des DLC et mises à jour de jeux sur les émulateurs Yuzu et Ryujinx. Guide simple avec captures d&rsquo;écran pour chaque étape.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
+      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à installer des codes de triche et modifications de jeux sur l&rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d&rsquo;installation.
+        
+        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaming on Wiki of Axekin</title>
+    <link>http://localhost:1313/en/tags/gaming/</link>
+    <description>Recent content from Wiki of Axekin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>axekinn@proton.me (Axekin)</managingEditor>
+    <webMaster>axekinn@proton.me (Axekin)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/en/tags/gaming/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Cemu Installation and Configuration</title>
+      <link>http://localhost:1313/en/post/cemu/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/cemu/</guid>
+      <description>
+        <![CDATA[<h1>Cemu Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Complete guide for installing and configuring Cemu, the most performant Wii U emulator. Installation, optimal configuration and tips.
+        
+        <hr><p>Published on 2025-06-14 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-14</p>]]>
+      </description>
+      
+        <category>Cemu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Ryujinx Installation and Configuration</title>
+      <link>http://localhost:1313/en/post/ryujinx/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/ryujinx/</guid>
+      <description>
+        <![CDATA[<h1>Ryujinx Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install and configure Ryujinx for optimal Nintendo Switch emulation. Complete guide with firmware, keys and optimizations.
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p>]]>
+      </description>
+      
+        <category>Ryujinx</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Xenia Installation and Configuration (Xbox 360 Emulator)</title>
+      <link>http://localhost:1313/en/post/xenia/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/xenia/</guid>
+      <description>
+        <![CDATA[<h1>Xenia Installation and Configuration (Xbox 360 Emulator)</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install and configure Xenia for optimal Xbox 360 emulation. Complete guide with configuration, games and troubleshooting.
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p>]]>
+      </description>
+      
+        <category>Xenia</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Installation and Configuration of Eden</title>
+      <link>http://localhost:1313/en/post/eden/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/eden/</guid>
+      <description>
+        <![CDATA[<h1>Installation and Configuration of Eden</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install and configure Eden (Yuzu fork) for optimal Nintendo Switch emulation. Complete guide with firmware, keys, and optimizations.
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p>]]>
+      </description>
+      
+        <category>Yuzu</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>melonDS Installation and Configuration</title>
+      <link>http://localhost:1313/en/post/melonds/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/melonds/</guid>
+      <description>
+        <![CDATA[<h1>melonDS Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to install and configure melonDS for optimal Nintendo DS emulation. Complete guide with BIOS, graphics settings and advanced features.
+        
+        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-07</p>]]>
+      </description>
+      
+        <category>MelonDS</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Unsteam - Playing Co-op with Patched Games</title>
+      <link>http://localhost:1313/en/post/unsteam/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/unsteam/</guid>
+      <description>
+        <![CDATA[<h1>Unsteam - Playing Co-op with Patched Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to use Unsteam to play online co-op with patched games. Complete guide with Steam API emulation and multiplayer setup.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>SteamAutoCrack - Automatically Patch Steam Games</title>
+      <link>http://localhost:1313/en/post/sac/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/sac/</guid>
+      <description>
+        <![CDATA[<h1>SteamAutoCrack - Automatically Patch Steam Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to use SteamAutoCrack to automatically patch Steam games. Complete tutorial with API configuration and installation.
+        
+        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+      </description>
+      
+        <category>PC</category>
+      
+    </item>
+    
+  </channel>
+</rss>
