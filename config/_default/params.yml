@@ -386,7 +386,7 @@ giscus:
 
 # Recherche avancée
 algolia:
-  enable: true  # Ajoutez cette ligne
+  enable: true  
   applicationID: "LPWJ5Q6Q0L"
   apiKey: "7a8c816d9d6a005f280853c142ad76b6"
   indexName: "axekin-wiki"
