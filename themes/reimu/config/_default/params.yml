@@ -368,8 +368,8 @@ giscus:
   enable: true
   repo: "Axekinn/wiki.axekin.com"
   repo_id: "R_kgDOO6CQAQ"
-  category: "Announcements"
-  category_id: "DIC_kwDOO6CQAc4CurE6"
+  category: "General"
+  category_id: "DIC_kwDOO6CQAc4CurE7"
   mapping: "url"
   strict: "1"
   reactions_enabled: "1"
