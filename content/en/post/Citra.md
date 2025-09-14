@@ -25,7 +25,7 @@ searchHidden: false
 
 ## 🎮 Introduction to Citra
 
-**Citra** is the world's most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphics improvements and near-perfect compatibility.
+**Citra** is the most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphical improvements and near-perfect compatibility. Azahar is its fork.
 
 ## 🔧 Step 1: Downloading Citra
 
@@ -89,43 +89,44 @@ For optimal organization of your library, here's the recommended tree structure:
     └── UPDATE/              # (No DLC for this game)
 ````
 
+
 ### Content types
 
-{{< admonition tip "Understanding folders" >}}
-- **BASE** 📁: The main game you download
-- **UPDATE** 📁: Updates and patches (recommended)
-- **DLC** 📁: Additional paid content (optional but recommended)
+{{< admonition tip "Understanding the folders" >}}
+- **BASE** 📁 : The main game files you downloaded
+- **UPDATE** 📁 : Updates and patches (recommended)
+- **DLC** 📁 : Additional paid content (optional but recommended)
 {{< /admonition >}}
 
-{{< admonition success "Advantages of this organization" >}}
-✅ **Automatic detection**: Games are automatically added to the emulator  
-✅ **Simplified management**: No need to manually select each ROM  
-✅ **Clear organization**: Easy to see what content you have for each game  
-✅ **Easy maintenance**: Simplified content addition/removal
+{{< admonition success "Benefits of this organization" >}}
+✅ **Auto-detection**: Games are added automatically in the emulator  
+✅ **Simplified management**: No need to manually add each ROM  
+✅ **Clear organization**: Easy to see what content you have per game  
+✅ **Easy maintenance**: Adding/removing content is straightforward
 {{< /admonition >}}
 
-> **📝 Important note**: If a game doesn't have updates or DLC, there's no need to create the corresponding folders. Only create folders for content you actually have.
+> **📝 Important note**: If a game has no updates or DLC, you don't need to create those folders. Only create folders for content you own.
 
 ### Result
 
-Once this structure is in place, your emulator will automatically detect all games present in the "3DS Games" folder and organize them properly in your library! 🎯
+Once this structure is in place, your emulator will automatically detect all games in the "Games 3DS" folder and display them neatly in your library! 🎯
 
-## 💡 Portable Configuration (Recommended)
+## 💡 Portable configuration (Recommended)
 
 {{< admonition tip "Portable installation" >}}
-**Before the first launch**, create a folder named `user` at the root of the Azahar directory. This operation will make the installation entirely portable.
+**Before first launch**, create a folder named `user` at the root of the Azahar installation. This will make the install fully portable.
 {{< /admonition >}}
 
 ### Advantages of portable mode
 
 | Aspect | Normal mode | Portable mode |
 |--------|-------------|---------------|
-| **Configurations** | Stored in system | Stored in folder |
-| **Saves** | Scattered on computer | Centralized in folder |
-| **Portability** | ❌ Tied to system | ✅ Easily movable |
-| **Backup** | Hard to locate | Simple to backup |
+| **Configs** | Stored in the system | Stored inside the folder |
+| **Saves** | Spread across the computer | Centralized in one folder |
+| **Portability** | ❌ Tied to the system | ✅ Easily movable |
+| **Backup** | Harder to locate | Simple to back up |
 
-### Structure after creating portable folder
+### Structure after creating the portable folder
 
 ```
 📁 Azahar/
@@ -139,50 +140,50 @@ Once this structure is in place, your emulator will automatically detect all gam
 ```
 
 {{< admonition success "Result" >}}
-**All your data** (configurations, saves, profiles) will be stored in the `user` folder, greatly facilitating management and backups!
+**All your data** (configs, saves, profiles) will be stored inside the `user` folder, making management and backups much easier!
 {{< /admonition >}}
 
-### Creation instructions
+### Creation steps
 
-1. **Navigate** to the Azahar installation folder
-2. **Create** a new folder named exactly `user`
-3. **Launch** Azahar - it will automatically detect portable mode
+1. Navigate to the Azahar installation folder
+2. Create a new folder named exactly `user`
+3. Launch Azahar — it will detect portable mode automatically
 
-> **📝 Note**: This operation must be performed **before** the first launch to be taken into account!
+> **📝 Note**: This must be done **before** the first launch to take effect!
 
-## ⚙️ Step 3: Installation and first launch
+## ⚙️ Step 3: Install and first run
 
-### Windows Prerequisites Installation
+### Windows prerequisites
 
-### First launch
-1. **Execute** `azahar.exe`
-2. **Set** the games folder (double click on the menu, add the "3DS Games" folder)
+### First run
+1. Run `azahar.exe`
+2. Set your games folder (double-click the menu, add the "Games 3DS" folder)
 
-## ⚙️ Step 3: Optimal Configuration
+## ⚙️ Step 4: Optimal configuration
 
 ### General settings
 ```
 Emulation → Configure → General
 ```
-- **Confirm exit while emulation is running**: ✅ Enabled
-- **Pause emulation when in background**: ✅ Enabled (optional)
-- **Enable Discord Presence**: ✅ Enabled (optional)
+- **Confirm exit while emulation is running** : ✅ Enabled
+- **Pause emulation when in background** : ✅ Enabled (optional)
+- **Enable Discord Presence** : ✅ Enabled (optional)
 
 ### System configuration
 ```
 Emulation → Configure → System
 ```
-- **Region**: Europe (or your region)
-- **Language**: Your language
-- **Console ID**: Random (generated automatically)
-- **Enable New 3DS**: ✅ Enabled (for better performance)
+- **Region** : Europe (or your region)
+- **Language** : Your language
+- **Console ID** : Random (auto-generated)
+- **Enable New 3DS** : ✅ Enabled (for better performance)
 
-### Optimal graphics settings
+### Recommended graphics settings
 
 #### Graphics tab
 ```
 Graphics → General
-- Internal Resolution: 2x Native (400x480) or higher. The higher the value, the more GPU it will consume
+- Internal Resolution: 2x Native (400x480) or higher. Higher values increase GPU usage.
 - Enable Linear Filtering: ✅ Enabled
 → General
 ```
@@ -193,67 +194,67 @@ Graphics → General
 Graphics → Layout
 ```
 
-{{< admonition tip "Screen layout interface" >}}
-This section allows you to customize the display of the two 3DS screens according to your visual preferences and hardware configuration.
+{{< admonition tip "Screen layout editor" >}}
+This section lets you customize the display of the two 3DS screens according to your visual preference and hardware.
 {{< /admonition >}}
 
-### Screen layout
+### Screen layouts
 
-**Predefined layout options:**
+**Preset options:**
 
 | Mode | Description | Recommendation |
 |------|-------------|----------------|
-| **Default** | Standard Nintendo configuration | ✅ **Beginners** |
-| **Single Screen** | Shows only the active screen | Gameplay focus |
-| **Large Screen** | Stretches across full width | Wide screens |
-| **Side by Side** | Horizontal screens | **Recommended gaming** |
-| **Separate Windows** | Two independent windows | Multi-monitors |
-| **Hybrid Screen** | Overlapped screens | Space saving |
-| **Custom Layout** | Manual configuration | ⭐ **Most flexible** |
+| **Default** | Standard Nintendo layout | ✅ **Beginners** |
+| **Single screen** | Shows only the active screen | Gameplay focus |
+| **Wide** | Stretches across the width | Wide monitors |
+| **Side-by-side** | Horizontal screens | **Recommended for gaming** |
+| **Separate windows** | Two independent windows | Multi-monitor setups |
+| **Stacked** | Screens stacked vertically | Space saving |
+| **Custom layout** | Manual configuration | ⭐ **Most flexible** |
 
-### Custom configuration
+### Custom layout configuration
 
 {{< admonition success "Advanced custom layout" >}}
 **Top screen:**
-- **Position X/Y**: `0px, 0px` (top left corner)
-- **Width/Height**: `800px, 480px` (optimal 4:3 ratio)
+- **Position X/Y** : `0px, 0px` (top-left corner)
+- **Width/Height** : `800px, 480px` (4:3 ratio ideal)
 
 **Bottom screen:**
-- **Position X/Y**: `80px, 500px` (slightly centered)
-- **Width/Height**: `640px, 480px` (proportional)
+- **Position X/Y** : `80px, 500px` (slightly centered)
+- **Width/Height** : `640px, 480px` (proportional)
 
-**Bottom screen opacity**: `100%` (full visibility)
+**Bottom screen opacity** : `100%` (fully visible)
 {{< /admonition >}}
 
 ### Display settings
 
 #### General options
 ```
-Screens → Configuration
+Screens → Setup
 ```
 
-**Recommended settings:**
-- **Swap Screens**: ❌ Disabled (keeps DS logic)
-- **Upright Screens**: ❌ Disabled
-- **Screen Gap**: `0.00` to `4.00` according to preference
-- **Large Screen Proportion**: `4.00` (main screen larger)
-- **Small Screen Proportion**: `Bottom Right` (touch position)
+**Recommended tweaks:**
+- **Swap screens** : ❌ Disabled (preserve DS logic)
+- **Rotate screens upwards** : ❌ Disabled
+- **Screen gap** : `0.00` to `4.00` depending on preference
+- **Main screen scale** : `4.00` (larger primary screen)
+- **Secondary screen position** : `Bottom right` (touch area)
 
-#### Single screen layout
+#### Single-screen mode
 
 {{< admonition note "Single screen mode" >}}
-**Usage:**
-- Games using only one main screen
-- Display resource saving
-- Focus on main action
+**Use cases:**
+- Games that use only one main screen
+- Save rendering resources
+- Focus on the main action
 
 **Configuration:**
-- **Stretched**: ☑️ Checked for both screens
-- **Left/Right Margin**: `0px` (full screen)
-- **Top/Bottom Margin**: `0px` (maximum usage)
+- **Stretch** : ☑️ Checked for both screens
+- **Left/Right margin** : `0px` (fullscreen)
+- **Top/Bottom margin** : `0px` (maximize usage)
 {{< /admonition >}}
 
-> **💡 Practical tip**: Test different layouts according to the game. RPGs work better with custom layout, while action games often prefer side-by-side mode.
+> **💡 Practical tip**: Test different layouts depending on the game. RPGs often benefit from custom layouts while action games prefer side-by-side.
 
 #### Advanced tab
 ```
@@ -274,50 +275,96 @@ Audio
 
 ### Controls configuration
 
-#### Automatic method
+#### Auto-detect method
 ```
 Controls → Configure
-1. Click on "Auto Configuration"
-2. Press the buttons on your controller
-3. Test all controls
+1. Click "Auto Config"
+2. Press buttons on your controller
+3. Test all inputs
 ```
 
+## ⚙️ Step 🌐 Multiplayer (quick setup)
+
+You can connect Citra/Azahar to an external multiplayer service by editing the local configuration. Warning: fully close Citra/Azahar before editing configuration files or your changes will be overwritten.
+
+1. Open the config folder:
+
+   - For a standard Windows install: `C:\\Users\\<YourUser>\\AppData\\Roaming\\citra\\config\\`
+   - For a portable install: open the `user` folder at the root of Azahar/Citra
+
+2. Edit the `qt-config.ini` file (with Notepad or a text editor) and change/add these two lines:
+
+```
+web_api_url\\default=false
+web_api_url=http://88.198.47.46:5000/
+```
+
+3. Save and close the editor, then relaunch Citra/Azahar.
+
+Host a dedicated room (Windows `host.bat` example)
+
+If you want to host via a dedicated batch file, create or edit a `host.bat` and paste the example below. You can change the room name and the Title ID.
+
+```
+citra-room ^
+  --room-name "your room name" ^
+  --room-description "All Games" ^
+  --preferred-game "Super Smash Bros" ^
+  --preferred-game-id "00040000000EDF00" ^
+  --port 24872 ^
+  --max_members 16 ^
+  --token "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ^
+  --enable-citra-mods ^
+  --web-api-url http://88.198.47.46:5000 ^
+  --ban-list-file "INSERT_BAN_LIST_FILE_PATH_HERE"
+pause
+```
+
+Notes:
+
+- Replace `--token` with your real token when required.
+- `--preferred-game-id` corresponds to the game's Title ID (16 hex digits). Leave empty to accept all games.
+- `--web-api-url` must point to the API server (here: `http://88.198.47.46:5000`).
+
+With these steps, Citra/Azahar will use the specified multiplayer service and the `host.bat` will let you host a room from your machine.
+
 ### Supported formats
-- **.CCI**: Only format supported with my ROMs with Azahar, due to their anti-piracy restrictions
+- **.CCI** : Only format supported by my ROMs with Azahar due to anti-piracy restrictions
+
 
 ## ❓ FAQ - Frequently Asked Questions
 
 ### General questions
 
-**Q: Can Azahar run all 3DS games?**
-**A:** About 90% of 3DS games work well to perfectly. Check the compatibility database for your specific game.
+**Q: Can Azahar run every 3DS game?**  
+**A:** Approximately 90% of 3DS games run well to perfectly. Check the compatibility database for your specific title.
 
-**Q: Does stereoscopic 3D work?**
-**A:** Yes, with 3D glasses or a 3D screen. Side-by-Side mode also available for VR.
+**Q: Does stereoscopic 3D work?**  
+**A:** Yes, with 3D-capable displays or using side-by-side mode for VR.
 
-**Q: Can I use my real 3DS saves?**
-**A:** Yes, with Checkpoint or JKSM you can transfer your saves both ways.
+**Q: Can I use my real 3DS saves?**  
+**A:** Yes — with Checkpoint or JKSM you can transfer saves both ways.
 
 ### Technical questions
 
-**Q: Why are some games slow?**
-**A:** 3DS games are optimized for specific hardware. Emulation requires more power, especially for complex games.
+**Q: Why are some games slow?**  
+**A:** 3DS games are optimized for specific hardware. Emulation is more demanding, especially for complex titles.
 
-**Q: OpenGL or Vulkan?**
-**A:** OpenGL is more stable and compatible. Vulkan can offer better performance on recent GPUs.
+**Q: OpenGL or Vulkan?**  
+**A:** OpenGL is more stable and compatible. Vulkan can offer better performance on modern GPUs.
 
-**Q: Does New 3DS Mode improve all games?**
-**A:** Mainly games that use it natively (Xenoblade, Monster Hunter, etc.) and some homebrews.
+**Q: Does enabling New 3DS mode improve everything?**  
+**A:** Mainly for games that natively use New 3DS features (Xenoblade, Monster Hunter, etc.) and certain homebrews.
 
-### Common problems
+### Common issues
 
-**Q: "Could not determine the system region"?**
+**Q: "Could not determine the system region"?**  
 **A:** Install system files (aes_keys.txt) and configure the region in settings.
 
-**Q: HD textures don't display?**
-**A:** Check that "Custom Textures" is enabled and that the Title ID matches the folder.
+**Q: HD textures not showing?**  
+**A:** Verify "Custom Textures" is enabled and the Title ID matches the folder.
 
-**Q: How to improve performance on Android?**
-**A:** Use Citra MMJ, reduce resolution, enable frame skip if necessary.
+**Q: How to improve performance on Android?**  
+**A:** Use Citra MMJ, lower the resolution, enable frame skip if needed.
 
-**Enjoy your 3DS games in high definition! 🎮✨**
+Enjoy your 3DS games in high definition! 🎮✨

@@ -14,7 +14,7 @@ weight: 20
 aliases: 
   - /fr/citra-cheats-mods/
   - /fr/guides/citra-modding/
-summary: "Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps."
+summary: "Apprenez à installer des codes de triche et des modifications de jeu sur l'émulateur Citra. Tutoriel détaillé avec structure des dossiers et étapes d'installation."
 cover: "/images/covers/azahar.webp"
 image: "/images/covers/azahar.webp"
 showtoc: true
@@ -25,11 +25,11 @@ searchHidden: false
 
 ## 🎮 Introduction à Citra
 
-**Citra** est l'émulateur Nintendo 3DS open-source le plus abouti au monde. Développé depuis 2013, il permet de jouer aux jeux 3DS sur PC avec des améliorations graphiques significatives et une compatibilité quasi-parfaite.
+**Citra** est l'émulateur Nintendo 3DS open-source le plus abouti au monde. Développé depuis 2013, il permet de jouer aux jeux 3DS sur PC avec des améliorations graphiques significatives et une compatibilité quasi-parfaite. Azahar est son descendant
 
-## 🔧 Étape 1 : Téléchargement de Citra
+## 🔧 Étape 1 : Téléchargement de Azahar
 
-### Option 1 : Azahar Officiam
+### Option 1 : Azahar Official
 ```bash
 # Site officiel
 https://github.com/azahar-emu/azahar/releases
@@ -65,7 +65,7 @@ Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces l
 **Résultat** : Vous obtiendrez les fichiers de jeu prêts à être utilisés avec 3DS ! 🎯
 
 
-## 📁 Étape 2 : Structure des dossiers
+## 📁 Étape 4 : Structure des dossiers
 
 Créez cette structure de dossiers pour organiser vos fichiers :
 
@@ -159,7 +159,7 @@ Une fois cette structure mise en place, votre émulateur détectera automatiquem
 1. **Exécutez** `azahar.exe`
 2. **Définissez** le dossier des jeux (double cliquer sur le menu, ajouter le dossier "Jeux 3DS")
 
-## ⚙️ Étape 3 : Configuration optimale
+## ⚙️ Étape 4 : Configuration optimale
 
 ### Paramètres généraux
 ```
@@ -283,6 +283,52 @@ Controls → Configure
 3. Testez tous les contrôles
 ```
 
+## ⚙️ Étape 🌐 Multijoueur (configuration rapide)
+
+Vous pouvez connecter Citra/Azahar au service multijoueur externe en modifiant la configuration locale. Attention : fermez complètement Citra/Azahar avant d'éditer les fichiers de configuration, sinon vos changements seront écrasés.
+
+1. Ouvrez le dossier de configuration :
+
+   - Pour une installation classique Windows : `C:\\Users\\<VotreUtilisateur>\\AppData\\Roaming\\citra\\config\\`
+   - Pour une installation portable : ouvrez le dossier `user` à la racine d'Azahar/Citra
+
+2. Éditez le fichier `qt-config.ini` (avec Notepad ou un éditeur texte) et changez/ajoutez ces deux lignes :
+
+```
+web_api_url\\default=false
+web_api_url=http://88.198.47.46:5000/
+```
+
+3. Sauvegardez et fermez l'éditeur, puis relancez Citra/Azahar.
+
+Héberger une salle dédiée (exemple Windows `host.bat`)
+
+Si vous voulez héberger via un fichier batch dédié, créez ou éditez un fichier `host.bat` et collez l'exemple ci-dessous. Vous pouvez personnaliser le nom de la room et le Title ID.
+
+```
+citra-room ^
+  --room-name "votre nom de room" ^
+  --room-description "All Games" ^
+  --preferred-game "Super Smash Bros" ^
+  --preferred-game-id "00040000000EDF00" ^
+  --port 24872 ^
+  --max_members 16 ^
+  --token "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ^
+  --enable-citra-mods ^
+  --web-api-url http://88.198.47.46:5000 ^
+  --ban-list-file "INSÉRER_LE_CHEMIN_DU_BAN_LIST_ICI"
+pause
+```
+
+Remarques :
+
+- Remplacez le `--token` par votre token réel si nécessaire.
+- `--preferred-game-id` correspond au Title ID du jeu (16 hexadécimales). Laissez vide si vous acceptez tous les jeux.
+- Le `--web-api-url` doit pointer vers le serveur API (ici : `http://88.198.47.46:5000`).
+
+Avec ces étapes, Citra/Azahar utilisera le service multijoueur indiqué et le fichier `host.bat` permettra d'héberger une salle dédiée depuis votre machine.
+
+
 ### Formats supportés
 - **.CCI** : Seul format supporté avec mes roms avec Azahar, dû à leurs restrictions anti piracy
 
@@ -323,4 +369,3 @@ Controls → Configure
 **R :** Utilisez Citra MMJ, réduisez la résolution, activez le frame skip si nécessaire.
 
 **Profitez de vos jeux 3DS en haute définition ! 🎮✨**
-```
