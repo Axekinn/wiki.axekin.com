@@ -74,7 +74,10 @@ Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces l
 ### Installation des clés de chiffrement
 
 #### Méthode automatique
-- [Clé version 19.0.1](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+
+- [Keys version 18.X.X](https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.-1-0.zip)
+- [Keys version 19.X.X](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+- [Keys version 20.X.X](https://files.prodkeys.net/ProdKeys.net-v20.0.1.zip)
 
 
 #### Installation dans Eden
@@ -87,6 +90,11 @@ Une fois le téléchargement terminé, **extrayez** l'archive avec l'un de ces l
 ### Installation du firmware Nintendo Switch
 
 - [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
+- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.1.5.zip)
+- [Firmware 20.2.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.2.0.zip)
+- [Firmware 20.3.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.3.0.zip)
+- [Firmware 20.4.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.4.0.zip)
+- [Firmware 20.5.0](https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip)
 
 #### Installation dans Eden
 1. `Tools → Install Firmware`

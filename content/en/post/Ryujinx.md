@@ -168,9 +168,12 @@ Once this structure is in place, your emulator will automatically detect all gam
 
 ### Installing Nintendo Switch firmware
 
-- [Firmware 18.1.0](https://github.com/THZoria/NX_Firmware/releases/download/18.1.0/Firmware.18.1.0.zip)
 - [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
-- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/20.1.5/Firmware.20.1.5.zip)
+- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.1.5.zip)
+- [Firmware 20.2.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.2.0.zip)
+- [Firmware 20.3.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.3.0.zip)
+- [Firmware 20.4.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.4.0.zip)
+- [Firmware 20.5.0](https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip)
 
 #### Installation in Ryujinx
 1. `Action → Install Firmware → Install Firmware from a XCI or ZIP`

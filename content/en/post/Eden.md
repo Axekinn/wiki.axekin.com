@@ -28,7 +28,7 @@ searchHidden: false
 
 **Eden** is an open-source Nintendo Switch emulator developed by the Citra team. Known for its high performance and growing compatibility, Eden is one of the most popular Switch emulators in the world.
 
-> ⚠️ **Legal Note**: This emulator is intended only for playing games you legally own. Emulation for backup and research purposes is legal, but piracy is not.
+> ⚠️ **Legal Note**: This emulemmelator is intended only for playing games you legally own. Emulation for backup and research purposes is legal, but piracy is not.
 
 ## 🔧 Step 1: Downloading Eden
 
@@ -74,7 +74,9 @@ Once the download is complete, **extract** the archive using one of these progra
 ### Installing encryption keys
 
 #### Automatic method
-- [Key version 19.0.1](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+- [Keys version 18.X.X](https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.-1-0.zip)
+- [Keys version 19.X.X](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+- [Keys version 20.X.X](https://files.prodkeys.net/ProdKeys.net-v20.0.1.zip)
 
 #### Installation in Eden
 1. **Open** Eden
@@ -86,6 +88,12 @@ Once the download is complete, **extract** the archive using one of these progra
 ### Installing Nintendo Switch firmware
 
 - [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
+- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.1.5.zip)
+- [Firmware 20.2.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.2.0.zip)
+- [Firmware 20.3.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.3.0.zip)
+- [Firmware 20.4.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.4.0.zip)
+- [Firmware 20.5.0](https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip)
+
 
 #### Installation in Eden
 1. `Tools → Install Firmware`

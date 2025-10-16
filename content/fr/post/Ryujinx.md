@@ -156,7 +156,10 @@ Une fois cette structure mise en place, votre émulateur détectera automatiquem
 ### Premier lancement
 1. **Exécutez** `ryujinx.exe`
 2. **Installer les clés**
-- [Clé version 20.0.1 | 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+
+- [Keys version 18.X.X](https://files-prodkeys.b-cdn.net/prodkeys/ProdKeys.net-v18.-1-0.zip)
+- [Keys version 19.X.X](https://files.prodkeys.net/ProdKeys.net-v19.0.1.zip)
+- [Keys version 20.X.X](https://files.prodkeys.net/ProdKeys.net-v20.0.1.zip)
 
 
 #### Installation dans Ryujinx
@@ -168,7 +171,12 @@ Une fois cette structure mise en place, votre émulateur détectera automatiquem
 
 ### Installation du firmware Nintendo Switch
 
-- [Firmware 20.1.0](https://cdn.discordapp.com/attachments/1055844117344690296/1378798667779149856/Keys-20.0.1.zip?ex=68448153&is=68432fd3&hm=ca448d573b22f44a791a294708b3728a933114448dff0da746b31b7bcf72e818&)
+- [Firmware 19.0.1](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.19.0.1.zip)
+- [Firmware 20.1.5](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.1.5.zip)
+- [Firmware 20.2.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.2.0.zip)
+- [Firmware 20.3.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.3.0.zip)
+- [Firmware 20.4.0](https://github.com/THZoria/NX_Firmware/releases/download/19.0.1/Firmware.20.4.0.zip)
+- [Firmware 20.5.0](https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip)
 
 #### Installation dans Ryujinx
 1. `Action → Install Firmware → Install Firmware from a XCI or ZIP `
