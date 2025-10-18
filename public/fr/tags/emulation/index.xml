@@ -12,12 +12,52 @@
     
     <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
     
-    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/fr/tags/emulation/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Configuration de Lossless Scaling pour Émulateurs</title>
+      <link>http://localhost:1313/fr/post/losless_scaling/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/losless_scaling/</guid>
+      <description>
+        <![CDATA[<h1>Configuration de Lossless Scaling pour Émulateurs</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Maximisez vos FPS sur les émulateurs avec Lossless Scaling. Guide détaillé de configuration pour Switch, PS2, PS3 avec frame generation et upscaling.
+        
+        <hr><p>Publié le 2025-10-07 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
+      </description>
+      
+        <category>Optimisation</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</title>
+      <link>http://localhost:1313/fr/post/ppsspp/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ppsspp/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à configurer PPSSPP pour une émulation PSP optimale. Guide complet avec paramètres recommandés et optimisations.
+        
+        <hr><p>Publié le 2025-09-09 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-09-09</p>]]>
+      </description>
+      
+        <category>PPSSPP</category>
+      
+    </item>
     
     
 
@@ -176,46 +216,6 @@
       </description>
       
         <category>Cemu</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
-      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
-      <description>
-        <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
-        
-          Apprenez à installer des codes de triche et modifications de jeux sur l&rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d&rsquo;installation.
-        
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
-      </description>
-      
-        <category>Ryujinx</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
-      <link>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</guid>
-      <description>
-        <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
-        
-          Apprenez à réinstaller complètement Yuzu et Ryujinx sans perdre vos précieuses sauvegardes. Guide détaillé avec captures d&rsquo;écran et méthodes de sauvegarde.
-        
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
-      </description>
-      
-        <category>Yuzu</category><category>Ryujinx</category>
       
     </item>
     

@@ -1,0 +1,1517 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Complete PPSSPP Configuration Guide - PlayStation Portable Emulator | Axekin
+</title>
+<meta
+  name="description"
+  content="Detailed tutorial to configure PPSSPP and optimize PSP emulation performance on PC - Graphics settings, controls and audio"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator | Axekin" />
+  <meta
+    property="og:description"
+    content="Detailed tutorial to configure PPSSPP and optimize PSP emulation performance on PC - Graphics settings, controls and audio"
+  />
+  <meta property="og:url" content="http://localhost:1313/en/post/ppsspp/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/ppsspp.png"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-09-09T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-09-09T00:00:00&#43;00:00" /><meta property="article:tag" content="ppsspppspemulationplaystationportableconfigurationperformancegraphics" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/ppsspp.png" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+
+<link rel="stylesheet" href="/css/custom.css">
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/ppsspp\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/ppsspp.png" alt="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="fade-down">Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#installation-and-prerequisites">Installation and prerequisites</a>
+      <ul>
+        <li><a href="#ppsspp-download">PPSSPP Download</a></li>
+      </ul>
+    </li>
+    <li><a href="#graphics-settings-configuration">Graphics settings configuration</a>
+      <ul>
+        <li><a href="#basic-settings">Basic settings</a></li>
+        <li><a href="#visual-enhancements">Visual enhancements</a></li>
+        <li><a href="#rendering-and-compatibility">Rendering and compatibility</a></li>
+        <li><a href="#post-processing-and-shaders">Post-processing and shaders</a></li>
+      </ul>
+    </li>
+    <li><a href="#controls-configuration">Controls configuration</a>
+      <ul>
+        <li><a href="#supported-controller-types">Supported controller types</a></li>
+        <li><a href="#automatic-configuration">Automatic configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#audio-configuration">Audio configuration</a>
+      <ul>
+        <li><a href="#basic-settings-1">Basic settings</a></li>
+        <li><a href="#advanced-audio-optimizations">Advanced audio optimizations</a></li>
+        <li><a href="#per-game-settings">Per-game settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#network-and-multiplayer-settings">Network and multiplayer settings</a>
+      <ul>
+        <li><a href="#ad-hoc-configuration">Ad Hoc configuration</a></li>
+        <li><a href="#local-and-online-multiplayer">Local and online multiplayer</a></li>
+        <li><a href="#infrastructure-servers-and-advanced-multiplayer">Infrastructure servers and advanced multiplayer</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-system-settings">Advanced system settings</a>
+      <ul>
+        <li><a href="#psp-system-configuration">PSP system configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-and-utilities">Tools and utilities</a>
+      <ul>
+        <li><a href="#save-manager">Save manager</a></li>
+        <li><a href="#homebrew-manager">Homebrew manager</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">23</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      12
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">73</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-09-09 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-09-09</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-09-09</time
+    >
+  </span></div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/ppsspp"
+      data-aos="zoom-in"
+      >PPSSPP</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="introduction">
+<a class="header-anchor" href="#introduction"></a>
+Introduction
+</h2><p><strong>PPSSPP</strong> is the reference emulator for the <strong>PlayStation Portable (PSP)</strong> allowing you to play PSP games on PC, Android and other platforms. This guide details the optimal configuration to achieve the best performance and graphics quality.</p>
+<h2 id="installation-and-prerequisites">
+<a class="header-anchor" href="#installation-and-prerequisites"></a>
+Installation and prerequisites
+</h2><h3 id="ppsspp-download">
+<a class="header-anchor" href="#ppsspp-download"></a>
+PPSSPP Download
+</h3><p><strong>🔗 Official website</strong>: <code>https://www.ppsspp.org/</code></p>
+<p><strong>Available versions:</strong></p>
+<ul>
+<li><strong>Stable version</strong>: Recommended for general use</li>
+<li><strong>Development version</strong>: Latest features (may be unstable)</li>
+<li><strong>Portable version</strong>: No installation required</li>
+</ul>
+<h2 id="graphics-settings-configuration">
+<a class="header-anchor" href="#graphics-settings-configuration"></a>
+Graphics settings configuration
+</h2><h3 id="basic-settings">
+<a class="header-anchor" href="#basic-settings"></a>
+Basic settings
+</h3><h4 id="rendering-backend">
+<a class="header-anchor" href="#rendering-backend"></a>
+Rendering backend
+</h4><p><strong>Available rendering options:</strong></p>
+<ul>
+<li><strong>Vulkan</strong>: Recommended for modern GPUs (best performance)</li>
+<li><strong>OpenGL</strong>: Compatible with most systems</li>
+<li><strong>Direct3D 11</strong>: High-performance alternative for Windows</li>
+<li><strong>Software</strong>: Last resort (very slow but very compatible)</li>
+</ul>
+<h4 id="resolution-and-scaling">
+<a class="header-anchor" href="#resolution-and-scaling"></a>
+Resolution and scaling
+</h4><p><strong>Internal rendering resolution:</strong></p>
+<pre tabindex="0"><code>1x PSP (480x272) - Original resolution
+2x PSP (960x544) - Recommended for most systems
+3x PSP (1440x816) - For mid-range GPUs
+4x PSP (1920x1088) - For high-end GPUs
+5x PSP (2400x1360) - For very high resolutions
+6x PSP+ - For 4K displays
+</code></pre><p><strong>Scaling mode:</strong></p>
+<ul>
+<li><strong>Linear</strong>: Simple smoothing (recommended)</li>
+<li><strong>Nearest</strong>: Sharp pixels, retro style</li>
+<li><strong>Hybrid</strong>: Linear/nearest blend for textures</li>
+<li><strong>Bicubic</strong>: High quality but more demanding</li>
+</ul>
+<h3 id="visual-enhancements">
+<a class="header-anchor" href="#visual-enhancements"></a>
+Visual enhancements
+</h3><h4 id="anti-aliasing-msaa">
+<a class="header-anchor" href="#anti-aliasing-msaa"></a>
+Anti-aliasing (MSAA)
+</h4><p><strong>Available levels:</strong></p>
+<ul>
+<li><strong>Off</strong>: Maximum performance</li>
+<li><strong>2x</strong>: Good quality/performance compromise</li>
+<li><strong>4x</strong>: Notable visual improvement</li>
+<li><strong>8x</strong>: For powerful GPUs only</li>
+</ul>
+<h4 id="texture-filtering">
+<a class="header-anchor" href="#texture-filtering"></a>
+Texture filtering
+</h4><p><strong>Filtering types:</strong></p>
+<ul>
+<li><strong>Auto</strong>: Automatic detection (recommended)</li>
+<li><strong>Nearest</strong>: Sharp pixels, retro style</li>
+<li><strong>Linear</strong>: Texture smoothing</li>
+<li><strong>Auto max quality</strong>: Maximum quality</li>
+</ul>
+<p><strong>Texture enhancement:</strong></p>
+<ul>
+<li><strong>Texture Scaling</strong>: xBRZ, Hybrid, Bicubic to improve textures</li>
+<li><strong>Deposterize</strong>: Reduces banding effect on gradients</li>
+<li><strong>Anisotropic Filtering</strong>: Improves sharpness of distant textures</li>
+</ul>
+<h3 id="rendering-and-compatibility">
+<a class="header-anchor" href="#rendering-and-compatibility"></a>
+Rendering and compatibility
+</h3><h4 id="rendering-mode">
+<a class="header-anchor" href="#rendering-mode"></a>
+Rendering mode
+</h4><p><strong>Buffered Rendering:</strong></p>
+<ul>
+<li>✅ <strong>Enabled</strong>: Recommended for compatibility (default)</li>
+<li>❌ <strong>Disabled</strong>: Only if performance issues</li>
+</ul>
+<p><strong>Read Framebuffers To Memory:</strong></p>
+<ul>
+<li><strong>Off</strong>: Maximum performance</li>
+<li><strong>On</strong>: Necessary for certain visual effects</li>
+<li><strong>GPU</strong>: Uses GPU for transfers (faster)</li>
+</ul>
+<h4 id="psp-effects-simulation">
+<a class="header-anchor" href="#psp-effects-simulation"></a>
+PSP effects simulation
+</h4><p><strong>Block Transfer Effects:</strong></p>
+<ul>
+<li>✅ <strong>Simulate Block Transfer</strong>: Necessary for certain visual effects</li>
+<li>✅ <strong>Disable slower effects</strong>: Disables demanding effects</li>
+</ul>
+<p><strong>Fragment Depth:</strong></p>
+<ul>
+<li>✅ <strong>Test new clear racetexts</strong>: Improves rendering of certain games</li>
+</ul>
+<h3 id="post-processing-and-shaders">
+<a class="header-anchor" href="#post-processing-and-shaders"></a>
+Post-processing and shaders
+</h3><h4 id="post-processing-effects">
+<a class="header-anchor" href="#post-processing-effects"></a>
+Post-processing effects
+</h4><p><strong>Popular shaders:</strong></p>
+<ul>
+<li><strong>FXAA</strong>: Fast and efficient anti-aliasing</li>
+<li><strong>Bloom</strong>: Light and brightness effects</li>
+<li><strong>Cartoon</strong>: Cartoon/cel-shading style</li>
+<li><strong>CRT</strong>: CRT screen simulation</li>
+<li><strong>Scanlines</strong>: Retro scanlines</li>
+<li><strong>Upscale</strong>: Texture enhancement</li>
+<li><strong>4xHqGLSL</strong>: High-quality filter</li>
+</ul>
+<p><strong>Shader configuration:</strong></p>
+<ol>
+<li><strong>Enable</strong> &ldquo;Postprocessing Shader&rdquo;</li>
+<li><strong>Select</strong> the shader from the list</li>
+<li><strong>Adjust</strong> intensity if available</li>
+<li><strong>Chain</strong> multiple shaders if desired</li>
+</ol>
+<h2 id="controls-configuration">
+<a class="header-anchor" href="#controls-configuration"></a>
+Controls configuration
+</h2><h3 id="supported-controller-types">
+<a class="header-anchor" href="#supported-controller-types"></a>
+Supported controller types
+</h3><p><strong>Recommended controllers:</strong></p>
+<ul>
+<li><strong>Xbox 360/One/Series</strong>: Excellent native support</li>
+<li><strong>PlayStation 3/4/5</strong>: Via Steam Input or DS4Windows</li>
+<li><strong>Nintendo Switch Pro Controller</strong>: Native support</li>
+<li><strong>8BitDo controllers</strong>: Excellent compatibility</li>
+<li><strong>Keyboard/Mouse</strong>: Fully customizable configuration</li>
+</ul>
+<h3 id="automatic-configuration">
+<a class="header-anchor" href="#automatic-configuration"></a>
+Automatic configuration
+</h3><h4 id="automatic-detection">
+<a class="header-anchor" href="#automatic-detection"></a>
+Automatic detection
+</h4><p><strong>For popular controllers:</strong></p>
+<ol>
+<li><strong>Connect</strong> your controller before launching PPSSPP</li>
+<li><strong>Go</strong> to Settings &gt; Controls</li>
+<li><strong>Select</strong> your device in &ldquo;Device&rdquo;</li>
+<li><strong>Click</strong> &ldquo;Autoconfigure&rdquo; for automatic configuration</li>
+</ol>
+<h2 id="audio-configuration">
+<a class="header-anchor" href="#audio-configuration"></a>
+Audio configuration
+</h2><h3 id="basic-settings-1">
+<a class="header-anchor" href="#basic-settings-1"></a>
+Basic settings
+</h3><h4 id="audio-quality">
+<a class="header-anchor" href="#audio-quality"></a>
+Audio quality
+</h4><p><strong>Sample rate:</strong></p>
+<ul>
+<li><strong>44100 Hz</strong>: Standard and recommended</li>
+<li><strong>48000 Hz</strong>: Slightly superior quality</li>
+<li><strong>22050 Hz</strong>: For less powerful systems</li>
+</ul>
+<p><strong>Audio latency:</strong></p>
+<ul>
+<li><strong>Low (faster)</strong>: 40-60ms - Recommended for action</li>
+<li><strong>Medium</strong>: 80-100ms - Good general compromise</li>
+<li><strong>High (more stable)</strong>: 120ms+ - If you have audio cuts</li>
+</ul>
+<h4 id="audio-backend">
+<a class="header-anchor" href="#audio-backend"></a>
+Audio backend
+</h4><p><strong>Backend selection:</strong></p>
+<ul>
+<li><strong>Auto</strong>: Automatic detection (recommended)</li>
+<li><strong>WASAPI</strong>: Windows (low latency)</li>
+<li><strong>DirectSound</strong>: Windows (compatible)</li>
+<li><strong>SDL</strong>: Multiplatform</li>
+<li><strong>OpenSL ES</strong>: Android</li>
+</ul>
+<h3 id="advanced-audio-optimizations">
+<a class="header-anchor" href="#advanced-audio-optimizations"></a>
+Advanced audio optimizations
+</h3><h4 id="synchronization">
+<a class="header-anchor" href="#synchronization"></a>
+Synchronization
+</h4><p><strong>Audio sync:</strong></p>
+<ul>
+<li>✅ <strong>Enabled</strong>: Synchronization with video (recommended)</li>
+<li>❌ <strong>Disabled</strong>: May cause slowdowns but improves performance</li>
+</ul>
+<p><strong>Audio timestretching:</strong></p>
+<ul>
+<li>✅ <strong>Enabled</strong>: Maintains pitch during speed changes</li>
+<li>Useful for fast forwarding</li>
+</ul>
+<h4 id="resampling-quality">
+<a class="header-anchor" href="#resampling-quality"></a>
+Resampling quality
+</h4><p><strong>Audio resampler:</strong></p>
+<ul>
+<li><strong>Linear</strong>: Basic quality, maximum performance</li>
+<li><strong>HermitePolynomial</strong>: Good quality/performance balance (recommended)</li>
+<li><strong>BLAM</strong>: High quality but more resource-intensive</li>
+</ul>
+<h3 id="per-game-settings">
+<a class="header-anchor" href="#per-game-settings"></a>
+Per-game settings
+</h3><p><strong>Volume settings:</strong></p>
+<ul>
+<li><strong>Global volume</strong>: General PPSSPP volume</li>
+<li><strong>BGM volume</strong>: Background music volume</li>
+<li><strong>SE volume</strong>: Sound effects volume</li>
+</ul>
+<h2 id="network-and-multiplayer-settings">
+<a class="header-anchor" href="#network-and-multiplayer-settings"></a>
+Network and multiplayer settings
+</h2><h3 id="ad-hoc-configuration">
+<a class="header-anchor" href="#ad-hoc-configuration"></a>
+Ad Hoc configuration
+</h3><h4 id="network-infrastructure">
+<a class="header-anchor" href="#network-infrastructure"></a>
+Network infrastructure
+</h4><p><strong>Basic settings:</strong></p>
+<ul>
+<li>✅ <strong>Enable networking/WLAN</strong>: Activates network features</li>
+<li><strong>Change Mac Address</strong>: Modifies virtual MAC address if necessary</li>
+</ul>
+<h3 id="local-and-online-multiplayer">
+<a class="header-anchor" href="#local-and-online-multiplayer"></a>
+Local and online multiplayer
+</h3><h4 id="multiplayer-configuration">
+<a class="header-anchor" href="#multiplayer-configuration"></a>
+Multiplayer configuration
+</h4><p><strong>To play with friends:</strong></p>
+<ol>
+<li><strong>Enable</strong> all network options</li>
+<li><strong>Configure</strong> the same Ad Hoc server</li>
+<li><strong>Use</strong> Hamachi, ZeroTier or direct connection</li>
+<li><strong>Share</strong> the server IP with your friends</li>
+<li><strong>Launch</strong> the same game on all devices</li>
+</ol>
+<h4 id="chat-and-communication">
+<a class="header-anchor" href="#chat-and-communication"></a>
+Chat and communication
+</h4><p><strong>Social features:</strong></p>
+<ul>
+<li><strong>Enable built-in chat</strong>: Activates in-game chat</li>
+<li><strong>Chat button position</strong>: Chat button position</li>
+<li><strong>Chat screen position</strong>: Chat screen position</li>
+</ul>
+<h3 id="infrastructure-servers-and-advanced-multiplayer">
+<a class="header-anchor" href="#infrastructure-servers-and-advanced-multiplayer"></a>
+Infrastructure servers and advanced multiplayer
+</h3><h4 id="multiplayer-server-types">
+<a class="header-anchor" href="#multiplayer-server-types"></a>
+Multiplayer server types
+</h4><p><strong>Available servers:</strong></p>
+<ul>
+<li><strong>Built-in Ad Hoc Server</strong>: Simple and fast for playing with friends</li>
+<li><strong>Community servers</strong>: Public servers hosted by the community</li>
+<li><strong>Custom servers</strong>: Configure your own server</li>
+<li><strong>AdhocServer PSP</strong>: Complete PSP Ad Hoc system emulation</li>
+</ul>
+<h4 id="infrastructure-server-configuration">
+<a class="header-anchor" href="#infrastructure-server-configuration"></a>
+Infrastructure server configuration
+</h4><p><strong>Popular public servers:</strong></p>
+<pre tabindex="0"><code>Server Name: Cold Bird Server
+IP: coldbird.net
+Port: 27312
+Status: Active - Recommended for most games
+
+Server Name: RetroArch Ad Hoc Server
+IP: lobby.libretro.com
+Port: 6000
+Status: Stable - Reliable alternative
+
+Server Name: Community Server EU
+IP: ppsspp-eu.net
+Port: 27312
+Status: Specialized for Europe
+</code></pre><h4 id="network-optimization-for-multiplayer">
+<a class="header-anchor" href="#network-optimization-for-multiplayer"></a>
+Network optimization for multiplayer
+</h4><p><strong>Latency settings:</strong></p>
+<ul>
+<li><strong>Connection timeout</strong>: 5-10 seconds (balance between stability and responsiveness)</li>
+<li><strong>Packet loss tolerance</strong>: 5% maximum recommended</li>
+<li><strong>Ping limit</strong>: &lt;150ms for optimal experience</li>
+<li><strong>Buffer size</strong>: Adjust according to your bandwidth</li>
+</ul>
+<p><strong>Windows firewall configuration:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span># Opening port 27312 for PPSSPP
+</span></span><span style="display:flex;"><span>netsh advfirewall firewall add rule name=<span style="color:#e6db74">&#34;PPSSPP AdHoc Server&#34;</span> dir=in action=allow protocol=TCP localport=27312
+</span></span><span style="display:flex;"><span>netsh advfirewall firewall add rule name=<span style="color:#e6db74">&#34;PPSSPP AdHoc Server UDP&#34;</span> dir=in action=allow protocol=UDP localport=27312
+</span></span></code></pre></div><p><strong>Router configuration:</strong></p>
+<ul>
+<li><strong>Port forwarding</strong>: 27312 (TCP/UDP) to your local IP</li>
+<li><strong>UPnP</strong>: Enabled for automatic configuration</li>
+</ul>
+<h2 id="advanced-system-settings">
+<a class="header-anchor" href="#advanced-system-settings"></a>
+Advanced system settings
+</h2><h3 id="psp-system-configuration">
+<a class="header-anchor" href="#psp-system-configuration"></a>
+PSP system configuration
+</h3><h4 id="emulated-psp-model">
+<a class="header-anchor" href="#emulated-psp-model"></a>
+Emulated PSP model
+</h4><p><strong>PSP Model:</strong></p>
+<ul>
+<li><strong>PSP-1000</strong>: Original PSP (less RAM)</li>
+<li><strong>PSP-2000/3000</strong>: PSP Slim (more RAM, recommended)</li>
+<li><strong>PSP-Go</strong>: For specific PSP Go games</li>
+</ul>
+<h4 id="firmware-and-bios">
+<a class="header-anchor" href="#firmware-and-bios"></a>
+Firmware and BIOS
+</h4><p><strong>PSP Firmware:</strong></p>
+<ul>
+<li><strong>Version</strong>: Generally 6.60 or 6.61 (latest version)</li>
+<li><strong>Fast Memory</strong>: ✅ Enabled for better performance</li>
+<li><strong>CPU Clock</strong>: CPU frequency (default: 222MHz, max: 333MHz)</li>
+</ul>
+<h2 id="tools-and-utilities">
+<a class="header-anchor" href="#tools-and-utilities"></a>
+Tools and utilities
+</h2><h3 id="save-manager">
+<a class="header-anchor" href="#save-manager"></a>
+Save manager
+</h3><h4 id="data-management">
+<a class="header-anchor" href="#data-management"></a>
+Data management
+</h4><p><strong>Important folders:</strong></p>
+<pre tabindex="0"><code>/PSP/SAVEDATA/ - Game saves
+/PSP/SYSTEM/ - PSP system files
+/PSP/GAME/ - Homebrew and demos
+/seplugins/ - Custom plugins
+</code></pre><p><strong>Save tools:</strong></p>
+<ul>
+<li><strong>Save State Manager</strong>: Save state management</li>
+<li><strong>Save Data Manager</strong>: Import/export saves</li>
+</ul>
+<h3 id="homebrew-manager">
+<a class="header-anchor" href="#homebrew-manager"></a>
+Homebrew manager
+</h3><h4 id="homebrew-support">
+<a class="header-anchor" href="#homebrew-support"></a>
+Homebrew support
+</h4><p><strong>Homebrew &amp; Demos:</strong></p>
+<ul>
+<li>Complete support for PSP homebrew applications</li>
+<li>Installation via <code>/PSP/GAME/</code> folder</li>
+<li>Compatibility with most popular homebrews</li>
+</ul>
+<blockquote>
+<p>There is the possibility to make manipulations with hidden settings. I won&rsquo;t show them in this tutorial, as we focus only on the main ones. Feel free to do it yourself</p></blockquote>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>PPSSPP offers an exceptional PSP emulation experience with proper configuration. The key to success lies in balancing visual quality and performance according to your hardware.</p>
+<p><strong>Key points to remember:</strong></p>
+<ul>
+<li><strong>Start</strong> with recommended settings for your configuration</li>
+<li><strong>Vulkan</strong> is generally the best backend for modern GPUs</li>
+<li><strong>Test</strong> different settings per game to optimize the experience</li>
+<li><strong>Save</strong> your configurations via per-game profiles</li>
+<li><strong>Consult</strong> official documentation for latest updates</li>
+</ul>
+<p><strong>Additional resources:</strong></p>
+<ul>
+<li><a href="https://report.ppsspp.org/games">Game compatibility list</a></li>
+<li><a href="https://forums.ppsspp.org/">Community support forum</a></li>
+</ul>
+<p>Feel free to experiment with settings to find the perfect configuration for your favorite games!</p>
+</div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="http://localhost:1313/en/post/ppsspp/">http://localhost:1313/en/post/ppsspp/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-09-09 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-09-09 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/ppsspp/" target="_blank" rel="noopener noreferrer" title="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=http://localhost:1313/en/post/ppsspp/&amp;text=Complete%20PPSSPP%20Configuration%20Guide%20-%20PlayStation%20Portable%20Emulator&amp;via=http://localhost:1313/" target="_blank" rel="noopener noreferrer" title="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=http://localhost:1313/en/post/ppsspp/&amp;title=Complete%20PPSSPP%20Configuration%20Guide%20-%20PlayStation%20Portable%20Emulator&amp;summary=Detailed%20tutorial%20to%20configure%20PPSSPP%20and%20optimize%20PSP%20emulation%20performance%20on%20PC%20-%20Graphics%20settings,%20controls%20and%20audio&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=http://localhost:1313/en/post/ppsspp/&amp;title=Complete%20PPSSPP%20Configuration%20Guide%20-%20PlayStation%20Portable%20Emulator" target="_blank" rel="noopener noreferrer" title="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Complete PPSSPP Configuration Guide - PlayStation Portable Emulator">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/ppsspp"
+        rel="tag"
+        >PPSSPP</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/psp"
+        rel="tag"
+        >PSP</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/playstation"
+        rel="tag"
+        >PLAYSTATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/portable"
+        rel="tag"
+        >PORTABLE</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/configuration"
+        rel="tag"
+        >CONFIGURATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/performance"
+        rel="tag"
+        >PERFORMANCE</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/graphics"
+        rel="tag"
+        >GRAPHICS</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/amiibo-emulators.webp"
+            data-sizes="auto"
+            alt="How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)"
+            class="lazyload"
+          /><a href="/en/post/amibo_switch/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</h3>
+      </div><div class="article-nav-link-wrap article-nav-link-right"><img
+            data-src="/images/covers/sac.png"
+            data-sizes="auto"
+            alt="SteamAutoCrack - Automatically Patch Steam Games"
+            class="lazyload"
+          /><a href="/en/post/sac/"></a>
+        <div class="article-nav-caption">Older</div>
+        <h3 class="article-nav-title">SteamAutoCrack - Automatically Patch Steam Games</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">Leave a comment</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     ><script src="https://giscus.app/client.js"
+        data-repo="Axekinn/wiki.axekin.com"
+        data-repo-id="R_kgDOO6CQAQ"
+        data-category="General"
+        data-category-id="DIC_kwDOO6CQAc4CurE7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script></div></div>
+</section></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        Powered by&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;21.6k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:55</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#installation-and-prerequisites">Installation and prerequisites</a>
+      <ul>
+        <li><a href="#ppsspp-download">PPSSPP Download</a></li>
+      </ul>
+    </li>
+    <li><a href="#graphics-settings-configuration">Graphics settings configuration</a>
+      <ul>
+        <li><a href="#basic-settings">Basic settings</a></li>
+        <li><a href="#visual-enhancements">Visual enhancements</a></li>
+        <li><a href="#rendering-and-compatibility">Rendering and compatibility</a></li>
+        <li><a href="#post-processing-and-shaders">Post-processing and shaders</a></li>
+      </ul>
+    </li>
+    <li><a href="#controls-configuration">Controls configuration</a>
+      <ul>
+        <li><a href="#supported-controller-types">Supported controller types</a></li>
+        <li><a href="#automatic-configuration">Automatic configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#audio-configuration">Audio configuration</a>
+      <ul>
+        <li><a href="#basic-settings-1">Basic settings</a></li>
+        <li><a href="#advanced-audio-optimizations">Advanced audio optimizations</a></li>
+        <li><a href="#per-game-settings">Per-game settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#network-and-multiplayer-settings">Network and multiplayer settings</a>
+      <ul>
+        <li><a href="#ad-hoc-configuration">Ad Hoc configuration</a></li>
+        <li><a href="#local-and-online-multiplayer">Local and online multiplayer</a></li>
+        <li><a href="#infrastructure-servers-and-advanced-multiplayer">Infrastructure servers and advanced multiplayer</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-system-settings">Advanced system settings</a>
+      <ul>
+        <li><a href="#psp-system-configuration">PSP system configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-and-utilities">Tools and utilities</a>
+      <ul>
+        <li><a href="#save-manager">Save manager</a></li>
+        <li><a href="#homebrew-manager">Homebrew manager</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">23</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      12
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">73</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Search.....',
+          "hits_empty": 'No results found for 「${query}」',
+          "hits_stats": 'Found ${hits} results (in ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-aagKMe8nkqaP2DYQc8kkYOL5l&#43;M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Complete PPSSPP Configuration Guide - PlayStation Portable Emulator",
+          url: "http:\/\/localhost:1313\/en\/post\/ppsspp\/",
+          description: "Detailed tutorial to configure PPSSPP and optimize PSP emulation performance on PC - Graphics settings, controls and audio",
+          cover: "http:\/\/localhost:1313\/images\/covers\/ppsspp.png",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/valine@1.5.1\/dist\/Valine.min.js',
+          !'webcache|valine@1.5.1\/dist\/Valine.min.js'.startsWith('local') ? 'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE\u002bs5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn' : undefined
+        );
+        script.onload = () => {
+          const GUEST_INFO = ['nick', 'mail', 'link'];
+          const guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          const recordIP = JSON.parse('true');
+          const highlight = JSON.parse('true');
+          const visitor = JSON.parse('false');
+          const serverURLs = undefined;
+
+          new Valine({
+            el: '.valine-comment',
+            appId: "",
+            appKey: "",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: document.documentElement.lang || 'en',
+            recordIP: recordIP,
+            highlight: highlight,
+            visitor: visitor,
+            requiredFields: guest_info,
+            path: window.location.pathname,
+            serverURLs,
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: false,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: '',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/twikoo@1.6.44\/dist\/twikoo.all.min.js',
+          !'webcache|twikoo@1.6.44\/dist\/twikoo.all.min.js'.startsWith('local') ? 'sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk\u002bkQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K' : undefined
+        );
+        script.onload = () => {
+          twikoo.init({
+            envId: '',
+            el: '.twikoo-comment',
+            region: '',
+            lang: document.documentElement.lang || 'en',
+          });
+          twikoo.getCommentsCount({
+            envId: '',
+            region: '',
+            urls: [
+              'http\/\/localhost1313\/en\/post\/ppsspp\/'
+            ],
+            includeReply: false
+          }).then((res) => {
+            document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+          }).catch((err) => {
+            console.error(err);
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/gitalk@1.8.0\/dist\/gitalk.min.js',
+          !'webcache|gitalk@1.8.0\/dist\/gitalk.min.js'.startsWith('local') ? 'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU\/lcEH5O8eVbSDhbPwsiVUTp\/aGX\/z\/5EuMA' : undefined
+        );
+        script.onload = () => {
+          if ( false ) {
+            
+            const md5Script = loadScript(
+              'https:\/\/npm.webcache.cn\/blueimp-md5@2.19.0\/js\/md5.min.js',
+              !'webcache|blueimp-md5@2.19.0\/js\/md5.min.js'.startsWith('local') ? 'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr\/gZlbkHkL6vTthxH' : undefined
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            
+            initGitalk();
+          }
+        };
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          let gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: JSON.parse("null"),
+            id: location.pathname,
+            distractionFreeMode: false,
+            language: document.documentElement.lang || 'en',
+          });
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: true,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+
+        const docLang = document.documentElement.lang || 'en';
+        const langBase = docLang.split('-')[0];
+        const supportedLangs = ['ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'en', 
+        'eo', 'es', 'eu', 'fa', 'fr', 'gr', 'hbs', 'he', 'hu', 'id', 'it', 'ja', 
+        'kh', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'th', 'tr', 'uk', 'uz', 'vi', 'zh-CN', 'zh-HK', 'zh-TW'];
+        const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
+
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', 'General');
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '');
+        giscusScript.setAttribute('data-emit-metadata', '');
+        giscusScript.setAttribute('data-input-position', '');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', giscusLang);
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  };
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'giscus';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" ></script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c " + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>

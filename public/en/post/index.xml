@@ -12,12 +12,52 @@
     
     <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
     
-    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Lossless Scaling Configuration for Emulators</title>
+      <link>http://localhost:1313/en/post/losless_scaling/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/losless_scaling/</guid>
+      <description>
+        <![CDATA[<h1>Lossless Scaling Configuration for Emulators</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Maximize your FPS on emulators with Lossless Scaling. Detailed configuration guide for Switch, PS2, PS3 with frame generation and upscaling.
+        
+        <hr><p>Published on 2025-10-07 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-10-07</p>]]>
+      </description>
+      
+        <category>Optimization</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</title>
+      <link>http://localhost:1313/en/post/ppsspp/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/ppsspp/</guid>
+      <description>
+        <![CDATA[<h1>Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to configure PPSSPP for optimal PSP emulation. Complete guide with recommended settings and optimizations.
+        
+        <hr><p>Published on 2025-09-09 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-09-09</p>]]>
+      </description>
+      
+        <category>PPSSPP</category>
+      
+    </item>
     
     
 
@@ -208,46 +248,6 @@ Step 2: Obtaining Texture Packs
       </description>
       
         <category>MelonDS</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Unsteam - Playing Co-op with Patched Games</title>
-      <link>http://localhost:1313/en/post/unsteam/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/unsteam/</guid>
-      <description>
-        <![CDATA[<h1>Unsteam - Playing Co-op with Patched Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
-        
-          Learn how to use Unsteam to play online co-op with patched games. Complete guide with Steam API emulation and multiplayer setup.
-        
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
-      </description>
-      
-        <category>PC</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>How to Use Amiibo on Switch Emulators (Yuzu &amp; Ryujinx)</title>
-      <link>http://localhost:1313/en/post/amibo_switch/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/amibo_switch/</guid>
-      <description>
-        <![CDATA[<h1>How to Use Amiibo on Switch Emulators (Yuzu & Ryujinx)</h1><p>Author: Axekin(axekinn@proton.me)</p>
-        
-          Learn to use virtual amiibo on Yuzu and Ryujinx emulators. Step-by-step guide with file download and complete configuration.
-        
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
-      </description>
-      
-        <category>Yuzu</category><category>Ryujinx</category>
       
     </item>
     

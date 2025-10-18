@@ -12,12 +12,52 @@
     
     <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
     
-    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Configuration de Lossless Scaling pour Émulateurs</title>
+      <link>http://localhost:1313/fr/post/losless_scaling/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/losless_scaling/</guid>
+      <description>
+        <![CDATA[<h1>Configuration de Lossless Scaling pour Émulateurs</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Maximisez vos FPS sur les émulateurs avec Lossless Scaling. Guide détaillé de configuration pour Switch, PS2, PS3 avec frame generation et upscaling.
+        
+        <hr><p>Publié le 2025-10-07 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
+      </description>
+      
+        <category>Optimisation</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</title>
+      <link>http://localhost:1313/fr/post/ppsspp/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ppsspp/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à configurer PPSSPP pour une émulation PSP optimale. Guide complet avec paramètres recommandés et optimisations.
+        
+        <hr><p>Publié le 2025-09-09 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-09-09</p>]]>
+      </description>
+      
+        <category>PPSSPP</category>
+      
+    </item>
     
     
 
@@ -208,46 +248,6 @@ Introduction
       </description>
       
         <category>Ryujinx</category><category>Yuzu</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>SteamAutoCrack - Patcher automatiquement les jeux Steam</title>
-      <link>http://localhost:1313/fr/post/sac/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/sac/</guid>
-      <description>
-        <![CDATA[<h1>SteamAutoCrack - Patcher automatiquement les jeux Steam</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
-        
-          Apprenez à utiliser SteamAutoCrack pour automatiquement patch les jeux Steam. Tutoriel complet avec configuration API et installation.
-        
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
-      </description>
-      
-        <category>PC</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
-      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
-      <description>
-        <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
-        
-          Apprenez à installer facilement des DLC et mises à jour de jeux sur les émulateurs Yuzu et Ryujinx. Guide simple avec captures d&rsquo;écran pour chaque étape.
-        
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
-      </description>
-      
-        <category>Ryujinx</category>
       
     </item>
     

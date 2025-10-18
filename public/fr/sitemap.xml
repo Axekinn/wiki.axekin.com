@@ -15,6 +15,19 @@
                 href="http://localhost:1313/fr/about/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fr/post/losless_scaling/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/losless_scaling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/losless_scaling/"
+                />
+  </url><url>
     <loc>http://localhost:1313/fr/post/cheat_citra/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -210,6 +223,19 @@
                 href="http://localhost:1313/fr/post/sac/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fr/post/ppsspp/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/ppsspp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/post/ppsspp/"
+                />
+  </url><url>
     <loc>http://localhost:1313/fr/post/amibo_switch/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -237,7 +263,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/</loc>
-    <lastmod>2025-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -250,7 +276,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/post/</loc>
-    <lastmod>2025-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -263,7 +289,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/categories/</loc>
-    <lastmod>2025-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -273,6 +299,233 @@
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/emulation/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/emulation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/emulation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/fps-boost/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/fps-boost/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/fps-boost/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/frame-generation/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/frame-generation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/frame-generation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/lossless-scaling/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/lossless-scaling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/lossless-scaling/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/optimisation/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/pcsx2/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/pcsx2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/pcsx2/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/performance/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/performance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/performance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/rpcs3/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/rpcs3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/rpcs3/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/ryujinx/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ryujinx/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/ryujinx/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/upscaling/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/upscaling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/upscaling/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/yuzu/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/yuzu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/yuzu/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/configuration/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/configuration/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/graphiques/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/playstation/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/playstation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/playstation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/portable/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/portable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/portable/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/ppsspp/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ppsspp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/ppsspp/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/categories/ppsspp/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/ppsspp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/ppsspp/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/psp/</loc>
+    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/psp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/psp/"
                 />
   </url><url>
     <loc>http://localhost:1313/fr/categories/rpcs3/</loc>
@@ -286,32 +539,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/categories/rpcs3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/rpcs3/</loc>
-    <lastmod>2025-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/rpcs3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/rpcs3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/</loc>
-    <lastmod>2025-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/fr/tags/azahar/</loc>
@@ -599,19 +826,6 @@
                 href="http://localhost:1313/fr/tags/drivers/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/tags/emulation/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/emulation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/emulation/"
-                />
-  </url><url>
     <loc>http://localhost:1313/fr/tags/figurines/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -803,19 +1017,6 @@
                 href="http://localhost:1313/fr/categories/ryujinx/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/tags/ryujinx/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/ryujinx/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/ryujinx/"
-                />
-  </url><url>
     <loc>http://localhost:1313/fr/tags/sauvegarde/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -923,19 +1124,6 @@
                 href="http://localhost:1313/fr/categories/yuzu/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/tags/yuzu/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/yuzu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/yuzu/"
-                />
-  </url><url>
     <loc>http://localhost:1313/fr/tags/zelda/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -999,19 +1187,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/tags/bio/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/configuration/</loc>
-    <lastmod>2025-06-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/configuration/"
                 />
   </url><url>
     <loc>http://localhost:1313/fr/tags/contact/</loc>

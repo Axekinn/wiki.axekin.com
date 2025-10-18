@@ -12,12 +12,52 @@
     
     <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
     
-    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/en/tags/emulation/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Lossless Scaling Configuration for Emulators</title>
+      <link>http://localhost:1313/en/post/losless_scaling/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/losless_scaling/</guid>
+      <description>
+        <![CDATA[<h1>Lossless Scaling Configuration for Emulators</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Maximize your FPS on emulators with Lossless Scaling. Detailed configuration guide for Switch, PS2, PS3 with frame generation and upscaling.
+        
+        <hr><p>Published on 2025-10-07 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-10-07</p>]]>
+      </description>
+      
+        <category>Optimization</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</title>
+      <link>http://localhost:1313/en/post/ppsspp/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/en/post/ppsspp/</guid>
+      <description>
+        <![CDATA[<h1>Complete PPSSPP Configuration Guide - PlayStation Portable Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
+        
+          Learn how to configure PPSSPP for optimal PSP emulation. Complete guide with recommended settings and optimizations.
+        
+        <hr><p>Published on 2025-09-09 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-09-09</p>]]>
+      </description>
+      
+        <category>PPSSPP</category>
+      
+    </item>
     
     
 
@@ -208,46 +248,6 @@ Step 2: Obtaining Texture Packs
       </description>
       
         <category>Yuzu</category><category>Ryujinx</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>How to Install DLC and Updates on Yuzu and Ryujinx</title>
-      <link>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/dlc_update_ryujinx_yuzu/</guid>
-      <description>
-        <![CDATA[<h1>How to Install DLC and Updates on Yuzu and Ryujinx</h1><p>Author: Axekin(axekinn@proton.me)</p>
-        
-          Learn how to easily install DLC and game updates on Yuzu and Ryujinx emulators. Simple guide with screenshots for each step.
-        
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
-      </description>
-      
-        <category>Ryujinx</category><category>Yuzu</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title> Using Amiibo on the Cemu Wii U Emulator</title>
-      <link>http://localhost:1313/en/post/amibo_cemu/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
-      <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/amibo_cemu/</guid>
-      <description>
-        <![CDATA[<h1> Using Amiibo on the Cemu Wii U Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
-        
-          Learn to use Amiibo files on the Cemu Wii U emulator. Complete guide with .bin configuration and NFC scanning.
-        
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
-      </description>
-      
-        <category>Cemu</category>
       
     </item>
     

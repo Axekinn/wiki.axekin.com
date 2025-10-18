@@ -58,6 +58,8 @@
   <meta property="article:modified_time" content="2025-06-02T00:00:00&#43;00:00" /><meta property="article:tag" content="Citra" /><meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="/images/covers/azahar.webp" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+
+<link rel="stylesheet" href="/css/custom.css">
 <link
     rel="preload"
     as="style"
@@ -219,29 +221,33 @@ This article does not have a corresponding language version
         <li><a href="#result">Result</a></li>
       </ul>
     </li>
-    <li><a href="#-portable-configuration-recommended">💡 Portable Configuration (Recommended)</a>
+    <li><a href="#-portable-configuration-recommended">💡 Portable configuration (Recommended)</a>
       <ul>
         <li><a href="#advantages-of-portable-mode">Advantages of portable mode</a></li>
-        <li><a href="#structure-after-creating-portable-folder">Structure after creating portable folder</a></li>
-        <li><a href="#creation-instructions">Creation instructions</a></li>
+        <li><a href="#structure-after-creating-the-portable-folder">Structure after creating the portable folder</a></li>
+        <li><a href="#creation-steps">Creation steps</a></li>
       </ul>
     </li>
-    <li><a href="#-step-3-installation-and-first-launch">⚙️ Step 3: Installation and first launch</a>
+    <li><a href="#-step-3-install-and-first-run">⚙️ Step 3: Install and first run</a>
       <ul>
-        <li><a href="#windows-prerequisites-installation">Windows Prerequisites Installation</a></li>
-        <li><a href="#first-launch">First launch</a></li>
+        <li><a href="#windows-prerequisites">Windows prerequisites</a></li>
+        <li><a href="#first-run">First run</a></li>
       </ul>
     </li>
-    <li><a href="#-step-3-optimal-configuration">⚙️ Step 3: Optimal Configuration</a>
+    <li><a href="#-step-4-optimal-configuration">⚙️ Step 4: Optimal configuration</a>
       <ul>
         <li><a href="#general-settings">General settings</a></li>
         <li><a href="#system-configuration">System configuration</a></li>
-        <li><a href="#optimal-graphics-settings">Optimal graphics settings</a></li>
-        <li><a href="#screen-layout">Screen layout</a></li>
-        <li><a href="#custom-configuration">Custom configuration</a></li>
+        <li><a href="#recommended-graphics-settings">Recommended graphics settings</a></li>
+        <li><a href="#screen-layouts">Screen layouts</a></li>
+        <li><a href="#custom-layout-configuration">Custom layout configuration</a></li>
         <li><a href="#display-settings">Display settings</a></li>
         <li><a href="#audio-configuration">Audio configuration</a></li>
         <li><a href="#controls-configuration">Controls configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step--multiplayer-quick-setup">⚙️ Step 🌐 Multiplayer (quick setup)</a>
+      <ul>
         <li><a href="#supported-formats">Supported formats</a></li>
       </ul>
     </li>
@@ -249,7 +255,7 @@ This article does not have a corresponding language version
       <ul>
         <li><a href="#general-questions">General questions</a></li>
         <li><a href="#technical-questions">Technical questions</a></li>
-        <li><a href="#common-problems">Common problems</a></li>
+        <li><a href="#common-issues">Common issues</a></li>
       </ul>
     </li>
   </ul>
@@ -267,17 +273,17 @@ This article does not have a corresponding language version
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>Posts</div><div class="sidebar-state-number">21</div>
+    <div>Posts</div><div class="sidebar-state-number">23</div>
   </div>
   <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
     <div>Categories</div>
     <div class="sidebar-state-number">
-      10
+      12
     </div>
   </a>
   <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
     <div>Tags</div>
-    <div class="sidebar-state-number">62</div>
+    <div class="sidebar-state-number">73</div>
   </a>
 </div>
 <div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
@@ -383,7 +389,7 @@ This article does not have a corresponding language version
     <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="-introduction-to-citra">
 <a class="header-anchor" href="#-introduction-to-citra"></a>
 🎮 Introduction to Citra
-</h2><p><strong>Citra</strong> is the world&rsquo;s most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphics improvements and near-perfect compatibility.</p>
+</h2><p><strong>Citra</strong> is the most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphical improvements and near-perfect compatibility. Azahar is its fork.</p>
 <h2 id="-step-1-downloading-citra">
 <a class="header-anchor" href="#-step-1-downloading-citra"></a>
 🔧 Step 1: Downloading Citra
@@ -465,13 +471,13 @@ Step 3: File extraction
 <a class="header-anchor" href="#content-types"></a>
 Content types
 </h3><div class="admonition tip">
-    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Understanding folders
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Understanding the folders
     </p>
     <div class="admonition-content">
         <ul>
-<li><strong>BASE</strong> 📁: The main game you download</li>
-<li><strong>UPDATE</strong> 📁: Updates and patches (recommended)</li>
-<li><strong>DLC</strong> 📁: Additional paid content (optional but recommended)</li>
+<li><strong>BASE</strong> 📁 : The main game files you downloaded</li>
+<li><strong>UPDATE</strong> 📁 : Updates and patches (recommended)</li>
+<li><strong>DLC</strong> 📁 : Additional paid content (optional but recommended)</li>
 </ul>
 
     </div>
@@ -616,13 +622,13 @@ Content types
 </style>
 
 <div class="admonition success">
-    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Advantages of this organization
+    <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Benefits of this organization
     </p>
     <div class="admonition-content">
-        ✅ <strong>Automatic detection</strong>: Games are automatically added to the emulator<br>
-✅ <strong>Simplified management</strong>: No need to manually select each ROM<br>
-✅ <strong>Clear organization</strong>: Easy to see what content you have for each game<br>
-✅ <strong>Easy maintenance</strong>: Simplified content addition/removal
+        ✅ <strong>Auto-detection</strong>: Games are added automatically in the emulator<br>
+✅ <strong>Simplified management</strong>: No need to manually add each ROM<br>
+✅ <strong>Clear organization</strong>: Easy to see what content you have per game<br>
+✅ <strong>Easy maintenance</strong>: Adding/removing content is straightforward
     </div>
 </div>
 
@@ -765,19 +771,19 @@ Content types
 </style>
 
 <blockquote>
-<p><strong>📝 Important note</strong>: If a game doesn&rsquo;t have updates or DLC, there&rsquo;s no need to create the corresponding folders. Only create folders for content you actually have.</p></blockquote>
+<p><strong>📝 Important note</strong>: If a game has no updates or DLC, you don&rsquo;t need to create those folders. Only create folders for content you own.</p></blockquote>
 <h3 id="result">
 <a class="header-anchor" href="#result"></a>
 Result
-</h3><p>Once this structure is in place, your emulator will automatically detect all games present in the &ldquo;3DS Games&rdquo; folder and organize them properly in your library! 🎯</p>
+</h3><p>Once this structure is in place, your emulator will automatically detect all games in the &ldquo;Games 3DS&rdquo; folder and display them neatly in your library! 🎯</p>
 <h2 id="-portable-configuration-recommended">
 <a class="header-anchor" href="#-portable-configuration-recommended"></a>
-💡 Portable Configuration (Recommended)
+💡 Portable configuration (Recommended)
 </h2><div class="admonition tip">
     <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Portable installation
     </p>
     <div class="admonition-content">
-        <strong>Before the first launch</strong>, create a folder named <code>user</code> at the root of the Azahar directory. This operation will make the installation entirely portable.
+        <strong>Before first launch</strong>, create a folder named <code>user</code> at the root of the Azahar installation. This will make the install fully portable.
     </div>
 </div>
 
@@ -932,30 +938,30 @@ Advantages of portable mode
   </thead>
   <tbody>
       <tr>
-          <td><strong>Configurations</strong></td>
-          <td>Stored in system</td>
-          <td>Stored in folder</td>
+          <td><strong>Configs</strong></td>
+          <td>Stored in the system</td>
+          <td>Stored inside the folder</td>
       </tr>
       <tr>
           <td><strong>Saves</strong></td>
-          <td>Scattered on computer</td>
-          <td>Centralized in folder</td>
+          <td>Spread across the computer</td>
+          <td>Centralized in one folder</td>
       </tr>
       <tr>
           <td><strong>Portability</strong></td>
-          <td>❌ Tied to system</td>
+          <td>❌ Tied to the system</td>
           <td>✅ Easily movable</td>
       </tr>
       <tr>
           <td><strong>Backup</strong></td>
-          <td>Hard to locate</td>
-          <td>Simple to backup</td>
+          <td>Harder to locate</td>
+          <td>Simple to back up</td>
       </tr>
   </tbody>
 </table>
-<h3 id="structure-after-creating-portable-folder">
-<a class="header-anchor" href="#structure-after-creating-portable-folder"></a>
-Structure after creating portable folder
+<h3 id="structure-after-creating-the-portable-folder">
+<a class="header-anchor" href="#structure-after-creating-the-portable-folder"></a>
+Structure after creating the portable folder
 </h3><pre tabindex="0"><code>📁 Azahar/
 ├── 🎮 Azahar.exe
 ├── 📁 user/              # ← Create this folder!
@@ -968,7 +974,7 @@ Structure after creating portable folder
     <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Result
     </p>
     <div class="admonition-content">
-        <strong>All your data</strong> (configurations, saves, profiles) will be stored in the <code>user</code> folder, greatly facilitating management and backups!
+        <strong>All your data</strong> (configs, saves, profiles) will be stored inside the <code>user</code> folder, making management and backups much easier!
     </div>
 </div>
 
@@ -1110,59 +1116,59 @@ Structure after creating portable folder
 }
 </style>
 
-<h3 id="creation-instructions">
-<a class="header-anchor" href="#creation-instructions"></a>
-Creation instructions
+<h3 id="creation-steps">
+<a class="header-anchor" href="#creation-steps"></a>
+Creation steps
 </h3><ol>
-<li><strong>Navigate</strong> to the Azahar installation folder</li>
-<li><strong>Create</strong> a new folder named exactly <code>user</code></li>
-<li><strong>Launch</strong> Azahar - it will automatically detect portable mode</li>
+<li>Navigate to the Azahar installation folder</li>
+<li>Create a new folder named exactly <code>user</code></li>
+<li>Launch Azahar — it will detect portable mode automatically</li>
 </ol>
 <blockquote>
-<p><strong>📝 Note</strong>: This operation must be performed <strong>before</strong> the first launch to be taken into account!</p></blockquote>
-<h2 id="-step-3-installation-and-first-launch">
-<a class="header-anchor" href="#-step-3-installation-and-first-launch"></a>
-⚙️ Step 3: Installation and first launch
-</h2><h3 id="windows-prerequisites-installation">
-<a class="header-anchor" href="#windows-prerequisites-installation"></a>
-Windows Prerequisites Installation
-</h3><h3 id="first-launch">
-<a class="header-anchor" href="#first-launch"></a>
-First launch
+<p><strong>📝 Note</strong>: This must be done <strong>before</strong> the first launch to take effect!</p></blockquote>
+<h2 id="-step-3-install-and-first-run">
+<a class="header-anchor" href="#-step-3-install-and-first-run"></a>
+⚙️ Step 3: Install and first run
+</h2><h3 id="windows-prerequisites">
+<a class="header-anchor" href="#windows-prerequisites"></a>
+Windows prerequisites
+</h3><h3 id="first-run">
+<a class="header-anchor" href="#first-run"></a>
+First run
 </h3><ol>
-<li><strong>Execute</strong> <code>azahar.exe</code></li>
-<li><strong>Set</strong> the games folder (double click on the menu, add the &ldquo;3DS Games&rdquo; folder)</li>
+<li>Run <code>azahar.exe</code></li>
+<li>Set your games folder (double-click the menu, add the &ldquo;Games 3DS&rdquo; folder)</li>
 </ol>
-<h2 id="-step-3-optimal-configuration">
-<a class="header-anchor" href="#-step-3-optimal-configuration"></a>
-⚙️ Step 3: Optimal Configuration
+<h2 id="-step-4-optimal-configuration">
+<a class="header-anchor" href="#-step-4-optimal-configuration"></a>
+⚙️ Step 4: Optimal configuration
 </h2><h3 id="general-settings">
 <a class="header-anchor" href="#general-settings"></a>
 General settings
 </h3><pre tabindex="0"><code>Emulation → Configure → General
 </code></pre><ul>
-<li><strong>Confirm exit while emulation is running</strong>: ✅ Enabled</li>
-<li><strong>Pause emulation when in background</strong>: ✅ Enabled (optional)</li>
-<li><strong>Enable Discord Presence</strong>: ✅ Enabled (optional)</li>
+<li><strong>Confirm exit while emulation is running</strong> : ✅ Enabled</li>
+<li><strong>Pause emulation when in background</strong> : ✅ Enabled (optional)</li>
+<li><strong>Enable Discord Presence</strong> : ✅ Enabled (optional)</li>
 </ul>
 <h3 id="system-configuration">
 <a class="header-anchor" href="#system-configuration"></a>
 System configuration
 </h3><pre tabindex="0"><code>Emulation → Configure → System
 </code></pre><ul>
-<li><strong>Region</strong>: Europe (or your region)</li>
-<li><strong>Language</strong>: Your language</li>
-<li><strong>Console ID</strong>: Random (generated automatically)</li>
-<li><strong>Enable New 3DS</strong>: ✅ Enabled (for better performance)</li>
+<li><strong>Region</strong> : Europe (or your region)</li>
+<li><strong>Language</strong> : Your language</li>
+<li><strong>Console ID</strong> : Random (auto-generated)</li>
+<li><strong>Enable New 3DS</strong> : ✅ Enabled (for better performance)</li>
 </ul>
-<h3 id="optimal-graphics-settings">
-<a class="header-anchor" href="#optimal-graphics-settings"></a>
-Optimal graphics settings
+<h3 id="recommended-graphics-settings">
+<a class="header-anchor" href="#recommended-graphics-settings"></a>
+Recommended graphics settings
 </h3><h4 id="graphics-tab">
 <a class="header-anchor" href="#graphics-tab"></a>
 Graphics tab
 </h4><pre tabindex="0"><code>Graphics → General
-- Internal Resolution: 2x Native (400x480) or higher. The higher the value, the more GPU it will consume
+- Internal Resolution: 2x Native (400x480) or higher. Higher values increase GPU usage.
 - Enable Linear Filtering: ✅ Enabled
 → General
 </code></pre><h4 id="layout-tab">
@@ -1170,10 +1176,10 @@ Graphics tab
 Layout tab
 </h4><pre tabindex="0"><code>Graphics → Layout
 </code></pre><div class="admonition tip">
-    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Screen layout interface
+    <p class="admonition-title"><i class="fas fa-lightbulb fa-fw"></i>Screen layout editor
     </p>
     <div class="admonition-content">
-        This section allows you to customize the display of the two 3DS screens according to your visual preferences and hardware configuration.
+        This section lets you customize the display of the two 3DS screens according to your visual preference and hardware.
     </div>
 </div>
 
@@ -1315,10 +1321,10 @@ Layout tab
 }
 </style>
 
-<h3 id="screen-layout">
-<a class="header-anchor" href="#screen-layout"></a>
-Screen layout
-</h3><p><strong>Predefined layout options:</strong></p>
+<h3 id="screen-layouts">
+<a class="header-anchor" href="#screen-layouts"></a>
+Screen layouts
+</h3><p><strong>Preset options:</strong></p>
 <table>
   <thead>
       <tr>
@@ -1330,59 +1336,59 @@ Screen layout
   <tbody>
       <tr>
           <td><strong>Default</strong></td>
-          <td>Standard Nintendo configuration</td>
+          <td>Standard Nintendo layout</td>
           <td>✅ <strong>Beginners</strong></td>
       </tr>
       <tr>
-          <td><strong>Single Screen</strong></td>
+          <td><strong>Single screen</strong></td>
           <td>Shows only the active screen</td>
           <td>Gameplay focus</td>
       </tr>
       <tr>
-          <td><strong>Large Screen</strong></td>
-          <td>Stretches across full width</td>
-          <td>Wide screens</td>
+          <td><strong>Wide</strong></td>
+          <td>Stretches across the width</td>
+          <td>Wide monitors</td>
       </tr>
       <tr>
-          <td><strong>Side by Side</strong></td>
+          <td><strong>Side-by-side</strong></td>
           <td>Horizontal screens</td>
-          <td><strong>Recommended gaming</strong></td>
+          <td><strong>Recommended for gaming</strong></td>
       </tr>
       <tr>
-          <td><strong>Separate Windows</strong></td>
+          <td><strong>Separate windows</strong></td>
           <td>Two independent windows</td>
-          <td>Multi-monitors</td>
+          <td>Multi-monitor setups</td>
       </tr>
       <tr>
-          <td><strong>Hybrid Screen</strong></td>
-          <td>Overlapped screens</td>
+          <td><strong>Stacked</strong></td>
+          <td>Screens stacked vertically</td>
           <td>Space saving</td>
       </tr>
       <tr>
-          <td><strong>Custom Layout</strong></td>
+          <td><strong>Custom layout</strong></td>
           <td>Manual configuration</td>
           <td>⭐ <strong>Most flexible</strong></td>
       </tr>
   </tbody>
 </table>
-<h3 id="custom-configuration">
-<a class="header-anchor" href="#custom-configuration"></a>
-Custom configuration
+<h3 id="custom-layout-configuration">
+<a class="header-anchor" href="#custom-layout-configuration"></a>
+Custom layout configuration
 </h3><div class="admonition success">
     <p class="admonition-title"><i class="fas fa-check-circle fa-fw"></i>Advanced custom layout
     </p>
     <div class="admonition-content">
         <p><strong>Top screen:</strong></p>
 <ul>
-<li><strong>Position X/Y</strong>: <code>0px, 0px</code> (top left corner)</li>
-<li><strong>Width/Height</strong>: <code>800px, 480px</code> (optimal 4:3 ratio)</li>
+<li><strong>Position X/Y</strong> : <code>0px, 0px</code> (top-left corner)</li>
+<li><strong>Width/Height</strong> : <code>800px, 480px</code> (4:3 ratio ideal)</li>
 </ul>
 <p><strong>Bottom screen:</strong></p>
 <ul>
-<li><strong>Position X/Y</strong>: <code>80px, 500px</code> (slightly centered)</li>
-<li><strong>Width/Height</strong>: <code>640px, 480px</code> (proportional)</li>
+<li><strong>Position X/Y</strong> : <code>80px, 500px</code> (slightly centered)</li>
+<li><strong>Width/Height</strong> : <code>640px, 480px</code> (proportional)</li>
 </ul>
-<p><strong>Bottom screen opacity</strong>: <code>100%</code> (full visibility)</p>
+<p><strong>Bottom screen opacity</strong> : <code>100%</code> (fully visible)</p>
 
     </div>
 </div>
@@ -1531,33 +1537,33 @@ Display settings
 </h3><h4 id="general-options">
 <a class="header-anchor" href="#general-options"></a>
 General options
-</h4><pre tabindex="0"><code>Screens → Configuration
-</code></pre><p><strong>Recommended settings:</strong></p>
+</h4><pre tabindex="0"><code>Screens → Setup
+</code></pre><p><strong>Recommended tweaks:</strong></p>
 <ul>
-<li><strong>Swap Screens</strong>: ❌ Disabled (keeps DS logic)</li>
-<li><strong>Upright Screens</strong>: ❌ Disabled</li>
-<li><strong>Screen Gap</strong>: <code>0.00</code> to <code>4.00</code> according to preference</li>
-<li><strong>Large Screen Proportion</strong>: <code>4.00</code> (main screen larger)</li>
-<li><strong>Small Screen Proportion</strong>: <code>Bottom Right</code> (touch position)</li>
+<li><strong>Swap screens</strong> : ❌ Disabled (preserve DS logic)</li>
+<li><strong>Rotate screens upwards</strong> : ❌ Disabled</li>
+<li><strong>Screen gap</strong> : <code>0.00</code> to <code>4.00</code> depending on preference</li>
+<li><strong>Main screen scale</strong> : <code>4.00</code> (larger primary screen)</li>
+<li><strong>Secondary screen position</strong> : <code>Bottom right</code> (touch area)</li>
 </ul>
-<h4 id="single-screen-layout">
-<a class="header-anchor" href="#single-screen-layout"></a>
-Single screen layout
+<h4 id="single-screen-mode">
+<a class="header-anchor" href="#single-screen-mode"></a>
+Single-screen mode
 </h4><div class="admonition note">
     <p class="admonition-title"><i class="fas fa-pencil-alt fa-fw"></i>Single screen mode
     </p>
     <div class="admonition-content">
-        <p><strong>Usage:</strong></p>
+        <p><strong>Use cases:</strong></p>
 <ul>
-<li>Games using only one main screen</li>
-<li>Display resource saving</li>
-<li>Focus on main action</li>
+<li>Games that use only one main screen</li>
+<li>Save rendering resources</li>
+<li>Focus on the main action</li>
 </ul>
 <p><strong>Configuration:</strong></p>
 <ul>
-<li><strong>Stretched</strong>: ☑️ Checked for both screens</li>
-<li><strong>Left/Right Margin</strong>: <code>0px</code> (full screen)</li>
-<li><strong>Top/Bottom Margin</strong>: <code>0px</code> (maximum usage)</li>
+<li><strong>Stretch</strong> : ☑️ Checked for both screens</li>
+<li><strong>Left/Right margin</strong> : <code>0px</code> (fullscreen)</li>
+<li><strong>Top/Bottom margin</strong> : <code>0px</code> (maximize usage)</li>
 </ul>
 
     </div>
@@ -1702,7 +1708,7 @@ Single screen layout
 </style>
 
 <blockquote>
-<p><strong>💡 Practical tip</strong>: Test different layouts according to the game. RPGs work better with custom layout, while action games often prefer side-by-side mode.</p></blockquote>
+<p><strong>💡 Practical tip</strong>: Test different layouts depending on the game. RPGs often benefit from custom layouts while action games prefer side-by-side.</p></blockquote>
 <h4 id="advanced-tab">
 <a class="header-anchor" href="#advanced-tab"></a>
 Advanced tab
@@ -1721,18 +1727,60 @@ Audio configuration
 </code></pre><h3 id="controls-configuration">
 <a class="header-anchor" href="#controls-configuration"></a>
 Controls configuration
-</h3><h4 id="automatic-method">
-<a class="header-anchor" href="#automatic-method"></a>
-Automatic method
+</h3><h4 id="auto-detect-method">
+<a class="header-anchor" href="#auto-detect-method"></a>
+Auto-detect method
 </h4><pre tabindex="0"><code>Controls → Configure
-1. Click on &#34;Auto Configuration&#34;
-2. Press the buttons on your controller
-3. Test all controls
-</code></pre><h3 id="supported-formats">
+1. Click &#34;Auto Config&#34;
+2. Press buttons on your controller
+3. Test all inputs
+</code></pre><h2 id="-step--multiplayer-quick-setup">
+<a class="header-anchor" href="#-step--multiplayer-quick-setup"></a>
+⚙️ Step 🌐 Multiplayer (quick setup)
+</h2><p>You can connect Citra/Azahar to an external multiplayer service by editing the local configuration. Warning: fully close Citra/Azahar before editing configuration files or your changes will be overwritten.</p>
+<ol>
+<li>
+<p>Open the config folder:</p>
+<ul>
+<li>For a standard Windows install: <code>C:\\Users\\&lt;YourUser&gt;\\AppData\\Roaming\\citra\\config\\</code></li>
+<li>For a portable install: open the <code>user</code> folder at the root of Azahar/Citra</li>
+</ul>
+</li>
+<li>
+<p>Edit the <code>qt-config.ini</code> file (with Notepad or a text editor) and change/add these two lines:</p>
+</li>
+</ol>
+<pre tabindex="0"><code>web_api_url\\default=false
+web_api_url=http://88.198.47.46:5000/
+</code></pre><ol start="3">
+<li>Save and close the editor, then relaunch Citra/Azahar.</li>
+</ol>
+<p>Host a dedicated room (Windows <code>host.bat</code> example)</p>
+<p>If you want to host via a dedicated batch file, create or edit a <code>host.bat</code> and paste the example below. You can change the room name and the Title ID.</p>
+<pre tabindex="0"><code>citra-room ^
+  --room-name &#34;your room name&#34; ^
+  --room-description &#34;All Games&#34; ^
+  --preferred-game &#34;Super Smash Bros&#34; ^
+  --preferred-game-id &#34;00040000000EDF00&#34; ^
+  --port 24872 ^
+  --max_members 16 ^
+  --token &#34;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&#34; ^
+  --enable-citra-mods ^
+  --web-api-url http://88.198.47.46:5000 ^
+  --ban-list-file &#34;INSERT_BAN_LIST_FILE_PATH_HERE&#34;
+pause
+</code></pre><p>Notes:</p>
+<ul>
+<li>Replace <code>--token</code> with your real token when required.</li>
+<li><code>--preferred-game-id</code> corresponds to the game&rsquo;s Title ID (16 hex digits). Leave empty to accept all games.</li>
+<li><code>--web-api-url</code> must point to the API server (here: <code>http://88.198.47.46:5000</code>).</li>
+</ul>
+<p>With these steps, Citra/Azahar will use the specified multiplayer service and the <code>host.bat</code> will let you host a room from your machine.</p>
+<h3 id="supported-formats">
 <a class="header-anchor" href="#supported-formats"></a>
 Supported formats
 </h3><ul>
-<li><strong>.CCI</strong>: Only format supported with my ROMs with Azahar, due to their anti-piracy restrictions</li>
+<li><strong>.CCI</strong> : Only format supported by my ROMs with Azahar due to anti-piracy restrictions</li>
 </ul>
 <h2 id="-faq---frequently-asked-questions">
 <a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
@@ -1740,31 +1788,31 @@ Supported formats
 </h2><h3 id="general-questions">
 <a class="header-anchor" href="#general-questions"></a>
 General questions
-</h3><p><strong>Q: Can Azahar run all 3DS games?</strong>
-<strong>A:</strong> About 90% of 3DS games work well to perfectly. Check the compatibility database for your specific game.</p>
-<p><strong>Q: Does stereoscopic 3D work?</strong>
-<strong>A:</strong> Yes, with 3D glasses or a 3D screen. Side-by-Side mode also available for VR.</p>
-<p><strong>Q: Can I use my real 3DS saves?</strong>
-<strong>A:</strong> Yes, with Checkpoint or JKSM you can transfer your saves both ways.</p>
+</h3><p><strong>Q: Can Azahar run every 3DS game?</strong><br>
+<strong>A:</strong> Approximately 90% of 3DS games run well to perfectly. Check the compatibility database for your specific title.</p>
+<p><strong>Q: Does stereoscopic 3D work?</strong><br>
+<strong>A:</strong> Yes, with 3D-capable displays or using side-by-side mode for VR.</p>
+<p><strong>Q: Can I use my real 3DS saves?</strong><br>
+<strong>A:</strong> Yes — with Checkpoint or JKSM you can transfer saves both ways.</p>
 <h3 id="technical-questions">
 <a class="header-anchor" href="#technical-questions"></a>
 Technical questions
-</h3><p><strong>Q: Why are some games slow?</strong>
-<strong>A:</strong> 3DS games are optimized for specific hardware. Emulation requires more power, especially for complex games.</p>
-<p><strong>Q: OpenGL or Vulkan?</strong>
-<strong>A:</strong> OpenGL is more stable and compatible. Vulkan can offer better performance on recent GPUs.</p>
-<p><strong>Q: Does New 3DS Mode improve all games?</strong>
-<strong>A:</strong> Mainly games that use it natively (Xenoblade, Monster Hunter, etc.) and some homebrews.</p>
-<h3 id="common-problems">
-<a class="header-anchor" href="#common-problems"></a>
-Common problems
-</h3><p><strong>Q: &ldquo;Could not determine the system region&rdquo;?</strong>
+</h3><p><strong>Q: Why are some games slow?</strong><br>
+<strong>A:</strong> 3DS games are optimized for specific hardware. Emulation is more demanding, especially for complex titles.</p>
+<p><strong>Q: OpenGL or Vulkan?</strong><br>
+<strong>A:</strong> OpenGL is more stable and compatible. Vulkan can offer better performance on modern GPUs.</p>
+<p><strong>Q: Does enabling New 3DS mode improve everything?</strong><br>
+<strong>A:</strong> Mainly for games that natively use New 3DS features (Xenoblade, Monster Hunter, etc.) and certain homebrews.</p>
+<h3 id="common-issues">
+<a class="header-anchor" href="#common-issues"></a>
+Common issues
+</h3><p><strong>Q: &ldquo;Could not determine the system region&rdquo;?</strong><br>
 <strong>A:</strong> Install system files (aes_keys.txt) and configure the region in settings.</p>
-<p><strong>Q: HD textures don&rsquo;t display?</strong>
-<strong>A:</strong> Check that &ldquo;Custom Textures&rdquo; is enabled and that the Title ID matches the folder.</p>
-<p><strong>Q: How to improve performance on Android?</strong>
-<strong>A:</strong> Use Citra MMJ, reduce resolution, enable frame skip if necessary.</p>
-<p><strong>Enjoy your 3DS games in high definition! 🎮✨</strong></p>
+<p><strong>Q: HD textures not showing?</strong><br>
+<strong>A:</strong> Verify &ldquo;Custom Textures&rdquo; is enabled and the Title ID matches the folder.</p>
+<p><strong>Q: How to improve performance on Android?</strong><br>
+<strong>A:</strong> Use Citra MMJ, lower the resolution, enable frame skip if needed.</p>
+<p>Enjoy your 3DS games in high definition! 🎮✨</p>
 </div>
     <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
       <strong><span class="icon-link icon"></span>Permalink: </strong><a href="http://localhost:1313/en/post/citra/">http://localhost:1313/en/post/citra/</a>
@@ -1822,8 +1870,22 @@ Common problems
 </div>
 
 <div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
-     >
-    </div></div>
+     ><script src="https://giscus.app/client.js"
+        data-repo="Axekinn/wiki.axekin.com"
+        data-repo-id="R_kgDOO6CQAQ"
+        data-category="General"
+        data-category-id="DIC_kwDOO6CQAc4CurE7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script></div></div>
 </section></section>
         </div><footer id="footer">
   <div style="width: 100%; overflow: hidden">
@@ -1844,10 +1906,10 @@ Common problems
         >
       </div><div>
         <span class="icon-brush"
-          >&nbsp;19.4k</span
+          >&nbsp;21.6k</span
         >
         &nbsp;|&nbsp;
-        <span class="icon-coffee">&nbsp;01:43</span>
+        <span class="icon-coffee">&nbsp;01:55</span>
       </div><div>
         <span class="icon-eye"></span>
         <span id="busuanzi_container_site_pv"
@@ -1892,29 +1954,33 @@ Common problems
         <li><a href="#result">Result</a></li>
       </ul>
     </li>
-    <li><a href="#-portable-configuration-recommended">💡 Portable Configuration (Recommended)</a>
+    <li><a href="#-portable-configuration-recommended">💡 Portable configuration (Recommended)</a>
       <ul>
         <li><a href="#advantages-of-portable-mode">Advantages of portable mode</a></li>
-        <li><a href="#structure-after-creating-portable-folder">Structure after creating portable folder</a></li>
-        <li><a href="#creation-instructions">Creation instructions</a></li>
+        <li><a href="#structure-after-creating-the-portable-folder">Structure after creating the portable folder</a></li>
+        <li><a href="#creation-steps">Creation steps</a></li>
       </ul>
     </li>
-    <li><a href="#-step-3-installation-and-first-launch">⚙️ Step 3: Installation and first launch</a>
+    <li><a href="#-step-3-install-and-first-run">⚙️ Step 3: Install and first run</a>
       <ul>
-        <li><a href="#windows-prerequisites-installation">Windows Prerequisites Installation</a></li>
-        <li><a href="#first-launch">First launch</a></li>
+        <li><a href="#windows-prerequisites">Windows prerequisites</a></li>
+        <li><a href="#first-run">First run</a></li>
       </ul>
     </li>
-    <li><a href="#-step-3-optimal-configuration">⚙️ Step 3: Optimal Configuration</a>
+    <li><a href="#-step-4-optimal-configuration">⚙️ Step 4: Optimal configuration</a>
       <ul>
         <li><a href="#general-settings">General settings</a></li>
         <li><a href="#system-configuration">System configuration</a></li>
-        <li><a href="#optimal-graphics-settings">Optimal graphics settings</a></li>
-        <li><a href="#screen-layout">Screen layout</a></li>
-        <li><a href="#custom-configuration">Custom configuration</a></li>
+        <li><a href="#recommended-graphics-settings">Recommended graphics settings</a></li>
+        <li><a href="#screen-layouts">Screen layouts</a></li>
+        <li><a href="#custom-layout-configuration">Custom layout configuration</a></li>
         <li><a href="#display-settings">Display settings</a></li>
         <li><a href="#audio-configuration">Audio configuration</a></li>
         <li><a href="#controls-configuration">Controls configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#-step--multiplayer-quick-setup">⚙️ Step 🌐 Multiplayer (quick setup)</a>
+      <ul>
         <li><a href="#supported-formats">Supported formats</a></li>
       </ul>
     </li>
@@ -1922,7 +1988,7 @@ Common problems
       <ul>
         <li><a href="#general-questions">General questions</a></li>
         <li><a href="#technical-questions">Technical questions</a></li>
-        <li><a href="#common-problems">Common problems</a></li>
+        <li><a href="#common-issues">Common issues</a></li>
       </ul>
     </li>
   </ul>
@@ -1940,17 +2006,17 @@ Common problems
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>Posts</div><div class="sidebar-state-number">21</div>
+    <div>Posts</div><div class="sidebar-state-number">23</div>
   </div>
   <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
     <div>Categories</div>
     <div class="sidebar-state-number">
-      10
+      12
     </div>
   </a>
   <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
     <div>Tags</div>
-    <div class="sidebar-state-number">62</div>
+    <div class="sidebar-state-number">73</div>
   </a>
 </div>
 <div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
@@ -2308,10 +2374,10 @@ Common problems
         giscusScript.src = 'https://giscus.app/client.js';
         giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
         giscusScript.setAttribute('data-repo-id', '');
-        giscusScript.setAttribute('data-category', '');
+        giscusScript.setAttribute('data-category', 'General');
         giscusScript.setAttribute('data-category-id', '');
-        giscusScript.setAttribute('data-mapping', '1');
-        giscusScript.setAttribute('data-strict', '1');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
         giscusScript.setAttribute('data-reactions-enabled', '');
         giscusScript.setAttribute('data-emit-metadata', '');
         giscusScript.setAttribute('data-input-position', '');
@@ -2455,7 +2521,7 @@ Common problems
   `;
   console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
   console.log(
-    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "%c " + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
     "color: white; background: #ff5252; padding:5px 0;",
     "padding:4px;border:1px solid #ff5252;",
   );

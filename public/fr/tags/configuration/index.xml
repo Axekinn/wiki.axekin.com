@@ -12,12 +12,32 @@
     
     <copyright>Tous les articles de ce blog sont sous licence BY-NC-SA sauf mention contraire. Veuillez indiquer la source lors de la reproduction !</copyright>
     
-    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/fr/tags/configuration/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</title>
+      <link>http://localhost:1313/fr/post/ppsspp/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
+      <author>axekinn@proton.me (Axekin)</author>
+      <guid>http://localhost:1313/fr/post/ppsspp/</guid>
+      <description>
+        <![CDATA[<h1>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
+        
+          Apprenez à configurer PPSSPP pour une émulation PSP optimale. Guide complet avec paramètres recommandés et optimisations.
+        
+        <hr><p>Publié le 2025-09-09 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-09-09</p>]]>
+      </description>
+      
+        <category>PPSSPP</category>
+      
+    </item>
     
     
 

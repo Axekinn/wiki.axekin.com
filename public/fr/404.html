@@ -57,6 +57,8 @@ data-theme-mode="auto"
   <meta property="article:modified_time" content="0001-01-01T00:00:00&#43;00:00" /><meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="/" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+
+<link rel="stylesheet" href="/css/custom.css">
 <link
     rel="preload"
     as="style"
@@ -385,10 +387,10 @@ data-theme-mode="auto"
         giscusScript.src = 'https://giscus.app/client.js';
         giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
         giscusScript.setAttribute('data-repo-id', '');
-        giscusScript.setAttribute('data-category', '');
+        giscusScript.setAttribute('data-category', 'General');
         giscusScript.setAttribute('data-category-id', '');
-        giscusScript.setAttribute('data-mapping', '1');
-        giscusScript.setAttribute('data-strict', '1');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
         giscusScript.setAttribute('data-reactions-enabled', '');
         giscusScript.setAttribute('data-emit-metadata', '');
         giscusScript.setAttribute('data-input-position', '');
@@ -532,7 +534,7 @@ data-theme-mode="auto"
   `;
   console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
   console.log(
-    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "%c " + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
     "color: white; background: #ff5252; padding:5px 0;",
     "padding:4px;border:1px solid #ff5252;",
   );

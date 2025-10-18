@@ -69,17 +69,17 @@ $share-keys: {{ delimit (apply $share_keys "printf" "'%s'" "." ) "," }};
   }
 }
 
-$light-red-0: {{ default "#ff0000" (index $params.internal_theme.light "--red-0") }};
-$light-red-1: {{ default "#ff5252" (index $params.internal_theme.light "--red-1") }};
-$light-red-2: {{ default "#ff7c7c" (index $params.internal_theme.light "--red-2") }};
-$light-red-3: {{ default "#ffafaf" (index $params.internal_theme.light "--red-3") }};
-$light-red-4: {{ default "#ffd0d0" (index $params.internal_theme.light "--red-4") }};
-$light-red-5: {{ default "#ffecec" (index $params.internal_theme.light "--red-5") }};
-$light-red-5-5: {{ default "#fff3f3" (index $params.internal_theme.light "--red-5-5") }};
-$light-red-6: {{ default "#fff7f7" (index $params.internal_theme.light "--red-6") }};
+$light-red-0: {{ default "#ff6600" (index $params.internal_theme.light "--red-0") }};
+$light-red-1: {{ default "#ff8533" (index $params.internal_theme.light "--red-1") }};
+$light-red-2: {{ default "#ffa366" (index $params.internal_theme.light "--red-2") }};
+$light-red-3: {{ default "#ffb380" (index $params.internal_theme.light "--red-3") }};
+$light-red-4: {{ default "#ffd1b3" (index $params.internal_theme.light "--red-4") }};
+$light-red-5: {{ default "#ffe8d9" (index $params.internal_theme.light "--red-5") }};
+$light-red-5-5: {{ default "#fff4ec" (index $params.internal_theme.light "--red-5-5") }};
+$light-red-6: {{ default "#fffaf5" (index $params.internal_theme.light "--red-6") }};
 
-$light-color-red-6-shadow: {{ default "rgba(255, 78, 78, 0.6)" (index $params.internal_theme.light "--color-red-6-shadow") }};
-$light-color-red-3-shadow: {{ default "rgba(255, 78, 78, 0.3)" (index $params.internal_theme.light "--color-red-3-shadow") }};
+$light-color-red-6-shadow: {{ default "rgba(255, 102, 0, 0.6)" (index $params.internal_theme.light "--color-red-6-shadow") }};
+$light-color-red-3-shadow: {{ default "rgba(255, 102, 0, 0.3)" (index $params.internal_theme.light "--color-red-3-shadow") }};
 
 $light-highlight-nav: {{ default "#e6e6e6" (index $params.internal_theme.light "--highlight-nav") }};
 $light-highlight-scrollbar: {{ default "#d6d6d6" (index $params.internal_theme.light "--highlight-scrollbar") }};
@@ -96,10 +96,10 @@ $light-highlight-aqua: {{ default "#479d9d" (index $params.internal_theme.light 
 $light-highlight-blue: {{ default "#1973b8" (index $params.internal_theme.light "--highlight-blue") }};
 $light-highlight-purple: {{ default "#7135ac" (index $params.internal_theme.light "--highlight-purple") }};
 
-$dark-red-4: {{ default "rgba(255, 208, 208, 0.5)" (index $params.internal_theme.dark "--red-4") }};
-$dark-red-5: {{ default "rgba(255,228,228,0.15)" (index $params.internal_theme.dark "--red-5") }};
-$dark-red-5-5: {{ default "rgba(255,236,236,0.05)" (index $params.internal_theme.dark "--red-5-5") }};
-$dark-red-6: {{ default "rgba(255, 243, 243, 0.2)" (index $params.internal_theme.dark "--red-6") }};
+$dark-red-4: {{ default "rgba(255, 179, 128, 0.5)" (index $params.internal_theme.dark "--red-4") }};
+$dark-red-5: {{ default "rgba(255, 179, 128, 0.15)" (index $params.internal_theme.dark "--red-5") }};
+$dark-red-5-5: {{ default "rgba(255, 179, 128, 0.05)" (index $params.internal_theme.dark "--red-5-5") }};
+$dark-red-6: {{ default "rgba(255, 179, 128, 0.2)" (index $params.internal_theme.dark "--red-6") }};
 
 $dark-highlight-nav: {{ default "#2e353f" (index $params.internal_theme.dark "--highlight-nav") }};
 $dark-highlight-scrollbar: {{ default "#454d59" (index $params.internal_theme.dark "--highlight-scrollbar") }};

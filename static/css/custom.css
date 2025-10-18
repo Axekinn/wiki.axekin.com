@@ -1,75 +1,87 @@
+/* 🎃👻 THÈME HALLOWEEN - PRIORITÉ MAXIMALE 🦇🕷️ */
+
 :root {
-  /* Palette violet - du plus foncé au plus clair */
-  --violet-0: #4a00e0;        /* Violet principal */
-  --violet-1: #6a1b99;        /* Violet moyen */
-  --violet-2: #8e44ad;        /* Violet clair */
-  --violet-3: #a569bd;        /* Violet très clair */
-  --violet-4: #d2b4de;        /* Violet pastel */
-  --violet-5: #e8daef;        /* Violet très pastel */
-  --violet-5-5: #f4f1f8;      /* Violet quasi transparent */
-  --violet-6: #faf8fc;        /* Violet background */
+  /* 🎃 Palette Halloween - Orange Citrouille */
+  --halloween-orange-0: #ff6600 !important;        /* Orange vif */
+  --halloween-orange-1: #ff8533 !important;        /* Orange principal */
+  --halloween-orange-2: #ffa366 !important;        /* Orange moyen */
+  --halloween-orange-3: #ffb380 !important;        /* Orange clair */
+  --halloween-orange-4: #ffd1b3 !important;        /* Orange pastel */
+  --halloween-orange-5: #ffe8d9 !important;        /* Orange très pastel */
+  --halloween-orange-5-5: #fff4ec !important;      /* Orange quasi transparent */
+  --halloween-orange-6: #fffaf5 !important;        /* Orange background */
 
-  /* Couleurs noires */
-  --black-0: #000000;
-  --black-1: #1a1a1a;
-  --black-2: #2d2d2d;
-  --black-3: #404040;
-  --black-4: #5a5a5a;
-  --black-5: #737373;
+  /* 👻 Couleurs sombres Halloween */
+  --halloween-black: #1a0f0a !important;
+  --halloween-dark-brown: #2d1810 !important;
+  --halloween-brown: #4a3621 !important;
+  --halloween-light-brown: #6b4e3d !important;
+  
+  /* 🦇 Couleurs violettes mystiques */
+  --halloween-purple: #663399 !important;
+  --halloween-purple-light: #8b5fbf !important;
+  
+  /* 🕷️ Redéfinition FORCÉE des variables du thème avec couleurs Halloween */
+  --red-0: #ff6600 !important;
+  --red-1: #ff8533 !important;
+  --red-2: #ffa366 !important;
+  --red-3: #ffb380 !important;
+  --red-4: #ffd1b3 !important;
+  --red-5: #ffe8d9 !important;
+  --red-5-5: #fff4ec !important;
+  --red-6: #fffaf5 !important;
 
-  /* Redéfinition des variables du thème */
-  --red-0: var(--violet-0);
-  --red-1: var(--violet-1);
-  --red-2: var(--violet-2);
-  --red-3: var(--violet-3);
-  --red-4: var(--violet-4);
-  --red-5: var(--violet-5);
-  --red-5-5: var(--violet-5-5);
-  --red-6: var(--violet-6);
+  /* 🎃 Couleurs principales Halloween FORCÉES */
+  --color-default: #4a3621 !important;
+  --color-link: #ff8533 !important;
+  --color-border: #ffb380 !important;
+  --color-h2-after: #ff8533 !important;
+  --color-red-6-shadow: rgba(255, 102, 0, 0.6) !important;
+  --color-red-3-shadow: rgba(255, 102, 0, 0.3) !important;
+  --color-meta-shadow: #fffaf5 !important;
+  --color-hover-shadow: rgba(255, 133, 51, 0.25) !important;
 
-  /* Couleurs principales */
-  --color-default: var(--black-2);
-  --color-link: var(--violet-1);
-  --color-border: var(--violet-3);
-  --color-background: var(--black-1);
-  --color-wrap: var(--black-0);
-  --color-header-background: rgba(26, 26, 26, 0.95);
-  --color-footer-background: var(--black-1);
-  --color-mobile-nav-background: var(--black-1);
-  --color-h2-after: var(--violet-1);
-  --color-red-6-shadow: rgba(106, 27, 153, 0.6);
-  --color-red-3-shadow: rgba(106, 27, 153, 0.3);
-  --color-meta-shadow: var(--violet-6);
-  --color-hover-shadow: rgba(106, 27, 153, 0.15);
-
-  /* Couleurs de code */
-  --color-code-background: var(--black-2);
-  --highlight-background: var(--black-2);
-  --highlight-foreground: #e8daef;
-  --highlight-comment: #a569bd;
-  --highlight-purple: var(--violet-2);
-  --highlight-blue: #8bb6ff;
-  --highlight-green: #98d982;
-  --highlight-red: #ff6b6b;
-  --highlight-orange: #ffaa44;
-  --highlight-yellow: #ffd93d;
+  /* 🕸️ Ombres avec effet lumineux Halloween */
+  --shadow-glow-orange: 0 0 15px rgba(255, 102, 0, 0.5) !important;
+  --shadow-glow-purple: 0 0 10px rgba(102, 51, 153, 0.4) !important;
+  --highlight-blue: #8bb6ff !important;
+  --highlight-green: #98d982 !important;
+  --highlight-red: #ff6b6b !important;
+  --highlight-orange: #ffaa44 !important;
+  --highlight-yellow: #ffd93d !important;
 }
 
-/* Mode sombre adapté */
+/* 🎃 SURCHARGE GLOBALE DES TITRES */
+h1, h2, h3, h4, h5, h6,
+.post-title, .article-title,
+.post-title a, .article-title a {
+  color: #ff8533 !important;
+}
+
+/* 🎃 SURCHARGE GLOBALE DES LIENS */
+a {
+  color: #ff8533 !important;
+}
+
+a:hover {
+  color: #ff6600 !important;
+}
+
+/* 🌙 Mode sombre Halloween adapté */
 [data-theme="dark"]:root {
-  --color-background: var(--black-0);
-  --color-wrap: var(--black-2);
-  --color-header-background: var(--black-1);
-  --color-footer-background: var(--black-0);
-  --color-mobile-nav-background: var(--black-0);
-  --color-default: #e8daef;
-  --color-border: var(--violet-4);
-  --color-h2-border: var(--black-3);
-  --color-meta-shadow: rgba(0, 0, 0, 0.4);
-  --color-hover-shadow: rgba(106, 27, 153, 0.3);
+  --color-background: var(--halloween-black);
+  --color-wrap: var(--halloween-dark-brown);
+  --color-header-background: var(--halloween-dark-brown);
+  --color-footer-background: var(--halloween-black);
+  --color-mobile-nav-background: var(--halloween-black);
+  --color-default: #ccaa88;
+  --color-border: var(--halloween-orange-4);
+  --color-h2-border: var(--halloween-light-brown);
+  --color-meta-shadow: rgba(255, 102, 0, 0.4);
+  --color-hover-shadow: rgba(255, 133, 51, 0.3);
 }
 
-/* Sélecteur de langue avec nouveau thème */
+/* 🎃 Sélecteur de langue avec thème Halloween */
 .reimu-language-selector {
   display: flex;
   gap: 10px;
@@ -83,42 +95,42 @@
   font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, var(--violet-4), var(--violet-5));
-  color: var(--violet-0);
+  background: linear-gradient(135deg, var(--halloween-orange-4), var(--halloween-orange-5));
+  color: var(--halloween-orange-0);
   text-decoration: none;
   border: 2px solid transparent;
 }
 
 .reimu-lang-link:hover {
-  background: linear-gradient(135deg, var(--violet-2), var(--violet-3));
+  background: linear-gradient(135deg, var(--halloween-orange-2), var(--halloween-orange-3));
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(106, 27, 153, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.4);
 }
 
 .reimu-lang-link.active {
-  background: linear-gradient(135deg, var(--violet-0), var(--violet-1));
+  background: linear-gradient(135deg, var(--halloween-orange-0), var(--halloween-orange-1));
   color: white;
-  border-color: var(--violet-2);
-  box-shadow: 0 0 15px rgba(106, 27, 153, 0.5);
+  border-color: var(--halloween-orange-2);
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
 }
 
-/* Adaptation au mode sombre */
+/* 🌙 Adaptation au mode sombre */
 [data-theme="dark"] .reimu-lang-link {
-  background: linear-gradient(135deg, var(--black-2), var(--black-3));
-  color: var(--violet-3);
-  border-color: var(--violet-4);
+  background: linear-gradient(135deg, var(--halloween-dark-brown), var(--halloween-light-brown));
+  color: var(--halloween-orange-3);
+  border-color: var(--halloween-orange-4);
 }
 
 [data-theme="dark"] .reimu-lang-link:hover {
-  background: linear-gradient(135deg, var(--violet-2), var(--violet-1));
+  background: linear-gradient(135deg, var(--halloween-orange-2), var(--halloween-orange-1));
   color: white;
 }
 
 [data-theme="dark"] .reimu-lang-link.active {
-  background: linear-gradient(135deg, var(--violet-0), var(--violet-1));
+  background: linear-gradient(135deg, var(--halloween-orange-0), var(--halloween-orange-1));
   color: white;
-  border-color: var(--violet-2);
+  border-color: var(--halloween-orange-2);
 }
 
 /* Ajustements pour mobile */
@@ -134,65 +146,75 @@
   }
 }
 
-/* Personnalisations supplémentaires pour le thème violet/noir */
+/* 🎃 Personnalisations supplémentaires pour le thème Halloween */
 
-/* Logo et titre */
+/* Logo et titre avec effet lumineux orange */
 #logo {
-  color: var(--violet-3) !important;
-  text-shadow: 0 0 10px rgba(106, 27, 153, 0.5) !important;
+  color: var(--halloween-orange-1) !important;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.6), 0 0 20px rgba(255, 102, 0, 0.3) !important;
 }
 
 #subtitle {
-  color: var(--violet-4) !important;
-  text-shadow: 0 0 8px rgba(106, 27, 153, 0.3) !important;
+  color: var(--halloween-orange-3) !important;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.4) !important;
 }
 
-/* Navigation */
+/* Navigation avec accents orange/violet */
 .main-nav-link, .main-nav-icon, .nav-icon {
-  color: var(--violet-2) !important;
+  color: var(--halloween-orange-2) !important;
+  transition: all 0.3s ease;
 }
 
 .main-nav-link:hover, .main-nav-icon:hover, .nav-icon:hover {
-  color: var(--violet-0) !important;
+  color: var(--halloween-orange-0) !important;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
 }
 
-/* Articles */
+
+/* 🎃 Articles avec effets Halloween */
 .post-title {
-  color: var(--violet-1) !important;
+  color: var(--halloween-orange-1) !important;
 }
 
 .post-wrapper:hover {
-  box-shadow: 0 0 20px 5px rgba(106, 27, 153, 0.2) !important;
+  box-shadow: 0 0 20px 5px rgba(255, 102, 0, 0.3) !important;
 }
 
-/* Sidebar */
+/* 👻 Sidebar */
 .sidebar-author-name {
-  color: var(--violet-2) !important;
+  color: var(--halloween-orange-2) !important;
 }
 
 .sidebar-state {
-  color: var(--violet-1) !important;
+  color: var(--halloween-orange-1) !important;
 }
 
-/* Boutons et liens */
+/* 🕷️ Boutons et liens */
 .article-tag-list-item, .article-category-link, .article-date-link {
-  background: linear-gradient(135deg, var(--violet-5), var(--violet-6)) !important;
-  color: var(--violet-1) !important;
+  background: linear-gradient(135deg, var(--halloween-orange-5), var(--halloween-orange-6)) !important;
+  color: var(--halloween-orange-1) !important;
+  border: 1px solid var(--halloween-orange-4);
+  transition: all 0.3s ease;
 }
 
-/* Footer */
+.article-tag-list-item:hover, .article-category-link:hover, .article-date-link:hover {
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(135deg, var(--halloween-orange-3), var(--halloween-orange-4)) !important;
+}
+
+/* 🦇 Footer */
 .footer-line {
-  background: linear-gradient(to left, var(--violet-1) 50%, transparent 0%) repeat-x 0 0/100px 10px !important;
-  filter: drop-shadow(0px 0px 2px var(--violet-1)) !important;
+  background: linear-gradient(to left, var(--halloween-orange-1) 50%, transparent 0%) repeat-x 0 0/100px 10px !important;
+  filter: drop-shadow(0px 0px 2px var(--halloween-orange-1)) !important;
 }
 
-/* Scrollbar personnalisée */
+/* 🕸️ Scrollbar personnalisée */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--violet-2), var(--violet-1)) !important;
+  background: linear-gradient(135deg, var(--halloween-orange-2), var(--halloween-orange-1)) !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--violet-1), var(--violet-0)) !important;
+  background: linear-gradient(135deg, var(--halloween-orange-1), var(--halloween-orange-0)) !important;
 }
 
 /* Amélioration des catégories sur la page d'accueil */
@@ -208,16 +230,16 @@
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--violet-6), var(--violet-5));
-  border: 2px solid var(--violet-4);
+  background: linear-gradient(135deg, var(--halloween-orange-6), var(--halloween-orange-5));
+  border: 2px solid var(--halloween-orange-4);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(106, 27, 153, 0.1);
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.1);
 }
 
 .post-categories-wrap:hover {
   transform: translateY(-8px) scale(1.02);
-  border-color: var(--violet-2);
-  box-shadow: 0 8px 30px rgba(106, 27, 153, 0.3);
+  border-color: var(--halloween-orange-2);
+  box-shadow: 0 8px 30px rgba(255, 102, 0, 0.3);
 }
 
 /* Design avec dégradés et icônes uniquement */
@@ -232,21 +254,21 @@
   overflow: hidden;
 }
 
-/* Dégradés spécifiques par catégorie */
+/* 🎃 Dégradés spécifiques par catégorie - Thème Halloween */
 .post-categories-wrap:nth-child(1) .post-categories-cover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6600 0%, #cc5200 100%);
 }
 
 .post-categories-wrap:nth-child(2) .post-categories-cover {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #663399 0%, #441177 100%);
 }
 
 .post-categories-wrap:nth-child(3) .post-categories-cover {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #ff8533 0%, #ff6600 100%);
 }
 
 .post-categories-wrap:nth-child(4) .post-categories-cover {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #8b5fbf 0%, #663399 100%);
 }
 
 /* Affichage des icônes emoji */
@@ -281,7 +303,7 @@
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(45deg, #ffffff, var(--violet-5));
+  background: linear-gradient(45deg, #ffffff, var(--halloween-orange-5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -330,19 +352,19 @@
   transform: rotate(45deg) translate(100%, 100%);
 }
 
-/* Mode sombre */
+/* 🌙 Mode sombre Halloween */
 [data-theme="dark"] .post-categories-wrap {
-  background: linear-gradient(135deg, var(--black-2), var(--black-3));
-  border-color: var(--violet-3);
+  background: linear-gradient(135deg, var(--halloween-dark-brown), var(--halloween-light-brown));
+  border-color: var(--halloween-orange-3);
 }
 
 [data-theme="dark"] .post-categories-cover {
-  background: linear-gradient(45deg, var(--violet-0), var(--violet-1));
+  background: linear-gradient(45deg, var(--halloween-orange-0), var(--halloween-orange-1));
 }
 
 [data-theme="dark"] .post-categories-wrap:hover {
-  border-color: var(--violet-1);
-  box-shadow: 0 8px 30px rgba(106, 27, 153, 0.4);
+  border-color: var(--halloween-orange-1);
+  box-shadow: 0 8px 30px rgba(255, 102, 0, 0.5);
 }
 
 /* Responsive */
@@ -362,15 +384,15 @@
   }
 }
 
-/* Effet de pulsation */
-@keyframes pulse-violet {
-  0% { box-shadow: 0 0 0 0 rgba(106, 27, 153, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(106, 27, 153, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(106, 27, 153, 0); }
+/* Effet de pulsation Halloween */
+@keyframes pulse-halloween {
+  0% { box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 102, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 102, 0, 0); }
 }
 
 .post-categories-wrap:hover {
-  animation: pulse-violet 1.5s infinite;
+  animation: pulse-halloween 1.5s infinite;
 }
 
 /* Centrage du texte personnalisé du footer */
@@ -384,135 +406,245 @@
   display: block;
 }
 
-/* Styles pour le texte Markdown en blanc et gras */
+/* 🎃 Texte principal du contenu avec couleurs Halloween */
+.post-content,
+.article-content,
+.post-body,
+.article-body,
+.content-body {
+  color: var(--color-default) !important;
+}
+
+.post-content p,
+.article-content p {
+  color: var(--color-default) !important;
+}
+
+/* Styles pour le texte Markdown avec accents Halloween */
 .post-content strong,
 .post-content b {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 700 !important;
 }
 
 .post-content em,
 .post-content i {
-  color: #ffffff !important;
+  color: var(--halloween-orange-2) !important;
   font-style: italic;
   font-weight: 600 !important;
 }
 
-/* Tags en blanc et gras */
+/* Tags en orange Halloween */
 .tag,
 .tag-item,
 .post-tag,
 .article-tag {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 700 !important;
-  background: rgba(106, 27, 153, 0.2);
-  border: 1px solid rgba(106, 27, 153, 0.4);
+  background: rgba(255, 102, 0, 0.15);
+  border: 1px solid rgba(255, 102, 0, 0.4);
 }
 
 .tag:hover,
 .tag-item:hover,
 .post-tag:hover {
-  color: #ffffff !important;
-  background: rgba(106, 27, 153, 0.4);
+  color: white !important;
+  background: rgba(255, 102, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.4);
 }
 
-/* Titres en blanc et gras */
+/* Titres en orange Halloween */
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 700 !important;
 }
 
 /* Liens dans le contenu */
 .post-content a {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 600 !important;
   text-decoration: underline;
-  text-decoration-color: rgba(106, 27, 153, 0.6);
+  text-decoration-color: rgba(255, 102, 0, 0.6);
 }
 
 .post-content a:hover {
-  color: #d2b4de !important;
-  text-decoration-color: #d2b4de;
+  color: var(--halloween-orange-0) !important;
+  text-decoration-color: var(--halloween-orange-0);
+  text-shadow: 0 0 5px rgba(255, 102, 0, 0.4);
 }
 
-/* Listes en blanc et gras */
+/* Listes en orange/blanc selon le thème */
 .post-content ul li,
 .post-content ol li {
-  color: #ffffff !important;
+  color: var(--color-default) !important;
   font-weight: 500 !important;
 }
 
-/* Code inline en blanc */
+/* Code inline avec style Halloween */
 .post-content code:not(.hljs) {
-  color: #ffffff !important;
-  background: rgba(106, 27, 153, 0.2) !important;
+  color: var(--halloween-orange-1) !important;
+  background: rgba(255, 102, 0, 0.1) !important;
   font-weight: 600 !important;
   padding: 2px 6px;
   border-radius: 4px;
+  border: 1px solid rgba(255, 102, 0, 0.2);
 }
 
-/* Blockquotes en blanc */
+/* Blockquotes avec accent orange */
 .post-content blockquote {
-  color: #ffffff !important;
+  color: var(--color-default) !important;
   font-weight: 500 !important;
-  border-left: 4px solid var(--red-2);
+  border-left: 4px solid var(--halloween-orange-2);
 }
 
 /* Tables */
 .post-content table {
-  color: #ffffff !important;
+  color: var(--color-default) !important;
 }
 
 .post-content th {
-  color: #ffffff !important;
+  color: white !important;
   font-weight: 700 !important;
-  background: rgba(106, 27, 153, 0.3);
+  background: var(--halloween-orange-2);
 }
 
 .post-content td {
-  color: #ffffff !important;
+  color: var(--color-default) !important;
   font-weight: 500 !important;
 }
 
 /* Sidebar tags et catégories */
 .widget-tag .tag-list .tag-list-item a,
 .widget-category .category-list .category-list-item a {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 600 !important;
 }
 
 /* Métadonnées des articles */
 .post-meta,
 .article-meta {
-  color: #ffffff !important;
+  color: var(--halloween-orange-2) !important;
   font-weight: 500 !important;
 }
 
 .post-meta a,
 .article-meta a {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 600 !important;
 }
 
 /* Navigation */
 .nav-item a {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 600 !important;
 }
 
 /* Footer */
 .footer-content {
-  color: #ffffff !important;
+  color: var(--halloween-orange-2) !important;
   font-weight: 500 !important;
 }
 
 /* Pagination */
 .pagination a {
-  color: #ffffff !important;
+  color: var(--halloween-orange-1) !important;
   font-weight: 600 !important;
 }
+
+.pagination a:hover {
+  color: var(--halloween-orange-0) !important;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+/* 🎃 ==================== EFFETS SPÉCIAUX HALLOWEEN ==================== 🎃 */
+
+/* Effet lumineux sur les titres principaux */
+h1, h2 {
+  text-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover, h2:hover {
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.5), 0 0 20px rgba(255, 102, 0, 0.3);
+}
+
+/* Effet de lueur sur les cartes d'articles */
+.post-card, .article-card, .post-wrapper {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.post-card:hover, .article-card:hover, .post-wrapper:hover {
+  border-color: var(--halloween-orange-3);
+  box-shadow: 
+    0 0 15px rgba(255, 102, 0, 0.3),
+    0 0 30px rgba(255, 102, 0, 0.1);
+}
+
+/* Boutons avec effet Halloween */
+button, .button, input[type="submit"] {
+  background: linear-gradient(135deg, var(--halloween-orange-1), var(--halloween-orange-2)) !important;
+  border: 2px solid var(--halloween-orange-3) !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+button:hover, .button:hover, input[type="submit"]:hover {
+  background: linear-gradient(135deg, var(--halloween-orange-0), var(--halloween-orange-1)) !important;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Animation subtile de pulsation pour les éléments importants */
+@keyframes halloween-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+  }
+}
+
+.featured, .sticky, .highlight {
+  animation: halloween-glow 3s ease-in-out infinite;
+}
+
+/* Liens avec effet de lueur au survol */
+a:not(.button):not(.post-link) {
+  transition: all 0.3s ease;
+}
+
+a:not(.button):not(.post-link):hover {
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.4);
+}
+
+/* Code blocks avec ambiance Halloween */
+pre, code {
+  background: var(--halloween-dark-brown) !important;
+  border: 1px solid var(--halloween-orange-4) !important;
+  box-shadow: inset 0 0 10px rgba(255, 102, 0, 0.1);
+}
+
+/* 🦇 Effet spécial pour le mode sombre */
+[data-theme="dark"] body {
+  background-color: var(--halloween-black);
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 102, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(102, 51, 153, 0.05) 0%, transparent 50%);
+}
+
+/* 🕸️ Amélioration des ombres globales en mode sombre */
+[data-theme="dark"] .card, 
+[data-theme="dark"] .panel, 
+[data-theme="dark"] .widget {
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    0 0 10px rgba(255, 102, 0, 0.1);
+}
+
+/* 🎃 Fin des effets Halloween 🎃 */

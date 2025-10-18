@@ -1,0 +1,1302 @@
+<!doctype html>
+<html
+  lang="en" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Lossless Scaling Configuration for Emulators | Axekin
+</title>
+<meta
+  name="description"
+  content="Complete guide to configuring Lossless Scaling and boosting FPS performance on Nintendo Switch, PS2, PS3 emulators and more - Optimized frame generation and upscaling"
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"auto_copy_selector\":\"pre code\",\"copyright\":{\"count\":50,\"enable\":true,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"fr\":\"Échec de la copie (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"fr\":\"Copie réussie (*^▽^*)\"}},\"code_block\":{\"copy_button\":true,\"expand\":true,\"highlight_lines\":true,\"line_numbers\":true,\"theme\":\"dracula\"},\"i18n_languages\":[{\"Lang\":\"fr\",\"LanguageName\":\"Français\",\"LanguageCode\":\"\",\"Title\":\"Wiki de Axekin\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"Wiki of Axekin\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"fr\":\"Cet article a été mis à jour pour la dernière fois le {time}. Le contenu peut ne plus être applicable.\"},\"warning_days\":90,\"warning_message\":{\"en\":\"⚠️ This article is over 3 months old. Some information may be outdated.\",\"fr\":\"⚠️ Cet article date de plus de 3 mois. Certaines informations peuvent être obsolètes.\"}}}");
+  
+  window.siteConfig.swPath = '\/sw.js';
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=map[family:Mulish%20weights:[%25!s%28int=300%29%20%25!s%28int=400%29%20%25!s%28int=600%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Noto%20Serif%20SC%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:JetBrains%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=500%29%20%25!s%28int=700%29]]:400,400italic,700,700italic%7cmap[family:Ubuntu%20Mono%20weights:[%25!s%28int=400%29%20%25!s%28int=700%29]]:400,400italic,700,700italic&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="Lossless Scaling Configuration for Emulators | Axekin" />
+  <meta
+    property="og:description"
+    content="Complete guide to configuring Lossless Scaling and boosting FPS performance on Nintendo Switch, PS2, PS3 emulators and more - Optimized frame generation and upscaling"
+  />
+  <meta property="og:url" content="http://localhost:1313/en/post/losless_scaling/" />
+  <meta
+    property="og:site_name"
+    content="Wiki of Axekin"
+  />
+  <meta
+    property="og:image"
+    content="/images/covers/LS.png"
+  />
+  <meta property="article:author" content="Axekin" />
+  <meta property="article:published_time" content="2025-10-07T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="2025-10-07T00:00:00&#43;00:00" /><meta property="article:tag" content="lossless-scalingframe-generationupscalingemulationfps-boostyuzuryujinxrpcs3pcsx2performance" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/images/covers/LS.png" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+
+<link rel="stylesheet" href="/css/custom.css">
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div class="notification-wrapper">
+    <h1>New version found</h1>
+    <p>The website seems to have new content, do you want to update?</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">Update</button>
+      <button id="notification-close-btn">Cancel</button>
+    </div>
+  </div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe609;</div>
+        <a class="main-nav-link" href="/en/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60c;</div>
+        <a class="main-nav-link" href="/en/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe613;</div>
+        <a class="main-nav-link" href="/en/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon '>&#xe60d;</div>
+        <a class="main-nav-link" href="https://discord.gg/CUpf57y5Vg"></a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a></nav><nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items"><li data-value="fr"  >Français</li><li data-value="en" class="selected" >English</li></ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};langMap['fr'] = '\/fr\/post\/losless_scaling\/';selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            if (item.dataset.value === 'en') {
+              return;
+            }
+            if (!langMap[item.dataset.value]) {
+              _$("#lang-tooltip").style.opacity = "1";
+              setTimeout(() => {
+                _$("#lang-tooltip").style.opacity = "0";
+              }, 1000);
+              return;
+            }
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav></div>
+<header id="header"><picture></picture>
+    <img  fetchpriority="high" src="/images/covers/LS.png" alt="Lossless Scaling Configuration for Emulators"><div id="header-outer">
+    <div id="header-title"><a href="/en/" id="logo">
+            <h1 data-aos="fade-down">Lossless Scaling Configuration for Emulators</h1>
+          </a><h2 id="subtitle-wrap" data-aos="fade-up"></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="slide-right"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-lossless-scaling">🚀 Introduction to Lossless Scaling</a>
+      <ul>
+        <li><a href="#main-advantages">Main Advantages</a></li>
+        <li><a href="#ideal-use-cases">Ideal Use Cases</a></li>
+        <li><a href="#downloading-lossless-scaling">Downloading Lossless Scaling</a></li>
+        <li><a href="#first-launch--initial-setup">First Launch &amp; Initial Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#-detailed-configuration-for-emulators">⚙️ Detailed Configuration for Emulators</a></li>
+    <li><a href="#-optimized-lossless-scaling-settings-2025">⚙️ Optimized Lossless Scaling Settings (2025)</a>
+      <ul>
+        <li><a href="#recommended-profiles-by-priority">Recommended Profiles by Priority</a></li>
+        <li><a href="#integration-tips">Integration Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#common-issues--solutions">Common Issues &amp; Solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a>
+      <ul>
+        <li><a href="#main-benefits">Main Benefits</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">23</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      12
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">73</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main"><article
+  class="h-entry article"
+  itemprop="blogPost"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="flip-left"
+  >
+    <time datetime="2025-10-07 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >2025-10-07</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2025-10-07</time
+    >
+  </span></div>
+<div class="article-category"><a
+      class="article-category-link"
+      href="/en/categories/optimization"
+      data-aos="zoom-in"
+      >OPTIMIZATION</a
+    ></div>
+</div>
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="-introduction-to-lossless-scaling">
+<a class="header-anchor" href="#-introduction-to-lossless-scaling"></a>
+🚀 Introduction to Lossless Scaling
+</h2><p><strong>Lossless Scaling</strong> is a powerful tool for <strong>frame generation</strong> and <strong>upscaling</strong> that can significantly improve both performance and visual quality in games and emulators. Unlike GPU-integrated solutions (DLSS, FSR), Lossless Scaling works at the system level and is compatible with <strong>all GPUs</strong>.</p>
+<h3 id="main-advantages">
+<a class="header-anchor" href="#main-advantages"></a>
+Main Advantages
+</h3><blockquote>
+<p><strong>✨ Why use Lossless Scaling?</strong></p>
+<ul>
+<li><strong>FPS Boost:</strong> Generates intermediate frames to double/triple your framerate</li>
+<li><strong>Visual Enhancement:</strong> High-quality upscaling for higher resolutions</li>
+<li><strong>Universal Compatibility:</strong> Works with NVIDIA, AMD, and Intel</li>
+<li><strong>Emulator Optimization:</strong> Especially effective for Switch, PS2, PS3</li>
+<li><strong>Low Latency:</strong> Technology optimized to minimize input lag</li>
+</ul></blockquote>
+<h3 id="ideal-use-cases">
+<a class="header-anchor" href="#ideal-use-cases"></a>
+Ideal Use Cases
+</h3><p><strong>Where Lossless Scaling excels:</strong></p>
+<ul>
+<li>Emulated games running at native 30 FPS (Pokémon, Zelda, etc.)</li>
+<li>Resource-intensive emulators (RPCS3, Yuzu)</li>
+<li>Modest PCs needing a performance boost</li>
+<li>Upscaling 1080p → 1440p/4K</li>
+<li>Overall smoother gameplay</li>
+</ul>
+<h3 id="downloading-lossless-scaling">
+<a class="header-anchor" href="#downloading-lossless-scaling"></a>
+Downloading Lossless Scaling
+</h3><h4 id="where-to-buy">
+<a class="header-anchor" href="#where-to-buy"></a>
+Where to buy
+</h4><p><strong>🛒 <a href="https://store.steampowered.com/app/993090/Lossless_Scaling/">Lossless Scaling on Steam</a></strong></p>
+<p>Please consider buying the tool—it&rsquo;s very affordable for what it offers. If you can&rsquo;t, you can download it from <a href="https://cs.rin.ru/forum/viewtopic.php?f=41&amp;t=94507">here</a>.</p>
+<h3 id="first-launch--initial-setup">
+<a class="header-anchor" href="#first-launch--initial-setup"></a>
+First Launch &amp; Initial Setup
+</h3><h4 id="main-interface">
+<a class="header-anchor" href="#main-interface"></a>
+Main Interface
+</h4><p>On first launch, Lossless Scaling displays a minimalist interface with several sections:</p>
+<p><strong>Interface sections:</strong></p>
+<ul>
+<li><strong>Scaling Mode:</strong> Upscaling mode</li>
+<li><strong>Scaling Type:</strong> Upscaling algorithm</li>
+<li><strong>Frame Generation:</strong> Frame generation settings</li>
+<li><strong>Capture Method:</strong> Screen capture method</li>
+<li><strong>Hotkeys:</strong> Keyboard shortcuts</li>
+</ul>
+<h2 id="-detailed-configuration-for-emulators">
+<a class="header-anchor" href="#-detailed-configuration-for-emulators"></a>
+⚙️ Detailed Configuration for Emulators
+</h2><h2 id="-optimized-lossless-scaling-settings-2025">
+<a class="header-anchor" href="#-optimized-lossless-scaling-settings-2025"></a>
+⚙️ Optimized Lossless Scaling Settings (2025)
+</h2><h3 id="recommended-profiles-by-priority">
+<a class="header-anchor" href="#recommended-profiles-by-priority"></a>
+Recommended Profiles by Priority
+</h3><p>Here are the configurations to prioritize based on your goal (quality or performance), based on the latest visual tests and comparisons:</p>
+<h4 id="1-maximum-quality-image-best--perf-slow">
+<a class="header-anchor" href="#1-maximum-quality-image-best--perf-slow"></a>
+1. Maximum Quality (Image: BEST / Perf: SLOW)
+</h4><pre tabindex="0"><code>Type: LSG 3.1
+Flow scale: 90
+Multiplier: 4
+Performance: OFF
+</code></pre><p>Use this profile if you want the best possible image quality and your GPU can handle it.</p>
+<h4 id="2-balanced-qualityperformance-image-balanced">
+<a class="header-anchor" href="#2-balanced-qualityperformance-image-balanced"></a>
+2. Balanced Quality/Performance (Image: BALANCED)
+</h4><pre tabindex="0"><code>Type: LSG 3.1
+Flow scale: 65
+Multiplier: 4
+Performance: OFF
+</code></pre><p>This profile offers an excellent compromise between smoothness and sharpness, recommended for most users.</p>
+<h4 id="3-maximum-performance-image-quack--perf-fastest">
+<a class="header-anchor" href="#3-maximum-performance-image-quack--perf-fastest"></a>
+3. Maximum Performance (Image: QUACK / Perf: FASTEST)
+</h4><pre tabindex="0"><code>Type: LSG 3.1
+Flow scale: 65
+Multiplier: 4
+Performance: ON
+</code></pre><p>Prioritize this if you want to maximize FPS, especially on modest setups or for very demanding games.</p>
+<blockquote>
+<p><strong>Tip:</strong> Older versions (LSG 1.0) are now obsolete and should be avoided.</p></blockquote>
+<h3 id="integration-tips">
+<a class="header-anchor" href="#integration-tips"></a>
+Integration Tips
+</h3><ul>
+<li>Adjust the profile according to your hardware and priorities (quality or performance).</li>
+<li>For most users, the &ldquo;Balanced&rdquo; profile is recommended.</li>
+<li>Don&rsquo;t hesitate to test different settings to find the best compromise for your setup.</li>
+<li>Avoid using both the emulator&rsquo;s internal scaling and Lossless Scaling at the same time to prevent double upscaling.</li>
+</ul>
+<hr>
+<h2 id="-troubleshooting">
+<a class="header-anchor" href="#-troubleshooting"></a>
+🔧 Troubleshooting
+</h2><h3 id="common-issues--solutions">
+<a class="header-anchor" href="#common-issues--solutions"></a>
+Common Issues &amp; Solutions
+</h3><h4 id="excessive-latency-input-lag">
+<a class="header-anchor" href="#excessive-latency-input-lag"></a>
+Excessive Latency (Input Lag)
+</h4><p><strong>Symptom:</strong> Noticeable delay between your actions and on-screen response.</p>
+<p><strong>Solutions in order:</strong></p>
+<pre tabindex="0"><code>1. Lower the frame generation multiplier
+   x4 → x3 → x2 → OFF
+   
+2. Switch frame generation mode
+   LS1 → LSFG
+   
+3. Disable VSync in the emulator
+   
+4. Lower the scaling factor
+   2x → 1.5x → 1.2x
+   
+5. Change capture method
+   Auto → DXGI Desktop Duplication → Windows Graphics Capture
+   
+6. Increase process priority
+   Normal → High → Realtime (test only)
+</code></pre><p><strong>&ldquo;Low Latency&rdquo; Configuration:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">Scaling Type</span>: <span style="color:#ae81ff">AMD FSR</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Scaling Factor</span>: <span style="color:#ae81ff">1.</span><span style="color:#ae81ff">2x</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Frame Generation</span>: <span style="color:#ae81ff">LSFG x2 ONLY</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Capture Method</span>: <span style="color:#ae81ff">DXGI Desktop Duplication</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Priority</span>: <span style="color:#ae81ff">High</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Emulator VSync</span>: <span style="color:#66d9ef">OFF</span>
+</span></span></code></pre></div><h4 id="visual-artifacts--ghosting">
+<a class="header-anchor" href="#visual-artifacts--ghosting"></a>
+Visual Artifacts &amp; Ghosting
+</h4><p><strong>Symptom:</strong> Trails, ghost images, smeared textures.</p>
+<p><strong>Solutions:</strong></p>
+<p><strong>For ghosting (trails):</strong></p>
+<pre tabindex="0"><code>1. Lower frame generation multiplier
+2. Switch from LS1 to LSFG
+3. Increase sharpness (0.8 → 1.0)
+4. Ensure the game runs at stable native FPS
+5. Disable motion blur in the emulator
+</code></pre><p><strong>For graphical artifacts:</strong></p>
+<pre tabindex="0"><code>1. Change scaling type (FSR → NIS or vice versa)
+2. Lower sharpness (0.9 → 0.6)
+3. Change capture method
+4. Update GPU drivers
+5. Disable overlays (Discord, Steam, etc.)
+</code></pre><p><strong>&ldquo;Quality First&rdquo; Configuration:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">Scaling Type</span>: <span style="color:#ae81ff">NIS</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Scaling Factor</span>: <span style="color:#ae81ff">max 1.5x</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Frame Generation</span>: <span style="color:#ae81ff">LSFG x2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Sharpness</span>: <span style="color:#ae81ff">0.7</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Capture Method</span>: <span style="color:#ae81ff">DXGI Desktop Duplication</span>
+</span></span></code></pre></div><h2 id="-faq---frequently-asked-questions">
+<a class="header-anchor" href="#-faq---frequently-asked-questions"></a>
+❓ FAQ - Frequently Asked Questions
+</h2><h3 id="general-questions">
+<a class="header-anchor" href="#general-questions"></a>
+General Questions
+</h3><p><strong>Q: Does Lossless Scaling work with all emulators?</strong><br>
+A: Yes, Lossless Scaling works at the system level and is compatible with all Windows emulators. Results may vary depending on the emulator and game.</p>
+<p><strong>Q: Is it legal to use Lossless Scaling?</strong><br>
+A: Absolutely, it&rsquo;s an official software sold on Steam that enhances the display of any Windows application.</p>
+<p><strong>Q: Can I use it alongside native DLSS/FSR in the emulator?</strong><br>
+A: Yes, but it&rsquo;s generally not recommended (double upscaling). Choose one or the other for best results.</p>
+<h3 id="technical-questions">
+<a class="header-anchor" href="#technical-questions"></a>
+Technical Questions
+</h3><p><strong>Q: What&rsquo;s the difference between LSFG and LS1?</strong><br>
+A: LSFG (Lossless Scaling Frame Generation) is the latest technology, more efficient and with lower latency. LS1 is the older generation, to be used if LSFG is unstable.</p>
+<p><strong>Q: Can my AMD/Intel GPU use Lossless Scaling?</strong><br>
+A: Yes! Unlike DLSS (NVIDIA only), Lossless Scaling works on all GPUs (NVIDIA, AMD, Intel).</p>
+<p><strong>Q: How much VRAM is needed?</strong><br>
+A: Generally 4GB minimum, 6-8GB recommended. Upscaling and frame generation use extra VRAM.</p>
+<p><strong>Q: Is latency really noticeable?</strong><br>
+A: With LSFG x2, added latency is minimal (5-10ms). For competitive games, it&rsquo;s noticeable, but for solo/emulation, it&rsquo;s negligible.</p>
+<p><strong>Q: Can I use Lossless Scaling with native PC games?</strong><br>
+A: Yes, Lossless Scaling works with any Windows game or application.</p>
+<h2 id="-conclusion">
+<a class="header-anchor" href="#-conclusion"></a>
+🎯 Conclusion
+</h2><p><strong>Lossless Scaling</strong> is a powerful tool that can transform your emulation experience, especially on demanding emulators like <strong>Yuzu</strong>, <strong>RPCS3</strong>, or <strong>PCSX2</strong>. With proper configuration, you can:</p>
+<h3 id="main-benefits">
+<a class="header-anchor" href="#main-benefits"></a>
+Main Benefits
+</h3><blockquote>
+<p><strong>✅ Advantages of Lossless Scaling:</strong></p>
+<ul>
+<li><strong>Double your FPS</strong> on native 30fps games</li>
+<li><strong>Improve visual quality</strong> with smart upscaling</li>
+<li><strong>Minimal latency</strong> with LSFG technology</li>
+<li><strong>Compatible with all GPUs</strong> (NVIDIA, AMD, Intel)</li>
+<li><strong>Easy to use</strong> once properly configured</li>
+</ul></blockquote>
+<p><strong>Support:</strong> For any questions or issues, check out the <a href="https://discord.gg/losslessscaling">Lossless Scaling Discord</a> or specialized emulation forums.</p>
+</div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>Author: </strong>Axekin @ Wiki of Axekin</p><p>
+      <strong><span class="icon-link icon"></span>Permalink: </strong><a href="http://localhost:1313/en/post/losless_scaling/">http://localhost:1313/en/post/losless_scaling/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>Title: </strong>Lossless Scaling Configuration for Emulators</p><p><strong><span class="icon-calendar icon"></span>Published: </strong>2025-10-07 00:00:00</p><p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-10-07 00:00:00</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>License: </strong>
+      All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/losless_scaling/" target="_blank" rel="noopener noreferrer" title="Lossless Scaling Configuration for Emulators">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=http://localhost:1313/en/post/losless_scaling/&amp;text=Lossless%20Scaling%20Configuration%20for%20Emulators&amp;via=http://localhost:1313/" target="_blank" rel="noopener noreferrer" title="Lossless Scaling Configuration for Emulators">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=http://localhost:1313/en/post/losless_scaling/&amp;title=Lossless%20Scaling%20Configuration%20for%20Emulators&amp;summary=Complete%20guide%20to%20configuring%20Lossless%20Scaling%20and%20boosting%20FPS%20performance%20on%20Nintendo%20Switch,%20PS2,%20PS3%20emulators%20and%20more%20-%20Optimized%20frame%20generation%20and%20upscaling&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="Lossless Scaling Configuration for Emulators">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=http://localhost:1313/en/post/losless_scaling/&amp;title=Lossless%20Scaling%20Configuration%20for%20Emulators" target="_blank" rel="noopener noreferrer" title="Lossless Scaling Configuration for Emulators">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="" target="_blank" rel="noopener noreferrer" title="Lossless Scaling Configuration for Emulators">
+      <div class="share-icon icon icon-email"></div>
+    </a></div><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/lossless-scaling"
+        rel="tag"
+        >LOSSLESS-SCALING</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/frame-generation"
+        rel="tag"
+        >FRAME-GENERATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/upscaling"
+        rel="tag"
+        >UPSCALING</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/emulation"
+        rel="tag"
+        >EMULATION</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/fps-boost"
+        rel="tag"
+        >FPS-BOOST</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/yuzu"
+        rel="tag"
+        >YUZU</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/ryujinx"
+        rel="tag"
+        >RYUJINX</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/rpcs3"
+        rel="tag"
+        >RPCS3</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/pcsx2"
+        rel="tag"
+        >PCSX2</a
+      >
+    </li><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/en/tags/performance"
+        rel="tag"
+        >PERFORMANCE</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    data-aos="slide-down"
+  ><div class="article-nav-link-wrap article-nav-link-left"><img
+            data-src="/images/covers/melonds.png"
+            data-sizes="auto"
+            alt="melonDS Installation and Configuration"
+            class="lazyload"
+          /><a href="/en/post/melonds/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">melonDS Installation and Configuration</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">Leave a comment</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     ><script src="https://giscus.app/client.js"
+        data-repo="Axekinn/wiki.axekin.com"
+        data-repo-id="R_kgDOO6CQAQ"
+        data-category="General"
+        data-category-id="DIC_kwDOO6CQAc4CurE7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script></div></div>
+</section></section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      Axekin
+    </div><div>
+        Powered by&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;21.6k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;01:55</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Total views&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Unique visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-introduction-to-lossless-scaling">🚀 Introduction to Lossless Scaling</a>
+      <ul>
+        <li><a href="#main-advantages">Main Advantages</a></li>
+        <li><a href="#ideal-use-cases">Ideal Use Cases</a></li>
+        <li><a href="#downloading-lossless-scaling">Downloading Lossless Scaling</a></li>
+        <li><a href="#first-launch--initial-setup">First Launch &amp; Initial Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#-detailed-configuration-for-emulators">⚙️ Detailed Configuration for Emulators</a></li>
+    <li><a href="#-optimized-lossless-scaling-settings-2025">⚙️ Optimized Lossless Scaling Settings (2025)</a>
+      <ul>
+        <li><a href="#recommended-profiles-by-priority">Recommended Profiles by Priority</a></li>
+        <li><a href="#integration-tips">Integration Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#-troubleshooting">🔧 Troubleshooting</a>
+      <ul>
+        <li><a href="#common-issues--solutions">Common Issues &amp; Solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-faq---frequently-asked-questions">❓ FAQ - Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#general-questions">General Questions</a></li>
+        <li><a href="#technical-questions">Technical Questions</a></li>
+      </ul>
+    </li>
+    <li><a href="#-conclusion">🎯 Conclusion</a>
+      <ul>
+        <li><a href="#main-benefits">Main Benefits</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Axekin"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Axekin</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">23</div>
+  </div>
+  <a class="sidebar-state-category" href="/en/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      12
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/en/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">73</div>
+  </a>
+</div>
+<div class="sidebar-social"><div class="icon-discord sidebar-social-icon">
+      <a
+        href="https://discord.gg/CUpf57y5Vg"
+        itemprop="url"
+        target="_blank"
+        aria-label="discord"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-email sidebar-social-icon">
+      <a
+        href="mailto:axekinn@proton.me"
+        itemprop="url"
+        target="_blank"
+        aria-label="email"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div><div class="icon-youtube sidebar-social-icon">
+      <a
+        href="https://youtube.com/@axekinn"
+        itemprop="url"
+        target="_blank"
+        aria-label="youtube"
+        rel="noopener external nofollow noreferrer"
+      ></a>
+    </div></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe609;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60c;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/en/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe613;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="https://discord.gg/CUpf57y5Vg"
+        aria-label=""
+      ></a>
+      <div class='sidebar-menu-icon icon '>&#xe60d;</div>
+      <div class="sidebar-menu-link"></div>
+    </div></div>
+</div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png" />
+        </div>
+      </div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script>
+    var ALGOLIA_CONFIG = {
+      logo: '\/images\/algolia_logo.svg',
+      algolia: {
+        applicationID: "TNLXPO3HD1",
+        apiKey: "5f1e65f7434193c7d0acc69f14b424e8",
+        indexName: "axekin",
+        hits: {
+          "per_page": parseInt("10")
+        },
+        labels: {
+          "input_placeholder": 'Search.....',
+          "hits_empty": 'No results found for 「${query}」',
+          "hits_stats": 'Found ${hits} results (in ${time} ms)'
+        }
+      }
+    };
+  </script><script
+    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+    deferintegrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js"
+    deferintegrity="sha384-aagKMe8nkqaP2DYQc8kkYOL5l&#43;M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK" crossorigin="anonymous"></script><script src="/js/algolia_search.js" ></script><script
+    src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js"
+    integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA&#43;Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script><script data-pjax>
+    window.quicklink?.listen({
+      timeout:  3000 ,
+      priority:  true ,
+      ignores: JSON.parse("[]")
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Axekin",
+          title: "Lossless Scaling Configuration for Emulators",
+          url: "http:\/\/localhost:1313\/en\/post\/losless_scaling\/",
+          description: "Complete guide to configuring Lossless Scaling and boosting FPS performance on Nintendo Switch, PS2, PS3 emulators and more - Optimized frame generation and upscaling",
+          cover: "http:\/\/localhost:1313\/images\/covers\/LS.png",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script><script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/valine@1.5.1\/dist\/Valine.min.js',
+          !'webcache|valine@1.5.1\/dist\/Valine.min.js'.startsWith('local') ? 'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE\u002bs5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn' : undefined
+        );
+        script.onload = () => {
+          const GUEST_INFO = ['nick', 'mail', 'link'];
+          const guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          const recordIP = JSON.parse('true');
+          const highlight = JSON.parse('true');
+          const visitor = JSON.parse('false');
+          const serverURLs = undefined;
+
+          new Valine({
+            el: '.valine-comment',
+            appId: "",
+            appKey: "",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: document.documentElement.lang || 'en',
+            recordIP: recordIP,
+            highlight: highlight,
+            visitor: visitor,
+            requiredFields: guest_info,
+            path: window.location.pathname,
+            serverURLs,
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: false,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https:\/\/npm.webcache.cn\/@waline\/client@2.15.8\/dist\/waline.mjs';
+        
+        if ('webcache|@waline\/client@2.15.8\/dist\/waline.mjs'.startsWith('local')) {
+          
+          const module = await safeImport(walineCdn);
+          walineInit = module.init;
+        } else {
+          
+          const module = await safeImport(
+            walineCdn, 
+            'sha384-9sbqJjrfGjbkI6\/PI4nU\/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH\/KinBEAZII\/5'
+          );
+          walineInit = module.init;
+        }
+        
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: '',
+          lang: document.documentElement.lang || 'en',
+          locale: JSON.parse("{}"),
+          emoji: JSON.parse("[\"https://unpkg.com/@waline/emojis@1.2.0/weibo\",\"https://unpkg.com/@waline/emojis@1.2.0/alus\",\"https://unpkg.com/@waline/emojis@1.2.0/bilibili\",\"https://unpkg.com/@waline/emojis@1.2.0/qq\",\"https://unpkg.com/@waline/emojis@1.2.0/tieba\",\"https://unpkg.com/@waline/emojis@1.2.0/tw-emoji\"]"),
+          meta: JSON.parse("[\"nick\",\"mail\",\"link\"]"),
+          requiredMeta: JSON.parse("[\"nick\",\"mail\"]"),
+          wordLimit:  0 ,
+          comment: true,
+          pageSize:  10 ,
+          dark: 'html[data-theme="dark"]',
+          pageview:  true ,
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/twikoo@1.6.44\/dist\/twikoo.all.min.js',
+          !'webcache|twikoo@1.6.44\/dist\/twikoo.all.min.js'.startsWith('local') ? 'sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk\u002bkQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K' : undefined
+        );
+        script.onload = () => {
+          twikoo.init({
+            envId: '',
+            el: '.twikoo-comment',
+            region: '',
+            lang: document.documentElement.lang || 'en',
+          });
+          twikoo.getCommentsCount({
+            envId: '',
+            region: '',
+            urls: [
+              'http\/\/localhost1313\/en\/post\/losless_scaling\/'
+            ],
+            includeReply: false
+          }).then((res) => {
+            document.querySelector('.twikoo-comment-count').innerText = res[0].count;
+          }).catch((err) => {
+            console.error(err);
+          });
+        };
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https:\/\/npm.webcache.cn\/gitalk@1.8.0\/dist\/gitalk.min.js',
+          !'webcache|gitalk@1.8.0\/dist\/gitalk.min.js'.startsWith('local') ? 'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU\/lcEH5O8eVbSDhbPwsiVUTp\/aGX\/z\/5EuMA' : undefined
+        );
+        script.onload = () => {
+          if ( false ) {
+            
+            const md5Script = loadScript(
+              'https:\/\/npm.webcache.cn\/blueimp-md5@2.19.0\/js\/md5.min.js',
+              !'webcache|blueimp-md5@2.19.0\/js\/md5.min.js'.startsWith('local') ? 'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr\/gZlbkHkL6vTthxH' : undefined
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            
+            initGitalk();
+          }
+        };
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          let gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: JSON.parse("null"),
+            id: location.pathname,
+            distractionFreeMode: false,
+            language: document.documentElement.lang || 'en',
+          });
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: true,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+
+        const docLang = document.documentElement.lang || 'en';
+        const langBase = docLang.split('-')[0];
+        const supportedLangs = ['ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'en', 
+        'eo', 'es', 'eu', 'fa', 'fr', 'gr', 'hbs', 'he', 'hu', 'id', 'it', 'ja', 
+        'kh', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'th', 'tr', 'uk', 'uz', 'vi', 'zh-CN', 'zh-HK', 'zh-TW'];
+        const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
+
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', 'Axekinn\/wiki.axekin.com');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', 'General');
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '');
+        giscusScript.setAttribute('data-emit-metadata', '');
+        giscusScript.setAttribute('data-input-position', '');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', giscusLang);
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  };
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      var configDefault = 'giscus';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      
+      const commentType = item.getAttribute('data-selector');
+
+      
+      hideAllComments();
+
+      
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          
+          changeActiveCommentItems(item);
+        });
+      }
+
+      
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script src="/js/service_worker.js" ></script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c " + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>
