@@ -117,8 +117,6 @@
 <!-- favicon use default -->
 <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 {{- partial "helpers/scss.html" (dict "source" "css/main.scss" "temp" "main.scss" "target" "css/main.css" "ctx" .) -}}
-<!-- Custom CSS Halloween Theme -->
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 <!-- photo-swipe -->
 {{- partial "helpers/asyncCss.html" (dict "raw" $css.photoswipe "src" (index (partial "helpers/vendorCdn.html" (dict "item" $css.photoswipe "ctx" $site)) 0) "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $css.photoswipe)) 0)) -}}
 <!-- katex -->
