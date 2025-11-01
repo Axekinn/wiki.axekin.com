@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Émulation on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/%C3%A9mulation/</link>
+    <link>https://wiki.axekin.com/fr/tags/%C3%A9mulation/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/%C3%A9mulation/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/%C3%A9mulation/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Installation de Texture Packs sur l&#39;Émulateur Azahar</title>
-      <link>http://localhost:1313/fr/post/texture_pack_azahar/</link>
+      <link>https://wiki.axekin.com/fr/post/texture_pack_azahar/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/texture_pack_azahar/</guid>
+      <guid>https://wiki.axekin.com/fr/post/texture_pack_azahar/</guid>
       <description>
         <![CDATA[<h1>Installation de Texture Packs sur l'Émulateur Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -64,7 +64,7 @@ Introduction
 3.2 Vérification de la Compatibilité
 </h3><p>Assurez-vous que le texture pack correspond à :</p>
         
-        <hr><p>Publié le 2025-08-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
+        <hr><p>Publié le 2025-08-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
       </description>
       
         <category>Citra</category>
@@ -75,16 +75,16 @@ Introduction
 
     <item>
       <title>Installation et configuration de Cemu</title>
-      <link>http://localhost:1313/fr/post/cemu/</link>
+      <link>https://wiki.axekin.com/fr/post/cemu/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cemu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cemu/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Guide complet pour installer et configurer Cemu, l&rsquo;émulateur Wii U le plus performant. Installation, configuration optimale et astuces.
         
-        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p>]]>
+        <hr><p>Publié le 2025-06-14 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p>]]>
       </description>
       
         <category>Cemu</category>
@@ -95,10 +95,10 @@ Introduction
 
     <item>
       <title>Configuration de XLink Kai avec Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx_lan/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx_lan/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx_lan/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx_lan/</guid>
       <description>
         <![CDATA[<h1>Configuration de XLink Kai avec Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -134,7 +134,7 @@ Introduction
 Jeux LAN
 </h3><p>Les jeux LAN sont les plus largement supportés et les configurations suivantes peuvent jouer ensemble :</p>
         
-        <hr><p>Publié le 2025-06-03 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
+        <hr><p>Publié le 2025-06-03 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
       </description>
       
         <category>Ryujinx</category><category>XLink Kai</category>
@@ -145,10 +145,10 @@ Jeux LAN
 
     <item>
       <title>Installation et configuration de melonDS</title>
-      <link>http://localhost:1313/fr/post/melonds/</link>
+      <link>https://wiki.axekin.com/fr/post/melonds/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/melonds/</guid>
+      <guid>https://wiki.axekin.com/fr/post/melonds/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de melonDS</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -200,7 +200,7 @@ melonDS Android
 📁 Étape 2 : Structure des dossiers
 </h2><p>Organisez vos fichiers avec cette structure :</p>
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
       </description>
       
         <category>MelonDS</category>
@@ -211,16 +211,16 @@ melonDS Android
 
     <item>
       <title>Installation et configuration de Dolphin</title>
-      <link>http://localhost:1313/fr/post/dolphin/</link>
+      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dolphin/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Learn how to install and configure Dolphin emulator for optimal Nintendo GameCube and Wii gaming. Complete setup guide with performance optimization.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
       </description>
       
         <category>Dolphin</category>

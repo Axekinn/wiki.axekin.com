@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Citra on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/citra/</link>
+    <link>https://wiki.axekin.com/fr/tags/citra/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/citra/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/citra/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Installation de Texture Packs sur l&#39;Émulateur Azahar</title>
-      <link>http://localhost:1313/fr/post/texture_pack_azahar/</link>
+      <link>https://wiki.axekin.com/fr/post/texture_pack_azahar/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/texture_pack_azahar/</guid>
+      <guid>https://wiki.axekin.com/fr/post/texture_pack_azahar/</guid>
       <description>
         <![CDATA[<h1>Installation de Texture Packs sur l'Émulateur Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -64,7 +64,7 @@ Introduction
 3.2 Vérification de la Compatibilité
 </h3><p>Assurez-vous que le texture pack correspond à :</p>
         
-        <hr><p>Publié le 2025-08-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
+        <hr><p>Publié le 2025-08-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
       </description>
       
         <category>Citra</category>
@@ -75,16 +75,16 @@ Introduction
 
     <item>
       <title>Guide Complet des Cheats sur l&#39;émulateur Citra</title>
-      <link>http://localhost:1313/fr/post/cheat_citra/</link>
+      <link>https://wiki.axekin.com/fr/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cheat_citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Guide Complet des Cheats sur l'émulateur Citra</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à utiliser les codes de triche sur l&rsquo;émulateur Citra pour Nintendo 3DS. Guide complet avec exemples pratiques, troubleshooting et bonnes pratiques.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Citra</category>
@@ -95,16 +95,16 @@ Introduction
 
     <item>
       <title>Installation et configuration de Azahar</title>
-      <link>http://localhost:1313/fr/post/citra/</link>
+      <link>https://wiki.axekin.com/fr/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer des codes de triche et des modifications de jeu sur l&rsquo;émulateur Citra. Tutoriel détaillé avec structure des dossiers et étapes d&rsquo;installation.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
       </description>
       
         <category>gaming</category><category>Tutoriels</category>

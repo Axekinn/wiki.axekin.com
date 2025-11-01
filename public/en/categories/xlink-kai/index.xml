@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XLink Kai on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/categories/xlink-kai/</link>
+    <link>https://wiki.axekin.com/en/categories/xlink-kai/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/en/categories/xlink-kai/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/en/categories/xlink-kai/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Setting up XLink Kai with Ryujinx</title>
-      <link>http://localhost:1313/en/post/ryujinx_lan/</link>
+      <link>https://wiki.axekin.com/en/post/ryujinx_lan/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/ryujinx_lan/</guid>
+      <guid>https://wiki.axekin.com/en/post/ryujinx_lan/</guid>
       <description>
         <![CDATA[<h1>Setting up XLink Kai with Ryujinx</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -62,7 +62,7 @@
 LAN Games
 </h3><p>LAN games are the most widely supported and the following configurations can play together:</p>
         
-        <hr><p>Published on 2025-06-03 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-03</p>]]>
+        <hr><p>Published on 2025-06-03 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-03</p>]]>
       </description>
       
         <category>Ryujinx</category><category>XLink Kai</category>

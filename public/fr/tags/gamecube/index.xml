@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GameCube on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/gamecube/</link>
+    <link>https://wiki.axekin.com/fr/tags/gamecube/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/gamecube/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/gamecube/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Installation et configuration de Dolphin</title>
-      <link>http://localhost:1313/fr/post/dolphin/</link>
+      <link>https://wiki.axekin.com/fr/post/dolphin/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dolphin/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dolphin/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Dolphin</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Learn how to install and configure Dolphin emulator for optimal Nintendo GameCube and Wii gaming. Complete setup guide with performance optimization.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
       </description>
       
         <category>Dolphin</category>

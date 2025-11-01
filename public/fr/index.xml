@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/algolia.json</link>
+    <link>https://wiki.axekin.com/fr/algolia.json</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Configuration de Lossless Scaling pour Émulateurs</title>
-      <link>http://localhost:1313/fr/post/losless_scaling/</link>
+      <link>https://wiki.axekin.com/fr/post/losless_scaling/</link>
       <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/losless_scaling/</guid>
+      <guid>https://wiki.axekin.com/fr/post/losless_scaling/</guid>
       <description>
         <![CDATA[<h1>Configuration de Lossless Scaling pour Émulateurs</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Maximisez vos FPS sur les émulateurs avec Lossless Scaling. Guide détaillé de configuration pour Switch, PS2, PS3 avec frame generation et upscaling.
         
-        <hr><p>Publié le 2025-10-07 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
+        <hr><p>Publié le 2025-10-07 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
       </description>
       
         <category>Optimisation</category>
@@ -43,16 +43,16 @@
 
     <item>
       <title>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</title>
-      <link>http://localhost:1313/fr/post/ppsspp/</link>
+      <link>https://wiki.axekin.com/fr/post/ppsspp/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ppsspp/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ppsspp/</guid>
       <description>
         <![CDATA[<h1>Guide Complet de Configuration PPSSPP - Émulateur PlayStation Portable</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à configurer PPSSPP pour une émulation PSP optimale. Guide complet avec paramètres recommandés et optimisations.
         
-        <hr><p>Publié le 2025-09-09 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-09-09</p>]]>
+        <hr><p>Publié le 2025-09-09 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-09-09</p>]]>
       </description>
       
         <category>PPSSPP</category>
@@ -63,16 +63,16 @@
 
     <item>
       <title>Guide Netplay (RPCN) pour RPCS3</title>
-      <link>http://localhost:1313/fr/post/rpcs3_mp/</link>
+      <link>https://wiki.axekin.com/fr/post/rpcs3_mp/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/rpcs3_mp/</guid>
+      <guid>https://wiki.axekin.com/fr/post/rpcs3_mp/</guid>
       <description>
         <![CDATA[<h1>Guide Netplay (RPCN) pour RPCS3</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à configurer et utiliser le Netplay de RPCS3 (RPCN). Ce guide couvre la configuration globale, les réglages par jeu, les correctifs de connectivité et la récupération de compte RPCN.
         
-        <hr><p>Publié le 2025-08-12 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-12</p>]]>
+        <hr><p>Publié le 2025-08-12 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-08-12</p>]]>
       </description>
       
         <category>RPCS3</category>
@@ -83,10 +83,10 @@
 
     <item>
       <title>Installation de Texture Packs sur l&#39;Émulateur Azahar</title>
-      <link>http://localhost:1313/fr/post/texture_pack_azahar/</link>
+      <link>https://wiki.axekin.com/fr/post/texture_pack_azahar/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/texture_pack_azahar/</guid>
+      <guid>https://wiki.axekin.com/fr/post/texture_pack_azahar/</guid>
       <description>
         <![CDATA[<h1>Installation de Texture Packs sur l'Émulateur Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -124,7 +124,7 @@ Introduction
 3.2 Vérification de la Compatibilité
 </h3><p>Assurez-vous que le texture pack correspond à :</p>
         
-        <hr><p>Publié le 2025-08-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
+        <hr><p>Publié le 2025-08-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-08-02</p>]]>
       </description>
       
         <category>Citra</category>
@@ -135,16 +135,16 @@ Introduction
 
     <item>
       <title>Installation et configuration de Cemu</title>
-      <link>http://localhost:1313/fr/post/cemu/</link>
+      <link>https://wiki.axekin.com/fr/post/cemu/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cemu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cemu/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Cemu</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Guide complet pour installer et configurer Cemu, l&rsquo;émulateur Wii U le plus performant. Installation, configuration optimale et astuces.
         
-        <hr><p>Publié le 2025-06-14 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p>]]>
+        <hr><p>Publié le 2025-06-14 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-14</p>]]>
       </description>
       
         <category>Cemu</category>
@@ -155,16 +155,16 @@ Introduction
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer et configurer Ryujinx pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -175,16 +175,16 @@ Introduction
 
     <item>
       <title>Installation et Configuration de Xenia (Émulateur Xbox 360)</title>
-      <link>http://localhost:1313/fr/post/xenia/</link>
+      <link>https://wiki.axekin.com/fr/post/xenia/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/xenia/</guid>
+      <guid>https://wiki.axekin.com/fr/post/xenia/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Xenia (Émulateur Xbox 360)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer et configurer Xenia pour une émulation Xbox 360 optimale. Guide complet avec configuration, jeux et résolution de problèmes.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
       </description>
       
         <category>Xenia</category>
@@ -195,16 +195,16 @@ Introduction
 
     <item>
       <title>Installation et Configuration de Eden</title>
-      <link>http://localhost:1313/fr/post/eden/</link>
+      <link>https://wiki.axekin.com/fr/post/eden/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/eden/</guid>
+      <guid>https://wiki.axekin.com/fr/post/eden/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Eden</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer et configurer Eden (fork de Yuzu) pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
       </description>
       
         <category>Yuzu</category>
@@ -215,16 +215,16 @@ Introduction
 
     <item>
       <title>Unsteam - Jouer en coopération avec des jeux patch</title>
-      <link>http://localhost:1313/fr/post/unsteam/</link>
+      <link>https://wiki.axekin.com/fr/post/unsteam/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/unsteam/</guid>
+      <guid>https://wiki.axekin.com/fr/post/unsteam/</guid>
       <description>
         <![CDATA[<h1>Unsteam - Jouer en coopération avec des jeux patch</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à utiliser Unsteam pour jouer en coopération en ligne avec des jeux patch. Guide complet avec émulation Steam API et configuration multijoueur.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>PC</category>
@@ -235,16 +235,16 @@ Introduction
 
     <item>
       <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
-      <link>http://localhost:1313/fr/post/amibo_switch/</link>
+      <link>https://wiki.axekin.com/fr/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/amibo_switch/</guid>
+      <guid>https://wiki.axekin.com/fr/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à utiliser des amiibo virtuels sur les émulateurs Yuzu et Ryujinx. Guide étape par étape avec téléchargement des fichiers et configuration complète.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Ryujinx</category><category>Yuzu</category>

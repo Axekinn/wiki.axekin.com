@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gaming on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/categories/gaming/</link>
+    <link>https://wiki.axekin.com/fr/categories/gaming/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/categories/gaming/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/categories/gaming/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Installation et configuration de Azahar</title>
-      <link>http://localhost:1313/fr/post/citra/</link>
+      <link>https://wiki.axekin.com/fr/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/citra/</guid>
+      <guid>https://wiki.axekin.com/fr/post/citra/</guid>
       <description>
         <![CDATA[<h1>Installation et configuration de Azahar</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer des codes de triche et des modifications de jeu sur l&rsquo;émulateur Citra. Tutoriel détaillé avec structure des dossiers et étapes d&rsquo;installation.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-02</p>]]>
       </description>
       
         <category>gaming</category><category>Tutoriels</category>

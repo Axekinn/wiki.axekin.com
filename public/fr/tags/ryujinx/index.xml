@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryujinx on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/ryujinx/</link>
+    <link>https://wiki.axekin.com/fr/tags/ryujinx/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/ryujinx/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Configuration de Lossless Scaling pour Émulateurs</title>
-      <link>http://localhost:1313/fr/post/losless_scaling/</link>
+      <link>https://wiki.axekin.com/fr/post/losless_scaling/</link>
       <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/losless_scaling/</guid>
+      <guid>https://wiki.axekin.com/fr/post/losless_scaling/</guid>
       <description>
         <![CDATA[<h1>Configuration de Lossless Scaling pour Émulateurs</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Maximisez vos FPS sur les émulateurs avec Lossless Scaling. Guide détaillé de configuration pour Switch, PS2, PS3 avec frame generation et upscaling.
         
-        <hr><p>Publié le 2025-10-07 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
+        <hr><p>Publié le 2025-10-07 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
       </description>
       
         <category>Optimisation</category>
@@ -43,16 +43,16 @@
 
     <item>
       <title>Installation et Configuration de Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx/</guid>
       <description>
         <![CDATA[<h1>Installation et Configuration de Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer et configurer Ryujinx pour une émulation Nintendo Switch optimale. Guide complet avec firmware, clés et optimisations.
         
-        <hr><p>Publié le 2025-06-02 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
+        <hr><p>Publié le 2025-06-02 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-07</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -63,16 +63,16 @@
 
     <item>
       <title>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu &amp; Ryujinx)</title>
-      <link>http://localhost:1313/fr/post/amibo_switch/</link>
+      <link>https://wiki.axekin.com/fr/post/amibo_switch/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/amibo_switch/</guid>
+      <guid>https://wiki.axekin.com/fr/post/amibo_switch/</guid>
       <description>
         <![CDATA[<h1>Comment Utiliser des Amiibo sur Émulateurs Switch (Yuzu & Ryujinx)</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à utiliser des amiibo virtuels sur les émulateurs Yuzu et Ryujinx. Guide étape par étape avec téléchargement des fichiers et configuration complète.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Ryujinx</category><category>Yuzu</category>
@@ -83,16 +83,16 @@
 
     <item>
       <title>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</title>
-      <link>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</link>
+      <link>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/dlc_update_ryujinx_yuzu/</guid>
+      <guid>https://wiki.axekin.com/fr/post/dlc_update_ryujinx_yuzu/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des DLC et Mises à Jour sur Yuzu et Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer facilement des DLC et mises à jour de jeux sur les émulateurs Yuzu et Ryujinx. Guide simple avec captures d&rsquo;écran pour chaque étape.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -103,16 +103,16 @@
 
     <item>
       <title>Comment Installer des Cheats et Mods sur l&#39;Émulateur Ryujinx</title>
-      <link>http://localhost:1313/fr/post/cheat_ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/cheat_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/cheat_ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/cheat_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Installer des Cheats et Mods sur l'Émulateur Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à installer des codes de triche et modifications de jeux sur l&rsquo;émulateur Ryujinx. Tutoriel détaillé avec structure de dossiers et étapes d&rsquo;installation.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Ryujinx</category>
@@ -123,16 +123,16 @@
 
     <item>
       <title>Comment Réinstaller Yuzu &amp; Ryujinx en Gardant ses Sauvegardes</title>
-      <link>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</link>
+      <link>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/reinstall_yuzu_ryujinx/</guid>
+      <guid>https://wiki.axekin.com/fr/post/reinstall_yuzu_ryujinx/</guid>
       <description>
         <![CDATA[<h1>Comment Réinstaller Yuzu & Ryujinx en Gardant ses Sauvegardes</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Apprenez à réinstaller complètement Yuzu et Ryujinx sans perdre vos précieuses sauvegardes. Guide détaillé avec captures d&rsquo;écran et méthodes de sauvegarde.
         
-        <hr><p>Publié le 2025-06-04 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
+        <hr><p>Publié le 2025-06-04 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-04</p>]]>
       </description>
       
         <category>Yuzu</category><category>Ryujinx</category>
@@ -143,10 +143,10 @@
 
     <item>
       <title>Configuration de XLink Kai avec Ryujinx</title>
-      <link>http://localhost:1313/fr/post/ryujinx_lan/</link>
+      <link>https://wiki.axekin.com/fr/post/ryujinx_lan/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/ryujinx_lan/</guid>
+      <guid>https://wiki.axekin.com/fr/post/ryujinx_lan/</guid>
       <description>
         <![CDATA[<h1>Configuration de XLink Kai avec Ryujinx</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
@@ -182,7 +182,7 @@
 Jeux LAN
 </h3><p>Les jeux LAN sont les plus largement supportés et les configurations suivantes peuvent jouer ensemble :</p>
         
-        <hr><p>Publié le 2025-06-03 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
+        <hr><p>Publié le 2025-06-03 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-06-03</p>]]>
       </description>
       
         <category>Ryujinx</category><category>XLink Kai</category>

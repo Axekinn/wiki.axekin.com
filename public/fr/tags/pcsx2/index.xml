@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pcsx2 on Wiki de Axekin</title>
-    <link>http://localhost:1313/fr/tags/pcsx2/</link>
+    <link>https://wiki.axekin.com/fr/tags/pcsx2/</link>
     <description>Recent content from Wiki de Axekin</description>
     <generator>Hugo</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/fr/tags/pcsx2/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/fr/tags/pcsx2/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Configuration de Lossless Scaling pour Émulateurs</title>
-      <link>http://localhost:1313/fr/post/losless_scaling/</link>
+      <link>https://wiki.axekin.com/fr/post/losless_scaling/</link>
       <pubDate>Tue, 07 Oct 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/fr/post/losless_scaling/</guid>
+      <guid>https://wiki.axekin.com/fr/post/losless_scaling/</guid>
       <description>
         <![CDATA[<h1>Configuration de Lossless Scaling pour Émulateurs</h1><p>Auteur : Axekin(axekinn@proton.me)</p>
         
           Maximisez vos FPS sur les émulateurs avec Lossless Scaling. Guide détaillé de configuration pour Switch, PS2, PS3 avec frame generation et upscaling.
         
-        <hr><p>Publié le 2025-10-07 à <a href='http://localhost:1313/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
+        <hr><p>Publié le 2025-10-07 à <a href='https://wiki.axekin.com/'>Wiki de Axekin</a>, dernière modification le 2025-10-07</p>]]>
       </description>
       
         <category>Optimisation</category>

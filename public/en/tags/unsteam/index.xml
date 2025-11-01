@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unsteam on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/tags/unsteam/</link>
+    <link>https://wiki.axekin.com/en/tags/unsteam/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/en/tags/unsteam/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/en/tags/unsteam/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,16 +23,16 @@
 
     <item>
       <title>Unsteam - Playing Co-op with Patched Games</title>
-      <link>http://localhost:1313/en/post/unsteam/</link>
+      <link>https://wiki.axekin.com/en/post/unsteam/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/unsteam/</guid>
+      <guid>https://wiki.axekin.com/en/post/unsteam/</guid>
       <description>
         <![CDATA[<h1>Unsteam - Playing Co-op with Patched Games</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           Learn how to use Unsteam to play online co-op with patched games. Complete guide with Steam API emulation and multiplayer setup.
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
       </description>
       
         <category>PC</category>

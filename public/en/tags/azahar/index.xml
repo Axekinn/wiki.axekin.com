@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azahar on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/tags/azahar/</link>
+    <link>https://wiki.axekin.com/en/tags/azahar/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/en/tags/azahar/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/en/tags/azahar/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Installing Texture Packs on Azahar Emulator</title>
-      <link>http://localhost:1313/en/post/texture_pack_azahar/</link>
+      <link>https://wiki.axekin.com/en/post/texture_pack_azahar/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/texture_pack_azahar/</guid>
+      <guid>https://wiki.axekin.com/en/post/texture_pack_azahar/</guid>
       <description>
         <![CDATA[<h1>Installing Texture Packs on Azahar Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -64,7 +64,7 @@ Step 2: Obtaining Texture Packs
 2.2 Compatibility Verification
 </h3><p>Make sure the texture pack matches:</p>
         
-        <hr><p>Published on 2025-08-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-08-02</p>]]>
+        <hr><p>Published on 2025-08-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-08-02</p>]]>
       </description>
       
         <category>Citra</category>

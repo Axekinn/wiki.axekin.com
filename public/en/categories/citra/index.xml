@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Citra on Wiki of Axekin</title>
-    <link>http://localhost:1313/en/categories/citra/</link>
+    <link>https://wiki.axekin.com/en/categories/citra/</link>
     <description>Recent content from Wiki of Axekin</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/en/categories/citra/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://wiki.axekin.com/en/categories/citra/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Installing Texture Packs on Azahar Emulator</title>
-      <link>http://localhost:1313/en/post/texture_pack_azahar/</link>
+      <link>https://wiki.axekin.com/en/post/texture_pack_azahar/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/texture_pack_azahar/</guid>
+      <guid>https://wiki.axekin.com/en/post/texture_pack_azahar/</guid>
       <description>
         <![CDATA[<h1>Installing Texture Packs on Azahar Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
@@ -64,7 +64,7 @@ Step 2: Obtaining Texture Packs
 2.2 Compatibility Verification
 </h3><p>Make sure the texture pack matches:</p>
         
-        <hr><p>Published on 2025-08-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-08-02</p>]]>
+        <hr><p>Published on 2025-08-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-08-02</p>]]>
       </description>
       
         <category>Citra</category>
@@ -75,16 +75,16 @@ Step 2: Obtaining Texture Packs
 
     <item>
       <title>Complete Guide to Cheats on the Citra Emulator</title>
-      <link>http://localhost:1313/en/post/cheat_citra/</link>
+      <link>https://wiki.axekin.com/en/post/cheat_citra/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/cheat_citra/</guid>
+      <guid>https://wiki.axekin.com/en/post/cheat_citra/</guid>
       <description>
         <![CDATA[<h1>Complete Guide to Cheats on the Citra Emulator</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           Learn to use cheat codes on the Citra emulator for Nintendo 3DS. Complete guide with practical examples, troubleshooting and best practices.
         
-        <hr><p>Published on 2025-06-04 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
+        <hr><p>Published on 2025-06-04 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-04</p>]]>
       </description>
       
         <category>Citra</category>
@@ -95,16 +95,16 @@ Step 2: Obtaining Texture Packs
 
     <item>
       <title>Azahar Installation and Configuration</title>
-      <link>http://localhost:1313/en/post/citra/</link>
+      <link>https://wiki.axekin.com/en/post/citra/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 &#43;0000</pubDate>
       <author>axekinn@proton.me (Axekin)</author>
-      <guid>http://localhost:1313/en/post/citra/</guid>
+      <guid>https://wiki.axekin.com/en/post/citra/</guid>
       <description>
         <![CDATA[<h1>Azahar Installation and Configuration</h1><p>Author: Axekin(axekinn@proton.me)</p>
         
           Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps.
         
-        <hr><p>Published on 2025-06-02 at <a href='http://localhost:1313/'>Wiki of Axekin</a>, last modified on 2025-06-02</p>]]>
+        <hr><p>Published on 2025-06-02 at <a href='https://wiki.axekin.com/'>Wiki of Axekin</a>, last modified on 2025-06-02</p>]]>
       </description>
       
         <category>Citra</category>
