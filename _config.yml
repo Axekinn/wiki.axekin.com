@@ -1,209 +1,117 @@
-########################################
-# Basic Configuration
-########################################
-theme_version_check: true
-theme_config_check: true
-# main menu navigation
-# for more icon information, please visit https://github.com/D-Sketon/hexo-theme-reimu/issues/30
-menu:
-  - name: home
-    url: "/"
-    icon: e609
-  - name: archives
-    url: "archives"
-    icon: e60c
-  - name: about
-    url: "about"
-    icon: e613
-  - name: discord
-    url: "https://discord.gg/CUpf57y5Vg"
-    icon: e60d
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-banner: "/images/banner.webp" # which means themes/reimu/source/images/banner.webp
-# You can also write it in the form of the following url
-# banner: "https://example.com"
+# Site
+title: Wiki of Axekin
+subtitle: ''
+description: ''
+keywords:
+author: Axekin
+language: en
+timezone: ''
 
-# If you want to use the srcset attribute, please enable it
-banner_srcset:
-  enable: false
-  srcset:
-    - src: "/images/banner-600w.webp"
-      media: "(max-width: 479px)"
-    - src: "/images/banner-800w.webp"
-      media: "(max-width: 799px)"
-    - src: "/images/banner.webp"
-      media: "(min-width: 800px)"
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://wiki.axekin.com
+permalink: :lang/:year/:month/:day/:title/
+permalink_defaults:
+  lang: en
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
-favicon: "/images/favicon.ico" # which means themes/reimu/source/images/favicon.ico
-# You can also write it in the form of the following url
-# favicon: "https://example.com"
 
-avatar: "avatar.webp" # which means source/_data/avatar/avatar.webp
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# Control the display of the post cover
-# If not set, the banner image will be displayed by default
-# Its priority is lower than the cover in the Front-matter
-cover: # https://example.com / false / rgb(255,117,117)
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
-# Control the display of the post toc
-# Its priority is lower than the toc in the Front-matter
-toc: true
-toc_options:
-  list_number: true
-  min_depth: 1
-  max_depth: 6
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
-# Open Graph
-# see https://hexo.io/docs/helpers#open-graph
-open_graph:
-  enable: true
-  options:
-    #twitter_card: <twitter:card>
-    #twitter_id: <twitter:creator>
-    #twitter_site: <twitter:site>
-    #twitter_image: <twitter:image>
-    #google_plus: <g+:profile_link>
-    #fb_admins: <fb:admin_id>
-    #fb_app_id: <fb:app_id>
-    default_og_image: /images/banner.webp # the default og:image for Open Graph, support absolute path
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-# Content
-excerpt_link: Read More
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
 
-# RSS
-# need https://github.com/hexojs/hexo-generator-feed
-rss: atom.xml
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
-# a very simple alternative for https://hexo.io/api/injector
-injector:
-  head_begin: # Inject code snippet right after <head>
-  head_end: # Inject code snippet right before </head>
-  body_begin: # Inject code snippet right after <body>
-  body_end: # Inject code snippet right before </body>
-  sidebar_begin: # Inject code snippet right after <aside>
-  sidebar_end: # Inject code snippet right before </aside>
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
 
-# Footer copyright
-copyright: # Inject code snippet right in the footer copyright
-# Need help choosing? Please see...
-# https://creativecommons.org/choose/
-# https://choosealicense.com/
-# copyright: |-
-#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
 
-footer:
-  since: 2025 # 2020-current year
-  powered: true
-  count: true # show word count and reading time
-  busuanzi: true
-  icon:
-    url: "../images/gura.png" # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
-    rotate: true
-    mask: false # whether to use the images as a mask
-    social_links: true
-    beian: false
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: reimu
 
-# Sidebar
-sidebar: right
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ''
 
-social:
-  email: mailto:axekinn@proton.me
-  github: https://github.com/Axekinn
-  # google: https://plus.google.com/yourname
-  # twitter: https://twitter.com/yourname
-  # facebook: https://www.facebook.com/yourname
-  # instagram: https://www.instagram.com/yourname
-  # linkedin: https://www.linkedin.com/in/yourname
-  # pinterest: https://www.pinterest.com/yourname
-  # youtube: https://www.youtube.com/channel/yourname
-  # vimeo: https://vimeo.com/yourname
-  # flickr: https://www.flickr.com/photos/yourname
-  # dribbble: https://dribbble.com/yourname
-  # behance: https://www.behance.net/yourname
-  # bilibili: https://space.bilibili.com/yourname
-  # weibo: https://weibo.com/yourname
-  # zhihu: https://www.zhihu.com/people/yourname
-  # reddit: https://www.reddit.com/user/yourname
-  # tumblr: https://yourname.tumblr.com
-  # medium: https://medium.com/@yourname
-  # deviantart: https://yourname.deviantart.com
-  # stackoverflow: https://stackoverflow.com/users/yourname
-  # keybase: https://keybase.io/yourname
-  # telegram: https://t.me/yourname
-  discord: https://discord.gg/CUpf57y5Vg
-  # steam: https://steamcommunity.com/id/yourname
 
-widgets:
-  - category
-  - tag
-  - tagcloud
-  - recent_posts
-
-# Widget behavior
-archive_type: "monthly"
-show_count: false
-tag_limits: 15
-recent_posts_limits: 8
-tagcloud_limits: 30
-
-# Archive behavior
-only_show_capsule_in_index: false # If you have hugo amounts of tags and categories, you can set this to true to only show the capsule in the index page for better performance
-
-show_update_time: false # If you want to show the update time, please set this to true
-
-# Summary content
-summary:
-  enable: false
-  style: 'subtitle' # 'subtitle' or 'blockquote'
-
-# Internationalization
-# i18n configuration
-i18n:
-  enable: true
-  type: [page, post]
-  generator: [archive, category, tag, index]
-  languages: [en, zh-CN, ja, pt-BR, ar, de, es, fr, ko, ru]
-
-triangle_badge:
-  enable: true
-  icon: github # same as the icon in the social config
-  link: https://github.com/Axekinn
-
-layout:
-  max_width: 1350px # the max width of the main content area
-
-########################################
-# CSS
-########################################
-
-anchor_icon: # default use '#' icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1', or you can use false to hide anchor icon
-
-reimu_cursor:
-  enable: true
-  cursor:
-    default: ../images/cursor/Gawr-Gura-Cursor.png # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/gawr-gura-pointer.png
-    text: ../images/cursor/reimu-cursor-text.png
-
-# set to false to enable fontawesome
-icon_font: 4552607_4k4bc36ef96
-
-# Font loading strategy
-# Custom Font -> Google Fonts -> Local FallBack Font
-
-# Custom Font
-custom_font:
-  enable: false
-  article:
-    # - css: https://fontsapi.zeoseven.com/292/main/result.css
-      # name: LXGW WenKai
-  code:
+material_theme:
+  enable: false # true | false
 
 # https://fonts.google.com/
-# Google Fonts, higher priority than local_font
 font:
-  enable: true
+  enable: true # Enable Google Fonts
   article:
     - Mulish
     - Noto Serif SC
@@ -212,7 +120,6 @@ font:
     # - Source Code Pro
     # - JetBrains Mono
 
-# Local FallBack Font
 local_font:
   article:
     - "-apple-system"
@@ -225,763 +132,23 @@ local_font:
     - Consolas
     - monospace
 
-dark_mode:
-  # true means that the dark mode is enabled by default
-  # false means that the dark mode is disabled by default
-  # auto means that the dark mode is automatically switched according to the system settings
-  enable: auto # true | false | auto
-  transition: smooth
-  duration: 300
-
-########################################
-# Markdown Display
-########################################
-
-# need https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
-math:
-  enable: false
-  # If you don't want to use it, please set `autoRender` to true to enable browser rendering
-  katex:
-    enable: true
-    autoRender: false # whether to render the math in the browser, disabled by default
-  mathjax:
-    enable: false
-    options: # see https://docs.mathjax.org/en/latest/web/configuration.html
-      {
-        tex:
-          {
-            tags: "ams",
-            useLabelIds: true,
-            inlineMath: [["$", "$"], ['\\(', '\\)']],
-            displayMath: [["$$", "$$"], ['\\[', '\\]']],
-            processEscapes: true,
-            processEnvironments: true,
-            autoload: { color: [], colorv2: ["color"] },
-            packages: { "[+]": ["noerrors"] },
-          },
-        options:
-          {
-            skipHtmlTags:
-              ["script", "noscript", "style", "textarea", "pre", "code"],
-            ignoreHtmlClass: "tex2jax_ignore",
-            processHtmlClass: "tex2jax_process",
-          },
-        loader: { load: ["input/asciimath", "[tex]/noerrors"] },
-      }
-
-# mermaid url https://github.com/mermaid-js/mermaid
-# need https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
-mermaid:
-  enable: false
-  zoom: false # whether to enable zoom for mermaid diagrams
-
-code_block:
-  # whether to expand the code block by default
-  # true means expand all code blocks by default
-  # false means collapse all code blocks by default
-  # number means collapse the code block by default when the number of lines exceeds the specified value
-  expand: true
-  copy_button: true
-  line_numbers: true
-  highlight_lines: true
-  theme: "drak"
-
-########################################
-# Analytics
-########################################
-
-baidu_analytics: false
-google_analytics: false
-clarity: false
-
-########################################
-# Comment system
-########################################
-
-# global control of the comment system
-# you can use multiple comment systems at the same time
-# load order: localStorage(user manually selects) -> default
-# -> valine -> waline -> twikoo -> gitalk -> giscus
-comment:
-  # comment system title
-  title:
-    en: Leave a comment
-    zh-CN: 说些什么吧！
-    zh-TW: 說些什麼吧！
-    ja: コメントを残す
-    pt-BR: Deixe um comentário
-  default: waline # default comment system, when you enable multiple comment systems
-
-# valine comment system. https://valine.js.org
-# version 1.5.1
-# notify and verify have been deprecated
-valine:
-  enable: false # if you want to use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
-  pageSize: 10 # comment list page size
-  avatar: mp # gravatar style https://valine.js.org/#/avatar
-  # lang: zh-cn # deprecated, use html.lang instead
-  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
-  recordIP: true # whether to record the IP address of the commenters
-  highlight: true # whether to highlight the code blocks
-  visitor: false # whether to display the number of visitors
-  serverURLs: # leancloud server url
-
-# https://waline.js.org/
-# version 2.15.8
-waline:
-  enable: false
-  serverURL:
-  # lang: zh-CN # deprecated, use html.lang instead
-  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
-  emoji:
-    - https://unpkg.com/@waline/emojis@1.2.0/weibo
-    - https://unpkg.com/@waline/emojis@1.2.0/alus
-    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
-    - https://unpkg.com/@waline/emojis@1.2.0/qq
-    - https://unpkg.com/@waline/emojis@1.2.0/tieba
-    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
-  meta:
-    - nick
-    - mail
-    - link
-  requiredMeta:
-    - nick
-    - mail
-  wordLimit: 0
-  pageSize: 10
-  pageview: true
-
-# https://twikoo.js.org
-twikoo:
-  enable: false
-  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-  region:
-
-# https://github.com/gitalk/gitalk/blob/master/readme-cn.md
-gitalk:
-  enable: false
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin:
-  md5: false
-
-# https://giscus.app/zh-CN
-giscus:
+custom_font:
   enable: true
-  repo: "Axekinn/wiki.axekin.com"
-  repo_id: "R_kgDOO6CQAQ"
-  category: "General"
-  category_id: "DIC_kwDOO6CQAc4CurE7"
-  mapping: "pathname"                    # ← Changé de "url" à "pathname"
-  strict: "0"                           # ← Changé de "1" à "0"
-  reactions_enabled: "1"
-  emit_metadata: "0"
-  input_position: "top"
-  theme: "preferred_color_scheme"       # ← Changé de "dark" à "preferred_color_scheme"
-  lang: "en"
-  loading: "lazy"
-  # commentTheme: light # deprecated, because the theme is set by the theme itself
-  # lang: zh-CN # deprecated, use html.lang instead
+  article:
+    - css: https://fontsapi.zeoseven.com/292/main/result.css # font css
+      name: LXGW WenKai # font css
+  code:
 
-########################################
-# Search
-########################################
-
-# need https://github.com/D-Sketon/hexo-algoliasearch
-# please add the following config in your _config.yml
-# algolia:
-#   appId: 'your applicationID'
-#   apiKey: 'your apiKey'
-#   adminApiKey: 'your adminApiKey'
-#   indexName: 'your indexName'
-#   chunkSize: 5000
-#   fields:
-#     - content:strip:truncate,0,500
-#     - excerpt:strip
-#     - gallery
-#     - permalink
-#     - photos
-#     - slug
-#     - tags
-#     - title
-
-algolia:
-  enable: true  
-  applicationID: "LPWJ5Q6Q0L"
-  apiKey: "7a8c816d9d6a005f280853c142ad76b6"
-  indexName: "axekin-wiki"
-  hits:
-    per_page: 10
-  labels:
-    input_placeholder: "Rechercher..."
-    hits_empty: "Aucun résultat pour '${query}'"
-    hits_stats: "${hits} résultats trouvés en ${time}ms"
-
-algolia_search:
-  enable: false
-  hits:
-    per_page: 10
-
-generator_search:
-  enable: false
-  field: post
-  content: true
-
-########################################
-# Animation
-########################################
-
-# Loader animation
-preloader:
-  enable: true
-  text:
-    zh-CN: 少女祈祷中...
-    zh-TW: 少女祈禱中...
-    en: Loading...
-    ja: 少女祈祷中...
-    pt-BR: Carregando...
-  icon: '/images/gura.png' # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
-  rotate: true # whether to rotate the icon
-
-# see https://github.com/D-Sketon/aos.js
-animation:
-  enable: true
-  options:
-    # Animations d'en-tête plus dynamiques
-    header:
-      title: fade-down
-      subTitle: fade-up
-    
-    # Page d'accueil avec des effets échelonnés
-    home:
-      post: fade-up-right
-      widget: slide-left
-      sidebar: slide-right
-    
-    # Articles avec plus de variété
-    article:
-      whole: fade-up
-      date: flip-left
-      category: zoom-in-up
-      tag: zoom-in-down
-      comment: slide-up
-      reading: fade-left
-      nav: slide-down
-    
-    # Archives avec effets de profondeur
-    archive:
-      whole: fade-up
-      tag: flip-up
-      category: flip-down
-      section: zoom-in
-      nav: slide-up
-
-# see https://github.com/D-Sketon/mouse-firework
-firework:
-  enable: false
-  disable_on_mobile: false
-  options:
-    excludeElements: ["a", "button"]
-    particles:
-      - shape: circle
-        move: ["emit"]
-        easing: easeOutExpo
-        colors: ["var(--red-1)", "var(--red-2)", "var(--red-3)", "var(--red-4)"]
-        number: 20
-        duration: [1200, 1800]
-        shapeOptions:
-          radius: [16, 32]
-          alpha: [0.3, 0.5]
-      - shape: circle
-        move: ["diffuse"]
-        easing: easeOutExpo
-        colors: ["var(--red-0)"]
-        number: 1
-        duration: [1200, 1800]
-        shapeOptions:
-          radius: 20
-          alpha: [0.2, 0.5]
-          lineWidth: 6
-
-########################################
-# Extended features
-########################################
-
-# Clipboard configuration
-clipboard:
-  success:
-    en: Copy successfully (*^▽^*)
-    zh-CN: 复制成功 (*^▽^*)
-    zh-TW: 複製成功 (*^▽^*)
-    ja: コピー成功 (*^▽^*)
-    pt-BR: Copiado com sucesso (*^▽^*)
-  fail:
-    en: Copy failed (ﾟ⊿ﾟ)ﾂ
-    zh-CN: 复制失败 (ﾟ⊿ﾟ)ﾂ
-    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
-    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
-    pt-BR: Falha ao copiar (ﾟ⊿ﾟ)ﾂ
-  copyright: # whether to add a copyright for the clipped content
-    enable: false
-    count: 50 # The number of characters when the copyright is displayed
-    license_type: by-nc-sa # https://creativecommons.org/licenses
-
-# show categories card on home page
-home_categories:
-  enable: false
-  content:
-    - categories: # string (single-layer category) or array (multi-layer category)
-      cover: # empty means random cover
-    - categories:
-      cover:
-
-# whether to display the notification when the article is outdated
-outdate:
-  enable: false
-  daysAgo: 180 # The number of days after which the article is considered outdated
-  message:
-    en: This article was last updated on {time}. Please note that the content may no longer be applicable.
-    zh-CN: 本文最后更新于 {time}，请注意文中内容可能已不适用。
-    zh-TW: 本文最後更新於 {time}，請注意文中內容可能已不適用。
-    ja: この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。
-    pt-BR: Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.
-
-# Sponsor
-sponsor:
-  enable: false
-  tip:
-    zh-CN: 请作者喝杯咖啡吧
-    zh-TW: 請作者喝杯咖啡吧
-    en: Buy me a coffee
-    ja: コーヒーを買ってください
-    pt-BR: Compre-me um café
-  icon:
-    url: "../images/gura.png" # this path is relative to the css/style.css, so it needs to go up one level to reach the images folder
-    rotate: true
-    mask: false # whether to use the images as a mask
-  qr:
-    # - name: 支付宝
-    #   src: "/sponsor/alipay.jpg"
-    # - name: 微信
-    #   src: "/sponsor/wechat.png"
-
-# ICP 备案
-icp:
-  icpnumber: # ICP备案号
-  beian: # 网安备案号
-  recordcode: # 网安备案链接中的recordcode参数
-
-# 萌国 ICP 备案
-moe_icp:
-  icpnumber: # 萌国ICP备案号
-
-# show the copyright below each article
-article_copyright:
-  enable: true
-  content:
-    author: true
-    link: true
-    title: false
-    date: false
-    updated: false
-    license: true
-    license_type: by-nc-sa # https://creativecommons.org/licenses
-
-# Back To Top
-top:
-  enable: true
-  position: right
-  icon:
-    url: "../images/gura.png"
-    rotate: true
-    mask: false
-  threshold: 100
-  smooth_scroll: true
-
-share:
-  - facebook
-  - twitter
-  - linkedin
-  - reddit
-  # - facebook
-  # - twitter
-  # - linkedin
-  # - reddit
-  # - weibo
-  # - qq
-  # - weixin
-
-########################################
-# Experimental features
-########################################
-
-# Experimental, may have a lot of bugs, open with caution!
-pjax:
-  enable: false
-
-# Experimental
-# https://github.com/GoogleChromeLabs/quicklink
-quicklink:
-  enable: false
-  # The `requestIdleCallback` timeout, in milliseconds.
-  timeout: 3000
-  # Whether or not the URLs within the options.el container should be treated as high priority.
-  # When true, quicklink will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
-  priority: true
-  # Determine if a URL should be prefetched.
-  # Only support string
-  ignores: []
-
-# https://github.com/CodeByZach/pace
-pace:
-  enable: true
-  color: "var(--red-2)"
-  theme: "minimal"
-
-# Experimental
-service_worker:
-  enable: true
-  cache_version: "v1.0.0"
-  cache_strategy: "cache_first"
-  update_notification:
-    enable: true
-    title:
-      en: New version available
-    content:
-      en: The website seems to have new content, do you want to update?
-
-# Experimental
-live2d:
-  enable: false
-  position: left # left or right
-
-# Experimental
-live2d_widgets:
-  enable: false
-  position: left # left or right
-
-# Experimental
-# Please turn on pjax to use this feature
-player:
-  disable_on_mobile: false
-  position: before_sidebar # before_sidebar / after_sidebar / after_widget
-  # if you enable meting, you must enable aplayer first
-  aplayer:
-    # https://github.com/DIYgod/APlayer
-    enable: false
-    options:
-      audio: []
-      fixed:
-      autoplay:
-      loop:
-      order:
-      preload:
-      volume:
-      mutex:
-      listFolded:
-      lrcType:
-  meting:
-    # https://github.com/metowolf/MetingJS
-    # if you want to use meting, please enable aplayer first
-    enable: false
-    meting_api: # custom api
-    options:
-      id: 2265921590
-      server: netease
-      type: playlist
-      auto:
-
-########################################
-# pangu.js
-########################################
-
-pangu:
-  # more information: https://github.com/vinta/pangu.js
-  enable: false # enable pangu.js to add space between Chinese and English
-
-########################################
-# Theme
-########################################
-
-# experimental, may have a lot of bugs, open with caution!
-# A dynamic color generation tool based on Google's Material You design guidelines, capable of extracting primary colors from any image and generating complete light and dark color schemes.
-material_theme:
-  # more information: https://github.com/2061360308/material-theme
-  # notice: when you enable this feature, all the covers will be automatically added "crossorigin" attribute to support the dynamic color scheme
-  # so make sure your custom covers will not be blocked by the browser's CORS policy
-  enable: false # enable material_theme to generate dynamic color schemes based on the banner image
-
-internal_theme:
-  light:
-    --red-0: '#7c4dff'        # Violet principal éclairci
-    --red-1: '#9575cd'        # Violet moyen plus clair
-    --red-2: '#ba68c8'        # Violet clair lumineux
-    --red-3: '#ce93d8'        # Violet très clair
-    --red-4: '#e1bee7'        # Violet pastel
-    --red-5: '#f3e5f5'        # Violet très pastel
-    --red-5-5: '#faf8fc'      # Violet quasi transparent
-    --red-6: '#fdfdfe'        # Background très clair
-    --color-red-6-shadow: 'rgba(124, 77, 255, 0.4)'
-    --color-red-3-shadow: 'rgba(124, 77, 255, 0.2)'
-    --highlight-nav: '#2d2d2d'
-    --highlight-purple: '#7c4dff'
-    --text-color: '#ffffff'
-    --text-emphasis: '#ffffff'
-    --tag-text-color: '#ffffff'
-    --markdown-strong: '#ffffff'
-    --markdown-emphasis: '#f8f9fa'
-    --text-secondary: '#f8f9fa'
-    --text-muted: '#e9ecef'
-    --link-color: '#ffffff'
-    --link-hover: '#f8f9fa'
-    --heading-color: '#ffffff'
-    --border-color: 'rgba(255, 255, 255, 0.2)'
-    --background-content: 'rgba(26, 26, 26, 0.8)'
-  dark:
-    --red-0: '#6a1b99'
-    --red-1: '#8e44ad'
-    --red-2: '#9b59b6'
-    --red-3: '#bb8fce'
-    --red-4: 'rgba(187, 143, 206, 0.5)'
-    --highlight-purple: '#8e44ad'
-    --color-red-6-shadow: 'rgba(142, 68, 173, 0.4)'
-    --color-red-3-shadow: 'rgba(142, 68, 173, 0.2)'
-    --text-color: '#ffffff'
-    --text-emphasis: '#ffffff'
-    --tag-text-color: '#ffffff'
-    --markdown-strong: '#ffffff'
-    --markdown-emphasis: '#f8f9fa'
-    --text-secondary: '#f8f9fa'
-    --text-muted: '#e9ecef'
-    --link-color: '#ffffff'
-    --link-hover: '#d2b4de'
-    --heading-color: '#ffffff'
-    --border-color: 'rgba(255, 255, 255, 0.15)'
-    --background-content: 'rgba(20, 20, 20, 0.9)'
-
-# Smooth Scrolling
-smooth_scroll:
-  enable: true
-  duration: 500
-
-  # Lazy Loading avancé
-lazy_loading:
-  enable: true
-  placeholder: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f5f5f5' width='400' height='300'/%3E%3C/svg%3E"
-  fade_in: true
-
-  # Charts avec Chart.js
-charts:
-  enable: true
-  theme: "purple"
-
-# PWA (Progressive Web App)
-pwa:
-  enable: true
-  name: "Axekin Wiki"
-  short_name: "AxekinWiki"
-  description: "Wiki d'Axekin"
-  theme_color: "#6a1b99"
-  background_color: "#1a1a1a"
-  display: "standalone"
-  start_url: "/"
-
-utterances:
-  enable: false
-  repo: "axekin/wiki-comments"
-  issue_term: "pathname"
-  theme: "github-dark"
-
-  # Compression et optimisation
-compression:
-  enable: true
-  level: 6
-
-  # Image optimization
-image_processing:
-  enable: true
-  quality: 85
-  formats: ["webp", "avif"]
-  lazy_loading: true
-
-  # Widgets personnalisés
-custom_widgets:
-  - name: "weather"
-    enable: false
-    api_key: "YOUR_WEATHER_API_KEY"
-    city: "Paris"
-  - name: "hitokoto"
-    enable: false
-    api: "https://v1.hitokoto.cn/"
-  - name: "music_player"
-    enable: false
-    playlist: "YOUR_PLAYLIST_ID"
-  
-    # Easter Eggs
-easter_eggs:
-  enable: true
-  konami_code: true
-  click_effects: true
-  typing_effects: false
-
-  # Accessibilité
-accessibility:
-  enable: true
-  high_contrast: false
-  font_size_adjuster: true
-  screen_reader_improvements: true
-
-    # Sécurité
-security:
-  content_security_policy: true
-  referrer_policy: "strict-origin-when-cross-origin"
-  permissions_policy: true
-
-  # Développement
-development:
-  live_reload: true
-  debug_mode: false
-  error_pages: true
-  
-   
-########################################
-# Vendor
-########################################
-
-# Dependent cdn links
-# If you change the version of a js library, be sure to modify the corresponding integrity value
-vendor:
-  cdn_jsdelivr_gh: https://cdn.jsdelivr.net/gh/
-  cdn_jsdelivr_npm: https://cdn.jsdelivr.net/npm/
-  fastly_jsdelivr_gh: https://fastly.jsdelivr.net/gh/
-  fastly_jsdelivr_npm: https://fastly.jsdelivr.net/npm/
-  unpkg: https://unpkg.com/
-  webcache: https://npm.webcache.cn/
-  js:
-    clipboard:
-      src: webcache|clipboard@2.0.11/dist/clipboard.min.js
-      integrity: sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q
-    lazysizes:
-      src: webcache|lazysizes@5.3.2/lazysizes.min.js
-      integrity: sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e
-    photoswipe:
-      src: webcache|photoswipe@5.4.4/dist/photoswipe.esm.min.js
-      integrity: sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s
-    photoswipe_lightbox:
-      src: webcache|photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js
-      integrity: sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/
-    valine:
-      src: webcache|valine@1.5.1/dist/Valine.min.js
-      integrity: sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE+s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn
-    waline:
-      src: webcache|@waline/client@2.15.8/dist/waline.mjs
-      integrity: sha384-9sbqJjrfGjbkI6/PI4nU/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH/KinBEAZII/5
-    twikoo:
-      src: webcache|twikoo@1.6.44/dist/twikoo.all.min.js
-      integrity: sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk+kQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K
-    gitalk:
-      src: webcache|gitalk@1.8.0/dist/gitalk.min.js
-      integrity: sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU/lcEH5O8eVbSDhbPwsiVUTp/aGX/z/5EuMA
-    busuanzi:
-      src: webcache|busuanzi@2.3.0/bsz.pure.mini.js
-      integrity: sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S
-    algolia:
-      src: webcache|algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
-      integrity: sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S+jQz7ZBtQXnsXmD+9jDOOY4cL6dCPzlrk
-    instantsearch:
-      src: webcache|@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js
-      integrity: sha384-aagKMe8nkqaP2DYQc8kkYOL5l+M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK
-    pace:
-      src: webcache|pace-js@1.2.4/pace.min.js
-      integrity: sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8
-    mermaid:
-      src: webcache|mermaid@11.12.0/dist/mermaid.min.js
-      integrity: sha384-o+g/BxPwhi0C3RK7oQBxQuNimeafQ3GE/ST4iT2BxVI4Wzt60SH4pq9iXVYujjaS
-    svg_pan_zoom:
-      src: webcache|svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js
-      integrity: sha384-GGX4llYprEPGp9w5caepn95YWAEflHnsA5ewt+Y+cBEb95og5cXKllnWKSELlzbx
-    firework:
-      src: webcache|mouse-firework@0.1.1/dist/index.umd.js
-      integrity: sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d
-    pjax:
-      src: webcache|theme-shokax-pjax@0.0.3/dist/index.umd.js
-      integrity: sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD+jAPU55x/jj3wlf
-    live2d:
-      base: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/
-      js: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/js/live2d-autoload.js
-    live2d_widgets:
-      src: webcache|live2d-widgets@0.9.0/autoload.js
-      integrity: sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB
-    md5:
-      src: webcache|blueimp-md5@2.19.0/js/md5.min.js
-      integrity: sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr/gZlbkHkL6vTthxH
-    quicklink:
-      src: webcache|quicklink@3.0.1/dist/quicklink.umd.js
-      integrity: sha384-caMDqvgav/HWdEYQU1QRRHMLleigpL1YHAG0m371DhzfL8rRzUyOb+bEHtwlmYjD
-    katex:
-      src: webcache|katex@0.16.24/dist/katex.min.js
-      integrity: sha384-MWNUH0WmtsYGhn2cbH6ELRCbf9LG3QDqCC+gqPB3IBNO35xjZK3Ejb6oONRpDbPg
-    katex_auto_render:
-      src: webcache|katex@0.16.24/dist/contrib/auto-render.min.js
-      integrity: sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh
-    mathjax:
-      src: webcache|mathjax@3.2.2/es5/tex-mml-chtml.js
-      integrity: sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei
-    aplayer:
-      src: webcache|aplayer@1.10.1/dist/APlayer.min.js
-      integrity: sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL/aORyw+5+HZoU6e
-    meting:
-      src: webcache|meting@2.0.1/dist/Meting.min.js
-      integrity: sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S/IyB+Y4JG+ZDU7GpKE8
-    qrcode:
-      src: webcache|qrcode@1.5.1/build/qrcode.js
-      integrity: sha384-VT1EeewTCEXgndcPMQ0PzV+uVFYjxFIjmAA7s5gcMX9t4Dt5TD+OVQIn7NJWIXn7
-    dompurify:
-      src: webcache|dompurify@3.2.6/dist/purify.min.js
-      integrity: sha384-JEyTNhjM6R1ElGoJns4U2Ln4ofPcqzSsynQkmEc/KGy6336qAZl70tDLufbkla+3
-    pangu:
-      src: webcache|pangu@4.0.7/dist/browser/pangu.min.js
-      integrity: sha384-HeUHqi0nVsPUm/E0ss7OfnIV/yD96JWB8ehZvUuoVax9DpNHL17jj9pdfXHzqDxm
-    material_theme:
-      src: webcache|material-theme@1.0.0/dist/material-theme.umd.js
-      integrity: sha384-vLev0II0HKFaxkcm+/7kX5IGwVFBASkGchU311wmU/veIj2bB0UcBkQbW6yw2asK
-    snapdom:
-      src: webcache|@zumer/snapdom@1.9.14/dist/snapdom.min.js
-      integrity: sha384-OEQ+fJp/Mvi2uzBREXybtxryJvLytWapuHu4EE6LPwTKUwATYcc55tPPcZTzVcmx
-  css:
-    photoswipe:
-      src: webcache|photoswipe@5.4.4/dist/photoswipe.css
-      integrity: sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE
-    katex:
-      src: webcache|katex@0.16.24/dist/katex.min.css
-      integrity: sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz+YI
-    waline:
-      src: webcache|@waline/client@2.15.8/dist/waline.css
-      integrity: sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy+Ub9QgnxUYJmwOhYCK
-    gitalk:
-      src: webcache|gitalk@1.8.0/dist/gitalk.css
-      integrity: sha384-X7z7PUv2B67D8sPJyzDyGZSco1ADwmdI7ed4eCGtTKkClfyDFpPL9WgAn9XVr/Io
-    fontawesome:
-      high_priority:
-        - src: webcache|@fortawesome/fontawesome-free@7.1.0/css/regular.min.css
-          integrity: sha384-4qYppzjH8EiA+cGdaubu2vL7Rk8WGiqCSj7oRuP1uwtFWkfKNHD20lPfcrbQc8dU
-        - src: webcache|@fortawesome/fontawesome-free@7.1.0/css/solid.min.css
-          integrity: sha384-wbMWab3UDSPm2kvIgVOn/d9KPTecgPU1+Nb3zoQrm/oVu0EkPL6IaKinjbwW0rum
-      low_priority:
-        - src: webcache|@fortawesome/fontawesome-free@7.1.0/css/brands.min.css
-          integrity: sha384-KTGeC2hIMzpeQakhsmzB9bZfhCD5xZZCgI1iZH6f/O457SxzlkzTQg/WXFNoi3ih
-        - src: webcache|@fortawesome/fontawesome-free@7.1.0/css/v5-font-face.min.css
-          integrity: sha384-nJ1ThfldViXoLpJ6jlKcP2beas8BMbYq26SG9Hi8cH89bZi4RZ644v7helMCqJxd
-        - src: webcache|@fortawesome/fontawesome-free@7.1.0/css/v4-font-face.min.css
-          integrity: sha384-UlkrhOIvZxJFd4MElSUp7ow6/RUeYKi/orfCZIRRiOENFuQPIAA3T3HjYfmBRhNq
-    aos:
-      src: webcache|@reimujs/aos@0.1.2/dist/aos.css
-      integrity: sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa
-    aplayer:
-      src: webcache|aplayer@1.10.1/dist/APlayer.min.css
-      integrity: sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU/voDBY5XE2lVh
+menu:
+  - name: home
+    url: /
+    icon: # Leave empty to use the default Tai Chi icon
+  - name: archives
+    url: /archives
+    icon: f0c1 # You can fill in a hexadecimal number to customize the icon, supporting FontAwesome and Icon Font
+  - name: about
+    url: /about
+    icon:
+  - name: friend
+    url: /friend
+    icon:
