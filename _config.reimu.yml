@@ -1,0 +1,563 @@
+# Configuration du thème Reimu
+# Ce fichier écrase la configuration par défaut du thème
+# Docs: https://hexo.io/docs/configuration#Alternate-Theme-Config
+
+########################################
+# Configuration de base
+########################################
+theme_version_check: true
+theme_config_check: true
+
+# Menu de navigation principal
+menu:
+  - name: home
+    url: /
+    icon: e609
+  - name: archives
+    url: /archives
+    icon: e60c
+  - name: about
+    url: /about
+    icon: e613
+  - name: friend
+    url: /friend
+    icon: e60d
+
+banner: /images/banner.webp
+favicon: /images/favicon.ico
+avatar: avatar.webp
+
+# Contrôle de l'affichage de la couverture des posts
+cover: # https://example.com / false / rgb(255,117,117)
+
+# Contrôle de l'affichage de la table des matières
+toc: true
+toc_options:
+  list_number: true
+  min_depth: 1
+  max_depth: 6
+
+# Open Graph
+open_graph:
+  enable: true
+  options:
+    default_og_image: /images/banner.webp
+
+excerpt_link: Read More
+
+# RSS
+rss: atom.xml
+
+# Footer
+footer:
+  since: 2025
+  powered: true
+  count: true
+  busuanzi: true
+  icon:
+    url: "../images/gura.png"
+    rotate: true
+    mask: false
+    social_links: true
+    beian: false
+
+# Sidebar
+sidebar: right
+
+# Réseaux sociaux
+social:
+  email: mailto:axekinn@proton.me
+  github: https://github.com/Axekinn
+  discord: https://discord.gg/CUpf57y5Vg
+
+# Widgets
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - recent_posts
+
+# Comportement des widgets
+archive_type: "monthly"
+show_count: false
+tag_limits: 15
+recent_posts_limits: 8
+tagcloud_limits: 30
+
+only_show_capsule_in_index: false
+show_update_time: false
+
+# Résumé
+summary:
+  enable: false
+  style: 'subtitle'
+
+# Internationalisation
+i18n:
+  enable: true
+  type: [page, post]
+  generator: [archive, category, tag, index]
+  languages: [en, zh-CN, ja, pt-BR, ar, de, es, fr, ko, ru]
+
+# Badge triangulaire
+triangle_badge:
+  enable: true
+  icon: github
+  link: https://github.com/Axekinn
+
+# Largeur maximale du layout
+layout:
+  max_width: 1350px
+
+########################################
+# CSS
+########################################
+
+anchor_icon: # false pour cacher
+
+# Curseur personnalisé
+reimu_cursor:
+  enable: true
+  cursor:
+    default: ../images/cursor/Gawr-Gura-Cursor.png
+    pointer: ../images/cursor/gawr-gura-pointer.png
+    text: ../images/cursor/reimu-cursor-text.png
+
+# Icon font
+icon_font: 4552607_4k4bc36ef96
+
+# Polices personnalisées
+custom_font:
+  enable: false
+  article:
+  code:
+
+# Google Fonts
+font:
+  enable: true
+  article:
+    - Mulish
+    - Noto Serif SC
+  code:
+
+# Polices locales de secours
+local_font:
+  article:
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+# Mode sombre
+dark_mode:
+  enable: auto # true | false | auto
+  transition: smooth
+  duration: 300
+
+########################################
+# Affichage Markdown
+########################################
+
+# Mathématiques
+math:
+  enable: false
+  katex:
+    enable: true
+    autoRender: false
+  mathjax:
+    enable: false
+
+# Mermaid
+mermaid:
+  enable: false
+  zoom: false
+
+# Blocs de code
+code_block:
+  expand: true
+  copy_button: true
+  line_numbers: true
+  highlight_lines: true
+  theme: "drak"
+
+########################################
+# Analytics
+########################################
+
+baidu_analytics: false
+google_analytics: false
+clarity: false
+
+########################################
+# Système de commentaires
+########################################
+
+comment:
+  title:
+    en: Leave a comment
+    zh-CN: 说些什么吧！
+    zh-TW: 說些什麼吧！
+    ja: コメントを残す
+    pt-BR: Deixe um comentário
+  default: giscus
+
+# Valine
+valine:
+  enable: false
+
+# Waline
+waline:
+  enable: false
+
+# Twikoo
+twikoo:
+  enable: false
+
+# Gitalk
+gitalk:
+  enable: false
+
+# Giscus
+giscus:
+  enable: true
+  repo: "Axekinn/wiki.axekin.com"
+  repo_id: "R_kgDOO6CQAQ"
+  category: "General"
+  category_id: "DIC_kwDOO6CQAc4CurE7"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "top"
+  theme: "preferred_color_scheme"
+  lang: "en"
+  loading: "lazy"
+
+########################################
+# Recherche
+########################################
+
+algolia:
+  enable: true  
+  applicationID: "LPWJ5Q6Q0L"
+  apiKey: "7a8c816d9d6a005f280853c142ad76b6"
+  indexName: "axekin-wiki"
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: "Rechercher..."
+    hits_empty: "Aucun résultat pour '${query}'"
+    hits_stats: "${hits} résultats trouvés en ${time}ms"
+
+algolia_search:
+  enable: false
+
+generator_search:
+  enable: false
+
+########################################
+# Animation
+########################################
+
+# Loader
+preloader:
+  enable: true
+  text:
+    zh-CN: 少女祈祷中...
+    zh-TW: 少女祈禱中...
+    en: Loading...
+    ja: 少女祈祷中...
+    pt-BR: Carregando...
+  icon: '/images/gura.png'
+  rotate: true
+
+# Animations
+animation:
+  enable: true
+  options:
+    header:
+      title: fade-down
+      subTitle: fade-up
+    home:
+      post: fade-up-right
+      widget: slide-left
+      sidebar: slide-right
+    article:
+      whole: fade-up
+      date: flip-left
+      category: zoom-in-up
+      tag: zoom-in-down
+      comment: slide-up
+      reading: fade-left
+      nav: slide-down
+    archive:
+      whole: fade-up
+      tag: flip-up
+      category: flip-down
+      section: zoom-in
+      nav: slide-up
+
+# Feux d'artifice
+firework:
+  enable: false
+  disable_on_mobile: false
+
+########################################
+# Fonctionnalités étendues
+########################################
+
+# Presse-papier
+clipboard:
+  success:
+    en: Copy successfully (*^▽^*)
+    zh-CN: 复制成功 (*^▽^*)
+    zh-TW: 複製成功 (*^▽^*)
+    ja: コピー成功 (*^▽^*)
+    pt-BR: Copiado com sucesso (*^▽^*)
+  fail:
+    en: Copy failed (ﾟ⊿ﾟ)ﾂ
+    zh-CN: 复制失败 (ﾟ⊿ﾟ)ﾂ
+    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
+    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
+    pt-BR: Falha ao copiar (ﾟ⊿ﾟ)ﾂ
+  copyright:
+    enable: false
+    count: 50
+    license_type: by-nc-sa
+
+# Catégories sur la page d'accueil
+home_categories:
+  enable: false
+
+# Notification d'article obsolète
+outdate:
+  enable: false
+  daysAgo: 180
+  message:
+    en: This article was last updated on {time}. Please note that the content may no longer be applicable.
+    zh-CN: 本文最后更新于 {time}，请注意文中内容可能已不适用。
+    zh-TW: 本文最後更新於 {time}，請注意文中內容可能已不適用。
+    ja: この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。
+    pt-BR: Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.
+
+# Sponsor
+sponsor:
+  enable: false
+
+# ICP
+icp:
+  icpnumber:
+  beian:
+  recordcode:
+
+moe_icp:
+  icpnumber:
+
+# Copyright des articles
+article_copyright:
+  enable: true
+  content:
+    author: true
+    link: true
+    title: false
+    date: false
+    updated: false
+    license: true
+    license_type: by-nc-sa
+
+# Retour en haut
+top:
+  enable: true
+  position: right
+  icon:
+    url: "../images/gura.png"
+    rotate: true
+    mask: false
+  threshold: 100
+  smooth_scroll: true
+
+# Partage
+share:
+  - facebook
+  - twitter
+  - linkedin
+  - reddit
+
+########################################
+# Fonctionnalités expérimentales
+########################################
+
+pjax:
+  enable: false
+
+quicklink:
+  enable: false
+  timeout: 3000
+  priority: true
+  ignores: []
+
+pace:
+  enable: true
+  color: "var(--red-2)"
+  theme: "minimal"
+
+service_worker:
+  enable: true
+  cache_version: "v1.0.0"
+  cache_strategy: "cache_first"
+  update_notification:
+    enable: true
+    title:
+      en: New version available
+    content:
+      en: The website seems to have new content, do you want to update?
+
+live2d:
+  enable: false
+  position: left
+
+live2d_widgets:
+  enable: false
+  position: left
+
+player:
+  disable_on_mobile: false
+  position: before_sidebar
+  aplayer:
+    enable: false
+  meting:
+    enable: false
+
+########################################
+# pangu.js
+########################################
+
+pangu:
+  enable: false
+
+########################################
+# Thème
+########################################
+
+material_theme:
+  enable: false
+
+# Thème interne
+internal_theme:
+  light:
+    --red-0: '#7c4dff'
+    --red-1: '#9575cd'
+    --red-2: '#ba68c8'
+    --red-3: '#ce93d8'
+    --red-4: '#e1bee7'
+    --red-5: '#f3e5f5'
+    --red-5-5: '#faf8fc'
+    --red-6: '#fdfdfe'
+    --color-red-6-shadow: 'rgba(124, 77, 255, 0.4)'
+    --color-red-3-shadow: 'rgba(124, 77, 255, 0.2)'
+    --highlight-nav: '#2d2d2d'
+    --highlight-purple: '#7c4dff'
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#f8f9fa'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.2)'
+    --background-content: 'rgba(26, 26, 26, 0.8)'
+  dark:
+    --red-0: '#6a1b99'
+    --red-1: '#8e44ad'
+    --red-2: '#9b59b6'
+    --red-3: '#bb8fce'
+    --red-4: 'rgba(187, 143, 206, 0.5)'
+    --highlight-purple: '#8e44ad'
+    --color-red-6-shadow: 'rgba(142, 68, 173, 0.4)'
+    --color-red-3-shadow: 'rgba(142, 68, 173, 0.2)'
+    --text-color: '#ffffff'
+    --text-emphasis: '#ffffff'
+    --tag-text-color: '#ffffff'
+    --markdown-strong: '#ffffff'
+    --markdown-emphasis: '#f8f9fa'
+    --text-secondary: '#f8f9fa'
+    --text-muted: '#e9ecef'
+    --link-color: '#ffffff'
+    --link-hover: '#d2b4de'
+    --heading-color: '#ffffff'
+    --border-color: 'rgba(255, 255, 255, 0.15)'
+    --background-content: 'rgba(20, 20, 20, 0.9)'
+
+smooth_scroll:
+  enable: true
+  duration: 500
+
+lazy_loading:
+  enable: true
+  placeholder: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f5f5f5' width='400' height='300'/%3E%3C/svg%3E"
+  fade_in: true
+
+charts:
+  enable: true
+  theme: "purple"
+
+pwa:
+  enable: true
+  name: "Axekin Wiki"
+  short_name: "AxekinWiki"
+  description: "Wiki d'Axekin"
+  theme_color: "#6a1b99"
+  background_color: "#1a1a1a"
+  display: "standalone"
+  start_url: "/"
+
+utterances:
+  enable: false
+
+compression:
+  enable: true
+  level: 6
+
+image_processing:
+  enable: true
+  quality: 85
+  formats: ["webp", "avif"]
+  lazy_loading: true
+
+custom_widgets:
+  - name: "weather"
+    enable: false
+  - name: "hitokoto"
+    enable: false
+  - name: "music_player"
+    enable: false
+
+easter_eggs:
+  enable: true
+  konami_code: true
+  click_effects: true
+  typing_effects: false
+
+accessibility:
+  enable: true
+  high_contrast: false
+  font_size_adjuster: true
+  screen_reader_improvements: true
+
+security:
+  content_security_policy: true
+  referrer_policy: "strict-origin-when-cross-origin"
+  permissions_policy: true
+
+development:
+  live_reload: true
+  debug_mode: false
+  error_pages: true
