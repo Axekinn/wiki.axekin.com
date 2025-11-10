@@ -1,0 +1,76 @@
+categories: Categorías
+search: Buscar
+tags: Etiquetas
+tagcloud: Nube de etiquetas
+tweets: Tweets
+prev: Anterior
+next: Siguiente
+comment: Comentarios
+reading: Lecturas
+archive_a: Archivo
+archive_b: "Archivo: %s"
+page: Página %d
+recent_posts: Publicaciones recientes
+newer: Anterior
+older: Siguiente
+share: Compartir
+powered_by: Desarrollado por
+rss_feed: Feed RSS
+category: Categoría
+tag: Etiqueta
+toc: Contenido
+
+home: Inicio
+about: Acerca de
+friend: Amigo
+archives: Archivo
+
+sidebar:
+  post: Publicación
+  category: Categoría
+  tag: Etiqueta
+
+not_found:
+  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ
+  subtitle: NO ENCONTRADO
+
+post:
+  count:
+    one: "%s palabra"
+    other: "%s palabras"
+  time:
+    one: "%d min"
+    other: "%d mins"
+
+busuanzi:
+  pv: Número de visitas
+  uv: Número de visitantes
+
+sticky: Destacado
+
+service_worker:
+  title: Nueva versión encontrada
+  content: El sitio web parece tener contenido nuevo, ¿desea actualizar?
+  confirm: Actualizar
+  cancel: Cancelar
+
+sponsor: Patrocinar
+
+home_categories:
+  count: 
+    one: "%d publicación"
+    other: "%d publicaciones"
+
+article_copyright:
+  author: "Autor: "
+  permalink: "Enlace permanente: "
+  title: "Título: "
+  date: "Publicado: "
+  updated: "Actualizado: "
+  license: "Licencia: "
+  license_content: "Todos los artículos en este blog están licenciados bajo el acuerdo de licencia %s a menos que se indique lo contrario. ¡Por favor indique la fuente al reimprimir!"
+
+algolia:
+  input_placeholder: "Buscar....."
+  hits_empty: "No se encontraron resultados para 「${query}」"
+  hits_stats: "Se encontraron ${hits} resultados (en ${time} ms)"

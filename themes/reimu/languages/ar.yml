@@ -1,0 +1,76 @@
+categories: الفئات
+search: بحث
+tags: الوسوم
+tagcloud: سحابة الوسوم
+tweets: التغريدات
+prev: السابق
+next: التالي
+comment: التعليقات
+reading: القراءات
+archive_a: الأرشيف
+archive_b: "الأرشيف: %s"
+page: صفحة %d
+recent_posts: المقالات الأخيرة
+newer: السابق
+older: التالي
+share: مشاركة
+powered_by: مدعوم من
+rss_feed: خلاصة RSS
+category: الفئة
+tag: الوسم
+toc: المحتويات
+
+home: الرئيسية
+about: حول
+friend: صديق
+archives: الأرشيف
+
+sidebar:
+  post: مقال
+  category: الفئة
+  tag: الوسم
+
+not_found:
+  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ
+  subtitle: غير موجود
+
+post:
+  count:
+    one: "%s كلمة"
+    other: "%s كلمات"
+  time:
+    one: "%d دقيقة"
+    other: "%d دقائق"
+
+busuanzi:
+  pv: عدد الزيارات
+  uv: عدد الزوار
+
+sticky: مثبت
+
+service_worker:
+  title: تم العثور على نسخة جديدة
+  content: يبدو أن الموقع يحتوي على محتوى جديد، هل تريد التحديث؟
+  confirm: تحديث
+  cancel: إلغاء
+
+sponsor: رعاية
+
+home_categories:
+  count: 
+    one: "%d مقال"
+    other: "%d مقالات"
+
+article_copyright:
+  author: "المؤلف: "
+  permalink: "الرابط الدائم: "
+  title: "العنوان: "
+  date: "تاريخ النشر: "
+  updated: "تاريخ التحديث: "
+  license: "الترخيص: "
+  license_content: "جميع المقالات في هذه المدونة مرخصة بموجب اتفاقية الترخيص %s ما لم يذكر خلاف ذلك. يرجى الإشارة إلى المصدر عند إعادة النشر!"
+
+algolia:
+  input_placeholder: "بحث....."
+  hits_empty: "لا توجد نتائج لـ「${query}」"
+  hits_stats: "تم العثور على ${hits} نتيجة (في ${time} ملي ثانية)"

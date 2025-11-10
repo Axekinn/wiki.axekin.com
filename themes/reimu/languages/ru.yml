@@ -1,0 +1,76 @@
+categories: Категории
+search: Поиск
+tags: Теги
+tagcloud: Облако тегов
+tweets: Твиты
+prev: Назад
+next: Далее
+comment: Комментарии
+reading: Чтения
+archive_a: Архив
+archive_b: "Архив: %s"
+page: Страница %d
+recent_posts: Последние посты
+newer: Назад
+older: Далее
+share: Поделиться
+powered_by: Работает на
+rss_feed: RSS-лента
+category: Категория
+tag: Тег
+toc: Содержание
+
+home: Главная
+about: О сайте
+friend: Друг
+archives: Архив
+
+sidebar:
+  post: Пост
+  category: Категория
+  tag: Тег
+
+not_found:
+  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ
+  subtitle: НЕ НАЙДЕНО
+
+post:
+  count:
+    one: "%s слово"
+    other: "%s слов"
+  time:
+    one: "%d мин"
+    other: "%d мин"
+
+busuanzi:
+  pv: Количество посещений
+  uv: Количество посетителей
+
+sticky: Закреплено
+
+service_worker:
+  title: Найдена новая версия
+  content: Похоже, на сайте появился новый контент, хотите обновить?
+  confirm: Обновить
+  cancel: Отмена
+
+sponsor: Спонсировать
+
+home_categories:
+  count: 
+    one: "%d пост"
+    other: "%d постов"
+
+article_copyright:
+  author: "Автор: "
+  permalink: "Постоянная ссылка: "
+  title: "Заголовок: "
+  date: "Опубликовано: "
+  updated: "Обновлено: "
+  license: "Лицензия: "
+  license_content: "Все статьи в этом блоге лицензированы по соглашению %s, если не указано иное. Пожалуйста, указывайте источник при перепечатке!"
+
+algolia:
+  input_placeholder: "Поиск....."
+  hits_empty: "Результатов по запросу 「${query}」 не найдено"
+  hits_stats: "Найдено ${hits} результатов (за ${time} мс)"

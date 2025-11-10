@@ -1,0 +1,76 @@
+categories: 카테고리
+search: 검색
+tags: 태그
+tagcloud: 태그 클라우드
+tweets: 트윗
+prev: 이전
+next: 다음
+comment: 댓글
+reading: 읽기
+archive_a: 아카이브
+archive_b: "아카이브: %s"
+page: 페이지 %d
+recent_posts: 최근 게시물
+newer: 이전
+older: 다음
+share: 공유
+powered_by: 제공
+rss_feed: RSS 피드
+category: 카테고리
+tag: 태그
+toc: 목차
+
+home: 홈
+about: 소개
+friend: 친구
+archives: 아카이브
+
+sidebar:
+  post: 게시물
+  category: 카테고리
+  tag: 태그
+
+not_found:
+  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ
+  subtitle: 찾을 수 없음
+
+post:
+  count:
+    one: "%s 단어"
+    other: "%s 단어"
+  time:
+    one: "%d 분"
+    other: "%d 분"
+
+busuanzi:
+  pv: 방문 횟수
+  uv: 방문자 수
+
+sticky: 고정
+
+service_worker:
+  title: 새 버전 발견
+  content: 웹사이트에 새로운 콘텐츠가 있는 것 같습니다. 업데이트하시겠습니까?
+  confirm: 업데이트
+  cancel: 취소
+
+sponsor: 후원
+
+home_categories:
+  count: 
+    one: "%d 게시물"
+    other: "%d 게시물"
+
+article_copyright:
+  author: "작성자: "
+  permalink: "고유 링크: "
+  title: "제목: "
+  date: "게시일: "
+  updated: "업데이트: "
+  license: "라이선스: "
+  license_content: "이 블로그의 모든 글은 별도 명시가 없는 한 %s 라이선스 계약에 따라 라이선스가 부여됩니다. 재게시 시 출처를 밝혀주세요!"
+
+algolia:
+  input_placeholder: "검색....."
+  hits_empty: "「${query}」에 대한 결과가 없습니다"
+  hits_stats: "${hits}개의 결과를 찾았습니다 (${time} ms)"
