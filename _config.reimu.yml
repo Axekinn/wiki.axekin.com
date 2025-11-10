@@ -55,7 +55,7 @@ footer:
   count: true
   busuanzi: true
   icon:
-    url: "../images/gura.png"
+    url: /images/gura.png
     rotate: true
     mask: false
     social_links: true
@@ -119,9 +119,9 @@ anchor_icon: # false pour cacher
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/Gawr-Gura-Cursor.png
-    pointer: ../images/cursor/gawr-gura-pointer.png
-    text: ../images/cursor/reimu-cursor-text.png
+    default: /images/cursor/Gawr-Gura-Cursor.png
+    pointer: /images/cursor/gawr-gura-pointer.png
+    text: /images/cursor/reimu-cursor-text.png
 
 # Icon font
 icon_font: 4552607_4k4bc36ef96
@@ -273,7 +273,13 @@ preloader:
     en: Loading...
     ja: 少女祈祷中...
     pt-BR: Carregando...
-  icon: '/images/gura.png'
+    ar: جار التحميل...
+    de: Lädt...
+    es: Cargando...
+    fr: Chargement...
+    ko: 로딩 중...
+    ru: Загрузка...
+  icon: /images/gura.png
   rotate: true
 
 # Animations
@@ -375,7 +381,7 @@ top:
   enable: true
   position: right
   icon:
-    url: "../images/gura.png"
+    url: /images/gura.png
     rotate: true
     mask: false
   threshold: 100
