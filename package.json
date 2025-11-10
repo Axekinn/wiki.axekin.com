@@ -6,7 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "postinstall": "node scripts/patch-i18n.js"
   },
   "hexo": {
     "version": "8.1.1"
