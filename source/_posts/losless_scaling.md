@@ -8,6 +8,8 @@ tags: ["lossless-scaling", "frame-generation", "upscaling", "emulation", "fps-bo
 series: ["Optimization Guides"]
 author: "Axekin"
 draft: false
+
+
 toc: true
 math: false
 featured: true

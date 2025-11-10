@@ -8,6 +8,7 @@ tags: ["amiibo", "yuzu", "ryujinx", "nintendo-switch", "emulación", "nfc", "fig
 series: ["Guías de Emulación"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: false

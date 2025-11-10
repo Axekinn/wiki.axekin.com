@@ -8,6 +8,7 @@ tags: ["citra", "غش", "3ds", "محاكاة", "nintendo", "رموز", "action-r
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

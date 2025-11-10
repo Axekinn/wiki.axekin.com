@@ -2,6 +2,7 @@
 title: "Configuración de XLink Kai con Ryujinx"
 date: 2025-06-03
 draft: false
+lang: es
 categories: ["Ryujinx", "XLink Kai"]
 tags: ["Ryujinx", "XLink Kai", "Nintendo Switch", "Emulación", "Multijugador"]
 author: "Axekin"

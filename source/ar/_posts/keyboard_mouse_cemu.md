@@ -8,6 +8,7 @@ tags: ["cemu", "wiiu", "keyboard-mouse", "mouse2joystick", "vigembus", "emulatio
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

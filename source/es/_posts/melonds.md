@@ -7,6 +7,7 @@ categories: ["MelonDS"]
 tags: ["melonDS", "Nintendo DS", "Emulación", "Juegos"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: true

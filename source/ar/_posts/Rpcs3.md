@@ -2,6 +2,7 @@
 title: "تثبيت وتكوين RPCS3"
 date: 2025-06-02
 draft: false
+lang: ar
 categories: ["RPCS3"]
 tags: ["RPCS3"]
 author: "Axekin"

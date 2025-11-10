@@ -2,6 +2,7 @@
 title: "تثبيت وتكوين Azahar"
 date: 2025-06-02
 draft: false
+lang: ar
 categories: ["Citra"]
 tags: ["Citra"]
 author: "Axekin"

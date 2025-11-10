@@ -8,6 +8,7 @@ tags: ["ppsspp", "psp", "emulation", "playstation", "portable", "konfiguration",
 series: ["Emulationsleitfäden"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

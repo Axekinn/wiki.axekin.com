@@ -8,6 +8,7 @@ tags: ["unsteam", "steam", "koop", "gaming", "patch", "multiplayer", "emulation"
 series: ["Gaming-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

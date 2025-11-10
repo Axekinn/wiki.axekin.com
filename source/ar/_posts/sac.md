@@ -8,6 +8,7 @@ tags: ["steamautocrack", "steam", "gaming", "patch", "automation"]
 series: ["أدلة الألعاب"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

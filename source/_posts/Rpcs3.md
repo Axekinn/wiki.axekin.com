@@ -2,6 +2,8 @@
 title: "RPCS3 Installation and Configuration"
 date: 2025-06-02
 draft: false
+
+
 categories: ["RPCS3"]
 tags: ["RPCS3"]
 author: "Axekin"

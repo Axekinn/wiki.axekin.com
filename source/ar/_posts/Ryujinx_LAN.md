@@ -2,6 +2,7 @@
 title: "إعداد XLink Kai مع Ryujinx"
 date: 2025-06-03
 draft: false
+lang: ar
 categories: ["Ryujinx", "XLink Kai"]
 tags: ["Ryujinx", "XLink Kai", "Nintendo Switch", "محاكاة", "متعدد اللاعبين"]
 author: "Axekin"

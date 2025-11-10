@@ -8,6 +8,8 @@ tags: ["amiibo", "cemu", "wiiu", "emulation", "nintendo", "nfc", "figurines", "z
 series: ["Emulation Guides"]
 author: "Axekin"
 draft: false
+
+
 toc: true
 math: false
 featured: false

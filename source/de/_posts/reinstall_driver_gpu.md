@@ -7,6 +7,7 @@ categories: ["PC"]
 tags: ["treiber", "gpu", "nvidia", "amd", "ddu", "drivers", "reparatur", "windows"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: true

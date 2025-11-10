@@ -8,6 +8,7 @@ tags: ["citra", "trucos", "3ds", "emulación", "nintendo", "códigos", "action-r
 series: ["Guías de Emulación"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: false

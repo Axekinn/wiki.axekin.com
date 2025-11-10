@@ -2,6 +2,7 @@
 title: "تثبيت وتكوين Cemu"
 date: 2025-06-14
 draft: false
+lang: ar
 categories: ["Cemu"]
 tags: ["Cemu", "Nintendo Wii U", "محاكاة", "ألعاب"]
 author: "Axekin"

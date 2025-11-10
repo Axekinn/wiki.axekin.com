@@ -8,6 +8,7 @@ tags: ["cemu", "wiiu", "teclado-raton", "mouse2joystick", "vigembus", "emulacion
 series: ["Guías de Emulación"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: false

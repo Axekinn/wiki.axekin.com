@@ -7,6 +7,7 @@ categories: ["MelonDS"]
 tags: ["melonDS", "Nintendo DS", "محاكاة", "ألعاب"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: true

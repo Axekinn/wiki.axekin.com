@@ -2,6 +2,7 @@
 title: "Instalación de Paquetes de Texturas en el Emulador Azahar"
 date: 2025-08-02
 draft: false
+lang: es
 description: "Aprende a instalar y configurar paquetes de texturas en el emulador Azahar (basado en Citra) para mejorar tus juegos de Nintendo 3DS con gráficos de alta definición."
 tags: ["Azahar", "Citra", "Paquetes de Texturas", "Nintendo 3DS", "Emulación", "Tutorial"]
 categories: ["Citra"]

@@ -8,6 +8,7 @@ tags: ["eden", "yuzu", "nintendo-switch", "emulation", "installation", "configur
 series: ["Guías de Emulación"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: true

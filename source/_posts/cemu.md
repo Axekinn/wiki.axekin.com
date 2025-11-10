@@ -2,6 +2,8 @@
 title: "Cemu Installation and Configuration"
 date: 2025-06-14
 draft: false
+
+
 categories: ["Cemu"]
 tags: ["Cemu", "Nintendo Wii U", "Emulation", "Gaming"]
 author: "Axekin"

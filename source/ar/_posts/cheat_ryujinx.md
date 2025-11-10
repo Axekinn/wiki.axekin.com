@@ -8,6 +8,7 @@ tags: ["ryujinx", "غش", "تعديلات", "nintendo-switch", "محاكاة", "
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

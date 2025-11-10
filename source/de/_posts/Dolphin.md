@@ -7,6 +7,7 @@ categories: ["Dolphin"]
 tags: ["Dolphin"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

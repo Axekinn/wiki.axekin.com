@@ -2,6 +2,7 @@
 title: "RPCS3 Netplay (RPCN) Anleitung"
 date: 2025-08-12
 draft: false
+lang: de
 categories: ["RPCS3"]
 tags: ["RPCS3"]
 author: "Axekin"

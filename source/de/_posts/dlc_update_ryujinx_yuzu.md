@@ -8,6 +8,7 @@ tags: ["yuzu", "ryujinx", "nintendo-switch", "dlc", "updates", "emulation", "ins
 series: ["Emulations-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

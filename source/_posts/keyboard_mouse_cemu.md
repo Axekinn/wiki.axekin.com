@@ -8,6 +8,8 @@ tags: ["cemu", "wiiu", "keyboard-mouse", "mouse2joystick", "vigembus", "emulatio
 series: ["Emulation Guides"]
 author: "Axekin"
 draft: false
+
+
 toc: true
 math: false
 featured: false

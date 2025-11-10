@@ -2,6 +2,7 @@
 title: "Einrichten von XLink Kai mit Ryujinx"
 date: 2025-06-03
 draft: false
+lang: de
 categories: ["Ryujinx", "XLink Kai"]
 tags: ["Ryujinx", "XLink Kai", "Nintendo Switch", "Emulation", "Multiplayer"]
 author: "Axekin"

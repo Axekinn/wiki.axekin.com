@@ -8,6 +8,8 @@ tags: ["citra", "cheats", "3ds", "emulation", "nintendo", "codes", "action-repla
 series: ["Emulation Guides"]
 author: "Axekin"
 draft: false
+
+
 toc: true
 math: false
 featured: false

@@ -8,6 +8,7 @@ tags: ["amiibo", "yuzu", "ryujinx", "nintendo-switch", "المحاكاة", "nfc"
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

@@ -7,6 +7,7 @@ categories: ["PC"]
 tags: ["controladores", "gpu", "nvidia", "amd", "ddu", "drivers", "reparación", "windows"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: true

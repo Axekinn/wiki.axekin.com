@@ -8,6 +8,7 @@ tags: ["lossless-scaling", "frame-generation", "upscaling", "emulation", "fps-bo
 series: ["أدلة التحسين"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: true

@@ -2,6 +2,7 @@
 title: "دليل RPCS3 Netplay (RPCN)"
 date: 2025-08-12
 draft: false
+lang: ar
 categories: ["RPCS3"]
 tags: ["RPCS3"]
 author: "Axekin"

@@ -8,6 +8,7 @@ tags: ["amiibo", "cemu", "wiiu", "emulation", "nintendo", "nfc", "figuren", "zel
 series: ["Emulations-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

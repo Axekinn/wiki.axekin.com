@@ -8,6 +8,7 @@ tags: ["xenia", "xbox-360", "محاكاة", "تثبيت", "تكوين", "ألع�
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: true

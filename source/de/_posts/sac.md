@@ -8,6 +8,7 @@ tags: ["steamautocrack", "steam", "gaming", "patch", "automatisierung"]
 series: ["Gaming-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

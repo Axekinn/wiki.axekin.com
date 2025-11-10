@@ -8,6 +8,7 @@ tags: ["ryujinx", "nintendo-switch", "emulation", "installation", "konfiguration
 series: ["Emulationsanleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: true

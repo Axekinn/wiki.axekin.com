@@ -8,6 +8,7 @@ tags: ["ryujinx", "cheats", "mods", "nintendo-switch", "emulation", "installatio
 series: ["Emulations-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

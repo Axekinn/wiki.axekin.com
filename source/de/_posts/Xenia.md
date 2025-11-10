@@ -8,6 +8,7 @@ tags: ["xenia", "xbox-360", "emulation", "installation", "konfiguration", "gamin
 series: ["Emulations-Anleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: true

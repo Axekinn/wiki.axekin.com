@@ -7,6 +7,7 @@ categories: ["PC"]
 tags: ["برامج تشغيل", "gpu", "nvidia", "amd", "ddu", "drivers", "إصلاح", "windows"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: true

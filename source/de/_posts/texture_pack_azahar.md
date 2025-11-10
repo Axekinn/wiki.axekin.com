@@ -2,6 +2,7 @@
 title: "Installation von Texturpaketen im Azahar-Emulator"
 date: 2025-08-02
 draft: false
+lang: de
 description: "Lernen Sie, wie Sie Texturpakete im Azahar-Emulator (basierend auf Citra) installieren und konfigurieren, um Ihre Nintendo 3DS-Spiele mit hochauflösenden Grafiken zu verbessern."
 tags: ["Azahar", "Citra", "Texturpakete", "Nintendo 3DS", "Emulation", "Anleitung"]
 categories: ["Citra"]

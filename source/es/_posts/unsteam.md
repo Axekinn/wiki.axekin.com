@@ -8,6 +8,7 @@ tags: ["unsteam", "steam", "coop", "gaming", "patch", "multijugador", "emulació
 series: ["Guías de Juego"]
 author: "Axekin"
 draft: false
+lang: es
 toc: true
 math: false
 featured: false

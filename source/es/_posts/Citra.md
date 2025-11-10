@@ -2,6 +2,7 @@
 title: "Instalación y Configuración de Azahar"
 date: 2025-06-02
 draft: false
+lang: es
 categories: ["Citra"]
 tags: ["Citra"]
 author: "Axekin"

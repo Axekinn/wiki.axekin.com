@@ -8,6 +8,7 @@ tags: ["ppsspp", "psp", "محاكاة", "playstation", "portable", "تكوين",
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

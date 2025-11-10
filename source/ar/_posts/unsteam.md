@@ -8,6 +8,7 @@ tags: ["unsteam", "steam", "coop", "gaming", "patch", "multiplayer", "emulation"
 series: ["أدلة الألعاب"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

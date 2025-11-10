@@ -8,6 +8,7 @@ tags: ["yuzu", "ryujinx", "nintendo-switch", "dlc", "updates", "emulation", "ins
 series: ["أدلة المحاكاة"]
 author: "Axekin"
 draft: false
+lang: ar
 toc: true
 math: false
 featured: false

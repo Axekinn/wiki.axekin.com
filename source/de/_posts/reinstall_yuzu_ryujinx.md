@@ -8,6 +8,7 @@ tags: ["yuzu", "ryujinx", "nintendo-switch", "emulation", "backup", "speichern",
 series: ["Emulationsanleitungen"]
 author: "Axekin"
 draft: false
+lang: de
 toc: true
 math: false
 featured: false

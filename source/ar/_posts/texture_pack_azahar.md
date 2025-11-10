@@ -2,6 +2,7 @@
 title: "تثبيت حزم النسيج على محاكي Azahar"
 date: 2025-08-02
 draft: false
+lang: ar
 description: "تعلم كيفية تثبيت وتكوين حزم النسيج على محاكي Azahar (المبني على Citra) لتحسين ألعاب Nintendo 3DS الخاصة بك برسومات عالية الدقة."
 tags: ["Azahar", "Citra", "حزم النسيج", "Nintendo 3DS", "المحاكاة", "تعليمي"]
 categories: ["Citra"]

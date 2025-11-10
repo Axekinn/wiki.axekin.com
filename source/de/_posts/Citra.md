@@ -2,6 +2,7 @@
 title: "Azahar Installation und Konfiguration"
 date: 2025-06-02
 draft: false
+lang: de
 categories: ["Citra"]
 tags: ["Citra"]
 author: "Axekin"
