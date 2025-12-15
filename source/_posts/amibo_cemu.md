@@ -57,7 +57,7 @@ The Amiibo functionality on Cemu is particularly useful for:
 
 #### Download and Setup
 
-**🔗 Download Link**: `https://vikingfile.com/f/3PsPBKLrJG` (Credit: LinkNotZelda08)
+**🔗 Download Link**: https://vikingfile.com/f/3PsPBKLrJG (Credit: LinkNotZelda08)
 
 **Download Instructions:**
 1. **Download** the complete Amiibo collection

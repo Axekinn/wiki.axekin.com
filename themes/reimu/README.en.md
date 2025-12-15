@@ -55,6 +55,7 @@ A combination of [landscape](https://github.com/hexojs/hexo-theme-landscape)、[
   - Twikoo
   - Gitalk
   - Giscus
+  - Disqus
 
 ### Statistics & Analytics
 - 📊 Article reading statistics (Valine / Waline)
@@ -87,6 +88,8 @@ A combination of [landscape](https://github.com/hexojs/hexo-theme-landscape)、[
   - Friend links
   - Heatmap
   - Tag Roulette
+  - Tabs
+  - Gallery
 - 🎨 Dynamic theme color adaptation
 - 🎨 Custom Containers
 - ©️ Article copyright declaration
@@ -495,6 +498,16 @@ gitalk:
   owner: "repo owner"
   admin: "repo owner and collaborators"
   md5: false # Whether to use md5 to encrypt the path
+```
+
+If using [Disqus](https://disqus.com/)  
+Please set `disqus.enable` to `true` in the inner `_config.yml`, and fill in your `shortname`
+
+```yml
+disqus:
+  enable: true
+  shortname: "your shortname"
+  count: true # Whether to enable comment count statistics
 ```
 
 </details>
@@ -1045,40 +1058,44 @@ triangle_badge:
 </details>
 
 <details>
-<summary>Built-in Card Tags</summary>
+<summary>Built-in Tag Plugins</summary>
 
-### Built-in Card Tags
+### Built-in Tag Plugins
 
 #### friendLink - Friend Link Card
 
-```yaml
+```markdown
 {% friendsLink path %}
 ```
 
 The first parameter `path` indicates the path to the friend links yaml file
 
-#### postLinkCard - Internal Link Card
+#### postLinkCard - Internal Link Card (Not recommended, use `link` instead)
 
-```yaml
+```markdown
 {% postLinkCard slug [cover]|"auto" [escape] %}
 ```
+
+Not recommended to use this tag. It is advised to use the `link` tag instead.
 
 The first parameter is the article's `slug`; the second parameter (optional) is the cover image displayed on the card, if set to `auto` it will automatically use the blog's `banner`; the third parameter (optional) indicates whether the article title should be escaped
 
 > Slug generation algorithm: https://github.com/hexojs/hexo-util/blob/master/lib/slugize.ts
 > In simple terms, it removes invisible characters from the article title and replaces special characters `\s~!@#$%^&*()\-_+=[]{}|\;:"'<>,.?/` with the separator `-`, merges consecutive separators and removes leading/trailing separators
 
-#### externalLinkCard - External Link Card
+#### externalLinkCard - External Link Card (Not recommended, use `link` instead)
 
-```yaml
+```markdown
 {% externalLinkCard title link [cover]|"auto" %}
 ```
+
+Not recommended to use this tag. It is advised to use the `link` tag instead.
 
 The first parameter is the article title; the second parameter is the external link to the article; the third parameter (optional) is the cover image displayed on the card, if set to `auto` it will automatically use the default cover
 
 #### Heat Map Card Article Heatmap (v1.7.0+)
 
-```yaml
+```markdown
 {% heatMapCard levelStandard %}
 ```
 
@@ -1086,7 +1103,7 @@ The first parameter is the level standard for the heatmap (graded based on the w
 
 #### tagRoulette (v1.9.0+)
 
-```yaml
+```markdown
 {% heatMapCard tags icon %}
 ```
 
@@ -1094,6 +1111,95 @@ tagRoulette is an interactive element that provides a random tag display feature
 
 - tags: Optional parameter specifying the tag pool. Multiple tags should be separated by English commas (,). If not provided, a few example tags will be used by default. Example: `tags="memory decline, loss of expression, increased laziness, numbness, so sleepy"`  
 - icon: Optional parameter to customize the trigger button's icon. Default: 🕹️ (game controller emoji). Can be replaced with any emoji or text, such as 🎲, 🎯, 🔄, etc.
+
+#### link (v1.11.0+)
+
+```markdown
+{% link slug|title [title] [cover]|"auto" [escape] %}
+```
+
+Upgraded version of `externalLinkCard` and `postLinkCard`. It is recommended to use this tag.
+
+The first parameter is the `slug` of the article or the `title` of the external link;  
+The second parameter (optional) is the title displayed on the card;  
+The third parameter (optional) is the cover image displayed on the card. If set to `auto`, the blog's `banner` or default cover will be used automatically;  
+The fourth parameter (optional) indicates whether the article title is escaped.
+
+#### tabs (v1.11.0+)
+
+```markdown
+{% tabs [activeTab] ["center"] %}
+<!-- tabName -->
+Tab content
+<!-- tabName -->
+Tab content
+{% endtabs %}
+```
+
+Adapted from the next, volantis, and stellar themes, this feature supports creating tabbed switching effects within articles.
+
+- activeTab: Optional parameter, specifies the default active tab index (counting starts from 1). Default is 1.
+- "center": Optional parameter, specifies that tab titles should be center-aligned. Default is left-aligned.
+- tabName: The title of each tab, must be wrapped in `<!-- tabName -->`. Supports displaying icons using `@` + icon hexadecimal code. Examples:
+  - Title only: `<!-- Title -->`
+  - Icon only: `<!-- @e60c -->`
+  - Icon + Title: `<!-- Title@e60c -->`
+
+#### Gallery Photo Wall (v1.11.0+)
+
+```markdown
+{% gallery %}
+![alt text](image_url1)
+![alt text](image_url2)
+...
+{% endgallery %}
+```
+
+Display multiple images in a photo wall format, supporting automatic arrangement and responsive layout.
+
+#### grid Grid Layout (v1.11.1+)
+
+```markdown
+{% grid [width] [col] %}
+<!-- cell -->
+Content 1
+<!-- cell -->
+Content 2
+<!-- cell -->
+Content 3
+{% endgrid %}
+```
+
+Display content in a grid layout with responsive design.
+
+- width: Optional parameter, sets the minimum column width, e.g., `300` means a minimum column width of 300px. Default is `240`
+- col: Optional parameter, sets a fixed number of columns, e.g., `col:3` means a fixed 3-column layout. Default is auto column count
+- Use `<!-- cell -->` to separate each grid cell, and each cell's content will be rendered independently
+
+#### alertBlockquote Warning Quote Block (v1.11.1+)
+
+```markdown
+{% alertBlockquote [type] [title] %}
+Quote content
+{% endalertBlockquote %}
+```
+
+Fallback version of the custom container, suitable for renderers that do not support custom containers.
+
+- type: Optional parameter, specifies the warning type, optional values are `info`, `tip`, `important`, `warning`, `danger`, default is `info`
+- title: Optional parameter, specifies the warning title, if not provided, the default title will be used
+
+#### details Collapsible Details Block (v1.11.1+)
+
+```markdown
+{% details [summary] %}
+Details content
+{% enddetails %}
+```
+
+Fallback version of the custom container, suitable for renderers that do not support custom containers.
+
+- summary: Optional parameter, specifies the details title, if not provided, the default title will be used
 
 </details>
 
@@ -1131,7 +1237,7 @@ This is a dangerous warning.
 Danger zone, do not proceed
 :::
 
-::: details
+::: details INFO
 This is a details block.
 :::
 ```
@@ -1140,6 +1246,8 @@ This is a details block.
 
 <details>
 <summary>Customize theme</summary>
+
+### Customize theme
 
 The hexo-theme-reimu theme supports extensive customization. You can customize your theme by modifying `_config.yml`.
 
@@ -1163,51 +1271,57 @@ v1.8.0 added `internal_theme` configuration to customize theme colors. You can c
 ```yaml
 internal_theme:
   light:
-    --red-0: '#ff0000'
-    --red-1: '#ff5252'
-    --red-2: '#ff7c7c'
-    --red-3: '#ffafaf'
-    --red-4: '#ffd0d0'
-    --red-5: '#ffecec'
-    --red-5-5: '#fff3f3'
-    --red-6: '#fff7f7'
-    --color-red-6-shadow: 'rgba(255, 78, 78, 0.6)'
-    --color-red-3-shadow: 'rgba(255, 78, 78, 0.3)'
+    --red-0: "#ff0000"
+    --red-1: "#ff5252"
+    --red-2: "#ff7c7c"
+    --red-3: "#ffafaf"
+    --red-4: "#ffd0d0"
+    --red-5: "#ffecec"
+    --red-5-5: "#fff3f3"
+    --red-6: "#fff7f7"
+    --color-red-6-shadow: "rgba(255, 78, 78, 0.6)"
+    --color-red-3-shadow: "rgba(255, 78, 78, 0.3)"
 
-    --highlight-nav: '#e6e6e6'
-    --highlight-scrollbar: '#d6d6d6'
-    --highlight-background: '#f7f7f7'
-    --highlight-current-line: '#dadada'
-    --highlight-selection: '#e9e9e9'
-    --highlight-foreground: '#4d4d4d'
-    --highlight-comment: '#7d7d7d'
-    --highlight-red: '#c8362b'
-    --highlight-orange: '#b66014'
-    --highlight-yellow: '#cb911d'
-    --highlight-green: '#2ea52e'
-    --highlight-aqua: '#479d9d'
-    --highlight-blue: '#1973b8'
-    --highlight-purple: '#7135ac'
+    --highlight-nav: "#f5f5f5"
+    --highlight-scrollbar: "#d6d6d6"
+    --highlight-background: "#fdfdfd"
+    --highlight-selection: "#e9e9e988"
+    --highlight-foreground: "#24292e"
+    --highlight-comment: "#7d7d7d"
+    --highlight-red: "#d73a49"
+    --highlight-orange: "#e36209"
+    --highlight-yellow: "#cb911d"
+    --highlight-green: "#22863a"
+    --highlight-aqua: "#005cc5"
+    --highlight-blue: "#032f62"
+    --highlight-purple: "#6f42c1"
+    --highlight-deletion: "#b31d28"
+    --highlight-deletion-bg: "#ffeef0"
+    --highlight-addition: "#22863a"
+    --highlight-addition-bg: "#f0fff4"
   dark:
-    --red-4: 'rgba(255, 208, 208, 0.5)'
-    --red-5: 'rgba(255,228,228,0.15)'
-    --red-5-5: 'rgba(255,236,236,0.05)'
-    --red-6: 'rgba(255, 243, 243, 0.2)'
+    --red-4: "rgba(255, 208, 208, 0.5)"
+    --red-5: "rgba(255,228,228,0.15)"
+    --red-5-5: "rgba(255,236,236,0.05)"
+    --red-6: "rgba(255, 243, 243, 0.2)"
 
-    --highlight-nav: '#2e353f'
-    --highlight-scrollbar: '#454d59'
-    --highlight-background: '#22272e'
-    --highlight-current-line: '#393939'
-    --highlight-selection: '#515151'
-    --highlight-foreground: '#cccccc'
-    --highlight-comment: '#999999'
-    --highlight-red: '#f47067'
-    --highlight-orange: '#f69d50'
-    --highlight-yellow: '#ffcc66'
-    --highlight-green: '#99cc99'
-    --highlight-aqua: '#66cccc'
-    --highlight-blue: '#54b6ff'
-    --highlight-purple: '#dcbdfb'
+    --highlight-nav: "#222830"
+    --highlight-scrollbar: "#454d59"
+    --highlight-background: "#1e2027"
+    --highlight-selection: "#51515155"
+    --highlight-foreground: "#c9d1d9"
+    --highlight-comment: "#8b949e"
+    --highlight-red: "#ff7b72"
+    --highlight-orange: "#ffa657"
+    --highlight-yellow: "#ffcc66"
+    --highlight-green: "#7ee787"
+    --highlight-aqua: "#a5d6ff"
+    --highlight-blue: "#79c0ff"
+    --highlight-purple: "#d2a8ff"
+    --highlight-deletion: "#ffa198"
+    --highlight-deletion-bg: "#490202"
+    --highlight-addition: "#7ee787"
+    --highlight-addition-bg: "#04260f"
 ```
 
 #### Custom Fonts
@@ -1429,6 +1543,10 @@ Both formats are supported. It's recommended to use SRI verification for externa
 | [@reimujs/hexo-renderer-markdown-it-plus](https://github.com/D-Sketon/hexo-renderer-markdown-it-plus) | ![NPM Version](https://img.shields.io/npm/v/@reimujs/hexo-renderer-markdown-it-plus) | ![NPM Downloads](https://img.shields.io/npm/dm/@reimujs/hexo-renderer-markdown-it-plus) | ![jsDelivr Hits](https://img.shields.io/jsdelivr/npm/hm/@reimujs/hexo-renderer-markdown-it-plus) |
 | [@reimujs/instantsearch.js](https://github.com/D-Sketon/instantsearch)                                | ![NPM Version](https://img.shields.io/npm/v/@reimujs/instantsearch.js)               | ![NPM Downloads](https://img.shields.io/npm/dm/@reimujs/instantsearch.js)               | ![jsDelivr Hits](https://img.shields.io/jsdelivr/npm/hm/@reimujs/instantsearch.js)               |
 | [plugin-live2d](https://github.com/D-Sketon/plugin-live2d)                                            | -                                                                                    | -                                                                                       | ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/D-Sketon/plugin-live2d)          |
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=D-Sketon/hexo-theme-reimu&type=date&legend=top-left)](https://www.star-history.com/#D-Sketon/hexo-theme-reimu&type=date&legend=top-left)
 
 ## License
 

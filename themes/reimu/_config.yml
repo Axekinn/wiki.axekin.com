@@ -25,7 +25,7 @@ banner: "/images/banner.webp" # which means themes/reimu/source/images/banner.we
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: false
+  enable: true
   srcset:
     - src: "/images/banner-600w.webp"
       media: "(max-width: 479px)"
@@ -93,7 +93,7 @@ copyright: # Inject code snippet right in the footer copyright
 #   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
 
 footer:
-  since: 2025 # 2020-current year
+  since: 2023-2025 # 2020-current year
   powered: true
   count: true # show word count and reading time
   busuanzi: true
@@ -371,6 +371,12 @@ gitalk:
   admin:
   md5: false
 
+# https://disqus.com
+disqus:
+  enable: true
+  shortname: "wiki-axekin-com" # your disqus shortname
+  count: true
+
 # https://giscus.app/zh-CN
 giscus:
   enable: false
@@ -426,7 +432,7 @@ preloader:
   text: Loading...
   rotate: true
   animation: pulse
-  logo: "/images/taichi-fill.png"
+  logo: "/images/gazo.png"
 # see https://github.com/D-Sketon/aos.js
 animation:
   enable: true
@@ -597,12 +603,12 @@ share:
 
 # Experimental, may have a lot of bugs, open with caution!
 pjax:
-  enable: false
+  enable: true
 
 # Experimental
 # https://github.com/GoogleChromeLabs/quicklink
 quicklink:
-  enable: false
+  enable: true
   # The `requestIdleCallback` timeout, in milliseconds.
   timeout: 3000
   # Whether or not the URLs within the options.el container should be treated as high priority.
@@ -633,29 +639,37 @@ live2d:
 
 # Experimental
 live2d_widgets:
-  enable: false
-  position: left # left or right
+  enable: true
+  position: right # left or right
 
 # Experimental
 # Please turn on pjax to use this feature
 player:
-  disable_on_mobile: false
+  disable_on_mobile: true
   position: before_sidebar # before_sidebar / after_sidebar / after_widget
   # if you enable meting, you must enable aplayer first
   aplayer:
     # https://github.com/DIYgod/APlayer
     enable: false
     options:
-      audio: []
-      fixed:
-      autoplay:
-      loop:
-      order:
-      preload:
-      volume:
-      mutex:
-      listFolded:
-      lrcType:
+      audio:
+        - name: "Plastic Love"
+          artist: "Mariya Takeuchi"
+          url: "https://music.163.com/song/media/outer/url?id=22636609.mp3"
+          cover: "https://p2.music.126.net/M19bDCKjlN4dZWqs8T4ngw==/109951163020221238.jpg"
+        - name: "Stay With Me"
+          artist: "Miki Matsubara"
+          url: "https://music.163.com/song/media/outer/url?id=5275713.mp3"
+          cover: "https://p2.music.126.net/5GFOnW4GCCCGmBZGwQYCFA==/109951163511560406.jpg"
+      fixed: false
+      autoplay: false
+      loop: "all"
+      order: "list"
+      preload: "auto"
+      volume: 0.7
+      mutex: true
+      listFolded: false
+      lrcType: 0
   meting:
     # https://github.com/metowolf/MetingJS
     # if you want to use meting, please enable aplayer first

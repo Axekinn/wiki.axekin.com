@@ -3,7 +3,7 @@ title: "Installation and Configuration of Eden"
 description: "Detailed tutorial to install, configure, and optimize the Nintendo Switch emulator Eden - Complete setup with keys, firmware, and settings"
 date: 2025-06-02
 lastmod: 2025-06-07
-categories: ["Yuzu"]
+categories: ["Eden"]
 tags: ["eden", "yuzu", "nintendo-switch", "emulation", "installation", "configuration", "gaming", "firmware"]
 series: ["Emulation Guides"]
 author: "Axekin"
@@ -28,9 +28,9 @@ searchHidden: false
 
 ## 🎮 Introduction to Yuzu
 
-**Eden** is an open-source Nintendo Switch emulator developed by the Citra team. Known for its high performance and growing compatibility, Eden is one of the most popular Switch emulators in the world.
+**Yuzu** is an open-source Nintendo Switch emulator developed by the Citra team. Known for its high performance and growing compatibility, Yuzu is one of the most popular Switch emulators in the world. Eden is its successor
 
-> ⚠️ **Legal Note**: This emulemmelator is intended only for playing games you legally own. Emulation for backup and research purposes is legal, but piracy is not.
+> ⚠️ **Legal Note**: This emulator is intended only for playing games you legally own. Emulation for backup and research purposes is legal, but piracy is not. (lmao yes ok)
 
 ## 🔧 Step 1: Downloading Eden
 

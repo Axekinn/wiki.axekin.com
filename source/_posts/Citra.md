@@ -4,8 +4,8 @@ date: 2025-06-02
 draft: false
 
 
-categories: ["Citra"]
-tags: ["Citra"]
+categories: ["Azahar"]
+tags: ["Azahar"]
 author: "Axekin"
 description: "Detailed tutorial for installing, configuring and using Nintendo 3DS emulator Azahar"
 series: ["Emulation Guides"]
@@ -16,7 +16,7 @@ weight: 20
 aliases: 
   - /en/citra-cheats-mods/
   - /en/guides/citra-modding/
-summary: "Learn how to install cheat codes and game modifications on Citra emulator. Detailed tutorial with folder structure and installation steps."
+summary: "Learn how to install cheat codes and game modifications on Azahar emulator. Detailed tutorial with folder structure and installation steps."
 cover: "covers/azahar.webp"
 image: "covers/azahar.webp"
 showtoc: true
@@ -29,7 +29,7 @@ searchHidden: false
 
 **Citra** is the most advanced open-source Nintendo 3DS emulator. Developed since 2013, it allows you to play 3DS games on PC with significant graphical improvements and near-perfect compatibility. Azahar is its fork.
 
-## 🔧 Step 1: Downloading Citra
+## 🔧 Step 1: Downloading Azahar
 
 ### Option 1: Official Azahar
 ```bash
@@ -149,10 +149,6 @@ Once this structure is in place, your emulator will automatically detect all gam
 
 > **📝 Note**: This must be done **before** the first launch to take effect!
 
-## ⚙️ Step 3: Install and first run
-
-### Windows prerequisites
-
 ### First run
 1. Run `azahar.exe`
 2. Set your games folder (double-click the menu, add the "Games 3DS" folder)
@@ -254,7 +250,7 @@ Screens → Setup
 #### Advanced tab
 ```
 Graphics → Advanced
-- Graphics API: OpenGL (recommended) or Vulkan
+- Graphics API: Vulkan (recommended) or OpenGL
 - Enable Hardware Renderer: ✅ Enabled
 - Enable Hardware Shader: ✅ Enabled
 - Enable Accurate Multiplication: ✅ Enabled
@@ -296,36 +292,10 @@ web_api_url=http://88.198.47.46:5000/
 
 3. Save and close the editor, then relaunch Citra/Azahar.
 
-Host a dedicated room (Windows `host.bat` example)
-
-If you want to host via a dedicated batch file, create or edit a `host.bat` and paste the example below. You can change the room name and the Title ID.
-
-```
-citra-room ^
-  --room-name "your room name" ^
-  --room-description "All Games" ^
-  --preferred-game "Super Smash Bros" ^
-  --preferred-game-id "00040000000EDF00" ^
-  --port 24872 ^
-  --max_members 16 ^
-  --token "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ^
-  --enable-citra-mods ^
-  --web-api-url http://88.198.47.46:5000 ^
-  --ban-list-file "INSERT_BAN_LIST_FILE_PATH_HERE"
-pause
-```
-
-Notes:
-
-- Replace `--token` with your real token when required.
-- `--preferred-game-id` corresponds to the game's Title ID (16 hex digits). Leave empty to accept all games.
-- `--web-api-url` must point to the API server (here: `http://88.198.47.46:5000`).
-
-With these steps, Citra/Azahar will use the specified multiplayer service and the `host.bat` will let you host a room from your machine.
-
 ### Supported formats
-- **.CCI** : Only format supported by my ROMs with Azahar due to anti-piracy restrictions
-
+- **.cxi** : Decrypted only.
+- **.cia** : Decrypted only.
+- **.cci** : Decrypted only (this is the SAME file type as .3ds). If you have decrypted .3ds private copies already just rename them to .cci.
 
 ## ❓ FAQ - Frequently Asked Questions
 

@@ -78,6 +78,32 @@ _$$(".article-entry img").forEach((element) => {
 window.lightboxStatus = "ready";
 window.dispatchEvent(new Event("lightbox:ready"));
 
+// table wrap
+_$$(".article-entry table").forEach((element) => {
+  if (element.closest("figure.highlight")) return;
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("table-wrapper");
+  element.parentNode?.insertBefore(wrapper, element);
+  element.parentNode?.removeChild(element);
+  wrapper.appendChild(element);
+});
+
+// wrap details content for old @reimujs/hexo-renderer-markdown-it-plus
+_$$(".article-entry details.custom-block").forEach((element) => {
+  if (element.querySelector(".detail-content")) return;
+  const summary = element.querySelector("summary");
+  if (!summary) return;
+  const detailContent = document.createElement("div");
+  detailContent.classList.add("detail-content");
+  
+  const range = document.createRange();
+  range.setStartAfter(summary);
+  range.setEndAfter(element.lastChild);
+  detailContent.appendChild(range.extractContents());
+  
+  element.appendChild(detailContent);
+});
+
 // Mobile nav
 var isMobileNavAnim = false;
 

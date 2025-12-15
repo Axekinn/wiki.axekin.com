@@ -56,6 +56,7 @@
   - Twikoo
   - Gitalk
   - Giscus
+  - Disqus
 
 ### 统计与分析
 
@@ -92,6 +93,8 @@
   - 友情链接
   - 热力图
   - 标签轮盘
+  - 标签页
+  - 照片墙
 - 🎨 动态适配主题色
 - 🎨 自定义容器
 - ©️ 文章版权声明
@@ -501,6 +504,16 @@ gitalk:
   owner: "repo owner"
   admin: "repo owner and collaborators"
   md5: false # 是否使用 md5 加密路径
+```
+
+若基于 [Disqus](https://disqus.com/)  
+请在内层 `_config.yml` 中将 `disqus.enable` 改为 `true`，并填入自己的 `shortname`
+
+```yml
+disqus:
+  enable: true
+  shortname: "your shortname"
+  count: true # 是否启用评论数量统计
 ```
 
 </details>
@@ -1059,40 +1072,44 @@ triangle_badge:
 </details>
 
 <details>
-<summary>内置卡片标签插件</summary>
+<summary>内置标签插件</summary>
 
-### 内置卡片标签插件
+### 内置标签插件
 
 #### friendLink 友链卡片
 
-```yaml
+```markdown
 {% friendsLink path %}
 ```
 
 第一个参数 `path` 表示友链 yaml 的路径
 
-#### postLinkCard 内链卡片
+#### postLinkCard 内链卡片 (不推荐，建议使用 link)
 
-```yaml
+```markdown
 {% postLinkCard slug [cover]|"auto" [escape] %}
 ```
+
+不推荐使用该标签，建议使用 `link` 标签代替。
 
 其中第一个参数为文章的 `slug`；第二个参数（可选）为卡片展示的封面，如果设置为 `auto` 则自动使用博客的 `banner`；第三个参数（可选）表示文章标题是否被转义
 
 > slug 的生成算法：https://github.com/hexojs/hexo-util/blob/master/lib/slugize.ts
 > 简单来说就是去除文章标题的不可见字符，把文章的标题中的特殊字符 `\s~!@#$%^&*()\-_+=[]{}|\;:"'<>,.?/` 全换成分隔符 `-`，合并连续分隔符并去除首尾分隔符
 
-#### externalLinkCard 外链卡片
+#### externalLinkCard 外链卡片 (不推荐，建议使用 link)
 
-```yaml
+```markdown
 {% externalLinkCard title link [cover]|"auto" %}
 ```
+
+不推荐使用该标签，建议使用 `link` 标签代替。
 
 其中第一个参数为文章的标题；第二个参数为文章的外部链接，第三个参数（可选）为卡片展示的封面，如果设置为 `auto` 则自动使用缺省封面
 
 #### heatMapCard 文章热力图 (v1.7.0+)
 
-```yaml
+```markdown
 {% heatMapCard levelStandard %}
 ```
 
@@ -1100,7 +1117,7 @@ triangle_badge:
 
 #### tagRoulette 标签轮盘 (v1.9.0+)
 
-```yaml
+```markdown
 {% heatMapCard tags icon %}
 ```
 
@@ -1108,6 +1125,92 @@ tagRoulette 是一个互动元素，提供随机标签展示功能，点击按�
 
 - tags：可选参数，指定标签池，多个标签用英文逗号(,)分隔；未提供时默认使用几个示例标签，例如：tags="记忆衰退,表达欲丧失,更加怠惰,无感,好想睡觉"
 - icon：可选参数，自定义触发按钮的图标，默认使用： 🕹️（游戏手柄 emoji），可替换为任何 emoji 或文字，如 🎲、🎯、🔄 等
+
+#### link 链接卡片 (v1.11.0+)
+
+```markdown
+{% link slug|title [title] [cover]|"auto" [escape] %}
+```
+
+externalLinkCard 和 postLinkCard 的升级版，推荐使用该标签。
+
+其中第一个参数为文章的 `slug` 或外链的 `title`；第二个参数（可选）为卡片展示的标题；第三个参数（可选）为卡片展示的封面，如果设置为 `auto` 则自动使用博客的 `banner` 或缺省封面；第四个参数（可选）表示文章标题是否被转义
+
+#### tabs 标签页 (v1.11.0+)
+
+```markdown
+{% tabs [activeTab] ["center"] %}
+<!-- tabName -->
+Tab content
+<!-- tabName -->
+Tab content
+{% endtabs %}
+```
+
+从 next, volantis, stellar 主题借鉴而来，支持在文章中创建标签页切换效果。
+
+- activeTab：可选参数，指定默认激活的标签页下标，从 1 开始计数，默认为 1
+- "center"：可选参数，指定标签页标题居中显示，默认左对齐
+- tabName：每个标签页的标题，必须用 `<!-- tabName -->` 包裹，支持使用 `@` + 图标十六进制代码 展示图标，例：
+  - 标题 `<!-- 标题 -->`
+  - 图标 `<!-- @e60c -->`
+  - 图标+标题 `<!-- 标题@e60c -->` 
+
+#### gallery 照片墙 (v1.11.0+)
+
+```markdown
+{% gallery %}
+![alt text](image_url1)
+![alt text](image_url2)
+...
+{% endgallery %}
+```
+
+将多张图片以照片墙的形式展示出来，支持自动排列和响应式布局。
+
+#### grid 网格布局 (v1.11.1+)
+
+```markdown
+{% grid [width] [col] %}
+<!-- cell -->
+内容1
+<!-- cell -->
+内容2
+<!-- cell -->
+内容3
+{% endgrid %}
+```
+
+将内容以网格的形式展示出来，支持响应式布局。
+
+- width：可选参数，设置最小列宽，如 `300` 表示最小列宽为 300px，默认值为 `240`
+- col：可选参数，设置固定列数，如 `col:3` 表示固定 3 列布局，默认值为自适应列数
+- 使用 `<!-- cell -->` 分隔每个网格单元，每个单元的内容会被独立渲染
+
+#### alertBlockquote 警告引用块 (v1.11.1+)
+
+```markdown
+{% alertBlockquote [type] [title] %}
+引用内容
+{% endalertBlockquote %}
+```
+
+下文自定义容器的 fallback 版本，适用于不支持自定义容器的渲染器。
+
+- type：可选参数，指定警告类型，可选值有 `info`、`tip`、`important`、`warning`、`danger`，默认值为 `info`
+- title：可选参数，指定警告标题，若不提供则使用默认标题
+
+#### details 折叠详情块 (v1.11.1+)
+
+```markdown
+{% details [summary] %}
+折叠内容
+{% enddetails %}
+```
+
+下文自定义容器的 fallback 版本，适用于不支持自定义容器的渲染器。
+
+- summary：可选参数，指定折叠块的标题，若不提供则使用默认标题
 
 </details>
 
@@ -1145,7 +1248,7 @@ This is a dangerous warning.
 Danger zone, do not proceed
 :::
 
-::: details
+::: details INFO
 This is a details block.
 :::
 ```
@@ -1153,6 +1256,8 @@ This is a details block.
 </details>
 <details>
 <summary>自定义主题</summary>
+
+### 自定义主题
 
 hexo-theme-reimu 主题支持高度的自定义，你可以通过修改 `_config.yml` 来定制你的主题。
 
@@ -1189,40 +1294,46 @@ internal_theme:
     --color-red-6-shadow: "rgba(255, 78, 78, 0.6)"
     --color-red-3-shadow: "rgba(255, 78, 78, 0.3)"
 
-    --highlight-nav: "#e6e6e6"
+    --highlight-nav: "#f5f5f5"
     --highlight-scrollbar: "#d6d6d6"
-    --highlight-background: "#f7f7f7"
-    --highlight-current-line: "#dadada"
-    --highlight-selection: "#e9e9e9"
-    --highlight-foreground: "#4d4d4d"
+    --highlight-background: "#fdfdfd"
+    --highlight-selection: "#e9e9e988"
+    --highlight-foreground: "#24292e"
     --highlight-comment: "#7d7d7d"
-    --highlight-red: "#c8362b"
-    --highlight-orange: "#b66014"
+    --highlight-red: "#d73a49"
+    --highlight-orange: "#e36209"
     --highlight-yellow: "#cb911d"
-    --highlight-green: "#2ea52e"
-    --highlight-aqua: "#479d9d"
-    --highlight-blue: "#1973b8"
-    --highlight-purple: "#7135ac"
+    --highlight-green: "#22863a"
+    --highlight-aqua: "#005cc5"
+    --highlight-blue: "#032f62"
+    --highlight-purple: "#6f42c1"
+    --highlight-deletion: "#b31d28"
+    --highlight-deletion-bg: "#ffeef0"
+    --highlight-addition: "#22863a"
+    --highlight-addition-bg: "#f0fff4"
   dark:
     --red-4: "rgba(255, 208, 208, 0.5)"
     --red-5: "rgba(255,228,228,0.15)"
     --red-5-5: "rgba(255,236,236,0.05)"
     --red-6: "rgba(255, 243, 243, 0.2)"
 
-    --highlight-nav: "#2e353f"
+    --highlight-nav: "#222830"
     --highlight-scrollbar: "#454d59"
-    --highlight-background: "#22272e"
-    --highlight-current-line: "#393939"
-    --highlight-selection: "#515151"
-    --highlight-foreground: "#cccccc"
-    --highlight-comment: "#999999"
-    --highlight-red: "#f47067"
-    --highlight-orange: "#f69d50"
+    --highlight-background: "#1e2027"
+    --highlight-selection: "#51515155"
+    --highlight-foreground: "#c9d1d9"
+    --highlight-comment: "#8b949e"
+    --highlight-red: "#ff7b72"
+    --highlight-orange: "#ffa657"
     --highlight-yellow: "#ffcc66"
-    --highlight-green: "#99cc99"
-    --highlight-aqua: "#66cccc"
-    --highlight-blue: "#54b6ff"
-    --highlight-purple: "#dcbdfb"
+    --highlight-green: "#7ee787"
+    --highlight-aqua: "#a5d6ff"
+    --highlight-blue: "#79c0ff"
+    --highlight-purple: "#d2a8ff"
+    --highlight-deletion: "#ffa198"
+    --highlight-deletion-bg: "#490202"
+    --highlight-addition: "#7ee787"
+    --highlight-addition-bg: "#04260f"
 ```
 
 #### 自定义字体
@@ -1449,6 +1560,10 @@ js:
 | [@reimujs/hexo-renderer-markdown-it-plus](https://github.com/D-Sketon/hexo-renderer-markdown-it-plus) | ![NPM Version](https://img.shields.io/npm/v/@reimujs/hexo-renderer-markdown-it-plus) | ![NPM Downloads](https://img.shields.io/npm/dm/@reimujs/hexo-renderer-markdown-it-plus) | ![jsDelivr Hits](https://img.shields.io/jsdelivr/npm/hm/@reimujs/hexo-renderer-markdown-it-plus) |
 | [@reimujs/instantsearch.js](https://github.com/D-Sketon/instantsearch)                                | ![NPM Version](https://img.shields.io/npm/v/@reimujs/instantsearch.js)               | ![NPM Downloads](https://img.shields.io/npm/dm/@reimujs/instantsearch.js)               | ![jsDelivr Hits](https://img.shields.io/jsdelivr/npm/hm/@reimujs/instantsearch.js)               |
 | [plugin-live2d](https://github.com/D-Sketon/plugin-live2d)                                            | -                                                                                    | -                                                                                       | ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/D-Sketon/plugin-live2d)          |
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=D-Sketon/hexo-theme-reimu&type=date&legend=top-left)](https://www.star-history.com/#D-Sketon/hexo-theme-reimu&type=date&legend=top-left)
 
 ## 许可
 

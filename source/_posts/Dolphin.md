@@ -41,11 +41,6 @@ https://dolphin-emu.org/download/
 2. **Download** `dolphin-x64-X.0.zip`
 3. **Extract** to a dedicated folder (e.g., `Documents\Dolphin` or at the root of another drive, not C)
 
-### Option 2: Dolphin Android
-```bash
-# Optimized mobile version
-https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu
-```
 
 ## Game Download
 
