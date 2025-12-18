@@ -2,11 +2,21 @@
 title: "Installing Texture Packs on Azahar Emulator"
 date: 2025-08-02
 draft: false
-
-
+toc: true
+math: false
+featured: false
+weight: 25
+aliases: 
+  - /en/azahar-texture-guide/
+cover: "covers/texture_pack_azahar.jpg"
+image: "covers/texture_pack_azahar.jpg"
+showtoc: true
+tocopen: true
+comments: true
+searchHidden: false
 description: "Learn how to install and configure texture packs on the Azahar emulator (based on Citra) to enhance your Nintendo 3DS games with high-definition graphics."
 tags: ["Azahar", "Citra", "Texture Packs", "Nintendo 3DS", "Emulation", "Tutorial"]
-categories: ["Citra"]
+categories: ["Azahar"]
 author: "Axekin"
 ---
 
