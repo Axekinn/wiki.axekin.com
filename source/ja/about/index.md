@@ -30,7 +30,7 @@ type: about
 
 ご質問やご提案がございましたら：
 - メール：axekinn@proton.me
-- Discord：[サーバーに参加](https://discord.gg/CUpf57y5Vg)
+- Discord：[サーバーに参加](discord.axekin.com)
 - GitHub：[Axekinn](https://github.com/Axekinn)
 
 ---

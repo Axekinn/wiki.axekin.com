@@ -30,7 +30,7 @@ type: about
 
 По любым вопросам или предложениям:
 - Email: axekinn@proton.me
-- Discord: [Присоединяйтесь к нашему серверу](https://discord.gg/CUpf57y5Vg)
+- Discord: [Присоединяйтесь к нашему серверу](discord.axekin.com)
 - GitHub: [Axekinn](https://github.com/Axekinn)
 
 ---

@@ -30,7 +30,7 @@ type: about
 
 لأي أسئلة أو اقتراحات:
 - البريد الإلكتروني: axekinn@proton.me
-- Discord: [انضم إلى خادمنا](https://discord.gg/CUpf57y5Vg)
+- Discord: [انضم إلى خادمنا](discord.axekin.com)
 - GitHub: [Axekinn](https://github.com/Axekinn)
 
 ---

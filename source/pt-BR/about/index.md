@@ -30,7 +30,7 @@ Nossos guias cobrem:
 
 Para quaisquer perguntas ou sugestões:
 - Email: axekinn@proton.me
-- Discord: [Junte-se ao nosso servidor](https://discord.gg/CUpf57y5Vg)
+- Discord: [Junte-se ao nosso servidor](discord.axekin.com)
 - GitHub: [Axekinn](https://github.com/Axekinn)
 
 ---

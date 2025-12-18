@@ -30,7 +30,7 @@ type: about
 
 如有任何问题或建议：
 - 电子邮件：axekinn@proton.me
-- Discord：[加入我们的服务器](https://discord.gg/CUpf57y5Vg)
+- Discord：[加入我们的服务器](discord.axekin.com)
 - GitHub：[Axekinn](https://github.com/Axekinn)
 
 ---

@@ -30,7 +30,7 @@ Este sitio está disponible en varios idiomas:
 
 Para cualquier pregunta o sugerencia:
 - 📧 Email: axekinn@proton.me
-- 💬 Discord: [Únete a nuestra comunidad](https://discord.gg/CUpf57y5Vg)
+- 💬 Discord: [Únete a nuestra comunidad](discord.axekin.com)
 - 🐙 GitHub: [Axekinn](https://github.com/Axekinn)
 
 ## Licencia

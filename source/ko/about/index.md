@@ -30,7 +30,7 @@ type: about
 
 질문이나 제안 사항이 있으시면:
 - 이메일: axekinn@proton.me
-- Discord: [우리 서버에 참여하기](https://discord.gg/CUpf57y5Vg)
+- Discord: [우리 서버에 참여하기](discord.axekin.com)
 - GitHub: [Axekinn](https://github.com/Axekinn)
 
 ---

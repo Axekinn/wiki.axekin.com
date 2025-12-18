@@ -16,7 +16,7 @@ menu:
     url: "about"
     icon: e613
   - name: discord
-    url: "https://discord.gg/CUpf57y5Vg"
+    url: "discord.axekin.com"
     icon: e60d
 
 banner: "/images/banner.webp" # which means themes/reimu/source/images/banner.webp
@@ -129,7 +129,7 @@ social:
   # stackoverflow: https://stackoverflow.com/users/yourname
   # keybase: https://keybase.io/yourname
   # telegram: https://t.me/yourname
-  discord: https://discord.gg/CUpf57y5Vg
+  discord: discord.axekin.com
   # steam: https://steamcommunity.com/id/yourname
 widgets:
   # - category
