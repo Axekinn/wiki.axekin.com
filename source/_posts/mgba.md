@@ -1,8 +1,8 @@
 ---
 title: "mGBA Installation and Configuration"
 description: "Detailed tutorial for installing, configuring and using the mGBA Game Boy Advance emulator - Complete setup with BIOS, graphics and controls"
-date: 2025-06-02
-lastmod: 2025-06-07
+date: 2025-12-18
+lastmod: 2025-12-18
 categories: ["mGBA"]
 tags: ["mGBA", "Game Boy Advance", "GBA", "Emulation", "Gaming"]
 author: "Axekin"
